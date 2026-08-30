@@ -1,0 +1,5 @@
+-rem
+-distrce
+-log "Zen68060Firmware_impl1.log"
+-o "Zen68060Firmware_impl1.csv"
+-pr "Zen68060Firmware_impl1.prf"

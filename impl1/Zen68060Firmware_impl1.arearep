@@ -1,0 +1,25 @@
+----------------------------------------------------------------------
+Report for cell mainLogic.TECH
+Register bits:  11 of 7209 (0.153%)
+I/O cells:      18
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                              CCU2D         4          100.0
+                            EHXPLLJ         1          100.0
+                            FD1P3AX         3          100.0
+                            FD1P3IX         2          100.0
+                            FD1S3IX         6          100.0
+                                GSR         1          100.0
+                                 IB        13          100.0
+                               LUT4        23          100.0
+                                 OB         5          100.0
+SUB MODULES
+                             ZenPLL         1
+                              TOTAL        59
+----------------------------------------------------------------------
+Report for cell ZenPLL.v1
+Instance Path : u_ZenPLL
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                            EHXPLLJ         1          100.0
+                              TOTAL         1

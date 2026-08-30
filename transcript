@@ -1,0 +1,343 @@
+# Reading pref.tcl
+# //  Questa Lattice OEM Edition-64
+# //  Version 2024.2 win64 May 20 2024
+# //
+# // Unpublished work. Copyright 2024 Siemens
+# //
+# // This material contains trade secrets or otherwise confidential information
+# // owned by Siemens Industry Software Inc. or its affiliates (collectively,
+# // "SISW"), or its licensors. Access to and use of this information is strictly
+# // limited as set forth in the Customer's applicable agreements with SISW.
+# //
+# // This material may not be copied, distributed, or otherwise disclosed outside
+# // of the Customer's facilities without the express written permission of SISW,
+# // and may not be used in any way not expressly authorized by SISW.
+# //
+# do {C:/lscc/diamond/3.14/bin/nt64/Zen68060Firmware/ZenSim/ZenSim.mdo}
+# Loading project ZenSim
+# Questa Lattice OEM Edition-64 vlog 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 13:43:54 on Aug 30,2026
+# vlog -reportprogress 300 "+incdir+C:/lscc/diamond/3.14/bin/nt64/Zen68060Firmware/impl1" -work work C:/lscc/diamond/3.14/bin/nt64/Zen68060Firmware/impl1/Zen68060Firmware_impl1_vo.vo 
+# -- Compiling module mainLogic
+# -- Compiling module SLICE_0
+# -- Compiling module vmuxregsre
+# -- Compiling module vcc
+# -- Compiling module ccu2
+# -- Compiling module gnd
+# -- Compiling module SLICE_1
+# -- Compiling module ccu20001
+# -- Compiling module SLICE_2
+# -- Compiling module SLICE_3
+# -- Compiling module ccu20002
+# -- Compiling module SLICE_4
+# -- Compiling module lut4
+# -- Compiling module lut40003
+# -- Compiling module SLICE_5
+# -- Compiling module lut40004
+# -- Compiling module lut40005
+# -- Compiling module vmuxregsre0006
+# -- Compiling module SLICE_6
+# -- Compiling module lut40007
+# -- Compiling module lut40008
+# -- Compiling module SLICE_7
+# -- Compiling module lut40009
+# -- Compiling module lut40010
+# -- Compiling module SLICE_8
+# -- Compiling module lut40011
+# -- Compiling module SLICE_9
+# -- Compiling module lut40012
+# -- Compiling module lut40013
+# -- Compiling module SLICE_10
+# -- Compiling module lut40014
+# -- Compiling module lut40015
+# -- Compiling module SLICE_11
+# -- Compiling module lut40016
+# -- Compiling module lut40017
+# -- Compiling module SLICE_12
+# -- Compiling module lut40018
+# -- Compiling module lut40019
+# -- Compiling module SLICE_13
+# -- Compiling module lut40020
+# -- Compiling module lut40021
+# -- Compiling module SLICE_14
+# -- Compiling module lut40022
+# -- Compiling module lut40023
+# -- Compiling module SLICE_15
+# -- Compiling module lut40024
+# -- Compiling module lut40025
+# -- Compiling module A_29_
+# -- Compiling module xo2iobuf
+# -- Compiling module RESET_PLL
+# -- Compiling module RW_IN
+# -- Compiling module TS_N
+# -- Compiling module CLK
+# -- Compiling module A_23_
+# -- Compiling module A_24_
+# -- Compiling module A_25_
+# -- Compiling module A_26_
+# -- Compiling module A_27_
+# -- Compiling module A_28_
+# -- Compiling module A_30_
+# -- Compiling module A_31_
+# -- Compiling module TA_N
+# -- Compiling module xo2iobuf0026
+# -- Compiling module LOCK_PLL
+# -- Compiling module RAM_OE_N
+# -- Compiling module RAM_CS_N
+# -- Compiling module RW_OUT
+# -- Compiling module u_ZenPLL_PLLInst_0
+# -- Compiling module EHXPLLJ_B
+# 
+# Top level modules:
+# 	mainLogic
+# End time: 13:43:54 on Aug 30,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Questa Lattice OEM Edition-64 vlog 2024.2 Compiler 2024.05 May 20 2024
+# Start time: 13:43:54 on Aug 30,2026
+# vlog -reportprogress 300 "+incdir+C:/lscc/diamond/3.14/bin/nt64/Zen68060Firmware" -work work C:/lscc/diamond/3.14/bin/nt64/Zen68060Firmware/ZenSim.v 
+# -- Compiling module mainLogic_tb
+# 
+# Top level modules:
+# 	mainLogic_tb
+# End time: 13:43:54 on Aug 30,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim -voptargs="+acc" -L work -L pmi_work -L ovi_machxo2 "+transport_path_delays" "+transport_int_delays" mainLogic_tb -sdfmax "/mainLogic_tb/dut=C:/lscc/diamond/3.14/bin/nt64/Zen68060Firmware/impl1/Zen68060Firmware_impl1_vo.sdf" 
+# Start time: 13:43:55 on Aug 30,2026
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility. The +acc switch would be deprecated in a future release.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading work.mainLogic_tb(fast)
+# Loading work.mainLogic(fast)
+# Loading work.SLICE_0(fast)
+# Loading work.vmuxregsre(fast)
+# Loading ovi_machxo2.FL1P3IY(fast)
+# Loading work.vcc(fast)
+# Loading ovi_machxo2.VHI(fast)
+# Loading work.ccu2(fast)
+# Loading ovi_machxo2.CCU2D(fast)
+# Loading work.gnd(fast)
+# Loading ovi_machxo2.VLO(fast)
+# Loading work.SLICE_1(fast)
+# Loading work.ccu20001(fast)
+# Loading ovi_machxo2.CCU2D(fast__1)
+# Loading work.SLICE_2(fast)
+# Loading work.SLICE_3(fast)
+# Loading work.ccu20002(fast)
+# Loading ovi_machxo2.CCU2D(fast__2)
+# Loading work.SLICE_4(fast)
+# Loading work.lut4(fast)
+# Loading ovi_machxo2.ROM16X1A(fast)
+# Loading work.lut40003(fast)
+# Loading ovi_machxo2.ROM16X1A(fast__1)
+# Loading work.SLICE_5(fast)
+# Loading work.lut40004(fast)
+# Loading ovi_machxo2.ROM16X1A(fast__2)
+# Loading work.lut40005(fast)
+# Loading ovi_machxo2.ROM16X1A(fast__3)
+# Loading work.vmuxregsre0006(fast)
+# Loading ovi_machxo2.FL1P3DX(fast)
+# Loading work.SLICE_6(fast)
+# Loading work.lut40007(fast)
+# Loading ovi_machxo2.ROM16X1A(fast__4)
+# Loading work.lut40008(fast)
+# Loading ovi_machxo2.ROM16X1A(fast__5)
+# Loading work.SLICE_7(fast)
+# Loading work.lut40009(fast)
+# Loading ovi_machxo2.ROM16X1A(fast__6)
+# Loading work.lut40010(fast)
+# Loading ovi_machxo2.ROM16X1A(fast__7)
+# Loading work.SLICE_8(fast)
+# Loading work.lut40011(fast)
+# Loading ovi_machxo2.ROM16X1A(fast__8)
+# Loading work.SLICE_9(fast)
+# Loading work.lut40012(fast)
+# Loading ovi_machxo2.ROM16X1A(fast__9)
+# Loading work.lut40013(fast)
+# Loading work.SLICE_10(fast)
+# Loading work.lut40014(fast)
+# Loading ovi_machxo2.ROM16X1A(fast__10)
+# Loading work.lut40015(fast)
+# Loading ovi_machxo2.ROM16X1A(fast__11)
+# Loading work.SLICE_11(fast)
+# Loading work.lut40016(fast)
+# Loading ovi_machxo2.ROM16X1A(fast__12)
+# Loading work.lut40017(fast)
+# Loading ovi_machxo2.ROM16X1A(fast__13)
+# Loading work.SLICE_12(fast)
+# Loading work.lut40018(fast)
+# Loading ovi_machxo2.ROM16X1A(fast__14)
+# Loading work.lut40019(fast)
+# Loading ovi_machxo2.ROM16X1A(fast__15)
+# Loading work.SLICE_13(fast)
+# Loading work.lut40020(fast)
+# Loading ovi_machxo2.ROM16X1A(fast__16)
+# Loading work.lut40021(fast)
+# Loading ovi_machxo2.ROM16X1A(fast__17)
+# Loading work.SLICE_14(fast)
+# Loading work.lut40022(fast)
+# Loading ovi_machxo2.ROM16X1A(fast__18)
+# Loading work.lut40023(fast)
+# Loading ovi_machxo2.ROM16X1A(fast__19)
+# Loading work.SLICE_15(fast)
+# Loading work.lut40024(fast)
+# Loading ovi_machxo2.ROM16X1A(fast__20)
+# Loading work.lut40025(fast)
+# Loading ovi_machxo2.ROM16X1A(fast__21)
+# Loading work.A_29_(fast)
+# Loading work.xo2iobuf(fast)
+# Loading ovi_machxo2.IBPD(fast)
+# Loading work.RESET_PLL(fast)
+# Loading work.RW_IN(fast)
+# Loading work.TS_N(fast)
+# Loading work.CLK(fast)
+# Loading work.xo2iobuf(fast__1)
+# Loading ovi_machxo2.IBPD(fast__1)
+# Loading work.A_23_(fast)
+# Loading work.A_24_(fast)
+# Loading work.A_25_(fast)
+# Loading work.A_26_(fast)
+# Loading work.A_27_(fast)
+# Loading work.A_28_(fast)
+# Loading work.A_30_(fast)
+# Loading work.A_31_(fast)
+# Loading work.TA_N(fast)
+# Loading work.xo2iobuf0026(fast)
+# Loading ovi_machxo2.OBZPD(fast)
+# Loading work.LOCK_PLL(fast)
+# Loading work.RAM_OE_N(fast)
+# Loading work.RAM_CS_N(fast)
+# Loading work.RW_OUT(fast)
+# Loading work.u_ZenPLL_PLLInst_0(fast)
+# Loading work.EHXPLLJ_B(fast)
+# Loading ovi_machxo2.EHXPLLJ(fast)
+# Loading ovi_machxo2.PUR(fast)
+# Loading ovi_machxo2.GSR(fast)
+# Loading instances from C:/lscc/diamond/3.14/bin/nt64/Zen68060Firmware/impl1/Zen68060Firmware_impl1_vo.sdf
+# Loading timing data from C:/lscc/diamond/3.14/bin/nt64/Zen68060Firmware/impl1/Zen68060Firmware_impl1_vo.sdf
+# ** Note: (vsim-3587) SDF Backannotation Successfully Completed.
+#    Time: 0 fs  Iteration: 0  Instance: /mainLogic_tb File: C:/lscc/diamond/3.14/bin/nt64/Zen68060Firmware/ZenSim.v
+# .main_pane.wave.interior.cs.body.pw.wf
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-8009) Loading existing optimized design _opt
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading work.mainLogic_tb(fast)
+# Loading work.mainLogic(fast)
+# Loading work.SLICE_0(fast)
+# Loading work.vmuxregsre(fast)
+# Loading ovi_machxo2.FL1P3IY(fast)
+# Loading work.vcc(fast)
+# Loading ovi_machxo2.VHI(fast)
+# Loading work.ccu2(fast)
+# Loading ovi_machxo2.CCU2D(fast)
+# Loading work.gnd(fast)
+# Loading ovi_machxo2.VLO(fast)
+# Loading work.SLICE_1(fast)
+# Loading work.ccu20001(fast)
+# Loading ovi_machxo2.CCU2D(fast__1)
+# Loading work.SLICE_2(fast)
+# Loading work.SLICE_3(fast)
+# Loading work.ccu20002(fast)
+# Loading ovi_machxo2.CCU2D(fast__2)
+# Loading work.SLICE_4(fast)
+# Loading work.lut4(fast)
+# Loading ovi_machxo2.ROM16X1A(fast)
+# Loading work.lut40003(fast)
+# Loading ovi_machxo2.ROM16X1A(fast__1)
+# Loading work.SLICE_5(fast)
+# Loading work.lut40004(fast)
+# Loading ovi_machxo2.ROM16X1A(fast__2)
+# Loading work.lut40005(fast)
+# Loading ovi_machxo2.ROM16X1A(fast__3)
+# Loading work.vmuxregsre0006(fast)
+# Loading ovi_machxo2.FL1P3DX(fast)
+# Loading work.SLICE_6(fast)
+# Loading work.lut40007(fast)
+# Loading ovi_machxo2.ROM16X1A(fast__4)
+# Loading work.lut40008(fast)
+# Loading ovi_machxo2.ROM16X1A(fast__5)
+# Loading work.SLICE_7(fast)
+# Loading work.lut40009(fast)
+# Loading ovi_machxo2.ROM16X1A(fast__6)
+# Loading work.lut40010(fast)
+# Loading ovi_machxo2.ROM16X1A(fast__7)
+# Loading work.SLICE_8(fast)
+# Loading work.lut40011(fast)
+# Loading ovi_machxo2.ROM16X1A(fast__8)
+# Loading work.SLICE_9(fast)
+# Loading work.lut40012(fast)
+# Loading ovi_machxo2.ROM16X1A(fast__9)
+# Loading work.lut40013(fast)
+# Loading work.SLICE_10(fast)
+# Loading work.lut40014(fast)
+# Loading ovi_machxo2.ROM16X1A(fast__10)
+# Loading work.lut40015(fast)
+# Loading ovi_machxo2.ROM16X1A(fast__11)
+# Loading work.SLICE_11(fast)
+# Loading work.lut40016(fast)
+# Loading ovi_machxo2.ROM16X1A(fast__12)
+# Loading work.lut40017(fast)
+# Loading ovi_machxo2.ROM16X1A(fast__13)
+# Loading work.SLICE_12(fast)
+# Loading work.lut40018(fast)
+# Loading ovi_machxo2.ROM16X1A(fast__14)
+# Loading work.lut40019(fast)
+# Loading ovi_machxo2.ROM16X1A(fast__15)
+# Loading work.SLICE_13(fast)
+# Loading work.lut40020(fast)
+# Loading ovi_machxo2.ROM16X1A(fast__16)
+# Loading work.lut40021(fast)
+# Loading ovi_machxo2.ROM16X1A(fast__17)
+# Loading work.SLICE_14(fast)
+# Loading work.lut40022(fast)
+# Loading ovi_machxo2.ROM16X1A(fast__18)
+# Loading work.lut40023(fast)
+# Loading ovi_machxo2.ROM16X1A(fast__19)
+# Loading work.SLICE_15(fast)
+# Loading work.lut40024(fast)
+# Loading ovi_machxo2.ROM16X1A(fast__20)
+# Loading work.lut40025(fast)
+# Loading ovi_machxo2.ROM16X1A(fast__21)
+# Loading work.A_29_(fast)
+# Loading work.xo2iobuf(fast)
+# Loading ovi_machxo2.IBPD(fast)
+# Loading work.RESET_PLL(fast)
+# Loading work.RW_IN(fast)
+# Loading work.TS_N(fast)
+# Loading work.CLK(fast)
+# Loading work.xo2iobuf(fast__1)
+# Loading ovi_machxo2.IBPD(fast__1)
+# Loading work.A_23_(fast)
+# Loading work.A_24_(fast)
+# Loading work.A_25_(fast)
+# Loading work.A_26_(fast)
+# Loading work.A_27_(fast)
+# Loading work.A_28_(fast)
+# Loading work.A_30_(fast)
+# Loading work.A_31_(fast)
+# Loading work.TA_N(fast)
+# Loading work.xo2iobuf0026(fast)
+# Loading ovi_machxo2.OBZPD(fast)
+# Loading work.LOCK_PLL(fast)
+# Loading work.RAM_OE_N(fast)
+# Loading work.RAM_CS_N(fast)
+# Loading work.RW_OUT(fast)
+# Loading work.u_ZenPLL_PLLInst_0(fast)
+# Loading work.EHXPLLJ_B(fast)
+# Loading ovi_machxo2.EHXPLLJ(fast)
+# Loading ovi_machxo2.PUR(fast)
+# Loading ovi_machxo2.GSR(fast)
+# Loading instances from C:/lscc/diamond/3.14/bin/nt64/Zen68060Firmware/impl1/Zen68060Firmware_impl1_vo.sdf
+# Loading timing data from C:/lscc/diamond/3.14/bin/nt64/Zen68060Firmware/impl1/Zen68060Firmware_impl1_vo.sdf
+# ** Note: (vsim-3587) SDF Backannotation Successfully Completed.
+#    Time: 0 fs  Iteration: 0  Instance: /mainLogic_tb File: C:/lscc/diamond/3.14/bin/nt64/Zen68060Firmware/ZenSim.v
+nolog -r /*
+when {/mainLogic_tb/dut/LOCK_PLL == 1} {
+    log -r /*
+    echo "Logging started at PLL lock"
+}
+run 20 ms
+# Logging started at PLL lock
+# ** Note: $stop    : C:/lscc/diamond/3.14/bin/nt64/Zen68060Firmware/ZenSim.v(94)
+#    Time: 6232 ns  Iteration: 0  Instance: /mainLogic_tb
+# Break in Module mainLogic_tb at C:/lscc/diamond/3.14/bin/nt64/Zen68060Firmware/ZenSim.v line 94

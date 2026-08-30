@@ -1,0 +1,29 @@
+SCUBA, Version Diamond (64-bit) 3.14.0.75.2
+Sun Aug 30 13:20:27 2026
+  
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2024 Lattice Semiconductor Corporation,  All rights reserved.
+  
+BEGIN SCUBA Module Synthesis
+  
+    Issued command   : C:\lscc\diamond\3.14\ispfpga\bin\nt64\scuba.exe -w -n ZenPLL -lang verilog -synth lse -arch xo2c00 -type pll -fin 50 -mdiv 1 -ndiv 1 -trimp 0 -phasep 0 -trimp_r -adiv 8 -trims 0 -phases 45 -trims_r -bdiv 8 -phases2 0 -cdiv 8 -phase_cntl DYNAMIC -rst -fb_mode 1 -lock 
+    Circuit name     : ZenPLL
+    Module type      : pll
+    Module Version   : 5.7
+    Ports            : 
+    Inputs       : CLKI, PHASESEL[1:0], PHASEDIR, PHASESTEP, RST
+    Outputs      : CLKOP, CLKOS, CLKOS2, LOCK, DPHSRC
+    I/O buffer       : not inserted
+    EDIF output      : ZenPLL.edn
+    Verilog output   : ZenPLL.v
+    Verilog template : ZenPLL_tmpl.v
+    Verilog purpose  : for synthesis and simulation
+    Bus notation     : big endian
+    Report output    : ZenPLL.srp
+    Estimated Resource Usage:
+  
+END   SCUBA Module Synthesis
+

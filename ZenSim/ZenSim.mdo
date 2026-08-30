@@ -1,0 +1,17 @@
+if {![file exists "C:/lscc/diamond/3.14/bin/nt64/Zen68060Firmware/ZenSim/ZenSim.mpf"]} { 
+	project new "C:/lscc/diamond/3.14/bin/nt64/Zen68060Firmware/ZenSim" ZenSim
+	project addfile "C:/lscc/diamond/3.14/bin/nt64/Zen68060Firmware/impl1/Zen68060Firmware_impl1_vo.vo"
+	project addfile "C:/lscc/diamond/3.14/bin/nt64/Zen68060Firmware/ZenSim.v"
+	vlib  work
+	vdel -lib work -all 
+	vlib work
+	vlog  +incdir+C:/lscc/diamond/3.14/bin/nt64/Zen68060Firmware/impl1  -work work  "C:/lscc/diamond/3.14/bin/nt64/Zen68060Firmware/impl1/Zen68060Firmware_impl1_vo.vo"
+	vlog  +incdir+C:/lscc/diamond/3.14/bin/nt64/Zen68060Firmware  -work work  "C:/lscc/diamond/3.14/bin/nt64/Zen68060Firmware/ZenSim.v"
+} else {
+	project open "C:/lscc/diamond/3.14/bin/nt64/Zen68060Firmware/ZenSim/ZenSim"
+	project compileoutofdate
+}
+vsim -voptargs=+acc -L work -L pmi_work -L ovi_machxo2  +transport_path_delays +transport_int_delays mainLogic_tb -sdfmax /mainLogic_tb/dut=C:/lscc/diamond/3.14/bin/nt64/Zen68060Firmware/impl1/Zen68060Firmware_impl1_vo.sdf
+view wave
+add wave /*
+run 1000ns
