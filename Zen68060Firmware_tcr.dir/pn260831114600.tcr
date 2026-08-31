@@ -1,0 +1,75 @@
+#Start recording tcl command: 8/30/2026 13:54:04
+#Project Location: C:/lscc/diamond/3.14/bin/nt64/Zen68060Firmware; Project name: Zen68060Firmware
+prj_project open "C:/lscc/diamond/3.14/bin/nt64/Zen68060Firmware/Zen68060Firmware.ldf"
+prj_src add "C:/lscc/diamond/3.14/bin/nt64/Zen68060Firmware/ZenClockPLL.v"
+prj_run Map -impl impl1
+prj_run Map -impl impl1
+prj_run Map -impl impl1
+prj_run Map -impl impl1
+prj_run Map -impl impl1
+prj_run PAR -impl impl1
+prj_run Export -impl impl1
+prj_src add "C:/lscc/diamond/3.14/bin/nt64/Zen68060Firmware/ZenSim/ZenSim.spf"
+prj_run Map -impl impl1
+prj_run Map -impl impl1
+prj_run PAR -impl impl1
+prj_run Map -impl impl1 -task MapTrace
+prj_run PAR -impl impl1
+prj_run Export -impl impl1
+prj_src add "C:/lscc/diamond/3.14/bin/nt64/Zen68060Firmware/ZenSim/ZenSim.spf"
+prj_run Map -impl impl1
+prj_run PAR -impl impl1
+prj_run Export -impl impl1
+prj_src add "C:/lscc/diamond/3.14/bin/nt64/Zen68060Firmware/ZenSim/ZenSim.spf"
+prj_run Map -impl impl1
+prj_run PAR -impl impl1
+prj_run Export -impl impl1
+prj_src add "C:/lscc/diamond/3.14/bin/nt64/Zen68060Firmware/ZenSim/ZenSim.spf"
+prj_run Map -impl impl1
+prj_run PAR -impl impl1
+prj_run Export -impl impl1
+prj_src add "C:/lscc/diamond/3.14/bin/nt64/Zen68060Firmware/ZenSim/ZenSim.spf"
+prj_run Map -impl impl1
+prj_run PAR -impl impl1
+prj_run Export -impl impl1
+prj_src add "C:/lscc/diamond/3.14/bin/nt64/Zen68060Firmware/ZenSim/ZenSim.spf"
+prj_run Map -impl impl1
+prj_run PAR -impl impl1
+prj_run Export -impl impl1
+prj_src add "C:/lscc/diamond/3.14/bin/nt64/Zen68060Firmware/ZenSim/ZenSim.spf"
+prj_run Map -impl impl1
+prj_run Map -impl impl1
+prj_run PAR -impl impl1
+prj_run Export -impl impl1
+prj_src add "C:/lscc/diamond/3.14/bin/nt64/Zen68060Firmware/ZenSim/ZenSim.spf"
+prj_run Map -impl impl1
+prj_run PAR -impl impl1
+prj_run Export -impl impl1
+prj_src add "C:/lscc/diamond/3.14/bin/nt64/Zen68060Firmware/ZenSim/ZenSim.spf"
+prj_run Map -impl impl1
+prj_run PAR -impl impl1
+prj_run Export -impl impl1
+prj_src add "C:/lscc/diamond/3.14/bin/nt64/Zen68060Firmware/ZenSim/ZenSim.spf"
+prj_src add "C:/lscc/diamond/3.14/bin/nt64/Zen68060Firmware/ZenPulseGen.v"
+prj_run Map -impl impl1
+prj_run Map -impl impl1
+prj_run Map -impl impl1
+prj_run Map -impl impl1
+prj_run Map -impl impl1
+prj_run Map -impl impl1
+prj_run Map -impl impl1
+prj_run Map -impl impl1
+prj_run Map -impl impl1
+prj_run Map -impl impl1
+prj_run Map -impl impl1
+prj_run Map -impl impl1
+prj_run Map -impl impl1
+prj_run Map -impl impl1
+prj_run Map -impl impl1
+prj_run Map -impl impl1
+prj_run Map -impl impl1
+prj_run Map -impl impl1
+prj_run PAR -impl impl1
+prj_run Export -impl impl1
+prj_src add "C:/lscc/diamond/3.14/bin/nt64/Zen68060Firmware/ZenSim/ZenSim.spf"
+#Stop recording: 8/31/2026 11:46:00

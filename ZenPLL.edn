@@ -4,9 +4,9 @@
   (keywordMap (keywordLevel 0))
   (status
     (written
-      (timestamp 2026 8 30 13 20 27)
+      (timestamp 2026 8 31 11 20 52)
       (program "SCUBA" (version "Diamond (64-bit) 3.14.0.75.2"))))
-      (comment "C:\lscc\diamond\3.14\ispfpga\bin\nt64\scuba.exe -w -n ZenPLL -lang verilog -synth lse -arch xo2c00 -type pll -fin 50 -mdiv 1 -ndiv 1 -trimp 0 -phasep 0 -trimp_r -adiv 8 -trims 0 -phases 45 -trims_r -bdiv 8 -phases2 0 -cdiv 8 -phase_cntl DYNAMIC -rst -fb_mode 1 -lock ")
+      (comment "C:\lscc\diamond\3.14\ispfpga\bin\nt64\scuba.exe -w -n ZenPLL -lang verilog -synth lse -arch xo2c00 -type pll -fin 50 -mdiv 1 -ndiv 1 -trimp 0 -phasep 0 -trimp_r -adiv 8 -trims 0 -phases 45 -trims_r -bdiv 8 -phases2 0 -cdiv 8 -phases3 0 -ddiv 1 -phase_cntl DYNAMIC -rst -fb_mode 1 -lock ")
   (library ORCLIB
     (edifLevel 0)
     (technology
@@ -150,6 +150,8 @@
             (direction OUTPUT))
           (port CLKOS2
             (direction OUTPUT))
+          (port CLKOS3
+            (direction OUTPUT))
           (port LOCK
             (direction OUTPUT))
           (port DPHSRC
@@ -208,6 +210,8 @@
               (string "0"))
             (property FRACN_ENABLE
               (string "DISABLED"))
+            (property FREQUENCY_PIN_CLKOS3
+              (string "400.000000"))
             (property OUTDIVIDER_MUXD2
               (string "DIVD"))
             (property PREDIVIDER_MUXD1
@@ -215,7 +219,7 @@
             (property VCO_BYPASS_D0
               (string "DISABLED"))
             (property CLKOS3_ENABLE
-              (string "DISABLED"))
+              (string "ENABLED"))
             (property FREQUENCY_PIN_CLKOS2
               (string "50.000000"))
             (property OUTDIVIDER_MUXC2
@@ -304,6 +308,10 @@
             (joined
               (portRef LOCK)
               (portRef LOCK (instanceRef PLLInst_0))))
+          (net CLKOS3
+            (joined
+              (portRef CLKOS3)
+              (portRef CLKOS3 (instanceRef PLLInst_0))))
           (net CLKOS2
             (joined
               (portRef CLKOS2)

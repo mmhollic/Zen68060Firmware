@@ -34,6 +34,14 @@
         <Message>
             <ID>35901018</ID>
             <Severity>Info</Severity>
+            <Dynamic>c:/lscc/diamond/3.14/bin/nt64/zen68060firmware/zenclockpll.v(1): </Dynamic>
+            <Dynamic>ZenClockPLL</Dynamic>
+            <Navigation>c:/lscc/diamond/3.14/bin/nt64/zen68060firmware/zenclockpll.v</Navigation>
+            <Navigation>1</Navigation>
+        </Message>
+        <Message>
+            <ID>35901018</ID>
+            <Severity>Info</Severity>
             <Dynamic>c:/lscc/diamond/3.14/bin/nt64/zen68060firmware/zenpll.v(8): </Dynamic>
             <Dynamic>ZenPLL</Dynamic>
             <Navigation>c:/lscc/diamond/3.14/bin/nt64/zen68060firmware/zenpll.v</Navigation>
@@ -51,39 +59,77 @@
             <ID>35901018</ID>
             <Severity>Info</Severity>
             <Dynamic>C:/lscc/diamond/3.14/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(1730): </Dynamic>
-            <Dynamic>EHXPLLJ(CLKOS3_DIV=1,CLKOS3_ENABLE=&quot;DISABLED&quot;,CLKOP_CPHASE=7,CLKOS_CPHASE=8,CLKOS2_CPHASE=7,DPHASE_SOURCE=&quot;ENABLED&quot;,PLLRST_ENA=&quot;ENABLED&quot;)</Dynamic>
+            <Dynamic>EHXPLLJ(CLKOS3_DIV=1,CLKOP_CPHASE=7,CLKOS_CPHASE=8,CLKOS2_CPHASE=7,DPHASE_SOURCE=&quot;ENABLED&quot;,PLLRST_ENA=&quot;ENABLED&quot;)</Dynamic>
             <Navigation>C:/lscc/diamond/3.14/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v</Navigation>
             <Navigation>1730</Navigation>
         </Message>
         <Message>
             <ID>35901330</ID>
             <Severity>Warning</Severity>
-            <Dynamic>c:/lscc/diamond/3.14/bin/nt64/zen68060firmware/zen68060machmainlogic.v(52): </Dynamic>
+            <Dynamic>c:/lscc/diamond/3.14/bin/nt64/zen68060firmware/zenclockpll.v(16): </Dynamic>
             <Dynamic>3</Dynamic>
             <Dynamic>2</Dynamic>
             <Dynamic>PHASESEL</Dynamic>
-            <Navigation>c:/lscc/diamond/3.14/bin/nt64/zen68060firmware/zen68060machmainlogic.v</Navigation>
-            <Navigation>52</Navigation>
+            <Navigation>c:/lscc/diamond/3.14/bin/nt64/zen68060firmware/zenclockpll.v</Navigation>
+            <Navigation>16</Navigation>
         </Message>
         <Message>
             <ID>35901209</ID>
             <Severity>Warning</Severity>
-            <Dynamic>c:/lscc/diamond/3.14/bin/nt64/zen68060firmware/zen68060machmainlogic.v(76): </Dynamic>
+            <Dynamic>c:/lscc/diamond/3.14/bin/nt64/zen68060firmware/zenclockpll.v(39): </Dynamic>
             <Dynamic>32</Dynamic>
             <Dynamic>6</Dynamic>
+            <Navigation>c:/lscc/diamond/3.14/bin/nt64/zen68060firmware/zenclockpll.v</Navigation>
+            <Navigation>39</Navigation>
+        </Message>
+        <Message>
+            <ID>35901018</ID>
+            <Severity>Info</Severity>
+            <Dynamic>c:/lscc/diamond/3.14/bin/nt64/zen68060firmware/zenpulsegen.v(1): </Dynamic>
+            <Dynamic>pulse_2point5ns</Dynamic>
+            <Navigation>c:/lscc/diamond/3.14/bin/nt64/zen68060firmware/zenpulsegen.v</Navigation>
+            <Navigation>1</Navigation>
+        </Message>
+        <Message>
+            <ID>35901330</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>c:/lscc/diamond/3.14/bin/nt64/zen68060firmware/zen68060machmainlogic.v(97): </Dynamic>
+            <Dynamic>3</Dynamic>
+            <Dynamic>4</Dynamic>
+            <Dynamic>pulseCount</Dynamic>
             <Navigation>c:/lscc/diamond/3.14/bin/nt64/zen68060firmware/zen68060machmainlogic.v</Navigation>
-            <Navigation>76</Navigation>
+            <Navigation>97</Navigation>
+        </Message>
+        <Message>
+            <ID>35002005</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>RW_IN</Dynamic>
+        </Message>
+        <Message>
+            <ID>35002005</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>RW_OUT</Dynamic>
         </Message>
         <Message>
             <ID>35001747</ID>
             <Severity>Warning</Severity>
             <Dynamic>1</Dynamic>
-            <Dynamic>PHASE_SEL_PLL__0</Dynamic>
+            <Dynamic>\u_pll/PHASE_SEL_PLL__0</Dynamic>
+        </Message>
+        <Message>
+            <ID>35002005</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>RW_IN</Dynamic>
+        </Message>
+        <Message>
+            <ID>35002005</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>RW_OUT</Dynamic>
         </Message>
         <Message>
             <ID>35001779</ID>
             <Severity>Warning</Severity>
-            <Dynamic>phase_count_i0</Dynamic>
+            <Dynamic>\u_pll/phase_count_i0</Dynamic>
         </Message>
         <Message>
             <ID>35001611</ID>
@@ -106,6 +152,10 @@
             <Dynamic>CLKOS2</Dynamic>
             <Dynamic>primary</Dynamic>
             <Dynamic>clock</Dynamic>
+        </Message>
+        <Message>
+            <ID>61091062</ID>
+            <Severity>Warning</Severity>
         </Message>
     </Task>
     <Task name="TimingSimFileVlg">

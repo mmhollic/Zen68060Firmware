@@ -14,7 +14,7 @@ Performance Grade:      6
 PACKAGE:          TQFP144
 Package Status:                     Final          Version 1.39
 
-Sun Aug 30 13:42:25 2026
+Mon Aug 31 11:41:02 2026
 
 Pinout by Port Name:
 +-----------+----------+--------------+-------+-----------+-----------+--------------------------------------+
@@ -29,7 +29,7 @@ Pinout by Port Name:
 | A[29]     | 99/1     | LVCMOS33_IN  | PR5B  |           |           | PULL:DOWN CLAMP:ON HYSTERESIS:SMALL  |
 | A[30]     | 100/1    | LVCMOS33_IN  | PR5A  |           |           | PULL:DOWN CLAMP:ON HYSTERESIS:SMALL  |
 | A[31]     | 103/1    | LVCMOS33_IN  | PR4C  |           |           | PULL:DOWN CLAMP:ON HYSTERESIS:SMALL  |
-| CLK       | 128/0    | LVCMOS33_IN  | PT18A |           |           | PULL:DOWN CLAMP:ON HYSTERESIS:SMALL  |
+| CLK       | 92/1     | LVCMOS33_IN  | PR12A |           |           | PULL:DOWN CLAMP:ON HYSTERESIS:SMALL  |
 | LOCK_PLL  | 77/1     | LVCMOS33_OUT | PR21B |           |           | DRIVE:8mA PULL:DOWN SLEW:FAST        |
 | RAM_CS_N  | 104/1    | LVCMOS33_OUT | PR3B  |           |           | DRIVE:8mA PULL:DOWN SLEW:FAST        |
 | RAM_OE_N  | 94/1     | LVCMOS33_OUT | PR11A |           |           | DRIVE:8mA PULL:DOWN SLEW:FAST        |
@@ -136,7 +136,7 @@ Vccio by Bank:
 | 87/1     | A[24]                 | LOCATED    | LVCMOS33_IN  | PR15B |                |           |           |
 | 89/1     | A[25]                 | LOCATED    | LVCMOS33_IN  | PR15A |                |           |           |
 | 91/1     | A[26]                 | LOCATED    | LVCMOS33_IN  | PR12B | PCLKC1_0/DQ0   |           |           |
-| 92/1     |     unused, PULL:DOWN |            |              | PR12A | PCLKT1_0/DQ0   |           |           |
+| 92/1     | CLK                   | LOCATED    | LVCMOS33_IN  | PR12A | PCLKT1_0/DQ0   |           |           |
 | 93/1     |     unused, PULL:DOWN |            |              | PR11B | DQS0N          |           |           |
 | 94/1     | RAM_OE_N              | LOCATED    | LVCMOS33_OUT | PR11A | DQS0           |           |           |
 | 95/1     | TA_N                  | LOCATED    | LVCMOS33_OUT | PR9B  | DQ0            |           |           |
@@ -165,7 +165,7 @@ Vccio by Bank:
 | 125/0    |     unused, PULL:DOWN |            |              | PT22D | SDA/PCLKC0_0   |           |           |
 | 126/0    |     unused, PULL:DOWN |            |              | PT22C | SCL/PCLKT0_0   |           |           |
 | 127/0    |     unused, PULL:DOWN |            |              | PT18B | PCLKC0_1       |           |           |
-| 128/0    | CLK                   | LOCATED    | LVCMOS33_IN  | PT18A | PCLKT0_1       |           |           |
+| 128/0    |     unused, PULL:DOWN |            |              | PT18A | PCLKT0_1       |           |           |
 | 130/0    | Reserved: sysCONFIG   |            |              | PT17D | TMS            |           |           |
 | 131/0    | Reserved: sysCONFIG   |            |              | PT17C | TCK            |           |           |
 | 132/0    |     unused, PULL:DOWN |            |              | PT15B |                |           |           |
@@ -426,7 +426,7 @@ LOCATE  COMP  "A[28]"  SITE  "98";
 LOCATE  COMP  "A[29]"  SITE  "99";
 LOCATE  COMP  "A[30]"  SITE  "100";
 LOCATE  COMP  "A[31]"  SITE  "103";
-LOCATE  COMP  "CLK"  SITE  "128";
+LOCATE  COMP  "CLK"  SITE  "92";
 LOCATE  COMP  "LOCK_PLL"  SITE  "77";
 LOCATE  COMP  "RAM_CS_N"  SITE  "104";
 LOCATE  COMP  "RAM_OE_N"  SITE  "94";
@@ -437,7 +437,7 @@ LOCATE  COMP  "TA_N"  SITE  "95";
 LOCATE  COMP  "TS_N"  SITE  "96";
 
 #PLL
-LOCATE  COMP  "u_ZenPLL/PLLInst_0"  SITE  "LPLL" ;
+LOCATE  COMP  "u_pll/u_ZenPLL/PLLInst_0"  SITE  "RPLL" ;
 
 
 
@@ -448,7 +448,7 @@ Copyright (c) 1995 AT&T Corp.   All rights reserved.
 Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
 Copyright (c) 2001 Agere Systems   All rights reserved.
 Copyright (c) 2002-2024 Lattice Semiconductor Corporation,  All rights reserved.
-Sun Aug 30 13:42:25 2026
+Mon Aug 31 11:41:02 2026
 
 
 

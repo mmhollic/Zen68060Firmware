@@ -34,6 +34,8 @@
 -p "C:/lscc/diamond/3.14/bin/nt64/Zen68060Firmware"
 -ver "C:/lscc/diamond/3.14/bin/nt64/Zen68060Firmware/Zen68060MachMainLogic.v"
 "C:/lscc/diamond/3.14/bin/nt64/Zen68060Firmware/ZenPLL.v"
+"C:/lscc/diamond/3.14/bin/nt64/Zen68060Firmware/ZenClockPLL.v"
+"C:/lscc/diamond/3.14/bin/nt64/Zen68060Firmware/ZenPulseGen.v"
 -top mainLogic
 
 

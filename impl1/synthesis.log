@@ -5,7 +5,7 @@ Copyright (c) 1995 AT&T Corp.   All rights reserved.
 Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
 Copyright (c) 2001 Agere Systems   All rights reserved.
 Copyright (c) 2002-2024 Lattice Semiconductor Corporation,  All rights reserved.
-Sun Aug 30 13:42:10 2026
+Mon Aug 31 11:40:49 2026
 
 
 Command Line:  synthesis -f Zen68060Firmware_impl1_lattice.synproj -gui 
@@ -67,6 +67,8 @@ The -syn option is FALSE.
 -p C:/lscc/diamond/3.14/bin/nt64/Zen68060Firmware (searchpath added)
 Verilog design file = C:/lscc/diamond/3.14/bin/nt64/Zen68060Firmware/Zen68060MachMainLogic.v
 Verilog design file = C:/lscc/diamond/3.14/bin/nt64/Zen68060Firmware/ZenPLL.v
+Verilog design file = C:/lscc/diamond/3.14/bin/nt64/Zen68060Firmware/ZenClockPLL.v
+Verilog design file = C:/lscc/diamond/3.14/bin/nt64/Zen68060Firmware/ZenPulseGen.v
 NGD file = Zen68060Firmware_impl1.ngd
 -sdc option: SDC file input not used.
 -lpf option: Output file option is ON.
@@ -79,14 +81,19 @@ Compile design.
 Compile Design Begin
 Analyzing Verilog file c:/lscc/diamond/3.14/bin/nt64/zen68060firmware/zen68060machmainlogic.v. VERI-1482
 Analyzing Verilog file c:/lscc/diamond/3.14/bin/nt64/zen68060firmware/zenpll.v. VERI-1482
+Analyzing Verilog file c:/lscc/diamond/3.14/bin/nt64/zen68060firmware/zenclockpll.v. VERI-1482
+Analyzing Verilog file c:/lscc/diamond/3.14/bin/nt64/zen68060firmware/zenpulsegen.v. VERI-1482
 Analyzing Verilog file C:/lscc/diamond/3.14/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v. VERI-1482
 Top module name (Verilog): mainLogic
 INFO - synthesis: c:/lscc/diamond/3.14/bin/nt64/zen68060firmware/zen68060machmainlogic.v(13): compiling module mainLogic. VERI-1018
+INFO - synthesis: c:/lscc/diamond/3.14/bin/nt64/zen68060firmware/zenclockpll.v(1): compiling module ZenClockPLL. VERI-1018
 INFO - synthesis: c:/lscc/diamond/3.14/bin/nt64/zen68060firmware/zenpll.v(8): compiling module ZenPLL. VERI-1018
 INFO - synthesis: C:/lscc/diamond/3.14/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(1124): compiling module VLO. VERI-1018
-INFO - synthesis: C:/lscc/diamond/3.14/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(1730): compiling module EHXPLLJ(CLKOS3_DIV=1,CLKOS3_ENABLE="DISABLED",CLKOP_CPHASE=7,CLKOS_CPHASE=8,CLKOS2_CPHASE=7,DPHASE_SOURCE="ENABLED",PLLRST_ENA="ENABLED"). VERI-1018
-WARNING - synthesis: c:/lscc/diamond/3.14/bin/nt64/zen68060firmware/zen68060machmainlogic.v(52): actual bit length 3 differs from formal bit length 2 for port PHASESEL. VERI-1330
-WARNING - synthesis: c:/lscc/diamond/3.14/bin/nt64/zen68060firmware/zen68060machmainlogic.v(76): expression size 32 truncated to fit in target size 6. VERI-1209
+INFO - synthesis: C:/lscc/diamond/3.14/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(1730): compiling module EHXPLLJ(CLKOS3_DIV=1,CLKOP_CPHASE=7,CLKOS_CPHASE=8,CLKOS2_CPHASE=7,DPHASE_SOURCE="ENABLED",PLLRST_ENA="ENABLED"). VERI-1018
+WARNING - synthesis: c:/lscc/diamond/3.14/bin/nt64/zen68060firmware/zenclockpll.v(16): actual bit length 3 differs from formal bit length 2 for port PHASESEL. VERI-1330
+WARNING - synthesis: c:/lscc/diamond/3.14/bin/nt64/zen68060firmware/zenclockpll.v(39): expression size 32 truncated to fit in target size 6. VERI-1209
+INFO - synthesis: c:/lscc/diamond/3.14/bin/nt64/zen68060firmware/zenpulsegen.v(1): compiling module pulse_2point5ns. VERI-1018
+WARNING - synthesis: c:/lscc/diamond/3.14/bin/nt64/zen68060firmware/zen68060machmainlogic.v(97): actual bit length 3 differs from formal bit length 4 for port pulseCount. VERI-1330
 Loading NGL library 'C:/lscc/diamond/3.14/ispfpga/xo2c00a/data/xo2alib.ngl'...
 Loading NGL library 'C:/lscc/diamond/3.14/ispfpga/xo2c00/data/xo2clib.ngl'...
 Loading NGL library 'C:/lscc/diamond/3.14/ispfpga/mg5g00/data/mg5glib.ngl'...
@@ -94,12 +101,16 @@ Loading NGL library 'C:/lscc/diamond/3.14/ispfpga/or5g00/data/orc5glib.ngl'...
 Loading device for application map from file 'xo2c7000.nph' in environment: C:/lscc/diamond/3.14/ispfpga.
 Package Status:                     Final          Version 1.39.
 Top-level module name = mainLogic.
+WARNING - synthesis: I/O Port RW_IN 's net has no driver and is unused.
+WARNING - synthesis: I/O Port RW_OUT 's net has no driver and is unused.
 
 
 
-WARNING - synthesis: Bit 1 of Register PHASE_SEL_PLL__0 is stuck at Zero
+WARNING - synthesis: Bit 1 of Register \u_pll/PHASE_SEL_PLL__0 is stuck at Zero
+WARNING - synthesis: I/O Port RW_IN 's net has no driver and is unused.
+WARNING - synthesis: I/O Port RW_OUT 's net has no driver and is unused.
 GSR will not be inferred because no asynchronous signal was found in the netlist.
-WARNING - synthesis: Initial value found on instance phase_count_i0 will be ignored.
+WARNING - synthesis: Initial value found on instance \u_pll/phase_count_i0 will be ignored.
 Applying 200.000000 MHz constraint to all clocks
 
 WARNING - synthesis: No user .sdc file.
@@ -112,15 +123,17 @@ All blocks are expanded and NGD expansion is successful.
 Writing NGD file Zen68060Firmware_impl1.ngd.
 
 ################### Begin Area Report (mainLogic)######################
-Number of register bits => 11 of 7209 (0 % )
+Number of register bits => 16 of 7209 (0 % )
 CCU2D => 4
 EHXPLLJ => 1
 FD1P3AX => 3
-FD1P3IX => 2
-FD1S3IX => 6
+FD1P3IX => 4
+FD1P3JX => 1
+FD1S3IX => 7
+FD1S3JX => 1
 GSR => 1
 IB => 13
-LUT4 => 23
+LUT4 => 26
 OB => 5
 ################### End Area Report ##################
 
@@ -130,30 +143,33 @@ TSALL => 1
 
 ################### Begin Clock Report ######################
 Clock Nets
-Number of Clocks: 3
+Number of Clocks: 4
   Net : CLK_c, loads : 12
-  Net : u_ZenPLL/CLKOS, loads : 2
-  Net : u_ZenPLL/CLKOS2, loads : 2
+  Net : u_pll/u_ZenPLL/CLKOS3, loads : 5
+  Net : u_pll/u_ZenPLL/CLKOS, loads : 1
+  Net : u_pll/u_ZenPLL/CLKOS2, loads : 1
 Clock Enable Nets
-Number of Clock Enables: 5
-Top 5 highest fanout Clock Enables:
+Number of Clock Enables: 7
+Top 7 highest fanout Clock Enables:
+  Net : pulse12point5/PULSE_N_68, loads : 5
+  Net : int_RAM_CS_ADDR_N_4, loads : 2
+  Net : pulse12point5/CLKOS3_enable_1, loads : 1
+  Net : u_pll/CLK_c_enable_1, loads : 1
+  Net : u_pll/CLK_c_enable_2, loads : 1
   Net : CLK_c_enable_3, loads : 1
-  Net : CLK_c_enable_1, loads : 1
-  Net : int_TA_SRAM_RD_N_27, loads : 1
-  Net : CLK_c_enable_2, loads : 1
-  Net : int_TA_SRAM_WR_N_23, loads : 1
+  Net : u_pll/CLK_c_enable_4, loads : 1
 Highest fanout non-clock nets
 Top 10 highest fanout non-clock nets:
   Net : RESET_PLL_c, loads : 12
-  Net : phase_count_5, loads : 6
-  Net : phase_count_4, loads : 6
-  Net : phase_count_3, loads : 6
-  Net : phase_count_2, loads : 5
-  Net : u_ZenPLL/LOCK_PLL_c, loads : 4
-  Net : phase_done, loads : 4
-  Net : phase_count_0, loads : 4
-  Net : RW_OUT_c_c, loads : 3
-  Net : phase_count_1, loads : 3
+  Net : pulse12point5/count_0, loads : 5
+  Net : pulse12point5/PULSE_N_68, loads : 5
+  Net : pulse12point5/n421, loads : 5
+  Net : pulse12point5/count_1, loads : 4
+  Net : pulse12point5/int_RAM_CS, loads : 4
+  Net : u_pll/phase_done, loads : 4
+  Net : u_pll/PHASESTEP_PLL_N_36, loads : 4
+  Net : u_pll/phase_count_2, loads : 4
+  Net : u_pll/phase_count_1, loads : 4
 ################### End Clock Report ##################
 
 Timing Report Summary
@@ -163,16 +179,19 @@ Constraint                              |   Constraint|       Actual|Levels
 --------------------------------------------------------------------------------
                                         |             |             |
 create_clock -period 5.000000 -name     |             |             |
-clk0 [get_nets CLK_c]                   |  200.000 MHz|  162.022 MHz|     5 *
+clk1 [get_nets CLK_c]                   |  200.000 MHz|  199.920 MHz|     4 *
+                                        |             |             |
+create_clock -period 5.000000 -name     |             |             |
+clk0 [get_nets CLKOS3]                  |  200.000 MHz|  194.212 MHz|     4 *
                                         |             |             |
 --------------------------------------------------------------------------------
 
 
-1 constraints not met.
+2 constraints not met.
 
 
-Peak Memory Usage: 61.945  MB
+Peak Memory Usage: 61.902  MB
 
 --------------------------------------------------------------
-Elapsed CPU time for LSE flow : 0.484  secs
+Elapsed CPU time for LSE flow : 0.469  secs
 --------------------------------------------------------------

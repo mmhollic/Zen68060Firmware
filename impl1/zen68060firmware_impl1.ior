@@ -11,7 +11,7 @@ Performance Hardware Data Status:   Final          Version 36.4.
 // Package: TQFP144
 // ncd File: zen68060firmware_impl1.ncd
 // Version: Diamond (64-bit) 3.14.0.75.2
-// Written on Sun Aug 30 13:42:31 2026
+// Written on Mon Aug 31 11:41:06 2026
 // M: Minimum Performance Grade
 // iotiming Zen68060Firmware_impl1.ncd Zen68060Firmware_impl1.prf -gui
 
@@ -23,24 +23,23 @@ Worst Case Results across Performance Grades (M, 6):
 
 Port      Clock Edge  Setup Performance_Grade  Hold Performance_Grade
 ----------------------------------------------------------------------
-A[23]     CLK   R     2.627      6      -0.416     M
-A[24]     CLK   R     2.390      6      -0.295     M
-A[25]     CLK   R     3.341      6      -0.579     M
-A[26]     CLK   R     3.742      6      -0.688     M
-A[27]     CLK   R     3.371      6      -0.582     M
-A[28]     CLK   R     3.039      6      -0.450     M
-A[29]     CLK   R     3.130      6      -0.460     M
-A[30]     CLK   R     3.085      6      -0.486     M
-A[31]     CLK   R     3.176      6      -0.496     M
-RESET_PLL CLK   R     2.968      6      -0.149     M
-RW_IN     CLK   R     2.430      6      -0.425     M
-TS_N      CLK   R     1.172      6       0.345     6
+A[23]     CLK   R     2.994      6      -0.296     M
+A[24]     CLK   R     2.970      6      -0.284     M
+A[25]     CLK   R     3.470      6      -0.417     M
+A[26]     CLK   R     3.871      6      -0.526     M
+A[27]     CLK   R     3.925      6      -0.494     M
+A[28]     CLK   R     3.430      6      -0.372     M
+A[29]     CLK   R     3.408      6      -0.352     M
+A[30]     CLK   R     3.639      6      -0.398     M
+A[31]     CLK   R     3.730      6      -0.408     M
+RESET_PLL CLK   R     3.473      6      -0.038     M
+TS_N      CLK   R     1.826      6       0.192     6
 
 
 // Clock to Output Delay
 
 Port     Clock Edge  Max_Delay Performance_Grade  Min_Delay Performance_Grade
 ------------------------------------------------------------------------
-RAM_CS_N CLK   R     9.261         6        3.004          M
-TA_N     CLK   R     8.502         6        2.847          M
+RAM_CS_N CLK   R    10.903         6        3.713          M
+TA_N     CLK   R     8.687         6        2.921          M
 WARNING: you must also run trce with hold speed: 6

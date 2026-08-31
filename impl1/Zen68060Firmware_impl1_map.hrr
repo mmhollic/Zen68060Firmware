@@ -3,16 +3,37 @@ Report for cell mainLogic
    Instance path: mainLogic
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  SLIC	      16.00        100.0
-                                  LUT4	      24.00        100.0
+                                  SLIC	      18.00        100.0
+                                  LUT4	      27.00        100.0
                                  IOBUF	         18        100.0
-                                PFUREG	         11        100.0
+                                PFUREG	         16        100.0
+                                RIPPLE	          4        100.0
+SUB MODULES
+                                  cell	      count    SLC Usage(%)
+                       pulse_2point5ns	          1        27.8
+                           ZenClockPLL	          1        50.0
+---------------------------------------------------
+Report for cell pulse_2point5ns
+   Instance path: mainLogic/pulse12point5
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       5.00        27.8
+                                  LUT4	       9.00        33.3
+                                PFUREG	          5        31.3
+---------------------------------------------------
+Report for cell ZenClockPLL
+   Instance path: mainLogic/u_pll
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       9.00        50.0
+                                  LUT4	       9.00        33.3
+                                PFUREG	          9        56.3
                                 RIPPLE	          4        100.0
 SUB MODULES
                                   cell	      count    SLC Usage(%)
                                 ZenPLL	          1         0.0
 ---------------------------------------------------
 Report for cell ZenPLL
-   Instance path: mainLogic/u_ZenPLL
+   Instance path: mainLogic/u_pll/u_ZenPLL
                      Cell usage:
                                   cell	      count    Res Usage(%)

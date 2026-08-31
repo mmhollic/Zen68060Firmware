@@ -23,16 +23,14 @@ module mainLogic
 	output wire LOCK_PLL,
 	output wire TA_N
 );
-	reg int_TA_SRAM_WR; 	// TA due to an SRAM write
-	reg int_TA_SRAM_RD; 	// TA due to an SRAM read
-	assign TA_N = !(int_TA_SRAM_WR|int_TA_SRAM_RD);
+	reg int_TA_SRAM; 	// TA due to an SRAM write
+	assign TA_N = !int_TA_SRAM;
 	
 	wire int_RAM_CS_ADDR;		// SRAM selected from address lines
-	wire int_RAM_CS_WR;	// SRAM CS due to a write	
-	wire int_RAM_CS_RD;	// SRAM CS due to a read
-	assign RAM_CS_N = !((int_RAM_CS_WR|int_RAM_CS_RD)&int_RAM_CS_ADDR);
-	//assign RAM_OE_N = !((int_RAM_CS_RD|int_RAM_CS_ADDR)&!TA_N);	// That means that if the address changes through valid valus accidentally, it won't assert CS			
+	wire int_RAM_CS;	// SRAM CS due to a write	
+	assign RAM_CS_N = !int_RAM_CS;
 	
+	//assign RAM_OE_N = !((int_RAM_CS|int_RAM_CS_ADDR)&!TA_N);	// That means that if the address changes through valid valus accidentally, it won't assert CS			
 	
 	wire TS;
 	assign TS = !TS_N;
@@ -41,73 +39,20 @@ module mainLogic
 ////////////////////////////////// SRAM section ///////////////////////////////////////
 
 	
-	wire CLKOP;
 	wire CLKOS;
 	wire CLKOS2;
-	wire dphsrc;
-	reg  PHASESTEP_PLL  = 0;
-	reg [2:0] PHASE_SEL_PLL = 0;
-	ZenPLL u_ZenPLL(
-		.CLKI(CLK),
-		.PHASESEL(PHASE_SEL_PLL), 
-		.PHASEDIR(1'b1), 
-		.PHASESTEP(PHASESTEP_PLL),
-		.RST(RESET_PLL),
-		.CLKOP(CLKOP),
-		.CLKOS(CLKOS),
-		.CLKOS2(CLKOS2),
-		.LOCK(LOCK_PLL),
-		.DPHSRC(dphsrc)
+	wire CLKOS3;
+	
+	ZenClockPLL u_pll(
+		.CLK (CLK),
+		.RESET_PLL (RESET_PLL),
+		.LOCK_PLL (LOCK_PLL),
+		.CLKOS (CLKOS),
+		.CLKOS2 (CLKOS2),
+		.CLKOS3 (CLKOS3)
 	);
 	assign C2WINDOW = CLKOS|CLKOS2;
-	assign RAM_OE_N = C2WINDOW;
-	
-	reg phase_done  = 0;
-	reg [5:0] phase_count = 1'b1;
-	always @(posedge CLK)
-	begin
-		if (RESET_PLL) begin
-			phase_count <= 0;
-			PHASESTEP_PLL  <= 0;
-			phase_done  <= 0;
-		end
-		else if (LOCK_PLL && !phase_done) begin
-			begin
-				phase_count<=phase_count+1;
-				case(phase_count)
-					1, 3,5,7,9,11: begin	// Adjusts trailing edge
-						PHASE_SEL_PLL <= 2'b00;
-						PHASESTEP_PLL <= 1'b1;
-					end
-					0, 2,4,6,8,10: begin
-						PHASE_SEL_PLL <= 2'b00;
-						PHASESTEP_PLL <= 1'b0;
-					end
-					13,15,17,19,21,23: begin // Adjusts leading edge
-						PHASE_SEL_PLL <= 2'b01;
-						PHASESTEP_PLL <= 1'b1;
-					end
-					12,14,16,18,20,22,24: begin
-						PHASE_SEL_PLL <= 2'b01;
-						PHASESTEP_PLL <= 1'b0;
-					end
-					default: begin
-						phase_done <= 1'b1;
-					end
-				endcase
-			end
-		end
-	end
-			
-			
-			
-				
-	
-	
-	
-	
-	
-	
+	assign RAM_OE_N = C2WINDOW;		
 	
 	// Generate SRAM CS
 
@@ -132,16 +77,26 @@ module mainLogic
         | A[29]
         | A[30];
 
-
     assign int_RAM_CS_ADDR =!(group1|group2| A[31]);
 		
-
+	wire twelvepoint5pulse;
+	wire TRIGGER;
+	reg TRIGGER_REG;
+	assign TRIGGER = TRIGGER_REG;
 	// Generate SRAM TA
 	initial 
 	begin
-		int_TA_SRAM_WR = 1'b0; 	// TA due to an SRAM write
-		int_TA_SRAM_RD = 1'b0; 	// TA due to an SRAM read
+		int_TA_SRAM = 1'b0; 	// TA due to an SRAM write
+		TRIGGER_REG = 1'b0;
 	end
+
+	
+	pulse_2point5ns pulse12point5(
+		.CLK400(CLKOS3),
+		.TRIGGER(TRIGGER),
+		.pulseCount(3'b100),
+		.PULSE(twelvepoint5pulse)
+	);
 
 
 	// Generate TA for SRam single read
@@ -149,26 +104,22 @@ module mainLogic
 	// De-assert TA on the next CLK edge	
     always @(posedge CLK)
     begin
-		if(RW_IN&int_RAM_CS_ADDR)
+		if(int_RAM_CS_ADDR)
 		begin
-			if (int_TA_SRAM_RD) int_TA_SRAM_RD<=1'b0;	// De-assert TA at end of C2
-			if (TS) int_TA_SRAM_RD<=1'b1;				// Assert TA at end of C1
+			if (int_TA_SRAM) 
+			begin
+				int_TA_SRAM<=1'b0;	// De-assert TA at end of C2
+				TRIGGER_REG = 1'b0;
+			end
+			if (TS) 
+			begin 
+				int_TA_SRAM<=1'b1;				// Assert TA at end of C1
+				TRIGGER_REG = 1'b1;
+			end
 		end
     end
-	assign int_RAM_CS_RD = int_TA_SRAM_RD&C2WINDOW;		// AND TA with CLKOS to get CS that ends soon after end of C2
-	
-	// Generate TA for SRam single write
-    always @(posedge CLK)
-    begin
-		if(!RW_IN&int_RAM_CS_ADDR)
-		begin
-			if (int_TA_SRAM_WR) int_TA_SRAM_WR<=1'b0;
-			if (TS) int_TA_SRAM_WR<=1'b1;
-		end
-    end	
-	assign int_RAM_CS_WR = int_TA_SRAM_WR&C2WINDOW;
-	
-	
+	assign int_RAM_CS = twelvepoint5pulse;//int_TA_SRAM&C2WINDOW;		// AND TA with CLKOS to get CS that ends soon after end of C2
+
 	
 
 

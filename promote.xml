@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<userSetting name="C:/lscc/diamond/3.14/bin/nt64/Zen68060Firmware/promote.xml" version="Diamond (64-bit) 3.14.0.75.2" date="Mon Aug 31 11:45:59 2026" vendor="Lattice Semiconductor Corporation" >
+  <msg mid="35901010" type="Error" />
+  <msg mid="35901325" type="Error" />
+  <msg mid="35901209" type="Warning" />
+  <msg mid="35901138" type="Error" />
+</userSetting>
