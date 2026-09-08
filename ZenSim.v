@@ -1,33 +1,28 @@
 `timescale 1ns/1ps
 
 module mainLogic_tb;
-
     reg         CLK;
     reg  [31:23] A;
     reg         TS_N;
     reg         RW_IN;
-
-	wire		RW_OUT;
+	wire 		TA_N;
     wire        RAM_CS_N;
-    wire        RAM_OE_N;
-	reg 		RESET_PLL;
-	wire		LOCK_PLL;
-	wire		TA_N;
+	reg RST;
+	wire LOCK;
+
 
 
     // Instantiate real design
-    mainLogic dut (
+    ZenMainLogic dut (
+		.LOCK	  (LOCK),
+		.RST      (RST),
         .A        (A),
         .CLK      (CLK),
         .TS_N     (TS_N),
         .RW_IN    (RW_IN),
-		.RW_OUT   (RW_OUT),
-        .RAM_CS_N (RAM_CS_N),
-        .RAM_OE_N (RAM_OE_N),
-		.RESET_PLL (RESET_PLL),
-		.LOCK_PLL	(LOCK_PLL),
-		.TA_N	(TA_N)
-		
+		.TA_N     (TA_N),
+        .RAM_CS_N (RAM_CS_N)
+        	
     );
 
 
@@ -47,10 +42,10 @@ module mainLogic_tb;
 
 
 		// Get the PLL going
-		RESET_PLL = 1'b1;
-		#2000;
-		RESET_PLL = 1'b0;
-		wait (LOCK_PLL == 1'b1);
+			RST = 1'b1;
+			#2000
+			RST = 1'b0;
+			wait (LOCK == 1'b1);
 				
 				
                 repeat (40) begin
@@ -73,17 +68,17 @@ module mainLogic_tb;
 			@(posedge CLK);					// C1	
 			#2;
 			A = 9'b000000000;				// De-assert SRAM address
-			#10.3;
+			#11.3;
 			TS_N = 1'b0;					// First assert TS
-			#1.2;
+			#0.2;
 			// Address inside RAM region:	// Assert SRAM address
 			// A[31:23] = 000010000
 			A = 9'b000010000;
 			RW_IN = 1'b0;
-			#8.5;							// C2
+			#9.5;							// C2
 			TS_N = 1'b1;					// De-assert TS	
 			@(posedge CLK);					// End of C2
-			#2;
+			#1;
 			
 		end
 
@@ -96,6 +91,8 @@ module mainLogic_tb;
     end
 
 endmodule
+
+
 
 
 

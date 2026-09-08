@@ -7,7 +7,7 @@
 </STYLE>
 </HEAD>
 <PRE><A name="Mrp"></A>
-          Lattice Mapping Report File for Design Module 'mainLogic'
+         Lattice Mapping Report File for Design Module 'ZenMainLogic'
 
 
 
@@ -18,28 +18,28 @@ Command line:   map -a MachXO2 -p LCMXO2-7000HC -t TQFP144 -s 6 -oc Commercial
      Zen68060Firmware_impl1.prf -mp Zen68060Firmware_impl1.mrp -lpf C:/lscc/diam
      ond/3.14/bin/nt64/Zen68060Firmware/impl1/Zen68060Firmware_impl1.lpf -lpf
      C:/lscc/diamond/3.14/bin/nt64/Zen68060Firmware/Zen68060Firmware.lpf -c 0
-     -gui 
+     -gui -msgset C:/lscc/diamond/3.14/bin/nt64/Zen68060Firmware/promote.xml 
 Target Vendor:  LATTICE
 Target Device:  LCMXO2-7000HCTQFP144
 Target Performance:   6
 Mapper:  xo2c00,  version:  Diamond (64-bit) 3.14.0.75.2
-Mapped on:  08/31/26  11:40:51
+Mapped on:  09/08/26  22:16:09
 
 
 <A name="mrp_ds"></A><B><U><big>Design Summary</big></U></B>
-   Number of registers:     16 out of  7209 (0%)
-      PFU registers:           16 out of  6864 (0%)
+   Number of registers:     22 out of  7209 (0%)
+      PFU registers:           22 out of  6864 (0%)
       PIO registers:            0 out of   345 (0%)
-   Number of SLICEs:        18 out of  3432 (1%)
-      SLICEs as Logic/ROM:     18 out of  3432 (1%)
+   Number of SLICEs:        14 out of  3432 (0%)
+      SLICEs as Logic/ROM:     14 out of  3432 (0%)
       SLICEs as RAM:            0 out of  2574 (0%)
-      SLICEs as Carry:          4 out of  3432 (0%)
-   Number of LUT4s:         35 out of  6864 (1%)
-      Number used as logic LUTs:         27
+      SLICEs as Carry:          0 out of  3432 (0%)
+   Number of LUT4s:          8 out of  6864 (0%)
+      Number used as logic LUTs:          8
       Number used as distributed RAM:     0
-      Number used as ripple logic:        8
+      Number used as ripple logic:        0
       Number used as shift registers:     0
-   Number of PIO sites used: 18 + 4(JTAG) out of 115 (19%)
+   Number of PIO sites used: 15 + 4(JTAG) out of 115 (17%)
    Number of block RAMs:  0 out of 26 (0%)
    Number of GSRs:        0 out of 1 (0%)
    EFB used :        No
@@ -65,38 +65,31 @@ Mapped on:  08/31/26  11:40:51
       2. Number of logic LUT4s does not include count of distributed RAM and
      ripple logic.
    Number of clocks:  2
-     Net CLKOS3: 5 loads, 5 rising, 0 falling (Driver: u_pll/u_ZenPLL/PLLInst_0
-     )
+     Net CLK_c: 3 loads, 3 rising, 0 falling (Driver: PIO CLK )
+     Net CLKOS: 12 loads, 10 rising, 2 falling (Driver: u_ZenPLL/PLLInst_0 )
 
-     Net CLK_c: 10 loads, 10 rising, 0 falling (Driver: PIO CLK )
-   Number of Clock Enables:  7
-     Net pulse12point5/PULSE_N_68: 2 loads, 2 LSLICEs
-     Net pulse12point5/CLKOS3_enable_1: 1 loads, 1 LSLICEs
-     Net u_pll/CLK_c_enable_4: 1 loads, 1 LSLICEs
-     Net u_pll/CLK_c_enable_1: 1 loads, 1 LSLICEs
-     Net u_pll/CLK_c_enable_2: 1 loads, 1 LSLICEs
-     Net CLK_c_enable_3: 1 loads, 1 LSLICEs
-     Net int_RAM_CS_ADDR_N_4: 1 loads, 1 LSLICEs
-   Number of LSRs:  2
-     Net pulse12point5/n421: 5 loads, 5 LSLICEs
-     Net RESET_PLL_c: 7 loads, 6 LSLICEs
+   Number of Clock Enables:  0
+   Number of LSRs:  3
+     Net u_SR_TA/shift_reg_7_N_26_0: 4 loads, 4 LSLICEs
+     Net u_SR_RAMS_CS/shift_reg_7_N_26_0: 4 loads, 4 LSLICEs
+     Net RST_c: 1 loads, 0 LSLICEs
    Number of nets driven by tri-state buffers:  0
    Top 10 highest fanout non-clock nets:
-     Net RESET_PLL_c: 10 loads
-     Net LOCK_PLL_c: 5 loads
-     Net pulse12point5/count_0: 5 loads
-     Net pulse12point5/n421: 5 loads
-     Net pulse12point5/PULSE_N_68: 5 loads
-     Net pulse12point5/count_1: 4 loads
-     Net pulse12point5/int_RAM_CS: 4 loads
-     Net u_pll/PHASESTEP_PLL_N_36: 4 loads
-     Net u_pll/phase_count_2: 4 loads
-     Net u_pll/phase_done: 4 loads
+     Net u_SR_RAMS_CS/shift_reg_7_N_26_0: 5 loads
+     Net u_SR_TA/shift_reg_7_N_26_0: 5 loads
+     Net A_c_25: 2 loads
+     Net A_c_30: 2 loads
+     Net int_RAM_CS_N: 2 loads
+     Net n17: 2 loads
+     Net n186: 2 loads
+     Net trigTA: 2 loads
+     Net n208: 1 loads
+     Net trigCS_keep_N_7: 1 loads
 
 
 
 
-   Number of warnings:  0
+   Number of warnings:  7
    Number of errors:    0
      
 
@@ -105,7 +98,34 @@ Mapped on:  08/31/26  11:40:51
 
 <A name="mrp_dwe"></A><B><U><big>Design Errors/Warnings</big></U></B>
 
-   No errors or warnings present.
+WARNING - map:
+     C:/lscc/diamond/3.14/bin/nt64/Zen68060Firmware/Zen68060Firmware.lpf(5):
+     Semantic error in "IOBUF PORT "RW_IN" IO_TYPE=LVCMOS33 ;": Port "RW_IN"
+     does not exist in the design. This preference has been disabled.
+WARNING - map:
+     C:/lscc/diamond/3.14/bin/nt64/Zen68060Firmware/Zen68060Firmware.lpf(8):
+     Semantic error in "IOBUF PORT "RAM_OE_N" IO_TYPE=LVCMOS33 SLEWRATE=FAST ;":
+     Port "RAM_OE_N" does not exist in the design. This preference has been
+     disabled.
+WARNING - map:
+     C:/lscc/diamond/3.14/bin/nt64/Zen68060Firmware/Zen68060Firmware.lpf(9):
+     Semantic error in "IOBUF PORT "RW_OUT" IO_TYPE=LVCMOS33 SLEWRATE=FAST ;":
+     Port "RW_OUT" does not exist in the design. This preference has been
+     disabled.
+WARNING - map:
+     C:/lscc/diamond/3.14/bin/nt64/Zen68060Firmware/Zen68060Firmware.lpf(14):
+     Semantic error in "LOCATE COMP "RAM_OE_N" SITE "94" ;": COMP "RAM_OE_N"
+     cannot be found in design. This preference has been disabled.
+WARNING - map:
+     C:/lscc/diamond/3.14/bin/nt64/Zen68060Firmware/Zen68060Firmware.lpf(15):
+     Semantic error in "LOCATE COMP "RW_OUT" SITE "73" ;": COMP "RW_OUT" cannot
+     be found in design. This preference has been disabled.
+WARNING - map: input pad net 'RW_IN' has no legal load.
+WARNING - map: IO buffer missing for top level port RW_IN...logic will be
+     discarded.
+
+
+
 
 
 
@@ -115,11 +135,7 @@ Mapped on:  08/31/26  11:40:51
 | IO Name             | Direction | Levelmode | IO         |
 |                     |           |  IO_TYPE  | Register   |
 +---------------------+-----------+-----------+------------+
-| RESET_PLL           | INPUT     | LVCMOS33  |            |
-+---------------------+-----------+-----------+------------+
 | A[29]               | INPUT     | LVCMOS33  |            |
-+---------------------+-----------+-----------+------------+
-| RW_IN               | INPUT     | LVCMOS33  |            |
 +---------------------+-----------+-----------+------------+
 | TS_N                | INPUT     | LVCMOS33  |            |
 +---------------------+-----------+-----------+------------+
@@ -127,42 +143,39 @@ Mapped on:  08/31/26  11:40:51
 +---------------------+-----------+-----------+------------+
 | A[23]               | INPUT     | LVCMOS33  |            |
 +---------------------+-----------+-----------+------------+
-
 | A[24]               | INPUT     | LVCMOS33  |            |
-+---------------------+-----------+-----------+------------+
-| A[28]               | INPUT     | LVCMOS33  |            |
 +---------------------+-----------+-----------+------------+
 | A[25]               | INPUT     | LVCMOS33  |            |
 +---------------------+-----------+-----------+------------+
+| A[26]               | INPUT     | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| A[27]               | INPUT     | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| A[28]               | INPUT     | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| RST                 | INPUT     | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
 | A[30]               | INPUT     | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| RAM_CS_N            | OUTPUT    | LVCMOS33  |            |
 +---------------------+-----------+-----------+------------+
 | A[31]               | INPUT     | LVCMOS33  |            |
 +---------------------+-----------+-----------+------------+
 | TA_N                | OUTPUT    | LVCMOS33  |            |
 +---------------------+-----------+-----------+------------+
-| LOCK_PLL            | OUTPUT    | LVCMOS33  |            |
-+---------------------+-----------+-----------+------------+
-| A[26]               | INPUT     | LVCMOS33  |            |
-+---------------------+-----------+-----------+------------+
-| RAM_OE_N            | OUTPUT    | LVCMOS33  |            |
-+---------------------+-----------+-----------+------------+
-| RAM_CS_N            | OUTPUT    | LVCMOS33  |            |
-+---------------------+-----------+-----------+------------+
-| RW_OUT              | OUTPUT    | LVCMOS33  |            |
-+---------------------+-----------+-----------+------------+
-| A[27]               | INPUT     | LVCMOS33  |            |
+| LOCK                | OUTPUT    | LVCMOS33  |            |
 +---------------------+-----------+-----------+------------+
 
 
 
 <A name="mrp_rm"></A><B><U><big>Removed logic</big></U></B>
 
+Block i2 undriven or does not drive anything - clipped.
 Block GSR_INST undriven or does not drive anything - clipped.
+Signal Clock_N_36 was merged into signal CLKOS
 Signal GND_net undriven or does not drive anything - clipped.
-Signal u_pll/add_53_1/S0 undriven or does not drive anything - clipped.
-Signal u_pll/add_53_1/CI undriven or does not drive anything - clipped.
-Signal u_pll/add_53_7/S1 undriven or does not drive anything - clipped.
-Signal u_pll/add_53_7/CO undriven or does not drive anything - clipped.
+Signal VCC_net undriven or does not drive anything - clipped.
+Block u_ZenPLL/i177 was optimized away.
 Block i1 was optimized away.
 
      
@@ -173,21 +186,21 @@ Block i1 was optimized away.
 ---------------
 
 PLL 1:                                     Pin/Node Value
-  PLL Instance Name:                                u_pll/u_ZenPLL/PLLInst_0
+  PLL Instance Name:                                u_ZenPLL/PLLInst_0
   PLL Type:                                         EHXPLLJ
   Input Clock:                             PIN      CLK_c
-  Output Clock(P):                         NODE     u_pll/u_ZenPLL/CLKOP
+
+  Output Clock(P):                         NODE     u_ZenPLL/CLKOP
   Output Clock(S):                         NODE     CLKOS
-  Output Clock(S2):                        NODE     CLKOS2
-  Output Clock(S3):                        NODE     CLKOS3
-  Feedback Signal:                         NODE     u_pll/u_ZenPLL/CLKOP
-  Reset Signal:                            PIN      RESET_PLL_c
+  Output Clock(S2):                                 NONE
+  Output Clock(S3):                                 NONE
+  Feedback Signal:                         NODE     u_ZenPLL/CLKOP
+  Reset Signal:                            PIN      RST_c
   M Divider Reset Signal:                           NONE
   C Divider Reset Signal:                           NONE
   D Divider Reset Signal:                           NONE
   Standby Signal:                                   NONE
-  PLL LOCK signal:                         PIN,NODE LOCK_PLL_c
-
+  PLL LOCK signal:                         PIN      LOCK_c
   PLL Data bus CLK Signal:                          NONE
   PLL Data bus Strobe Signal:                       NONE
   PLL Data bus Reset Signal:                        NONE
@@ -216,9 +229,9 @@ PLL 1:                                     Pin/Node Value
   PLL Data Out bus Data7:                           NONE
   Input Clock Frequency (MHz):                      50.0000
   Output Clock(P) Frequency (MHz):                  50.0000
-  Output Clock(S) Frequency (MHz):                  50.0000
-  Output Clock(S2) Frequency (MHz):                 50.0000
-  Output Clock(S3) Frequency (MHz):                 400.0000
+  Output Clock(S) Frequency (MHz):                  200.0000
+  Output Clock(S2) Frequency (MHz):                 NA
+  Output Clock(S3) Frequency (MHz):                 NA
   CLKOP Post Divider A Input:                       DIVA
   CLKOS Post Divider B Input:                       DIVB
   CLKOS2 Post Divider C Input:                      DIVC
@@ -233,18 +246,18 @@ PLL 1:                                     Pin/Node Value
   VCO Bypass D Input:                               VCO_PHASE
   FB_MODE:                                          CLKOP
   CLKI Divider:                                     1
+
   CLKFB Divider:                                    1
-  CLKOP Divider:                                    8
-  CLKOS Divider:                                    8
-  CLKOS2 Divider:                                   8
+  CLKOP Divider:                                    12
+  CLKOS Divider:                                    3
+  CLKOS2 Divider:                                   1
   CLKOS3 Divider:                                   1
   Fractional N Divider:                             0
   CLKOP Desired Phase Shift(degree):                0
   CLKOP Trim Option Rising/Falling:                 RISING
   CLKOP Trim Option Delay:                          0
-  CLKOS Desired Phase Shift(degree):                45
+  CLKOS Desired Phase Shift(degree):                90
   CLKOS Trim Option Rising/Falling:                 RISING
-
   CLKOS Trim Option Delay:                          0
   CLKOS2 Desired Phase Shift(degree):               0
   CLKOS3 Desired Phase Shift(degree):               0
@@ -254,7 +267,7 @@ PLL 1:                                     Pin/Node Value
 <A name="mrp_asic"></A><B><U><big>ASIC Components</big></U></B>
 ---------------
 
-Instance Name: u_pll/u_ZenPLL/PLLInst_0
+Instance Name: u_ZenPLL/PLLInst_0
          Type: EHXPLLJ
 
 
@@ -264,19 +277,8 @@ Instance Name: u_pll/u_ZenPLL/PLLInst_0
 
    Total CPU Time: 0 secs  
    Total REAL Time: 0 secs  
-   Peak Memory Usage: 61 MB
+   Peak Memory Usage: 62 MB
         
-
-
-
-
-
-
-
-
-
-
-
 
 
 

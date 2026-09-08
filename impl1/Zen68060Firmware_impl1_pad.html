@@ -14,7 +14,7 @@ Performance Grade:      6
 PACKAGE:          TQFP144
 Package Status:                     Final          Version 1.39
 
-Mon Aug 31 11:41:02 2026
+Tue Sep 08 22:16:15 2026
 
 Pinout by Port Name:
 +-----------+----------+--------------+-------+-----------+-----------+--------------------------------------+
@@ -30,12 +30,9 @@ Pinout by Port Name:
 | A[30]     | 100/1    | LVCMOS33_IN  | PR5A  |           |           | PULL:DOWN CLAMP:ON HYSTERESIS:SMALL  |
 | A[31]     | 103/1    | LVCMOS33_IN  | PR4C  |           |           | PULL:DOWN CLAMP:ON HYSTERESIS:SMALL  |
 | CLK       | 92/1     | LVCMOS33_IN  | PR12A |           |           | PULL:DOWN CLAMP:ON HYSTERESIS:SMALL  |
-| LOCK_PLL  | 77/1     | LVCMOS33_OUT | PR21B |           |           | DRIVE:8mA PULL:DOWN SLEW:FAST        |
+| LOCK      | 77/1     | LVCMOS33_OUT | PR21B |           |           | DRIVE:8mA PULL:DOWN SLEW:FAST        |
 | RAM_CS_N  | 104/1    | LVCMOS33_OUT | PR3B  |           |           | DRIVE:8mA PULL:DOWN SLEW:FAST        |
-| RAM_OE_N  | 94/1     | LVCMOS33_OUT | PR11A |           |           | DRIVE:8mA PULL:DOWN SLEW:FAST        |
-| RESET_PLL | 76/1     | LVCMOS33_IN  | PR23A |           |           | PULL:DOWN CLAMP:ON HYSTERESIS:SMALL  |
-| RW_IN     | 75/1     | LVCMOS33_IN  | PR23B |           |           | PULL:DOWN CLAMP:ON HYSTERESIS:SMALL  |
-| RW_OUT    | 73/1     | LVCMOS33_OUT | PR24B |           |           | DRIVE:8mA PULL:DOWN SLEW:FAST        |
+| RST       | 76/1     | LVCMOS33_IN  | PR23A |           |           | PULL:DOWN CLAMP:ON HYSTERESIS:SMALL  |
 | TA_N      | 95/1     | LVCMOS33_OUT | PR9B  |           |           | DRIVE:8mA PULL:DOWN SLEW:FAST        |
 | TS_N      | 96/1     | LVCMOS33_IN  | PR9A  |           |           | PULL:DOWN CLAMP:ON HYSTERESIS:SMALL  |
 +-----------+----------+--------------+-------+-----------+-----------+--------------------------------------+
@@ -121,11 +118,11 @@ Vccio by Bank:
 | 69/2     |     unused, PULL:DOWN |            |              | PB37B |                |           |           |
 | 70/2     |     unused, PULL:DOWN |            |              | PB38A | SN             |           |           |
 | 71/2     |     unused, PULL:DOWN |            |              | PB38B | SI/SISPI       |           |           |
-| 73/1     | RW_OUT                | LOCATED    | LVCMOS33_OUT | PR24B | DQ1            |           |           |
+| 73/1     |     unused, PULL:DOWN |            |              | PR24B | DQ1            |           |           |
 | 74/1     |     unused, PULL:DOWN |            |              | PR24A | DQ1            |           |           |
-| 75/1     | RW_IN                 | LOCATED    | LVCMOS33_IN  | PR23B | DQ1            |           |           |
-| 76/1     | RESET_PLL             | LOCATED    | LVCMOS33_IN  | PR23A | DQ1            |           |           |
-| 77/1     | LOCK_PLL              | LOCATED    | LVCMOS33_OUT | PR21B | DQ1            |           |           |
+| 75/1     |     unused, PULL:DOWN |            |              | PR23B | DQ1            |           |           |
+| 76/1     | RST                   | LOCATED    | LVCMOS33_IN  | PR23A | DQ1            |           |           |
+| 77/1     | LOCK                  | LOCATED    | LVCMOS33_OUT | PR21B | DQ1            |           |           |
 | 78/1     |     unused, PULL:DOWN |            |              | PR21A | DQ1            |           |           |
 | 81/1     |     unused, PULL:DOWN |            |              | PR18B | DQ1            |           |           |
 | 82/1     |     unused, PULL:DOWN |            |              | PR18A | DQ1            |           |           |
@@ -138,7 +135,7 @@ Vccio by Bank:
 | 91/1     | A[26]                 | LOCATED    | LVCMOS33_IN  | PR12B | PCLKC1_0/DQ0   |           |           |
 | 92/1     | CLK                   | LOCATED    | LVCMOS33_IN  | PR12A | PCLKT1_0/DQ0   |           |           |
 | 93/1     |     unused, PULL:DOWN |            |              | PR11B | DQS0N          |           |           |
-| 94/1     | RAM_OE_N              | LOCATED    | LVCMOS33_OUT | PR11A | DQS0           |           |           |
+| 94/1     |     unused, PULL:DOWN |            |              | PR11A | DQS0           |           |           |
 | 95/1     | TA_N                  | LOCATED    | LVCMOS33_OUT | PR9B  | DQ0            |           |           |
 | 96/1     | TS_N                  | LOCATED    | LVCMOS33_IN  | PR9A  | DQ0            |           |           |
 | 97/1     | A[27]                 | LOCATED    | LVCMOS33_IN  | PR7B  | DQ0            |           |           |
@@ -427,17 +424,14 @@ LOCATE  COMP  "A[29]"  SITE  "99";
 LOCATE  COMP  "A[30]"  SITE  "100";
 LOCATE  COMP  "A[31]"  SITE  "103";
 LOCATE  COMP  "CLK"  SITE  "92";
-LOCATE  COMP  "LOCK_PLL"  SITE  "77";
+LOCATE  COMP  "LOCK"  SITE  "77";
 LOCATE  COMP  "RAM_CS_N"  SITE  "104";
-LOCATE  COMP  "RAM_OE_N"  SITE  "94";
-LOCATE  COMP  "RESET_PLL"  SITE  "76";
-LOCATE  COMP  "RW_IN"  SITE  "75";
-LOCATE  COMP  "RW_OUT"  SITE  "73";
+LOCATE  COMP  "RST"  SITE  "76";
 LOCATE  COMP  "TA_N"  SITE  "95";
 LOCATE  COMP  "TS_N"  SITE  "96";
 
 #PLL
-LOCATE  COMP  "u_pll/u_ZenPLL/PLLInst_0"  SITE  "RPLL" ;
+LOCATE  COMP  "u_ZenPLL/PLLInst_0"  SITE  "RPLL" ;
 
 
 
@@ -448,7 +442,7 @@ Copyright (c) 1995 AT&T Corp.   All rights reserved.
 Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
 Copyright (c) 2001 Agere Systems   All rights reserved.
 Copyright (c) 2002-2024 Lattice Semiconductor Corporation,  All rights reserved.
-Mon Aug 31 11:41:02 2026
+Tue Sep 08 22:16:16 2026
 
 
 

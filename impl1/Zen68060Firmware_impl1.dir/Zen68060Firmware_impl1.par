@@ -4,11 +4,12 @@ Copyright (c) 1995 AT&T Corp.   All rights reserved.
 Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
 Copyright (c) 2001 Agere Systems   All rights reserved.
 Copyright (c) 2002-2024 Lattice Semiconductor Corporation,  All rights reserved.
-Mon Aug 31 11:40:59 2026
+Tue Sep 08 22:16:14 2026
 
 C:/lscc/diamond/3.14/ispfpga\bin\nt64\par -f Zen68060Firmware_impl1.p2t
 Zen68060Firmware_impl1_map.ncd Zen68060Firmware_impl1.dir
-Zen68060Firmware_impl1.prf -gui
+Zen68060Firmware_impl1.prf -gui -msgset
+C:/lscc/diamond/3.14/bin/nt64/Zen68060Firmware/promote.xml
 
 
 Preference file: Zen68060Firmware_impl1.prf.
@@ -16,11 +17,11 @@ Preference file: Zen68060Firmware_impl1.prf.
 Level/       Number       Worst        Timing       Worst        Timing       Run          NCD
 Cost [ncd]   Unrouted     Slack        Score        Slack(hold)  Score(hold)  Time         Status
 ----------   --------     -----        ------       -----------  -----------  ----         ------
-5_1   *      0            -1.028       6457         -6.000       12608        05           Completed
+5_1   *      0            -6.103       24662        0.304        0            03           Completed
 
 * : Design saved.
 
-Total (real) run time for 1-seed: 5 secs 
+Total (real) run time for 1-seed: 3 secs 
 
 par done!
 

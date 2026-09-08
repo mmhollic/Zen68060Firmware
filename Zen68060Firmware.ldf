@@ -6,9 +6,6 @@
         <Source name="Zen68060MachMainLogic.v" type="Verilog" type_short="Verilog">
             <Options top_module="mainLogic"/>
         </Source>
-        <Source name="ZenPLL.ipx" type="IPX_Module" type_short="IPX">
-            <Options/>
-        </Source>
         <Source name="ZenSim.v" type="Verilog" type_short="Verilog" syn_sim="SimOnly">
             <Options/>
         </Source>
@@ -16,6 +13,9 @@
             <Options/>
         </Source>
         <Source name="ZenPulseGen.v" type="Verilog" type_short="Verilog">
+            <Options/>
+        </Source>
+        <Source name="ZenPLL.ipx" type="IPX_Module" type_short="IPX">
             <Options/>
         </Source>
         <Source name="Zen68060Firmware.lpf" type="Logic Preference" type_short="LPF">

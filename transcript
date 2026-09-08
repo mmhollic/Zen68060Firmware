@@ -17,211 +17,138 @@
 # Loading project ZenSim
 # ** Warning: (vdel-134) Unable to remove locked optimized design "_opt".  Locker is hollo@DESKTOP-LK95KVP.
 # Questa Lattice OEM Edition-64 vlog 2024.2 Compiler 2024.05 May 20 2024
-# Start time: 11:42:01 on Aug 31,2026
+# Start time: 22:25:10 on Sep 08,2026
 # vlog -reportprogress 300 "+incdir+C:/lscc/diamond/3.14/bin/nt64/Zen68060Firmware/impl1" -work work C:/lscc/diamond/3.14/bin/nt64/Zen68060Firmware/impl1/Zen68060Firmware_impl1_vo.vo 
-# -- Compiling module mainLogic
-# -- Compiling module u_pll_SLICE_0
+# -- Compiling module ZenMainLogic
+# -- Compiling module u_SR_RAMS_CS_SLICE_0
 # -- Compiling module vmuxregsre
 # -- Compiling module vcc
-# -- Compiling module ccu2
 # -- Compiling module gnd
-# -- Compiling module u_pll_SLICE_1
-# -- Compiling module ccu20001
-# -- Compiling module u_pll_SLICE_2
-# -- Compiling module u_pll_SLICE_3
-# -- Compiling module ccu20002
-# -- Compiling module SLICE_4
+# -- Compiling module u_SR_TA_SLICE_1
+# -- Compiling module SLICE_2
 # -- Compiling module lut4
+# -- Compiling module lut40001
+# -- Compiling module vmuxregsre0002
+# -- Compiling module SLICE_3
 # -- Compiling module lut40003
-# -- Compiling module vmuxregsre0004
-# -- Compiling module pulse12point5_SLICE_6
-# -- Compiling module lut40005
-# -- Compiling module SLICE_7
+# -- Compiling module lut40004
+# -- Compiling module vmuxregsre0005
+# -- Compiling module SLICE_4
 # -- Compiling module lut40006
+# -- Compiling module inverter
+# -- Compiling module SLICE_10
+# -- Compiling module SLICE_16
 # -- Compiling module lut40007
-# -- Compiling module SLICE_8
-# -- Compiling module lut40008
-# -- Compiling module lut40009
-# -- Compiling module vmuxregsre0010
-# -- Compiling module pulse12point5_SLICE_9
-# -- Compiling module lut40011
-# -- Compiling module lut40012
-# -- Compiling module pulse12point5_SLICE_10
-# -- Compiling module lut40013
-# -- Compiling module lut40014
-# -- Compiling module SLICE_11
-# -- Compiling module lut40015
-# -- Compiling module lut40016
-# -- Compiling module u_pll_SLICE_12
-# -- Compiling module lut40017
-# -- Compiling module lut40018
-# -- Compiling module SLICE_13
-# -- Compiling module SLICE_14
-# -- Compiling module lut40019
-# -- Compiling module lut40020
-# -- Compiling module u_pll_SLICE_15
-# -- Compiling module lut40021
-# -- Compiling module lut40022
-# -- Compiling module u_pll_SLICE_16
-# -- Compiling module lut40023
-# -- Compiling module lut40024
-# -- Compiling module u_pll_SLICE_17
-# -- Compiling module lut40025
-# -- Compiling module lut40026
-# -- Compiling module SLICE_18
-# -- Compiling module lut40027
-# -- Compiling module lut40028
-# -- Compiling module RESET_PLL
-# -- Compiling module xo2iobuf
+# -- Compiling module u_SR_RAMS_CS_SLICE_17
+# -- Compiling module vmuxregsre0008
+# -- Compiling module u_SR_RAMS_CS_SLICE_18
+# -- Compiling module u_SR_RAMS_CS_SLICE_19
+# -- Compiling module u_SR_TA_SLICE_21
+# -- Compiling module u_SR_TA_SLICE_22
+# -- Compiling module u_SR_TA_SLICE_23
+# -- Compiling module u_SR_TA_SLICE_24
 # -- Compiling module A_29_
-# -- Compiling module RW_IN
+# -- Compiling module xo2iobuf
 # -- Compiling module TS_N
 # -- Compiling module CLK
 # -- Compiling module A_23_
 # -- Compiling module A_24_
-# -- Compiling module A_28_
 # -- Compiling module A_25_
+# -- Compiling module A_26_
+# -- Compiling module A_27_
+# -- Compiling module A_28_
+# -- Compiling module RST
 # -- Compiling module A_30_
+# -- Compiling module RAM_CS_N
+# -- Compiling module xo2iobuf0009
 # -- Compiling module A_31_
 # -- Compiling module TA_N
-# -- Compiling module xo2iobuf0029
-# -- Compiling module LOCK_PLL
-# -- Compiling module A_26_
-# -- Compiling module RAM_OE_N
-# -- Compiling module RAM_CS_N
-# -- Compiling module RW_OUT
-# -- Compiling module A_27_
-# -- Compiling module u_pll_u_ZenPLL_PLLInst_0
+# -- Compiling module LOCK
+# -- Compiling module u_ZenPLL_PLLInst_0
 # -- Compiling module EHXPLLJ_B
 # 
 # Top level modules:
-# 	mainLogic
-# End time: 11:42:01 on Aug 31,2026, Elapsed time: 0:00:00
+# 	ZenMainLogic
+# End time: 22:25:10 on Sep 08,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Questa Lattice OEM Edition-64 vlog 2024.2 Compiler 2024.05 May 20 2024
-# Start time: 11:42:01 on Aug 31,2026
+# Start time: 22:25:10 on Sep 08,2026
 # vlog -reportprogress 300 "+incdir+C:/lscc/diamond/3.14/bin/nt64/Zen68060Firmware" -work work C:/lscc/diamond/3.14/bin/nt64/Zen68060Firmware/ZenSim.v 
 # -- Compiling module mainLogic_tb
 # 
 # Top level modules:
 # 	mainLogic_tb
-# End time: 11:42:01 on Aug 31,2026, Elapsed time: 0:00:00
+# End time: 22:25:10 on Sep 08,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vsim -voptargs="+acc" -L work -L pmi_work -L ovi_machxo2 "+transport_path_delays" "+transport_int_delays" mainLogic_tb -sdfmax "/mainLogic_tb/dut=C:/lscc/diamond/3.14/bin/nt64/Zen68060Firmware/impl1/Zen68060Firmware_impl1_vo.sdf" 
-# Start time: 11:42:01 on Aug 31,2026
+# Start time: 22:25:10 on Sep 08,2026
 # ** Note: (vsim-3812) Design is being optimized...
 # ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility. The +acc switch would be deprecated in a future release.
 # ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
 # Loading work.mainLogic_tb(fast)
-# Loading work.mainLogic(fast)
-# Loading work.u_pll_SLICE_0(fast)
+# Loading work.ZenMainLogic(fast)
+# Loading work.u_SR_RAMS_CS_SLICE_0(fast)
 # Loading work.vmuxregsre(fast)
 # Loading ovi_machxo2.FL1P3IY(fast)
 # Loading work.vcc(fast)
 # Loading ovi_machxo2.VHI(fast)
-# Loading work.ccu2(fast)
-# Loading ovi_machxo2.CCU2D(fast)
 # Loading work.gnd(fast)
 # Loading ovi_machxo2.VLO(fast)
-# Loading work.u_pll_SLICE_1(fast)
-# Loading work.ccu20001(fast)
-# Loading ovi_machxo2.CCU2D(fast__1)
-# Loading work.u_pll_SLICE_2(fast)
-# Loading work.u_pll_SLICE_3(fast)
-# Loading work.ccu20002(fast)
-# Loading ovi_machxo2.CCU2D(fast__2)
-# Loading work.SLICE_4(fast)
+# Loading work.u_SR_TA_SLICE_1(fast)
+# Loading work.SLICE_2(fast)
 # Loading work.lut4(fast)
 # Loading ovi_machxo2.ROM16X1A(fast)
-# Loading work.lut40003(fast)
+# Loading work.lut40001(fast)
 # Loading ovi_machxo2.ROM16X1A(fast__1)
-# Loading work.vmuxregsre0004(fast)
-# Loading ovi_machxo2.FL1P3DX(fast)
-# Loading work.pulse12point5_SLICE_6(fast)
-# Loading work.lut40005(fast)
+# Loading work.vmuxregsre0002(fast)
+# Loading ovi_machxo2.FL1P3BX(fast)
+# Loading work.SLICE_3(fast)
+# Loading work.lut40003(fast)
 # Loading ovi_machxo2.ROM16X1A(fast__2)
-# Loading work.SLICE_7(fast)
-# Loading work.lut40006(fast)
+# Loading work.lut40004(fast)
 # Loading ovi_machxo2.ROM16X1A(fast__3)
-# Loading work.lut40007(fast)
+# Loading work.vmuxregsre0005(fast)
+# Loading ovi_machxo2.FL1P3DX(fast)
+# Loading work.SLICE_4(fast)
+# Loading work.lut40006(fast)
 # Loading ovi_machxo2.ROM16X1A(fast__4)
-# Loading work.SLICE_8(fast)
-# Loading work.lut40008(fast)
+# Loading work.inverter(fast)
+# Loading ovi_machxo2.INV(fast)
+# Loading work.SLICE_10(fast)
+# Loading work.SLICE_16(fast)
+# Loading work.lut40007(fast)
 # Loading ovi_machxo2.ROM16X1A(fast__5)
-# Loading work.lut40009(fast)
-# Loading ovi_machxo2.ROM16X1A(fast__6)
-# Loading work.vmuxregsre0010(fast)
+# Loading work.u_SR_RAMS_CS_SLICE_17(fast)
+# Loading work.vmuxregsre0008(fast)
 # Loading ovi_machxo2.FL1P3JY(fast)
-# Loading work.pulse12point5_SLICE_9(fast)
-# Loading work.lut40011(fast)
-# Loading ovi_machxo2.ROM16X1A(fast__7)
-# Loading work.lut40012(fast)
-# Loading ovi_machxo2.ROM16X1A(fast__8)
-# Loading work.pulse12point5_SLICE_10(fast)
-# Loading work.lut40013(fast)
-# Loading ovi_machxo2.ROM16X1A(fast__9)
-# Loading work.lut40014(fast)
-# Loading ovi_machxo2.ROM16X1A(fast__10)
-# Loading work.SLICE_11(fast)
-# Loading work.lut40015(fast)
-# Loading ovi_machxo2.ROM16X1A(fast__11)
-# Loading work.lut40016(fast)
-# Loading ovi_machxo2.ROM16X1A(fast__12)
-# Loading work.u_pll_SLICE_12(fast)
-# Loading work.lut40017(fast)
-# Loading ovi_machxo2.ROM16X1A(fast__13)
-# Loading work.lut40018(fast)
-# Loading ovi_machxo2.ROM16X1A(fast__14)
-# Loading work.SLICE_13(fast)
-# Loading work.SLICE_14(fast)
-# Loading work.lut40019(fast)
-# Loading ovi_machxo2.ROM16X1A(fast__15)
-# Loading work.lut40020(fast)
-# Loading work.u_pll_SLICE_15(fast)
-# Loading work.lut40021(fast)
-# Loading ovi_machxo2.ROM16X1A(fast__16)
-# Loading work.lut40022(fast)
-# Loading ovi_machxo2.ROM16X1A(fast__17)
-# Loading work.u_pll_SLICE_16(fast)
-# Loading work.lut40023(fast)
-# Loading ovi_machxo2.ROM16X1A(fast__18)
-# Loading work.lut40024(fast)
-# Loading ovi_machxo2.ROM16X1A(fast__19)
-# Loading work.u_pll_SLICE_17(fast)
-# Loading work.lut40025(fast)
-# Loading ovi_machxo2.ROM16X1A(fast__20)
-# Loading work.lut40026(fast)
-# Loading ovi_machxo2.ROM16X1A(fast__21)
-# Loading work.SLICE_18(fast)
-# Loading work.lut40027(fast)
-# Loading ovi_machxo2.ROM16X1A(fast__22)
-# Loading work.lut40028(fast)
-# Loading ovi_machxo2.ROM16X1A(fast__23)
-# Loading work.RESET_PLL(fast)
+# Loading work.u_SR_RAMS_CS_SLICE_18(fast)
+# Loading work.u_SR_RAMS_CS_SLICE_19(fast)
+# Loading work.u_SR_TA_SLICE_21(fast)
+# Loading work.u_SR_TA_SLICE_22(fast)
+# Loading work.u_SR_TA_SLICE_23(fast)
+# Loading work.u_SR_TA_SLICE_24(fast)
+# Loading work.A_29_(fast)
 # Loading work.xo2iobuf(fast)
 # Loading ovi_machxo2.IBPD(fast)
-# Loading work.A_29_(fast)
-# Loading work.RW_IN(fast)
 # Loading work.TS_N(fast)
 # Loading work.CLK(fast)
 # Loading work.xo2iobuf(fast__1)
 # Loading ovi_machxo2.IBPD(fast__1)
 # Loading work.A_23_(fast)
 # Loading work.A_24_(fast)
-# Loading work.A_28_(fast)
 # Loading work.A_25_(fast)
+# Loading work.A_26_(fast)
+# Loading work.A_27_(fast)
+# Loading work.A_28_(fast)
+# Loading work.RST(fast)
 # Loading work.A_30_(fast)
+# Loading work.RAM_CS_N(fast)
+# Loading work.xo2iobuf0009(fast)
+# Loading ovi_machxo2.OBZPD(fast)
 # Loading work.A_31_(fast)
 # Loading work.TA_N(fast)
-# Loading work.xo2iobuf0029(fast)
-# Loading ovi_machxo2.OBZPD(fast)
-# Loading work.LOCK_PLL(fast)
-# Loading work.A_26_(fast)
-# Loading work.RAM_OE_N(fast)
-# Loading work.RAM_CS_N(fast)
-# Loading work.RW_OUT(fast)
-# Loading work.A_27_(fast)
-# Loading work.u_pll_u_ZenPLL_PLLInst_0(fast)
+# Loading work.LOCK(fast)
+# Loading work.u_ZenPLL_PLLInst_0(fast)
 # Loading work.EHXPLLJ_B(fast)
 # Loading ovi_machxo2.EHXPLLJ(fast)
 # Loading ovi_machxo2.PUR(fast)
@@ -233,123 +160,84 @@
 # .main_pane.wave.interior.cs.body.pw.wf
 # ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
 #           File in use by: hollo  Hostname: DESKTOP-LK95KVP  ProcessID: 34904
-#           Attempting to use alternate WLF file "./wlft1sgcjd".
+#           Attempting to use alternate WLF file "./wlftemr8rm".
 # ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
-#           Using alternate file: ./wlft1sgcjd
-restart -f
-# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
-# ** Note: (vsim-8009) Loading existing optimized design _opt1
+#           Using alternate file: ./wlftemr8rm
+do {C:/lscc/diamond/3.14/bin/nt64/Zen68060Firmware/ZenSim/ZenSim.mdo}
+# Compile of Zen68060Firmware_impl1_vo.vo was successful.
+# Compile of ZenSim.v was successful.
+# 2 compiles, 0 failed with no errors.
+# End time: 22:25:25 on Sep 08,2026, Elapsed time: 0:00:15
+# Errors: 0, Warnings: 9
+# vsim -voptargs="+acc" -L work -L pmi_work -L ovi_machxo2 "+transport_path_delays" "+transport_int_delays" mainLogic_tb -sdfmax "/mainLogic_tb/dut=C:/lscc/diamond/3.14/bin/nt64/Zen68060Firmware/impl1/Zen68060Firmware_impl1_vo.sdf" 
+# Start time: 22:25:25 on Sep 08,2026
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility. The +acc switch would be deprecated in a future release.
 # ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
 # Loading work.mainLogic_tb(fast)
-# Loading work.mainLogic(fast)
-# Loading work.u_pll_SLICE_0(fast)
+# Loading work.ZenMainLogic(fast)
+# Loading work.u_SR_RAMS_CS_SLICE_0(fast)
 # Loading work.vmuxregsre(fast)
 # Loading ovi_machxo2.FL1P3IY(fast)
 # Loading work.vcc(fast)
 # Loading ovi_machxo2.VHI(fast)
-# Loading work.ccu2(fast)
-# Loading ovi_machxo2.CCU2D(fast)
 # Loading work.gnd(fast)
 # Loading ovi_machxo2.VLO(fast)
-# Loading work.u_pll_SLICE_1(fast)
-# Loading work.ccu20001(fast)
-# Loading ovi_machxo2.CCU2D(fast__1)
-# Loading work.u_pll_SLICE_2(fast)
-# Loading work.u_pll_SLICE_3(fast)
-# Loading work.ccu20002(fast)
-# Loading ovi_machxo2.CCU2D(fast__2)
-# Loading work.SLICE_4(fast)
+# Loading work.u_SR_TA_SLICE_1(fast)
+# Loading work.SLICE_2(fast)
 # Loading work.lut4(fast)
 # Loading ovi_machxo2.ROM16X1A(fast)
-# Loading work.lut40003(fast)
+# Loading work.lut40001(fast)
 # Loading ovi_machxo2.ROM16X1A(fast__1)
-# Loading work.vmuxregsre0004(fast)
-# Loading ovi_machxo2.FL1P3DX(fast)
-# Loading work.pulse12point5_SLICE_6(fast)
-# Loading work.lut40005(fast)
+# Loading work.vmuxregsre0002(fast)
+# Loading ovi_machxo2.FL1P3BX(fast)
+# Loading work.SLICE_3(fast)
+# Loading work.lut40003(fast)
 # Loading ovi_machxo2.ROM16X1A(fast__2)
-# Loading work.SLICE_7(fast)
-# Loading work.lut40006(fast)
+# Loading work.lut40004(fast)
 # Loading ovi_machxo2.ROM16X1A(fast__3)
-# Loading work.lut40007(fast)
+# Loading work.vmuxregsre0005(fast)
+# Loading ovi_machxo2.FL1P3DX(fast)
+# Loading work.SLICE_4(fast)
+# Loading work.lut40006(fast)
 # Loading ovi_machxo2.ROM16X1A(fast__4)
-# Loading work.SLICE_8(fast)
-# Loading work.lut40008(fast)
+# Loading work.inverter(fast)
+# Loading ovi_machxo2.INV(fast)
+# Loading work.SLICE_10(fast)
+# Loading work.SLICE_16(fast)
+# Loading work.lut40007(fast)
 # Loading ovi_machxo2.ROM16X1A(fast__5)
-# Loading work.lut40009(fast)
-# Loading ovi_machxo2.ROM16X1A(fast__6)
-# Loading work.vmuxregsre0010(fast)
+# Loading work.u_SR_RAMS_CS_SLICE_17(fast)
+# Loading work.vmuxregsre0008(fast)
 # Loading ovi_machxo2.FL1P3JY(fast)
-# Loading work.pulse12point5_SLICE_9(fast)
-# Loading work.lut40011(fast)
-# Loading ovi_machxo2.ROM16X1A(fast__7)
-# Loading work.lut40012(fast)
-# Loading ovi_machxo2.ROM16X1A(fast__8)
-# Loading work.pulse12point5_SLICE_10(fast)
-# Loading work.lut40013(fast)
-# Loading ovi_machxo2.ROM16X1A(fast__9)
-# Loading work.lut40014(fast)
-# Loading ovi_machxo2.ROM16X1A(fast__10)
-# Loading work.SLICE_11(fast)
-# Loading work.lut40015(fast)
-# Loading ovi_machxo2.ROM16X1A(fast__11)
-# Loading work.lut40016(fast)
-# Loading ovi_machxo2.ROM16X1A(fast__12)
-# Loading work.u_pll_SLICE_12(fast)
-# Loading work.lut40017(fast)
-# Loading ovi_machxo2.ROM16X1A(fast__13)
-# Loading work.lut40018(fast)
-# Loading ovi_machxo2.ROM16X1A(fast__14)
-# Loading work.SLICE_13(fast)
-# Loading work.SLICE_14(fast)
-# Loading work.lut40019(fast)
-# Loading ovi_machxo2.ROM16X1A(fast__15)
-# Loading work.lut40020(fast)
-# Loading work.u_pll_SLICE_15(fast)
-# Loading work.lut40021(fast)
-# Loading ovi_machxo2.ROM16X1A(fast__16)
-# Loading work.lut40022(fast)
-# Loading ovi_machxo2.ROM16X1A(fast__17)
-# Loading work.u_pll_SLICE_16(fast)
-# Loading work.lut40023(fast)
-# Loading ovi_machxo2.ROM16X1A(fast__18)
-# Loading work.lut40024(fast)
-# Loading ovi_machxo2.ROM16X1A(fast__19)
-# Loading work.u_pll_SLICE_17(fast)
-# Loading work.lut40025(fast)
-# Loading ovi_machxo2.ROM16X1A(fast__20)
-# Loading work.lut40026(fast)
-# Loading ovi_machxo2.ROM16X1A(fast__21)
-# Loading work.SLICE_18(fast)
-# Loading work.lut40027(fast)
-# Loading ovi_machxo2.ROM16X1A(fast__22)
-# Loading work.lut40028(fast)
-# Loading ovi_machxo2.ROM16X1A(fast__23)
-# Loading work.RESET_PLL(fast)
+# Loading work.u_SR_RAMS_CS_SLICE_18(fast)
+# Loading work.u_SR_RAMS_CS_SLICE_19(fast)
+# Loading work.u_SR_TA_SLICE_21(fast)
+# Loading work.u_SR_TA_SLICE_22(fast)
+# Loading work.u_SR_TA_SLICE_23(fast)
+# Loading work.u_SR_TA_SLICE_24(fast)
+# Loading work.A_29_(fast)
 # Loading work.xo2iobuf(fast)
 # Loading ovi_machxo2.IBPD(fast)
-# Loading work.A_29_(fast)
-# Loading work.RW_IN(fast)
 # Loading work.TS_N(fast)
 # Loading work.CLK(fast)
 # Loading work.xo2iobuf(fast__1)
 # Loading ovi_machxo2.IBPD(fast__1)
 # Loading work.A_23_(fast)
 # Loading work.A_24_(fast)
-# Loading work.A_28_(fast)
 # Loading work.A_25_(fast)
+# Loading work.A_26_(fast)
+# Loading work.A_27_(fast)
+# Loading work.A_28_(fast)
+# Loading work.RST(fast)
 # Loading work.A_30_(fast)
+# Loading work.RAM_CS_N(fast)
+# Loading work.xo2iobuf0009(fast)
+# Loading ovi_machxo2.OBZPD(fast)
 # Loading work.A_31_(fast)
 # Loading work.TA_N(fast)
-# Loading work.xo2iobuf0029(fast)
-# Loading ovi_machxo2.OBZPD(fast)
-# Loading work.LOCK_PLL(fast)
-# Loading work.A_26_(fast)
-# Loading work.RAM_OE_N(fast)
-# Loading work.RAM_CS_N(fast)
-# Loading work.RW_OUT(fast)
-# Loading work.A_27_(fast)
-# Loading work.u_pll_u_ZenPLL_PLLInst_0(fast)
+# Loading work.LOCK(fast)
+# Loading work.u_ZenPLL_PLLInst_0(fast)
 # Loading work.EHXPLLJ_B(fast)
 # Loading ovi_machxo2.EHXPLLJ(fast)
 # Loading ovi_machxo2.PUR(fast)
@@ -358,176 +246,21 @@ restart -f
 # Loading timing data from C:/lscc/diamond/3.14/bin/nt64/Zen68060Firmware/impl1/Zen68060Firmware_impl1_vo.sdf
 # ** Note: (vsim-3587) SDF Backannotation Successfully Completed.
 #    Time: 0 fs  Iteration: 0  Instance: /mainLogic_tb File: C:/lscc/diamond/3.14/bin/nt64/Zen68060Firmware/ZenSim.v
+# .main_pane.wave.interior.cs.body.pw.wf
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: hollo  Hostname: DESKTOP-LK95KVP  ProcessID: 34904
+#           Attempting to use alternate WLF file "./wlft5b25z8".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlft5b25z8
 nolog -r /*
-when {/mainLogic_tb/dut/LOCK_PLL == 1} {
+when {/mainLogic_tb/dut/LOCK == 1} {
     log -r /*
     echo "Logging started at PLL lock"
 }
-run 20 ms
+run 0.1 ms
 # Logging started at PLL lock
-# ** Error: $setup( DI0:2280307 ps, posedge CLK:2280390 ps, 133 ps );
-#    Time: 2280390 ps  Iteration: 2  Process: /mainLogic_tb/dut/\pulse12point5/SLICE_6 /#Setuphold# File: C:/lscc/diamond/3.14/bin/nt64/Zen68060Firmware/impl1/Zen68060Firmware_impl1_vo.vo Line: 374
-# ** Error: $setup( DI0:2292807 ps, posedge CLK:2292890 ps, 133 ps );
-#    Time: 2292890 ps  Iteration: 1  Process: /mainLogic_tb/dut/\pulse12point5/SLICE_6 /#Setuphold# File: C:/lscc/diamond/3.14/bin/nt64/Zen68060Firmware/impl1/Zen68060Firmware_impl1_vo.vo Line: 374
-# ** Error: $setup( DI0:2332807 ps, posedge CLK:2332890 ps, 133 ps );
-#    Time: 2332890 ps  Iteration: 1  Process: /mainLogic_tb/dut/\pulse12point5/SLICE_6 /#Setuphold# File: C:/lscc/diamond/3.14/bin/nt64/Zen68060Firmware/impl1/Zen68060Firmware_impl1_vo.vo Line: 374
-# ** Error: $setup( DI0:2392807 ps, posedge CLK:2392890 ps, 133 ps );
-#    Time: 2392890 ps  Iteration: 1  Process: /mainLogic_tb/dut/\pulse12point5/SLICE_6 /#Setuphold# File: C:/lscc/diamond/3.14/bin/nt64/Zen68060Firmware/impl1/Zen68060Firmware_impl1_vo.vo Line: 374
-# ** Error: $setup( DI0:2432807 ps, posedge CLK:2432890 ps, 133 ps );
-#    Time: 2432890 ps  Iteration: 1  Process: /mainLogic_tb/dut/\pulse12point5/SLICE_6 /#Setuphold# File: C:/lscc/diamond/3.14/bin/nt64/Zen68060Firmware/impl1/Zen68060Firmware_impl1_vo.vo Line: 374
-# ** Error: $setup( DI0:2492807 ps, posedge CLK:2492890 ps, 133 ps );
-#    Time: 2492890 ps  Iteration: 1  Process: /mainLogic_tb/dut/\pulse12point5/SLICE_6 /#Setuphold# File: C:/lscc/diamond/3.14/bin/nt64/Zen68060Firmware/impl1/Zen68060Firmware_impl1_vo.vo Line: 374
-# ** Error: $setup( DI0:2532807 ps, posedge CLK:2532890 ps, 133 ps );
-#    Time: 2532890 ps  Iteration: 1  Process: /mainLogic_tb/dut/\pulse12point5/SLICE_6 /#Setuphold# File: C:/lscc/diamond/3.14/bin/nt64/Zen68060Firmware/impl1/Zen68060Firmware_impl1_vo.vo Line: 374
-# ** Error: $setup( DI0:2592807 ps, posedge CLK:2592890 ps, 133 ps );
-#    Time: 2592890 ps  Iteration: 1  Process: /mainLogic_tb/dut/\pulse12point5/SLICE_6 /#Setuphold# File: C:/lscc/diamond/3.14/bin/nt64/Zen68060Firmware/impl1/Zen68060Firmware_impl1_vo.vo Line: 374
-# ** Error: $setup( DI0:2632807 ps, posedge CLK:2632890 ps, 133 ps );
-#    Time: 2632890 ps  Iteration: 1  Process: /mainLogic_tb/dut/\pulse12point5/SLICE_6 /#Setuphold# File: C:/lscc/diamond/3.14/bin/nt64/Zen68060Firmware/impl1/Zen68060Firmware_impl1_vo.vo Line: 374
-# ** Error: $setup( DI0:2692807 ps, posedge CLK:2692890 ps, 133 ps );
-#    Time: 2692890 ps  Iteration: 1  Process: /mainLogic_tb/dut/\pulse12point5/SLICE_6 /#Setuphold# File: C:/lscc/diamond/3.14/bin/nt64/Zen68060Firmware/impl1/Zen68060Firmware_impl1_vo.vo Line: 374
-# ** Error: $setup( DI0:2732807 ps, posedge CLK:2732890 ps, 133 ps );
-#    Time: 2732890 ps  Iteration: 1  Process: /mainLogic_tb/dut/\pulse12point5/SLICE_6 /#Setuphold# File: C:/lscc/diamond/3.14/bin/nt64/Zen68060Firmware/impl1/Zen68060Firmware_impl1_vo.vo Line: 374
-# ** Error: $setup( DI0:2792807 ps, posedge CLK:2792890 ps, 133 ps );
-#    Time: 2792890 ps  Iteration: 1  Process: /mainLogic_tb/dut/\pulse12point5/SLICE_6 /#Setuphold# File: C:/lscc/diamond/3.14/bin/nt64/Zen68060Firmware/impl1/Zen68060Firmware_impl1_vo.vo Line: 374
-# ** Error: $setup( DI0:2832807 ps, posedge CLK:2832890 ps, 133 ps );
-#    Time: 2832890 ps  Iteration: 1  Process: /mainLogic_tb/dut/\pulse12point5/SLICE_6 /#Setuphold# File: C:/lscc/diamond/3.14/bin/nt64/Zen68060Firmware/impl1/Zen68060Firmware_impl1_vo.vo Line: 374
-# ** Error: $setup( DI0:2892807 ps, posedge CLK:2892890 ps, 133 ps );
-#    Time: 2892890 ps  Iteration: 1  Process: /mainLogic_tb/dut/\pulse12point5/SLICE_6 /#Setuphold# File: C:/lscc/diamond/3.14/bin/nt64/Zen68060Firmware/impl1/Zen68060Firmware_impl1_vo.vo Line: 374
-# ** Error: $setup( DI0:2932807 ps, posedge CLK:2932890 ps, 133 ps );
-#    Time: 2932890 ps  Iteration: 1  Process: /mainLogic_tb/dut/\pulse12point5/SLICE_6 /#Setuphold# File: C:/lscc/diamond/3.14/bin/nt64/Zen68060Firmware/impl1/Zen68060Firmware_impl1_vo.vo Line: 374
-# ** Error: $setup( DI0:2992807 ps, posedge CLK:2992890 ps, 133 ps );
-#    Time: 2992890 ps  Iteration: 1  Process: /mainLogic_tb/dut/\pulse12point5/SLICE_6 /#Setuphold# File: C:/lscc/diamond/3.14/bin/nt64/Zen68060Firmware/impl1/Zen68060Firmware_impl1_vo.vo Line: 374
-# ** Error: $setup( DI0:3032807 ps, posedge CLK:3032890 ps, 133 ps );
-#    Time: 3032890 ps  Iteration: 1  Process: /mainLogic_tb/dut/\pulse12point5/SLICE_6 /#Setuphold# File: C:/lscc/diamond/3.14/bin/nt64/Zen68060Firmware/impl1/Zen68060Firmware_impl1_vo.vo Line: 374
-# ** Error: $setup( DI0:3092807 ps, posedge CLK:3092890 ps, 133 ps );
-#    Time: 3092890 ps  Iteration: 1  Process: /mainLogic_tb/dut/\pulse12point5/SLICE_6 /#Setuphold# File: C:/lscc/diamond/3.14/bin/nt64/Zen68060Firmware/impl1/Zen68060Firmware_impl1_vo.vo Line: 374
-# ** Error: $setup( DI0:3132807 ps, posedge CLK:3132890 ps, 133 ps );
-#    Time: 3132890 ps  Iteration: 1  Process: /mainLogic_tb/dut/\pulse12point5/SLICE_6 /#Setuphold# File: C:/lscc/diamond/3.14/bin/nt64/Zen68060Firmware/impl1/Zen68060Firmware_impl1_vo.vo Line: 374
-# ** Error: $setup( DI0:3192807 ps, posedge CLK:3192890 ps, 133 ps );
-#    Time: 3192890 ps  Iteration: 1  Process: /mainLogic_tb/dut/\pulse12point5/SLICE_6 /#Setuphold# File: C:/lscc/diamond/3.14/bin/nt64/Zen68060Firmware/impl1/Zen68060Firmware_impl1_vo.vo Line: 374
-# ** Error: $setup( DI0:3232807 ps, posedge CLK:3232890 ps, 133 ps );
-#    Time: 3232890 ps  Iteration: 1  Process: /mainLogic_tb/dut/\pulse12point5/SLICE_6 /#Setuphold# File: C:/lscc/diamond/3.14/bin/nt64/Zen68060Firmware/impl1/Zen68060Firmware_impl1_vo.vo Line: 374
-# ** Error: $setup( DI0:3292807 ps, posedge CLK:3292890 ps, 133 ps );
-#    Time: 3292890 ps  Iteration: 1  Process: /mainLogic_tb/dut/\pulse12point5/SLICE_6 /#Setuphold# File: C:/lscc/diamond/3.14/bin/nt64/Zen68060Firmware/impl1/Zen68060Firmware_impl1_vo.vo Line: 374
-# ** Error: $setup( DI0:3332807 ps, posedge CLK:3332890 ps, 133 ps );
-#    Time: 3332890 ps  Iteration: 1  Process: /mainLogic_tb/dut/\pulse12point5/SLICE_6 /#Setuphold# File: C:/lscc/diamond/3.14/bin/nt64/Zen68060Firmware/impl1/Zen68060Firmware_impl1_vo.vo Line: 374
-# ** Error: $setup( DI0:3392807 ps, posedge CLK:3392890 ps, 133 ps );
-#    Time: 3392890 ps  Iteration: 1  Process: /mainLogic_tb/dut/\pulse12point5/SLICE_6 /#Setuphold# File: C:/lscc/diamond/3.14/bin/nt64/Zen68060Firmware/impl1/Zen68060Firmware_impl1_vo.vo Line: 374
-# ** Error: $setup( DI0:3432807 ps, posedge CLK:3432890 ps, 133 ps );
-#    Time: 3432890 ps  Iteration: 1  Process: /mainLogic_tb/dut/\pulse12point5/SLICE_6 /#Setuphold# File: C:/lscc/diamond/3.14/bin/nt64/Zen68060Firmware/impl1/Zen68060Firmware_impl1_vo.vo Line: 374
-# ** Error: $setup( DI0:3492807 ps, posedge CLK:3492890 ps, 133 ps );
-#    Time: 3492890 ps  Iteration: 1  Process: /mainLogic_tb/dut/\pulse12point5/SLICE_6 /#Setuphold# File: C:/lscc/diamond/3.14/bin/nt64/Zen68060Firmware/impl1/Zen68060Firmware_impl1_vo.vo Line: 374
-# ** Error: $setup( DI0:3532807 ps, posedge CLK:3532890 ps, 133 ps );
-#    Time: 3532890 ps  Iteration: 1  Process: /mainLogic_tb/dut/\pulse12point5/SLICE_6 /#Setuphold# File: C:/lscc/diamond/3.14/bin/nt64/Zen68060Firmware/impl1/Zen68060Firmware_impl1_vo.vo Line: 374
-# ** Error: $setup( DI0:3592807 ps, posedge CLK:3592890 ps, 133 ps );
-#    Time: 3592890 ps  Iteration: 1  Process: /mainLogic_tb/dut/\pulse12point5/SLICE_6 /#Setuphold# File: C:/lscc/diamond/3.14/bin/nt64/Zen68060Firmware/impl1/Zen68060Firmware_impl1_vo.vo Line: 374
-# ** Error: $setup( DI0:3632807 ps, posedge CLK:3632890 ps, 133 ps );
-#    Time: 3632890 ps  Iteration: 1  Process: /mainLogic_tb/dut/\pulse12point5/SLICE_6 /#Setuphold# File: C:/lscc/diamond/3.14/bin/nt64/Zen68060Firmware/impl1/Zen68060Firmware_impl1_vo.vo Line: 374
-# ** Error: $setup( DI0:3692807 ps, posedge CLK:3692890 ps, 133 ps );
-#    Time: 3692890 ps  Iteration: 1  Process: /mainLogic_tb/dut/\pulse12point5/SLICE_6 /#Setuphold# File: C:/lscc/diamond/3.14/bin/nt64/Zen68060Firmware/impl1/Zen68060Firmware_impl1_vo.vo Line: 374
-# ** Error: $setup( DI0:3732807 ps, posedge CLK:3732890 ps, 133 ps );
-#    Time: 3732890 ps  Iteration: 1  Process: /mainLogic_tb/dut/\pulse12point5/SLICE_6 /#Setuphold# File: C:/lscc/diamond/3.14/bin/nt64/Zen68060Firmware/impl1/Zen68060Firmware_impl1_vo.vo Line: 374
-# ** Error: $setup( DI0:3792807 ps, posedge CLK:3792890 ps, 133 ps );
-#    Time: 3792890 ps  Iteration: 1  Process: /mainLogic_tb/dut/\pulse12point5/SLICE_6 /#Setuphold# File: C:/lscc/diamond/3.14/bin/nt64/Zen68060Firmware/impl1/Zen68060Firmware_impl1_vo.vo Line: 374
-# ** Error: $setup( DI0:3832807 ps, posedge CLK:3832890 ps, 133 ps );
-#    Time: 3832890 ps  Iteration: 1  Process: /mainLogic_tb/dut/\pulse12point5/SLICE_6 /#Setuphold# File: C:/lscc/diamond/3.14/bin/nt64/Zen68060Firmware/impl1/Zen68060Firmware_impl1_vo.vo Line: 374
-# ** Error: $setup( DI0:3892807 ps, posedge CLK:3892890 ps, 133 ps );
-#    Time: 3892890 ps  Iteration: 1  Process: /mainLogic_tb/dut/\pulse12point5/SLICE_6 /#Setuphold# File: C:/lscc/diamond/3.14/bin/nt64/Zen68060Firmware/impl1/Zen68060Firmware_impl1_vo.vo Line: 374
-# ** Error: $setup( DI0:3932807 ps, posedge CLK:3932890 ps, 133 ps );
-#    Time: 3932890 ps  Iteration: 1  Process: /mainLogic_tb/dut/\pulse12point5/SLICE_6 /#Setuphold# File: C:/lscc/diamond/3.14/bin/nt64/Zen68060Firmware/impl1/Zen68060Firmware_impl1_vo.vo Line: 374
-# ** Error: $setup( DI0:3992807 ps, posedge CLK:3992890 ps, 133 ps );
-#    Time: 3992890 ps  Iteration: 1  Process: /mainLogic_tb/dut/\pulse12point5/SLICE_6 /#Setuphold# File: C:/lscc/diamond/3.14/bin/nt64/Zen68060Firmware/impl1/Zen68060Firmware_impl1_vo.vo Line: 374
-# ** Error: $setup( DI0:4032807 ps, posedge CLK:4032890 ps, 133 ps );
-#    Time: 4032890 ps  Iteration: 1  Process: /mainLogic_tb/dut/\pulse12point5/SLICE_6 /#Setuphold# File: C:/lscc/diamond/3.14/bin/nt64/Zen68060Firmware/impl1/Zen68060Firmware_impl1_vo.vo Line: 374
-# ** Error: $setup( DI0:4092807 ps, posedge CLK:4092890 ps, 133 ps );
-#    Time: 4092890 ps  Iteration: 1  Process: /mainLogic_tb/dut/\pulse12point5/SLICE_6 /#Setuphold# File: C:/lscc/diamond/3.14/bin/nt64/Zen68060Firmware/impl1/Zen68060Firmware_impl1_vo.vo Line: 374
-# ** Error: $setup( DI0:4132807 ps, posedge CLK:4132890 ps, 133 ps );
-#    Time: 4132890 ps  Iteration: 1  Process: /mainLogic_tb/dut/\pulse12point5/SLICE_6 /#Setuphold# File: C:/lscc/diamond/3.14/bin/nt64/Zen68060Firmware/impl1/Zen68060Firmware_impl1_vo.vo Line: 374
-# ** Error: $setup( DI0:4192807 ps, posedge CLK:4192890 ps, 133 ps );
-#    Time: 4192890 ps  Iteration: 1  Process: /mainLogic_tb/dut/\pulse12point5/SLICE_6 /#Setuphold# File: C:/lscc/diamond/3.14/bin/nt64/Zen68060Firmware/impl1/Zen68060Firmware_impl1_vo.vo Line: 374
-# ** Error: $setup( DI0:4232807 ps, posedge CLK:4232890 ps, 133 ps );
-#    Time: 4232890 ps  Iteration: 1  Process: /mainLogic_tb/dut/\pulse12point5/SLICE_6 /#Setuphold# File: C:/lscc/diamond/3.14/bin/nt64/Zen68060Firmware/impl1/Zen68060Firmware_impl1_vo.vo Line: 374
-# ** Error: $setup( DI0:4292807 ps, posedge CLK:4292890 ps, 133 ps );
-#    Time: 4292890 ps  Iteration: 1  Process: /mainLogic_tb/dut/\pulse12point5/SLICE_6 /#Setuphold# File: C:/lscc/diamond/3.14/bin/nt64/Zen68060Firmware/impl1/Zen68060Firmware_impl1_vo.vo Line: 374
-# ** Error: $setup( DI0:4332807 ps, posedge CLK:4332890 ps, 133 ps );
-#    Time: 4332890 ps  Iteration: 1  Process: /mainLogic_tb/dut/\pulse12point5/SLICE_6 /#Setuphold# File: C:/lscc/diamond/3.14/bin/nt64/Zen68060Firmware/impl1/Zen68060Firmware_impl1_vo.vo Line: 374
-# ** Error: $setup( DI0:4392807 ps, posedge CLK:4392890 ps, 133 ps );
-#    Time: 4392890 ps  Iteration: 1  Process: /mainLogic_tb/dut/\pulse12point5/SLICE_6 /#Setuphold# File: C:/lscc/diamond/3.14/bin/nt64/Zen68060Firmware/impl1/Zen68060Firmware_impl1_vo.vo Line: 374
-# ** Error: $setup( DI0:4432807 ps, posedge CLK:4432890 ps, 133 ps );
-#    Time: 4432890 ps  Iteration: 1  Process: /mainLogic_tb/dut/\pulse12point5/SLICE_6 /#Setuphold# File: C:/lscc/diamond/3.14/bin/nt64/Zen68060Firmware/impl1/Zen68060Firmware_impl1_vo.vo Line: 374
-# ** Error: $setup( DI0:4492807 ps, posedge CLK:4492890 ps, 133 ps );
-#    Time: 4492890 ps  Iteration: 1  Process: /mainLogic_tb/dut/\pulse12point5/SLICE_6 /#Setuphold# File: C:/lscc/diamond/3.14/bin/nt64/Zen68060Firmware/impl1/Zen68060Firmware_impl1_vo.vo Line: 374
-# ** Error: $setup( DI0:4532807 ps, posedge CLK:4532890 ps, 133 ps );
-#    Time: 4532890 ps  Iteration: 1  Process: /mainLogic_tb/dut/\pulse12point5/SLICE_6 /#Setuphold# File: C:/lscc/diamond/3.14/bin/nt64/Zen68060Firmware/impl1/Zen68060Firmware_impl1_vo.vo Line: 374
-# ** Error: $setup( DI0:4592807 ps, posedge CLK:4592890 ps, 133 ps );
-#    Time: 4592890 ps  Iteration: 1  Process: /mainLogic_tb/dut/\pulse12point5/SLICE_6 /#Setuphold# File: C:/lscc/diamond/3.14/bin/nt64/Zen68060Firmware/impl1/Zen68060Firmware_impl1_vo.vo Line: 374
-# ** Error: $setup( DI0:4632807 ps, posedge CLK:4632890 ps, 133 ps );
-#    Time: 4632890 ps  Iteration: 1  Process: /mainLogic_tb/dut/\pulse12point5/SLICE_6 /#Setuphold# File: C:/lscc/diamond/3.14/bin/nt64/Zen68060Firmware/impl1/Zen68060Firmware_impl1_vo.vo Line: 374
-# ** Error: $setup( DI0:4692807 ps, posedge CLK:4692890 ps, 133 ps );
-#    Time: 4692890 ps  Iteration: 1  Process: /mainLogic_tb/dut/\pulse12point5/SLICE_6 /#Setuphold# File: C:/lscc/diamond/3.14/bin/nt64/Zen68060Firmware/impl1/Zen68060Firmware_impl1_vo.vo Line: 374
-# ** Error: $setup( DI0:4732807 ps, posedge CLK:4732890 ps, 133 ps );
-#    Time: 4732890 ps  Iteration: 1  Process: /mainLogic_tb/dut/\pulse12point5/SLICE_6 /#Setuphold# File: C:/lscc/diamond/3.14/bin/nt64/Zen68060Firmware/impl1/Zen68060Firmware_impl1_vo.vo Line: 374
-# ** Error: $setup( DI0:4792807 ps, posedge CLK:4792890 ps, 133 ps );
-#    Time: 4792890 ps  Iteration: 1  Process: /mainLogic_tb/dut/\pulse12point5/SLICE_6 /#Setuphold# File: C:/lscc/diamond/3.14/bin/nt64/Zen68060Firmware/impl1/Zen68060Firmware_impl1_vo.vo Line: 374
-# ** Error: $setup( DI0:4832807 ps, posedge CLK:4832890 ps, 133 ps );
-#    Time: 4832890 ps  Iteration: 1  Process: /mainLogic_tb/dut/\pulse12point5/SLICE_6 /#Setuphold# File: C:/lscc/diamond/3.14/bin/nt64/Zen68060Firmware/impl1/Zen68060Firmware_impl1_vo.vo Line: 374
-# ** Error: $setup( DI0:4892807 ps, posedge CLK:4892890 ps, 133 ps );
-#    Time: 4892890 ps  Iteration: 1  Process: /mainLogic_tb/dut/\pulse12point5/SLICE_6 /#Setuphold# File: C:/lscc/diamond/3.14/bin/nt64/Zen68060Firmware/impl1/Zen68060Firmware_impl1_vo.vo Line: 374
-# ** Error: $setup( DI0:4932807 ps, posedge CLK:4932890 ps, 133 ps );
-#    Time: 4932890 ps  Iteration: 1  Process: /mainLogic_tb/dut/\pulse12point5/SLICE_6 /#Setuphold# File: C:/lscc/diamond/3.14/bin/nt64/Zen68060Firmware/impl1/Zen68060Firmware_impl1_vo.vo Line: 374
-# ** Error: $setup( DI0:4992807 ps, posedge CLK:4992890 ps, 133 ps );
-#    Time: 4992890 ps  Iteration: 1  Process: /mainLogic_tb/dut/\pulse12point5/SLICE_6 /#Setuphold# File: C:/lscc/diamond/3.14/bin/nt64/Zen68060Firmware/impl1/Zen68060Firmware_impl1_vo.vo Line: 374
-# ** Error: $setup( DI0:5032807 ps, posedge CLK:5032890 ps, 133 ps );
-#    Time: 5032890 ps  Iteration: 1  Process: /mainLogic_tb/dut/\pulse12point5/SLICE_6 /#Setuphold# File: C:/lscc/diamond/3.14/bin/nt64/Zen68060Firmware/impl1/Zen68060Firmware_impl1_vo.vo Line: 374
-# ** Error: $setup( DI0:5092807 ps, posedge CLK:5092890 ps, 133 ps );
-#    Time: 5092890 ps  Iteration: 1  Process: /mainLogic_tb/dut/\pulse12point5/SLICE_6 /#Setuphold# File: C:/lscc/diamond/3.14/bin/nt64/Zen68060Firmware/impl1/Zen68060Firmware_impl1_vo.vo Line: 374
-# ** Error: $setup( DI0:5132807 ps, posedge CLK:5132890 ps, 133 ps );
-#    Time: 5132890 ps  Iteration: 1  Process: /mainLogic_tb/dut/\pulse12point5/SLICE_6 /#Setuphold# File: C:/lscc/diamond/3.14/bin/nt64/Zen68060Firmware/impl1/Zen68060Firmware_impl1_vo.vo Line: 374
-# ** Error: $setup( DI0:5192807 ps, posedge CLK:5192890 ps, 133 ps );
-#    Time: 5192890 ps  Iteration: 1  Process: /mainLogic_tb/dut/\pulse12point5/SLICE_6 /#Setuphold# File: C:/lscc/diamond/3.14/bin/nt64/Zen68060Firmware/impl1/Zen68060Firmware_impl1_vo.vo Line: 374
-# ** Error: $setup( DI0:5232807 ps, posedge CLK:5232890 ps, 133 ps );
-#    Time: 5232890 ps  Iteration: 1  Process: /mainLogic_tb/dut/\pulse12point5/SLICE_6 /#Setuphold# File: C:/lscc/diamond/3.14/bin/nt64/Zen68060Firmware/impl1/Zen68060Firmware_impl1_vo.vo Line: 374
-# ** Error: $setup( DI0:5292807 ps, posedge CLK:5292890 ps, 133 ps );
-#    Time: 5292890 ps  Iteration: 1  Process: /mainLogic_tb/dut/\pulse12point5/SLICE_6 /#Setuphold# File: C:/lscc/diamond/3.14/bin/nt64/Zen68060Firmware/impl1/Zen68060Firmware_impl1_vo.vo Line: 374
-# ** Error: $setup( DI0:5332807 ps, posedge CLK:5332890 ps, 133 ps );
-#    Time: 5332890 ps  Iteration: 1  Process: /mainLogic_tb/dut/\pulse12point5/SLICE_6 /#Setuphold# File: C:/lscc/diamond/3.14/bin/nt64/Zen68060Firmware/impl1/Zen68060Firmware_impl1_vo.vo Line: 374
-# ** Error: $setup( DI0:5392807 ps, posedge CLK:5392890 ps, 133 ps );
-#    Time: 5392890 ps  Iteration: 1  Process: /mainLogic_tb/dut/\pulse12point5/SLICE_6 /#Setuphold# File: C:/lscc/diamond/3.14/bin/nt64/Zen68060Firmware/impl1/Zen68060Firmware_impl1_vo.vo Line: 374
-# ** Error: $setup( DI0:5432807 ps, posedge CLK:5432890 ps, 133 ps );
-#    Time: 5432890 ps  Iteration: 1  Process: /mainLogic_tb/dut/\pulse12point5/SLICE_6 /#Setuphold# File: C:/lscc/diamond/3.14/bin/nt64/Zen68060Firmware/impl1/Zen68060Firmware_impl1_vo.vo Line: 374
-# ** Error: $setup( DI0:5492807 ps, posedge CLK:5492890 ps, 133 ps );
-#    Time: 5492890 ps  Iteration: 1  Process: /mainLogic_tb/dut/\pulse12point5/SLICE_6 /#Setuphold# File: C:/lscc/diamond/3.14/bin/nt64/Zen68060Firmware/impl1/Zen68060Firmware_impl1_vo.vo Line: 374
-# ** Error: $setup( DI0:5532807 ps, posedge CLK:5532890 ps, 133 ps );
-#    Time: 5532890 ps  Iteration: 1  Process: /mainLogic_tb/dut/\pulse12point5/SLICE_6 /#Setuphold# File: C:/lscc/diamond/3.14/bin/nt64/Zen68060Firmware/impl1/Zen68060Firmware_impl1_vo.vo Line: 374
-# ** Error: $setup( DI0:5592807 ps, posedge CLK:5592890 ps, 133 ps );
-#    Time: 5592890 ps  Iteration: 1  Process: /mainLogic_tb/dut/\pulse12point5/SLICE_6 /#Setuphold# File: C:/lscc/diamond/3.14/bin/nt64/Zen68060Firmware/impl1/Zen68060Firmware_impl1_vo.vo Line: 374
-# ** Error: $setup( DI0:5632807 ps, posedge CLK:5632890 ps, 133 ps );
-#    Time: 5632890 ps  Iteration: 1  Process: /mainLogic_tb/dut/\pulse12point5/SLICE_6 /#Setuphold# File: C:/lscc/diamond/3.14/bin/nt64/Zen68060Firmware/impl1/Zen68060Firmware_impl1_vo.vo Line: 374
-# ** Error: $setup( DI0:5692807 ps, posedge CLK:5692890 ps, 133 ps );
-#    Time: 5692890 ps  Iteration: 1  Process: /mainLogic_tb/dut/\pulse12point5/SLICE_6 /#Setuphold# File: C:/lscc/diamond/3.14/bin/nt64/Zen68060Firmware/impl1/Zen68060Firmware_impl1_vo.vo Line: 374
-# ** Error: $setup( DI0:5732807 ps, posedge CLK:5732890 ps, 133 ps );
-#    Time: 5732890 ps  Iteration: 1  Process: /mainLogic_tb/dut/\pulse12point5/SLICE_6 /#Setuphold# File: C:/lscc/diamond/3.14/bin/nt64/Zen68060Firmware/impl1/Zen68060Firmware_impl1_vo.vo Line: 374
-# ** Error: $setup( DI0:5792807 ps, posedge CLK:5792890 ps, 133 ps );
-#    Time: 5792890 ps  Iteration: 1  Process: /mainLogic_tb/dut/\pulse12point5/SLICE_6 /#Setuphold# File: C:/lscc/diamond/3.14/bin/nt64/Zen68060Firmware/impl1/Zen68060Firmware_impl1_vo.vo Line: 374
-# ** Error: $setup( DI0:5832807 ps, posedge CLK:5832890 ps, 133 ps );
-#    Time: 5832890 ps  Iteration: 1  Process: /mainLogic_tb/dut/\pulse12point5/SLICE_6 /#Setuphold# File: C:/lscc/diamond/3.14/bin/nt64/Zen68060Firmware/impl1/Zen68060Firmware_impl1_vo.vo Line: 374
-# ** Error: $setup( DI0:5892807 ps, posedge CLK:5892890 ps, 133 ps );
-#    Time: 5892890 ps  Iteration: 1  Process: /mainLogic_tb/dut/\pulse12point5/SLICE_6 /#Setuphold# File: C:/lscc/diamond/3.14/bin/nt64/Zen68060Firmware/impl1/Zen68060Firmware_impl1_vo.vo Line: 374
-# ** Error: $setup( DI0:5932807 ps, posedge CLK:5932890 ps, 133 ps );
-#    Time: 5932890 ps  Iteration: 1  Process: /mainLogic_tb/dut/\pulse12point5/SLICE_6 /#Setuphold# File: C:/lscc/diamond/3.14/bin/nt64/Zen68060Firmware/impl1/Zen68060Firmware_impl1_vo.vo Line: 374
-# ** Error: $setup( DI0:5992807 ps, posedge CLK:5992890 ps, 133 ps );
-#    Time: 5992890 ps  Iteration: 1  Process: /mainLogic_tb/dut/\pulse12point5/SLICE_6 /#Setuphold# File: C:/lscc/diamond/3.14/bin/nt64/Zen68060Firmware/impl1/Zen68060Firmware_impl1_vo.vo Line: 374
-# ** Error: $setup( DI0:6032807 ps, posedge CLK:6032890 ps, 133 ps );
-#    Time: 6032890 ps  Iteration: 1  Process: /mainLogic_tb/dut/\pulse12point5/SLICE_6 /#Setuphold# File: C:/lscc/diamond/3.14/bin/nt64/Zen68060Firmware/impl1/Zen68060Firmware_impl1_vo.vo Line: 374
-# ** Error: $setup( DI0:6092807 ps, posedge CLK:6092890 ps, 133 ps );
-#    Time: 6092890 ps  Iteration: 1  Process: /mainLogic_tb/dut/\pulse12point5/SLICE_6 /#Setuphold# File: C:/lscc/diamond/3.14/bin/nt64/Zen68060Firmware/impl1/Zen68060Firmware_impl1_vo.vo Line: 374
-# ** Error: $setup( DI0:6132807 ps, posedge CLK:6132890 ps, 133 ps );
-#    Time: 6132890 ps  Iteration: 1  Process: /mainLogic_tb/dut/\pulse12point5/SLICE_6 /#Setuphold# File: C:/lscc/diamond/3.14/bin/nt64/Zen68060Firmware/impl1/Zen68060Firmware_impl1_vo.vo Line: 374
-# ** Error: $setup( DI0:6192807 ps, posedge CLK:6192890 ps, 133 ps );
-#    Time: 6192890 ps  Iteration: 1  Process: /mainLogic_tb/dut/\pulse12point5/SLICE_6 /#Setuphold# File: C:/lscc/diamond/3.14/bin/nt64/Zen68060Firmware/impl1/Zen68060Firmware_impl1_vo.vo Line: 374
-# ** Note: $stop    : C:/lscc/diamond/3.14/bin/nt64/Zen68060Firmware/ZenSim.v(94)
-#    Time: 6232 ns  Iteration: 0  Instance: /mainLogic_tb
-# Break in Module mainLogic_tb at C:/lscc/diamond/3.14/bin/nt64/Zen68060Firmware/ZenSim.v line 94
-add wave -position end {sim:/mainLogic_tb/dut/\u_pll/u_ZenPLL/PLLInst_0 /*}
-# End time: 11:45:41 on Aug 31,2026, Elapsed time: 0:03:40
-# Errors: 80, Warnings: 2
+# ** Note: $stop    : C:/lscc/diamond/3.14/bin/nt64/Zen68060Firmware/ZenSim.v(89)
+#    Time: 6231 ns  Iteration: 0  Instance: /mainLogic_tb
+# Break in Module mainLogic_tb at C:/lscc/diamond/3.14/bin/nt64/Zen68060Firmware/ZenSim.v line 89
+# End time: 22:26:11 on Sep 08,2026, Elapsed time: 0:00:46
+# Errors: 0, Warnings: 4

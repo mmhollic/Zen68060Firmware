@@ -8,7 +8,7 @@
 </HEAD>
 <PRE><A name="Top"></A><B><U><big>I/O Timing Report</big></U></B>
 Loading design for application iotiming from file zen68060firmware_impl1.ncd.
-Design name: mainLogic
+Design name: ZenMainLogic
 NCD version: 3.3
 Vendor:      LATTICE
 Device:      LCMXO2-7000HC
@@ -16,13 +16,13 @@ Package:     TQFP144
 Performance: M
 Package Status:                     Final          Version 1.39.
 Performance Hardware Data Status:   Final          Version 36.4.
-// Design: mainLogic
+// Design: ZenMainLogic
 // Package: TQFP144
 // ncd File: zen68060firmware_impl1.ncd
 // Version: Diamond (64-bit) 3.14.0.75.2
-// Written on Mon Aug 31 11:41:06 2026
+// Written on Tue Sep 08 22:16:18 2026
 // M: Minimum Performance Grade
-// iotiming Zen68060Firmware_impl1.ncd Zen68060Firmware_impl1.prf -gui
+// iotiming Zen68060Firmware_impl1.ncd Zen68060Firmware_impl1.prf -gui -msgset C:/lscc/diamond/3.14/bin/nt64/Zen68060Firmware/promote.xml
 
 I/O Timing Report (All units are in ns)
 
@@ -30,27 +30,26 @@ Worst Case Results across Performance Grades (M, 6):
 
 // Input Setup and Hold Times
 
-Port      Clock Edge  Setup Performance_Grade  Hold Performance_Grade
+Port  Clock Edge  Setup Performance_Grade  Hold Performance_Grade
 ----------------------------------------------------------------------
-A[23]     CLK   R     2.994      6      -0.296     M
-A[24]     CLK   R     2.970      6      -0.284     M
-A[25]     CLK   R     3.470      6      -0.417     M
-A[26]     CLK   R     3.871      6      -0.526     M
-A[27]     CLK   R     3.925      6      -0.494     M
-A[28]     CLK   R     3.430      6      -0.372     M
-A[29]     CLK   R     3.408      6      -0.352     M
-A[30]     CLK   R     3.639      6      -0.398     M
-A[31]     CLK   R     3.730      6      -0.408     M
-RESET_PLL CLK   R     3.473      6      -0.038     M
-TS_N      CLK   R     1.826      6       0.192     6
+A[23] CLK   R     1.705      6      -0.115     M
+A[24] CLK   R     1.387      6      -0.022     M
+A[25] CLK   R     0.687      6       0.238     6
+A[26] CLK   R     1.240      6       0.062     M
+A[27] CLK   R     1.207      6       0.082     M
+A[28] CLK   R     0.996      6       0.108     M
+A[29] CLK   R     1.547      6      -0.058     M
+A[30] CLK   R     0.824      6       0.139     M
+A[31] CLK   R     1.851      6      -0.146     M
+TS_N  CLK   R     1.402      6      -0.003     M
 
 
 // Clock to Output Delay
 
 Port     Clock Edge  Max_Delay Performance_Grade  Min_Delay Performance_Grade
 ------------------------------------------------------------------------
-RAM_CS_N CLK   R    10.903         6        3.713          M
-TA_N     CLK   R     8.687         6        2.921          M
+RAM_CS_N CLK   R    10.103         6        2.791          M
+TA_N     CLK   R     9.843         6        2.678          M
 WARNING: you must also run trce with hold speed: 6
 
 

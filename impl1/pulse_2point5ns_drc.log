@@ -1,0 +1,30 @@
+Results of NGD DRC are available in pulse_2point5ns_drc.log.
+Loading NGL library 'C:/lscc/diamond/3.14/ispfpga/xo2c00a/data/xo2alib.ngl'...
+Loading NGL library 'C:/lscc/diamond/3.14/ispfpga/xo2c00/data/xo2clib.ngl'...
+Loading NGL library 'C:/lscc/diamond/3.14/ispfpga/mg5g00/data/mg5glib.ngl'...
+Loading NGL library 'C:/lscc/diamond/3.14/ispfpga/or5g00/data/orc5glib.ngl'...
+
+
+Running DRC...
+
+WARNING - synthesis: logical net 'CLK400' has no load.
+WARNING - synthesis: input pad net 'CLK400' has no legal load.
+WARNING - synthesis: logical net 'TRIGGER' has no load.
+WARNING - synthesis: input pad net 'TRIGGER' has no legal load.
+WARNING - synthesis: logical net 'COUNT[3]' has no load.
+WARNING - synthesis: input pad net 'COUNT[3]' has no legal load.
+WARNING - synthesis: logical net 'COUNT[2]' has no load.
+WARNING - synthesis: input pad net 'COUNT[2]' has no legal load.
+WARNING - synthesis: logical net 'COUNT[1]' has no load.
+WARNING - synthesis: input pad net 'COUNT[1]' has no legal load.
+WARNING - synthesis: logical net 'COUNT[0]' has no load.
+WARNING - synthesis: input pad net 'COUNT[0]' has no legal load.
+WARNING - synthesis: logical net 'SET' has no load.
+WARNING - synthesis: input pad net 'SET' has no legal load.
+WARNING - synthesis: DRC complete with 14 warnings.
+
+Design Results:
+      5 blocks expanded
+completed the first expansion
+All blocks are expanded and NGD expansion is successful.
+Writing NGD file Zen68060Firmware_impl1.ngd.

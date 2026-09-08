@@ -1,0 +1,134 @@
+--------------------------------------------------------------------------------
+Lattice Synthesis Timing Report, Version  
+Tue Sep 08 22:10:59 2026
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2024 Lattice Semiconductor Corporation,  All rights reserved.
+
+Report Information
+------------------
+Design:     ZenMainLogic
+Constraint file:  
+Report level:    verbose report, limited to 3 items per constraint
+--------------------------------------------------------------------------------
+
+
+
+================================================================================
+Constraint: create_clock -period 5.000000 -name clk1 [get_nets CLKOS]
+            32 items scored, 0 timing errors detected.
+--------------------------------------------------------------------------------
+
+
+Passed:  The following path meets requirements by 1.340ns
+
+ Logical Details:  Cell type  Pin type       Cell name  (clock net +/-)
+
+   Source:         FD1S3AY    CK             \u_SR_TA/load_half_13  (from CLKOS +)
+   Destination:    FD1S3AY    D              \u_SR_TA/load_registered_14  (to CLKOS +)
+
+   Delay:                   1.027ns  (35.7% logic, 64.3% route), 1 logic levels.
+
+ Constraint Details:
+
+      1.027ns data_path \u_SR_TA/load_half_13 to \u_SR_TA/load_registered_14 meets
+      2.500ns delay constraint less
+      0.133ns L_S requirement (totaling 2.367ns) by 1.340ns
+
+ Path Details: \u_SR_TA/load_half_13 to \u_SR_TA/load_registered_14
+
+   Name    Fanout   Delay (ns)          Pins               Resource(Cell.Net)
+L_CO        ---     0.367             CK to Q              \u_SR_TA/load_half_13 (from CLKOS)
+Route         1   e 0.660                                  \u_SR_TA/load_half
+                  --------
+                    1.027  (35.7% logic, 64.3% route), 1 logic levels.
+
+
+Passed:  The following path meets requirements by 1.340ns
+
+ Logical Details:  Cell type  Pin type       Cell name  (clock net +/-)
+
+   Source:         FD1S3AY    CK             \u_SR_RAMS_CS/load_half_13  (from CLKOS +)
+   Destination:    FD1S3AY    D              \u_SR_RAMS_CS/load_registered_14  (to CLKOS +)
+
+   Delay:                   1.027ns  (35.7% logic, 64.3% route), 1 logic levels.
+
+ Constraint Details:
+
+      1.027ns data_path \u_SR_RAMS_CS/load_half_13 to \u_SR_RAMS_CS/load_registered_14 meets
+      2.500ns delay constraint less
+      0.133ns L_S requirement (totaling 2.367ns) by 1.340ns
+
+ Path Details: \u_SR_RAMS_CS/load_half_13 to \u_SR_RAMS_CS/load_registered_14
+
+   Name    Fanout   Delay (ns)          Pins               Resource(Cell.Net)
+L_CO        ---     0.367             CK to Q              \u_SR_RAMS_CS/load_half_13 (from CLKOS)
+Route         1   e 0.660                                  \u_SR_RAMS_CS/load_half
+                  --------
+                    1.027  (35.7% logic, 64.3% route), 1 logic levels.
+
+
+Passed:  The following path meets requirements by 3.385ns
+
+ Logical Details:  Cell type  Pin type       Cell name  (clock net +/-)
+
+   Source:         FD1S3AY    CK             \u_SR_TA/load_registered_14  (from CLKOS +)
+   Destination:    FD1S3JX    PD             \u_SR_TA/shift_reg_i5  (to CLKOS +)
+
+   Delay:                   1.482ns  (24.8% logic, 75.2% route), 1 logic levels.
+
+ Constraint Details:
+
+      1.482ns data_path \u_SR_TA/load_registered_14 to \u_SR_TA/shift_reg_i5 meets
+      5.000ns delay constraint less
+      0.133ns L_S requirement (totaling 4.867ns) by 3.385ns
+
+ Path Details: \u_SR_TA/load_registered_14 to \u_SR_TA/shift_reg_i5
+
+   Name    Fanout   Delay (ns)          Pins               Resource(Cell.Net)
+L_CO        ---     0.367             CK to Q              \u_SR_TA/load_registered_14 (from CLKOS)
+Route         8   e 1.115                                  \u_SR_TA/shift_reg_7__N_26[0]
+                  --------
+                    1.482  (24.8% logic, 75.2% route), 1 logic levels.
+
+Report: 1.160 ns is the maximum delay for this constraint.
+
+
+
+================================================================================
+Constraint: create_clock -period 5.000000 -name clk0 [get_nets CLK_c]
+            0 items scored, 0 timing errors detected.
+--------------------------------------------------------------------------------
+
+Timing Report Summary
+--------------
+--------------------------------------------------------------------------------
+Constraint                              |   Constraint|       Actual|Levels
+--------------------------------------------------------------------------------
+                                        |             |             |
+create_clock -period 5.000000 -name     |             |             |
+clk1 [get_nets CLKOS]                   |     5.000 ns|     2.320 ns|     1  
+                                        |             |             |
+create_clock -period 5.000000 -name     |             |             |
+clk0 [get_nets CLK_c]                   |            -|            -|     0  
+                                        |             |             |
+--------------------------------------------------------------------------------
+
+
+All constraints were met.
+
+
+
+Timing summary:
+---------------
+
+Timing errors: 0  Score: 0
+
+Constraints cover  32 paths, 20 nets, and 36 connections (41.4% coverage)
+
+
+Peak memory: 63139840 bytes, TRCE: 983040 bytes, DLYMAN: 0 bytes
+CPU_TIME_REPORT: 0 secs 

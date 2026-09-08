@@ -11,7 +11,7 @@ Writing a Verilog netlist using the orca library type based on the Zen68060Firmw
 
 
 Loading design for application ldbanno from file Zen68060Firmware_impl1.ncd.
-Design name: mainLogic
+Design name: ZenMainLogic
 NCD version: 3.3
 Vendor:      LATTICE
 Device:      LCMXO2-7000HC

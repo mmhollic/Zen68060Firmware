@@ -1,39 +1,33 @@
 ---------------------------------------------------
-Report for cell mainLogic
-   Instance path: mainLogic
+Report for cell ZenMainLogic
+   Instance path: ZenMainLogic
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  SLIC	      18.00        100.0
-                                  LUT4	      27.00        100.0
-                                 IOBUF	         18        100.0
-                                PFUREG	         16        100.0
-                                RIPPLE	          4        100.0
-SUB MODULES
-                                  cell	      count    SLC Usage(%)
-                       pulse_2point5ns	          1        27.8
-                           ZenClockPLL	          1        50.0
----------------------------------------------------
-Report for cell pulse_2point5ns
-   Instance path: mainLogic/pulse12point5
-                     Cell usage:
-                                  cell	      count    Res Usage(%)
-                                  SLIC	       5.00        27.8
-                                  LUT4	       9.00        33.3
-                                PFUREG	          5        31.3
----------------------------------------------------
-Report for cell ZenClockPLL
-   Instance path: mainLogic/u_pll
-                     Cell usage:
-                                  cell	      count    Res Usage(%)
-                                  SLIC	       9.00        50.0
-                                  LUT4	       9.00        33.3
-                                PFUREG	          9        56.3
-                                RIPPLE	          4        100.0
+                                  SLIC	      14.00        100.0
+                                  LUT4	       8.00        100.0
+                                 IOBUF	         15        100.0
+                                PFUREG	         22        100.0
 SUB MODULES
                                   cell	      count    SLC Usage(%)
                                 ZenPLL	          1         0.0
+                   PISO_Short_ShiftReg	          1        39.3
+                PISO_Short_ShiftReg_U0	          1        35.7
+---------------------------------------------------
+Report for cell PISO_Short_ShiftReg
+   Instance path: ZenMainLogic/u_SR_TA
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       5.50        39.3
+                                PFUREG	         10        45.5
+---------------------------------------------------
+Report for cell PISO_Short_ShiftReg_U0
+   Instance path: ZenMainLogic/u_SR_RAMS_CS
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	       5.00        35.7
+                                PFUREG	         10        45.5
 ---------------------------------------------------
 Report for cell ZenPLL
-   Instance path: mainLogic/u_pll/u_ZenPLL
+   Instance path: ZenMainLogic/u_ZenPLL
                      Cell usage:
                                   cell	      count    Res Usage(%)

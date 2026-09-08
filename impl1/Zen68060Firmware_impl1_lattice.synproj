@@ -33,10 +33,9 @@
 -lpf 1
 -p "C:/lscc/diamond/3.14/bin/nt64/Zen68060Firmware"
 -ver "C:/lscc/diamond/3.14/bin/nt64/Zen68060Firmware/Zen68060MachMainLogic.v"
+"C:/lscc/diamond/3.14/bin/nt64/Zen68060Firmware/ZenShiftRegister.v"
 "C:/lscc/diamond/3.14/bin/nt64/Zen68060Firmware/ZenPLL.v"
-"C:/lscc/diamond/3.14/bin/nt64/Zen68060Firmware/ZenClockPLL.v"
-"C:/lscc/diamond/3.14/bin/nt64/Zen68060Firmware/ZenPulseGen.v"
--top mainLogic
+-top ZenMainLogic
 
 
 -p "C:/lscc/diamond/3.14/ispfpga/xo2c00/data" "C:/lscc/diamond/3.14/bin/nt64/Zen68060Firmware/impl1" "C:/lscc/diamond/3.14/bin/nt64/Zen68060Firmware"

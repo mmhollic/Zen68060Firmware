@@ -14,6 +14,59 @@
             <Dynamic>0</Dynamic>
         </Message>
     </Task>
+    <Task name="Map">
+        <Message>
+            <ID>1100644</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>C:/lscc/diamond/3.14/bin/nt64/Zen68060Firmware/Zen68060Firmware.lpf(5): Semantic error in &quot;IOBUF PORT &quot;RW_IN&quot; IO_TYPE=LVCMOS33 ;&quot;: </Dynamic>
+            <Dynamic>RW_IN</Dynamic>
+            <Navigation>C:/lscc/diamond/3.14/bin/nt64/Zen68060Firmware/Zen68060Firmware.lpf</Navigation>
+            <Navigation>5</Navigation>
+        </Message>
+        <Message>
+            <ID>1100644</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>C:/lscc/diamond/3.14/bin/nt64/Zen68060Firmware/Zen68060Firmware.lpf(8): Semantic error in &quot;IOBUF PORT &quot;RAM_OE_N&quot; IO_TYPE=LVCMOS33 SLEWRATE=FAST ;&quot;: </Dynamic>
+            <Dynamic>RAM_OE_N</Dynamic>
+            <Navigation>C:/lscc/diamond/3.14/bin/nt64/Zen68060Firmware/Zen68060Firmware.lpf</Navigation>
+            <Navigation>8</Navigation>
+        </Message>
+        <Message>
+            <ID>1100644</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>C:/lscc/diamond/3.14/bin/nt64/Zen68060Firmware/Zen68060Firmware.lpf(9): Semantic error in &quot;IOBUF PORT &quot;RW_OUT&quot; IO_TYPE=LVCMOS33 SLEWRATE=FAST ;&quot;: </Dynamic>
+            <Dynamic>RW_OUT</Dynamic>
+            <Navigation>C:/lscc/diamond/3.14/bin/nt64/Zen68060Firmware/Zen68060Firmware.lpf</Navigation>
+            <Navigation>9</Navigation>
+        </Message>
+        <Message>
+            <ID>1100679</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>C:/lscc/diamond/3.14/bin/nt64/Zen68060Firmware/Zen68060Firmware.lpf(14): Semantic error in &quot;LOCATE COMP &quot;RAM_OE_N&quot; SITE &quot;94&quot; ;&quot;: </Dynamic>
+            <Dynamic>RAM_OE_N</Dynamic>
+            <Navigation>C:/lscc/diamond/3.14/bin/nt64/Zen68060Firmware/Zen68060Firmware.lpf</Navigation>
+            <Navigation>14</Navigation>
+        </Message>
+        <Message>
+            <ID>1100679</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>C:/lscc/diamond/3.14/bin/nt64/Zen68060Firmware/Zen68060Firmware.lpf(15): Semantic error in &quot;LOCATE COMP &quot;RW_OUT&quot; SITE &quot;73&quot; ;&quot;: </Dynamic>
+            <Dynamic>RW_OUT</Dynamic>
+            <Navigation>C:/lscc/diamond/3.14/bin/nt64/Zen68060Firmware/Zen68060Firmware.lpf</Navigation>
+            <Navigation>15</Navigation>
+        </Message>
+        <Message>
+            <ID>1166064</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>input</Dynamic>
+            <Dynamic>RW_IN</Dynamic>
+        </Message>
+        <Message>
+            <ID>51001046</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>RW_IN</Dynamic>
+        </Message>
+    </Task>
     <Task name="Lattice_Synthesis">
         <Message>
             <ID>35002000</ID>
@@ -26,17 +79,9 @@
         <Message>
             <ID>35901018</ID>
             <Severity>Info</Severity>
-            <Dynamic>c:/lscc/diamond/3.14/bin/nt64/zen68060firmware/zen68060machmainlogic.v(13): </Dynamic>
-            <Dynamic>mainLogic</Dynamic>
+            <Dynamic>c:/lscc/diamond/3.14/bin/nt64/zen68060firmware/zen68060machmainlogic.v(1): </Dynamic>
+            <Dynamic>ZenMainLogic</Dynamic>
             <Navigation>c:/lscc/diamond/3.14/bin/nt64/zen68060firmware/zen68060machmainlogic.v</Navigation>
-            <Navigation>13</Navigation>
-        </Message>
-        <Message>
-            <ID>35901018</ID>
-            <Severity>Info</Severity>
-            <Dynamic>c:/lscc/diamond/3.14/bin/nt64/zen68060firmware/zenclockpll.v(1): </Dynamic>
-            <Dynamic>ZenClockPLL</Dynamic>
-            <Navigation>c:/lscc/diamond/3.14/bin/nt64/zen68060firmware/zenclockpll.v</Navigation>
             <Navigation>1</Navigation>
         </Message>
         <Message>
@@ -59,62 +104,87 @@
             <ID>35901018</ID>
             <Severity>Info</Severity>
             <Dynamic>C:/lscc/diamond/3.14/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(1730): </Dynamic>
-            <Dynamic>EHXPLLJ(CLKOS3_DIV=1,CLKOP_CPHASE=7,CLKOS_CPHASE=8,CLKOS2_CPHASE=7,DPHASE_SOURCE=&quot;ENABLED&quot;,PLLRST_ENA=&quot;ENABLED&quot;)</Dynamic>
+            <Dynamic>EHXPLLJ(CLKOP_DIV=12,CLKOS_DIV=3,CLKOS2_DIV=1,CLKOS3_DIV=1,CLKOS2_ENABLE=&quot;DISABLED&quot;,CLKOS3_ENABLE=&quot;DISABLED&quot;,CLKOP_CPHASE=11,CLKOS_CPHASE=2,CLKOS_FPHASE=6,PLLRST_ENA=&quot;ENABLED&quot;)</Dynamic>
             <Navigation>C:/lscc/diamond/3.14/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v</Navigation>
             <Navigation>1730</Navigation>
         </Message>
         <Message>
-            <ID>35901330</ID>
+            <ID>35901018</ID>
+            <Severity>Info</Severity>
+            <Dynamic>c:/lscc/diamond/3.14/bin/nt64/zen68060firmware/zenshiftregister.v(64): </Dynamic>
+            <Dynamic>PISO_Short_ShiftReg</Dynamic>
+            <Navigation>c:/lscc/diamond/3.14/bin/nt64/zen68060firmware/zenshiftregister.v</Navigation>
+            <Navigation>64</Navigation>
+        </Message>
+        <Message>
+            <ID>35908216</ID>
             <Severity>Warning</Severity>
-            <Dynamic>c:/lscc/diamond/3.14/bin/nt64/zen68060firmware/zenclockpll.v(16): </Dynamic>
-            <Dynamic>3</Dynamic>
-            <Dynamic>2</Dynamic>
-            <Dynamic>PHASESEL</Dynamic>
-            <Navigation>c:/lscc/diamond/3.14/bin/nt64/zen68060firmware/zenclockpll.v</Navigation>
-            <Navigation>16</Navigation>
+            <Dynamic>c:/lscc/diamond/3.14/bin/nt64/zen68060firmware/zenshiftregister.v(119): </Dynamic>
+            <Dynamic>14</Dynamic>
+            <Dynamic>7</Dynamic>
+            <Dynamic>0</Dynamic>
+            <Dynamic>shift_reg</Dynamic>
+            <Navigation>c:/lscc/diamond/3.14/bin/nt64/zen68060firmware/zenshiftregister.v</Navigation>
+            <Navigation>119</Navigation>
         </Message>
         <Message>
             <ID>35901209</ID>
             <Severity>Warning</Severity>
-            <Dynamic>c:/lscc/diamond/3.14/bin/nt64/zen68060firmware/zenclockpll.v(39): </Dynamic>
-            <Dynamic>32</Dynamic>
-            <Dynamic>6</Dynamic>
-            <Navigation>c:/lscc/diamond/3.14/bin/nt64/zen68060firmware/zenclockpll.v</Navigation>
-            <Navigation>39</Navigation>
-        </Message>
-        <Message>
-            <ID>35901018</ID>
-            <Severity>Info</Severity>
-            <Dynamic>c:/lscc/diamond/3.14/bin/nt64/zen68060firmware/zenpulsegen.v(1): </Dynamic>
-            <Dynamic>pulse_2point5ns</Dynamic>
-            <Navigation>c:/lscc/diamond/3.14/bin/nt64/zen68060firmware/zenpulsegen.v</Navigation>
-            <Navigation>1</Navigation>
+            <Dynamic>c:/lscc/diamond/3.14/bin/nt64/zen68060firmware/zenshiftregister.v(119): </Dynamic>
+            <Dynamic>16</Dynamic>
+            <Dynamic>8</Dynamic>
+            <Navigation>c:/lscc/diamond/3.14/bin/nt64/zen68060firmware/zenshiftregister.v</Navigation>
+            <Navigation>119</Navigation>
         </Message>
         <Message>
             <ID>35901330</ID>
             <Severity>Warning</Severity>
-            <Dynamic>c:/lscc/diamond/3.14/bin/nt64/zen68060firmware/zen68060machmainlogic.v(97): </Dynamic>
-            <Dynamic>3</Dynamic>
-            <Dynamic>4</Dynamic>
-            <Dynamic>pulseCount</Dynamic>
-            <Navigation>c:/lscc/diamond/3.14/bin/nt64/zen68060firmware/zen68060machmainlogic.v</Navigation>
-            <Navigation>97</Navigation>
-        </Message>
-        <Message>
-            <ID>35002005</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>RW_IN</Dynamic>
-        </Message>
-        <Message>
-            <ID>35002005</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>RW_OUT</Dynamic>
-        </Message>
-        <Message>
-            <ID>35001747</ID>
-            <Severity>Warning</Severity>
+            <Dynamic>c:/lscc/diamond/3.14/bin/nt64/zen68060firmware/zen68060machmainlogic.v(35): </Dynamic>
+            <Dynamic>32</Dynamic>
             <Dynamic>1</Dynamic>
-            <Dynamic>\u_pll/PHASE_SEL_PLL__0</Dynamic>
+            <Dynamic>Reset</Dynamic>
+            <Navigation>c:/lscc/diamond/3.14/bin/nt64/zen68060firmware/zen68060machmainlogic.v</Navigation>
+            <Navigation>35</Navigation>
+        </Message>
+        <Message>
+            <ID>35901330</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>c:/lscc/diamond/3.14/bin/nt64/zen68060firmware/zen68060machmainlogic.v(36): </Dynamic>
+            <Dynamic>32</Dynamic>
+            <Dynamic>1</Dynamic>
+            <Dynamic>ClockEn</Dynamic>
+            <Navigation>c:/lscc/diamond/3.14/bin/nt64/zen68060firmware/zen68060machmainlogic.v</Navigation>
+            <Navigation>36</Navigation>
+        </Message>
+        <Message>
+            <ID>35901330</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>c:/lscc/diamond/3.14/bin/nt64/zen68060firmware/zen68060machmainlogic.v(43): </Dynamic>
+            <Dynamic>32</Dynamic>
+            <Dynamic>1</Dynamic>
+            <Dynamic>Reset</Dynamic>
+            <Navigation>c:/lscc/diamond/3.14/bin/nt64/zen68060firmware/zen68060machmainlogic.v</Navigation>
+            <Navigation>43</Navigation>
+        </Message>
+        <Message>
+            <ID>35901330</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>c:/lscc/diamond/3.14/bin/nt64/zen68060firmware/zen68060machmainlogic.v(44): </Dynamic>
+            <Dynamic>32</Dynamic>
+            <Dynamic>1</Dynamic>
+            <Dynamic>ClockEn</Dynamic>
+            <Navigation>c:/lscc/diamond/3.14/bin/nt64/zen68060firmware/zen68060machmainlogic.v</Navigation>
+            <Navigation>44</Navigation>
+        </Message>
+        <Message>
+            <ID>35001771</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>trigCS_keep</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001771</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>trigTA_keep</Dynamic>
         </Message>
         <Message>
             <ID>35002005</ID>
@@ -124,34 +194,90 @@
         <Message>
             <ID>35002005</ID>
             <Severity>Warning</Severity>
-            <Dynamic>RW_OUT</Dynamic>
+            <Dynamic>RW_IN</Dynamic>
         </Message>
         <Message>
             <ID>35001779</ID>
             <Severity>Warning</Severity>
-            <Dynamic>\u_pll/phase_count_i0</Dynamic>
+            <Dynamic>\u_SR_TA/shift_reg_i5</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001779</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>\u_SR_TA/shift_reg_i4</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001779</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>\u_SR_TA/shift_reg_i3</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001779</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>\u_SR_TA/shift_reg_i2</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001779</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>\u_SR_TA/shift_reg_i1</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001779</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>\u_SR_RAMS_CS/shift_reg_i6</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001779</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>\u_SR_RAMS_CS/shift_reg_i5</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001779</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>\u_SR_RAMS_CS/shift_reg_i4</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001779</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>\u_SR_RAMS_CS/shift_reg_i3</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001779</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>\u_SR_RAMS_CS/shift_reg_i2</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001779</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>\u_SR_RAMS_CS/shift_reg_i1</Dynamic>
         </Message>
         <Message>
             <ID>35001611</ID>
             <Severity>Warning</Severity>
         </Message>
+        <Message>
+            <ID>1166052</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>logical</Dynamic>
+            <Dynamic>RW_IN</Dynamic>
+            <Navigation>RW_IN</Navigation>
+        </Message>
+        <Message>
+            <ID>1166064</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>input</Dynamic>
+            <Dynamic>RW_IN</Dynamic>
+        </Message>
+        <Message>
+            <ID>1163101</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>2</Dynamic>
+        </Message>
     </Task>
     <Task name="PAR">
         <Message>
-            <ID>67031021</ID>
+            <ID>61001101</ID>
             <Severity>Warning</Severity>
-            <Dynamic>primary</Dynamic>
-            <Dynamic>CLKOS</Dynamic>
-            <Dynamic>primary</Dynamic>
-            <Dynamic>clock</Dynamic>
-        </Message>
-        <Message>
-            <ID>67031021</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>primary</Dynamic>
-            <Dynamic>CLKOS2</Dynamic>
-            <Dynamic>primary</Dynamic>
-            <Dynamic>clock</Dynamic>
         </Message>
         <Message>
             <ID>61091062</ID>
