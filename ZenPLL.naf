@@ -2,4 +2,5 @@ CLKI  i
 RST  i
 CLKOP  o
 CLKOS  o
+CLKOS2  o
 LOCK  o

@@ -5,82 +5,64 @@ module ZenMainLogic(
 	input wire CLK,
 	input wire TS_N,
 	input wire RW_IN,
+	output wire RW_OUT,
 	output wire TA_N /* synthesis DOUT="TRUE" SLEWRATE="FAST" */,
-	output wire RAM_CS_N /* synthesis DOUT="TRUE" SLEWRATE="FAST" */
+	output wire RAM_CS_N /* synthesis DOUT="TRUE" SLEWRATE="FAST" */,
+	output wire ROM_CS_N /* synthesis DOUT="TRUE" SLEWRATE="FAST" */,
+	output wire RAM_OE_N /* synthesis DOUT="TRUE" SLEWRATE="FAST" */
 );
 	
 	wire CLKOP;
 	wire CLKOS;
-	reg int_RAM_TA_N;
-	
-	reg trigCS /* synthesis syn_preserve=1 syn_keep=1 */ = 1'b0;
-	reg trigTA /* synthesis syn_preserve=1 syn_keep=1 */ = 1'b0;
-	
-	reg int_RAM_CS_N=1'b1;
-	wire RAM_CS_END;
-	wire TA_END;
-	assign TA_N = int_RAM_CS_N|TA_END;
-	
-	
+	wire CLKOS2;
+
 	ZenPLL u_ZenPLL(
 		.CLKI(CLK), 
 		.RST(RST),
 		.CLKOP(CLKOP),
 		.CLKOS(CLKOS),
+		.CLKOS2(CLKOS2),
 		.LOCK(LOCK)
 	);
+	assign RW_OUT = RW_IN;
 	
-	PISO_Short_ShiftReg u_SR_RAMS_CS(
-		.Clock(CLKOS),
-		.Reset(0),
-		.ClockEn(1),
-		.Load(!trigCS),       // High = Load Parallel Data, Low = Shift Out
-		.ParallelIn(8'b01111111), // The 8-bit word you want to serialize
-		.SerialOut(RAM_CS_END)
-	);
-	PISO_Short_ShiftReg u_SR_TA(
-		.Clock(CLKOS),
-		.Reset(0),
-		.ClockEn(1),
-		.Load(!trigTA),       // High = Load Parallel Data, Low = Shift Out
-		.ParallelIn(8'b00111111), // The 8-bit word you want to serialize
-		.SerialOut(TA_END)
-	);
+	/******************************** Generate RAM CS and RAM TA **********************************/
 
-	
-	wire group1;
-    wire group2;
-	wire int_RAM_CS_ADDR;
-	
-    assign group1 =
-          A[23]
-        | A[24]
-        | A[25]
-        | A[26];
-
-    assign group2 =
-          ~A[27]
-        | A[28]
-        | A[29]
-        | A[30];
-
-    assign int_RAM_CS_ADDR =!(group1|group2| A[31]);
-	assign RAM_CS_N = int_RAM_CS_N|RAM_CS_END;
+	assign RAM_OE_N = 1;//RAM_CS_N;
 		
-	always @(posedge CLK )
-	begin
-		if (!TS_N&int_RAM_CS_ADDR)
-		begin
-			trigCS <=1;
-			trigTA <=1;
-			int_RAM_CS_N <=1'b0;
-		end
-		else begin
-			trigCS<=0;
-			trigTA<=0;
-			int_RAM_CS_N <=1'b1;
-		end
+	wire RAM_CS_ADDR;
+	wire ROM_CS_ADDR;
+	wire RAM_TA_N;
+	wire ROM_TA_N;
+	
+    ZenAddressDecode u_decode(
+		.A(A),
+		.RAM_ADDR(RAM_CS_ADDR),
+		.ROM_ADDR(ROM_CS_ADDR)
+	);
+	
+	assign TA_N = ROM_TA_N&RAM_TA_N;
+	
 
-	end
+	ZenRAM_CS_TA u_RAM_CS_TA(
+		.CLK(CLK),
+		.CLKOS(CLKOS),
+		.RAM_ADDR(RAM_CS_ADDR),
+		.TS_N(TS_N),
+		.RW(RW_IN),
+		.RAM_CS_N(RAM_CS_N),
+		.RAM_TA_N(RAM_TA_N)
+	);
+	ZenROM_CS_TA u_ROM_CS_TA(
+		.CLK(CLK),
+		.CLKOS(CLKOS2),
+		.ROM_ADDR(ROM_CS_ADDR),
+		.TS_N(TS_N),
+		.ROM_CS_N(ROM_CS_N),
+		.ROM_TA_N(ROM_TA_N)
+	);
+	
+	/************************************* Generate ROM CS and TA ******************************/
+	
 	
 endmodule

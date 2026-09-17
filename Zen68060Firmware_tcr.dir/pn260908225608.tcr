@@ -1,0 +1,34 @@
+#Start recording tcl command: 9/8/2026 21:59:06
+#Project Location: C:/lscc/diamond/3.14/bin/nt64/Zen68060Firmware; Project name: Zen68060Firmware
+prj_project open "C:/lscc/diamond/3.14/bin/nt64/Zen68060Firmware/Zen68060Firmware.ldf"
+prj_src remove "C:/lscc/diamond/3.14/bin/nt64/Zen68060Firmware/ZenClockPLL.v" "C:/lscc/diamond/3.14/bin/nt64/Zen68060Firmware/ZenPulseGen.v"
+prj_src add "C:/lscc/diamond/3.14/bin/nt64/Zen68060Firmware/ZenShiftRegister.v"
+prj_src remove "C:/lscc/diamond/3.14/bin/nt64/Zen68060Firmware/ZenPLL.ipx"
+prj_src add "C:/lscc/diamond/3.14/bin/nt64/Zen68060Firmware/ZenPLL.v"
+prj_src remove "C:/lscc/diamond/3.14/bin/nt64/Zen68060Firmware/ZenPLL.v"
+prj_src add "C:/lscc/diamond/3.14/bin/nt64/Zen68060Firmware/ZenPLL.ipx"
+prj_run Map -impl impl1
+prj_run Map -impl impl1
+prj_run PAR -impl impl1
+prj_run Map -impl impl1
+prj_run PAR -impl impl1
+prj_run Map -impl impl1
+prj_run PAR -impl impl1
+prj_run Export -impl impl1
+prj_run Map -impl impl1
+prj_run PAR -impl impl1
+prj_run Export -impl impl1
+prj_src add "C:/lscc/diamond/3.14/bin/nt64/Zen68060Firmware/ZenSim/ZenSim.spf"
+prj_src add "C:/lscc/diamond/3.14/bin/nt64/Zen68060Firmware/ZenSim/ZenSim.spf"
+prj_src add "C:/lscc/diamond/3.14/bin/nt64/Zen68060Firmware/ZenSim/ZenSim.spf"
+prj_src add "C:/lscc/diamond/3.14/bin/nt64/Zen68060Firmware/ZenSim/ZenSim.spf"
+prj_run Map -impl impl1
+prj_run Map -impl impl1
+prj_run PAR -impl impl1
+prj_run Map -impl impl1
+prj_run PAR -impl impl1
+prj_run Map -impl impl1
+prj_run PAR -impl impl1
+prj_run Export -impl impl1
+prj_src add "C:/lscc/diamond/3.14/bin/nt64/Zen68060Firmware/ZenSim/ZenSim.spf"
+#Stop recording: 9/8/2026 22:56:08

@@ -4,6 +4,7 @@ module PISO_Long_ShiftReg (
     input  wire        ClockEn,
     input  wire        Load,
     input  wire [15:0] ParallelIn,
+	input  wire		   ShiftInValue,
     output wire        SerialOut
 );
 
@@ -53,7 +54,7 @@ module PISO_Long_ShiftReg (
             if (load_registered)
                 shift_reg <= ParallelIn;
             else
-                shift_reg <= {shift_reg[14:0], 1'b0};
+                shift_reg <= {shift_reg[14:0], ShiftInValue};
 
         end
     end
@@ -67,6 +68,7 @@ module PISO_Short_ShiftReg (
     input  wire        ClockEn,
     input  wire        Load,
     input  wire [7:0] ParallelIn,
+	input  wire		   ShiftInValue,
     output wire        SerialOut
 );
 
@@ -116,7 +118,7 @@ module PISO_Short_ShiftReg (
             if (load_registered)
                 shift_reg <= ParallelIn;
             else
-                shift_reg <= {shift_reg[14:0], 1'b0};
+                shift_reg <= {shift_reg[14:0], ShiftInValue};
 
         end
     end

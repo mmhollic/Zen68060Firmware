@@ -3,47 +3,46 @@
     <Strategy name="Strategy1">
         <Milestone name="Export" build_result="0" build_time="0">
             <Task name="IBIS" build_result="0" update_result="3" update_time="0"/>
-            <Task name="TimingSimFileVlg" build_result="2" update_result="0" update_time="1788902190"/>
+            <Task name="TimingSimFileVlg" build_result="0" update_result="2" update_time="1789678664"/>
             <Task name="TimingSimFileVHD" build_result="0" update_result="3" update_time="0"/>
             <Task name="Bitgen" build_result="0" update_result="3" update_time="0"/>
             <Task name="Jedecgen" build_result="0" update_result="3" update_time="0"/>
         </Milestone>
-        <Milestone name="Map" build_result="2" build_time="1788902170">
-            <Task name="Map" build_result="2" update_result="0" update_time="1788902170"/>
-            <Task name="MapTrace" build_result="2" update_result="0" update_time="1788902171"/>
-            <Task name="MapVerilogSimFile" build_result="2" update_result="0" update_time="1788902171"/>
-            <Task name="MapVHDLSimFile" build_result="2" update_result="0" update_time="1788902172"/>
+        <Milestone name="Map" build_result="0" build_time="1789678667">
+            <Task name="Map" build_result="0" update_result="2" update_time="1789678667"/>
+            <Task name="MapTrace" build_result="0" update_result="2" update_time="1789678667"/>
+            <Task name="MapVerilogSimFile" build_result="0" update_result="2" update_time="1789678667"/>
+            <Task name="MapVHDLSimFile" build_result="0" update_result="2" update_time="1789678667"/>
         </Milestone>
-        <Milestone name="PAR" build_result="2" build_time="1788902177">
-            <Task name="PAR" build_result="2" update_result="0" update_time="1788902177"/>
-            <Task name="PARTrace" build_result="2" update_result="0" update_time="1788902178"/>
-            <Task name="IOTiming" build_result="2" update_result="0" update_time="1788902178"/>
+        <Milestone name="PAR" build_result="0" build_time="1789678667">
+            <Task name="PAR" build_result="0" update_result="2" update_time="1789678667"/>
+            <Task name="PARTrace" build_result="0" update_result="2" update_time="1789678667"/>
+            <Task name="IOTiming" build_result="0" update_result="2" update_time="1789678667"/>
         </Milestone>
-        <Milestone name="Synthesis" build_result="2" build_time="1788901859">
-            <Task name="Lattice_Synthesis" build_result="2" update_result="0" update_time="1788901859"/>
-            <Task name="LSE_Compile" build_result="2" update_result="0" update_time="1788901862"/>
+        <Milestone name="Synthesis" build_result="0" build_time="1789585224">
+            <Task name="Lattice_Synthesis" build_result="0" update_result="2" update_time="1789585224"/>
+            <Task name="LSE_Compile" build_result="0" update_result="2" update_time="1789585224"/>
         </Milestone>
         <Milestone name="TOOL_Report" build_result="0" build_time="0">
-            <Task name="HDLE" build_result="2" update_result="0" update_time="1788901843"/>
-            <Task name="BKM" build_result="0" update_result="2" update_time="1788901842"/>
+            <Task name="HDLE" build_result="2" update_result="0" update_time="1789585224"/>
+            <Task name="BKM" build_result="0" update_result="2" update_time="1789585224"/>
             <Task name="SSO" build_result="0" update_result="3" update_time="0"/>
             <Task name="PIODRC" build_result="0" update_result="3" update_time="0"/>
             <Task name="DEC" build_result="0" update_result="3" update_time="0"/>
         </Milestone>
-        <Report name=".vdbs/Zen68060Firmware_impl1_map.vdb" last_build_time="1788902170" last_build_size="34194"/>
-        <Report name="Zen68060Firmware_impl1.ior" last_build_time="1788902178" last_build_size="1819"/>
-        <Report name="Zen68060Firmware_impl1.lsedata" last_build_time="1788901859" last_build_size="41855"/>
-        <Report name="Zen68060Firmware_impl1.ncd" last_build_time="1788902177" last_build_size="37282"/>
-        <Report name="Zen68060Firmware_impl1.ngd" last_build_time="1788901859" last_build_size="30914"/>
-        <Report name="Zen68060Firmware_impl1.tw1" last_build_time="1788902170" last_build_size="21857"/>
-        <Report name="Zen68060Firmware_impl1.twr" last_build_time="1788902178" last_build_size="68331"/>
-        <Report name="Zen68060Firmware_impl1_map.ncd" last_build_time="1788902169" last_build_size="30410"/>
-        <Report name="Zen68060Firmware_impl1_mapvho.sdf" last_build_time="1788902172" last_build_size="18746"/>
-        <Report name="Zen68060Firmware_impl1_mapvho.vho" last_build_time="1788902172" last_build_size="174185"/>
-        <Report name="Zen68060Firmware_impl1_mapvo.sdf" last_build_time="1788902171" last_build_size="18744"/>
-        <Report name="Zen68060Firmware_impl1_mapvo.vo" last_build_time="1788902171" last_build_size="27537"/>
-        <Report name="Zen68060Firmware_impl1_vo.sdf" last_build_time="1788902190" last_build_size="21536"/>
-        <Report name="Zen68060Firmware_impl1_vo.vo" last_build_time="1788902190" last_build_size="27672"/>
+        <Report name=".vdbs/Zen68060Firmware_impl1_map.vdb" last_build_time="1789572903" last_build_size="41450"/>
+        <Report name="Zen68060Firmware_impl1.ior" last_build_time="1789572914" last_build_size="1879"/>
+        <Report name="Zen68060Firmware_impl1.lsedata" last_build_time="1789572902" last_build_size="95502"/>
+        <Report name="Zen68060Firmware_impl1.ncd" last_build_time="1789572913" last_build_size="56652"/>
+        <Report name="Zen68060Firmware_impl1.ngd" last_build_time="1789572902" last_build_size="46616"/>
+        <Report name="Zen68060Firmware_impl1.tw1" last_build_time="1789572904" last_build_size="23353"/>
+        <Report name="Zen68060Firmware_impl1.twr" last_build_time="1789572913" last_build_size="121154"/>
+        <Report name="Zen68060Firmware_impl1_map.ncd" last_build_time="1789572903" last_build_size="45248"/>
+        <Report name="Zen68060Firmware_impl1_mapvho.sdf" last_build_time="1789572906" last_build_size="32525"/>
+        <Report name="Zen68060Firmware_impl1_mapvho.vho" last_build_time="1789572906" last_build_size="278800"/>
+        <Report name="Zen68060Firmware_impl1_mapvo.sdf" last_build_time="1789572905" last_build_size="32655"/>
+        <Report name="Zen68060Firmware_impl1_mapvo.vo" last_build_time="1789572905" last_build_size="44934"/>
+        <Report name="Zen68060Firmware_impl1_vo.sdf" last_build_time="1789572918" last_build_size="38065"/>
+        <Report name="Zen68060Firmware_impl1_vo.vo" last_build_time="1789572918" last_build_size="45215"/>
     </Strategy>
 </BuildStatus>
-                                                                                                                                                                               

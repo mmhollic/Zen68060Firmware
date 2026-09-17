@@ -17,38 +17,55 @@
 # Loading project ZenSim
 # ** Warning: (vdel-134) Unable to remove locked optimized design "_opt".  Locker is hollo@DESKTOP-LK95KVP.
 # Questa Lattice OEM Edition-64 vlog 2024.2 Compiler 2024.05 May 20 2024
-# Start time: 22:25:10 on Sep 08,2026
+# Start time: 14:17:30 on Sep 16,2026
 # vlog -reportprogress 300 "+incdir+C:/lscc/diamond/3.14/bin/nt64/Zen68060Firmware/impl1" -work work C:/lscc/diamond/3.14/bin/nt64/Zen68060Firmware/impl1/Zen68060Firmware_impl1_vo.vo 
 # -- Compiling module ZenMainLogic
-# -- Compiling module u_SR_RAMS_CS_SLICE_0
+# -- Compiling module u_RAM_CS_TA_u_SR_TA_SLICE_0
 # -- Compiling module vmuxregsre
 # -- Compiling module vcc
 # -- Compiling module gnd
-# -- Compiling module u_SR_TA_SLICE_1
-# -- Compiling module SLICE_2
-# -- Compiling module lut4
-# -- Compiling module lut40001
-# -- Compiling module vmuxregsre0002
+# -- Compiling module u_ROM_CS_TA_u_SR_ROMS_CS_SLICE_1
+# -- Compiling module u_ROM_CS_TA_u_SR_TA_SLICE_2
+# -- Compiling module vmuxregsre0001
 # -- Compiling module SLICE_3
-# -- Compiling module lut40003
-# -- Compiling module lut40004
-# -- Compiling module vmuxregsre0005
-# -- Compiling module SLICE_4
+# -- Compiling module lut4
+# -- Compiling module lut40002
+# -- Compiling module vmuxregsre0003
+# -- Compiling module vmuxregsre0004
+# -- Compiling module u_ROM_CS_TA_SLICE_4
+# -- Compiling module lut40005
 # -- Compiling module lut40006
-# -- Compiling module inverter
-# -- Compiling module SLICE_10
-# -- Compiling module SLICE_16
+# -- Compiling module u_RAM_CS_TA_u_SR_RAMS_CS_SLICE_5
+# -- Compiling module SLICE_19
 # -- Compiling module lut40007
-# -- Compiling module u_SR_RAMS_CS_SLICE_17
-# -- Compiling module vmuxregsre0008
-# -- Compiling module u_SR_RAMS_CS_SLICE_18
-# -- Compiling module u_SR_RAMS_CS_SLICE_19
-# -- Compiling module u_SR_TA_SLICE_21
-# -- Compiling module u_SR_TA_SLICE_22
-# -- Compiling module u_SR_TA_SLICE_23
-# -- Compiling module u_SR_TA_SLICE_24
-# -- Compiling module A_29_
+# -- Compiling module lut40008
+# -- Compiling module u_ROM_CS_TA_u_SR_ROMS_CS_SLICE_23
+# -- Compiling module lut40009
+# -- Compiling module u_ROM_CS_TA_SLICE_26
+# -- Compiling module inverter
+# -- Compiling module u_ROM_CS_TA_u_SR_TA_SLICE_28
+# -- Compiling module lut40010
+# -- Compiling module SLICE_30
+# -- Compiling module lut40011
+# -- Compiling module lut40012
+# -- Compiling module SLICE_31
+# -- Compiling module lut40013
+# -- Compiling module lut40014
+# -- Compiling module u_RAM_CS_TA_u_SR_RAMS_CS_SLICE_32
+# -- Compiling module u_RAM_CS_TA_u_SR_RAMS_CS_SLICE_33
+# -- Compiling module u_RAM_CS_TA_u_SR_RAMS_CS_SLICE_34
+# -- Compiling module u_RAM_CS_TA_u_SR_RAMS_CS_SLICE_35
+# -- Compiling module u_RAM_CS_TA_u_SR_TA_SLICE_36
+# -- Compiling module u_RAM_CS_TA_u_SR_TA_SLICE_37
+# -- Compiling module u_RAM_CS_TA_u_SR_TA_SLICE_38
+# -- Compiling module u_RAM_CS_TA_u_SR_TA_SLICE_39
+# -- Compiling module u_ROM_CS_TA_u_SR_ROMS_CS_SLICE_40
+# -- Compiling module u_ROM_CS_TA_u_SR_ROMS_CS_SLICE_41
+# -- Compiling module u_ROM_CS_TA_u_SR_TA_SLICE_42
+# -- Compiling module RAM_CS_N
 # -- Compiling module xo2iobuf
+# -- Compiling module RW_IN
+# -- Compiling module xo2iobuf0015
 # -- Compiling module TS_N
 # -- Compiling module CLK
 # -- Compiling module A_23_
@@ -58,81 +75,106 @@
 # -- Compiling module A_27_
 # -- Compiling module A_28_
 # -- Compiling module RST
-# -- Compiling module A_30_
-# -- Compiling module RAM_CS_N
-# -- Compiling module xo2iobuf0009
-# -- Compiling module A_31_
+# -- Compiling module A_29_
 # -- Compiling module TA_N
+# -- Compiling module A_30_
+# -- Compiling module A_31_
+# -- Compiling module RW_OUT
+# -- Compiling module RAM_OE_N
 # -- Compiling module LOCK
+# -- Compiling module ROM_CS_N
 # -- Compiling module u_ZenPLL_PLLInst_0
 # -- Compiling module EHXPLLJ_B
 # 
 # Top level modules:
 # 	ZenMainLogic
-# End time: 22:25:10 on Sep 08,2026, Elapsed time: 0:00:00
+# End time: 14:17:30 on Sep 16,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Questa Lattice OEM Edition-64 vlog 2024.2 Compiler 2024.05 May 20 2024
-# Start time: 22:25:10 on Sep 08,2026
+# Start time: 14:17:30 on Sep 16,2026
 # vlog -reportprogress 300 "+incdir+C:/lscc/diamond/3.14/bin/nt64/Zen68060Firmware" -work work C:/lscc/diamond/3.14/bin/nt64/Zen68060Firmware/ZenSim.v 
 # -- Compiling module mainLogic_tb
 # 
 # Top level modules:
 # 	mainLogic_tb
-# End time: 22:25:10 on Sep 08,2026, Elapsed time: 0:00:00
+# End time: 14:17:30 on Sep 16,2026, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vsim -voptargs="+acc" -L work -L pmi_work -L ovi_machxo2 "+transport_path_delays" "+transport_int_delays" mainLogic_tb -sdfmax "/mainLogic_tb/dut=C:/lscc/diamond/3.14/bin/nt64/Zen68060Firmware/impl1/Zen68060Firmware_impl1_vo.sdf" 
-# Start time: 22:25:10 on Sep 08,2026
+# Start time: 14:17:31 on Sep 16,2026
 # ** Note: (vsim-3812) Design is being optimized...
 # ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility. The +acc switch would be deprecated in a future release.
 # ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
 # Loading work.mainLogic_tb(fast)
 # Loading work.ZenMainLogic(fast)
-# Loading work.u_SR_RAMS_CS_SLICE_0(fast)
+# Loading work.u_RAM_CS_TA_u_SR_TA_SLICE_0(fast)
 # Loading work.vmuxregsre(fast)
 # Loading ovi_machxo2.FL1P3IY(fast)
 # Loading work.vcc(fast)
 # Loading ovi_machxo2.VHI(fast)
 # Loading work.gnd(fast)
 # Loading ovi_machxo2.VLO(fast)
-# Loading work.u_SR_TA_SLICE_1(fast)
-# Loading work.SLICE_2(fast)
+# Loading work.u_ROM_CS_TA_u_SR_ROMS_CS_SLICE_1(fast)
+# Loading work.u_ROM_CS_TA_u_SR_TA_SLICE_2(fast)
+# Loading work.vmuxregsre0001(fast)
+# Loading ovi_machxo2.FL1P3JY(fast)
+# Loading work.SLICE_3(fast)
 # Loading work.lut4(fast)
 # Loading ovi_machxo2.ROM16X1A(fast)
-# Loading work.lut40001(fast)
+# Loading work.lut40002(fast)
 # Loading ovi_machxo2.ROM16X1A(fast__1)
-# Loading work.vmuxregsre0002(fast)
-# Loading ovi_machxo2.FL1P3BX(fast)
-# Loading work.SLICE_3(fast)
-# Loading work.lut40003(fast)
-# Loading ovi_machxo2.ROM16X1A(fast__2)
-# Loading work.lut40004(fast)
-# Loading ovi_machxo2.ROM16X1A(fast__3)
-# Loading work.vmuxregsre0005(fast)
+# Loading work.vmuxregsre0003(fast)
 # Loading ovi_machxo2.FL1P3DX(fast)
-# Loading work.SLICE_4(fast)
+# Loading work.vmuxregsre0004(fast)
+# Loading ovi_machxo2.FL1P3BX(fast)
+# Loading work.u_ROM_CS_TA_SLICE_4(fast)
+# Loading work.lut40005(fast)
+# Loading ovi_machxo2.ROM16X1A(fast__2)
 # Loading work.lut40006(fast)
+# Loading ovi_machxo2.ROM16X1A(fast__3)
+# Loading work.u_RAM_CS_TA_u_SR_RAMS_CS_SLICE_5(fast)
+# Loading work.SLICE_19(fast)
+# Loading work.lut40007(fast)
 # Loading ovi_machxo2.ROM16X1A(fast__4)
+# Loading work.lut40008(fast)
+# Loading ovi_machxo2.ROM16X1A(fast__5)
+# Loading work.u_ROM_CS_TA_u_SR_ROMS_CS_SLICE_23(fast)
+# Loading work.lut40009(fast)
+# Loading ovi_machxo2.ROM16X1A(fast__6)
+# Loading work.u_ROM_CS_TA_SLICE_26(fast)
 # Loading work.inverter(fast)
 # Loading ovi_machxo2.INV(fast)
-# Loading work.SLICE_10(fast)
-# Loading work.SLICE_16(fast)
-# Loading work.lut40007(fast)
-# Loading ovi_machxo2.ROM16X1A(fast__5)
-# Loading work.u_SR_RAMS_CS_SLICE_17(fast)
-# Loading work.vmuxregsre0008(fast)
-# Loading ovi_machxo2.FL1P3JY(fast)
-# Loading work.u_SR_RAMS_CS_SLICE_18(fast)
-# Loading work.u_SR_RAMS_CS_SLICE_19(fast)
-# Loading work.u_SR_TA_SLICE_21(fast)
-# Loading work.u_SR_TA_SLICE_22(fast)
-# Loading work.u_SR_TA_SLICE_23(fast)
-# Loading work.u_SR_TA_SLICE_24(fast)
-# Loading work.A_29_(fast)
+# Loading work.u_ROM_CS_TA_u_SR_TA_SLICE_28(fast)
+# Loading work.lut40010(fast)
+# Loading ovi_machxo2.ROM16X1A(fast__7)
+# Loading work.SLICE_30(fast)
+# Loading work.lut40011(fast)
+# Loading ovi_machxo2.ROM16X1A(fast__8)
+# Loading work.lut40012(fast)
+# Loading work.SLICE_31(fast)
+# Loading work.lut40013(fast)
+# Loading ovi_machxo2.ROM16X1A(fast__9)
+# Loading work.lut40014(fast)
+# Loading ovi_machxo2.ROM16X1A(fast__10)
+# Loading work.u_RAM_CS_TA_u_SR_RAMS_CS_SLICE_32(fast)
+# Loading work.u_RAM_CS_TA_u_SR_RAMS_CS_SLICE_33(fast)
+# Loading work.u_RAM_CS_TA_u_SR_RAMS_CS_SLICE_34(fast)
+# Loading work.u_RAM_CS_TA_u_SR_RAMS_CS_SLICE_35(fast)
+# Loading work.u_RAM_CS_TA_u_SR_TA_SLICE_36(fast)
+# Loading work.u_RAM_CS_TA_u_SR_TA_SLICE_37(fast)
+# Loading work.u_RAM_CS_TA_u_SR_TA_SLICE_38(fast)
+# Loading work.u_RAM_CS_TA_u_SR_TA_SLICE_39(fast)
+# Loading work.u_ROM_CS_TA_u_SR_ROMS_CS_SLICE_40(fast)
+# Loading work.u_ROM_CS_TA_u_SR_ROMS_CS_SLICE_41(fast)
+# Loading work.u_ROM_CS_TA_u_SR_TA_SLICE_42(fast)
+# Loading work.RAM_CS_N(fast)
 # Loading work.xo2iobuf(fast)
+# Loading ovi_machxo2.OBZPD(fast)
+# Loading work.RW_IN(fast)
+# Loading work.xo2iobuf0015(fast)
 # Loading ovi_machxo2.IBPD(fast)
 # Loading work.TS_N(fast)
 # Loading work.CLK(fast)
-# Loading work.xo2iobuf(fast__1)
+# Loading work.xo2iobuf0015(fast__1)
 # Loading ovi_machxo2.IBPD(fast__1)
 # Loading work.A_23_(fast)
 # Loading work.A_24_(fast)
@@ -141,13 +183,14 @@
 # Loading work.A_27_(fast)
 # Loading work.A_28_(fast)
 # Loading work.RST(fast)
-# Loading work.A_30_(fast)
-# Loading work.RAM_CS_N(fast)
-# Loading work.xo2iobuf0009(fast)
-# Loading ovi_machxo2.OBZPD(fast)
-# Loading work.A_31_(fast)
+# Loading work.A_29_(fast)
 # Loading work.TA_N(fast)
+# Loading work.A_30_(fast)
+# Loading work.A_31_(fast)
+# Loading work.RW_OUT(fast)
+# Loading work.RAM_OE_N(fast)
 # Loading work.LOCK(fast)
+# Loading work.ROM_CS_N(fast)
 # Loading work.u_ZenPLL_PLLInst_0(fast)
 # Loading work.EHXPLLJ_B(fast)
 # Loading ovi_machxo2.EHXPLLJ(fast)
@@ -160,98 +203,21 @@
 # .main_pane.wave.interior.cs.body.pw.wf
 # ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
 #           File in use by: hollo  Hostname: DESKTOP-LK95KVP  ProcessID: 34904
-#           Attempting to use alternate WLF file "./wlftemr8rm".
+#           Attempting to use alternate WLF file "./wlftw87c8q".
 # ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
-#           Using alternate file: ./wlftemr8rm
-do {C:/lscc/diamond/3.14/bin/nt64/Zen68060Firmware/ZenSim/ZenSim.mdo}
-# Compile of Zen68060Firmware_impl1_vo.vo was successful.
-# Compile of ZenSim.v was successful.
-# 2 compiles, 0 failed with no errors.
-# End time: 22:25:25 on Sep 08,2026, Elapsed time: 0:00:15
-# Errors: 0, Warnings: 9
-# vsim -voptargs="+acc" -L work -L pmi_work -L ovi_machxo2 "+transport_path_delays" "+transport_int_delays" mainLogic_tb -sdfmax "/mainLogic_tb/dut=C:/lscc/diamond/3.14/bin/nt64/Zen68060Firmware/impl1/Zen68060Firmware_impl1_vo.sdf" 
-# Start time: 22:25:25 on Sep 08,2026
-# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
-# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility. The +acc switch would be deprecated in a future release.
-# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
-# Loading work.mainLogic_tb(fast)
-# Loading work.ZenMainLogic(fast)
-# Loading work.u_SR_RAMS_CS_SLICE_0(fast)
-# Loading work.vmuxregsre(fast)
-# Loading ovi_machxo2.FL1P3IY(fast)
-# Loading work.vcc(fast)
-# Loading ovi_machxo2.VHI(fast)
-# Loading work.gnd(fast)
-# Loading ovi_machxo2.VLO(fast)
-# Loading work.u_SR_TA_SLICE_1(fast)
-# Loading work.SLICE_2(fast)
-# Loading work.lut4(fast)
-# Loading ovi_machxo2.ROM16X1A(fast)
-# Loading work.lut40001(fast)
-# Loading ovi_machxo2.ROM16X1A(fast__1)
-# Loading work.vmuxregsre0002(fast)
-# Loading ovi_machxo2.FL1P3BX(fast)
-# Loading work.SLICE_3(fast)
-# Loading work.lut40003(fast)
-# Loading ovi_machxo2.ROM16X1A(fast__2)
-# Loading work.lut40004(fast)
-# Loading ovi_machxo2.ROM16X1A(fast__3)
-# Loading work.vmuxregsre0005(fast)
-# Loading ovi_machxo2.FL1P3DX(fast)
-# Loading work.SLICE_4(fast)
-# Loading work.lut40006(fast)
-# Loading ovi_machxo2.ROM16X1A(fast__4)
-# Loading work.inverter(fast)
-# Loading ovi_machxo2.INV(fast)
-# Loading work.SLICE_10(fast)
-# Loading work.SLICE_16(fast)
-# Loading work.lut40007(fast)
-# Loading ovi_machxo2.ROM16X1A(fast__5)
-# Loading work.u_SR_RAMS_CS_SLICE_17(fast)
-# Loading work.vmuxregsre0008(fast)
-# Loading ovi_machxo2.FL1P3JY(fast)
-# Loading work.u_SR_RAMS_CS_SLICE_18(fast)
-# Loading work.u_SR_RAMS_CS_SLICE_19(fast)
-# Loading work.u_SR_TA_SLICE_21(fast)
-# Loading work.u_SR_TA_SLICE_22(fast)
-# Loading work.u_SR_TA_SLICE_23(fast)
-# Loading work.u_SR_TA_SLICE_24(fast)
-# Loading work.A_29_(fast)
-# Loading work.xo2iobuf(fast)
-# Loading ovi_machxo2.IBPD(fast)
-# Loading work.TS_N(fast)
-# Loading work.CLK(fast)
-# Loading work.xo2iobuf(fast__1)
-# Loading ovi_machxo2.IBPD(fast__1)
-# Loading work.A_23_(fast)
-# Loading work.A_24_(fast)
-# Loading work.A_25_(fast)
-# Loading work.A_26_(fast)
-# Loading work.A_27_(fast)
-# Loading work.A_28_(fast)
-# Loading work.RST(fast)
-# Loading work.A_30_(fast)
-# Loading work.RAM_CS_N(fast)
-# Loading work.xo2iobuf0009(fast)
-# Loading ovi_machxo2.OBZPD(fast)
-# Loading work.A_31_(fast)
-# Loading work.TA_N(fast)
-# Loading work.LOCK(fast)
-# Loading work.u_ZenPLL_PLLInst_0(fast)
-# Loading work.EHXPLLJ_B(fast)
-# Loading ovi_machxo2.EHXPLLJ(fast)
-# Loading ovi_machxo2.PUR(fast)
-# Loading ovi_machxo2.GSR(fast)
-# Loading instances from C:/lscc/diamond/3.14/bin/nt64/Zen68060Firmware/impl1/Zen68060Firmware_impl1_vo.sdf
-# Loading timing data from C:/lscc/diamond/3.14/bin/nt64/Zen68060Firmware/impl1/Zen68060Firmware_impl1_vo.sdf
-# ** Note: (vsim-3587) SDF Backannotation Successfully Completed.
-#    Time: 0 fs  Iteration: 0  Instance: /mainLogic_tb File: C:/lscc/diamond/3.14/bin/nt64/Zen68060Firmware/ZenSim.v
-# .main_pane.wave.interior.cs.body.pw.wf
-# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
-#           File in use by: hollo  Hostname: DESKTOP-LK95KVP  ProcessID: 34904
-#           Attempting to use alternate WLF file "./wlft5b25z8".
-# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
-#           Using alternate file: ./wlft5b25z8
+#           Using alternate file: ./wlftw87c8q
+# ** Error: $setup( M1:1383 ps, negedge CLK:1560 ps, 258 ps );
+#    Time: 1560 ps  Iteration: 2  Process: /mainLogic_tb/dut/SLICE_31/#Setuphold# File: C:/lscc/diamond/3.14/bin/nt64/Zen68060Firmware/impl1/Zen68060Firmware_impl1_vo.vo Line: 592
+# ** Error: $setup( M0:1383 ps, negedge CLK:1560 ps, 258 ps );
+#    Time: 1560 ps  Iteration: 2  Process: /mainLogic_tb/dut/SLICE_31/#Setuphold# File: C:/lscc/diamond/3.14/bin/nt64/Zen68060Firmware/impl1/Zen68060Firmware_impl1_vo.vo Line: 593
+vcd add /mainLogic_tb/dut/CLK
+vcd add /mainLogic_tb/dut/CLKOS
+vcd add /mainLogic_tb/dut/CLKOS2
+vcd add /mainLogic_tb/dut/A
+vcd add /mainLogic_tb/dut/TS_N
+vcd add /mainLogic_tb/dut/TA_N
+vcd add /mainLogic_tb/dut/RAM_CS_N
+vcd add /mainLogic_tb/dut/ROM_CS_N
 nolog -r /*
 when {/mainLogic_tb/dut/LOCK == 1} {
     log -r /*
@@ -259,8 +225,3726 @@ when {/mainLogic_tb/dut/LOCK == 1} {
 }
 run 0.1 ms
 # Logging started at PLL lock
-# ** Note: $stop    : C:/lscc/diamond/3.14/bin/nt64/Zen68060Firmware/ZenSim.v(89)
-#    Time: 6231 ns  Iteration: 0  Instance: /mainLogic_tb
-# Break in Module mainLogic_tb at C:/lscc/diamond/3.14/bin/nt64/Zen68060Firmware/ZenSim.v line 89
-# End time: 22:26:11 on Sep 08,2026, Elapsed time: 0:00:46
+# ** Note: $stop    : C:/lscc/diamond/3.14/bin/nt64/Zen68060Firmware/ZenSim.v(171)
+#    Time: 19032 ns  Iteration: 0  Instance: /mainLogic_tb
+# Break in Module mainLogic_tb at C:/lscc/diamond/3.14/bin/nt64/Zen68060Firmware/ZenSim.v line 171
+restart -f
+# Closing VCD file "dump.vcd"
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility. The +acc switch would be deprecated in a future release.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading work.mainLogic_tb(fast)
+# Loading work.ZenMainLogic(fast)
+# Loading work.u_RAM_CS_TA_u_SR_TA_SLICE_0(fast)
+# Loading work.vmuxregsre(fast)
+# Loading ovi_machxo2.FL1P3IY(fast)
+# Loading work.vcc(fast)
+# Loading ovi_machxo2.VHI(fast)
+# Loading work.gnd(fast)
+# Loading ovi_machxo2.VLO(fast)
+# Loading work.u_ROM_CS_TA_u_SR_ROMS_CS_SLICE_1(fast)
+# Loading work.u_ROM_CS_TA_u_SR_TA_SLICE_2(fast)
+# Loading work.vmuxregsre0001(fast)
+# Loading ovi_machxo2.FL1P3JY(fast)
+# Loading work.SLICE_3(fast)
+# Loading work.lut4(fast)
+# Loading ovi_machxo2.ROM16X1A(fast)
+# Loading work.lut40002(fast)
+# Loading ovi_machxo2.ROM16X1A(fast__1)
+# Loading work.vmuxregsre0003(fast)
+# Loading ovi_machxo2.FL1P3DX(fast)
+# Loading work.vmuxregsre0004(fast)
+# Loading ovi_machxo2.FL1P3BX(fast)
+# Loading work.u_ROM_CS_TA_SLICE_4(fast)
+# Loading work.lut40005(fast)
+# Loading ovi_machxo2.ROM16X1A(fast__2)
+# Loading work.lut40006(fast)
+# Loading ovi_machxo2.ROM16X1A(fast__3)
+# Loading work.u_RAM_CS_TA_u_SR_RAMS_CS_SLICE_5(fast)
+# Loading work.SLICE_19(fast)
+# Loading work.lut40007(fast)
+# Loading ovi_machxo2.ROM16X1A(fast__4)
+# Loading work.lut40008(fast)
+# Loading ovi_machxo2.ROM16X1A(fast__5)
+# Loading work.u_ROM_CS_TA_u_SR_ROMS_CS_SLICE_23(fast)
+# Loading work.lut40009(fast)
+# Loading ovi_machxo2.ROM16X1A(fast__6)
+# Loading work.u_ROM_CS_TA_SLICE_26(fast)
+# Loading work.inverter(fast)
+# Loading ovi_machxo2.INV(fast)
+# Loading work.u_ROM_CS_TA_u_SR_TA_SLICE_28(fast)
+# Loading work.lut40010(fast)
+# Loading ovi_machxo2.ROM16X1A(fast__7)
+# Loading work.SLICE_30(fast)
+# Loading work.lut40011(fast)
+# Loading ovi_machxo2.ROM16X1A(fast__8)
+# Loading work.lut40012(fast)
+# Loading work.SLICE_31(fast)
+# Loading work.lut40013(fast)
+# Loading ovi_machxo2.ROM16X1A(fast__9)
+# Loading work.lut40014(fast)
+# Loading ovi_machxo2.ROM16X1A(fast__10)
+# Loading work.u_RAM_CS_TA_u_SR_RAMS_CS_SLICE_32(fast)
+# Loading work.u_RAM_CS_TA_u_SR_RAMS_CS_SLICE_33(fast)
+# Loading work.u_RAM_CS_TA_u_SR_RAMS_CS_SLICE_34(fast)
+# Loading work.u_RAM_CS_TA_u_SR_RAMS_CS_SLICE_35(fast)
+# Loading work.u_RAM_CS_TA_u_SR_TA_SLICE_36(fast)
+# Loading work.u_RAM_CS_TA_u_SR_TA_SLICE_37(fast)
+# Loading work.u_RAM_CS_TA_u_SR_TA_SLICE_38(fast)
+# Loading work.u_RAM_CS_TA_u_SR_TA_SLICE_39(fast)
+# Loading work.u_ROM_CS_TA_u_SR_ROMS_CS_SLICE_40(fast)
+# Loading work.u_ROM_CS_TA_u_SR_ROMS_CS_SLICE_41(fast)
+# Loading work.u_ROM_CS_TA_u_SR_TA_SLICE_42(fast)
+# Loading work.RAM_CS_N(fast)
+# Loading work.xo2iobuf(fast)
+# Loading ovi_machxo2.OBZPD(fast)
+# Loading work.RW_IN(fast)
+# Loading work.xo2iobuf0015(fast)
+# Loading ovi_machxo2.IBPD(fast)
+# Loading work.TS_N(fast)
+# Loading work.CLK(fast)
+# Loading work.xo2iobuf0015(fast__1)
+# Loading ovi_machxo2.IBPD(fast__1)
+# Loading work.A_23_(fast)
+# Loading work.A_24_(fast)
+# Loading work.A_25_(fast)
+# Loading work.A_26_(fast)
+# Loading work.A_27_(fast)
+# Loading work.A_28_(fast)
+# Loading work.RST(fast)
+# Loading work.A_29_(fast)
+# Loading work.TA_N(fast)
+# Loading work.A_30_(fast)
+# Loading work.A_31_(fast)
+# Loading work.RW_OUT(fast)
+# Loading work.RAM_OE_N(fast)
+# Loading work.LOCK(fast)
+# Loading work.ROM_CS_N(fast)
+# Loading work.u_ZenPLL_PLLInst_0(fast)
+# Loading work.EHXPLLJ_B(fast)
+# Loading ovi_machxo2.EHXPLLJ(fast)
+# Loading ovi_machxo2.PUR(fast)
+# Loading ovi_machxo2.GSR(fast)
+# Loading instances from C:/lscc/diamond/3.14/bin/nt64/Zen68060Firmware/impl1/Zen68060Firmware_impl1_vo.sdf
+# Loading timing data from C:/lscc/diamond/3.14/bin/nt64/Zen68060Firmware/impl1/Zen68060Firmware_impl1_vo.sdf
+# ** Note: (vsim-3587) SDF Backannotation Successfully Completed.
+#    Time: 0 fs  Iteration: 0  Instance: /mainLogic_tb File: C:/lscc/diamond/3.14/bin/nt64/Zen68060Firmware/ZenSim.v
+# **** Error: RestartQ cmd: namespace inscope ::vsimwidgets::ViewMaster {::.view_master SourceUpdatesAfterRestart} sim
+# ****        can't read "cbstate": no such variable
+# can't read "cbstate": no such variable
+#     while executing
+# "if {$cbstate} {
+#                   set PrefSource(WarnSourceChanged) 0
+#                }"
+#     (object "::.main_pane.source.interior.cs.body.srcobj" method "::vsimwidgets::SrcCommon::SourceCheckCompileTime" body line 82)
+#     invoked from within
+# "SourceCheckCompileTime"
+#     (object "::.main_pane.source.interior.cs.body.srcobj" method "::vsimwidgets::Srcobj::InitializeForDebug" body line 18)
+#     invoked from within
+# "InitializeForDebug"
+#     (object "::.main_pane.source.interior.cs.body.srcobj" method "::vsimwidgets::Srcobj::SourceUpdateLoadComplete" body line 49)
+#     invoked from within
+# "$srcedit SourceUpdateLoadComplete -restart"
+#     (object "::.view_master" method "::vsimwidgets::ViewMaster::SourceUpdatesAfterRestart" body line 7)
+#     invoked from within
+# "::.view_master SourceUpdatesAfterRestart sim"
+#     (in namespace inscope "::vsimwidgets::ViewMaster" script line 1)
+#     invoked from within
+# "namespace inscope ::vsimwidgets::ViewMaster {::.view_master SourceUpdatesAfterRestart} sim"
+#     ("eval" body line 1)
+#     invoked from within
+# "eval $p $tankNamespace "
+do {C:/lscc/diamond/3.14/bin/nt64/Zen68060Firmware/ZenSim/ZenSim.mdo}
+# Compile of Zen68060Firmware_impl1_vo.vo was successful.
+# Compile of ZenSim.v was successful.
+# 2 compiles, 0 failed with no errors.
+# End time: 15:56:57 on Sep 16,2026, Elapsed time: 1:39:26
+# Errors: 0, Warnings: 3
+# vsim -voptargs="+acc" -L work -L pmi_work -L ovi_machxo2 "+transport_path_delays" "+transport_int_delays" mainLogic_tb -sdfmax "/mainLogic_tb/dut=C:/lscc/diamond/3.14/bin/nt64/Zen68060Firmware/impl1/Zen68060Firmware_impl1_vo.sdf" 
+# Start time: 15:56:57 on Sep 16,2026
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility. The +acc switch would be deprecated in a future release.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading work.mainLogic_tb(fast)
+# Loading work.ZenMainLogic(fast)
+# Loading work.u_RAM_CS_TA_u_SR_TA_SLICE_0(fast)
+# Loading work.vmuxregsre(fast)
+# Loading ovi_machxo2.FL1P3IY(fast)
+# Loading work.vcc(fast)
+# Loading ovi_machxo2.VHI(fast)
+# Loading work.gnd(fast)
+# Loading ovi_machxo2.VLO(fast)
+# Loading work.u_ROM_CS_TA_u_SR_ROMS_CS_SLICE_1(fast)
+# Loading work.u_ROM_CS_TA_u_SR_TA_SLICE_2(fast)
+# Loading work.vmuxregsre0001(fast)
+# Loading ovi_machxo2.FL1P3JY(fast)
+# Loading work.SLICE_3(fast)
+# Loading work.lut4(fast)
+# Loading ovi_machxo2.ROM16X1A(fast)
+# Loading work.vmuxregsre0002(fast)
+# Loading ovi_machxo2.FL1P3DX(fast)
+# Loading work.vmuxregsre0003(fast)
+# Loading ovi_machxo2.FL1P3BX(fast)
+# Loading work.u_ROM_CS_TA_SLICE_4(fast)
+# Loading work.lut40004(fast)
+# Loading ovi_machxo2.ROM16X1A(fast__1)
+# Loading work.lut40005(fast)
+# Loading ovi_machxo2.ROM16X1A(fast__2)
+# Loading work.u_RAM_CS_TA_u_SR_RAMS_CS_SLICE_5(fast)
+# Loading work.lut40006(fast)
+# Loading ovi_machxo2.ROM16X1A(fast__3)
+# Loading work.u_RAM_CS_TA_u_SR_RAMS_CS_SLICE_11(fast)
+# Loading work.u_RAM_CS_TA_u_SR_RAMS_CS_SLICE_12(fast)
+# Loading work.lut40007(fast)
+# Loading ovi_machxo2.ROM16X1A(fast__4)
+# Loading work.SLICE_20(fast)
+# Loading work.lut40008(fast)
+# Loading ovi_machxo2.ROM16X1A(fast__5)
+# Loading work.lut40009(fast)
+# Loading ovi_machxo2.ROM16X1A(fast__6)
+# Loading work.u_ROM_CS_TA_u_SR_ROMS_CS_SLICE_24(fast)
+# Loading work.lut40010(fast)
+# Loading ovi_machxo2.ROM16X1A(fast__7)
+# Loading work.u_ROM_CS_TA_SLICE_27(fast)
+# Loading work.inverter(fast)
+# Loading ovi_machxo2.INV(fast)
+# Loading work.u_ROM_CS_TA_u_SR_TA_SLICE_29(fast)
+# Loading work.lut40011(fast)
+# Loading ovi_machxo2.ROM16X1A(fast__8)
+# Loading work.SLICE_31(fast)
+# Loading work.lut40012(fast)
+# Loading ovi_machxo2.ROM16X1A(fast__9)
+# Loading work.SLICE_32(fast)
+# Loading work.lut40013(fast)
+# Loading ovi_machxo2.ROM16X1A(fast__10)
+# Loading work.lut40014(fast)
+# Loading work.SLICE_33(fast)
+# Loading work.lut40015(fast)
+# Loading ovi_machxo2.ROM16X1A(fast__11)
+# Loading work.lut40016(fast)
+# Loading ovi_machxo2.ROM16X1A(fast__12)
+# Loading work.u_RAM_CS_TA_u_SR_RAMS_CS_SLICE_35(fast)
+# Loading work.u_RAM_CS_TA_u_SR_TA_SLICE_37(fast)
+# Loading work.u_RAM_CS_TA_u_SR_TA_SLICE_38(fast)
+# Loading work.u_RAM_CS_TA_u_SR_TA_SLICE_39(fast)
+# Loading work.u_RAM_CS_TA_u_SR_TA_SLICE_40(fast)
+# Loading work.u_ROM_CS_TA_u_SR_ROMS_CS_SLICE_41(fast)
+# Loading work.u_ROM_CS_TA_u_SR_ROMS_CS_SLICE_42(fast)
+# Loading work.u_ROM_CS_TA_u_SR_TA_SLICE_43(fast)
+# Loading work.RAM_CS_N(fast)
+# Loading work.xo2iobuf(fast)
+# Loading ovi_machxo2.OBZPD(fast)
+# Loading work.TA_N(fast)
+# Loading work.A_24_(fast)
+# Loading work.xo2iobuf0017(fast)
+# Loading ovi_machxo2.IBPD(fast)
+# Loading work.A_23_(fast)
+# Loading work.A_25_(fast)
+# Loading work.A_26_(fast)
+# Loading work.A_27_(fast)
+# Loading work.A_30_(fast)
+# Loading work.RW_OUT(fast)
+# Loading work.A_31_(fast)
+# Loading work.RST(fast)
+# Loading work.RAM_OE_N(fast)
+# Loading work.A_29_(fast)
+# Loading work.LOCK(fast)
+# Loading work.ROM_CS_N(fast)
+# Loading work.A_28_(fast)
+# Loading work.RW_IN(fast)
+# Loading work.TS_N(fast)
+# Loading work.CLK(fast)
+# Loading work.xo2iobuf0017(fast__1)
+# Loading ovi_machxo2.IBPD(fast__1)
+# Loading work.u_ZenPLL_PLLInst_0(fast)
+# Loading work.EHXPLLJ_B(fast)
+# Loading ovi_machxo2.EHXPLLJ(fast)
+# Loading ovi_machxo2.PUR(fast)
+# Loading ovi_machxo2.GSR(fast)
+# Loading instances from C:/lscc/diamond/3.14/bin/nt64/Zen68060Firmware/impl1/Zen68060Firmware_impl1_vo.sdf
+# Loading timing data from C:/lscc/diamond/3.14/bin/nt64/Zen68060Firmware/impl1/Zen68060Firmware_impl1_vo.sdf
+# ** Note: (vsim-3587) SDF Backannotation Successfully Completed.
+#    Time: 0 fs  Iteration: 0  Instance: /mainLogic_tb File: C:/lscc/diamond/3.14/bin/nt64/Zen68060Firmware/ZenSim.v
+# .main_pane.wave.interior.cs.body.pw.wf
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: hollo  Hostname: DESKTOP-LK95KVP  ProcessID: 34904
+#           Attempting to use alternate WLF file "./wlftvtxxsj".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlftvtxxsj
+when {/mainLogic_tb/dut/LOCK == 1} {
+    log -r /*
+    echo "Logging started at PLL lock"
+}
+run 0.1 ms
+# Logging started at PLL lock
+# ** Note: $stop    : C:/lscc/diamond/3.14/bin/nt64/Zen68060Firmware/ZenSim.v(172)
+#    Time: 19032 ns  Iteration: 0  Instance: /mainLogic_tb
+# Break in Module mainLogic_tb at C:/lscc/diamond/3.14/bin/nt64/Zen68060Firmware/ZenSim.v line 172
+do {C:/lscc/diamond/3.14/bin/nt64/Zen68060Firmware/ZenSim/ZenSim.mdo}
+# Compile of Zen68060Firmware_impl1_vo.vo was successful.
+# End time: 16:01:01 on Sep 16,2026, Elapsed time: 0:04:04
+# Errors: 0, Warnings: 5
+# vsim -voptargs="+acc" -L work -L pmi_work -L ovi_machxo2 "+transport_path_delays" "+transport_int_delays" mainLogic_tb -sdfmax "/mainLogic_tb/dut=C:/lscc/diamond/3.14/bin/nt64/Zen68060Firmware/impl1/Zen68060Firmware_impl1_vo.sdf" 
+# Start time: 16:01:01 on Sep 16,2026
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility. The +acc switch would be deprecated in a future release.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading work.mainLogic_tb(fast)
+# Loading work.ZenMainLogic(fast)
+# Loading work.u_RAM_CS_TA_u_SR_TA_SLICE_0(fast)
+# Loading work.vmuxregsre(fast)
+# Loading ovi_machxo2.FL1P3IY(fast)
+# Loading work.vcc(fast)
+# Loading ovi_machxo2.VHI(fast)
+# Loading work.gnd(fast)
+# Loading ovi_machxo2.VLO(fast)
+# Loading work.u_ROM_CS_TA_u_SR_ROMS_CS_SLICE_1(fast)
+# Loading work.u_ROM_CS_TA_u_SR_TA_SLICE_2(fast)
+# Loading work.vmuxregsre0001(fast)
+# Loading ovi_machxo2.FL1P3JY(fast)
+# Loading work.SLICE_3(fast)
+# Loading work.lut4(fast)
+# Loading ovi_machxo2.ROM16X1A(fast)
+# Loading work.lut40002(fast)
+# Loading ovi_machxo2.ROM16X1A(fast__1)
+# Loading work.vmuxregsre0003(fast)
+# Loading ovi_machxo2.FL1P3DX(fast)
+# Loading work.vmuxregsre0004(fast)
+# Loading ovi_machxo2.FL1P3BX(fast)
+# Loading work.u_ROM_CS_TA_SLICE_4(fast)
+# Loading work.lut40005(fast)
+# Loading ovi_machxo2.ROM16X1A(fast__2)
+# Loading work.lut40006(fast)
+# Loading ovi_machxo2.ROM16X1A(fast__3)
+# Loading work.u_RAM_CS_TA_u_SR_RAMS_CS_SLICE_5(fast)
+# Loading work.u_RAM_CS_TA_u_SR_RAMS_CS_SLICE_12(fast)
+# Loading work.lut40007(fast)
+# Loading ovi_machxo2.ROM16X1A(fast__4)
+# Loading work.u_RAM_CS_TA_SLICE_19(fast)
+# Loading work.SLICE_20(fast)
+# Loading work.lut40008(fast)
+# Loading ovi_machxo2.ROM16X1A(fast__5)
+# Loading work.lut40009(fast)
+# Loading ovi_machxo2.ROM16X1A(fast__6)
+# Loading work.u_ROM_CS_TA_u_SR_ROMS_CS_SLICE_24(fast)
+# Loading work.lut40010(fast)
+# Loading ovi_machxo2.ROM16X1A(fast__7)
+# Loading work.u_ROM_CS_TA_SLICE_27(fast)
+# Loading work.inverter(fast)
+# Loading ovi_machxo2.INV(fast)
+# Loading work.u_ROM_CS_TA_u_SR_TA_SLICE_29(fast)
+# Loading work.lut40011(fast)
+# Loading ovi_machxo2.ROM16X1A(fast__8)
+# Loading work.SLICE_31(fast)
+# Loading work.lut40012(fast)
+# Loading ovi_machxo2.ROM16X1A(fast__9)
+# Loading work.lut40013(fast)
+# Loading work.SLICE_32(fast)
+# Loading work.lut40014(fast)
+# Loading ovi_machxo2.ROM16X1A(fast__10)
+# Loading work.u_RAM_CS_TA_u_SR_RAMS_CS_SLICE_33(fast)
+# Loading work.u_RAM_CS_TA_u_SR_RAMS_CS_SLICE_34(fast)
+# Loading work.u_RAM_CS_TA_u_SR_TA_SLICE_36(fast)
+# Loading work.u_RAM_CS_TA_u_SR_TA_SLICE_37(fast)
+# Loading work.u_RAM_CS_TA_u_SR_TA_SLICE_38(fast)
+# Loading work.u_RAM_CS_TA_u_SR_TA_SLICE_39(fast)
+# Loading work.u_ROM_CS_TA_u_SR_ROMS_CS_SLICE_40(fast)
+# Loading work.u_ROM_CS_TA_u_SR_ROMS_CS_SLICE_41(fast)
+# Loading work.u_ROM_CS_TA_u_SR_TA_SLICE_42(fast)
+# Loading work.RAM_CS_N(fast)
+# Loading work.xo2iobuf(fast)
+# Loading ovi_machxo2.OBZPD(fast)
+# Loading work.A_25_(fast)
+# Loading work.xo2iobuf0015(fast)
+# Loading ovi_machxo2.IBPD(fast)
+# Loading work.A_24_(fast)
+# Loading work.A_26_(fast)
+# Loading work.A_27_(fast)
+# Loading work.A_28_(fast)
+# Loading work.A_29_(fast)
+# Loading work.A_30_(fast)
+# Loading work.A_31_(fast)
+# Loading work.TA_N(fast)
+# Loading work.RST(fast)
+# Loading work.RAM_OE_N(fast)
+# Loading work.RW_OUT(fast)
+# Loading work.LOCK(fast)
+# Loading work.ROM_CS_N(fast)
+# Loading work.RW_IN(fast)
+# Loading work.TS_N(fast)
+# Loading work.CLK(fast)
+# Loading work.xo2iobuf0015(fast__1)
+# Loading ovi_machxo2.IBPD(fast__1)
+# Loading work.A_23_(fast)
+# Loading work.u_ZenPLL_PLLInst_0(fast)
+# Loading work.EHXPLLJ_B(fast)
+# Loading ovi_machxo2.EHXPLLJ(fast)
+# Loading ovi_machxo2.PUR(fast)
+# Loading ovi_machxo2.GSR(fast)
+# Loading instances from C:/lscc/diamond/3.14/bin/nt64/Zen68060Firmware/impl1/Zen68060Firmware_impl1_vo.sdf
+# Loading timing data from C:/lscc/diamond/3.14/bin/nt64/Zen68060Firmware/impl1/Zen68060Firmware_impl1_vo.sdf
+# ** Note: (vsim-3587) SDF Backannotation Successfully Completed.
+#    Time: 0 fs  Iteration: 0  Instance: /mainLogic_tb File: C:/lscc/diamond/3.14/bin/nt64/Zen68060Firmware/ZenSim.v
+# .main_pane.wave.interior.cs.body.pw.wf
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: hollo  Hostname: DESKTOP-LK95KVP  ProcessID: 34904
+#           Attempting to use alternate WLF file "./wlfta16m7m".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlfta16m7m
+when {/mainLogic_tb/dut/LOCK == 1} {
+    log -r /*
+    echo "Logging started at PLL lock"
+}
+run 0.1 ms
+# Logging started at PLL lock
+# ** Note: $stop    : C:/lscc/diamond/3.14/bin/nt64/Zen68060Firmware/ZenSim.v(172)
+#    Time: 19032 ns  Iteration: 0  Instance: /mainLogic_tb
+# Break in Module mainLogic_tb at C:/lscc/diamond/3.14/bin/nt64/Zen68060Firmware/ZenSim.v line 172
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-8009) Loading existing optimized design _opt1
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading work.mainLogic_tb(fast)
+# Loading work.ZenMainLogic(fast)
+# Loading work.u_RAM_CS_TA_u_SR_TA_SLICE_0(fast)
+# Loading work.vmuxregsre(fast)
+# Loading ovi_machxo2.FL1P3IY(fast)
+# Loading work.vcc(fast)
+# Loading ovi_machxo2.VHI(fast)
+# Loading work.gnd(fast)
+# Loading ovi_machxo2.VLO(fast)
+# Loading work.u_ROM_CS_TA_u_SR_ROMS_CS_SLICE_1(fast)
+# Loading work.u_ROM_CS_TA_u_SR_TA_SLICE_2(fast)
+# Loading work.vmuxregsre0001(fast)
+# Loading ovi_machxo2.FL1P3JY(fast)
+# Loading work.SLICE_3(fast)
+# Loading work.lut4(fast)
+# Loading ovi_machxo2.ROM16X1A(fast)
+# Loading work.lut40002(fast)
+# Loading ovi_machxo2.ROM16X1A(fast__1)
+# Loading work.vmuxregsre0003(fast)
+# Loading ovi_machxo2.FL1P3DX(fast)
+# Loading work.vmuxregsre0004(fast)
+# Loading ovi_machxo2.FL1P3BX(fast)
+# Loading work.u_ROM_CS_TA_SLICE_4(fast)
+# Loading work.lut40005(fast)
+# Loading ovi_machxo2.ROM16X1A(fast__2)
+# Loading work.lut40006(fast)
+# Loading ovi_machxo2.ROM16X1A(fast__3)
+# Loading work.u_RAM_CS_TA_u_SR_RAMS_CS_SLICE_5(fast)
+# Loading work.u_RAM_CS_TA_u_SR_RAMS_CS_SLICE_12(fast)
+# Loading work.lut40007(fast)
+# Loading ovi_machxo2.ROM16X1A(fast__4)
+# Loading work.u_RAM_CS_TA_SLICE_19(fast)
+# Loading work.SLICE_20(fast)
+# Loading work.lut40008(fast)
+# Loading ovi_machxo2.ROM16X1A(fast__5)
+# Loading work.lut40009(fast)
+# Loading ovi_machxo2.ROM16X1A(fast__6)
+# Loading work.u_ROM_CS_TA_u_SR_ROMS_CS_SLICE_24(fast)
+# Loading work.lut40010(fast)
+# Loading ovi_machxo2.ROM16X1A(fast__7)
+# Loading work.u_ROM_CS_TA_SLICE_27(fast)
+# Loading work.inverter(fast)
+# Loading ovi_machxo2.INV(fast)
+# Loading work.u_ROM_CS_TA_u_SR_TA_SLICE_29(fast)
+# Loading work.lut40011(fast)
+# Loading ovi_machxo2.ROM16X1A(fast__8)
+# Loading work.SLICE_31(fast)
+# Loading work.lut40012(fast)
+# Loading ovi_machxo2.ROM16X1A(fast__9)
+# Loading work.lut40013(fast)
+# Loading work.SLICE_32(fast)
+# Loading work.lut40014(fast)
+# Loading ovi_machxo2.ROM16X1A(fast__10)
+# Loading work.u_RAM_CS_TA_u_SR_RAMS_CS_SLICE_33(fast)
+# Loading work.u_RAM_CS_TA_u_SR_RAMS_CS_SLICE_34(fast)
+# Loading work.u_RAM_CS_TA_u_SR_TA_SLICE_36(fast)
+# Loading work.u_RAM_CS_TA_u_SR_TA_SLICE_37(fast)
+# Loading work.u_RAM_CS_TA_u_SR_TA_SLICE_38(fast)
+# Loading work.u_RAM_CS_TA_u_SR_TA_SLICE_39(fast)
+# Loading work.u_ROM_CS_TA_u_SR_ROMS_CS_SLICE_40(fast)
+# Loading work.u_ROM_CS_TA_u_SR_ROMS_CS_SLICE_41(fast)
+# Loading work.u_ROM_CS_TA_u_SR_TA_SLICE_42(fast)
+# Loading work.RAM_CS_N(fast)
+# Loading work.xo2iobuf(fast)
+# Loading ovi_machxo2.OBZPD(fast)
+# Loading work.A_25_(fast)
+# Loading work.xo2iobuf0015(fast)
+# Loading ovi_machxo2.IBPD(fast)
+# Loading work.A_24_(fast)
+# Loading work.A_26_(fast)
+# Loading work.A_27_(fast)
+# Loading work.A_28_(fast)
+# Loading work.A_29_(fast)
+# Loading work.A_30_(fast)
+# Loading work.A_31_(fast)
+# Loading work.TA_N(fast)
+# Loading work.RST(fast)
+# Loading work.RAM_OE_N(fast)
+# Loading work.RW_OUT(fast)
+# Loading work.LOCK(fast)
+# Loading work.ROM_CS_N(fast)
+# Loading work.RW_IN(fast)
+# Loading work.TS_N(fast)
+# Loading work.CLK(fast)
+# Loading work.xo2iobuf0015(fast__1)
+# Loading ovi_machxo2.IBPD(fast__1)
+# Loading work.A_23_(fast)
+# Loading work.u_ZenPLL_PLLInst_0(fast)
+# Loading work.EHXPLLJ_B(fast)
+# Loading ovi_machxo2.EHXPLLJ(fast)
+# Loading ovi_machxo2.PUR(fast)
+# Loading ovi_machxo2.GSR(fast)
+# Loading instances from C:/lscc/diamond/3.14/bin/nt64/Zen68060Firmware/impl1/Zen68060Firmware_impl1_vo.sdf
+# Loading timing data from C:/lscc/diamond/3.14/bin/nt64/Zen68060Firmware/impl1/Zen68060Firmware_impl1_vo.sdf
+# ** Note: (vsim-3587) SDF Backannotation Successfully Completed.
+#    Time: 0 fs  Iteration: 0  Instance: /mainLogic_tb File: C:/lscc/diamond/3.14/bin/nt64/Zen68060Firmware/ZenSim.v
+do {C:/lscc/diamond/3.14/bin/nt64/Zen68060Firmware/ZenSim/ZenSim.mdo}
+# Compile of ZenSim.v was successful.
+# End time: 16:12:56 on Sep 16,2026, Elapsed time: 0:11:55
+# Errors: 0, Warnings: 3
+# vsim -voptargs="+acc" -L work -L pmi_work -L ovi_machxo2 "+transport_path_delays" "+transport_int_delays" mainLogic_tb -sdfmax "/mainLogic_tb/dut=C:/lscc/diamond/3.14/bin/nt64/Zen68060Firmware/impl1/Zen68060Firmware_impl1_vo.sdf" 
+# Start time: 16:12:56 on Sep 16,2026
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility. The +acc switch would be deprecated in a future release.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading work.mainLogic_tb(fast)
+# Loading work.ZenMainLogic(fast)
+# Loading work.u_RAM_CS_TA_u_SR_TA_SLICE_0(fast)
+# Loading work.vmuxregsre(fast)
+# Loading ovi_machxo2.FL1P3IY(fast)
+# Loading work.vcc(fast)
+# Loading ovi_machxo2.VHI(fast)
+# Loading work.gnd(fast)
+# Loading ovi_machxo2.VLO(fast)
+# Loading work.u_ROM_CS_TA_u_SR_ROMS_CS_SLICE_1(fast)
+# Loading work.u_ROM_CS_TA_u_SR_TA_SLICE_2(fast)
+# Loading work.vmuxregsre0001(fast)
+# Loading ovi_machxo2.FL1P3JY(fast)
+# Loading work.SLICE_3(fast)
+# Loading work.lut4(fast)
+# Loading ovi_machxo2.ROM16X1A(fast)
+# Loading work.lut40002(fast)
+# Loading ovi_machxo2.ROM16X1A(fast__1)
+# Loading work.vmuxregsre0003(fast)
+# Loading ovi_machxo2.FL1P3DX(fast)
+# Loading work.vmuxregsre0004(fast)
+# Loading ovi_machxo2.FL1P3BX(fast)
+# Loading work.u_ROM_CS_TA_SLICE_4(fast)
+# Loading work.lut40005(fast)
+# Loading ovi_machxo2.ROM16X1A(fast__2)
+# Loading work.lut40006(fast)
+# Loading ovi_machxo2.ROM16X1A(fast__3)
+# Loading work.u_RAM_CS_TA_u_SR_RAMS_CS_SLICE_5(fast)
+# Loading work.u_RAM_CS_TA_u_SR_RAMS_CS_SLICE_12(fast)
+# Loading work.lut40007(fast)
+# Loading ovi_machxo2.ROM16X1A(fast__4)
+# Loading work.u_RAM_CS_TA_SLICE_19(fast)
+# Loading work.SLICE_20(fast)
+# Loading work.lut40008(fast)
+# Loading ovi_machxo2.ROM16X1A(fast__5)
+# Loading work.lut40009(fast)
+# Loading ovi_machxo2.ROM16X1A(fast__6)
+# Loading work.u_ROM_CS_TA_u_SR_ROMS_CS_SLICE_24(fast)
+# Loading work.lut40010(fast)
+# Loading ovi_machxo2.ROM16X1A(fast__7)
+# Loading work.u_ROM_CS_TA_SLICE_27(fast)
+# Loading work.inverter(fast)
+# Loading ovi_machxo2.INV(fast)
+# Loading work.u_ROM_CS_TA_u_SR_TA_SLICE_29(fast)
+# Loading work.lut40011(fast)
+# Loading ovi_machxo2.ROM16X1A(fast__8)
+# Loading work.SLICE_31(fast)
+# Loading work.lut40012(fast)
+# Loading ovi_machxo2.ROM16X1A(fast__9)
+# Loading work.lut40013(fast)
+# Loading work.SLICE_32(fast)
+# Loading work.lut40014(fast)
+# Loading ovi_machxo2.ROM16X1A(fast__10)
+# Loading work.u_RAM_CS_TA_u_SR_RAMS_CS_SLICE_33(fast)
+# Loading work.u_RAM_CS_TA_u_SR_RAMS_CS_SLICE_34(fast)
+# Loading work.u_RAM_CS_TA_u_SR_TA_SLICE_36(fast)
+# Loading work.u_RAM_CS_TA_u_SR_TA_SLICE_37(fast)
+# Loading work.u_RAM_CS_TA_u_SR_TA_SLICE_38(fast)
+# Loading work.u_RAM_CS_TA_u_SR_TA_SLICE_39(fast)
+# Loading work.u_ROM_CS_TA_u_SR_ROMS_CS_SLICE_40(fast)
+# Loading work.u_ROM_CS_TA_u_SR_ROMS_CS_SLICE_41(fast)
+# Loading work.u_ROM_CS_TA_u_SR_TA_SLICE_42(fast)
+# Loading work.RAM_CS_N(fast)
+# Loading work.xo2iobuf(fast)
+# Loading ovi_machxo2.OBZPD(fast)
+# Loading work.A_25_(fast)
+# Loading work.xo2iobuf0015(fast)
+# Loading ovi_machxo2.IBPD(fast)
+# Loading work.A_24_(fast)
+# Loading work.A_26_(fast)
+# Loading work.A_27_(fast)
+# Loading work.A_28_(fast)
+# Loading work.A_29_(fast)
+# Loading work.A_30_(fast)
+# Loading work.A_31_(fast)
+# Loading work.TA_N(fast)
+# Loading work.RST(fast)
+# Loading work.RAM_OE_N(fast)
+# Loading work.RW_OUT(fast)
+# Loading work.LOCK(fast)
+# Loading work.ROM_CS_N(fast)
+# Loading work.RW_IN(fast)
+# Loading work.TS_N(fast)
+# Loading work.CLK(fast)
+# Loading work.xo2iobuf0015(fast__1)
+# Loading ovi_machxo2.IBPD(fast__1)
+# Loading work.A_23_(fast)
+# Loading work.u_ZenPLL_PLLInst_0(fast)
+# Loading work.EHXPLLJ_B(fast)
+# Loading ovi_machxo2.EHXPLLJ(fast)
+# Loading ovi_machxo2.PUR(fast)
+# Loading ovi_machxo2.GSR(fast)
+# Loading instances from C:/lscc/diamond/3.14/bin/nt64/Zen68060Firmware/impl1/Zen68060Firmware_impl1_vo.sdf
+# Loading timing data from C:/lscc/diamond/3.14/bin/nt64/Zen68060Firmware/impl1/Zen68060Firmware_impl1_vo.sdf
+# ** Note: (vsim-3587) SDF Backannotation Successfully Completed.
+#    Time: 0 fs  Iteration: 0  Instance: /mainLogic_tb File: C:/lscc/diamond/3.14/bin/nt64/Zen68060Firmware/ZenSim.v
+# .main_pane.wave.interior.cs.body.pw.wf
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: hollo  Hostname: DESKTOP-LK95KVP  ProcessID: 34904
+#           Attempting to use alternate WLF file "./wlftr4txs5".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlftr4txs5
+when {/mainLogic_tb/dut/LOCK == 1} {
+    log -r /*
+    echo "Logging started at PLL lock"
+}
+run 0.1 ms
+# Logging started at PLL lock
+# ** Note: $stop    : C:/lscc/diamond/3.14/bin/nt64/Zen68060Firmware/ZenSim.v(180)
+#    Time: 19034 ns  Iteration: 0  Instance: /mainLogic_tb
+# Break in Module mainLogic_tb at C:/lscc/diamond/3.14/bin/nt64/Zen68060Firmware/ZenSim.v line 180
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-8009) Loading existing optimized design _opt1
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading work.mainLogic_tb(fast)
+# Loading work.ZenMainLogic(fast)
+# Loading work.u_RAM_CS_TA_u_SR_TA_SLICE_0(fast)
+# Loading work.vmuxregsre(fast)
+# Loading ovi_machxo2.FL1P3IY(fast)
+# Loading work.vcc(fast)
+# Loading ovi_machxo2.VHI(fast)
+# Loading work.gnd(fast)
+# Loading ovi_machxo2.VLO(fast)
+# Loading work.u_ROM_CS_TA_u_SR_ROMS_CS_SLICE_1(fast)
+# Loading work.u_ROM_CS_TA_u_SR_TA_SLICE_2(fast)
+# Loading work.vmuxregsre0001(fast)
+# Loading ovi_machxo2.FL1P3JY(fast)
+# Loading work.SLICE_3(fast)
+# Loading work.lut4(fast)
+# Loading ovi_machxo2.ROM16X1A(fast)
+# Loading work.lut40002(fast)
+# Loading ovi_machxo2.ROM16X1A(fast__1)
+# Loading work.vmuxregsre0003(fast)
+# Loading ovi_machxo2.FL1P3DX(fast)
+# Loading work.vmuxregsre0004(fast)
+# Loading ovi_machxo2.FL1P3BX(fast)
+# Loading work.u_ROM_CS_TA_SLICE_4(fast)
+# Loading work.lut40005(fast)
+# Loading ovi_machxo2.ROM16X1A(fast__2)
+# Loading work.lut40006(fast)
+# Loading ovi_machxo2.ROM16X1A(fast__3)
+# Loading work.u_RAM_CS_TA_u_SR_RAMS_CS_SLICE_5(fast)
+# Loading work.u_RAM_CS_TA_u_SR_RAMS_CS_SLICE_12(fast)
+# Loading work.lut40007(fast)
+# Loading ovi_machxo2.ROM16X1A(fast__4)
+# Loading work.u_RAM_CS_TA_SLICE_19(fast)
+# Loading work.SLICE_20(fast)
+# Loading work.lut40008(fast)
+# Loading ovi_machxo2.ROM16X1A(fast__5)
+# Loading work.lut40009(fast)
+# Loading ovi_machxo2.ROM16X1A(fast__6)
+# Loading work.u_ROM_CS_TA_u_SR_ROMS_CS_SLICE_24(fast)
+# Loading work.lut40010(fast)
+# Loading ovi_machxo2.ROM16X1A(fast__7)
+# Loading work.u_ROM_CS_TA_SLICE_27(fast)
+# Loading work.inverter(fast)
+# Loading ovi_machxo2.INV(fast)
+# Loading work.u_ROM_CS_TA_u_SR_TA_SLICE_29(fast)
+# Loading work.lut40011(fast)
+# Loading ovi_machxo2.ROM16X1A(fast__8)
+# Loading work.SLICE_31(fast)
+# Loading work.lut40012(fast)
+# Loading ovi_machxo2.ROM16X1A(fast__9)
+# Loading work.lut40013(fast)
+# Loading work.SLICE_32(fast)
+# Loading work.lut40014(fast)
+# Loading ovi_machxo2.ROM16X1A(fast__10)
+# Loading work.u_RAM_CS_TA_u_SR_RAMS_CS_SLICE_33(fast)
+# Loading work.u_RAM_CS_TA_u_SR_RAMS_CS_SLICE_34(fast)
+# Loading work.u_RAM_CS_TA_u_SR_TA_SLICE_36(fast)
+# Loading work.u_RAM_CS_TA_u_SR_TA_SLICE_37(fast)
+# Loading work.u_RAM_CS_TA_u_SR_TA_SLICE_38(fast)
+# Loading work.u_RAM_CS_TA_u_SR_TA_SLICE_39(fast)
+# Loading work.u_ROM_CS_TA_u_SR_ROMS_CS_SLICE_40(fast)
+# Loading work.u_ROM_CS_TA_u_SR_ROMS_CS_SLICE_41(fast)
+# Loading work.u_ROM_CS_TA_u_SR_TA_SLICE_42(fast)
+# Loading work.RAM_CS_N(fast)
+# Loading work.xo2iobuf(fast)
+# Loading ovi_machxo2.OBZPD(fast)
+# Loading work.A_25_(fast)
+# Loading work.xo2iobuf0015(fast)
+# Loading ovi_machxo2.IBPD(fast)
+# Loading work.A_24_(fast)
+# Loading work.A_26_(fast)
+# Loading work.A_27_(fast)
+# Loading work.A_28_(fast)
+# Loading work.A_29_(fast)
+# Loading work.A_30_(fast)
+# Loading work.A_31_(fast)
+# Loading work.TA_N(fast)
+# Loading work.RST(fast)
+# Loading work.RAM_OE_N(fast)
+# Loading work.RW_OUT(fast)
+# Loading work.LOCK(fast)
+# Loading work.ROM_CS_N(fast)
+# Loading work.RW_IN(fast)
+# Loading work.TS_N(fast)
+# Loading work.CLK(fast)
+# Loading work.xo2iobuf0015(fast__1)
+# Loading ovi_machxo2.IBPD(fast__1)
+# Loading work.A_23_(fast)
+# Loading work.u_ZenPLL_PLLInst_0(fast)
+# Loading work.EHXPLLJ_B(fast)
+# Loading ovi_machxo2.EHXPLLJ(fast)
+# Loading ovi_machxo2.PUR(fast)
+# Loading ovi_machxo2.GSR(fast)
+# Loading instances from C:/lscc/diamond/3.14/bin/nt64/Zen68060Firmware/impl1/Zen68060Firmware_impl1_vo.sdf
+# Loading timing data from C:/lscc/diamond/3.14/bin/nt64/Zen68060Firmware/impl1/Zen68060Firmware_impl1_vo.sdf
+# ** Note: (vsim-3587) SDF Backannotation Successfully Completed.
+#    Time: 0 fs  Iteration: 0  Instance: /mainLogic_tb File: C:/lscc/diamond/3.14/bin/nt64/Zen68060Firmware/ZenSim.v
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-8009) Loading existing optimized design _opt1
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading work.mainLogic_tb(fast)
+# Loading work.ZenMainLogic(fast)
+# Loading work.u_RAM_CS_TA_u_SR_TA_SLICE_0(fast)
+# Loading work.vmuxregsre(fast)
+# Loading ovi_machxo2.FL1P3IY(fast)
+# Loading work.vcc(fast)
+# Loading ovi_machxo2.VHI(fast)
+# Loading work.gnd(fast)
+# Loading ovi_machxo2.VLO(fast)
+# Loading work.u_ROM_CS_TA_u_SR_ROMS_CS_SLICE_1(fast)
+# Loading work.u_ROM_CS_TA_u_SR_TA_SLICE_2(fast)
+# Loading work.vmuxregsre0001(fast)
+# Loading ovi_machxo2.FL1P3JY(fast)
+# Loading work.SLICE_3(fast)
+# Loading work.lut4(fast)
+# Loading ovi_machxo2.ROM16X1A(fast)
+# Loading work.lut40002(fast)
+# Loading ovi_machxo2.ROM16X1A(fast__1)
+# Loading work.vmuxregsre0003(fast)
+# Loading ovi_machxo2.FL1P3DX(fast)
+# Loading work.vmuxregsre0004(fast)
+# Loading ovi_machxo2.FL1P3BX(fast)
+# Loading work.u_ROM_CS_TA_SLICE_4(fast)
+# Loading work.lut40005(fast)
+# Loading ovi_machxo2.ROM16X1A(fast__2)
+# Loading work.lut40006(fast)
+# Loading ovi_machxo2.ROM16X1A(fast__3)
+# Loading work.u_RAM_CS_TA_u_SR_RAMS_CS_SLICE_5(fast)
+# Loading work.u_RAM_CS_TA_u_SR_RAMS_CS_SLICE_12(fast)
+# Loading work.lut40007(fast)
+# Loading ovi_machxo2.ROM16X1A(fast__4)
+# Loading work.u_RAM_CS_TA_SLICE_19(fast)
+# Loading work.SLICE_20(fast)
+# Loading work.lut40008(fast)
+# Loading ovi_machxo2.ROM16X1A(fast__5)
+# Loading work.lut40009(fast)
+# Loading ovi_machxo2.ROM16X1A(fast__6)
+# Loading work.u_ROM_CS_TA_u_SR_ROMS_CS_SLICE_24(fast)
+# Loading work.lut40010(fast)
+# Loading ovi_machxo2.ROM16X1A(fast__7)
+# Loading work.u_ROM_CS_TA_SLICE_27(fast)
+# Loading work.inverter(fast)
+# Loading ovi_machxo2.INV(fast)
+# Loading work.u_ROM_CS_TA_u_SR_TA_SLICE_29(fast)
+# Loading work.lut40011(fast)
+# Loading ovi_machxo2.ROM16X1A(fast__8)
+# Loading work.SLICE_31(fast)
+# Loading work.lut40012(fast)
+# Loading ovi_machxo2.ROM16X1A(fast__9)
+# Loading work.lut40013(fast)
+# Loading work.SLICE_32(fast)
+# Loading work.lut40014(fast)
+# Loading ovi_machxo2.ROM16X1A(fast__10)
+# Loading work.u_RAM_CS_TA_u_SR_RAMS_CS_SLICE_33(fast)
+# Loading work.u_RAM_CS_TA_u_SR_RAMS_CS_SLICE_34(fast)
+# Loading work.u_RAM_CS_TA_u_SR_TA_SLICE_36(fast)
+# Loading work.u_RAM_CS_TA_u_SR_TA_SLICE_37(fast)
+# Loading work.u_RAM_CS_TA_u_SR_TA_SLICE_38(fast)
+# Loading work.u_RAM_CS_TA_u_SR_TA_SLICE_39(fast)
+# Loading work.u_ROM_CS_TA_u_SR_ROMS_CS_SLICE_40(fast)
+# Loading work.u_ROM_CS_TA_u_SR_ROMS_CS_SLICE_41(fast)
+# Loading work.u_ROM_CS_TA_u_SR_TA_SLICE_42(fast)
+# Loading work.RAM_CS_N(fast)
+# Loading work.xo2iobuf(fast)
+# Loading ovi_machxo2.OBZPD(fast)
+# Loading work.A_25_(fast)
+# Loading work.xo2iobuf0015(fast)
+# Loading ovi_machxo2.IBPD(fast)
+# Loading work.A_24_(fast)
+# Loading work.A_26_(fast)
+# Loading work.A_27_(fast)
+# Loading work.A_28_(fast)
+# Loading work.A_29_(fast)
+# Loading work.A_30_(fast)
+# Loading work.A_31_(fast)
+# Loading work.TA_N(fast)
+# Loading work.RST(fast)
+# Loading work.RAM_OE_N(fast)
+# Loading work.RW_OUT(fast)
+# Loading work.LOCK(fast)
+# Loading work.ROM_CS_N(fast)
+# Loading work.RW_IN(fast)
+# Loading work.TS_N(fast)
+# Loading work.CLK(fast)
+# Loading work.xo2iobuf0015(fast__1)
+# Loading ovi_machxo2.IBPD(fast__1)
+# Loading work.A_23_(fast)
+# Loading work.u_ZenPLL_PLLInst_0(fast)
+# Loading work.EHXPLLJ_B(fast)
+# Loading ovi_machxo2.EHXPLLJ(fast)
+# Loading ovi_machxo2.PUR(fast)
+# Loading ovi_machxo2.GSR(fast)
+# Loading instances from C:/lscc/diamond/3.14/bin/nt64/Zen68060Firmware/impl1/Zen68060Firmware_impl1_vo.sdf
+# Loading timing data from C:/lscc/diamond/3.14/bin/nt64/Zen68060Firmware/impl1/Zen68060Firmware_impl1_vo.sdf
+# ** Note: (vsim-3587) SDF Backannotation Successfully Completed.
+#    Time: 0 fs  Iteration: 0  Instance: /mainLogic_tb File: C:/lscc/diamond/3.14/bin/nt64/Zen68060Firmware/ZenSim.v
+do {C:/lscc/diamond/3.14/bin/nt64/Zen68060Firmware/ZenSim/ZenSim.mdo}
+# Compile of ZenSim.v was successful.
+# End time: 16:14:23 on Sep 16,2026, Elapsed time: 0:01:27
+# Errors: 0, Warnings: 3
+# vsim -voptargs="+acc" -L work -L pmi_work -L ovi_machxo2 "+transport_path_delays" "+transport_int_delays" mainLogic_tb -sdfmax "/mainLogic_tb/dut=C:/lscc/diamond/3.14/bin/nt64/Zen68060Firmware/impl1/Zen68060Firmware_impl1_vo.sdf" 
+# Start time: 16:14:23 on Sep 16,2026
+# ** Note: (vsim-8009) Loading existing optimized design _opt1
+# Loading work.mainLogic_tb(fast)
+# Loading work.ZenMainLogic(fast)
+# Loading work.u_RAM_CS_TA_u_SR_TA_SLICE_0(fast)
+# Loading work.vmuxregsre(fast)
+# Loading ovi_machxo2.FL1P3IY(fast)
+# Loading work.vcc(fast)
+# Loading ovi_machxo2.VHI(fast)
+# Loading work.gnd(fast)
+# Loading ovi_machxo2.VLO(fast)
+# Loading work.u_ROM_CS_TA_u_SR_ROMS_CS_SLICE_1(fast)
+# Loading work.u_ROM_CS_TA_u_SR_TA_SLICE_2(fast)
+# Loading work.vmuxregsre0001(fast)
+# Loading ovi_machxo2.FL1P3JY(fast)
+# Loading work.SLICE_3(fast)
+# Loading work.lut4(fast)
+# Loading ovi_machxo2.ROM16X1A(fast)
+# Loading work.lut40002(fast)
+# Loading ovi_machxo2.ROM16X1A(fast__1)
+# Loading work.vmuxregsre0003(fast)
+# Loading ovi_machxo2.FL1P3DX(fast)
+# Loading work.vmuxregsre0004(fast)
+# Loading ovi_machxo2.FL1P3BX(fast)
+# Loading work.u_ROM_CS_TA_SLICE_4(fast)
+# Loading work.lut40005(fast)
+# Loading ovi_machxo2.ROM16X1A(fast__2)
+# Loading work.lut40006(fast)
+# Loading ovi_machxo2.ROM16X1A(fast__3)
+# Loading work.u_RAM_CS_TA_u_SR_RAMS_CS_SLICE_5(fast)
+# Loading work.u_RAM_CS_TA_u_SR_RAMS_CS_SLICE_12(fast)
+# Loading work.lut40007(fast)
+# Loading ovi_machxo2.ROM16X1A(fast__4)
+# Loading work.u_RAM_CS_TA_SLICE_19(fast)
+# Loading work.SLICE_20(fast)
+# Loading work.lut40008(fast)
+# Loading ovi_machxo2.ROM16X1A(fast__5)
+# Loading work.lut40009(fast)
+# Loading ovi_machxo2.ROM16X1A(fast__6)
+# Loading work.u_ROM_CS_TA_u_SR_ROMS_CS_SLICE_24(fast)
+# Loading work.lut40010(fast)
+# Loading ovi_machxo2.ROM16X1A(fast__7)
+# Loading work.u_ROM_CS_TA_SLICE_27(fast)
+# Loading work.inverter(fast)
+# Loading ovi_machxo2.INV(fast)
+# Loading work.u_ROM_CS_TA_u_SR_TA_SLICE_29(fast)
+# Loading work.lut40011(fast)
+# Loading ovi_machxo2.ROM16X1A(fast__8)
+# Loading work.SLICE_31(fast)
+# Loading work.lut40012(fast)
+# Loading ovi_machxo2.ROM16X1A(fast__9)
+# Loading work.lut40013(fast)
+# Loading work.SLICE_32(fast)
+# Loading work.lut40014(fast)
+# Loading ovi_machxo2.ROM16X1A(fast__10)
+# Loading work.u_RAM_CS_TA_u_SR_RAMS_CS_SLICE_33(fast)
+# Loading work.u_RAM_CS_TA_u_SR_RAMS_CS_SLICE_34(fast)
+# Loading work.u_RAM_CS_TA_u_SR_TA_SLICE_36(fast)
+# Loading work.u_RAM_CS_TA_u_SR_TA_SLICE_37(fast)
+# Loading work.u_RAM_CS_TA_u_SR_TA_SLICE_38(fast)
+# Loading work.u_RAM_CS_TA_u_SR_TA_SLICE_39(fast)
+# Loading work.u_ROM_CS_TA_u_SR_ROMS_CS_SLICE_40(fast)
+# Loading work.u_ROM_CS_TA_u_SR_ROMS_CS_SLICE_41(fast)
+# Loading work.u_ROM_CS_TA_u_SR_TA_SLICE_42(fast)
+# Loading work.RAM_CS_N(fast)
+# Loading work.xo2iobuf(fast)
+# Loading ovi_machxo2.OBZPD(fast)
+# Loading work.A_25_(fast)
+# Loading work.xo2iobuf0015(fast)
+# Loading ovi_machxo2.IBPD(fast)
+# Loading work.A_24_(fast)
+# Loading work.A_26_(fast)
+# Loading work.A_27_(fast)
+# Loading work.A_28_(fast)
+# Loading work.A_29_(fast)
+# Loading work.A_30_(fast)
+# Loading work.A_31_(fast)
+# Loading work.TA_N(fast)
+# Loading work.RST(fast)
+# Loading work.RAM_OE_N(fast)
+# Loading work.RW_OUT(fast)
+# Loading work.LOCK(fast)
+# Loading work.ROM_CS_N(fast)
+# Loading work.RW_IN(fast)
+# Loading work.TS_N(fast)
+# Loading work.CLK(fast)
+# Loading work.xo2iobuf0015(fast__1)
+# Loading ovi_machxo2.IBPD(fast__1)
+# Loading work.A_23_(fast)
+# Loading work.u_ZenPLL_PLLInst_0(fast)
+# Loading work.EHXPLLJ_B(fast)
+# Loading ovi_machxo2.EHXPLLJ(fast)
+# Loading ovi_machxo2.PUR(fast)
+# Loading ovi_machxo2.GSR(fast)
+# Loading instances from C:/lscc/diamond/3.14/bin/nt64/Zen68060Firmware/impl1/Zen68060Firmware_impl1_vo.sdf
+# Loading timing data from C:/lscc/diamond/3.14/bin/nt64/Zen68060Firmware/impl1/Zen68060Firmware_impl1_vo.sdf
+# ** Note: (vsim-3587) SDF Backannotation Successfully Completed.
+#    Time: 0 fs  Iteration: 0  Instance: /mainLogic_tb File: C:/lscc/diamond/3.14/bin/nt64/Zen68060Firmware/ZenSim.v
+# .main_pane.wave.interior.cs.body.pw.wf
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: hollo  Hostname: DESKTOP-LK95KVP  ProcessID: 34904
+#           Attempting to use alternate WLF file "./wlftm4vr89".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlftm4vr89
+when {/mainLogic_tb/dut/LOCK == 1} {
+    log -r /*
+    echo "Logging started at PLL lock"
+}
+run 0.1 ms
+# Logging started at PLL lock
+# ** Note: $stop    : C:/lscc/diamond/3.14/bin/nt64/Zen68060Firmware/ZenSim.v(180)
+#    Time: 19034 ns  Iteration: 0  Instance: /mainLogic_tb
+# Break in Module mainLogic_tb at C:/lscc/diamond/3.14/bin/nt64/Zen68060Firmware/ZenSim.v line 180
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-8009) Loading existing optimized design _opt1
+# Loading work.mainLogic_tb(fast)
+# Loading work.ZenMainLogic(fast)
+# Loading work.u_RAM_CS_TA_u_SR_TA_SLICE_0(fast)
+# Loading work.vmuxregsre(fast)
+# Loading ovi_machxo2.FL1P3IY(fast)
+# Loading work.vcc(fast)
+# Loading ovi_machxo2.VHI(fast)
+# Loading work.gnd(fast)
+# Loading ovi_machxo2.VLO(fast)
+# Loading work.u_ROM_CS_TA_u_SR_ROMS_CS_SLICE_1(fast)
+# Loading work.u_ROM_CS_TA_u_SR_TA_SLICE_2(fast)
+# Loading work.vmuxregsre0001(fast)
+# Loading ovi_machxo2.FL1P3JY(fast)
+# Loading work.SLICE_3(fast)
+# Loading work.lut4(fast)
+# Loading ovi_machxo2.ROM16X1A(fast)
+# Loading work.lut40002(fast)
+# Loading ovi_machxo2.ROM16X1A(fast__1)
+# Loading work.vmuxregsre0003(fast)
+# Loading ovi_machxo2.FL1P3DX(fast)
+# Loading work.vmuxregsre0004(fast)
+# Loading ovi_machxo2.FL1P3BX(fast)
+# Loading work.u_ROM_CS_TA_SLICE_4(fast)
+# Loading work.lut40005(fast)
+# Loading ovi_machxo2.ROM16X1A(fast__2)
+# Loading work.lut40006(fast)
+# Loading ovi_machxo2.ROM16X1A(fast__3)
+# Loading work.u_RAM_CS_TA_u_SR_RAMS_CS_SLICE_5(fast)
+# Loading work.u_RAM_CS_TA_u_SR_RAMS_CS_SLICE_12(fast)
+# Loading work.lut40007(fast)
+# Loading ovi_machxo2.ROM16X1A(fast__4)
+# Loading work.u_RAM_CS_TA_SLICE_19(fast)
+# Loading work.SLICE_20(fast)
+# Loading work.lut40008(fast)
+# Loading ovi_machxo2.ROM16X1A(fast__5)
+# Loading work.lut40009(fast)
+# Loading ovi_machxo2.ROM16X1A(fast__6)
+# Loading work.u_ROM_CS_TA_u_SR_ROMS_CS_SLICE_24(fast)
+# Loading work.lut40010(fast)
+# Loading ovi_machxo2.ROM16X1A(fast__7)
+# Loading work.u_ROM_CS_TA_SLICE_27(fast)
+# Loading work.inverter(fast)
+# Loading ovi_machxo2.INV(fast)
+# Loading work.u_ROM_CS_TA_u_SR_TA_SLICE_29(fast)
+# Loading work.lut40011(fast)
+# Loading ovi_machxo2.ROM16X1A(fast__8)
+# Loading work.SLICE_31(fast)
+# Loading work.lut40012(fast)
+# Loading ovi_machxo2.ROM16X1A(fast__9)
+# Loading work.lut40013(fast)
+# Loading work.SLICE_32(fast)
+# Loading work.lut40014(fast)
+# Loading ovi_machxo2.ROM16X1A(fast__10)
+# Loading work.u_RAM_CS_TA_u_SR_RAMS_CS_SLICE_33(fast)
+# Loading work.u_RAM_CS_TA_u_SR_RAMS_CS_SLICE_34(fast)
+# Loading work.u_RAM_CS_TA_u_SR_TA_SLICE_36(fast)
+# Loading work.u_RAM_CS_TA_u_SR_TA_SLICE_37(fast)
+# Loading work.u_RAM_CS_TA_u_SR_TA_SLICE_38(fast)
+# Loading work.u_RAM_CS_TA_u_SR_TA_SLICE_39(fast)
+# Loading work.u_ROM_CS_TA_u_SR_ROMS_CS_SLICE_40(fast)
+# Loading work.u_ROM_CS_TA_u_SR_ROMS_CS_SLICE_41(fast)
+# Loading work.u_ROM_CS_TA_u_SR_TA_SLICE_42(fast)
+# Loading work.RAM_CS_N(fast)
+# Loading work.xo2iobuf(fast)
+# Loading ovi_machxo2.OBZPD(fast)
+# Loading work.A_25_(fast)
+# Loading work.xo2iobuf0015(fast)
+# Loading ovi_machxo2.IBPD(fast)
+# Loading work.A_24_(fast)
+# Loading work.A_26_(fast)
+# Loading work.A_27_(fast)
+# Loading work.A_28_(fast)
+# Loading work.A_29_(fast)
+# Loading work.A_30_(fast)
+# Loading work.A_31_(fast)
+# Loading work.TA_N(fast)
+# Loading work.RST(fast)
+# Loading work.RAM_OE_N(fast)
+# Loading work.RW_OUT(fast)
+# Loading work.LOCK(fast)
+# Loading work.ROM_CS_N(fast)
+# Loading work.RW_IN(fast)
+# Loading work.TS_N(fast)
+# Loading work.CLK(fast)
+# Loading work.xo2iobuf0015(fast__1)
+# Loading ovi_machxo2.IBPD(fast__1)
+# Loading work.A_23_(fast)
+# Loading work.u_ZenPLL_PLLInst_0(fast)
+# Loading work.EHXPLLJ_B(fast)
+# Loading ovi_machxo2.EHXPLLJ(fast)
+# Loading ovi_machxo2.PUR(fast)
+# Loading ovi_machxo2.GSR(fast)
+# Loading instances from C:/lscc/diamond/3.14/bin/nt64/Zen68060Firmware/impl1/Zen68060Firmware_impl1_vo.sdf
+# Loading timing data from C:/lscc/diamond/3.14/bin/nt64/Zen68060Firmware/impl1/Zen68060Firmware_impl1_vo.sdf
+# ** Note: (vsim-3587) SDF Backannotation Successfully Completed.
+#    Time: 0 fs  Iteration: 0  Instance: /mainLogic_tb File: C:/lscc/diamond/3.14/bin/nt64/Zen68060Firmware/ZenSim.v
+do {C:/lscc/diamond/3.14/bin/nt64/Zen68060Firmware/ZenSim/ZenSim.mdo}
+# Compile of ZenSim.v was successful.
+# End time: 16:18:16 on Sep 16,2026, Elapsed time: 0:03:53
+# Errors: 0, Warnings: 2
+# vsim -voptargs="+acc" -L work -L pmi_work -L ovi_machxo2 "+transport_path_delays" "+transport_int_delays" mainLogic_tb -sdfmax "/mainLogic_tb/dut=C:/lscc/diamond/3.14/bin/nt64/Zen68060Firmware/impl1/Zen68060Firmware_impl1_vo.sdf" 
+# Start time: 16:18:16 on Sep 16,2026
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility. The +acc switch would be deprecated in a future release.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading work.mainLogic_tb(fast)
+# Loading work.ZenMainLogic(fast)
+# Loading work.u_RAM_CS_TA_u_SR_TA_SLICE_0(fast)
+# Loading work.vmuxregsre(fast)
+# Loading ovi_machxo2.FL1P3IY(fast)
+# Loading work.vcc(fast)
+# Loading ovi_machxo2.VHI(fast)
+# Loading work.gnd(fast)
+# Loading ovi_machxo2.VLO(fast)
+# Loading work.u_ROM_CS_TA_u_SR_ROMS_CS_SLICE_1(fast)
+# Loading work.u_ROM_CS_TA_u_SR_TA_SLICE_2(fast)
+# Loading work.vmuxregsre0001(fast)
+# Loading ovi_machxo2.FL1P3JY(fast)
+# Loading work.SLICE_3(fast)
+# Loading work.lut4(fast)
+# Loading ovi_machxo2.ROM16X1A(fast)
+# Loading work.lut40002(fast)
+# Loading ovi_machxo2.ROM16X1A(fast__1)
+# Loading work.vmuxregsre0003(fast)
+# Loading ovi_machxo2.FL1P3DX(fast)
+# Loading work.vmuxregsre0004(fast)
+# Loading ovi_machxo2.FL1P3BX(fast)
+# Loading work.u_ROM_CS_TA_SLICE_4(fast)
+# Loading work.lut40005(fast)
+# Loading ovi_machxo2.ROM16X1A(fast__2)
+# Loading work.lut40006(fast)
+# Loading ovi_machxo2.ROM16X1A(fast__3)
+# Loading work.u_RAM_CS_TA_u_SR_RAMS_CS_SLICE_5(fast)
+# Loading work.u_RAM_CS_TA_u_SR_RAMS_CS_SLICE_12(fast)
+# Loading work.lut40007(fast)
+# Loading ovi_machxo2.ROM16X1A(fast__4)
+# Loading work.u_RAM_CS_TA_SLICE_19(fast)
+# Loading work.SLICE_20(fast)
+# Loading work.lut40008(fast)
+# Loading ovi_machxo2.ROM16X1A(fast__5)
+# Loading work.lut40009(fast)
+# Loading ovi_machxo2.ROM16X1A(fast__6)
+# Loading work.u_ROM_CS_TA_u_SR_ROMS_CS_SLICE_24(fast)
+# Loading work.lut40010(fast)
+# Loading ovi_machxo2.ROM16X1A(fast__7)
+# Loading work.u_ROM_CS_TA_SLICE_27(fast)
+# Loading work.inverter(fast)
+# Loading ovi_machxo2.INV(fast)
+# Loading work.u_ROM_CS_TA_u_SR_TA_SLICE_29(fast)
+# Loading work.lut40011(fast)
+# Loading ovi_machxo2.ROM16X1A(fast__8)
+# Loading work.SLICE_31(fast)
+# Loading work.lut40012(fast)
+# Loading ovi_machxo2.ROM16X1A(fast__9)
+# Loading work.lut40013(fast)
+# Loading work.SLICE_32(fast)
+# Loading work.lut40014(fast)
+# Loading ovi_machxo2.ROM16X1A(fast__10)
+# Loading work.u_RAM_CS_TA_u_SR_RAMS_CS_SLICE_33(fast)
+# Loading work.u_RAM_CS_TA_u_SR_RAMS_CS_SLICE_34(fast)
+# Loading work.u_RAM_CS_TA_u_SR_TA_SLICE_36(fast)
+# Loading work.u_RAM_CS_TA_u_SR_TA_SLICE_37(fast)
+# Loading work.u_RAM_CS_TA_u_SR_TA_SLICE_38(fast)
+# Loading work.u_RAM_CS_TA_u_SR_TA_SLICE_39(fast)
+# Loading work.u_ROM_CS_TA_u_SR_ROMS_CS_SLICE_40(fast)
+# Loading work.u_ROM_CS_TA_u_SR_ROMS_CS_SLICE_41(fast)
+# Loading work.u_ROM_CS_TA_u_SR_TA_SLICE_42(fast)
+# Loading work.RAM_CS_N(fast)
+# Loading work.xo2iobuf(fast)
+# Loading ovi_machxo2.OBZPD(fast)
+# Loading work.A_25_(fast)
+# Loading work.xo2iobuf0015(fast)
+# Loading ovi_machxo2.IBPD(fast)
+# Loading work.A_24_(fast)
+# Loading work.A_26_(fast)
+# Loading work.A_27_(fast)
+# Loading work.A_28_(fast)
+# Loading work.A_29_(fast)
+# Loading work.A_30_(fast)
+# Loading work.A_31_(fast)
+# Loading work.TA_N(fast)
+# Loading work.RST(fast)
+# Loading work.RAM_OE_N(fast)
+# Loading work.RW_OUT(fast)
+# Loading work.LOCK(fast)
+# Loading work.ROM_CS_N(fast)
+# Loading work.RW_IN(fast)
+# Loading work.TS_N(fast)
+# Loading work.CLK(fast)
+# Loading work.xo2iobuf0015(fast__1)
+# Loading ovi_machxo2.IBPD(fast__1)
+# Loading work.A_23_(fast)
+# Loading work.u_ZenPLL_PLLInst_0(fast)
+# Loading work.EHXPLLJ_B(fast)
+# Loading ovi_machxo2.EHXPLLJ(fast)
+# Loading ovi_machxo2.PUR(fast)
+# Loading ovi_machxo2.GSR(fast)
+# Loading instances from C:/lscc/diamond/3.14/bin/nt64/Zen68060Firmware/impl1/Zen68060Firmware_impl1_vo.sdf
+# Loading timing data from C:/lscc/diamond/3.14/bin/nt64/Zen68060Firmware/impl1/Zen68060Firmware_impl1_vo.sdf
+# ** Note: (vsim-3587) SDF Backannotation Successfully Completed.
+#    Time: 0 fs  Iteration: 0  Instance: /mainLogic_tb File: C:/lscc/diamond/3.14/bin/nt64/Zen68060Firmware/ZenSim.v
+# doVOpenFlatFile(): INTERNAL ERROR: page load failed for file C:/lscc/diamond/3.14/bin/nt64/Zen68060Firmware/ZenSim/work/@_opt1/voptm7t0q0 (0:0 3:3 174 0 1370 1789571897 0x10b:0x101)
+# .main_pane.wave.interior.cs.body.pw.wf
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: hollo  Hostname: DESKTOP-LK95KVP  ProcessID: 34904
+#           Attempting to use alternate WLF file "./wlftm2axk5".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlftm2axk5
+when {/mainLogic_tb/dut/LOCK == 1} {
+    log -r /*
+    echo "Logging started at PLL lock"
+}
+run 0.1 ms
+# Logging started at PLL lock
+# ** Note: $stop    : C:/lscc/diamond/3.14/bin/nt64/Zen68060Firmware/ZenSim.v(174)
+#    Time: 15834 ns  Iteration: 0  Instance: /mainLogic_tb
+# Break in Module mainLogic_tb at C:/lscc/diamond/3.14/bin/nt64/Zen68060Firmware/ZenSim.v line 174
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-8009) Loading existing optimized design _opt1
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading work.mainLogic_tb(fast)
+# Loading work.ZenMainLogic(fast)
+# Loading work.u_RAM_CS_TA_u_SR_TA_SLICE_0(fast)
+# Loading work.vmuxregsre(fast)
+# Loading ovi_machxo2.FL1P3IY(fast)
+# Loading work.vcc(fast)
+# Loading ovi_machxo2.VHI(fast)
+# Loading work.gnd(fast)
+# Loading ovi_machxo2.VLO(fast)
+# Loading work.u_ROM_CS_TA_u_SR_ROMS_CS_SLICE_1(fast)
+# Loading work.u_ROM_CS_TA_u_SR_TA_SLICE_2(fast)
+# Loading work.vmuxregsre0001(fast)
+# Loading ovi_machxo2.FL1P3JY(fast)
+# Loading work.SLICE_3(fast)
+# Loading work.lut4(fast)
+# Loading ovi_machxo2.ROM16X1A(fast)
+# Loading work.lut40002(fast)
+# Loading ovi_machxo2.ROM16X1A(fast__1)
+# Loading work.vmuxregsre0003(fast)
+# Loading ovi_machxo2.FL1P3DX(fast)
+# Loading work.vmuxregsre0004(fast)
+# Loading ovi_machxo2.FL1P3BX(fast)
+# Loading work.u_ROM_CS_TA_SLICE_4(fast)
+# Loading work.lut40005(fast)
+# Loading ovi_machxo2.ROM16X1A(fast__2)
+# Loading work.lut40006(fast)
+# Loading ovi_machxo2.ROM16X1A(fast__3)
+# Loading work.u_RAM_CS_TA_u_SR_RAMS_CS_SLICE_5(fast)
+# Loading work.u_RAM_CS_TA_u_SR_RAMS_CS_SLICE_12(fast)
+# Loading work.lut40007(fast)
+# Loading ovi_machxo2.ROM16X1A(fast__4)
+# Loading work.u_RAM_CS_TA_SLICE_19(fast)
+# Loading work.SLICE_20(fast)
+# Loading work.lut40008(fast)
+# Loading ovi_machxo2.ROM16X1A(fast__5)
+# Loading work.lut40009(fast)
+# Loading ovi_machxo2.ROM16X1A(fast__6)
+# Loading work.u_ROM_CS_TA_u_SR_ROMS_CS_SLICE_24(fast)
+# Loading work.lut40010(fast)
+# Loading ovi_machxo2.ROM16X1A(fast__7)
+# Loading work.u_ROM_CS_TA_SLICE_27(fast)
+# Loading work.inverter(fast)
+# Loading ovi_machxo2.INV(fast)
+# Loading work.u_ROM_CS_TA_u_SR_TA_SLICE_29(fast)
+# Loading work.lut40011(fast)
+# Loading ovi_machxo2.ROM16X1A(fast__8)
+# Loading work.SLICE_31(fast)
+# Loading work.lut40012(fast)
+# Loading ovi_machxo2.ROM16X1A(fast__9)
+# Loading work.lut40013(fast)
+# Loading work.SLICE_32(fast)
+# Loading work.lut40014(fast)
+# Loading ovi_machxo2.ROM16X1A(fast__10)
+# Loading work.u_RAM_CS_TA_u_SR_RAMS_CS_SLICE_33(fast)
+# Loading work.u_RAM_CS_TA_u_SR_RAMS_CS_SLICE_34(fast)
+# Loading work.u_RAM_CS_TA_u_SR_TA_SLICE_36(fast)
+# Loading work.u_RAM_CS_TA_u_SR_TA_SLICE_37(fast)
+# Loading work.u_RAM_CS_TA_u_SR_TA_SLICE_38(fast)
+# Loading work.u_RAM_CS_TA_u_SR_TA_SLICE_39(fast)
+# Loading work.u_ROM_CS_TA_u_SR_ROMS_CS_SLICE_40(fast)
+# Loading work.u_ROM_CS_TA_u_SR_ROMS_CS_SLICE_41(fast)
+# Loading work.u_ROM_CS_TA_u_SR_TA_SLICE_42(fast)
+# Loading work.RAM_CS_N(fast)
+# Loading work.xo2iobuf(fast)
+# Loading ovi_machxo2.OBZPD(fast)
+# Loading work.A_25_(fast)
+# Loading work.xo2iobuf0015(fast)
+# Loading ovi_machxo2.IBPD(fast)
+# Loading work.A_24_(fast)
+# Loading work.A_26_(fast)
+# Loading work.A_27_(fast)
+# Loading work.A_28_(fast)
+# Loading work.A_29_(fast)
+# Loading work.A_30_(fast)
+# Loading work.A_31_(fast)
+# Loading work.TA_N(fast)
+# Loading work.RST(fast)
+# Loading work.RAM_OE_N(fast)
+# Loading work.RW_OUT(fast)
+# Loading work.LOCK(fast)
+# Loading work.ROM_CS_N(fast)
+# Loading work.RW_IN(fast)
+# Loading work.TS_N(fast)
+# Loading work.CLK(fast)
+# Loading work.xo2iobuf0015(fast__1)
+# Loading ovi_machxo2.IBPD(fast__1)
+# Loading work.A_23_(fast)
+# Loading work.u_ZenPLL_PLLInst_0(fast)
+# Loading work.EHXPLLJ_B(fast)
+# Loading ovi_machxo2.EHXPLLJ(fast)
+# Loading ovi_machxo2.PUR(fast)
+# Loading ovi_machxo2.GSR(fast)
+# Loading instances from C:/lscc/diamond/3.14/bin/nt64/Zen68060Firmware/impl1/Zen68060Firmware_impl1_vo.sdf
+# Loading timing data from C:/lscc/diamond/3.14/bin/nt64/Zen68060Firmware/impl1/Zen68060Firmware_impl1_vo.sdf
+# ** Note: (vsim-3587) SDF Backannotation Successfully Completed.
+#    Time: 0 fs  Iteration: 0  Instance: /mainLogic_tb File: C:/lscc/diamond/3.14/bin/nt64/Zen68060Firmware/ZenSim.v
+do {C:/lscc/diamond/3.14/bin/nt64/Zen68060Firmware/ZenSim/ZenSim.mdo}
+# Compile of ZenSim.v was successful.
+# End time: 16:21:39 on Sep 16,2026, Elapsed time: 0:03:23
+# Errors: 0, Warnings: 3
+# vsim -voptargs="+acc" -L work -L pmi_work -L ovi_machxo2 "+transport_path_delays" "+transport_int_delays" mainLogic_tb -sdfmax "/mainLogic_tb/dut=C:/lscc/diamond/3.14/bin/nt64/Zen68060Firmware/impl1/Zen68060Firmware_impl1_vo.sdf" 
+# Start time: 16:21:39 on Sep 16,2026
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility. The +acc switch would be deprecated in a future release.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading work.mainLogic_tb(fast)
+# Loading work.ZenMainLogic(fast)
+# Loading work.u_RAM_CS_TA_u_SR_TA_SLICE_0(fast)
+# Loading work.vmuxregsre(fast)
+# Loading ovi_machxo2.FL1P3IY(fast)
+# Loading work.vcc(fast)
+# Loading ovi_machxo2.VHI(fast)
+# Loading work.gnd(fast)
+# Loading ovi_machxo2.VLO(fast)
+# Loading work.u_ROM_CS_TA_u_SR_ROMS_CS_SLICE_1(fast)
+# Loading work.u_ROM_CS_TA_u_SR_TA_SLICE_2(fast)
+# Loading work.vmuxregsre0001(fast)
+# Loading ovi_machxo2.FL1P3JY(fast)
+# Loading work.SLICE_3(fast)
+# Loading work.lut4(fast)
+# Loading ovi_machxo2.ROM16X1A(fast)
+# Loading work.lut40002(fast)
+# Loading ovi_machxo2.ROM16X1A(fast__1)
+# Loading work.vmuxregsre0003(fast)
+# Loading ovi_machxo2.FL1P3DX(fast)
+# Loading work.vmuxregsre0004(fast)
+# Loading ovi_machxo2.FL1P3BX(fast)
+# Loading work.u_ROM_CS_TA_SLICE_4(fast)
+# Loading work.lut40005(fast)
+# Loading ovi_machxo2.ROM16X1A(fast__2)
+# Loading work.lut40006(fast)
+# Loading ovi_machxo2.ROM16X1A(fast__3)
+# Loading work.u_RAM_CS_TA_u_SR_RAMS_CS_SLICE_5(fast)
+# Loading work.u_RAM_CS_TA_u_SR_RAMS_CS_SLICE_12(fast)
+# Loading work.lut40007(fast)
+# Loading ovi_machxo2.ROM16X1A(fast__4)
+# Loading work.u_RAM_CS_TA_SLICE_19(fast)
+# Loading work.SLICE_20(fast)
+# Loading work.lut40008(fast)
+# Loading ovi_machxo2.ROM16X1A(fast__5)
+# Loading work.lut40009(fast)
+# Loading ovi_machxo2.ROM16X1A(fast__6)
+# Loading work.u_ROM_CS_TA_u_SR_ROMS_CS_SLICE_24(fast)
+# Loading work.lut40010(fast)
+# Loading ovi_machxo2.ROM16X1A(fast__7)
+# Loading work.u_ROM_CS_TA_SLICE_27(fast)
+# Loading work.inverter(fast)
+# Loading ovi_machxo2.INV(fast)
+# Loading work.u_ROM_CS_TA_u_SR_TA_SLICE_29(fast)
+# Loading work.lut40011(fast)
+# Loading ovi_machxo2.ROM16X1A(fast__8)
+# Loading work.SLICE_31(fast)
+# Loading work.lut40012(fast)
+# Loading ovi_machxo2.ROM16X1A(fast__9)
+# Loading work.lut40013(fast)
+# Loading work.SLICE_32(fast)
+# Loading work.lut40014(fast)
+# Loading ovi_machxo2.ROM16X1A(fast__10)
+# Loading work.u_RAM_CS_TA_u_SR_RAMS_CS_SLICE_33(fast)
+# Loading work.u_RAM_CS_TA_u_SR_RAMS_CS_SLICE_34(fast)
+# Loading work.u_RAM_CS_TA_u_SR_TA_SLICE_36(fast)
+# Loading work.u_RAM_CS_TA_u_SR_TA_SLICE_37(fast)
+# Loading work.u_RAM_CS_TA_u_SR_TA_SLICE_38(fast)
+# Loading work.u_RAM_CS_TA_u_SR_TA_SLICE_39(fast)
+# Loading work.u_ROM_CS_TA_u_SR_ROMS_CS_SLICE_40(fast)
+# Loading work.u_ROM_CS_TA_u_SR_ROMS_CS_SLICE_41(fast)
+# Loading work.u_ROM_CS_TA_u_SR_TA_SLICE_42(fast)
+# Loading work.RAM_CS_N(fast)
+# Loading work.xo2iobuf(fast)
+# Loading ovi_machxo2.OBZPD(fast)
+# Loading work.A_25_(fast)
+# Loading work.xo2iobuf0015(fast)
+# Loading ovi_machxo2.IBPD(fast)
+# Loading work.A_24_(fast)
+# Loading work.A_26_(fast)
+# Loading work.A_27_(fast)
+# Loading work.A_28_(fast)
+# Loading work.A_29_(fast)
+# Loading work.A_30_(fast)
+# Loading work.A_31_(fast)
+# Loading work.TA_N(fast)
+# Loading work.RST(fast)
+# Loading work.RAM_OE_N(fast)
+# Loading work.RW_OUT(fast)
+# Loading work.LOCK(fast)
+# Loading work.ROM_CS_N(fast)
+# Loading work.RW_IN(fast)
+# Loading work.TS_N(fast)
+# Loading work.CLK(fast)
+# Loading work.xo2iobuf0015(fast__1)
+# Loading ovi_machxo2.IBPD(fast__1)
+# Loading work.A_23_(fast)
+# Loading work.u_ZenPLL_PLLInst_0(fast)
+# Loading work.EHXPLLJ_B(fast)
+# Loading ovi_machxo2.EHXPLLJ(fast)
+# Loading ovi_machxo2.PUR(fast)
+# Loading ovi_machxo2.GSR(fast)
+# Loading instances from C:/lscc/diamond/3.14/bin/nt64/Zen68060Firmware/impl1/Zen68060Firmware_impl1_vo.sdf
+# Loading timing data from C:/lscc/diamond/3.14/bin/nt64/Zen68060Firmware/impl1/Zen68060Firmware_impl1_vo.sdf
+# ** Note: (vsim-3587) SDF Backannotation Successfully Completed.
+#    Time: 0 fs  Iteration: 0  Instance: /mainLogic_tb File: C:/lscc/diamond/3.14/bin/nt64/Zen68060Firmware/ZenSim.v
+# .main_pane.wave.interior.cs.body.pw.wf
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: hollo  Hostname: DESKTOP-LK95KVP  ProcessID: 34904
+#           Attempting to use alternate WLF file "./wlft62cfew".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlft62cfew
+when {/mainLogic_tb/dut/LOCK == 1} {
+    log -r /*
+    echo "Logging started at PLL lock"
+}
+run 0.1 ms
+# Logging started at PLL lock
+# ** Note: $stop    : C:/lscc/diamond/3.14/bin/nt64/Zen68060Firmware/ZenSim.v(174)
+#    Time: 19032 ns  Iteration: 0  Instance: /mainLogic_tb
+# Break in Module mainLogic_tb at C:/lscc/diamond/3.14/bin/nt64/Zen68060Firmware/ZenSim.v line 174
+do {C:/lscc/diamond/3.14/bin/nt64/Zen68060Firmware/ZenSim/ZenSim.mdo}
+# Compile of Zen68060Firmware_impl1_vo.vo was successful.
+# End time: 16:23:51 on Sep 16,2026, Elapsed time: 0:02:12
+# Errors: 0, Warnings: 5
+# vsim -voptargs="+acc" -L work -L pmi_work -L ovi_machxo2 "+transport_path_delays" "+transport_int_delays" mainLogic_tb -sdfmax "/mainLogic_tb/dut=C:/lscc/diamond/3.14/bin/nt64/Zen68060Firmware/impl1/Zen68060Firmware_impl1_vo.sdf" 
+# Start time: 16:23:51 on Sep 16,2026
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility. The +acc switch would be deprecated in a future release.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading work.mainLogic_tb(fast)
+# Loading work.ZenMainLogic(fast)
+# Loading work.u_RAM_CS_TA_u_SR_TA_SLICE_0(fast)
+# Loading work.vmuxregsre(fast)
+# Loading ovi_machxo2.FL1P3IY(fast)
+# Loading work.vcc(fast)
+# Loading ovi_machxo2.VHI(fast)
+# Loading work.gnd(fast)
+# Loading ovi_machxo2.VLO(fast)
+# Loading work.u_ROM_CS_TA_u_SR_ROMS_CS_SLICE_1(fast)
+# Loading work.u_ROM_CS_TA_u_SR_TA_SLICE_2(fast)
+# Loading work.vmuxregsre0001(fast)
+# Loading ovi_machxo2.FL1P3JY(fast)
+# Loading work.SLICE_3(fast)
+# Loading work.lut4(fast)
+# Loading ovi_machxo2.ROM16X1A(fast)
+# Loading work.lut40002(fast)
+# Loading ovi_machxo2.ROM16X1A(fast__1)
+# Loading work.vmuxregsre0003(fast)
+# Loading ovi_machxo2.FL1P3DX(fast)
+# Loading work.vmuxregsre0004(fast)
+# Loading ovi_machxo2.FL1P3BX(fast)
+# Loading work.u_ROM_CS_TA_SLICE_4(fast)
+# Loading work.lut40005(fast)
+# Loading ovi_machxo2.ROM16X1A(fast__2)
+# Loading work.lut40006(fast)
+# Loading ovi_machxo2.ROM16X1A(fast__3)
+# Loading work.u_RAM_CS_TA_u_SR_RAMS_CS_SLICE_5(fast)
+# Loading work.u_RAM_CS_TA_u_SR_RAMS_CS_SLICE_12(fast)
+# Loading work.lut40007(fast)
+# Loading ovi_machxo2.ROM16X1A(fast__4)
+# Loading work.u_RAM_CS_TA_SLICE_19(fast)
+# Loading work.SLICE_20(fast)
+# Loading work.lut40008(fast)
+# Loading ovi_machxo2.ROM16X1A(fast__5)
+# Loading work.lut40009(fast)
+# Loading ovi_machxo2.ROM16X1A(fast__6)
+# Loading work.u_ROM_CS_TA_u_SR_ROMS_CS_SLICE_24(fast)
+# Loading work.lut40010(fast)
+# Loading ovi_machxo2.ROM16X1A(fast__7)
+# Loading work.u_ROM_CS_TA_SLICE_27(fast)
+# Loading work.inverter(fast)
+# Loading ovi_machxo2.INV(fast)
+# Loading work.u_ROM_CS_TA_u_SR_TA_SLICE_29(fast)
+# Loading work.SLICE_31(fast)
+# Loading work.lut40011(fast)
+# Loading ovi_machxo2.ROM16X1A(fast__8)
+# Loading work.lut40012(fast)
+# Loading work.SLICE_32(fast)
+# Loading work.lut40013(fast)
+# Loading ovi_machxo2.ROM16X1A(fast__9)
+# Loading work.lut40014(fast)
+# Loading ovi_machxo2.ROM16X1A(fast__10)
+# Loading work.u_RAM_CS_TA_u_SR_RAMS_CS_SLICE_33(fast)
+# Loading work.u_RAM_CS_TA_u_SR_RAMS_CS_SLICE_34(fast)
+# Loading work.u_RAM_CS_TA_u_SR_TA_SLICE_36(fast)
+# Loading work.u_RAM_CS_TA_u_SR_TA_SLICE_37(fast)
+# Loading work.u_RAM_CS_TA_u_SR_TA_SLICE_38(fast)
+# Loading work.u_RAM_CS_TA_u_SR_TA_SLICE_39(fast)
+# Loading work.u_ROM_CS_TA_u_SR_ROMS_CS_SLICE_40(fast)
+# Loading work.u_ROM_CS_TA_u_SR_ROMS_CS_SLICE_41(fast)
+# Loading work.u_ROM_CS_TA_u_SR_TA_SLICE_42(fast)
+# Loading work.RAM_CS_N(fast)
+# Loading work.xo2iobuf(fast)
+# Loading ovi_machxo2.OBZPD(fast)
+# Loading work.A_25_(fast)
+# Loading work.xo2iobuf0015(fast)
+# Loading ovi_machxo2.IBPD(fast)
+# Loading work.A_24_(fast)
+# Loading work.A_26_(fast)
+# Loading work.A_27_(fast)
+# Loading work.A_28_(fast)
+# Loading work.A_29_(fast)
+# Loading work.A_30_(fast)
+# Loading work.A_31_(fast)
+# Loading work.TA_N(fast)
+# Loading work.RST(fast)
+# Loading work.RAM_OE_N(fast)
+# Loading work.A_23_(fast)
+# Loading work.RW_OUT(fast)
+# Loading work.LOCK(fast)
+# Loading work.ROM_CS_N(fast)
+# Loading work.RW_IN(fast)
+# Loading work.TS_N(fast)
+# Loading work.CLK(fast)
+# Loading work.xo2iobuf0015(fast__1)
+# Loading ovi_machxo2.IBPD(fast__1)
+# Loading work.u_ZenPLL_PLLInst_0(fast)
+# Loading work.EHXPLLJ_B(fast)
+# Loading ovi_machxo2.EHXPLLJ(fast)
+# Loading ovi_machxo2.PUR(fast)
+# Loading ovi_machxo2.GSR(fast)
+# Loading instances from C:/lscc/diamond/3.14/bin/nt64/Zen68060Firmware/impl1/Zen68060Firmware_impl1_vo.sdf
+# Loading timing data from C:/lscc/diamond/3.14/bin/nt64/Zen68060Firmware/impl1/Zen68060Firmware_impl1_vo.sdf
+# ** Note: (vsim-3587) SDF Backannotation Successfully Completed.
+#    Time: 0 fs  Iteration: 0  Instance: /mainLogic_tb File: C:/lscc/diamond/3.14/bin/nt64/Zen68060Firmware/ZenSim.v
+# .main_pane.wave.interior.cs.body.pw.wf
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: hollo  Hostname: DESKTOP-LK95KVP  ProcessID: 34904
+#           Attempting to use alternate WLF file "./wlfttm5cr7".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlfttm5cr7
+when {/mainLogic_tb/dut/LOCK == 1} {
+    log -r /*
+    echo "Logging started at PLL lock"
+}
+run 0.1 ms
+# Logging started at PLL lock
+# ** Note: $stop    : C:/lscc/diamond/3.14/bin/nt64/Zen68060Firmware/ZenSim.v(174)
+#    Time: 19032 ns  Iteration: 0  Instance: /mainLogic_tb
+# Break in Module mainLogic_tb at C:/lscc/diamond/3.14/bin/nt64/Zen68060Firmware/ZenSim.v line 174
+vcd add /mainLogic_tb/dut/CLK
+vcd add /mainLogic_tb/dut/CLKOS
+vcd add /mainLogic_tb/dut/CLKOS2
+vcd add /mainLogic_tb/dut/A
+vcd add /mainLogic_tb/dut/TS_N
+vcd add /mainLogic_tb/dut/TA_N
+vcd add /mainLogic_tb/dut/RW_IN
+vcd add /mainLogic_tb/dut/RAM_CS_N
+vcd add /mainLogic_tb/dut/ROM_CS_N
+when {/mainLogic_tb/dut/LOCK == 1} {
+    log -r /*
+    echo "Logging started at PLL lock"
+}
+run 0.1 ms
+vcd flush
+restart -f
+# Closing VCD file "dump.vcd"
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-8009) Loading existing optimized design _opt2
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading work.mainLogic_tb(fast)
+# Loading work.ZenMainLogic(fast)
+# Loading work.u_RAM_CS_TA_u_SR_TA_SLICE_0(fast)
+# Loading work.vmuxregsre(fast)
+# Loading ovi_machxo2.FL1P3IY(fast)
+# Loading work.vcc(fast)
+# Loading ovi_machxo2.VHI(fast)
+# Loading work.gnd(fast)
+# Loading ovi_machxo2.VLO(fast)
+# Loading work.u_ROM_CS_TA_u_SR_ROMS_CS_SLICE_1(fast)
+# Loading work.u_ROM_CS_TA_u_SR_TA_SLICE_2(fast)
+# Loading work.vmuxregsre0001(fast)
+# Loading ovi_machxo2.FL1P3JY(fast)
+# Loading work.SLICE_3(fast)
+# Loading work.lut4(fast)
+# Loading ovi_machxo2.ROM16X1A(fast)
+# Loading work.lut40002(fast)
+# Loading ovi_machxo2.ROM16X1A(fast__1)
+# Loading work.vmuxregsre0003(fast)
+# Loading ovi_machxo2.FL1P3DX(fast)
+# Loading work.vmuxregsre0004(fast)
+# Loading ovi_machxo2.FL1P3BX(fast)
+# Loading work.u_ROM_CS_TA_SLICE_4(fast)
+# Loading work.lut40005(fast)
+# Loading ovi_machxo2.ROM16X1A(fast__2)
+# Loading work.lut40006(fast)
+# Loading ovi_machxo2.ROM16X1A(fast__3)
+# Loading work.u_RAM_CS_TA_u_SR_RAMS_CS_SLICE_5(fast)
+# Loading work.u_RAM_CS_TA_u_SR_RAMS_CS_SLICE_12(fast)
+# Loading work.lut40007(fast)
+# Loading ovi_machxo2.ROM16X1A(fast__4)
+# Loading work.u_RAM_CS_TA_SLICE_19(fast)
+# Loading work.SLICE_20(fast)
+# Loading work.lut40008(fast)
+# Loading ovi_machxo2.ROM16X1A(fast__5)
+# Loading work.lut40009(fast)
+# Loading ovi_machxo2.ROM16X1A(fast__6)
+# Loading work.u_ROM_CS_TA_u_SR_ROMS_CS_SLICE_24(fast)
+# Loading work.lut40010(fast)
+# Loading ovi_machxo2.ROM16X1A(fast__7)
+# Loading work.u_ROM_CS_TA_SLICE_27(fast)
+# Loading work.inverter(fast)
+# Loading ovi_machxo2.INV(fast)
+# Loading work.u_ROM_CS_TA_u_SR_TA_SLICE_29(fast)
+# Loading work.SLICE_31(fast)
+# Loading work.lut40011(fast)
+# Loading ovi_machxo2.ROM16X1A(fast__8)
+# Loading work.lut40012(fast)
+# Loading work.SLICE_32(fast)
+# Loading work.lut40013(fast)
+# Loading ovi_machxo2.ROM16X1A(fast__9)
+# Loading work.lut40014(fast)
+# Loading ovi_machxo2.ROM16X1A(fast__10)
+# Loading work.u_RAM_CS_TA_u_SR_RAMS_CS_SLICE_33(fast)
+# Loading work.u_RAM_CS_TA_u_SR_RAMS_CS_SLICE_34(fast)
+# Loading work.u_RAM_CS_TA_u_SR_TA_SLICE_36(fast)
+# Loading work.u_RAM_CS_TA_u_SR_TA_SLICE_37(fast)
+# Loading work.u_RAM_CS_TA_u_SR_TA_SLICE_38(fast)
+# Loading work.u_RAM_CS_TA_u_SR_TA_SLICE_39(fast)
+# Loading work.u_ROM_CS_TA_u_SR_ROMS_CS_SLICE_40(fast)
+# Loading work.u_ROM_CS_TA_u_SR_ROMS_CS_SLICE_41(fast)
+# Loading work.u_ROM_CS_TA_u_SR_TA_SLICE_42(fast)
+# Loading work.RAM_CS_N(fast)
+# Loading work.xo2iobuf(fast)
+# Loading ovi_machxo2.OBZPD(fast)
+# Loading work.A_25_(fast)
+# Loading work.xo2iobuf0015(fast)
+# Loading ovi_machxo2.IBPD(fast)
+# Loading work.A_24_(fast)
+# Loading work.A_26_(fast)
+# Loading work.A_27_(fast)
+# Loading work.A_28_(fast)
+# Loading work.A_29_(fast)
+# Loading work.A_30_(fast)
+# Loading work.A_31_(fast)
+# Loading work.TA_N(fast)
+# Loading work.RST(fast)
+# Loading work.RAM_OE_N(fast)
+# Loading work.A_23_(fast)
+# Loading work.RW_OUT(fast)
+# Loading work.LOCK(fast)
+# Loading work.ROM_CS_N(fast)
+# Loading work.RW_IN(fast)
+# Loading work.TS_N(fast)
+# Loading work.CLK(fast)
+# Loading work.xo2iobuf0015(fast__1)
+# Loading ovi_machxo2.IBPD(fast__1)
+# Loading work.u_ZenPLL_PLLInst_0(fast)
+# Loading work.EHXPLLJ_B(fast)
+# Loading ovi_machxo2.EHXPLLJ(fast)
+# Loading ovi_machxo2.PUR(fast)
+# Loading ovi_machxo2.GSR(fast)
+# Loading instances from C:/lscc/diamond/3.14/bin/nt64/Zen68060Firmware/impl1/Zen68060Firmware_impl1_vo.sdf
+# Loading timing data from C:/lscc/diamond/3.14/bin/nt64/Zen68060Firmware/impl1/Zen68060Firmware_impl1_vo.sdf
+# ** Note: (vsim-3587) SDF Backannotation Successfully Completed.
+#    Time: 0 fs  Iteration: 0  Instance: /mainLogic_tb File: C:/lscc/diamond/3.14/bin/nt64/Zen68060Firmware/ZenSim.v
+do {C:/lscc/diamond/3.14/bin/nt64/Zen68060Firmware/ZenSim/ZenSim.mdo}
+# End time: 16:29:43 on Sep 16,2026, Elapsed time: 0:05:52
+# Errors: 0, Warnings: 3
+# vsim -voptargs="+acc" -L work -L pmi_work -L ovi_machxo2 "+transport_path_delays" "+transport_int_delays" mainLogic_tb -sdfmax "/mainLogic_tb/dut=C:/lscc/diamond/3.14/bin/nt64/Zen68060Firmware/impl1/Zen68060Firmware_impl1_vo.sdf" 
+# Start time: 16:29:43 on Sep 16,2026
+# ** Note: (vsim-8009) Loading existing optimized design _opt2
+# Loading work.mainLogic_tb(fast)
+# Loading work.ZenMainLogic(fast)
+# Loading work.u_RAM_CS_TA_u_SR_TA_SLICE_0(fast)
+# Loading work.vmuxregsre(fast)
+# Loading ovi_machxo2.FL1P3IY(fast)
+# Loading work.vcc(fast)
+# Loading ovi_machxo2.VHI(fast)
+# Loading work.gnd(fast)
+# Loading ovi_machxo2.VLO(fast)
+# Loading work.u_ROM_CS_TA_u_SR_ROMS_CS_SLICE_1(fast)
+# Loading work.u_ROM_CS_TA_u_SR_TA_SLICE_2(fast)
+# Loading work.vmuxregsre0001(fast)
+# Loading ovi_machxo2.FL1P3JY(fast)
+# Loading work.SLICE_3(fast)
+# Loading work.lut4(fast)
+# Loading ovi_machxo2.ROM16X1A(fast)
+# Loading work.lut40002(fast)
+# Loading ovi_machxo2.ROM16X1A(fast__1)
+# Loading work.vmuxregsre0003(fast)
+# Loading ovi_machxo2.FL1P3DX(fast)
+# Loading work.vmuxregsre0004(fast)
+# Loading ovi_machxo2.FL1P3BX(fast)
+# Loading work.u_ROM_CS_TA_SLICE_4(fast)
+# Loading work.lut40005(fast)
+# Loading ovi_machxo2.ROM16X1A(fast__2)
+# Loading work.lut40006(fast)
+# Loading ovi_machxo2.ROM16X1A(fast__3)
+# Loading work.u_RAM_CS_TA_u_SR_RAMS_CS_SLICE_5(fast)
+# Loading work.u_RAM_CS_TA_u_SR_RAMS_CS_SLICE_12(fast)
+# Loading work.lut40007(fast)
+# Loading ovi_machxo2.ROM16X1A(fast__4)
+# Loading work.u_RAM_CS_TA_SLICE_19(fast)
+# Loading work.SLICE_20(fast)
+# Loading work.lut40008(fast)
+# Loading ovi_machxo2.ROM16X1A(fast__5)
+# Loading work.lut40009(fast)
+# Loading ovi_machxo2.ROM16X1A(fast__6)
+# Loading work.u_ROM_CS_TA_u_SR_ROMS_CS_SLICE_24(fast)
+# Loading work.lut40010(fast)
+# Loading ovi_machxo2.ROM16X1A(fast__7)
+# Loading work.u_ROM_CS_TA_SLICE_27(fast)
+# Loading work.inverter(fast)
+# Loading ovi_machxo2.INV(fast)
+# Loading work.u_ROM_CS_TA_u_SR_TA_SLICE_29(fast)
+# Loading work.SLICE_31(fast)
+# Loading work.lut40011(fast)
+# Loading ovi_machxo2.ROM16X1A(fast__8)
+# Loading work.lut40012(fast)
+# Loading work.SLICE_32(fast)
+# Loading work.lut40013(fast)
+# Loading ovi_machxo2.ROM16X1A(fast__9)
+# Loading work.lut40014(fast)
+# Loading ovi_machxo2.ROM16X1A(fast__10)
+# Loading work.u_RAM_CS_TA_u_SR_RAMS_CS_SLICE_33(fast)
+# Loading work.u_RAM_CS_TA_u_SR_RAMS_CS_SLICE_34(fast)
+# Loading work.u_RAM_CS_TA_u_SR_TA_SLICE_36(fast)
+# Loading work.u_RAM_CS_TA_u_SR_TA_SLICE_37(fast)
+# Loading work.u_RAM_CS_TA_u_SR_TA_SLICE_38(fast)
+# Loading work.u_RAM_CS_TA_u_SR_TA_SLICE_39(fast)
+# Loading work.u_ROM_CS_TA_u_SR_ROMS_CS_SLICE_40(fast)
+# Loading work.u_ROM_CS_TA_u_SR_ROMS_CS_SLICE_41(fast)
+# Loading work.u_ROM_CS_TA_u_SR_TA_SLICE_42(fast)
+# Loading work.RAM_CS_N(fast)
+# Loading work.xo2iobuf(fast)
+# Loading ovi_machxo2.OBZPD(fast)
+# Loading work.A_25_(fast)
+# Loading work.xo2iobuf0015(fast)
+# Loading ovi_machxo2.IBPD(fast)
+# Loading work.A_24_(fast)
+# Loading work.A_26_(fast)
+# Loading work.A_27_(fast)
+# Loading work.A_28_(fast)
+# Loading work.A_29_(fast)
+# Loading work.A_30_(fast)
+# Loading work.A_31_(fast)
+# Loading work.TA_N(fast)
+# Loading work.RST(fast)
+# Loading work.RAM_OE_N(fast)
+# Loading work.A_23_(fast)
+# Loading work.RW_OUT(fast)
+# Loading work.LOCK(fast)
+# Loading work.ROM_CS_N(fast)
+# Loading work.RW_IN(fast)
+# Loading work.TS_N(fast)
+# Loading work.CLK(fast)
+# Loading work.xo2iobuf0015(fast__1)
+# Loading ovi_machxo2.IBPD(fast__1)
+# Loading work.u_ZenPLL_PLLInst_0(fast)
+# Loading work.EHXPLLJ_B(fast)
+# Loading ovi_machxo2.EHXPLLJ(fast)
+# Loading ovi_machxo2.PUR(fast)
+# Loading ovi_machxo2.GSR(fast)
+# Loading instances from C:/lscc/diamond/3.14/bin/nt64/Zen68060Firmware/impl1/Zen68060Firmware_impl1_vo.sdf
+# Loading timing data from C:/lscc/diamond/3.14/bin/nt64/Zen68060Firmware/impl1/Zen68060Firmware_impl1_vo.sdf
+# ** Note: (vsim-3587) SDF Backannotation Successfully Completed.
+#    Time: 0 fs  Iteration: 0  Instance: /mainLogic_tb File: C:/lscc/diamond/3.14/bin/nt64/Zen68060Firmware/ZenSim.v
+# .main_pane.wave.interior.cs.body.pw.wf
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: hollo  Hostname: DESKTOP-LK95KVP  ProcessID: 34904
+#           Attempting to use alternate WLF file "./wlfts0f6jw".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlfts0f6jw
+vcd add /mainLogic_tb/dut/CLK
+vcd add /mainLogic_tb/dut/CLKOS
+vcd add /mainLogic_tb/dut/CLKOS2
+vcd add /mainLogic_tb/dut/A
+vcd add /mainLogic_tb/dut/TS_N
+vcd add /mainLogic_tb/dut/TA_N
+vcd add /mainLogic_tb/dut/RW_IN
+vcd add /mainLogic_tb/dut/RAM_CS_N
+vcd add /mainLogic_tb/dut/ROM_CS_N
+when {/mainLogic_tb/dut/LOCK == 1} {
+    log -r /*
+    echo "Logging started at PLL lock"
+}
+run 0.1 ms
+# Logging started at PLL lock
+# ** Note: $stop    : C:/lscc/diamond/3.14/bin/nt64/Zen68060Firmware/ZenSim.v(174)
+#    Time: 19032 ns  Iteration: 0  Instance: /mainLogic_tb
+# Break in Module mainLogic_tb at C:/lscc/diamond/3.14/bin/nt64/Zen68060Firmware/ZenSim.v line 174
+vcd flush
+vcd add /mainLogic_tb/dut/ROM_CS_N
+# ** UI-Msg (Error) (suppressible): (vsim-VCD-3452) 'vcd add' call is too late. The VCD header is already created.
+restart -f
+# Closing VCD file "dump.vcd"
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility. The +acc switch would be deprecated in a future release.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading work.mainLogic_tb(fast)
+# Loading work.ZenMainLogic(fast)
+# Loading work.u_RAM_CS_TA_u_SR_TA_SLICE_0(fast)
+# Loading work.vmuxregsre(fast)
+# Loading ovi_machxo2.FL1P3IY(fast)
+# Loading work.vcc(fast)
+# Loading ovi_machxo2.VHI(fast)
+# Loading work.gnd(fast)
+# Loading ovi_machxo2.VLO(fast)
+# Loading work.u_ROM_CS_TA_u_SR_ROMS_CS_SLICE_1(fast)
+# Loading work.u_ROM_CS_TA_u_SR_TA_SLICE_2(fast)
+# Loading work.vmuxregsre0001(fast)
+# Loading ovi_machxo2.FL1P3JY(fast)
+# Loading work.SLICE_3(fast)
+# Loading work.lut4(fast)
+# Loading ovi_machxo2.ROM16X1A(fast)
+# Loading work.lut40002(fast)
+# Loading ovi_machxo2.ROM16X1A(fast__1)
+# Loading work.vmuxregsre0003(fast)
+# Loading ovi_machxo2.FL1P3DX(fast)
+# Loading work.vmuxregsre0004(fast)
+# Loading ovi_machxo2.FL1P3BX(fast)
+# Loading work.u_ROM_CS_TA_SLICE_4(fast)
+# Loading work.lut40005(fast)
+# Loading ovi_machxo2.ROM16X1A(fast__2)
+# Loading work.lut40006(fast)
+# Loading ovi_machxo2.ROM16X1A(fast__3)
+# Loading work.u_RAM_CS_TA_u_SR_RAMS_CS_SLICE_5(fast)
+# Loading work.u_RAM_CS_TA_u_SR_RAMS_CS_SLICE_12(fast)
+# Loading work.lut40007(fast)
+# Loading ovi_machxo2.ROM16X1A(fast__4)
+# Loading work.u_RAM_CS_TA_SLICE_19(fast)
+# Loading work.SLICE_20(fast)
+# Loading work.lut40008(fast)
+# Loading ovi_machxo2.ROM16X1A(fast__5)
+# Loading work.lut40009(fast)
+# Loading ovi_machxo2.ROM16X1A(fast__6)
+# Loading work.u_ROM_CS_TA_u_SR_ROMS_CS_SLICE_24(fast)
+# Loading work.lut40010(fast)
+# Loading ovi_machxo2.ROM16X1A(fast__7)
+# Loading work.u_ROM_CS_TA_SLICE_27(fast)
+# Loading work.inverter(fast)
+# Loading ovi_machxo2.INV(fast)
+# Loading work.u_ROM_CS_TA_u_SR_TA_SLICE_29(fast)
+# Loading work.SLICE_31(fast)
+# Loading work.lut40011(fast)
+# Loading ovi_machxo2.ROM16X1A(fast__8)
+# Loading work.lut40012(fast)
+# Loading work.SLICE_32(fast)
+# Loading work.lut40013(fast)
+# Loading ovi_machxo2.ROM16X1A(fast__9)
+# Loading work.lut40014(fast)
+# Loading ovi_machxo2.ROM16X1A(fast__10)
+# Loading work.u_RAM_CS_TA_u_SR_RAMS_CS_SLICE_33(fast)
+# Loading work.u_RAM_CS_TA_u_SR_RAMS_CS_SLICE_34(fast)
+# Loading work.u_RAM_CS_TA_u_SR_TA_SLICE_36(fast)
+# Loading work.u_RAM_CS_TA_u_SR_TA_SLICE_37(fast)
+# Loading work.u_RAM_CS_TA_u_SR_TA_SLICE_38(fast)
+# Loading work.u_RAM_CS_TA_u_SR_TA_SLICE_39(fast)
+# Loading work.u_ROM_CS_TA_u_SR_ROMS_CS_SLICE_40(fast)
+# Loading work.u_ROM_CS_TA_u_SR_ROMS_CS_SLICE_41(fast)
+# Loading work.u_ROM_CS_TA_u_SR_TA_SLICE_42(fast)
+# Loading work.RAM_CS_N(fast)
+# Loading work.xo2iobuf(fast)
+# Loading ovi_machxo2.OBZPD(fast)
+# Loading work.A_25_(fast)
+# Loading work.xo2iobuf0015(fast)
+# Loading ovi_machxo2.IBPD(fast)
+# Loading work.A_24_(fast)
+# Loading work.A_26_(fast)
+# Loading work.A_27_(fast)
+# Loading work.A_28_(fast)
+# Loading work.A_29_(fast)
+# Loading work.A_30_(fast)
+# Loading work.A_31_(fast)
+# Loading work.TA_N(fast)
+# Loading work.RST(fast)
+# Loading work.RAM_OE_N(fast)
+# Loading work.A_23_(fast)
+# Loading work.RW_OUT(fast)
+# Loading work.LOCK(fast)
+# Loading work.ROM_CS_N(fast)
+# Loading work.RW_IN(fast)
+# Loading work.TS_N(fast)
+# Loading work.CLK(fast)
+# Loading work.xo2iobuf0015(fast__1)
+# Loading ovi_machxo2.IBPD(fast__1)
+# Loading work.u_ZenPLL_PLLInst_0(fast)
+# Loading work.EHXPLLJ_B(fast)
+# Loading ovi_machxo2.EHXPLLJ(fast)
+# Loading ovi_machxo2.PUR(fast)
+# Loading ovi_machxo2.GSR(fast)
+# Loading instances from C:/lscc/diamond/3.14/bin/nt64/Zen68060Firmware/impl1/Zen68060Firmware_impl1_vo.sdf
+# Loading timing data from C:/lscc/diamond/3.14/bin/nt64/Zen68060Firmware/impl1/Zen68060Firmware_impl1_vo.sdf
+# ** Note: (vsim-3587) SDF Backannotation Successfully Completed.
+#    Time: 0 fs  Iteration: 0  Instance: /mainLogic_tb File: C:/lscc/diamond/3.14/bin/nt64/Zen68060Firmware/ZenSim.v
+do {C:/lscc/diamond/3.14/bin/nt64/Zen68060Firmware/ZenSim/ZenSim.mdo}
+# Compile of Zen68060Firmware_impl1_vo.vo was successful.
+# End time: 16:35:52 on Sep 16,2026, Elapsed time: 0:06:09
+# Errors: 0, Warnings: 3
+# vsim -voptargs="+acc" -L work -L pmi_work -L ovi_machxo2 "+transport_path_delays" "+transport_int_delays" mainLogic_tb -sdfmax "/mainLogic_tb/dut=C:/lscc/diamond/3.14/bin/nt64/Zen68060Firmware/impl1/Zen68060Firmware_impl1_vo.sdf" 
+# Start time: 16:35:52 on Sep 16,2026
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility. The +acc switch would be deprecated in a future release.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading work.mainLogic_tb(fast)
+# Loading work.ZenMainLogic(fast)
+# Loading work.u_RAM_CS_TA_u_SR_TA_SLICE_0(fast)
+# Loading work.vmuxregsre(fast)
+# Loading ovi_machxo2.FL1P3IY(fast)
+# Loading work.vcc(fast)
+# Loading ovi_machxo2.VHI(fast)
+# Loading work.gnd(fast)
+# Loading ovi_machxo2.VLO(fast)
+# Loading work.u_ROM_CS_TA_u_SR_ROMS_CS_SLICE_1(fast)
+# Loading work.u_ROM_CS_TA_u_SR_TA_SLICE_2(fast)
+# Loading work.vmuxregsre0001(fast)
+# Loading ovi_machxo2.FL1P3JY(fast)
+# Loading work.SLICE_3(fast)
+# Loading work.lut4(fast)
+# Loading ovi_machxo2.ROM16X1A(fast)
+# Loading work.lut40002(fast)
+# Loading ovi_machxo2.ROM16X1A(fast__1)
+# Loading work.vmuxregsre0003(fast)
+# Loading ovi_machxo2.FL1P3DX(fast)
+# Loading work.vmuxregsre0004(fast)
+# Loading ovi_machxo2.FL1P3BX(fast)
+# Loading work.u_ROM_CS_TA_SLICE_4(fast)
+# Loading work.lut40005(fast)
+# Loading ovi_machxo2.ROM16X1A(fast__2)
+# Loading work.lut40006(fast)
+# Loading ovi_machxo2.ROM16X1A(fast__3)
+# Loading work.u_RAM_CS_TA_u_SR_RAMS_CS_SLICE_5(fast)
+# Loading work.u_RAM_CS_TA_u_SR_RAMS_CS_SLICE_12(fast)
+# Loading work.lut40007(fast)
+# Loading ovi_machxo2.ROM16X1A(fast__4)
+# Loading work.u_RAM_CS_TA_SLICE_19(fast)
+# Loading work.SLICE_20(fast)
+# Loading work.lut40008(fast)
+# Loading ovi_machxo2.ROM16X1A(fast__5)
+# Loading work.lut40009(fast)
+# Loading ovi_machxo2.ROM16X1A(fast__6)
+# Loading work.u_ROM_CS_TA_u_SR_ROMS_CS_SLICE_24(fast)
+# Loading work.lut40010(fast)
+# Loading ovi_machxo2.ROM16X1A(fast__7)
+# Loading work.u_ROM_CS_TA_SLICE_27(fast)
+# Loading work.inverter(fast)
+# Loading ovi_machxo2.INV(fast)
+# Loading work.u_ROM_CS_TA_u_SR_TA_SLICE_29(fast)
+# Loading work.lut40011(fast)
+# Loading ovi_machxo2.ROM16X1A(fast__8)
+# Loading work.SLICE_31(fast)
+# Loading work.lut40012(fast)
+# Loading ovi_machxo2.ROM16X1A(fast__9)
+# Loading work.lut40013(fast)
+# Loading work.SLICE_32(fast)
+# Loading work.lut40014(fast)
+# Loading ovi_machxo2.ROM16X1A(fast__10)
+# Loading work.u_RAM_CS_TA_u_SR_RAMS_CS_SLICE_33(fast)
+# Loading work.u_RAM_CS_TA_u_SR_RAMS_CS_SLICE_34(fast)
+# Loading work.u_RAM_CS_TA_u_SR_TA_SLICE_36(fast)
+# Loading work.u_RAM_CS_TA_u_SR_TA_SLICE_37(fast)
+# Loading work.u_RAM_CS_TA_u_SR_TA_SLICE_38(fast)
+# Loading work.u_RAM_CS_TA_u_SR_TA_SLICE_39(fast)
+# Loading work.u_ROM_CS_TA_u_SR_ROMS_CS_SLICE_40(fast)
+# Loading work.u_ROM_CS_TA_u_SR_ROMS_CS_SLICE_41(fast)
+# Loading work.u_ROM_CS_TA_u_SR_TA_SLICE_42(fast)
+# Loading work.RAM_CS_N(fast)
+# Loading work.xo2iobuf(fast)
+# Loading ovi_machxo2.OBZPD(fast)
+# Loading work.A_25_(fast)
+# Loading work.xo2iobuf0015(fast)
+# Loading ovi_machxo2.IBPD(fast)
+# Loading work.A_24_(fast)
+# Loading work.A_26_(fast)
+# Loading work.A_27_(fast)
+# Loading work.A_28_(fast)
+# Loading work.A_29_(fast)
+# Loading work.A_30_(fast)
+# Loading work.A_31_(fast)
+# Loading work.TA_N(fast)
+# Loading work.RST(fast)
+# Loading work.RAM_OE_N(fast)
+# Loading work.A_23_(fast)
+# Loading work.RW_OUT(fast)
+# Loading work.LOCK(fast)
+# Loading work.ROM_CS_N(fast)
+# Loading work.RW_IN(fast)
+# Loading work.TS_N(fast)
+# Loading work.CLK(fast)
+# Loading work.xo2iobuf0015(fast__1)
+# Loading ovi_machxo2.IBPD(fast__1)
+# Loading work.u_ZenPLL_PLLInst_0(fast)
+# Loading work.EHXPLLJ_B(fast)
+# Loading ovi_machxo2.EHXPLLJ(fast)
+# Loading ovi_machxo2.PUR(fast)
+# Loading ovi_machxo2.GSR(fast)
+# Loading instances from C:/lscc/diamond/3.14/bin/nt64/Zen68060Firmware/impl1/Zen68060Firmware_impl1_vo.sdf
+# Loading timing data from C:/lscc/diamond/3.14/bin/nt64/Zen68060Firmware/impl1/Zen68060Firmware_impl1_vo.sdf
+# ** Note: (vsim-3587) SDF Backannotation Successfully Completed.
+#    Time: 0 fs  Iteration: 0  Instance: /mainLogic_tb File: C:/lscc/diamond/3.14/bin/nt64/Zen68060Firmware/ZenSim.v
+# .main_pane.wave.interior.cs.body.pw.wf
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: hollo  Hostname: DESKTOP-LK95KVP  ProcessID: 34904
+#           Attempting to use alternate WLF file "./wlftz8n0k6".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlftz8n0k6
+when {/mainLogic_tb/dut/LOCK == 1} {
+    log -r /*
+    echo "Logging started at PLL lock"
+}
+run 0.1 ms
+# Logging started at PLL lock
+# ** Note: $stop    : C:/lscc/diamond/3.14/bin/nt64/Zen68060Firmware/ZenSim.v(174)
+#    Time: 19032 ns  Iteration: 0  Instance: /mainLogic_tb
+# Break in Module mainLogic_tb at C:/lscc/diamond/3.14/bin/nt64/Zen68060Firmware/ZenSim.v line 174
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-8009) Loading existing optimized design _opt1
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading work.mainLogic_tb(fast)
+# Loading work.ZenMainLogic(fast)
+# Loading work.u_RAM_CS_TA_u_SR_TA_SLICE_0(fast)
+# Loading work.vmuxregsre(fast)
+# Loading ovi_machxo2.FL1P3IY(fast)
+# Loading work.vcc(fast)
+# Loading ovi_machxo2.VHI(fast)
+# Loading work.gnd(fast)
+# Loading ovi_machxo2.VLO(fast)
+# Loading work.u_ROM_CS_TA_u_SR_ROMS_CS_SLICE_1(fast)
+# Loading work.u_ROM_CS_TA_u_SR_TA_SLICE_2(fast)
+# Loading work.vmuxregsre0001(fast)
+# Loading ovi_machxo2.FL1P3JY(fast)
+# Loading work.SLICE_3(fast)
+# Loading work.lut4(fast)
+# Loading ovi_machxo2.ROM16X1A(fast)
+# Loading work.lut40002(fast)
+# Loading ovi_machxo2.ROM16X1A(fast__1)
+# Loading work.vmuxregsre0003(fast)
+# Loading ovi_machxo2.FL1P3DX(fast)
+# Loading work.vmuxregsre0004(fast)
+# Loading ovi_machxo2.FL1P3BX(fast)
+# Loading work.u_ROM_CS_TA_SLICE_4(fast)
+# Loading work.lut40005(fast)
+# Loading ovi_machxo2.ROM16X1A(fast__2)
+# Loading work.lut40006(fast)
+# Loading ovi_machxo2.ROM16X1A(fast__3)
+# Loading work.u_RAM_CS_TA_u_SR_RAMS_CS_SLICE_5(fast)
+# Loading work.u_RAM_CS_TA_u_SR_RAMS_CS_SLICE_12(fast)
+# Loading work.lut40007(fast)
+# Loading ovi_machxo2.ROM16X1A(fast__4)
+# Loading work.u_RAM_CS_TA_SLICE_19(fast)
+# Loading work.SLICE_20(fast)
+# Loading work.lut40008(fast)
+# Loading ovi_machxo2.ROM16X1A(fast__5)
+# Loading work.lut40009(fast)
+# Loading ovi_machxo2.ROM16X1A(fast__6)
+# Loading work.u_ROM_CS_TA_u_SR_ROMS_CS_SLICE_24(fast)
+# Loading work.lut40010(fast)
+# Loading ovi_machxo2.ROM16X1A(fast__7)
+# Loading work.u_ROM_CS_TA_SLICE_27(fast)
+# Loading work.inverter(fast)
+# Loading ovi_machxo2.INV(fast)
+# Loading work.u_ROM_CS_TA_u_SR_TA_SLICE_29(fast)
+# Loading work.lut40011(fast)
+# Loading ovi_machxo2.ROM16X1A(fast__8)
+# Loading work.SLICE_31(fast)
+# Loading work.lut40012(fast)
+# Loading ovi_machxo2.ROM16X1A(fast__9)
+# Loading work.lut40013(fast)
+# Loading work.SLICE_32(fast)
+# Loading work.lut40014(fast)
+# Loading ovi_machxo2.ROM16X1A(fast__10)
+# Loading work.u_RAM_CS_TA_u_SR_RAMS_CS_SLICE_33(fast)
+# Loading work.u_RAM_CS_TA_u_SR_RAMS_CS_SLICE_34(fast)
+# Loading work.u_RAM_CS_TA_u_SR_TA_SLICE_36(fast)
+# Loading work.u_RAM_CS_TA_u_SR_TA_SLICE_37(fast)
+# Loading work.u_RAM_CS_TA_u_SR_TA_SLICE_38(fast)
+# Loading work.u_RAM_CS_TA_u_SR_TA_SLICE_39(fast)
+# Loading work.u_ROM_CS_TA_u_SR_ROMS_CS_SLICE_40(fast)
+# Loading work.u_ROM_CS_TA_u_SR_ROMS_CS_SLICE_41(fast)
+# Loading work.u_ROM_CS_TA_u_SR_TA_SLICE_42(fast)
+# Loading work.RAM_CS_N(fast)
+# Loading work.xo2iobuf(fast)
+# Loading ovi_machxo2.OBZPD(fast)
+# Loading work.A_25_(fast)
+# Loading work.xo2iobuf0015(fast)
+# Loading ovi_machxo2.IBPD(fast)
+# Loading work.A_24_(fast)
+# Loading work.A_26_(fast)
+# Loading work.A_27_(fast)
+# Loading work.A_28_(fast)
+# Loading work.A_29_(fast)
+# Loading work.A_30_(fast)
+# Loading work.A_31_(fast)
+# Loading work.TA_N(fast)
+# Loading work.RST(fast)
+# Loading work.RAM_OE_N(fast)
+# Loading work.A_23_(fast)
+# Loading work.RW_OUT(fast)
+# Loading work.LOCK(fast)
+# Loading work.ROM_CS_N(fast)
+# Loading work.RW_IN(fast)
+# Loading work.TS_N(fast)
+# Loading work.CLK(fast)
+# Loading work.xo2iobuf0015(fast__1)
+# Loading ovi_machxo2.IBPD(fast__1)
+# Loading work.u_ZenPLL_PLLInst_0(fast)
+# Loading work.EHXPLLJ_B(fast)
+# Loading ovi_machxo2.EHXPLLJ(fast)
+# Loading ovi_machxo2.PUR(fast)
+# Loading ovi_machxo2.GSR(fast)
+# Loading instances from C:/lscc/diamond/3.14/bin/nt64/Zen68060Firmware/impl1/Zen68060Firmware_impl1_vo.sdf
+# Loading timing data from C:/lscc/diamond/3.14/bin/nt64/Zen68060Firmware/impl1/Zen68060Firmware_impl1_vo.sdf
+# ** Note: (vsim-3587) SDF Backannotation Successfully Completed.
+#    Time: 0 fs  Iteration: 0  Instance: /mainLogic_tb File: C:/lscc/diamond/3.14/bin/nt64/Zen68060Firmware/ZenSim.v
+do {C:/lscc/diamond/3.14/bin/nt64/Zen68060Firmware/ZenSim/ZenSim.mdo}
+# Compile of ZenSim.v failed with 2 errors.
+# End time: 19:34:18 on Sep 16,2026, Elapsed time: 2:58:26
+# Errors: 0, Warnings: 3
+# vsim -voptargs="+acc" -L work -L pmi_work -L ovi_machxo2 "+transport_path_delays" "+transport_int_delays" mainLogic_tb -sdfmax "/mainLogic_tb/dut=C:/lscc/diamond/3.14/bin/nt64/Zen68060Firmware/impl1/Zen68060Firmware_impl1_vo.sdf" 
+# Start time: 19:34:18 on Sep 16,2026
+# ** Note: (vsim-8009) Loading existing optimized design _opt1
+# Loading work.mainLogic_tb(fast)
+# Loading work.ZenMainLogic(fast)
+# Loading work.u_RAM_CS_TA_u_SR_TA_SLICE_0(fast)
+# Loading work.vmuxregsre(fast)
+# Loading ovi_machxo2.FL1P3IY(fast)
+# Loading work.vcc(fast)
+# Loading ovi_machxo2.VHI(fast)
+# Loading work.gnd(fast)
+# Loading ovi_machxo2.VLO(fast)
+# Loading work.u_ROM_CS_TA_u_SR_ROMS_CS_SLICE_1(fast)
+# Loading work.u_ROM_CS_TA_u_SR_TA_SLICE_2(fast)
+# Loading work.vmuxregsre0001(fast)
+# Loading ovi_machxo2.FL1P3JY(fast)
+# Loading work.SLICE_3(fast)
+# Loading work.lut4(fast)
+# Loading ovi_machxo2.ROM16X1A(fast)
+# Loading work.lut40002(fast)
+# Loading ovi_machxo2.ROM16X1A(fast__1)
+# Loading work.vmuxregsre0003(fast)
+# Loading ovi_machxo2.FL1P3DX(fast)
+# Loading work.vmuxregsre0004(fast)
+# Loading ovi_machxo2.FL1P3BX(fast)
+# Loading work.u_ROM_CS_TA_SLICE_4(fast)
+# Loading work.lut40005(fast)
+# Loading ovi_machxo2.ROM16X1A(fast__2)
+# Loading work.lut40006(fast)
+# Loading ovi_machxo2.ROM16X1A(fast__3)
+# Loading work.u_RAM_CS_TA_u_SR_RAMS_CS_SLICE_5(fast)
+# Loading work.u_RAM_CS_TA_u_SR_RAMS_CS_SLICE_12(fast)
+# Loading work.lut40007(fast)
+# Loading ovi_machxo2.ROM16X1A(fast__4)
+# Loading work.u_RAM_CS_TA_SLICE_19(fast)
+# Loading work.SLICE_20(fast)
+# Loading work.lut40008(fast)
+# Loading ovi_machxo2.ROM16X1A(fast__5)
+# Loading work.lut40009(fast)
+# Loading ovi_machxo2.ROM16X1A(fast__6)
+# Loading work.u_ROM_CS_TA_u_SR_ROMS_CS_SLICE_24(fast)
+# Loading work.lut40010(fast)
+# Loading ovi_machxo2.ROM16X1A(fast__7)
+# Loading work.u_ROM_CS_TA_SLICE_27(fast)
+# Loading work.inverter(fast)
+# Loading ovi_machxo2.INV(fast)
+# Loading work.u_ROM_CS_TA_u_SR_TA_SLICE_29(fast)
+# Loading work.lut40011(fast)
+# Loading ovi_machxo2.ROM16X1A(fast__8)
+# Loading work.SLICE_31(fast)
+# Loading work.lut40012(fast)
+# Loading ovi_machxo2.ROM16X1A(fast__9)
+# Loading work.lut40013(fast)
+# Loading work.SLICE_32(fast)
+# Loading work.lut40014(fast)
+# Loading ovi_machxo2.ROM16X1A(fast__10)
+# Loading work.u_RAM_CS_TA_u_SR_RAMS_CS_SLICE_33(fast)
+# Loading work.u_RAM_CS_TA_u_SR_RAMS_CS_SLICE_34(fast)
+# Loading work.u_RAM_CS_TA_u_SR_TA_SLICE_36(fast)
+# Loading work.u_RAM_CS_TA_u_SR_TA_SLICE_37(fast)
+# Loading work.u_RAM_CS_TA_u_SR_TA_SLICE_38(fast)
+# Loading work.u_RAM_CS_TA_u_SR_TA_SLICE_39(fast)
+# Loading work.u_ROM_CS_TA_u_SR_ROMS_CS_SLICE_40(fast)
+# Loading work.u_ROM_CS_TA_u_SR_ROMS_CS_SLICE_41(fast)
+# Loading work.u_ROM_CS_TA_u_SR_TA_SLICE_42(fast)
+# Loading work.RAM_CS_N(fast)
+# Loading work.xo2iobuf(fast)
+# Loading ovi_machxo2.OBZPD(fast)
+# Loading work.A_25_(fast)
+# Loading work.xo2iobuf0015(fast)
+# Loading ovi_machxo2.IBPD(fast)
+# Loading work.A_24_(fast)
+# Loading work.A_26_(fast)
+# Loading work.A_27_(fast)
+# Loading work.A_28_(fast)
+# Loading work.A_29_(fast)
+# Loading work.A_30_(fast)
+# Loading work.A_31_(fast)
+# Loading work.TA_N(fast)
+# Loading work.RST(fast)
+# Loading work.RAM_OE_N(fast)
+# Loading work.A_23_(fast)
+# Loading work.RW_OUT(fast)
+# Loading work.LOCK(fast)
+# Loading work.ROM_CS_N(fast)
+# Loading work.RW_IN(fast)
+# Loading work.TS_N(fast)
+# Loading work.CLK(fast)
+# Loading work.xo2iobuf0015(fast__1)
+# Loading ovi_machxo2.IBPD(fast__1)
+# Loading work.u_ZenPLL_PLLInst_0(fast)
+# Loading work.EHXPLLJ_B(fast)
+# Loading ovi_machxo2.EHXPLLJ(fast)
+# Loading ovi_machxo2.PUR(fast)
+# Loading ovi_machxo2.GSR(fast)
+# Loading instances from C:/lscc/diamond/3.14/bin/nt64/Zen68060Firmware/impl1/Zen68060Firmware_impl1_vo.sdf
+# Loading timing data from C:/lscc/diamond/3.14/bin/nt64/Zen68060Firmware/impl1/Zen68060Firmware_impl1_vo.sdf
+# ** Note: (vsim-3587) SDF Backannotation Successfully Completed.
+#    Time: 0 fs  Iteration: 0  Instance: /mainLogic_tb File: C:/lscc/diamond/3.14/bin/nt64/Zen68060Firmware/ZenSim.v
+# .main_pane.wave.interior.cs.body.pw.wf
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: hollo  Hostname: DESKTOP-LK95KVP  ProcessID: 34904
+#           Attempting to use alternate WLF file "./wlfte165hm".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlfte165hm
+do {C:/lscc/diamond/3.14/bin/nt64/Zen68060Firmware/ZenSim/ZenSim.mdo}
+# Compile of ZenSim.v failed with 2 errors.
+# End time: 19:34:30 on Sep 16,2026, Elapsed time: 0:00:12
 # Errors: 0, Warnings: 4
+# vsim -voptargs="+acc" -L work -L pmi_work -L ovi_machxo2 "+transport_path_delays" "+transport_int_delays" mainLogic_tb -sdfmax "/mainLogic_tb/dut=C:/lscc/diamond/3.14/bin/nt64/Zen68060Firmware/impl1/Zen68060Firmware_impl1_vo.sdf" 
+# Start time: 19:34:31 on Sep 16,2026
+# ** Note: (vsim-8009) Loading existing optimized design _opt1
+# Loading work.mainLogic_tb(fast)
+# Loading work.ZenMainLogic(fast)
+# Loading work.u_RAM_CS_TA_u_SR_TA_SLICE_0(fast)
+# Loading work.vmuxregsre(fast)
+# Loading ovi_machxo2.FL1P3IY(fast)
+# Loading work.vcc(fast)
+# Loading ovi_machxo2.VHI(fast)
+# Loading work.gnd(fast)
+# Loading ovi_machxo2.VLO(fast)
+# Loading work.u_ROM_CS_TA_u_SR_ROMS_CS_SLICE_1(fast)
+# Loading work.u_ROM_CS_TA_u_SR_TA_SLICE_2(fast)
+# Loading work.vmuxregsre0001(fast)
+# Loading ovi_machxo2.FL1P3JY(fast)
+# Loading work.SLICE_3(fast)
+# Loading work.lut4(fast)
+# Loading ovi_machxo2.ROM16X1A(fast)
+# Loading work.lut40002(fast)
+# Loading ovi_machxo2.ROM16X1A(fast__1)
+# Loading work.vmuxregsre0003(fast)
+# Loading ovi_machxo2.FL1P3DX(fast)
+# Loading work.vmuxregsre0004(fast)
+# Loading ovi_machxo2.FL1P3BX(fast)
+# Loading work.u_ROM_CS_TA_SLICE_4(fast)
+# Loading work.lut40005(fast)
+# Loading ovi_machxo2.ROM16X1A(fast__2)
+# Loading work.lut40006(fast)
+# Loading ovi_machxo2.ROM16X1A(fast__3)
+# Loading work.u_RAM_CS_TA_u_SR_RAMS_CS_SLICE_5(fast)
+# Loading work.u_RAM_CS_TA_u_SR_RAMS_CS_SLICE_12(fast)
+# Loading work.lut40007(fast)
+# Loading ovi_machxo2.ROM16X1A(fast__4)
+# Loading work.u_RAM_CS_TA_SLICE_19(fast)
+# Loading work.SLICE_20(fast)
+# Loading work.lut40008(fast)
+# Loading ovi_machxo2.ROM16X1A(fast__5)
+# Loading work.lut40009(fast)
+# Loading ovi_machxo2.ROM16X1A(fast__6)
+# Loading work.u_ROM_CS_TA_u_SR_ROMS_CS_SLICE_24(fast)
+# Loading work.lut40010(fast)
+# Loading ovi_machxo2.ROM16X1A(fast__7)
+# Loading work.u_ROM_CS_TA_SLICE_27(fast)
+# Loading work.inverter(fast)
+# Loading ovi_machxo2.INV(fast)
+# Loading work.u_ROM_CS_TA_u_SR_TA_SLICE_29(fast)
+# Loading work.lut40011(fast)
+# Loading ovi_machxo2.ROM16X1A(fast__8)
+# Loading work.SLICE_31(fast)
+# Loading work.lut40012(fast)
+# Loading ovi_machxo2.ROM16X1A(fast__9)
+# Loading work.lut40013(fast)
+# Loading work.SLICE_32(fast)
+# Loading work.lut40014(fast)
+# Loading ovi_machxo2.ROM16X1A(fast__10)
+# Loading work.u_RAM_CS_TA_u_SR_RAMS_CS_SLICE_33(fast)
+# Loading work.u_RAM_CS_TA_u_SR_RAMS_CS_SLICE_34(fast)
+# Loading work.u_RAM_CS_TA_u_SR_TA_SLICE_36(fast)
+# Loading work.u_RAM_CS_TA_u_SR_TA_SLICE_37(fast)
+# Loading work.u_RAM_CS_TA_u_SR_TA_SLICE_38(fast)
+# Loading work.u_RAM_CS_TA_u_SR_TA_SLICE_39(fast)
+# Loading work.u_ROM_CS_TA_u_SR_ROMS_CS_SLICE_40(fast)
+# Loading work.u_ROM_CS_TA_u_SR_ROMS_CS_SLICE_41(fast)
+# Loading work.u_ROM_CS_TA_u_SR_TA_SLICE_42(fast)
+# Loading work.RAM_CS_N(fast)
+# Loading work.xo2iobuf(fast)
+# Loading ovi_machxo2.OBZPD(fast)
+# Loading work.A_25_(fast)
+# Loading work.xo2iobuf0015(fast)
+# Loading ovi_machxo2.IBPD(fast)
+# Loading work.A_24_(fast)
+# Loading work.A_26_(fast)
+# Loading work.A_27_(fast)
+# Loading work.A_28_(fast)
+# Loading work.A_29_(fast)
+# Loading work.A_30_(fast)
+# Loading work.A_31_(fast)
+# Loading work.TA_N(fast)
+# Loading work.RST(fast)
+# Loading work.RAM_OE_N(fast)
+# Loading work.A_23_(fast)
+# Loading work.RW_OUT(fast)
+# Loading work.LOCK(fast)
+# Loading work.ROM_CS_N(fast)
+# Loading work.RW_IN(fast)
+# Loading work.TS_N(fast)
+# Loading work.CLK(fast)
+# Loading work.xo2iobuf0015(fast__1)
+# Loading ovi_machxo2.IBPD(fast__1)
+# Loading work.u_ZenPLL_PLLInst_0(fast)
+# Loading work.EHXPLLJ_B(fast)
+# Loading ovi_machxo2.EHXPLLJ(fast)
+# Loading ovi_machxo2.PUR(fast)
+# Loading ovi_machxo2.GSR(fast)
+# Loading instances from C:/lscc/diamond/3.14/bin/nt64/Zen68060Firmware/impl1/Zen68060Firmware_impl1_vo.sdf
+# Loading timing data from C:/lscc/diamond/3.14/bin/nt64/Zen68060Firmware/impl1/Zen68060Firmware_impl1_vo.sdf
+# ** Note: (vsim-3587) SDF Backannotation Successfully Completed.
+#    Time: 0 fs  Iteration: 0  Instance: /mainLogic_tb File: C:/lscc/diamond/3.14/bin/nt64/Zen68060Firmware/ZenSim.v
+# .main_pane.wave.interior.cs.body.pw.wf
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: hollo  Hostname: DESKTOP-LK95KVP  ProcessID: 34904
+#           Attempting to use alternate WLF file "./wlftqc2eki".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlftqc2eki
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-8009) Loading existing optimized design _opt1
+# Loading work.mainLogic_tb(fast)
+# Loading work.ZenMainLogic(fast)
+# Loading work.u_RAM_CS_TA_u_SR_TA_SLICE_0(fast)
+# Loading work.vmuxregsre(fast)
+# Loading ovi_machxo2.FL1P3IY(fast)
+# Loading work.vcc(fast)
+# Loading ovi_machxo2.VHI(fast)
+# Loading work.gnd(fast)
+# Loading ovi_machxo2.VLO(fast)
+# Loading work.u_ROM_CS_TA_u_SR_ROMS_CS_SLICE_1(fast)
+# Loading work.u_ROM_CS_TA_u_SR_TA_SLICE_2(fast)
+# Loading work.vmuxregsre0001(fast)
+# Loading ovi_machxo2.FL1P3JY(fast)
+# Loading work.SLICE_3(fast)
+# Loading work.lut4(fast)
+# Loading ovi_machxo2.ROM16X1A(fast)
+# Loading work.lut40002(fast)
+# Loading ovi_machxo2.ROM16X1A(fast__1)
+# Loading work.vmuxregsre0003(fast)
+# Loading ovi_machxo2.FL1P3DX(fast)
+# Loading work.vmuxregsre0004(fast)
+# Loading ovi_machxo2.FL1P3BX(fast)
+# Loading work.u_ROM_CS_TA_SLICE_4(fast)
+# Loading work.lut40005(fast)
+# Loading ovi_machxo2.ROM16X1A(fast__2)
+# Loading work.lut40006(fast)
+# Loading ovi_machxo2.ROM16X1A(fast__3)
+# Loading work.u_RAM_CS_TA_u_SR_RAMS_CS_SLICE_5(fast)
+# Loading work.u_RAM_CS_TA_u_SR_RAMS_CS_SLICE_12(fast)
+# Loading work.lut40007(fast)
+# Loading ovi_machxo2.ROM16X1A(fast__4)
+# Loading work.u_RAM_CS_TA_SLICE_19(fast)
+# Loading work.SLICE_20(fast)
+# Loading work.lut40008(fast)
+# Loading ovi_machxo2.ROM16X1A(fast__5)
+# Loading work.lut40009(fast)
+# Loading ovi_machxo2.ROM16X1A(fast__6)
+# Loading work.u_ROM_CS_TA_u_SR_ROMS_CS_SLICE_24(fast)
+# Loading work.lut40010(fast)
+# Loading ovi_machxo2.ROM16X1A(fast__7)
+# Loading work.u_ROM_CS_TA_SLICE_27(fast)
+# Loading work.inverter(fast)
+# Loading ovi_machxo2.INV(fast)
+# Loading work.u_ROM_CS_TA_u_SR_TA_SLICE_29(fast)
+# Loading work.lut40011(fast)
+# Loading ovi_machxo2.ROM16X1A(fast__8)
+# Loading work.SLICE_31(fast)
+# Loading work.lut40012(fast)
+# Loading ovi_machxo2.ROM16X1A(fast__9)
+# Loading work.lut40013(fast)
+# Loading work.SLICE_32(fast)
+# Loading work.lut40014(fast)
+# Loading ovi_machxo2.ROM16X1A(fast__10)
+# Loading work.u_RAM_CS_TA_u_SR_RAMS_CS_SLICE_33(fast)
+# Loading work.u_RAM_CS_TA_u_SR_RAMS_CS_SLICE_34(fast)
+# Loading work.u_RAM_CS_TA_u_SR_TA_SLICE_36(fast)
+# Loading work.u_RAM_CS_TA_u_SR_TA_SLICE_37(fast)
+# Loading work.u_RAM_CS_TA_u_SR_TA_SLICE_38(fast)
+# Loading work.u_RAM_CS_TA_u_SR_TA_SLICE_39(fast)
+# Loading work.u_ROM_CS_TA_u_SR_ROMS_CS_SLICE_40(fast)
+# Loading work.u_ROM_CS_TA_u_SR_ROMS_CS_SLICE_41(fast)
+# Loading work.u_ROM_CS_TA_u_SR_TA_SLICE_42(fast)
+# Loading work.RAM_CS_N(fast)
+# Loading work.xo2iobuf(fast)
+# Loading ovi_machxo2.OBZPD(fast)
+# Loading work.A_25_(fast)
+# Loading work.xo2iobuf0015(fast)
+# Loading ovi_machxo2.IBPD(fast)
+# Loading work.A_24_(fast)
+# Loading work.A_26_(fast)
+# Loading work.A_27_(fast)
+# Loading work.A_28_(fast)
+# Loading work.A_29_(fast)
+# Loading work.A_30_(fast)
+# Loading work.A_31_(fast)
+# Loading work.TA_N(fast)
+# Loading work.RST(fast)
+# Loading work.RAM_OE_N(fast)
+# Loading work.A_23_(fast)
+# Loading work.RW_OUT(fast)
+# Loading work.LOCK(fast)
+# Loading work.ROM_CS_N(fast)
+# Loading work.RW_IN(fast)
+# Loading work.TS_N(fast)
+# Loading work.CLK(fast)
+# Loading work.xo2iobuf0015(fast__1)
+# Loading ovi_machxo2.IBPD(fast__1)
+# Loading work.u_ZenPLL_PLLInst_0(fast)
+# Loading work.EHXPLLJ_B(fast)
+# Loading ovi_machxo2.EHXPLLJ(fast)
+# Loading ovi_machxo2.PUR(fast)
+# Loading ovi_machxo2.GSR(fast)
+# Loading instances from C:/lscc/diamond/3.14/bin/nt64/Zen68060Firmware/impl1/Zen68060Firmware_impl1_vo.sdf
+# Loading timing data from C:/lscc/diamond/3.14/bin/nt64/Zen68060Firmware/impl1/Zen68060Firmware_impl1_vo.sdf
+# ** Note: (vsim-3587) SDF Backannotation Successfully Completed.
+#    Time: 0 fs  Iteration: 0  Instance: /mainLogic_tb File: C:/lscc/diamond/3.14/bin/nt64/Zen68060Firmware/ZenSim.v
+do {C:/lscc/diamond/3.14/bin/nt64/Zen68060Firmware/ZenSim/ZenSim.mdo}
+# Compile of ZenSim.v failed with 2 errors.
+# End time: 19:35:15 on Sep 16,2026, Elapsed time: 0:00:44
+# Errors: 0, Warnings: 2
+# vsim -voptargs="+acc" -L work -L pmi_work -L ovi_machxo2 "+transport_path_delays" "+transport_int_delays" mainLogic_tb -sdfmax "/mainLogic_tb/dut=C:/lscc/diamond/3.14/bin/nt64/Zen68060Firmware/impl1/Zen68060Firmware_impl1_vo.sdf" 
+# Start time: 19:35:15 on Sep 16,2026
+# ** Note: (vsim-8009) Loading existing optimized design _opt1
+# Loading work.mainLogic_tb(fast)
+# Loading work.ZenMainLogic(fast)
+# Loading work.u_RAM_CS_TA_u_SR_TA_SLICE_0(fast)
+# Loading work.vmuxregsre(fast)
+# Loading ovi_machxo2.FL1P3IY(fast)
+# Loading work.vcc(fast)
+# Loading ovi_machxo2.VHI(fast)
+# Loading work.gnd(fast)
+# Loading ovi_machxo2.VLO(fast)
+# Loading work.u_ROM_CS_TA_u_SR_ROMS_CS_SLICE_1(fast)
+# Loading work.u_ROM_CS_TA_u_SR_TA_SLICE_2(fast)
+# Loading work.vmuxregsre0001(fast)
+# Loading ovi_machxo2.FL1P3JY(fast)
+# Loading work.SLICE_3(fast)
+# Loading work.lut4(fast)
+# Loading ovi_machxo2.ROM16X1A(fast)
+# Loading work.lut40002(fast)
+# Loading ovi_machxo2.ROM16X1A(fast__1)
+# Loading work.vmuxregsre0003(fast)
+# Loading ovi_machxo2.FL1P3DX(fast)
+# Loading work.vmuxregsre0004(fast)
+# Loading ovi_machxo2.FL1P3BX(fast)
+# Loading work.u_ROM_CS_TA_SLICE_4(fast)
+# Loading work.lut40005(fast)
+# Loading ovi_machxo2.ROM16X1A(fast__2)
+# Loading work.lut40006(fast)
+# Loading ovi_machxo2.ROM16X1A(fast__3)
+# Loading work.u_RAM_CS_TA_u_SR_RAMS_CS_SLICE_5(fast)
+# Loading work.u_RAM_CS_TA_u_SR_RAMS_CS_SLICE_12(fast)
+# Loading work.lut40007(fast)
+# Loading ovi_machxo2.ROM16X1A(fast__4)
+# Loading work.u_RAM_CS_TA_SLICE_19(fast)
+# Loading work.SLICE_20(fast)
+# Loading work.lut40008(fast)
+# Loading ovi_machxo2.ROM16X1A(fast__5)
+# Loading work.lut40009(fast)
+# Loading ovi_machxo2.ROM16X1A(fast__6)
+# Loading work.u_ROM_CS_TA_u_SR_ROMS_CS_SLICE_24(fast)
+# Loading work.lut40010(fast)
+# Loading ovi_machxo2.ROM16X1A(fast__7)
+# Loading work.u_ROM_CS_TA_SLICE_27(fast)
+# Loading work.inverter(fast)
+# Loading ovi_machxo2.INV(fast)
+# Loading work.u_ROM_CS_TA_u_SR_TA_SLICE_29(fast)
+# Loading work.lut40011(fast)
+# Loading ovi_machxo2.ROM16X1A(fast__8)
+# Loading work.SLICE_31(fast)
+# Loading work.lut40012(fast)
+# Loading ovi_machxo2.ROM16X1A(fast__9)
+# Loading work.lut40013(fast)
+# Loading work.SLICE_32(fast)
+# Loading work.lut40014(fast)
+# Loading ovi_machxo2.ROM16X1A(fast__10)
+# Loading work.u_RAM_CS_TA_u_SR_RAMS_CS_SLICE_33(fast)
+# Loading work.u_RAM_CS_TA_u_SR_RAMS_CS_SLICE_34(fast)
+# Loading work.u_RAM_CS_TA_u_SR_TA_SLICE_36(fast)
+# Loading work.u_RAM_CS_TA_u_SR_TA_SLICE_37(fast)
+# Loading work.u_RAM_CS_TA_u_SR_TA_SLICE_38(fast)
+# Loading work.u_RAM_CS_TA_u_SR_TA_SLICE_39(fast)
+# Loading work.u_ROM_CS_TA_u_SR_ROMS_CS_SLICE_40(fast)
+# Loading work.u_ROM_CS_TA_u_SR_ROMS_CS_SLICE_41(fast)
+# Loading work.u_ROM_CS_TA_u_SR_TA_SLICE_42(fast)
+# Loading work.RAM_CS_N(fast)
+# Loading work.xo2iobuf(fast)
+# Loading ovi_machxo2.OBZPD(fast)
+# Loading work.A_25_(fast)
+# Loading work.xo2iobuf0015(fast)
+# Loading ovi_machxo2.IBPD(fast)
+# Loading work.A_24_(fast)
+# Loading work.A_26_(fast)
+# Loading work.A_27_(fast)
+# Loading work.A_28_(fast)
+# Loading work.A_29_(fast)
+# Loading work.A_30_(fast)
+# Loading work.A_31_(fast)
+# Loading work.TA_N(fast)
+# Loading work.RST(fast)
+# Loading work.RAM_OE_N(fast)
+# Loading work.A_23_(fast)
+# Loading work.RW_OUT(fast)
+# Loading work.LOCK(fast)
+# Loading work.ROM_CS_N(fast)
+# Loading work.RW_IN(fast)
+# Loading work.TS_N(fast)
+# Loading work.CLK(fast)
+# Loading work.xo2iobuf0015(fast__1)
+# Loading ovi_machxo2.IBPD(fast__1)
+# Loading work.u_ZenPLL_PLLInst_0(fast)
+# Loading work.EHXPLLJ_B(fast)
+# Loading ovi_machxo2.EHXPLLJ(fast)
+# Loading ovi_machxo2.PUR(fast)
+# Loading ovi_machxo2.GSR(fast)
+# Loading instances from C:/lscc/diamond/3.14/bin/nt64/Zen68060Firmware/impl1/Zen68060Firmware_impl1_vo.sdf
+# Loading timing data from C:/lscc/diamond/3.14/bin/nt64/Zen68060Firmware/impl1/Zen68060Firmware_impl1_vo.sdf
+# ** Note: (vsim-3587) SDF Backannotation Successfully Completed.
+#    Time: 0 fs  Iteration: 0  Instance: /mainLogic_tb File: C:/lscc/diamond/3.14/bin/nt64/Zen68060Firmware/ZenSim.v
+# .main_pane.wave.interior.cs.body.pw.wf
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: hollo  Hostname: DESKTOP-LK95KVP  ProcessID: 34904
+#           Attempting to use alternate WLF file "./wlftt3eegr".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlftt3eegr
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-8009) Loading existing optimized design _opt1
+# Loading work.mainLogic_tb(fast)
+# Loading work.ZenMainLogic(fast)
+# Loading work.u_RAM_CS_TA_u_SR_TA_SLICE_0(fast)
+# Loading work.vmuxregsre(fast)
+# Loading ovi_machxo2.FL1P3IY(fast)
+# Loading work.vcc(fast)
+# Loading ovi_machxo2.VHI(fast)
+# Loading work.gnd(fast)
+# Loading ovi_machxo2.VLO(fast)
+# Loading work.u_ROM_CS_TA_u_SR_ROMS_CS_SLICE_1(fast)
+# Loading work.u_ROM_CS_TA_u_SR_TA_SLICE_2(fast)
+# Loading work.vmuxregsre0001(fast)
+# Loading ovi_machxo2.FL1P3JY(fast)
+# Loading work.SLICE_3(fast)
+# Loading work.lut4(fast)
+# Loading ovi_machxo2.ROM16X1A(fast)
+# Loading work.lut40002(fast)
+# Loading ovi_machxo2.ROM16X1A(fast__1)
+# Loading work.vmuxregsre0003(fast)
+# Loading ovi_machxo2.FL1P3DX(fast)
+# Loading work.vmuxregsre0004(fast)
+# Loading ovi_machxo2.FL1P3BX(fast)
+# Loading work.u_ROM_CS_TA_SLICE_4(fast)
+# Loading work.lut40005(fast)
+# Loading ovi_machxo2.ROM16X1A(fast__2)
+# Loading work.lut40006(fast)
+# Loading ovi_machxo2.ROM16X1A(fast__3)
+# Loading work.u_RAM_CS_TA_u_SR_RAMS_CS_SLICE_5(fast)
+# Loading work.u_RAM_CS_TA_u_SR_RAMS_CS_SLICE_12(fast)
+# Loading work.lut40007(fast)
+# Loading ovi_machxo2.ROM16X1A(fast__4)
+# Loading work.u_RAM_CS_TA_SLICE_19(fast)
+# Loading work.SLICE_20(fast)
+# Loading work.lut40008(fast)
+# Loading ovi_machxo2.ROM16X1A(fast__5)
+# Loading work.lut40009(fast)
+# Loading ovi_machxo2.ROM16X1A(fast__6)
+# Loading work.u_ROM_CS_TA_u_SR_ROMS_CS_SLICE_24(fast)
+# Loading work.lut40010(fast)
+# Loading ovi_machxo2.ROM16X1A(fast__7)
+# Loading work.u_ROM_CS_TA_SLICE_27(fast)
+# Loading work.inverter(fast)
+# Loading ovi_machxo2.INV(fast)
+# Loading work.u_ROM_CS_TA_u_SR_TA_SLICE_29(fast)
+# Loading work.lut40011(fast)
+# Loading ovi_machxo2.ROM16X1A(fast__8)
+# Loading work.SLICE_31(fast)
+# Loading work.lut40012(fast)
+# Loading ovi_machxo2.ROM16X1A(fast__9)
+# Loading work.lut40013(fast)
+# Loading work.SLICE_32(fast)
+# Loading work.lut40014(fast)
+# Loading ovi_machxo2.ROM16X1A(fast__10)
+# Loading work.u_RAM_CS_TA_u_SR_RAMS_CS_SLICE_33(fast)
+# Loading work.u_RAM_CS_TA_u_SR_RAMS_CS_SLICE_34(fast)
+# Loading work.u_RAM_CS_TA_u_SR_TA_SLICE_36(fast)
+# Loading work.u_RAM_CS_TA_u_SR_TA_SLICE_37(fast)
+# Loading work.u_RAM_CS_TA_u_SR_TA_SLICE_38(fast)
+# Loading work.u_RAM_CS_TA_u_SR_TA_SLICE_39(fast)
+# Loading work.u_ROM_CS_TA_u_SR_ROMS_CS_SLICE_40(fast)
+# Loading work.u_ROM_CS_TA_u_SR_ROMS_CS_SLICE_41(fast)
+# Loading work.u_ROM_CS_TA_u_SR_TA_SLICE_42(fast)
+# Loading work.RAM_CS_N(fast)
+# Loading work.xo2iobuf(fast)
+# Loading ovi_machxo2.OBZPD(fast)
+# Loading work.A_25_(fast)
+# Loading work.xo2iobuf0015(fast)
+# Loading ovi_machxo2.IBPD(fast)
+# Loading work.A_24_(fast)
+# Loading work.A_26_(fast)
+# Loading work.A_27_(fast)
+# Loading work.A_28_(fast)
+# Loading work.A_29_(fast)
+# Loading work.A_30_(fast)
+# Loading work.A_31_(fast)
+# Loading work.TA_N(fast)
+# Loading work.RST(fast)
+# Loading work.RAM_OE_N(fast)
+# Loading work.A_23_(fast)
+# Loading work.RW_OUT(fast)
+# Loading work.LOCK(fast)
+# Loading work.ROM_CS_N(fast)
+# Loading work.RW_IN(fast)
+# Loading work.TS_N(fast)
+# Loading work.CLK(fast)
+# Loading work.xo2iobuf0015(fast__1)
+# Loading ovi_machxo2.IBPD(fast__1)
+# Loading work.u_ZenPLL_PLLInst_0(fast)
+# Loading work.EHXPLLJ_B(fast)
+# Loading ovi_machxo2.EHXPLLJ(fast)
+# Loading ovi_machxo2.PUR(fast)
+# Loading ovi_machxo2.GSR(fast)
+# Loading instances from C:/lscc/diamond/3.14/bin/nt64/Zen68060Firmware/impl1/Zen68060Firmware_impl1_vo.sdf
+# Loading timing data from C:/lscc/diamond/3.14/bin/nt64/Zen68060Firmware/impl1/Zen68060Firmware_impl1_vo.sdf
+# ** Note: (vsim-3587) SDF Backannotation Successfully Completed.
+#    Time: 0 fs  Iteration: 0  Instance: /mainLogic_tb File: C:/lscc/diamond/3.14/bin/nt64/Zen68060Firmware/ZenSim.v
+do {C:/lscc/diamond/3.14/bin/nt64/Zen68060Firmware/ZenSim/ZenSim.mdo}
+# Compile of ZenSim.v was successful.
+# End time: 19:36:29 on Sep 16,2026, Elapsed time: 0:01:14
+# Errors: 0, Warnings: 2
+# vsim -voptargs="+acc" -L work -L pmi_work -L ovi_machxo2 "+transport_path_delays" "+transport_int_delays" mainLogic_tb -sdfmax "/mainLogic_tb/dut=C:/lscc/diamond/3.14/bin/nt64/Zen68060Firmware/impl1/Zen68060Firmware_impl1_vo.sdf" 
+# Start time: 19:36:29 on Sep 16,2026
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility. The +acc switch would be deprecated in a future release.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading work.mainLogic_tb(fast)
+# Loading work.ZenMainLogic(fast)
+# Loading work.u_RAM_CS_TA_u_SR_TA_SLICE_0(fast)
+# Loading work.vmuxregsre(fast)
+# Loading ovi_machxo2.FL1P3IY(fast)
+# Loading work.vcc(fast)
+# Loading ovi_machxo2.VHI(fast)
+# Loading work.gnd(fast)
+# Loading ovi_machxo2.VLO(fast)
+# Loading work.u_ROM_CS_TA_u_SR_ROMS_CS_SLICE_1(fast)
+# Loading work.u_ROM_CS_TA_u_SR_TA_SLICE_2(fast)
+# Loading work.vmuxregsre0001(fast)
+# Loading ovi_machxo2.FL1P3JY(fast)
+# Loading work.SLICE_3(fast)
+# Loading work.lut4(fast)
+# Loading ovi_machxo2.ROM16X1A(fast)
+# Loading work.lut40002(fast)
+# Loading ovi_machxo2.ROM16X1A(fast__1)
+# Loading work.vmuxregsre0003(fast)
+# Loading ovi_machxo2.FL1P3DX(fast)
+# Loading work.vmuxregsre0004(fast)
+# Loading ovi_machxo2.FL1P3BX(fast)
+# Loading work.u_ROM_CS_TA_SLICE_4(fast)
+# Loading work.lut40005(fast)
+# Loading ovi_machxo2.ROM16X1A(fast__2)
+# Loading work.lut40006(fast)
+# Loading ovi_machxo2.ROM16X1A(fast__3)
+# Loading work.u_RAM_CS_TA_u_SR_RAMS_CS_SLICE_5(fast)
+# Loading work.u_RAM_CS_TA_u_SR_RAMS_CS_SLICE_12(fast)
+# Loading work.lut40007(fast)
+# Loading ovi_machxo2.ROM16X1A(fast__4)
+# Loading work.u_RAM_CS_TA_SLICE_19(fast)
+# Loading work.SLICE_20(fast)
+# Loading work.lut40008(fast)
+# Loading ovi_machxo2.ROM16X1A(fast__5)
+# Loading work.lut40009(fast)
+# Loading ovi_machxo2.ROM16X1A(fast__6)
+# Loading work.u_ROM_CS_TA_u_SR_ROMS_CS_SLICE_24(fast)
+# Loading work.lut40010(fast)
+# Loading ovi_machxo2.ROM16X1A(fast__7)
+# Loading work.u_ROM_CS_TA_SLICE_27(fast)
+# Loading work.inverter(fast)
+# Loading ovi_machxo2.INV(fast)
+# Loading work.u_ROM_CS_TA_u_SR_TA_SLICE_29(fast)
+# Loading work.lut40011(fast)
+# Loading ovi_machxo2.ROM16X1A(fast__8)
+# Loading work.SLICE_31(fast)
+# Loading work.lut40012(fast)
+# Loading ovi_machxo2.ROM16X1A(fast__9)
+# Loading work.lut40013(fast)
+# Loading work.SLICE_32(fast)
+# Loading work.lut40014(fast)
+# Loading ovi_machxo2.ROM16X1A(fast__10)
+# Loading work.u_RAM_CS_TA_u_SR_RAMS_CS_SLICE_33(fast)
+# Loading work.u_RAM_CS_TA_u_SR_RAMS_CS_SLICE_34(fast)
+# Loading work.u_RAM_CS_TA_u_SR_TA_SLICE_36(fast)
+# Loading work.u_RAM_CS_TA_u_SR_TA_SLICE_37(fast)
+# Loading work.u_RAM_CS_TA_u_SR_TA_SLICE_38(fast)
+# Loading work.u_RAM_CS_TA_u_SR_TA_SLICE_39(fast)
+# Loading work.u_ROM_CS_TA_u_SR_ROMS_CS_SLICE_40(fast)
+# Loading work.u_ROM_CS_TA_u_SR_ROMS_CS_SLICE_41(fast)
+# Loading work.u_ROM_CS_TA_u_SR_TA_SLICE_42(fast)
+# Loading work.RAM_CS_N(fast)
+# Loading work.xo2iobuf(fast)
+# Loading ovi_machxo2.OBZPD(fast)
+# Loading work.A_25_(fast)
+# Loading work.xo2iobuf0015(fast)
+# Loading ovi_machxo2.IBPD(fast)
+# Loading work.A_24_(fast)
+# Loading work.A_26_(fast)
+# Loading work.A_27_(fast)
+# Loading work.A_28_(fast)
+# Loading work.A_29_(fast)
+# Loading work.A_30_(fast)
+# Loading work.A_31_(fast)
+# Loading work.TA_N(fast)
+# Loading work.RST(fast)
+# Loading work.RAM_OE_N(fast)
+# Loading work.A_23_(fast)
+# Loading work.RW_OUT(fast)
+# Loading work.LOCK(fast)
+# Loading work.ROM_CS_N(fast)
+# Loading work.RW_IN(fast)
+# Loading work.TS_N(fast)
+# Loading work.CLK(fast)
+# Loading work.xo2iobuf0015(fast__1)
+# Loading ovi_machxo2.IBPD(fast__1)
+# Loading work.u_ZenPLL_PLLInst_0(fast)
+# Loading work.EHXPLLJ_B(fast)
+# Loading ovi_machxo2.EHXPLLJ(fast)
+# Loading ovi_machxo2.PUR(fast)
+# Loading ovi_machxo2.GSR(fast)
+# Loading instances from C:/lscc/diamond/3.14/bin/nt64/Zen68060Firmware/impl1/Zen68060Firmware_impl1_vo.sdf
+# Loading timing data from C:/lscc/diamond/3.14/bin/nt64/Zen68060Firmware/impl1/Zen68060Firmware_impl1_vo.sdf
+# ** Note: (vsim-3587) SDF Backannotation Successfully Completed.
+#    Time: 0 fs  Iteration: 0  Instance: /mainLogic_tb File: C:/lscc/diamond/3.14/bin/nt64/Zen68060Firmware/ZenSim.v
+# .main_pane.wave.interior.cs.body.pw.wf
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: hollo  Hostname: DESKTOP-LK95KVP  ProcessID: 34904
+#           Attempting to use alternate WLF file "./wlft3jdwte".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlft3jdwte
+when {/mainLogic_tb/dut/LOCK == 1} {
+    log -r /*
+    echo "Logging started at PLL lock"
+}
+run 0.1 ms
+# Logging started at PLL lock
+# ** Note: $stop    : C:/lscc/diamond/3.14/bin/nt64/Zen68060Firmware/ZenSim.v(175)
+#    Time: 19832 ns  Iteration: 0  Instance: /mainLogic_tb
+# Break in Module mainLogic_tb at C:/lscc/diamond/3.14/bin/nt64/Zen68060Firmware/ZenSim.v line 175
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-8009) Loading existing optimized design _opt1
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading work.mainLogic_tb(fast)
+# Loading work.ZenMainLogic(fast)
+# Loading work.u_RAM_CS_TA_u_SR_TA_SLICE_0(fast)
+# Loading work.vmuxregsre(fast)
+# Loading ovi_machxo2.FL1P3IY(fast)
+# Loading work.vcc(fast)
+# Loading ovi_machxo2.VHI(fast)
+# Loading work.gnd(fast)
+# Loading ovi_machxo2.VLO(fast)
+# Loading work.u_ROM_CS_TA_u_SR_ROMS_CS_SLICE_1(fast)
+# Loading work.u_ROM_CS_TA_u_SR_TA_SLICE_2(fast)
+# Loading work.vmuxregsre0001(fast)
+# Loading ovi_machxo2.FL1P3JY(fast)
+# Loading work.SLICE_3(fast)
+# Loading work.lut4(fast)
+# Loading ovi_machxo2.ROM16X1A(fast)
+# Loading work.lut40002(fast)
+# Loading ovi_machxo2.ROM16X1A(fast__1)
+# Loading work.vmuxregsre0003(fast)
+# Loading ovi_machxo2.FL1P3DX(fast)
+# Loading work.vmuxregsre0004(fast)
+# Loading ovi_machxo2.FL1P3BX(fast)
+# Loading work.u_ROM_CS_TA_SLICE_4(fast)
+# Loading work.lut40005(fast)
+# Loading ovi_machxo2.ROM16X1A(fast__2)
+# Loading work.lut40006(fast)
+# Loading ovi_machxo2.ROM16X1A(fast__3)
+# Loading work.u_RAM_CS_TA_u_SR_RAMS_CS_SLICE_5(fast)
+# Loading work.u_RAM_CS_TA_u_SR_RAMS_CS_SLICE_12(fast)
+# Loading work.lut40007(fast)
+# Loading ovi_machxo2.ROM16X1A(fast__4)
+# Loading work.u_RAM_CS_TA_SLICE_19(fast)
+# Loading work.SLICE_20(fast)
+# Loading work.lut40008(fast)
+# Loading ovi_machxo2.ROM16X1A(fast__5)
+# Loading work.lut40009(fast)
+# Loading ovi_machxo2.ROM16X1A(fast__6)
+# Loading work.u_ROM_CS_TA_u_SR_ROMS_CS_SLICE_24(fast)
+# Loading work.lut40010(fast)
+# Loading ovi_machxo2.ROM16X1A(fast__7)
+# Loading work.u_ROM_CS_TA_SLICE_27(fast)
+# Loading work.inverter(fast)
+# Loading ovi_machxo2.INV(fast)
+# Loading work.u_ROM_CS_TA_u_SR_TA_SLICE_29(fast)
+# Loading work.lut40011(fast)
+# Loading ovi_machxo2.ROM16X1A(fast__8)
+# Loading work.SLICE_31(fast)
+# Loading work.lut40012(fast)
+# Loading ovi_machxo2.ROM16X1A(fast__9)
+# Loading work.lut40013(fast)
+# Loading work.SLICE_32(fast)
+# Loading work.lut40014(fast)
+# Loading ovi_machxo2.ROM16X1A(fast__10)
+# Loading work.u_RAM_CS_TA_u_SR_RAMS_CS_SLICE_33(fast)
+# Loading work.u_RAM_CS_TA_u_SR_RAMS_CS_SLICE_34(fast)
+# Loading work.u_RAM_CS_TA_u_SR_TA_SLICE_36(fast)
+# Loading work.u_RAM_CS_TA_u_SR_TA_SLICE_37(fast)
+# Loading work.u_RAM_CS_TA_u_SR_TA_SLICE_38(fast)
+# Loading work.u_RAM_CS_TA_u_SR_TA_SLICE_39(fast)
+# Loading work.u_ROM_CS_TA_u_SR_ROMS_CS_SLICE_40(fast)
+# Loading work.u_ROM_CS_TA_u_SR_ROMS_CS_SLICE_41(fast)
+# Loading work.u_ROM_CS_TA_u_SR_TA_SLICE_42(fast)
+# Loading work.RAM_CS_N(fast)
+# Loading work.xo2iobuf(fast)
+# Loading ovi_machxo2.OBZPD(fast)
+# Loading work.A_25_(fast)
+# Loading work.xo2iobuf0015(fast)
+# Loading ovi_machxo2.IBPD(fast)
+# Loading work.A_24_(fast)
+# Loading work.A_26_(fast)
+# Loading work.A_27_(fast)
+# Loading work.A_28_(fast)
+# Loading work.A_29_(fast)
+# Loading work.A_30_(fast)
+# Loading work.A_31_(fast)
+# Loading work.TA_N(fast)
+# Loading work.RST(fast)
+# Loading work.RAM_OE_N(fast)
+# Loading work.A_23_(fast)
+# Loading work.RW_OUT(fast)
+# Loading work.LOCK(fast)
+# Loading work.ROM_CS_N(fast)
+# Loading work.RW_IN(fast)
+# Loading work.TS_N(fast)
+# Loading work.CLK(fast)
+# Loading work.xo2iobuf0015(fast__1)
+# Loading ovi_machxo2.IBPD(fast__1)
+# Loading work.u_ZenPLL_PLLInst_0(fast)
+# Loading work.EHXPLLJ_B(fast)
+# Loading ovi_machxo2.EHXPLLJ(fast)
+# Loading ovi_machxo2.PUR(fast)
+# Loading ovi_machxo2.GSR(fast)
+# Loading instances from C:/lscc/diamond/3.14/bin/nt64/Zen68060Firmware/impl1/Zen68060Firmware_impl1_vo.sdf
+# Loading timing data from C:/lscc/diamond/3.14/bin/nt64/Zen68060Firmware/impl1/Zen68060Firmware_impl1_vo.sdf
+# ** Note: (vsim-3587) SDF Backannotation Successfully Completed.
+#    Time: 0 fs  Iteration: 0  Instance: /mainLogic_tb File: C:/lscc/diamond/3.14/bin/nt64/Zen68060Firmware/ZenSim.v
+do {C:/lscc/diamond/3.14/bin/nt64/Zen68060Firmware/ZenSim/ZenSim.mdo}
+# Compile of ZenSim.v was successful.
+# End time: 19:39:08 on Sep 16,2026, Elapsed time: 0:02:39
+# Errors: 0, Warnings: 3
+# vsim -voptargs="+acc" -L work -L pmi_work -L ovi_machxo2 "+transport_path_delays" "+transport_int_delays" mainLogic_tb -sdfmax "/mainLogic_tb/dut=C:/lscc/diamond/3.14/bin/nt64/Zen68060Firmware/impl1/Zen68060Firmware_impl1_vo.sdf" 
+# Start time: 19:39:08 on Sep 16,2026
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility. The +acc switch would be deprecated in a future release.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading work.mainLogic_tb(fast)
+# Loading work.ZenMainLogic(fast)
+# Loading work.u_RAM_CS_TA_u_SR_TA_SLICE_0(fast)
+# Loading work.vmuxregsre(fast)
+# Loading ovi_machxo2.FL1P3IY(fast)
+# Loading work.vcc(fast)
+# Loading ovi_machxo2.VHI(fast)
+# Loading work.gnd(fast)
+# Loading ovi_machxo2.VLO(fast)
+# Loading work.u_ROM_CS_TA_u_SR_ROMS_CS_SLICE_1(fast)
+# Loading work.u_ROM_CS_TA_u_SR_TA_SLICE_2(fast)
+# Loading work.vmuxregsre0001(fast)
+# Loading ovi_machxo2.FL1P3JY(fast)
+# Loading work.SLICE_3(fast)
+# Loading work.lut4(fast)
+# Loading ovi_machxo2.ROM16X1A(fast)
+# Loading work.lut40002(fast)
+# Loading ovi_machxo2.ROM16X1A(fast__1)
+# Loading work.vmuxregsre0003(fast)
+# Loading ovi_machxo2.FL1P3DX(fast)
+# Loading work.vmuxregsre0004(fast)
+# Loading ovi_machxo2.FL1P3BX(fast)
+# Loading work.u_ROM_CS_TA_SLICE_4(fast)
+# Loading work.lut40005(fast)
+# Loading ovi_machxo2.ROM16X1A(fast__2)
+# Loading work.lut40006(fast)
+# Loading ovi_machxo2.ROM16X1A(fast__3)
+# Loading work.u_RAM_CS_TA_u_SR_RAMS_CS_SLICE_5(fast)
+# Loading work.u_RAM_CS_TA_u_SR_RAMS_CS_SLICE_12(fast)
+# Loading work.lut40007(fast)
+# Loading ovi_machxo2.ROM16X1A(fast__4)
+# Loading work.u_RAM_CS_TA_SLICE_19(fast)
+# Loading work.SLICE_20(fast)
+# Loading work.lut40008(fast)
+# Loading ovi_machxo2.ROM16X1A(fast__5)
+# Loading work.lut40009(fast)
+# Loading ovi_machxo2.ROM16X1A(fast__6)
+# Loading work.u_ROM_CS_TA_u_SR_ROMS_CS_SLICE_24(fast)
+# Loading work.lut40010(fast)
+# Loading ovi_machxo2.ROM16X1A(fast__7)
+# Loading work.u_ROM_CS_TA_SLICE_27(fast)
+# Loading work.inverter(fast)
+# Loading ovi_machxo2.INV(fast)
+# Loading work.u_ROM_CS_TA_u_SR_TA_SLICE_29(fast)
+# Loading work.lut40011(fast)
+# Loading ovi_machxo2.ROM16X1A(fast__8)
+# Loading work.SLICE_31(fast)
+# Loading work.lut40012(fast)
+# Loading ovi_machxo2.ROM16X1A(fast__9)
+# Loading work.lut40013(fast)
+# Loading work.SLICE_32(fast)
+# Loading work.lut40014(fast)
+# Loading ovi_machxo2.ROM16X1A(fast__10)
+# Loading work.u_RAM_CS_TA_u_SR_RAMS_CS_SLICE_33(fast)
+# Loading work.u_RAM_CS_TA_u_SR_RAMS_CS_SLICE_34(fast)
+# Loading work.u_RAM_CS_TA_u_SR_TA_SLICE_36(fast)
+# Loading work.u_RAM_CS_TA_u_SR_TA_SLICE_37(fast)
+# Loading work.u_RAM_CS_TA_u_SR_TA_SLICE_38(fast)
+# Loading work.u_RAM_CS_TA_u_SR_TA_SLICE_39(fast)
+# Loading work.u_ROM_CS_TA_u_SR_ROMS_CS_SLICE_40(fast)
+# Loading work.u_ROM_CS_TA_u_SR_ROMS_CS_SLICE_41(fast)
+# Loading work.u_ROM_CS_TA_u_SR_TA_SLICE_42(fast)
+# Loading work.RAM_CS_N(fast)
+# Loading work.xo2iobuf(fast)
+# Loading ovi_machxo2.OBZPD(fast)
+# Loading work.A_25_(fast)
+# Loading work.xo2iobuf0015(fast)
+# Loading ovi_machxo2.IBPD(fast)
+# Loading work.A_24_(fast)
+# Loading work.A_26_(fast)
+# Loading work.A_27_(fast)
+# Loading work.A_28_(fast)
+# Loading work.A_29_(fast)
+# Loading work.A_30_(fast)
+# Loading work.A_31_(fast)
+# Loading work.TA_N(fast)
+# Loading work.RST(fast)
+# Loading work.RAM_OE_N(fast)
+# Loading work.A_23_(fast)
+# Loading work.RW_OUT(fast)
+# Loading work.LOCK(fast)
+# Loading work.ROM_CS_N(fast)
+# Loading work.RW_IN(fast)
+# Loading work.TS_N(fast)
+# Loading work.CLK(fast)
+# Loading work.xo2iobuf0015(fast__1)
+# Loading ovi_machxo2.IBPD(fast__1)
+# Loading work.u_ZenPLL_PLLInst_0(fast)
+# Loading work.EHXPLLJ_B(fast)
+# Loading ovi_machxo2.EHXPLLJ(fast)
+# Loading ovi_machxo2.PUR(fast)
+# Loading ovi_machxo2.GSR(fast)
+# Loading instances from C:/lscc/diamond/3.14/bin/nt64/Zen68060Firmware/impl1/Zen68060Firmware_impl1_vo.sdf
+# Loading timing data from C:/lscc/diamond/3.14/bin/nt64/Zen68060Firmware/impl1/Zen68060Firmware_impl1_vo.sdf
+# ** Note: (vsim-3587) SDF Backannotation Successfully Completed.
+#    Time: 0 fs  Iteration: 0  Instance: /mainLogic_tb File: C:/lscc/diamond/3.14/bin/nt64/Zen68060Firmware/ZenSim.v
+# doVOpenFlatFile(): INTERNAL ERROR: page load failed for file C:/lscc/diamond/3.14/bin/nt64/Zen68060Firmware/ZenSim/work/@_opt1/voptxavmhi (1:1 3:3 241 0 1370 1789583950 0x10b:0x101)
+# .main_pane.wave.interior.cs.body.pw.wf
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: hollo  Hostname: DESKTOP-LK95KVP  ProcessID: 34904
+#           Attempting to use alternate WLF file "./wlftavnvkw".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlftavnvkw
+when {/mainLogic_tb/dut/LOCK == 1} {
+    log -r /*
+    echo "Logging started at PLL lock"
+}
+run 0.1 ms
+# Logging started at PLL lock
+# ** Note: $stop    : C:/lscc/diamond/3.14/bin/nt64/Zen68060Firmware/ZenSim.v(175)
+#    Time: 19832 ns  Iteration: 0  Instance: /mainLogic_tb
+# Break in Module mainLogic_tb at C:/lscc/diamond/3.14/bin/nt64/Zen68060Firmware/ZenSim.v line 175
+do {C:/lscc/diamond/3.14/bin/nt64/Zen68060Firmware/ZenSim/ZenSim.mdo}
+# Compile of ZenSim.v was successful.
+# End time: 19:40:50 on Sep 16,2026, Elapsed time: 0:01:42
+# Errors: 0, Warnings: 5
+# vsim -voptargs="+acc" -L work -L pmi_work -L ovi_machxo2 "+transport_path_delays" "+transport_int_delays" mainLogic_tb -sdfmax "/mainLogic_tb/dut=C:/lscc/diamond/3.14/bin/nt64/Zen68060Firmware/impl1/Zen68060Firmware_impl1_vo.sdf" 
+# Start time: 19:40:50 on Sep 16,2026
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility. The +acc switch would be deprecated in a future release.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading work.mainLogic_tb(fast)
+# Loading work.ZenMainLogic(fast)
+# Loading work.u_RAM_CS_TA_u_SR_TA_SLICE_0(fast)
+# Loading work.vmuxregsre(fast)
+# Loading ovi_machxo2.FL1P3IY(fast)
+# Loading work.vcc(fast)
+# Loading ovi_machxo2.VHI(fast)
+# Loading work.gnd(fast)
+# Loading ovi_machxo2.VLO(fast)
+# Loading work.u_ROM_CS_TA_u_SR_ROMS_CS_SLICE_1(fast)
+# Loading work.u_ROM_CS_TA_u_SR_TA_SLICE_2(fast)
+# Loading work.vmuxregsre0001(fast)
+# Loading ovi_machxo2.FL1P3JY(fast)
+# Loading work.SLICE_3(fast)
+# Loading work.lut4(fast)
+# Loading ovi_machxo2.ROM16X1A(fast)
+# Loading work.lut40002(fast)
+# Loading ovi_machxo2.ROM16X1A(fast__1)
+# Loading work.vmuxregsre0003(fast)
+# Loading ovi_machxo2.FL1P3DX(fast)
+# Loading work.vmuxregsre0004(fast)
+# Loading ovi_machxo2.FL1P3BX(fast)
+# Loading work.u_ROM_CS_TA_SLICE_4(fast)
+# Loading work.lut40005(fast)
+# Loading ovi_machxo2.ROM16X1A(fast__2)
+# Loading work.lut40006(fast)
+# Loading ovi_machxo2.ROM16X1A(fast__3)
+# Loading work.u_RAM_CS_TA_u_SR_RAMS_CS_SLICE_5(fast)
+# Loading work.u_RAM_CS_TA_u_SR_RAMS_CS_SLICE_12(fast)
+# Loading work.lut40007(fast)
+# Loading ovi_machxo2.ROM16X1A(fast__4)
+# Loading work.u_RAM_CS_TA_SLICE_19(fast)
+# Loading work.SLICE_20(fast)
+# Loading work.lut40008(fast)
+# Loading ovi_machxo2.ROM16X1A(fast__5)
+# Loading work.lut40009(fast)
+# Loading ovi_machxo2.ROM16X1A(fast__6)
+# Loading work.u_ROM_CS_TA_u_SR_ROMS_CS_SLICE_24(fast)
+# Loading work.lut40010(fast)
+# Loading ovi_machxo2.ROM16X1A(fast__7)
+# Loading work.u_ROM_CS_TA_SLICE_27(fast)
+# Loading work.inverter(fast)
+# Loading ovi_machxo2.INV(fast)
+# Loading work.u_ROM_CS_TA_u_SR_TA_SLICE_29(fast)
+# Loading work.lut40011(fast)
+# Loading ovi_machxo2.ROM16X1A(fast__8)
+# Loading work.SLICE_31(fast)
+# Loading work.lut40012(fast)
+# Loading ovi_machxo2.ROM16X1A(fast__9)
+# Loading work.lut40013(fast)
+# Loading work.SLICE_32(fast)
+# Loading work.lut40014(fast)
+# Loading ovi_machxo2.ROM16X1A(fast__10)
+# Loading work.u_RAM_CS_TA_u_SR_RAMS_CS_SLICE_33(fast)
+# Loading work.u_RAM_CS_TA_u_SR_RAMS_CS_SLICE_34(fast)
+# Loading work.u_RAM_CS_TA_u_SR_TA_SLICE_36(fast)
+# Loading work.u_RAM_CS_TA_u_SR_TA_SLICE_37(fast)
+# Loading work.u_RAM_CS_TA_u_SR_TA_SLICE_38(fast)
+# Loading work.u_RAM_CS_TA_u_SR_TA_SLICE_39(fast)
+# Loading work.u_ROM_CS_TA_u_SR_ROMS_CS_SLICE_40(fast)
+# Loading work.u_ROM_CS_TA_u_SR_ROMS_CS_SLICE_41(fast)
+# Loading work.u_ROM_CS_TA_u_SR_TA_SLICE_42(fast)
+# Loading work.RAM_CS_N(fast)
+# Loading work.xo2iobuf(fast)
+# Loading ovi_machxo2.OBZPD(fast)
+# Loading work.A_25_(fast)
+# Loading work.xo2iobuf0015(fast)
+# Loading ovi_machxo2.IBPD(fast)
+# Loading work.A_24_(fast)
+# Loading work.A_26_(fast)
+# Loading work.A_27_(fast)
+# Loading work.A_28_(fast)
+# Loading work.A_29_(fast)
+# Loading work.A_30_(fast)
+# Loading work.A_31_(fast)
+# Loading work.TA_N(fast)
+# Loading work.RST(fast)
+# Loading work.RAM_OE_N(fast)
+# Loading work.A_23_(fast)
+# Loading work.RW_OUT(fast)
+# Loading work.LOCK(fast)
+# Loading work.ROM_CS_N(fast)
+# Loading work.RW_IN(fast)
+# Loading work.TS_N(fast)
+# Loading work.CLK(fast)
+# Loading work.xo2iobuf0015(fast__1)
+# Loading ovi_machxo2.IBPD(fast__1)
+# Loading work.u_ZenPLL_PLLInst_0(fast)
+# Loading work.EHXPLLJ_B(fast)
+# Loading ovi_machxo2.EHXPLLJ(fast)
+# Loading ovi_machxo2.PUR(fast)
+# Loading ovi_machxo2.GSR(fast)
+# Loading instances from C:/lscc/diamond/3.14/bin/nt64/Zen68060Firmware/impl1/Zen68060Firmware_impl1_vo.sdf
+# Loading timing data from C:/lscc/diamond/3.14/bin/nt64/Zen68060Firmware/impl1/Zen68060Firmware_impl1_vo.sdf
+# ** Note: (vsim-3587) SDF Backannotation Successfully Completed.
+#    Time: 0 fs  Iteration: 0  Instance: /mainLogic_tb File: C:/lscc/diamond/3.14/bin/nt64/Zen68060Firmware/ZenSim.v
+# .main_pane.wave.interior.cs.body.pw.wf
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: hollo  Hostname: DESKTOP-LK95KVP  ProcessID: 34904
+#           Attempting to use alternate WLF file "./wlftan96r7".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlftan96r7
+when {/mainLogic_tb/dut/LOCK == 1} {
+    log -r /*
+    echo "Logging started at PLL lock"
+}
+run 0.1 ms
+# Logging started at PLL lock
+# ** Note: $stop    : C:/lscc/diamond/3.14/bin/nt64/Zen68060Firmware/ZenSim.v(174)
+#    Time: 19032 ns  Iteration: 0  Instance: /mainLogic_tb
+# Break in Module mainLogic_tb at C:/lscc/diamond/3.14/bin/nt64/Zen68060Firmware/ZenSim.v line 174
+do {C:/lscc/diamond/3.14/bin/nt64/Zen68060Firmware/ZenSim/ZenSim.mdo}
+# Compile of ZenSim.v was successful.
+# End time: 19:43:44 on Sep 16,2026, Elapsed time: 0:02:54
+# Errors: 0, Warnings: 5
+# vsim -voptargs="+acc" -L work -L pmi_work -L ovi_machxo2 "+transport_path_delays" "+transport_int_delays" mainLogic_tb -sdfmax "/mainLogic_tb/dut=C:/lscc/diamond/3.14/bin/nt64/Zen68060Firmware/impl1/Zen68060Firmware_impl1_vo.sdf" 
+# Start time: 19:43:44 on Sep 16,2026
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility. The +acc switch would be deprecated in a future release.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading work.mainLogic_tb(fast)
+# Loading work.ZenMainLogic(fast)
+# Loading work.u_RAM_CS_TA_u_SR_TA_SLICE_0(fast)
+# Loading work.vmuxregsre(fast)
+# Loading ovi_machxo2.FL1P3IY(fast)
+# Loading work.vcc(fast)
+# Loading ovi_machxo2.VHI(fast)
+# Loading work.gnd(fast)
+# Loading ovi_machxo2.VLO(fast)
+# Loading work.u_ROM_CS_TA_u_SR_ROMS_CS_SLICE_1(fast)
+# Loading work.u_ROM_CS_TA_u_SR_TA_SLICE_2(fast)
+# Loading work.vmuxregsre0001(fast)
+# Loading ovi_machxo2.FL1P3JY(fast)
+# Loading work.SLICE_3(fast)
+# Loading work.lut4(fast)
+# Loading ovi_machxo2.ROM16X1A(fast)
+# Loading work.lut40002(fast)
+# Loading ovi_machxo2.ROM16X1A(fast__1)
+# Loading work.vmuxregsre0003(fast)
+# Loading ovi_machxo2.FL1P3DX(fast)
+# Loading work.vmuxregsre0004(fast)
+# Loading ovi_machxo2.FL1P3BX(fast)
+# Loading work.u_ROM_CS_TA_SLICE_4(fast)
+# Loading work.lut40005(fast)
+# Loading ovi_machxo2.ROM16X1A(fast__2)
+# Loading work.lut40006(fast)
+# Loading ovi_machxo2.ROM16X1A(fast__3)
+# Loading work.u_RAM_CS_TA_u_SR_RAMS_CS_SLICE_5(fast)
+# Loading work.u_RAM_CS_TA_u_SR_RAMS_CS_SLICE_12(fast)
+# Loading work.lut40007(fast)
+# Loading ovi_machxo2.ROM16X1A(fast__4)
+# Loading work.u_RAM_CS_TA_SLICE_19(fast)
+# Loading work.SLICE_20(fast)
+# Loading work.lut40008(fast)
+# Loading ovi_machxo2.ROM16X1A(fast__5)
+# Loading work.lut40009(fast)
+# Loading ovi_machxo2.ROM16X1A(fast__6)
+# Loading work.u_ROM_CS_TA_u_SR_ROMS_CS_SLICE_24(fast)
+# Loading work.lut40010(fast)
+# Loading ovi_machxo2.ROM16X1A(fast__7)
+# Loading work.u_ROM_CS_TA_SLICE_27(fast)
+# Loading work.inverter(fast)
+# Loading ovi_machxo2.INV(fast)
+# Loading work.u_ROM_CS_TA_u_SR_TA_SLICE_29(fast)
+# Loading work.lut40011(fast)
+# Loading ovi_machxo2.ROM16X1A(fast__8)
+# Loading work.SLICE_31(fast)
+# Loading work.lut40012(fast)
+# Loading ovi_machxo2.ROM16X1A(fast__9)
+# Loading work.lut40013(fast)
+# Loading work.SLICE_32(fast)
+# Loading work.lut40014(fast)
+# Loading ovi_machxo2.ROM16X1A(fast__10)
+# Loading work.u_RAM_CS_TA_u_SR_RAMS_CS_SLICE_33(fast)
+# Loading work.u_RAM_CS_TA_u_SR_RAMS_CS_SLICE_34(fast)
+# Loading work.u_RAM_CS_TA_u_SR_TA_SLICE_36(fast)
+# Loading work.u_RAM_CS_TA_u_SR_TA_SLICE_37(fast)
+# Loading work.u_RAM_CS_TA_u_SR_TA_SLICE_38(fast)
+# Loading work.u_RAM_CS_TA_u_SR_TA_SLICE_39(fast)
+# Loading work.u_ROM_CS_TA_u_SR_ROMS_CS_SLICE_40(fast)
+# Loading work.u_ROM_CS_TA_u_SR_ROMS_CS_SLICE_41(fast)
+# Loading work.u_ROM_CS_TA_u_SR_TA_SLICE_42(fast)
+# Loading work.RAM_CS_N(fast)
+# Loading work.xo2iobuf(fast)
+# Loading ovi_machxo2.OBZPD(fast)
+# Loading work.A_25_(fast)
+# Loading work.xo2iobuf0015(fast)
+# Loading ovi_machxo2.IBPD(fast)
+# Loading work.A_24_(fast)
+# Loading work.A_26_(fast)
+# Loading work.A_27_(fast)
+# Loading work.A_28_(fast)
+# Loading work.A_29_(fast)
+# Loading work.A_30_(fast)
+# Loading work.A_31_(fast)
+# Loading work.TA_N(fast)
+# Loading work.RST(fast)
+# Loading work.RAM_OE_N(fast)
+# Loading work.A_23_(fast)
+# Loading work.RW_OUT(fast)
+# Loading work.LOCK(fast)
+# Loading work.ROM_CS_N(fast)
+# Loading work.RW_IN(fast)
+# Loading work.TS_N(fast)
+# Loading work.CLK(fast)
+# Loading work.xo2iobuf0015(fast__1)
+# Loading ovi_machxo2.IBPD(fast__1)
+# Loading work.u_ZenPLL_PLLInst_0(fast)
+# Loading work.EHXPLLJ_B(fast)
+# Loading ovi_machxo2.EHXPLLJ(fast)
+# Loading ovi_machxo2.PUR(fast)
+# Loading ovi_machxo2.GSR(fast)
+# Loading instances from C:/lscc/diamond/3.14/bin/nt64/Zen68060Firmware/impl1/Zen68060Firmware_impl1_vo.sdf
+# Loading timing data from C:/lscc/diamond/3.14/bin/nt64/Zen68060Firmware/impl1/Zen68060Firmware_impl1_vo.sdf
+# ** Note: (vsim-3587) SDF Backannotation Successfully Completed.
+#    Time: 0 fs  Iteration: 0  Instance: /mainLogic_tb File: C:/lscc/diamond/3.14/bin/nt64/Zen68060Firmware/ZenSim.v
+# .main_pane.wave.interior.cs.body.pw.wf
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: hollo  Hostname: DESKTOP-LK95KVP  ProcessID: 34904
+#           Attempting to use alternate WLF file "./wlftnsgssc".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlftnsgssc
+when {/mainLogic_tb/dut/LOCK == 1} {
+    log -r /*
+    echo "Logging started at PLL lock"
+}
+run 0.1 ms
+# Logging started at PLL lock
+# ** Note: $stop    : C:/lscc/diamond/3.14/bin/nt64/Zen68060Firmware/ZenSim.v(174)
+#    Time: 19032 ns  Iteration: 0  Instance: /mainLogic_tb
+# Break in Module mainLogic_tb at C:/lscc/diamond/3.14/bin/nt64/Zen68060Firmware/ZenSim.v line 174
+restart -f
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-8009) Loading existing optimized design _opt1
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading work.mainLogic_tb(fast)
+# Loading work.ZenMainLogic(fast)
+# Loading work.u_RAM_CS_TA_u_SR_TA_SLICE_0(fast)
+# Loading work.vmuxregsre(fast)
+# Loading ovi_machxo2.FL1P3IY(fast)
+# Loading work.vcc(fast)
+# Loading ovi_machxo2.VHI(fast)
+# Loading work.gnd(fast)
+# Loading ovi_machxo2.VLO(fast)
+# Loading work.u_ROM_CS_TA_u_SR_ROMS_CS_SLICE_1(fast)
+# Loading work.u_ROM_CS_TA_u_SR_TA_SLICE_2(fast)
+# Loading work.vmuxregsre0001(fast)
+# Loading ovi_machxo2.FL1P3JY(fast)
+# Loading work.SLICE_3(fast)
+# Loading work.lut4(fast)
+# Loading ovi_machxo2.ROM16X1A(fast)
+# Loading work.lut40002(fast)
+# Loading ovi_machxo2.ROM16X1A(fast__1)
+# Loading work.vmuxregsre0003(fast)
+# Loading ovi_machxo2.FL1P3DX(fast)
+# Loading work.vmuxregsre0004(fast)
+# Loading ovi_machxo2.FL1P3BX(fast)
+# Loading work.u_ROM_CS_TA_SLICE_4(fast)
+# Loading work.lut40005(fast)
+# Loading ovi_machxo2.ROM16X1A(fast__2)
+# Loading work.lut40006(fast)
+# Loading ovi_machxo2.ROM16X1A(fast__3)
+# Loading work.u_RAM_CS_TA_u_SR_RAMS_CS_SLICE_5(fast)
+# Loading work.u_RAM_CS_TA_u_SR_RAMS_CS_SLICE_12(fast)
+# Loading work.lut40007(fast)
+# Loading ovi_machxo2.ROM16X1A(fast__4)
+# Loading work.u_RAM_CS_TA_SLICE_19(fast)
+# Loading work.SLICE_20(fast)
+# Loading work.lut40008(fast)
+# Loading ovi_machxo2.ROM16X1A(fast__5)
+# Loading work.lut40009(fast)
+# Loading ovi_machxo2.ROM16X1A(fast__6)
+# Loading work.u_ROM_CS_TA_u_SR_ROMS_CS_SLICE_24(fast)
+# Loading work.lut40010(fast)
+# Loading ovi_machxo2.ROM16X1A(fast__7)
+# Loading work.u_ROM_CS_TA_SLICE_27(fast)
+# Loading work.inverter(fast)
+# Loading ovi_machxo2.INV(fast)
+# Loading work.u_ROM_CS_TA_u_SR_TA_SLICE_29(fast)
+# Loading work.lut40011(fast)
+# Loading ovi_machxo2.ROM16X1A(fast__8)
+# Loading work.SLICE_31(fast)
+# Loading work.lut40012(fast)
+# Loading ovi_machxo2.ROM16X1A(fast__9)
+# Loading work.lut40013(fast)
+# Loading work.SLICE_32(fast)
+# Loading work.lut40014(fast)
+# Loading ovi_machxo2.ROM16X1A(fast__10)
+# Loading work.u_RAM_CS_TA_u_SR_RAMS_CS_SLICE_33(fast)
+# Loading work.u_RAM_CS_TA_u_SR_RAMS_CS_SLICE_34(fast)
+# Loading work.u_RAM_CS_TA_u_SR_TA_SLICE_36(fast)
+# Loading work.u_RAM_CS_TA_u_SR_TA_SLICE_37(fast)
+# Loading work.u_RAM_CS_TA_u_SR_TA_SLICE_38(fast)
+# Loading work.u_RAM_CS_TA_u_SR_TA_SLICE_39(fast)
+# Loading work.u_ROM_CS_TA_u_SR_ROMS_CS_SLICE_40(fast)
+# Loading work.u_ROM_CS_TA_u_SR_ROMS_CS_SLICE_41(fast)
+# Loading work.u_ROM_CS_TA_u_SR_TA_SLICE_42(fast)
+# Loading work.RAM_CS_N(fast)
+# Loading work.xo2iobuf(fast)
+# Loading ovi_machxo2.OBZPD(fast)
+# Loading work.A_25_(fast)
+# Loading work.xo2iobuf0015(fast)
+# Loading ovi_machxo2.IBPD(fast)
+# Loading work.A_24_(fast)
+# Loading work.A_26_(fast)
+# Loading work.A_27_(fast)
+# Loading work.A_28_(fast)
+# Loading work.A_29_(fast)
+# Loading work.A_30_(fast)
+# Loading work.A_31_(fast)
+# Loading work.TA_N(fast)
+# Loading work.RST(fast)
+# Loading work.RAM_OE_N(fast)
+# Loading work.A_23_(fast)
+# Loading work.RW_OUT(fast)
+# Loading work.LOCK(fast)
+# Loading work.ROM_CS_N(fast)
+# Loading work.RW_IN(fast)
+# Loading work.TS_N(fast)
+# Loading work.CLK(fast)
+# Loading work.xo2iobuf0015(fast__1)
+# Loading ovi_machxo2.IBPD(fast__1)
+# Loading work.u_ZenPLL_PLLInst_0(fast)
+# Loading work.EHXPLLJ_B(fast)
+# Loading ovi_machxo2.EHXPLLJ(fast)
+# Loading ovi_machxo2.PUR(fast)
+# Loading ovi_machxo2.GSR(fast)
+# Loading instances from C:/lscc/diamond/3.14/bin/nt64/Zen68060Firmware/impl1/Zen68060Firmware_impl1_vo.sdf
+# Loading timing data from C:/lscc/diamond/3.14/bin/nt64/Zen68060Firmware/impl1/Zen68060Firmware_impl1_vo.sdf
+# ** Note: (vsim-3587) SDF Backannotation Successfully Completed.
+#    Time: 0 fs  Iteration: 0  Instance: /mainLogic_tb File: C:/lscc/diamond/3.14/bin/nt64/Zen68060Firmware/ZenSim.v
+do {C:/lscc/diamond/3.14/bin/nt64/Zen68060Firmware/ZenSim/ZenSim.mdo}
+# End time: 19:45:02 on Sep 16,2026, Elapsed time: 0:01:18
+# Errors: 0, Warnings: 3
+# vsim -voptargs="+acc" -L work -L pmi_work -L ovi_machxo2 "+transport_path_delays" "+transport_int_delays" mainLogic_tb -sdfmax "/mainLogic_tb/dut=C:/lscc/diamond/3.14/bin/nt64/Zen68060Firmware/impl1/Zen68060Firmware_impl1_vo.sdf" 
+# Start time: 19:45:02 on Sep 16,2026
+# ** Note: (vsim-8009) Loading existing optimized design _opt1
+# Loading work.mainLogic_tb(fast)
+# Loading work.ZenMainLogic(fast)
+# Loading work.u_RAM_CS_TA_u_SR_TA_SLICE_0(fast)
+# Loading work.vmuxregsre(fast)
+# Loading ovi_machxo2.FL1P3IY(fast)
+# Loading work.vcc(fast)
+# Loading ovi_machxo2.VHI(fast)
+# Loading work.gnd(fast)
+# Loading ovi_machxo2.VLO(fast)
+# Loading work.u_ROM_CS_TA_u_SR_ROMS_CS_SLICE_1(fast)
+# Loading work.u_ROM_CS_TA_u_SR_TA_SLICE_2(fast)
+# Loading work.vmuxregsre0001(fast)
+# Loading ovi_machxo2.FL1P3JY(fast)
+# Loading work.SLICE_3(fast)
+# Loading work.lut4(fast)
+# Loading ovi_machxo2.ROM16X1A(fast)
+# Loading work.lut40002(fast)
+# Loading ovi_machxo2.ROM16X1A(fast__1)
+# Loading work.vmuxregsre0003(fast)
+# Loading ovi_machxo2.FL1P3DX(fast)
+# Loading work.vmuxregsre0004(fast)
+# Loading ovi_machxo2.FL1P3BX(fast)
+# Loading work.u_ROM_CS_TA_SLICE_4(fast)
+# Loading work.lut40005(fast)
+# Loading ovi_machxo2.ROM16X1A(fast__2)
+# Loading work.lut40006(fast)
+# Loading ovi_machxo2.ROM16X1A(fast__3)
+# Loading work.u_RAM_CS_TA_u_SR_RAMS_CS_SLICE_5(fast)
+# Loading work.u_RAM_CS_TA_u_SR_RAMS_CS_SLICE_12(fast)
+# Loading work.lut40007(fast)
+# Loading ovi_machxo2.ROM16X1A(fast__4)
+# Loading work.u_RAM_CS_TA_SLICE_19(fast)
+# Loading work.SLICE_20(fast)
+# Loading work.lut40008(fast)
+# Loading ovi_machxo2.ROM16X1A(fast__5)
+# Loading work.lut40009(fast)
+# Loading ovi_machxo2.ROM16X1A(fast__6)
+# Loading work.u_ROM_CS_TA_u_SR_ROMS_CS_SLICE_24(fast)
+# Loading work.lut40010(fast)
+# Loading ovi_machxo2.ROM16X1A(fast__7)
+# Loading work.u_ROM_CS_TA_SLICE_27(fast)
+# Loading work.inverter(fast)
+# Loading ovi_machxo2.INV(fast)
+# Loading work.u_ROM_CS_TA_u_SR_TA_SLICE_29(fast)
+# Loading work.lut40011(fast)
+# Loading ovi_machxo2.ROM16X1A(fast__8)
+# Loading work.SLICE_31(fast)
+# Loading work.lut40012(fast)
+# Loading ovi_machxo2.ROM16X1A(fast__9)
+# Loading work.lut40013(fast)
+# Loading work.SLICE_32(fast)
+# Loading work.lut40014(fast)
+# Loading ovi_machxo2.ROM16X1A(fast__10)
+# Loading work.u_RAM_CS_TA_u_SR_RAMS_CS_SLICE_33(fast)
+# Loading work.u_RAM_CS_TA_u_SR_RAMS_CS_SLICE_34(fast)
+# Loading work.u_RAM_CS_TA_u_SR_TA_SLICE_36(fast)
+# Loading work.u_RAM_CS_TA_u_SR_TA_SLICE_37(fast)
+# Loading work.u_RAM_CS_TA_u_SR_TA_SLICE_38(fast)
+# Loading work.u_RAM_CS_TA_u_SR_TA_SLICE_39(fast)
+# Loading work.u_ROM_CS_TA_u_SR_ROMS_CS_SLICE_40(fast)
+# Loading work.u_ROM_CS_TA_u_SR_ROMS_CS_SLICE_41(fast)
+# Loading work.u_ROM_CS_TA_u_SR_TA_SLICE_42(fast)
+# Loading work.RAM_CS_N(fast)
+# Loading work.xo2iobuf(fast)
+# Loading ovi_machxo2.OBZPD(fast)
+# Loading work.A_25_(fast)
+# Loading work.xo2iobuf0015(fast)
+# Loading ovi_machxo2.IBPD(fast)
+# Loading work.A_24_(fast)
+# Loading work.A_26_(fast)
+# Loading work.A_27_(fast)
+# Loading work.A_28_(fast)
+# Loading work.A_29_(fast)
+# Loading work.A_30_(fast)
+# Loading work.A_31_(fast)
+# Loading work.TA_N(fast)
+# Loading work.RST(fast)
+# Loading work.RAM_OE_N(fast)
+# Loading work.A_23_(fast)
+# Loading work.RW_OUT(fast)
+# Loading work.LOCK(fast)
+# Loading work.ROM_CS_N(fast)
+# Loading work.RW_IN(fast)
+# Loading work.TS_N(fast)
+# Loading work.CLK(fast)
+# Loading work.xo2iobuf0015(fast__1)
+# Loading ovi_machxo2.IBPD(fast__1)
+# Loading work.u_ZenPLL_PLLInst_0(fast)
+# Loading work.EHXPLLJ_B(fast)
+# Loading ovi_machxo2.EHXPLLJ(fast)
+# Loading ovi_machxo2.PUR(fast)
+# Loading ovi_machxo2.GSR(fast)
+# Loading instances from C:/lscc/diamond/3.14/bin/nt64/Zen68060Firmware/impl1/Zen68060Firmware_impl1_vo.sdf
+# Loading timing data from C:/lscc/diamond/3.14/bin/nt64/Zen68060Firmware/impl1/Zen68060Firmware_impl1_vo.sdf
+# ** Note: (vsim-3587) SDF Backannotation Successfully Completed.
+#    Time: 0 fs  Iteration: 0  Instance: /mainLogic_tb File: C:/lscc/diamond/3.14/bin/nt64/Zen68060Firmware/ZenSim.v
+# .main_pane.wave.interior.cs.body.pw.wf
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: hollo  Hostname: DESKTOP-LK95KVP  ProcessID: 34904
+#           Attempting to use alternate WLF file "./wlftq12k3c".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlftq12k3c
+when {/mainLogic_tb/dut/LOCK == 1} {
+    log -r /*
+    echo "Logging started at PLL lock"
+}
+run 0.1 ms
+# Logging started at PLL lock
+# ** Note: $stop    : C:/lscc/diamond/3.14/bin/nt64/Zen68060Firmware/ZenSim.v(174)
+#    Time: 19032 ns  Iteration: 0  Instance: /mainLogic_tb
+# Break in Module mainLogic_tb at C:/lscc/diamond/3.14/bin/nt64/Zen68060Firmware/ZenSim.v line 174
+do {C:/lscc/diamond/3.14/bin/nt64/Zen68060Firmware/ZenSim/ZenSim.mdo}
+# Compile of ZenSim.v was successful.
+# End time: 19:46:21 on Sep 16,2026, Elapsed time: 0:01:19
+# Errors: 0, Warnings: 4
+# vsim -voptargs="+acc" -L work -L pmi_work -L ovi_machxo2 "+transport_path_delays" "+transport_int_delays" mainLogic_tb -sdfmax "/mainLogic_tb/dut=C:/lscc/diamond/3.14/bin/nt64/Zen68060Firmware/impl1/Zen68060Firmware_impl1_vo.sdf" 
+# Start time: 19:46:21 on Sep 16,2026
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility. The +acc switch would be deprecated in a future release.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading work.mainLogic_tb(fast)
+# Loading work.ZenMainLogic(fast)
+# Loading work.u_RAM_CS_TA_u_SR_TA_SLICE_0(fast)
+# Loading work.vmuxregsre(fast)
+# Loading ovi_machxo2.FL1P3IY(fast)
+# Loading work.vcc(fast)
+# Loading ovi_machxo2.VHI(fast)
+# Loading work.gnd(fast)
+# Loading ovi_machxo2.VLO(fast)
+# Loading work.u_ROM_CS_TA_u_SR_ROMS_CS_SLICE_1(fast)
+# Loading work.u_ROM_CS_TA_u_SR_TA_SLICE_2(fast)
+# Loading work.vmuxregsre0001(fast)
+# Loading ovi_machxo2.FL1P3JY(fast)
+# Loading work.SLICE_3(fast)
+# Loading work.lut4(fast)
+# Loading ovi_machxo2.ROM16X1A(fast)
+# Loading work.lut40002(fast)
+# Loading ovi_machxo2.ROM16X1A(fast__1)
+# Loading work.vmuxregsre0003(fast)
+# Loading ovi_machxo2.FL1P3DX(fast)
+# Loading work.vmuxregsre0004(fast)
+# Loading ovi_machxo2.FL1P3BX(fast)
+# Loading work.u_ROM_CS_TA_SLICE_4(fast)
+# Loading work.lut40005(fast)
+# Loading ovi_machxo2.ROM16X1A(fast__2)
+# Loading work.lut40006(fast)
+# Loading ovi_machxo2.ROM16X1A(fast__3)
+# Loading work.u_RAM_CS_TA_u_SR_RAMS_CS_SLICE_5(fast)
+# Loading work.u_RAM_CS_TA_u_SR_RAMS_CS_SLICE_12(fast)
+# Loading work.lut40007(fast)
+# Loading ovi_machxo2.ROM16X1A(fast__4)
+# Loading work.u_RAM_CS_TA_SLICE_19(fast)
+# Loading work.SLICE_20(fast)
+# Loading work.lut40008(fast)
+# Loading ovi_machxo2.ROM16X1A(fast__5)
+# Loading work.lut40009(fast)
+# Loading ovi_machxo2.ROM16X1A(fast__6)
+# Loading work.u_ROM_CS_TA_u_SR_ROMS_CS_SLICE_24(fast)
+# Loading work.lut40010(fast)
+# Loading ovi_machxo2.ROM16X1A(fast__7)
+# Loading work.u_ROM_CS_TA_SLICE_27(fast)
+# Loading work.inverter(fast)
+# Loading ovi_machxo2.INV(fast)
+# Loading work.u_ROM_CS_TA_u_SR_TA_SLICE_29(fast)
+# Loading work.lut40011(fast)
+# Loading ovi_machxo2.ROM16X1A(fast__8)
+# Loading work.SLICE_31(fast)
+# Loading work.lut40012(fast)
+# Loading ovi_machxo2.ROM16X1A(fast__9)
+# Loading work.lut40013(fast)
+# Loading work.SLICE_32(fast)
+# Loading work.lut40014(fast)
+# Loading ovi_machxo2.ROM16X1A(fast__10)
+# Loading work.u_RAM_CS_TA_u_SR_RAMS_CS_SLICE_33(fast)
+# Loading work.u_RAM_CS_TA_u_SR_RAMS_CS_SLICE_34(fast)
+# Loading work.u_RAM_CS_TA_u_SR_TA_SLICE_36(fast)
+# Loading work.u_RAM_CS_TA_u_SR_TA_SLICE_37(fast)
+# Loading work.u_RAM_CS_TA_u_SR_TA_SLICE_38(fast)
+# Loading work.u_RAM_CS_TA_u_SR_TA_SLICE_39(fast)
+# Loading work.u_ROM_CS_TA_u_SR_ROMS_CS_SLICE_40(fast)
+# Loading work.u_ROM_CS_TA_u_SR_ROMS_CS_SLICE_41(fast)
+# Loading work.u_ROM_CS_TA_u_SR_TA_SLICE_42(fast)
+# Loading work.RAM_CS_N(fast)
+# Loading work.xo2iobuf(fast)
+# Loading ovi_machxo2.OBZPD(fast)
+# Loading work.A_25_(fast)
+# Loading work.xo2iobuf0015(fast)
+# Loading ovi_machxo2.IBPD(fast)
+# Loading work.A_24_(fast)
+# Loading work.A_26_(fast)
+# Loading work.A_27_(fast)
+# Loading work.A_28_(fast)
+# Loading work.A_29_(fast)
+# Loading work.A_30_(fast)
+# Loading work.A_31_(fast)
+# Loading work.TA_N(fast)
+# Loading work.RST(fast)
+# Loading work.RAM_OE_N(fast)
+# Loading work.A_23_(fast)
+# Loading work.RW_OUT(fast)
+# Loading work.LOCK(fast)
+# Loading work.ROM_CS_N(fast)
+# Loading work.RW_IN(fast)
+# Loading work.TS_N(fast)
+# Loading work.CLK(fast)
+# Loading work.xo2iobuf0015(fast__1)
+# Loading ovi_machxo2.IBPD(fast__1)
+# Loading work.u_ZenPLL_PLLInst_0(fast)
+# Loading work.EHXPLLJ_B(fast)
+# Loading ovi_machxo2.EHXPLLJ(fast)
+# Loading ovi_machxo2.PUR(fast)
+# Loading ovi_machxo2.GSR(fast)
+# Loading instances from C:/lscc/diamond/3.14/bin/nt64/Zen68060Firmware/impl1/Zen68060Firmware_impl1_vo.sdf
+# Loading timing data from C:/lscc/diamond/3.14/bin/nt64/Zen68060Firmware/impl1/Zen68060Firmware_impl1_vo.sdf
+# ** Note: (vsim-3587) SDF Backannotation Successfully Completed.
+#    Time: 0 fs  Iteration: 0  Instance: /mainLogic_tb File: C:/lscc/diamond/3.14/bin/nt64/Zen68060Firmware/ZenSim.v
+# .main_pane.wave.interior.cs.body.pw.wf
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: hollo  Hostname: DESKTOP-LK95KVP  ProcessID: 34904
+#           Attempting to use alternate WLF file "./wlft0qs72x".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlft0qs72x
+when {/mainLogic_tb/dut/LOCK == 1} {
+    log -r /*
+    echo "Logging started at PLL lock"
+}
+run 0.1 ms
+# Logging started at PLL lock
+# ** Note: $stop    : C:/lscc/diamond/3.14/bin/nt64/Zen68060Firmware/ZenSim.v(175)
+#    Time: 19032 ns  Iteration: 0  Instance: /mainLogic_tb
+# Break in Module mainLogic_tb at C:/lscc/diamond/3.14/bin/nt64/Zen68060Firmware/ZenSim.v line 175
+vcd add /mainLogic_tb/dut/CLK
+vcd add /mainLogic_tb/dut/CLKOS
+vcd add /mainLogic_tb/dut/CLKOS2
+vcd add /mainLogic_tb/dut/A
+vcd add /mainLogic_tb/dut/TS_N
+vcd add /mainLogic_tb/dut/TA_N
+vcd add /mainLogic_tb/dut/RW_IN
+vcd add /mainLogic_tb/dut/RAM_CS_N
+vcd add /mainLogic_tb/dut/ROM_CS_N
+restart -f
+# Closing VCD file "dump.vcd"
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Note: (vsim-8009) Loading existing optimized design _opt1
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading work.mainLogic_tb(fast)
+# Loading work.ZenMainLogic(fast)
+# Loading work.u_RAM_CS_TA_u_SR_TA_SLICE_0(fast)
+# Loading work.vmuxregsre(fast)
+# Loading ovi_machxo2.FL1P3IY(fast)
+# Loading work.vcc(fast)
+# Loading ovi_machxo2.VHI(fast)
+# Loading work.gnd(fast)
+# Loading ovi_machxo2.VLO(fast)
+# Loading work.u_ROM_CS_TA_u_SR_ROMS_CS_SLICE_1(fast)
+# Loading work.u_ROM_CS_TA_u_SR_TA_SLICE_2(fast)
+# Loading work.vmuxregsre0001(fast)
+# Loading ovi_machxo2.FL1P3JY(fast)
+# Loading work.SLICE_3(fast)
+# Loading work.lut4(fast)
+# Loading ovi_machxo2.ROM16X1A(fast)
+# Loading work.lut40002(fast)
+# Loading ovi_machxo2.ROM16X1A(fast__1)
+# Loading work.vmuxregsre0003(fast)
+# Loading ovi_machxo2.FL1P3DX(fast)
+# Loading work.vmuxregsre0004(fast)
+# Loading ovi_machxo2.FL1P3BX(fast)
+# Loading work.u_ROM_CS_TA_SLICE_4(fast)
+# Loading work.lut40005(fast)
+# Loading ovi_machxo2.ROM16X1A(fast__2)
+# Loading work.lut40006(fast)
+# Loading ovi_machxo2.ROM16X1A(fast__3)
+# Loading work.u_RAM_CS_TA_u_SR_RAMS_CS_SLICE_5(fast)
+# Loading work.u_RAM_CS_TA_u_SR_RAMS_CS_SLICE_12(fast)
+# Loading work.lut40007(fast)
+# Loading ovi_machxo2.ROM16X1A(fast__4)
+# Loading work.u_RAM_CS_TA_SLICE_19(fast)
+# Loading work.SLICE_20(fast)
+# Loading work.lut40008(fast)
+# Loading ovi_machxo2.ROM16X1A(fast__5)
+# Loading work.lut40009(fast)
+# Loading ovi_machxo2.ROM16X1A(fast__6)
+# Loading work.u_ROM_CS_TA_u_SR_ROMS_CS_SLICE_24(fast)
+# Loading work.lut40010(fast)
+# Loading ovi_machxo2.ROM16X1A(fast__7)
+# Loading work.u_ROM_CS_TA_SLICE_27(fast)
+# Loading work.inverter(fast)
+# Loading ovi_machxo2.INV(fast)
+# Loading work.u_ROM_CS_TA_u_SR_TA_SLICE_29(fast)
+# Loading work.lut40011(fast)
+# Loading ovi_machxo2.ROM16X1A(fast__8)
+# Loading work.SLICE_31(fast)
+# Loading work.lut40012(fast)
+# Loading ovi_machxo2.ROM16X1A(fast__9)
+# Loading work.lut40013(fast)
+# Loading work.SLICE_32(fast)
+# Loading work.lut40014(fast)
+# Loading ovi_machxo2.ROM16X1A(fast__10)
+# Loading work.u_RAM_CS_TA_u_SR_RAMS_CS_SLICE_33(fast)
+# Loading work.u_RAM_CS_TA_u_SR_RAMS_CS_SLICE_34(fast)
+# Loading work.u_RAM_CS_TA_u_SR_TA_SLICE_36(fast)
+# Loading work.u_RAM_CS_TA_u_SR_TA_SLICE_37(fast)
+# Loading work.u_RAM_CS_TA_u_SR_TA_SLICE_38(fast)
+# Loading work.u_RAM_CS_TA_u_SR_TA_SLICE_39(fast)
+# Loading work.u_ROM_CS_TA_u_SR_ROMS_CS_SLICE_40(fast)
+# Loading work.u_ROM_CS_TA_u_SR_ROMS_CS_SLICE_41(fast)
+# Loading work.u_ROM_CS_TA_u_SR_TA_SLICE_42(fast)
+# Loading work.RAM_CS_N(fast)
+# Loading work.xo2iobuf(fast)
+# Loading ovi_machxo2.OBZPD(fast)
+# Loading work.A_25_(fast)
+# Loading work.xo2iobuf0015(fast)
+# Loading ovi_machxo2.IBPD(fast)
+# Loading work.A_24_(fast)
+# Loading work.A_26_(fast)
+# Loading work.A_27_(fast)
+# Loading work.A_28_(fast)
+# Loading work.A_29_(fast)
+# Loading work.A_30_(fast)
+# Loading work.A_31_(fast)
+# Loading work.TA_N(fast)
+# Loading work.RST(fast)
+# Loading work.RAM_OE_N(fast)
+# Loading work.A_23_(fast)
+# Loading work.RW_OUT(fast)
+# Loading work.LOCK(fast)
+# Loading work.ROM_CS_N(fast)
+# Loading work.RW_IN(fast)
+# Loading work.TS_N(fast)
+# Loading work.CLK(fast)
+# Loading work.xo2iobuf0015(fast__1)
+# Loading ovi_machxo2.IBPD(fast__1)
+# Loading work.u_ZenPLL_PLLInst_0(fast)
+# Loading work.EHXPLLJ_B(fast)
+# Loading ovi_machxo2.EHXPLLJ(fast)
+# Loading ovi_machxo2.PUR(fast)
+# Loading ovi_machxo2.GSR(fast)
+# Loading instances from C:/lscc/diamond/3.14/bin/nt64/Zen68060Firmware/impl1/Zen68060Firmware_impl1_vo.sdf
+# Loading timing data from C:/lscc/diamond/3.14/bin/nt64/Zen68060Firmware/impl1/Zen68060Firmware_impl1_vo.sdf
+# ** Note: (vsim-3587) SDF Backannotation Successfully Completed.
+#    Time: 0 fs  Iteration: 0  Instance: /mainLogic_tb File: C:/lscc/diamond/3.14/bin/nt64/Zen68060Firmware/ZenSim.v
+do {C:/lscc/diamond/3.14/bin/nt64/Zen68060Firmware/ZenSim/ZenSim.mdo}
+# End time: 19:49:01 on Sep 16,2026, Elapsed time: 0:02:40
+# Errors: 0, Warnings: 3
+# vsim -voptargs="+acc" -L work -L pmi_work -L ovi_machxo2 "+transport_path_delays" "+transport_int_delays" mainLogic_tb -sdfmax "/mainLogic_tb/dut=C:/lscc/diamond/3.14/bin/nt64/Zen68060Firmware/impl1/Zen68060Firmware_impl1_vo.sdf" 
+# Start time: 19:49:01 on Sep 16,2026
+# ** Note: (vsim-8009) Loading existing optimized design _opt1
+# Loading work.mainLogic_tb(fast)
+# Loading work.ZenMainLogic(fast)
+# Loading work.u_RAM_CS_TA_u_SR_TA_SLICE_0(fast)
+# Loading work.vmuxregsre(fast)
+# Loading ovi_machxo2.FL1P3IY(fast)
+# Loading work.vcc(fast)
+# Loading ovi_machxo2.VHI(fast)
+# Loading work.gnd(fast)
+# Loading ovi_machxo2.VLO(fast)
+# Loading work.u_ROM_CS_TA_u_SR_ROMS_CS_SLICE_1(fast)
+# Loading work.u_ROM_CS_TA_u_SR_TA_SLICE_2(fast)
+# Loading work.vmuxregsre0001(fast)
+# Loading ovi_machxo2.FL1P3JY(fast)
+# Loading work.SLICE_3(fast)
+# Loading work.lut4(fast)
+# Loading ovi_machxo2.ROM16X1A(fast)
+# Loading work.lut40002(fast)
+# Loading ovi_machxo2.ROM16X1A(fast__1)
+# Loading work.vmuxregsre0003(fast)
+# Loading ovi_machxo2.FL1P3DX(fast)
+# Loading work.vmuxregsre0004(fast)
+# Loading ovi_machxo2.FL1P3BX(fast)
+# Loading work.u_ROM_CS_TA_SLICE_4(fast)
+# Loading work.lut40005(fast)
+# Loading ovi_machxo2.ROM16X1A(fast__2)
+# Loading work.lut40006(fast)
+# Loading ovi_machxo2.ROM16X1A(fast__3)
+# Loading work.u_RAM_CS_TA_u_SR_RAMS_CS_SLICE_5(fast)
+# Loading work.u_RAM_CS_TA_u_SR_RAMS_CS_SLICE_12(fast)
+# Loading work.lut40007(fast)
+# Loading ovi_machxo2.ROM16X1A(fast__4)
+# Loading work.u_RAM_CS_TA_SLICE_19(fast)
+# Loading work.SLICE_20(fast)
+# Loading work.lut40008(fast)
+# Loading ovi_machxo2.ROM16X1A(fast__5)
+# Loading work.lut40009(fast)
+# Loading ovi_machxo2.ROM16X1A(fast__6)
+# Loading work.u_ROM_CS_TA_u_SR_ROMS_CS_SLICE_24(fast)
+# Loading work.lut40010(fast)
+# Loading ovi_machxo2.ROM16X1A(fast__7)
+# Loading work.u_ROM_CS_TA_SLICE_27(fast)
+# Loading work.inverter(fast)
+# Loading ovi_machxo2.INV(fast)
+# Loading work.u_ROM_CS_TA_u_SR_TA_SLICE_29(fast)
+# Loading work.lut40011(fast)
+# Loading ovi_machxo2.ROM16X1A(fast__8)
+# Loading work.SLICE_31(fast)
+# Loading work.lut40012(fast)
+# Loading ovi_machxo2.ROM16X1A(fast__9)
+# Loading work.lut40013(fast)
+# Loading work.SLICE_32(fast)
+# Loading work.lut40014(fast)
+# Loading ovi_machxo2.ROM16X1A(fast__10)
+# Loading work.u_RAM_CS_TA_u_SR_RAMS_CS_SLICE_33(fast)
+# Loading work.u_RAM_CS_TA_u_SR_RAMS_CS_SLICE_34(fast)
+# Loading work.u_RAM_CS_TA_u_SR_TA_SLICE_36(fast)
+# Loading work.u_RAM_CS_TA_u_SR_TA_SLICE_37(fast)
+# Loading work.u_RAM_CS_TA_u_SR_TA_SLICE_38(fast)
+# Loading work.u_RAM_CS_TA_u_SR_TA_SLICE_39(fast)
+# Loading work.u_ROM_CS_TA_u_SR_ROMS_CS_SLICE_40(fast)
+# Loading work.u_ROM_CS_TA_u_SR_ROMS_CS_SLICE_41(fast)
+# Loading work.u_ROM_CS_TA_u_SR_TA_SLICE_42(fast)
+# Loading work.RAM_CS_N(fast)
+# Loading work.xo2iobuf(fast)
+# Loading ovi_machxo2.OBZPD(fast)
+# Loading work.A_25_(fast)
+# Loading work.xo2iobuf0015(fast)
+# Loading ovi_machxo2.IBPD(fast)
+# Loading work.A_24_(fast)
+# Loading work.A_26_(fast)
+# Loading work.A_27_(fast)
+# Loading work.A_28_(fast)
+# Loading work.A_29_(fast)
+# Loading work.A_30_(fast)
+# Loading work.A_31_(fast)
+# Loading work.TA_N(fast)
+# Loading work.RST(fast)
+# Loading work.RAM_OE_N(fast)
+# Loading work.A_23_(fast)
+# Loading work.RW_OUT(fast)
+# Loading work.LOCK(fast)
+# Loading work.ROM_CS_N(fast)
+# Loading work.RW_IN(fast)
+# Loading work.TS_N(fast)
+# Loading work.CLK(fast)
+# Loading work.xo2iobuf0015(fast__1)
+# Loading ovi_machxo2.IBPD(fast__1)
+# Loading work.u_ZenPLL_PLLInst_0(fast)
+# Loading work.EHXPLLJ_B(fast)
+# Loading ovi_machxo2.EHXPLLJ(fast)
+# Loading ovi_machxo2.PUR(fast)
+# Loading ovi_machxo2.GSR(fast)
+# Loading instances from C:/lscc/diamond/3.14/bin/nt64/Zen68060Firmware/impl1/Zen68060Firmware_impl1_vo.sdf
+# Loading timing data from C:/lscc/diamond/3.14/bin/nt64/Zen68060Firmware/impl1/Zen68060Firmware_impl1_vo.sdf
+# ** Note: (vsim-3587) SDF Backannotation Successfully Completed.
+#    Time: 0 fs  Iteration: 0  Instance: /mainLogic_tb File: C:/lscc/diamond/3.14/bin/nt64/Zen68060Firmware/ZenSim.v
+# .main_pane.wave.interior.cs.body.pw.wf
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: hollo  Hostname: DESKTOP-LK95KVP  ProcessID: 34904
+#           Attempting to use alternate WLF file "./wlftexhtk3".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlftexhtk3
+vcd add /mainLogic_tb/dut/CLK
+vcd add /mainLogic_tb/dut/CLKOS
+vcd add /mainLogic_tb/dut/CLKOS2
+vcd add /mainLogic_tb/dut/A
+vcd add /mainLogic_tb/dut/TS_N
+vcd add /mainLogic_tb/dut/TA_N
+vcd add /mainLogic_tb/dut/RW_IN
+vcd add /mainLogic_tb/dut/RAM_CS_N
+vcd add /mainLogic_tb/dut/ROM_CS_N
+when {/mainLogic_tb/dut/LOCK == 1} {
+    log -r /*
+    echo "Logging started at PLL lock"
+}
+run 0.1 ms
+# Logging started at PLL lock
+# ** Note: $stop    : C:/lscc/diamond/3.14/bin/nt64/Zen68060Firmware/ZenSim.v(175)
+#    Time: 19032 ns  Iteration: 0  Instance: /mainLogic_tb
+# Break in Module mainLogic_tb at C:/lscc/diamond/3.14/bin/nt64/Zen68060Firmware/ZenSim.v line 175
+vcd flush
+# End time: 21:57:37 on Sep 17,2026, Elapsed time: 26:08:36
+# Errors: 0, Warnings: 3

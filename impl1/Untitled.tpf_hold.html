@@ -1,0 +1,1403 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML><HEAD>
+<META http-equiv=Content-Type content="text/html; charset=iso-8859-1">
+<STYLE type=text/css>
+<!--
+.blink {text-decoration:blink}
+.ms  {font-size: 9pt; font-family: monospace; font-weight: normal}
+.msb {font-size: 9pt; font-family: monospace; font-weight: bold  }
+-->
+</STYLE>
+<META content="MSHTML 6.00.2900.2180" name=GENERATOR></HEAD>
+<BODY><B>
+</B>
+<BR><PRE><A name="Report Header"></A>
+--------------------------------------------------------------------------------
+Lattice TRACE Report - Hold, Version Diamond (64-bit) 3.14.0.75.2
+Tue Sep 15 11:17:03 2026
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2024 Lattice Semiconductor Corporation,  All rights reserved.
+
+Report Information
+------------------
+Design file:     ZenMainLogic
+Device,speed:    LCMXO2-7000HC,M
+Report level:    verbose report, limited to 10 items per preference
+--------------------------------------------------------------------------------
+
+
+Derating parameters
+-------------------
+VCCIO Voltage:
+                   3.300 V (Bank 0)
+                   3.300 V (Bank 1)
+                   2.500 V (Bank 2)
+                   2.500 V (Bank 3)
+                   2.500 V (Bank 4)
+                   2.500 V (Bank 5)
+                   2.500 V (Bank 6)
+                   2.500 V (Bank 7)
+
+
+
+</A><A name="FREQUENCY NET 'CLK_c' 50.000000 MH"></A>================================================================================
+Preference: FREQUENCY NET "CLK_c" 50.000000 MHz ;
+            6 items scored, 0 timing errors detected.
+--------------------------------------------------------------------------------
+<font color=#000000> 
+
+Passed: The following path meets requirements by 0.379ns
+ </font>
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              <A href="#@comp:u_ROM_CS_TA/SLICE_4">u_ROM_CS_TA/state_23</A>  (from <A href="#@net:CLK_c">CLK_c</A> +)
+   Destination:    FF         Data in        <A href="#@comp:u_ROM_CS_TA/SLICE_4">u_ROM_CS_TA/state_23</A>  (to <A href="#@net:CLK_c">CLK_c</A> +)
+
+   Delay:               0.366ns  (63.9% logic, 36.1% route), 2 logic levels.
+
+ Constraint Details:
+
+      0.366ns physical path delay u_ROM_CS_TA/SLICE_4 to u_ROM_CS_TA/SLICE_4 meets
+     -0.013ns DIN_HLD and
+      0.000ns delay constraint less
+      0.000ns skew requirement (totaling -0.013ns) by 0.379ns
+
+ Physical Path Details:
+
+      <A href="#@path:FREQUENCY NET 'CLK_c' 50.000000 MHz ;:REG_DEL, 0.133,R2C17A.CLK,R2C17A.Q0,u_ROM_CS_TA/SLICE_4:ROUTE, 0.132,R2C17A.Q0,R2C17A.A0,state:CTOF_DEL, 0.101,R2C17A.A0,R2C17A.F0,u_ROM_CS_TA/SLICE_4:ROUTE, 0.000,R2C17A.F0,R2C17A.DI0,u_ROM_CS_TA/state_N_44">Data path</A> u_ROM_CS_TA/SLICE_4 to u_ROM_CS_TA/SLICE_4:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.133     R2C17A.CLK to      R2C17A.Q0 <A href="#@comp:u_ROM_CS_TA/SLICE_4">u_ROM_CS_TA/SLICE_4</A> (from <A href="#@net:CLK_c">CLK_c</A>)
+ROUTE         2     0.132<A href="#@net:state:R2C17A.Q0:R2C17A.A0:0.132">      R2C17A.Q0 to R2C17A.A0     </A> <A href="#@net:state">state</A>
+CTOF_DEL    ---     0.101      R2C17A.A0 to      R2C17A.F0 <A href="#@comp:u_ROM_CS_TA/SLICE_4">u_ROM_CS_TA/SLICE_4</A>
+ROUTE         1     0.000<A href="#@net:u_ROM_CS_TA/state_N_44:R2C17A.F0:R2C17A.DI0:0.000">      R2C17A.F0 to R2C17A.DI0    </A> <A href="#@net:u_ROM_CS_TA/state_N_44">u_ROM_CS_TA/state_N_44</A> (to <A href="#@net:CLK_c">CLK_c</A>)
+                  --------
+                    0.366   (63.9% logic, 36.1% route), 2 logic levels.
+
+ Clock Skew Details: 
+
+      <A href="#@path:FREQUENCY NET 'CLK_c' 50.000000 MHz ;:ROUTE, 0.868,92.PADDI,R2C17A.CLK,CLK_c">Source Clock Path</A> CLK to u_ROM_CS_TA/SLICE_4:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE         4     0.868<A href="#@net:CLK_c:92.PADDI:R2C17A.CLK:0.868">       92.PADDI to R2C17A.CLK    </A> <A href="#@net:CLK_c">CLK_c</A>
+                  --------
+                    0.868   (0.0% logic, 100.0% route), 0 logic levels.
+
+      <A href="#@path:FREQUENCY NET 'CLK_c' 50.000000 MHz ;:ROUTE, 0.868,92.PADDI,R2C17A.CLK,CLK_c">Destination Clock Path</A> CLK to u_ROM_CS_TA/SLICE_4:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE         4     0.868<A href="#@net:CLK_c:92.PADDI:R2C17A.CLK:0.868">       92.PADDI to R2C17A.CLK    </A> <A href="#@net:CLK_c">CLK_c</A>
+                  --------
+                    0.868   (0.0% logic, 100.0% route), 0 logic levels.
+<font color=#000000> 
+
+Passed: The following path meets requirements by 0.461ns
+ </font>
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              <A href="#@comp:u_ROM_CS_TA/SLICE_4">u_ROM_CS_TA/state_23</A>  (from <A href="#@net:CLK_c">CLK_c</A> +)
+   Destination:    FF         Data in        <A href="#@comp:SLICE_19">u_ROM_CS_TA/int_ROM_CS_N_26</A>  (to <A href="#@net:CLK_c">CLK_c</A> +)
+
+   Delay:               0.448ns  (52.2% logic, 47.8% route), 2 logic levels.
+
+ Constraint Details:
+
+      0.448ns physical path delay u_ROM_CS_TA/SLICE_4 to SLICE_19 meets
+     -0.013ns DIN_HLD and
+      0.000ns delay constraint less
+      0.000ns skew requirement (totaling -0.013ns) by 0.461ns
+
+ Physical Path Details:
+
+      <A href="#@path:FREQUENCY NET 'CLK_c' 50.000000 MHz ;:REG_DEL, 0.133,R2C17A.CLK,R2C17A.Q0,u_ROM_CS_TA/SLICE_4:ROUTE, 0.212,R2C17A.Q0,R2C17B.A0,state:CTOF_DEL, 0.101,R2C17B.A0,R2C17B.F0,SLICE_19:ROUTE, 0.002,R2C17B.F0,R2C17B.DI0,loadCS_N_50">Data path</A> u_ROM_CS_TA/SLICE_4 to SLICE_19:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.133     R2C17A.CLK to      R2C17A.Q0 <A href="#@comp:u_ROM_CS_TA/SLICE_4">u_ROM_CS_TA/SLICE_4</A> (from <A href="#@net:CLK_c">CLK_c</A>)
+ROUTE         2     0.212<A href="#@net:state:R2C17A.Q0:R2C17B.A0:0.212">      R2C17A.Q0 to R2C17B.A0     </A> <A href="#@net:state">state</A>
+CTOF_DEL    ---     0.101      R2C17B.A0 to      R2C17B.F0 <A href="#@comp:SLICE_19">SLICE_19</A>
+ROUTE         2     0.002<A href="#@net:loadCS_N_50:R2C17B.F0:R2C17B.DI0:0.002">      R2C17B.F0 to R2C17B.DI0    </A> <A href="#@net:loadCS_N_50">loadCS_N_50</A> (to <A href="#@net:CLK_c">CLK_c</A>)
+                  --------
+                    0.448   (52.2% logic, 47.8% route), 2 logic levels.
+
+ Clock Skew Details: 
+
+      <A href="#@path:FREQUENCY NET 'CLK_c' 50.000000 MHz ;:ROUTE, 0.868,92.PADDI,R2C17A.CLK,CLK_c">Source Clock Path</A> CLK to u_ROM_CS_TA/SLICE_4:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE         4     0.868<A href="#@net:CLK_c:92.PADDI:R2C17A.CLK:0.868">       92.PADDI to R2C17A.CLK    </A> <A href="#@net:CLK_c">CLK_c</A>
+                  --------
+                    0.868   (0.0% logic, 100.0% route), 0 logic levels.
+
+      <A href="#@path:FREQUENCY NET 'CLK_c' 50.000000 MHz ;:ROUTE, 0.868,92.PADDI,R2C17B.CLK,CLK_c">Destination Clock Path</A> CLK to SLICE_19:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE         4     0.868<A href="#@net:CLK_c:92.PADDI:R2C17B.CLK:0.868">       92.PADDI to R2C17B.CLK    </A> <A href="#@net:CLK_c">CLK_c</A>
+                  --------
+                    0.868   (0.0% logic, 100.0% route), 0 logic levels.
+<font color=#000000> 
+
+Passed: The following path meets requirements by 0.619ns
+ </font>
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              <A href="#@comp:u_ROM_CS_TA/SLICE_4">u_ROM_CS_TA/state_23</A>  (from <A href="#@net:CLK_c">CLK_c</A> +)
+   Destination:    FF         Data in        <A href="#@comp:SLICE_3">u_ROM_CS_TA/loadCS_24</A>  (to <A href="#@net:CLK_c">CLK_c</A> +)
+
+   Delay:               0.600ns  (39.0% logic, 61.0% route), 2 logic levels.
+
+ Constraint Details:
+
+      0.600ns physical path delay u_ROM_CS_TA/SLICE_4 to SLICE_3 meets
+     -0.019ns M_HLD and
+      0.000ns delay constraint less
+      0.000ns skew requirement (totaling -0.019ns) by 0.619ns
+
+ Physical Path Details:
+
+      <A href="#@path:FREQUENCY NET 'CLK_c' 50.000000 MHz ;:REG_DEL, 0.133,R2C17A.CLK,R2C17A.Q0,u_ROM_CS_TA/SLICE_4:ROUTE, 0.212,R2C17A.Q0,R2C17B.A0,state:CTOF_DEL, 0.101,R2C17B.A0,R2C17B.F0,SLICE_19:ROUTE, 0.154,R2C17B.F0,R2C17C.M1,loadCS_N_50">Data path</A> u_ROM_CS_TA/SLICE_4 to SLICE_3:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.133     R2C17A.CLK to      R2C17A.Q0 <A href="#@comp:u_ROM_CS_TA/SLICE_4">u_ROM_CS_TA/SLICE_4</A> (from <A href="#@net:CLK_c">CLK_c</A>)
+ROUTE         2     0.212<A href="#@net:state:R2C17A.Q0:R2C17B.A0:0.212">      R2C17A.Q0 to R2C17B.A0     </A> <A href="#@net:state">state</A>
+CTOF_DEL    ---     0.101      R2C17B.A0 to      R2C17B.F0 <A href="#@comp:SLICE_19">SLICE_19</A>
+ROUTE         2     0.154<A href="#@net:loadCS_N_50:R2C17B.F0:R2C17C.M1:0.154">      R2C17B.F0 to R2C17C.M1     </A> <A href="#@net:loadCS_N_50">loadCS_N_50</A> (to <A href="#@net:CLK_c">CLK_c</A>)
+                  --------
+                    0.600   (39.0% logic, 61.0% route), 2 logic levels.
+
+ Clock Skew Details: 
+
+      <A href="#@path:FREQUENCY NET 'CLK_c' 50.000000 MHz ;:ROUTE, 0.868,92.PADDI,R2C17A.CLK,CLK_c">Source Clock Path</A> CLK to u_ROM_CS_TA/SLICE_4:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE         4     0.868<A href="#@net:CLK_c:92.PADDI:R2C17A.CLK:0.868">       92.PADDI to R2C17A.CLK    </A> <A href="#@net:CLK_c">CLK_c</A>
+                  --------
+                    0.868   (0.0% logic, 100.0% route), 0 logic levels.
+
+      <A href="#@path:FREQUENCY NET 'CLK_c' 50.000000 MHz ;:ROUTE, 0.868,92.PADDI,R2C17C.CLK,CLK_c">Destination Clock Path</A> CLK to SLICE_3:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE         4     0.868<A href="#@net:CLK_c:92.PADDI:R2C17C.CLK:0.868">       92.PADDI to R2C17C.CLK    </A> <A href="#@net:CLK_c">CLK_c</A>
+                  --------
+                    0.868   (0.0% logic, 100.0% route), 0 logic levels.
+<font color=#000000> 
+
+Passed: The following path meets requirements by 3.877ns
+ </font>
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              <A href="#@comp:u_ROM_CS_TA/u_SR_ROMS_CS/SLICE_1">u_ROM_CS_TA/u_SR_ROMS_CS/shift_reg__i6</A>  (from <A href="#@net:CLKOS2">CLKOS2</A> +)
+   Destination:    FF         Data in        <A href="#@comp:SLICE_19">u_ROM_CS_TA/int_ROM_CS_N_26</A>  (to <A href="#@net:CLK_c">CLK_c</A> +)
+
+   Delay:               0.373ns  (62.7% logic, 37.3% route), 2 logic levels.
+
+ Constraint Details:
+
+      0.373ns physical path delay u_ROM_CS_TA/u_SR_ROMS_CS/SLICE_1 to SLICE_19 meets
+     -0.013ns DIN_HLD and
+      0.315ns delay constraint less
+      4.121ns skew less
+     -0.315ns feedback compensation requirement (totaling -3.504ns) by 3.877ns
+
+ Physical Path Details:
+
+      <A href="#@path:FREQUENCY NET 'CLK_c' 50.000000 MHz ;:REG_DEL, 0.133,R2C16B.CLK,R2C16B.Q0,u_ROM_CS_TA/u_SR_ROMS_CS/SLICE_1:ROUTE, 0.137,R2C16B.Q0,R2C17B.D0,ROM_CS_END:CTOF_DEL, 0.101,R2C17B.D0,R2C17B.F0,SLICE_19:ROUTE, 0.002,R2C17B.F0,R2C17B.DI0,loadCS_N_50">Data path</A> u_ROM_CS_TA/u_SR_ROMS_CS/SLICE_1 to SLICE_19:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.133     R2C16B.CLK to      R2C16B.Q0 <A href="#@comp:u_ROM_CS_TA/u_SR_ROMS_CS/SLICE_1">u_ROM_CS_TA/u_SR_ROMS_CS/SLICE_1</A> (from <A href="#@net:CLKOS2">CLKOS2</A>)
+ROUTE         3     0.137<A href="#@net:ROM_CS_END:R2C16B.Q0:R2C17B.D0:0.137">      R2C16B.Q0 to R2C17B.D0     </A> <A href="#@net:ROM_CS_END">ROM_CS_END</A>
+CTOF_DEL    ---     0.101      R2C17B.D0 to      R2C17B.F0 <A href="#@comp:SLICE_19">SLICE_19</A>
+ROUTE         2     0.002<A href="#@net:loadCS_N_50:R2C17B.F0:R2C17B.DI0:0.002">      R2C17B.F0 to R2C17B.DI0    </A> <A href="#@net:loadCS_N_50">loadCS_N_50</A> (to <A href="#@net:CLK_c">CLK_c</A>)
+                  --------
+                    0.373   (62.7% logic, 37.3% route), 2 logic levels.
+
+ Clock Skew Details: 
+
+      <A href="#@path:FREQUENCY NET 'CLK_c' 50.000000 MHz ;:PADI_DEL, 0.454,92.PAD,92.PADDI,CLK:ROUTE, 0.922,92.PADDI,RPLL.CLKI,CLK_c:CLKI2OS2_DEL, 2.500,RPLL.CLKI,RPLL.CLKOS2,u_ZenPLL/PLLInst_0:ROUTE, 1.252,RPLL.CLKOS2,R2C16B.CLK,CLKOS2">Source Clock Path</A> CLK to u_ROM_CS_TA/u_SR_ROMS_CS/SLICE_1:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+PADI_DEL    ---     0.454         92.PAD to       92.PADDI <A href="#@comp:CLK">CLK</A>
+ROUTE         4     0.922<A href="#@net:CLK_c:92.PADDI:RPLL.CLKI:0.922">       92.PADDI to RPLL.CLKI     </A> <A href="#@net:CLK_c">CLK_c</A>
+CLKI2OS2_D  ---     2.500      RPLL.CLKI to    RPLL.CLKOS2 <A href="#@comp:u_ZenPLL/PLLInst_0">u_ZenPLL/PLLInst_0</A>
+ROUTE         9     1.252<A href="#@net:CLKOS2:RPLL.CLKOS2:R2C16B.CLK:1.252">    RPLL.CLKOS2 to R2C16B.CLK    </A> <A href="#@net:CLKOS2">CLKOS2</A>
+                  --------
+                    5.128   (57.6% logic, 42.4% route), 2 logic levels.
+
+      Source Clock f/b:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+CLKFB2OP_D  ---     0.000     RPLL.CLKFB to     RPLL.CLKOP <A href="#@comp:u_ZenPLL/PLLInst_0">u_ZenPLL/PLLInst_0</A>
+ROUTE         1     0.315<A href="#@net:u_ZenPLL/CLKOP:RPLL.CLKOP:RPLL.CLKFB:0.315">     RPLL.CLKOP to RPLL.CLKFB    </A> <A href="#@net:u_ZenPLL/CLKOP">u_ZenPLL/CLKOP</A>
+                  --------
+                    0.315   (0.0% logic, 100.0% route), 1 logic levels.
+
+      <A href="#@path:FREQUENCY NET 'CLK_c' 50.000000 MHz ;:PADI_DEL, 0.454,92.PAD,92.PADDI,CLK:ROUTE, 0.868,92.PADDI,R2C17B.CLK,CLK_c">Destination Clock Path</A> CLK to SLICE_19:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+PADI_DEL    ---     0.454         92.PAD to       92.PADDI <A href="#@comp:CLK">CLK</A>
+ROUTE         4     0.868<A href="#@net:CLK_c:92.PADDI:R2C17B.CLK:0.868">       92.PADDI to R2C17B.CLK    </A> <A href="#@net:CLK_c">CLK_c</A>
+                  --------
+                    1.322   (34.3% logic, 65.7% route), 1 logic levels.
+<font color=#000000> 
+
+Passed: The following path meets requirements by 3.964ns
+ </font>
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              <A href="#@comp:u_ROM_CS_TA/u_SR_ROMS_CS/SLICE_1">u_ROM_CS_TA/u_SR_ROMS_CS/shift_reg__i6</A>  (from <A href="#@net:CLKOS2">CLKOS2</A> +)
+   Destination:    FF         Data in        <A href="#@comp:u_ROM_CS_TA/SLICE_4">u_ROM_CS_TA/state_23</A>  (to <A href="#@net:CLK_c">CLK_c</A> +)
+
+   Delay:               0.460ns  (50.9% logic, 49.1% route), 2 logic levels.
+
+ Constraint Details:
+
+      0.460ns physical path delay u_ROM_CS_TA/u_SR_ROMS_CS/SLICE_1 to u_ROM_CS_TA/SLICE_4 meets
+     -0.013ns DIN_HLD and
+      0.315ns delay constraint less
+      4.121ns skew less
+     -0.315ns feedback compensation requirement (totaling -3.504ns) by 3.964ns
+
+ Physical Path Details:
+
+      <A href="#@path:FREQUENCY NET 'CLK_c' 50.000000 MHz ;:REG_DEL, 0.133,R2C16B.CLK,R2C16B.Q0,u_ROM_CS_TA/u_SR_ROMS_CS/SLICE_1:ROUTE, 0.226,R2C16B.Q0,R2C17A.B0,ROM_CS_END:CTOF_DEL, 0.101,R2C17A.B0,R2C17A.F0,u_ROM_CS_TA/SLICE_4:ROUTE, 0.000,R2C17A.F0,R2C17A.DI0,u_ROM_CS_TA/state_N_44">Data path</A> u_ROM_CS_TA/u_SR_ROMS_CS/SLICE_1 to u_ROM_CS_TA/SLICE_4:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.133     R2C16B.CLK to      R2C16B.Q0 <A href="#@comp:u_ROM_CS_TA/u_SR_ROMS_CS/SLICE_1">u_ROM_CS_TA/u_SR_ROMS_CS/SLICE_1</A> (from <A href="#@net:CLKOS2">CLKOS2</A>)
+ROUTE         3     0.226<A href="#@net:ROM_CS_END:R2C16B.Q0:R2C17A.B0:0.226">      R2C16B.Q0 to R2C17A.B0     </A> <A href="#@net:ROM_CS_END">ROM_CS_END</A>
+CTOF_DEL    ---     0.101      R2C17A.B0 to      R2C17A.F0 <A href="#@comp:u_ROM_CS_TA/SLICE_4">u_ROM_CS_TA/SLICE_4</A>
+ROUTE         1     0.000<A href="#@net:u_ROM_CS_TA/state_N_44:R2C17A.F0:R2C17A.DI0:0.000">      R2C17A.F0 to R2C17A.DI0    </A> <A href="#@net:u_ROM_CS_TA/state_N_44">u_ROM_CS_TA/state_N_44</A> (to <A href="#@net:CLK_c">CLK_c</A>)
+                  --------
+                    0.460   (50.9% logic, 49.1% route), 2 logic levels.
+
+ Clock Skew Details: 
+
+      <A href="#@path:FREQUENCY NET 'CLK_c' 50.000000 MHz ;:PADI_DEL, 0.454,92.PAD,92.PADDI,CLK:ROUTE, 0.922,92.PADDI,RPLL.CLKI,CLK_c:CLKI2OS2_DEL, 2.500,RPLL.CLKI,RPLL.CLKOS2,u_ZenPLL/PLLInst_0:ROUTE, 1.252,RPLL.CLKOS2,R2C16B.CLK,CLKOS2">Source Clock Path</A> CLK to u_ROM_CS_TA/u_SR_ROMS_CS/SLICE_1:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+PADI_DEL    ---     0.454         92.PAD to       92.PADDI <A href="#@comp:CLK">CLK</A>
+ROUTE         4     0.922<A href="#@net:CLK_c:92.PADDI:RPLL.CLKI:0.922">       92.PADDI to RPLL.CLKI     </A> <A href="#@net:CLK_c">CLK_c</A>
+CLKI2OS2_D  ---     2.500      RPLL.CLKI to    RPLL.CLKOS2 <A href="#@comp:u_ZenPLL/PLLInst_0">u_ZenPLL/PLLInst_0</A>
+ROUTE         9     1.252<A href="#@net:CLKOS2:RPLL.CLKOS2:R2C16B.CLK:1.252">    RPLL.CLKOS2 to R2C16B.CLK    </A> <A href="#@net:CLKOS2">CLKOS2</A>
+                  --------
+                    5.128   (57.6% logic, 42.4% route), 2 logic levels.
+
+      Source Clock f/b:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+CLKFB2OP_D  ---     0.000     RPLL.CLKFB to     RPLL.CLKOP <A href="#@comp:u_ZenPLL/PLLInst_0">u_ZenPLL/PLLInst_0</A>
+ROUTE         1     0.315<A href="#@net:u_ZenPLL/CLKOP:RPLL.CLKOP:RPLL.CLKFB:0.315">     RPLL.CLKOP to RPLL.CLKFB    </A> <A href="#@net:u_ZenPLL/CLKOP">u_ZenPLL/CLKOP</A>
+                  --------
+                    0.315   (0.0% logic, 100.0% route), 1 logic levels.
+
+      <A href="#@path:FREQUENCY NET 'CLK_c' 50.000000 MHz ;:PADI_DEL, 0.454,92.PAD,92.PADDI,CLK:ROUTE, 0.868,92.PADDI,R2C17A.CLK,CLK_c">Destination Clock Path</A> CLK to u_ROM_CS_TA/SLICE_4:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+PADI_DEL    ---     0.454         92.PAD to       92.PADDI <A href="#@comp:CLK">CLK</A>
+ROUTE         4     0.868<A href="#@net:CLK_c:92.PADDI:R2C17A.CLK:0.868">       92.PADDI to R2C17A.CLK    </A> <A href="#@net:CLK_c">CLK_c</A>
+                  --------
+                    1.322   (34.3% logic, 65.7% route), 1 logic levels.
+<font color=#000000> 
+
+Passed: The following path meets requirements by 4.035ns
+ </font>
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              <A href="#@comp:u_ROM_CS_TA/u_SR_ROMS_CS/SLICE_1">u_ROM_CS_TA/u_SR_ROMS_CS/shift_reg__i6</A>  (from <A href="#@net:CLKOS2">CLKOS2</A> +)
+   Destination:    FF         Data in        <A href="#@comp:SLICE_3">u_ROM_CS_TA/loadCS_24</A>  (to <A href="#@net:CLK_c">CLK_c</A> +)
+
+   Delay:               0.525ns  (44.6% logic, 55.4% route), 2 logic levels.
+
+ Constraint Details:
+
+      0.525ns physical path delay u_ROM_CS_TA/u_SR_ROMS_CS/SLICE_1 to SLICE_3 meets
+     -0.019ns M_HLD and
+      0.315ns delay constraint less
+      4.121ns skew less
+     -0.315ns feedback compensation requirement (totaling -3.510ns) by 4.035ns
+
+ Physical Path Details:
+
+      <A href="#@path:FREQUENCY NET 'CLK_c' 50.000000 MHz ;:REG_DEL, 0.133,R2C16B.CLK,R2C16B.Q0,u_ROM_CS_TA/u_SR_ROMS_CS/SLICE_1:ROUTE, 0.137,R2C16B.Q0,R2C17B.D0,ROM_CS_END:CTOF_DEL, 0.101,R2C17B.D0,R2C17B.F0,SLICE_19:ROUTE, 0.154,R2C17B.F0,R2C17C.M1,loadCS_N_50">Data path</A> u_ROM_CS_TA/u_SR_ROMS_CS/SLICE_1 to SLICE_3:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.133     R2C16B.CLK to      R2C16B.Q0 <A href="#@comp:u_ROM_CS_TA/u_SR_ROMS_CS/SLICE_1">u_ROM_CS_TA/u_SR_ROMS_CS/SLICE_1</A> (from <A href="#@net:CLKOS2">CLKOS2</A>)
+ROUTE         3     0.137<A href="#@net:ROM_CS_END:R2C16B.Q0:R2C17B.D0:0.137">      R2C16B.Q0 to R2C17B.D0     </A> <A href="#@net:ROM_CS_END">ROM_CS_END</A>
+CTOF_DEL    ---     0.101      R2C17B.D0 to      R2C17B.F0 <A href="#@comp:SLICE_19">SLICE_19</A>
+ROUTE         2     0.154<A href="#@net:loadCS_N_50:R2C17B.F0:R2C17C.M1:0.154">      R2C17B.F0 to R2C17C.M1     </A> <A href="#@net:loadCS_N_50">loadCS_N_50</A> (to <A href="#@net:CLK_c">CLK_c</A>)
+                  --------
+                    0.525   (44.6% logic, 55.4% route), 2 logic levels.
+
+ Clock Skew Details: 
+
+      <A href="#@path:FREQUENCY NET 'CLK_c' 50.000000 MHz ;:PADI_DEL, 0.454,92.PAD,92.PADDI,CLK:ROUTE, 0.922,92.PADDI,RPLL.CLKI,CLK_c:CLKI2OS2_DEL, 2.500,RPLL.CLKI,RPLL.CLKOS2,u_ZenPLL/PLLInst_0:ROUTE, 1.252,RPLL.CLKOS2,R2C16B.CLK,CLKOS2">Source Clock Path</A> CLK to u_ROM_CS_TA/u_SR_ROMS_CS/SLICE_1:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+PADI_DEL    ---     0.454         92.PAD to       92.PADDI <A href="#@comp:CLK">CLK</A>
+ROUTE         4     0.922<A href="#@net:CLK_c:92.PADDI:RPLL.CLKI:0.922">       92.PADDI to RPLL.CLKI     </A> <A href="#@net:CLK_c">CLK_c</A>
+CLKI2OS2_D  ---     2.500      RPLL.CLKI to    RPLL.CLKOS2 <A href="#@comp:u_ZenPLL/PLLInst_0">u_ZenPLL/PLLInst_0</A>
+ROUTE         9     1.252<A href="#@net:CLKOS2:RPLL.CLKOS2:R2C16B.CLK:1.252">    RPLL.CLKOS2 to R2C16B.CLK    </A> <A href="#@net:CLKOS2">CLKOS2</A>
+                  --------
+                    5.128   (57.6% logic, 42.4% route), 2 logic levels.
+
+      Source Clock f/b:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+CLKFB2OP_D  ---     0.000     RPLL.CLKFB to     RPLL.CLKOP <A href="#@comp:u_ZenPLL/PLLInst_0">u_ZenPLL/PLLInst_0</A>
+ROUTE         1     0.315<A href="#@net:u_ZenPLL/CLKOP:RPLL.CLKOP:RPLL.CLKFB:0.315">     RPLL.CLKOP to RPLL.CLKFB    </A> <A href="#@net:u_ZenPLL/CLKOP">u_ZenPLL/CLKOP</A>
+                  --------
+                    0.315   (0.0% logic, 100.0% route), 1 logic levels.
+
+      <A href="#@path:FREQUENCY NET 'CLK_c' 50.000000 MHz ;:PADI_DEL, 0.454,92.PAD,92.PADDI,CLK:ROUTE, 0.868,92.PADDI,R2C17C.CLK,CLK_c">Destination Clock Path</A> CLK to SLICE_3:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+PADI_DEL    ---     0.454         92.PAD to       92.PADDI <A href="#@comp:CLK">CLK</A>
+ROUTE         4     0.868<A href="#@net:CLK_c:92.PADDI:R2C17C.CLK:0.868">       92.PADDI to R2C17C.CLK    </A> <A href="#@net:CLK_c">CLK_c</A>
+                  --------
+                    1.322   (34.3% logic, 65.7% route), 1 logic levels.
+
+
+</A><A name="FREQUENCY NET 'CLKOS' 200.000000 MH"></A>================================================================================
+Preference: FREQUENCY NET "CLKOS" 200.000000 MHz ;
+            10 items scored, 0 timing errors detected.
+--------------------------------------------------------------------------------
+<font color=#000000> 
+
+Passed: The following path meets requirements by 0.304ns
+ </font>
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              <A href="#@comp:u_RAM_CS_TA/u_SR_RAMS_CS/SLICE_32">u_RAM_CS_TA/u_SR_RAMS_CS/shift_reg_i1</A>  (from <A href="#@net:CLKOS">CLKOS</A> +)
+   Destination:    FF         Data in        <A href="#@comp:u_RAM_CS_TA/u_SR_RAMS_CS/SLICE_32">u_RAM_CS_TA/u_SR_RAMS_CS/shift_reg_i2</A>  (to <A href="#@net:CLKOS">CLKOS</A> +)
+
+   Delay:               0.285ns  (46.7% logic, 53.3% route), 1 logic levels.
+
+ Constraint Details:
+
+      0.285ns physical path delay u_RAM_CS_TA/u_SR_RAMS_CS/SLICE_32 to u_RAM_CS_TA/u_SR_RAMS_CS/SLICE_32 meets
+     -0.019ns M_HLD and
+      0.000ns delay constraint less
+      0.000ns skew requirement (totaling -0.019ns) by 0.304ns
+
+ Physical Path Details:
+
+      <A href="#@path:FREQUENCY NET 'CLKOS' 200.000000 MHz ;:REG_DEL, 0.133,R3C18C.CLK,R3C18C.Q1,u_RAM_CS_TA/u_SR_RAMS_CS/SLICE_32:ROUTE, 0.152,R3C18C.Q1,R3C18C.M0,u_RAM_CS_TA/u_SR_RAMS_CS/shift_reg_1">Data path</A> u_RAM_CS_TA/u_SR_RAMS_CS/SLICE_32 to u_RAM_CS_TA/u_SR_RAMS_CS/SLICE_32:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.133     R3C18C.CLK to      R3C18C.Q1 <A href="#@comp:u_RAM_CS_TA/u_SR_RAMS_CS/SLICE_32">u_RAM_CS_TA/u_SR_RAMS_CS/SLICE_32</A> (from <A href="#@net:CLKOS">CLKOS</A>)
+ROUTE         1     0.152<A href="#@net:u_RAM_CS_TA/u_SR_RAMS_CS/shift_reg_1:R3C18C.Q1:R3C18C.M0:0.152">      R3C18C.Q1 to R3C18C.M0     </A> <A href="#@net:u_RAM_CS_TA/u_SR_RAMS_CS/shift_reg_1">u_RAM_CS_TA/u_SR_RAMS_CS/shift_reg_1</A> (to <A href="#@net:CLKOS">CLKOS</A>)
+                  --------
+                    0.285   (46.7% logic, 53.3% route), 1 logic levels.
+
+ Clock Skew Details: 
+
+      <A href="#@path:FREQUENCY NET 'CLKOS' 200.000000 MHz ;:ROUTE, 0.707,RPLL.CLKOS,R3C18C.CLK,CLKOS">Source Clock Path</A> u_ZenPLL/PLLInst_0 to u_RAM_CS_TA/u_SR_RAMS_CS/SLICE_32:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE        11     0.707<A href="#@net:CLKOS:RPLL.CLKOS:R3C18C.CLK:0.707">     RPLL.CLKOS to R3C18C.CLK    </A> <A href="#@net:CLKOS">CLKOS</A>
+                  --------
+                    0.707   (0.0% logic, 100.0% route), 0 logic levels.
+
+      <A href="#@path:FREQUENCY NET 'CLKOS' 200.000000 MHz ;:ROUTE, 0.707,RPLL.CLKOS,R3C18C.CLK,CLKOS">Destination Clock Path</A> u_ZenPLL/PLLInst_0 to u_RAM_CS_TA/u_SR_RAMS_CS/SLICE_32:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE        11     0.707<A href="#@net:CLKOS:RPLL.CLKOS:R3C18C.CLK:0.707">     RPLL.CLKOS to R3C18C.CLK    </A> <A href="#@net:CLKOS">CLKOS</A>
+                  --------
+                    0.707   (0.0% logic, 100.0% route), 0 logic levels.
+<font color=#000000> 
+
+Passed: The following path meets requirements by 0.304ns
+ </font>
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              <A href="#@comp:u_RAM_CS_TA/u_SR_TA/SLICE_37">u_RAM_CS_TA/u_SR_TA/shift_reg_i3</A>  (from <A href="#@net:CLKOS">CLKOS</A> +)
+   Destination:    FF         Data in        <A href="#@comp:u_RAM_CS_TA/u_SR_TA/SLICE_37">u_RAM_CS_TA/u_SR_TA/shift_reg_i4</A>  (to <A href="#@net:CLKOS">CLKOS</A> +)
+
+   Delay:               0.285ns  (46.7% logic, 53.3% route), 1 logic levels.
+
+ Constraint Details:
+
+      0.285ns physical path delay u_RAM_CS_TA/u_SR_TA/SLICE_37 to u_RAM_CS_TA/u_SR_TA/SLICE_37 meets
+     -0.019ns M_HLD and
+      0.000ns delay constraint less
+      0.000ns skew requirement (totaling -0.019ns) by 0.304ns
+
+ Physical Path Details:
+
+      <A href="#@path:FREQUENCY NET 'CLKOS' 200.000000 MHz ;:REG_DEL, 0.133,R2C19B.CLK,R2C19B.Q1,u_RAM_CS_TA/u_SR_TA/SLICE_37:ROUTE, 0.152,R2C19B.Q1,R2C19B.M0,u_RAM_CS_TA/u_SR_TA/shift_reg_3">Data path</A> u_RAM_CS_TA/u_SR_TA/SLICE_37 to u_RAM_CS_TA/u_SR_TA/SLICE_37:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.133     R2C19B.CLK to      R2C19B.Q1 <A href="#@comp:u_RAM_CS_TA/u_SR_TA/SLICE_37">u_RAM_CS_TA/u_SR_TA/SLICE_37</A> (from <A href="#@net:CLKOS">CLKOS</A>)
+ROUTE         1     0.152<A href="#@net:u_RAM_CS_TA/u_SR_TA/shift_reg_3:R2C19B.Q1:R2C19B.M0:0.152">      R2C19B.Q1 to R2C19B.M0     </A> <A href="#@net:u_RAM_CS_TA/u_SR_TA/shift_reg_3">u_RAM_CS_TA/u_SR_TA/shift_reg_3</A> (to <A href="#@net:CLKOS">CLKOS</A>)
+                  --------
+                    0.285   (46.7% logic, 53.3% route), 1 logic levels.
+
+ Clock Skew Details: 
+
+      <A href="#@path:FREQUENCY NET 'CLKOS' 200.000000 MHz ;:ROUTE, 0.707,RPLL.CLKOS,R2C19B.CLK,CLKOS">Source Clock Path</A> u_ZenPLL/PLLInst_0 to u_RAM_CS_TA/u_SR_TA/SLICE_37:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE        11     0.707<A href="#@net:CLKOS:RPLL.CLKOS:R2C19B.CLK:0.707">     RPLL.CLKOS to R2C19B.CLK    </A> <A href="#@net:CLKOS">CLKOS</A>
+                  --------
+                    0.707   (0.0% logic, 100.0% route), 0 logic levels.
+
+      <A href="#@path:FREQUENCY NET 'CLKOS' 200.000000 MHz ;:ROUTE, 0.707,RPLL.CLKOS,R2C19B.CLK,CLKOS">Destination Clock Path</A> u_ZenPLL/PLLInst_0 to u_RAM_CS_TA/u_SR_TA/SLICE_37:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE        11     0.707<A href="#@net:CLKOS:RPLL.CLKOS:R2C19B.CLK:0.707">     RPLL.CLKOS to R2C19B.CLK    </A> <A href="#@net:CLKOS">CLKOS</A>
+                  --------
+                    0.707   (0.0% logic, 100.0% route), 0 logic levels.
+<font color=#000000> 
+
+Passed: The following path meets requirements by 0.304ns
+ </font>
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              <A href="#@comp:u_RAM_CS_TA/u_SR_TA/SLICE_38">u_RAM_CS_TA/u_SR_TA/shift_reg_i6</A>  (from <A href="#@net:CLKOS">CLKOS</A> +)
+   Destination:    FF         Data in        <A href="#@comp:u_RAM_CS_TA/u_SR_TA/SLICE_0">u_RAM_CS_TA/u_SR_TA/shift_reg_i7</A>  (to <A href="#@net:CLKOS">CLKOS</A> +)
+
+   Delay:               0.285ns  (46.7% logic, 53.3% route), 1 logic levels.
+
+ Constraint Details:
+
+      0.285ns physical path delay u_RAM_CS_TA/u_SR_TA/SLICE_38 to u_RAM_CS_TA/u_SR_TA/SLICE_0 meets
+     -0.019ns M_HLD and
+      0.000ns delay constraint less
+      0.000ns skew requirement (totaling -0.019ns) by 0.304ns
+
+ Physical Path Details:
+
+      <A href="#@path:FREQUENCY NET 'CLKOS' 200.000000 MHz ;:REG_DEL, 0.133,R2C19A.CLK,R2C19A.Q0,u_RAM_CS_TA/u_SR_TA/SLICE_38:ROUTE, 0.152,R2C19A.Q0,R2C19D.M0,u_RAM_CS_TA/u_SR_TA/shift_reg_6">Data path</A> u_RAM_CS_TA/u_SR_TA/SLICE_38 to u_RAM_CS_TA/u_SR_TA/SLICE_0:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.133     R2C19A.CLK to      R2C19A.Q0 <A href="#@comp:u_RAM_CS_TA/u_SR_TA/SLICE_38">u_RAM_CS_TA/u_SR_TA/SLICE_38</A> (from <A href="#@net:CLKOS">CLKOS</A>)
+ROUTE         1     0.152<A href="#@net:u_RAM_CS_TA/u_SR_TA/shift_reg_6:R2C19A.Q0:R2C19D.M0:0.152">      R2C19A.Q0 to R2C19D.M0     </A> <A href="#@net:u_RAM_CS_TA/u_SR_TA/shift_reg_6">u_RAM_CS_TA/u_SR_TA/shift_reg_6</A> (to <A href="#@net:CLKOS">CLKOS</A>)
+                  --------
+                    0.285   (46.7% logic, 53.3% route), 1 logic levels.
+
+ Clock Skew Details: 
+
+      <A href="#@path:FREQUENCY NET 'CLKOS' 200.000000 MHz ;:ROUTE, 0.707,RPLL.CLKOS,R2C19A.CLK,CLKOS">Source Clock Path</A> u_ZenPLL/PLLInst_0 to u_RAM_CS_TA/u_SR_TA/SLICE_38:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE        11     0.707<A href="#@net:CLKOS:RPLL.CLKOS:R2C19A.CLK:0.707">     RPLL.CLKOS to R2C19A.CLK    </A> <A href="#@net:CLKOS">CLKOS</A>
+                  --------
+                    0.707   (0.0% logic, 100.0% route), 0 logic levels.
+
+      <A href="#@path:FREQUENCY NET 'CLKOS' 200.000000 MHz ;:ROUTE, 0.707,RPLL.CLKOS,R2C19D.CLK,CLKOS">Destination Clock Path</A> u_ZenPLL/PLLInst_0 to u_RAM_CS_TA/u_SR_TA/SLICE_0:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE        11     0.707<A href="#@net:CLKOS:RPLL.CLKOS:R2C19D.CLK:0.707">     RPLL.CLKOS to R2C19D.CLK    </A> <A href="#@net:CLKOS">CLKOS</A>
+                  --------
+                    0.707   (0.0% logic, 100.0% route), 0 logic levels.
+<font color=#000000> 
+
+Passed: The following path meets requirements by 0.304ns
+ </font>
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              <A href="#@comp:u_RAM_CS_TA/u_SR_RAMS_CS/SLICE_33">u_RAM_CS_TA/u_SR_RAMS_CS/shift_reg_i4</A>  (from <A href="#@net:CLKOS">CLKOS</A> +)
+   Destination:    FF         Data in        <A href="#@comp:u_RAM_CS_TA/u_SR_RAMS_CS/SLICE_34">u_RAM_CS_TA/u_SR_RAMS_CS/shift_reg_i5</A>  (to <A href="#@net:CLKOS">CLKOS</A> +)
+
+   Delay:               0.285ns  (46.7% logic, 53.3% route), 1 logic levels.
+
+ Constraint Details:
+
+      0.285ns physical path delay u_RAM_CS_TA/u_SR_RAMS_CS/SLICE_33 to u_RAM_CS_TA/u_SR_RAMS_CS/SLICE_34 meets
+     -0.019ns M_HLD and
+      0.000ns delay constraint less
+      0.000ns skew requirement (totaling -0.019ns) by 0.304ns
+
+ Physical Path Details:
+
+      <A href="#@path:FREQUENCY NET 'CLKOS' 200.000000 MHz ;:REG_DEL, 0.133,R3C18B.CLK,R3C18B.Q0,u_RAM_CS_TA/u_SR_RAMS_CS/SLICE_33:ROUTE, 0.152,R3C18B.Q0,R3C18D.M1,u_RAM_CS_TA/u_SR_RAMS_CS/shift_reg_4">Data path</A> u_RAM_CS_TA/u_SR_RAMS_CS/SLICE_33 to u_RAM_CS_TA/u_SR_RAMS_CS/SLICE_34:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.133     R3C18B.CLK to      R3C18B.Q0 <A href="#@comp:u_RAM_CS_TA/u_SR_RAMS_CS/SLICE_33">u_RAM_CS_TA/u_SR_RAMS_CS/SLICE_33</A> (from <A href="#@net:CLKOS">CLKOS</A>)
+ROUTE         1     0.152<A href="#@net:u_RAM_CS_TA/u_SR_RAMS_CS/shift_reg_4:R3C18B.Q0:R3C18D.M1:0.152">      R3C18B.Q0 to R3C18D.M1     </A> <A href="#@net:u_RAM_CS_TA/u_SR_RAMS_CS/shift_reg_4">u_RAM_CS_TA/u_SR_RAMS_CS/shift_reg_4</A> (to <A href="#@net:CLKOS">CLKOS</A>)
+                  --------
+                    0.285   (46.7% logic, 53.3% route), 1 logic levels.
+
+ Clock Skew Details: 
+
+      <A href="#@path:FREQUENCY NET 'CLKOS' 200.000000 MHz ;:ROUTE, 0.707,RPLL.CLKOS,R3C18B.CLK,CLKOS">Source Clock Path</A> u_ZenPLL/PLLInst_0 to u_RAM_CS_TA/u_SR_RAMS_CS/SLICE_33:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE        11     0.707<A href="#@net:CLKOS:RPLL.CLKOS:R3C18B.CLK:0.707">     RPLL.CLKOS to R3C18B.CLK    </A> <A href="#@net:CLKOS">CLKOS</A>
+                  --------
+                    0.707   (0.0% logic, 100.0% route), 0 logic levels.
+
+      <A href="#@path:FREQUENCY NET 'CLKOS' 200.000000 MHz ;:ROUTE, 0.707,RPLL.CLKOS,R3C18D.CLK,CLKOS">Destination Clock Path</A> u_ZenPLL/PLLInst_0 to u_RAM_CS_TA/u_SR_RAMS_CS/SLICE_34:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE        11     0.707<A href="#@net:CLKOS:RPLL.CLKOS:R3C18D.CLK:0.707">     RPLL.CLKOS to R3C18D.CLK    </A> <A href="#@net:CLKOS">CLKOS</A>
+                  --------
+                    0.707   (0.0% logic, 100.0% route), 0 logic levels.
+<font color=#000000> 
+
+Passed: The following path meets requirements by 0.304ns
+ </font>
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              <A href="#@comp:u_RAM_CS_TA/u_SR_TA/SLICE_36">u_RAM_CS_TA/u_SR_TA/shift_reg_i1</A>  (from <A href="#@net:CLKOS">CLKOS</A> +)
+   Destination:    FF         Data in        <A href="#@comp:u_RAM_CS_TA/u_SR_TA/SLICE_36">u_RAM_CS_TA/u_SR_TA/shift_reg_i2</A>  (to <A href="#@net:CLKOS">CLKOS</A> +)
+
+   Delay:               0.285ns  (46.7% logic, 53.3% route), 1 logic levels.
+
+ Constraint Details:
+
+      0.285ns physical path delay u_RAM_CS_TA/u_SR_TA/SLICE_36 to u_RAM_CS_TA/u_SR_TA/SLICE_36 meets
+     -0.019ns M_HLD and
+      0.000ns delay constraint less
+      0.000ns skew requirement (totaling -0.019ns) by 0.304ns
+
+ Physical Path Details:
+
+      <A href="#@path:FREQUENCY NET 'CLKOS' 200.000000 MHz ;:REG_DEL, 0.133,R2C19C.CLK,R2C19C.Q1,u_RAM_CS_TA/u_SR_TA/SLICE_36:ROUTE, 0.152,R2C19C.Q1,R2C19C.M0,u_RAM_CS_TA/u_SR_TA/shift_reg_1">Data path</A> u_RAM_CS_TA/u_SR_TA/SLICE_36 to u_RAM_CS_TA/u_SR_TA/SLICE_36:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.133     R2C19C.CLK to      R2C19C.Q1 <A href="#@comp:u_RAM_CS_TA/u_SR_TA/SLICE_36">u_RAM_CS_TA/u_SR_TA/SLICE_36</A> (from <A href="#@net:CLKOS">CLKOS</A>)
+ROUTE         1     0.152<A href="#@net:u_RAM_CS_TA/u_SR_TA/shift_reg_1:R2C19C.Q1:R2C19C.M0:0.152">      R2C19C.Q1 to R2C19C.M0     </A> <A href="#@net:u_RAM_CS_TA/u_SR_TA/shift_reg_1">u_RAM_CS_TA/u_SR_TA/shift_reg_1</A> (to <A href="#@net:CLKOS">CLKOS</A>)
+                  --------
+                    0.285   (46.7% logic, 53.3% route), 1 logic levels.
+
+ Clock Skew Details: 
+
+      <A href="#@path:FREQUENCY NET 'CLKOS' 200.000000 MHz ;:ROUTE, 0.707,RPLL.CLKOS,R2C19C.CLK,CLKOS">Source Clock Path</A> u_ZenPLL/PLLInst_0 to u_RAM_CS_TA/u_SR_TA/SLICE_36:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE        11     0.707<A href="#@net:CLKOS:RPLL.CLKOS:R2C19C.CLK:0.707">     RPLL.CLKOS to R2C19C.CLK    </A> <A href="#@net:CLKOS">CLKOS</A>
+                  --------
+                    0.707   (0.0% logic, 100.0% route), 0 logic levels.
+
+      <A href="#@path:FREQUENCY NET 'CLKOS' 200.000000 MHz ;:ROUTE, 0.707,RPLL.CLKOS,R2C19C.CLK,CLKOS">Destination Clock Path</A> u_ZenPLL/PLLInst_0 to u_RAM_CS_TA/u_SR_TA/SLICE_36:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE        11     0.707<A href="#@net:CLKOS:RPLL.CLKOS:R2C19C.CLK:0.707">     RPLL.CLKOS to R2C19C.CLK    </A> <A href="#@net:CLKOS">CLKOS</A>
+                  --------
+                    0.707   (0.0% logic, 100.0% route), 0 logic levels.
+<font color=#000000> 
+
+Passed: The following path meets requirements by 0.304ns
+ </font>
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              <A href="#@comp:u_RAM_CS_TA/u_SR_RAMS_CS/SLICE_33">u_RAM_CS_TA/u_SR_RAMS_CS/shift_reg_i3</A>  (from <A href="#@net:CLKOS">CLKOS</A> +)
+   Destination:    FF         Data in        <A href="#@comp:u_RAM_CS_TA/u_SR_RAMS_CS/SLICE_33">u_RAM_CS_TA/u_SR_RAMS_CS/shift_reg_i4</A>  (to <A href="#@net:CLKOS">CLKOS</A> +)
+
+   Delay:               0.285ns  (46.7% logic, 53.3% route), 1 logic levels.
+
+ Constraint Details:
+
+      0.285ns physical path delay u_RAM_CS_TA/u_SR_RAMS_CS/SLICE_33 to u_RAM_CS_TA/u_SR_RAMS_CS/SLICE_33 meets
+     -0.019ns M_HLD and
+      0.000ns delay constraint less
+      0.000ns skew requirement (totaling -0.019ns) by 0.304ns
+
+ Physical Path Details:
+
+      <A href="#@path:FREQUENCY NET 'CLKOS' 200.000000 MHz ;:REG_DEL, 0.133,R3C18B.CLK,R3C18B.Q1,u_RAM_CS_TA/u_SR_RAMS_CS/SLICE_33:ROUTE, 0.152,R3C18B.Q1,R3C18B.M0,u_RAM_CS_TA/u_SR_RAMS_CS/shift_reg_3">Data path</A> u_RAM_CS_TA/u_SR_RAMS_CS/SLICE_33 to u_RAM_CS_TA/u_SR_RAMS_CS/SLICE_33:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.133     R3C18B.CLK to      R3C18B.Q1 <A href="#@comp:u_RAM_CS_TA/u_SR_RAMS_CS/SLICE_33">u_RAM_CS_TA/u_SR_RAMS_CS/SLICE_33</A> (from <A href="#@net:CLKOS">CLKOS</A>)
+ROUTE         1     0.152<A href="#@net:u_RAM_CS_TA/u_SR_RAMS_CS/shift_reg_3:R3C18B.Q1:R3C18B.M0:0.152">      R3C18B.Q1 to R3C18B.M0     </A> <A href="#@net:u_RAM_CS_TA/u_SR_RAMS_CS/shift_reg_3">u_RAM_CS_TA/u_SR_RAMS_CS/shift_reg_3</A> (to <A href="#@net:CLKOS">CLKOS</A>)
+                  --------
+                    0.285   (46.7% logic, 53.3% route), 1 logic levels.
+
+ Clock Skew Details: 
+
+      <A href="#@path:FREQUENCY NET 'CLKOS' 200.000000 MHz ;:ROUTE, 0.707,RPLL.CLKOS,R3C18B.CLK,CLKOS">Source Clock Path</A> u_ZenPLL/PLLInst_0 to u_RAM_CS_TA/u_SR_RAMS_CS/SLICE_33:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE        11     0.707<A href="#@net:CLKOS:RPLL.CLKOS:R3C18B.CLK:0.707">     RPLL.CLKOS to R3C18B.CLK    </A> <A href="#@net:CLKOS">CLKOS</A>
+                  --------
+                    0.707   (0.0% logic, 100.0% route), 0 logic levels.
+
+      <A href="#@path:FREQUENCY NET 'CLKOS' 200.000000 MHz ;:ROUTE, 0.707,RPLL.CLKOS,R3C18B.CLK,CLKOS">Destination Clock Path</A> u_ZenPLL/PLLInst_0 to u_RAM_CS_TA/u_SR_RAMS_CS/SLICE_33:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE        11     0.707<A href="#@net:CLKOS:RPLL.CLKOS:R3C18B.CLK:0.707">     RPLL.CLKOS to R3C18B.CLK    </A> <A href="#@net:CLKOS">CLKOS</A>
+                  --------
+                    0.707   (0.0% logic, 100.0% route), 0 logic levels.
+<font color=#000000> 
+
+Passed: The following path meets requirements by 0.304ns
+ </font>
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              <A href="#@comp:u_RAM_CS_TA/u_SR_TA/SLICE_36">u_RAM_CS_TA/u_SR_TA/shift_reg_i2</A>  (from <A href="#@net:CLKOS">CLKOS</A> +)
+   Destination:    FF         Data in        <A href="#@comp:u_RAM_CS_TA/u_SR_TA/SLICE_37">u_RAM_CS_TA/u_SR_TA/shift_reg_i3</A>  (to <A href="#@net:CLKOS">CLKOS</A> +)
+
+   Delay:               0.285ns  (46.7% logic, 53.3% route), 1 logic levels.
+
+ Constraint Details:
+
+      0.285ns physical path delay u_RAM_CS_TA/u_SR_TA/SLICE_36 to u_RAM_CS_TA/u_SR_TA/SLICE_37 meets
+     -0.019ns M_HLD and
+      0.000ns delay constraint less
+      0.000ns skew requirement (totaling -0.019ns) by 0.304ns
+
+ Physical Path Details:
+
+      <A href="#@path:FREQUENCY NET 'CLKOS' 200.000000 MHz ;:REG_DEL, 0.133,R2C19C.CLK,R2C19C.Q0,u_RAM_CS_TA/u_SR_TA/SLICE_36:ROUTE, 0.152,R2C19C.Q0,R2C19B.M1,u_RAM_CS_TA/u_SR_TA/shift_reg_2">Data path</A> u_RAM_CS_TA/u_SR_TA/SLICE_36 to u_RAM_CS_TA/u_SR_TA/SLICE_37:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.133     R2C19C.CLK to      R2C19C.Q0 <A href="#@comp:u_RAM_CS_TA/u_SR_TA/SLICE_36">u_RAM_CS_TA/u_SR_TA/SLICE_36</A> (from <A href="#@net:CLKOS">CLKOS</A>)
+ROUTE         1     0.152<A href="#@net:u_RAM_CS_TA/u_SR_TA/shift_reg_2:R2C19C.Q0:R2C19B.M1:0.152">      R2C19C.Q0 to R2C19B.M1     </A> <A href="#@net:u_RAM_CS_TA/u_SR_TA/shift_reg_2">u_RAM_CS_TA/u_SR_TA/shift_reg_2</A> (to <A href="#@net:CLKOS">CLKOS</A>)
+                  --------
+                    0.285   (46.7% logic, 53.3% route), 1 logic levels.
+
+ Clock Skew Details: 
+
+      <A href="#@path:FREQUENCY NET 'CLKOS' 200.000000 MHz ;:ROUTE, 0.707,RPLL.CLKOS,R2C19C.CLK,CLKOS">Source Clock Path</A> u_ZenPLL/PLLInst_0 to u_RAM_CS_TA/u_SR_TA/SLICE_36:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE        11     0.707<A href="#@net:CLKOS:RPLL.CLKOS:R2C19C.CLK:0.707">     RPLL.CLKOS to R2C19C.CLK    </A> <A href="#@net:CLKOS">CLKOS</A>
+                  --------
+                    0.707   (0.0% logic, 100.0% route), 0 logic levels.
+
+      <A href="#@path:FREQUENCY NET 'CLKOS' 200.000000 MHz ;:ROUTE, 0.707,RPLL.CLKOS,R2C19B.CLK,CLKOS">Destination Clock Path</A> u_ZenPLL/PLLInst_0 to u_RAM_CS_TA/u_SR_TA/SLICE_37:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE        11     0.707<A href="#@net:CLKOS:RPLL.CLKOS:R2C19B.CLK:0.707">     RPLL.CLKOS to R2C19B.CLK    </A> <A href="#@net:CLKOS">CLKOS</A>
+                  --------
+                    0.707   (0.0% logic, 100.0% route), 0 logic levels.
+<font color=#000000> 
+
+Passed: The following path meets requirements by 0.304ns
+ </font>
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              <A href="#@comp:u_RAM_CS_TA/u_SR_TA/SLICE_37">u_RAM_CS_TA/u_SR_TA/shift_reg_i4</A>  (from <A href="#@net:CLKOS">CLKOS</A> +)
+   Destination:    FF         Data in        <A href="#@comp:u_RAM_CS_TA/u_SR_TA/SLICE_38">u_RAM_CS_TA/u_SR_TA/shift_reg_i5</A>  (to <A href="#@net:CLKOS">CLKOS</A> +)
+
+   Delay:               0.285ns  (46.7% logic, 53.3% route), 1 logic levels.
+
+ Constraint Details:
+
+      0.285ns physical path delay u_RAM_CS_TA/u_SR_TA/SLICE_37 to u_RAM_CS_TA/u_SR_TA/SLICE_38 meets
+     -0.019ns M_HLD and
+      0.000ns delay constraint less
+      0.000ns skew requirement (totaling -0.019ns) by 0.304ns
+
+ Physical Path Details:
+
+      <A href="#@path:FREQUENCY NET 'CLKOS' 200.000000 MHz ;:REG_DEL, 0.133,R2C19B.CLK,R2C19B.Q0,u_RAM_CS_TA/u_SR_TA/SLICE_37:ROUTE, 0.152,R2C19B.Q0,R2C19A.M1,u_RAM_CS_TA/u_SR_TA/shift_reg_4">Data path</A> u_RAM_CS_TA/u_SR_TA/SLICE_37 to u_RAM_CS_TA/u_SR_TA/SLICE_38:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.133     R2C19B.CLK to      R2C19B.Q0 <A href="#@comp:u_RAM_CS_TA/u_SR_TA/SLICE_37">u_RAM_CS_TA/u_SR_TA/SLICE_37</A> (from <A href="#@net:CLKOS">CLKOS</A>)
+ROUTE         1     0.152<A href="#@net:u_RAM_CS_TA/u_SR_TA/shift_reg_4:R2C19B.Q0:R2C19A.M1:0.152">      R2C19B.Q0 to R2C19A.M1     </A> <A href="#@net:u_RAM_CS_TA/u_SR_TA/shift_reg_4">u_RAM_CS_TA/u_SR_TA/shift_reg_4</A> (to <A href="#@net:CLKOS">CLKOS</A>)
+                  --------
+                    0.285   (46.7% logic, 53.3% route), 1 logic levels.
+
+ Clock Skew Details: 
+
+      <A href="#@path:FREQUENCY NET 'CLKOS' 200.000000 MHz ;:ROUTE, 0.707,RPLL.CLKOS,R2C19B.CLK,CLKOS">Source Clock Path</A> u_ZenPLL/PLLInst_0 to u_RAM_CS_TA/u_SR_TA/SLICE_37:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE        11     0.707<A href="#@net:CLKOS:RPLL.CLKOS:R2C19B.CLK:0.707">     RPLL.CLKOS to R2C19B.CLK    </A> <A href="#@net:CLKOS">CLKOS</A>
+                  --------
+                    0.707   (0.0% logic, 100.0% route), 0 logic levels.
+
+      <A href="#@path:FREQUENCY NET 'CLKOS' 200.000000 MHz ;:ROUTE, 0.707,RPLL.CLKOS,R2C19A.CLK,CLKOS">Destination Clock Path</A> u_ZenPLL/PLLInst_0 to u_RAM_CS_TA/u_SR_TA/SLICE_38:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE        11     0.707<A href="#@net:CLKOS:RPLL.CLKOS:R2C19A.CLK:0.707">     RPLL.CLKOS to R2C19A.CLK    </A> <A href="#@net:CLKOS">CLKOS</A>
+                  --------
+                    0.707   (0.0% logic, 100.0% route), 0 logic levels.
+<font color=#000000> 
+
+Passed: The following path meets requirements by 0.304ns
+ </font>
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              <A href="#@comp:u_RAM_CS_TA/u_SR_RAMS_CS/SLICE_34">u_RAM_CS_TA/u_SR_RAMS_CS/shift_reg_i5</A>  (from <A href="#@net:CLKOS">CLKOS</A> +)
+   Destination:    FF         Data in        <A href="#@comp:u_RAM_CS_TA/u_SR_RAMS_CS/SLICE_34">u_RAM_CS_TA/u_SR_RAMS_CS/shift_reg_i6</A>  (to <A href="#@net:CLKOS">CLKOS</A> +)
+
+   Delay:               0.285ns  (46.7% logic, 53.3% route), 1 logic levels.
+
+ Constraint Details:
+
+      0.285ns physical path delay u_RAM_CS_TA/u_SR_RAMS_CS/SLICE_34 to u_RAM_CS_TA/u_SR_RAMS_CS/SLICE_34 meets
+     -0.019ns M_HLD and
+      0.000ns delay constraint less
+      0.000ns skew requirement (totaling -0.019ns) by 0.304ns
+
+ Physical Path Details:
+
+      <A href="#@path:FREQUENCY NET 'CLKOS' 200.000000 MHz ;:REG_DEL, 0.133,R3C18D.CLK,R3C18D.Q1,u_RAM_CS_TA/u_SR_RAMS_CS/SLICE_34:ROUTE, 0.152,R3C18D.Q1,R3C18D.M0,u_RAM_CS_TA/u_SR_RAMS_CS/shift_reg_5">Data path</A> u_RAM_CS_TA/u_SR_RAMS_CS/SLICE_34 to u_RAM_CS_TA/u_SR_RAMS_CS/SLICE_34:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.133     R3C18D.CLK to      R3C18D.Q1 <A href="#@comp:u_RAM_CS_TA/u_SR_RAMS_CS/SLICE_34">u_RAM_CS_TA/u_SR_RAMS_CS/SLICE_34</A> (from <A href="#@net:CLKOS">CLKOS</A>)
+ROUTE         1     0.152<A href="#@net:u_RAM_CS_TA/u_SR_RAMS_CS/shift_reg_5:R3C18D.Q1:R3C18D.M0:0.152">      R3C18D.Q1 to R3C18D.M0     </A> <A href="#@net:u_RAM_CS_TA/u_SR_RAMS_CS/shift_reg_5">u_RAM_CS_TA/u_SR_RAMS_CS/shift_reg_5</A> (to <A href="#@net:CLKOS">CLKOS</A>)
+                  --------
+                    0.285   (46.7% logic, 53.3% route), 1 logic levels.
+
+ Clock Skew Details: 
+
+      <A href="#@path:FREQUENCY NET 'CLKOS' 200.000000 MHz ;:ROUTE, 0.707,RPLL.CLKOS,R3C18D.CLK,CLKOS">Source Clock Path</A> u_ZenPLL/PLLInst_0 to u_RAM_CS_TA/u_SR_RAMS_CS/SLICE_34:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE        11     0.707<A href="#@net:CLKOS:RPLL.CLKOS:R3C18D.CLK:0.707">     RPLL.CLKOS to R3C18D.CLK    </A> <A href="#@net:CLKOS">CLKOS</A>
+                  --------
+                    0.707   (0.0% logic, 100.0% route), 0 logic levels.
+
+      <A href="#@path:FREQUENCY NET 'CLKOS' 200.000000 MHz ;:ROUTE, 0.707,RPLL.CLKOS,R3C18D.CLK,CLKOS">Destination Clock Path</A> u_ZenPLL/PLLInst_0 to u_RAM_CS_TA/u_SR_RAMS_CS/SLICE_34:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE        11     0.707<A href="#@net:CLKOS:RPLL.CLKOS:R3C18D.CLK:0.707">     RPLL.CLKOS to R3C18D.CLK    </A> <A href="#@net:CLKOS">CLKOS</A>
+                  --------
+                    0.707   (0.0% logic, 100.0% route), 0 logic levels.
+<font color=#000000> 
+
+Passed: The following path meets requirements by 0.304ns
+ </font>
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              <A href="#@comp:u_RAM_CS_TA/u_SR_RAMS_CS/SLICE_32">u_RAM_CS_TA/u_SR_RAMS_CS/shift_reg_i2</A>  (from <A href="#@net:CLKOS">CLKOS</A> +)
+   Destination:    FF         Data in        <A href="#@comp:u_RAM_CS_TA/u_SR_RAMS_CS/SLICE_33">u_RAM_CS_TA/u_SR_RAMS_CS/shift_reg_i3</A>  (to <A href="#@net:CLKOS">CLKOS</A> +)
+
+   Delay:               0.285ns  (46.7% logic, 53.3% route), 1 logic levels.
+
+ Constraint Details:
+
+      0.285ns physical path delay u_RAM_CS_TA/u_SR_RAMS_CS/SLICE_32 to u_RAM_CS_TA/u_SR_RAMS_CS/SLICE_33 meets
+     -0.019ns M_HLD and
+      0.000ns delay constraint less
+      0.000ns skew requirement (totaling -0.019ns) by 0.304ns
+
+ Physical Path Details:
+
+      <A href="#@path:FREQUENCY NET 'CLKOS' 200.000000 MHz ;:REG_DEL, 0.133,R3C18C.CLK,R3C18C.Q0,u_RAM_CS_TA/u_SR_RAMS_CS/SLICE_32:ROUTE, 0.152,R3C18C.Q0,R3C18B.M1,u_RAM_CS_TA/u_SR_RAMS_CS/shift_reg_2">Data path</A> u_RAM_CS_TA/u_SR_RAMS_CS/SLICE_32 to u_RAM_CS_TA/u_SR_RAMS_CS/SLICE_33:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.133     R3C18C.CLK to      R3C18C.Q0 <A href="#@comp:u_RAM_CS_TA/u_SR_RAMS_CS/SLICE_32">u_RAM_CS_TA/u_SR_RAMS_CS/SLICE_32</A> (from <A href="#@net:CLKOS">CLKOS</A>)
+ROUTE         1     0.152<A href="#@net:u_RAM_CS_TA/u_SR_RAMS_CS/shift_reg_2:R3C18C.Q0:R3C18B.M1:0.152">      R3C18C.Q0 to R3C18B.M1     </A> <A href="#@net:u_RAM_CS_TA/u_SR_RAMS_CS/shift_reg_2">u_RAM_CS_TA/u_SR_RAMS_CS/shift_reg_2</A> (to <A href="#@net:CLKOS">CLKOS</A>)
+                  --------
+                    0.285   (46.7% logic, 53.3% route), 1 logic levels.
+
+ Clock Skew Details: 
+
+      <A href="#@path:FREQUENCY NET 'CLKOS' 200.000000 MHz ;:ROUTE, 0.707,RPLL.CLKOS,R3C18C.CLK,CLKOS">Source Clock Path</A> u_ZenPLL/PLLInst_0 to u_RAM_CS_TA/u_SR_RAMS_CS/SLICE_32:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE        11     0.707<A href="#@net:CLKOS:RPLL.CLKOS:R3C18C.CLK:0.707">     RPLL.CLKOS to R3C18C.CLK    </A> <A href="#@net:CLKOS">CLKOS</A>
+                  --------
+                    0.707   (0.0% logic, 100.0% route), 0 logic levels.
+
+      <A href="#@path:FREQUENCY NET 'CLKOS' 200.000000 MHz ;:ROUTE, 0.707,RPLL.CLKOS,R3C18B.CLK,CLKOS">Destination Clock Path</A> u_ZenPLL/PLLInst_0 to u_RAM_CS_TA/u_SR_RAMS_CS/SLICE_33:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE        11     0.707<A href="#@net:CLKOS:RPLL.CLKOS:R3C18B.CLK:0.707">     RPLL.CLKOS to R3C18B.CLK    </A> <A href="#@net:CLKOS">CLKOS</A>
+                  --------
+                    0.707   (0.0% logic, 100.0% route), 0 logic levels.
+
+
+</A><A name="FREQUENCY NET 'u_ZenPLL/CLKOP' 50.000000 MH"></A>================================================================================
+Preference: FREQUENCY NET "u_ZenPLL/CLKOP" 50.000000 MHz ;
+            0 items scored, 0 timing errors detected.
+--------------------------------------------------------------------------------
+
+
+</A><A name="FREQUENCY NET 'CLKOS2' 100.000000 MH"></A>================================================================================
+Preference: FREQUENCY NET "CLKOS2" 100.000000 MHz ;
+            10 items scored, 0 timing errors detected.
+--------------------------------------------------------------------------------
+<font color=#000000> 
+
+Passed: The following path meets requirements by 0.304ns
+ </font>
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              <A href="#@comp:SLICE_30">u_ROM_CS_TA/u_SR_TA/shift_reg_i4</A>  (from <A href="#@net:CLKOS2">CLKOS2</A> +)
+   Destination:    FF         Data in        <A href="#@comp:SLICE_30">u_ROM_CS_TA/u_SR_TA/shift_reg_i5</A>  (to <A href="#@net:CLKOS2">CLKOS2</A> +)
+
+   Delay:               0.285ns  (46.7% logic, 53.3% route), 1 logic levels.
+
+ Constraint Details:
+
+      0.285ns physical path delay SLICE_30 to SLICE_30 meets
+     -0.019ns M_HLD and
+      0.000ns delay constraint less
+      0.000ns skew requirement (totaling -0.019ns) by 0.304ns
+
+ Physical Path Details:
+
+      <A href="#@path:FREQUENCY NET 'CLKOS2' 100.000000 MHz ;:REG_DEL, 0.133,R2C15D.CLK,R2C15D.Q0,SLICE_30:ROUTE, 0.152,R2C15D.Q0,R2C15D.M1,u_ROM_CS_TA/u_SR_TA/shift_reg_5">Data path</A> SLICE_30 to SLICE_30:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.133     R2C15D.CLK to      R2C15D.Q0 <A href="#@comp:SLICE_30">SLICE_30</A> (from <A href="#@net:CLKOS2">CLKOS2</A>)
+ROUTE         1     0.152<A href="#@net:u_ROM_CS_TA/u_SR_TA/shift_reg_5:R2C15D.Q0:R2C15D.M1:0.152">      R2C15D.Q0 to R2C15D.M1     </A> <A href="#@net:u_ROM_CS_TA/u_SR_TA/shift_reg_5">u_ROM_CS_TA/u_SR_TA/shift_reg_5</A> (to <A href="#@net:CLKOS2">CLKOS2</A>)
+                  --------
+                    0.285   (46.7% logic, 53.3% route), 1 logic levels.
+
+ Clock Skew Details: 
+
+      <A href="#@path:FREQUENCY NET 'CLKOS2' 100.000000 MHz ;:ROUTE, 1.252,RPLL.CLKOS2,R2C15D.CLK,CLKOS2">Source Clock Path</A> u_ZenPLL/PLLInst_0 to SLICE_30:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE         9     1.252<A href="#@net:CLKOS2:RPLL.CLKOS2:R2C15D.CLK:1.252">    RPLL.CLKOS2 to R2C15D.CLK    </A> <A href="#@net:CLKOS2">CLKOS2</A>
+                  --------
+                    1.252   (0.0% logic, 100.0% route), 0 logic levels.
+
+      <A href="#@path:FREQUENCY NET 'CLKOS2' 100.000000 MHz ;:ROUTE, 1.252,RPLL.CLKOS2,R2C15D.CLK,CLKOS2">Destination Clock Path</A> u_ZenPLL/PLLInst_0 to SLICE_30:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE         9     1.252<A href="#@net:CLKOS2:RPLL.CLKOS2:R2C15D.CLK:1.252">    RPLL.CLKOS2 to R2C15D.CLK    </A> <A href="#@net:CLKOS2">CLKOS2</A>
+                  --------
+                    1.252   (0.0% logic, 100.0% route), 0 logic levels.
+<font color=#000000> 
+
+Passed: The following path meets requirements by 0.304ns
+ </font>
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              <A href="#@comp:SLICE_30">u_ROM_CS_TA/u_SR_TA/shift_reg_i5</A>  (from <A href="#@net:CLKOS2">CLKOS2</A> +)
+   Destination:    FF         Data in        <A href="#@comp:u_ROM_CS_TA/u_SR_TA/SLICE_2">u_ROM_CS_TA/u_SR_TA/shift_reg_i6</A>  (to <A href="#@net:CLKOS2">CLKOS2</A> +)
+
+   Delay:               0.285ns  (46.7% logic, 53.3% route), 1 logic levels.
+
+ Constraint Details:
+
+      0.285ns physical path delay SLICE_30 to u_ROM_CS_TA/u_SR_TA/SLICE_2 meets
+     -0.019ns M_HLD and
+      0.000ns delay constraint less
+      0.000ns skew requirement (totaling -0.019ns) by 0.304ns
+
+ Physical Path Details:
+
+      <A href="#@path:FREQUENCY NET 'CLKOS2' 100.000000 MHz ;:REG_DEL, 0.133,R2C15D.CLK,R2C15D.Q1,SLICE_30:ROUTE, 0.152,R2C15D.Q1,R2C15A.M0,u_ROM_CS_TA/u_SR_TA/shift_reg_6">Data path</A> SLICE_30 to u_ROM_CS_TA/u_SR_TA/SLICE_2:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.133     R2C15D.CLK to      R2C15D.Q1 <A href="#@comp:SLICE_30">SLICE_30</A> (from <A href="#@net:CLKOS2">CLKOS2</A>)
+ROUTE         1     0.152<A href="#@net:u_ROM_CS_TA/u_SR_TA/shift_reg_6:R2C15D.Q1:R2C15A.M0:0.152">      R2C15D.Q1 to R2C15A.M0     </A> <A href="#@net:u_ROM_CS_TA/u_SR_TA/shift_reg_6">u_ROM_CS_TA/u_SR_TA/shift_reg_6</A> (to <A href="#@net:CLKOS2">CLKOS2</A>)
+                  --------
+                    0.285   (46.7% logic, 53.3% route), 1 logic levels.
+
+ Clock Skew Details: 
+
+      <A href="#@path:FREQUENCY NET 'CLKOS2' 100.000000 MHz ;:ROUTE, 1.252,RPLL.CLKOS2,R2C15D.CLK,CLKOS2">Source Clock Path</A> u_ZenPLL/PLLInst_0 to SLICE_30:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE         9     1.252<A href="#@net:CLKOS2:RPLL.CLKOS2:R2C15D.CLK:1.252">    RPLL.CLKOS2 to R2C15D.CLK    </A> <A href="#@net:CLKOS2">CLKOS2</A>
+                  --------
+                    1.252   (0.0% logic, 100.0% route), 0 logic levels.
+
+      <A href="#@path:FREQUENCY NET 'CLKOS2' 100.000000 MHz ;:ROUTE, 1.252,RPLL.CLKOS2,R2C15A.CLK,CLKOS2">Destination Clock Path</A> u_ZenPLL/PLLInst_0 to u_ROM_CS_TA/u_SR_TA/SLICE_2:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE         9     1.252<A href="#@net:CLKOS2:RPLL.CLKOS2:R2C15A.CLK:1.252">    RPLL.CLKOS2 to R2C15A.CLK    </A> <A href="#@net:CLKOS2">CLKOS2</A>
+                  --------
+                    1.252   (0.0% logic, 100.0% route), 0 logic levels.
+<font color=#000000> 
+
+Passed: The following path meets requirements by 0.304ns
+ </font>
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              <A href="#@comp:u_ROM_CS_TA/u_SR_ROMS_CS/SLICE_23">u_ROM_CS_TA/u_SR_ROMS_CS/shift_reg__i1</A>  (from <A href="#@net:CLKOS2">CLKOS2</A> +)
+   Destination:    FF         Data in        <A href="#@comp:u_ROM_CS_TA/u_SR_ROMS_CS/SLICE_40">u_ROM_CS_TA/u_SR_ROMS_CS/shift_reg__i2</A>  (to <A href="#@net:CLKOS2">CLKOS2</A> +)
+
+   Delay:               0.285ns  (46.7% logic, 53.3% route), 1 logic levels.
+
+ Constraint Details:
+
+      0.285ns physical path delay u_ROM_CS_TA/u_SR_ROMS_CS/SLICE_23 to u_ROM_CS_TA/u_SR_ROMS_CS/SLICE_40 meets
+     -0.019ns M_HLD and
+      0.000ns delay constraint less
+      0.000ns skew requirement (totaling -0.019ns) by 0.304ns
+
+ Physical Path Details:
+
+      <A href="#@path:FREQUENCY NET 'CLKOS2' 100.000000 MHz ;:REG_DEL, 0.133,R2C16D.CLK,R2C16D.Q0,u_ROM_CS_TA/u_SR_ROMS_CS/SLICE_23:ROUTE, 0.152,R2C16D.Q0,R2C16C.M1,u_ROM_CS_TA/u_SR_ROMS_CS/shift_reg_2">Data path</A> u_ROM_CS_TA/u_SR_ROMS_CS/SLICE_23 to u_ROM_CS_TA/u_SR_ROMS_CS/SLICE_40:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.133     R2C16D.CLK to      R2C16D.Q0 <A href="#@comp:u_ROM_CS_TA/u_SR_ROMS_CS/SLICE_23">u_ROM_CS_TA/u_SR_ROMS_CS/SLICE_23</A> (from <A href="#@net:CLKOS2">CLKOS2</A>)
+ROUTE         1     0.152<A href="#@net:u_ROM_CS_TA/u_SR_ROMS_CS/shift_reg_2:R2C16D.Q0:R2C16C.M1:0.152">      R2C16D.Q0 to R2C16C.M1     </A> <A href="#@net:u_ROM_CS_TA/u_SR_ROMS_CS/shift_reg_2">u_ROM_CS_TA/u_SR_ROMS_CS/shift_reg_2</A> (to <A href="#@net:CLKOS2">CLKOS2</A>)
+                  --------
+                    0.285   (46.7% logic, 53.3% route), 1 logic levels.
+
+ Clock Skew Details: 
+
+      <A href="#@path:FREQUENCY NET 'CLKOS2' 100.000000 MHz ;:ROUTE, 1.252,RPLL.CLKOS2,R2C16D.CLK,CLKOS2">Source Clock Path</A> u_ZenPLL/PLLInst_0 to u_ROM_CS_TA/u_SR_ROMS_CS/SLICE_23:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE         9     1.252<A href="#@net:CLKOS2:RPLL.CLKOS2:R2C16D.CLK:1.252">    RPLL.CLKOS2 to R2C16D.CLK    </A> <A href="#@net:CLKOS2">CLKOS2</A>
+                  --------
+                    1.252   (0.0% logic, 100.0% route), 0 logic levels.
+
+      <A href="#@path:FREQUENCY NET 'CLKOS2' 100.000000 MHz ;:ROUTE, 1.252,RPLL.CLKOS2,R2C16C.CLK,CLKOS2">Destination Clock Path</A> u_ZenPLL/PLLInst_0 to u_ROM_CS_TA/u_SR_ROMS_CS/SLICE_40:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE         9     1.252<A href="#@net:CLKOS2:RPLL.CLKOS2:R2C16C.CLK:1.252">    RPLL.CLKOS2 to R2C16C.CLK    </A> <A href="#@net:CLKOS2">CLKOS2</A>
+                  --------
+                    1.252   (0.0% logic, 100.0% route), 0 logic levels.
+<font color=#000000> 
+
+Passed: The following path meets requirements by 0.304ns
+ </font>
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              <A href="#@comp:u_ROM_CS_TA/u_SR_TA/SLICE_28">u_ROM_CS_TA/u_SR_TA/shift_reg_i1</A>  (from <A href="#@net:CLKOS2">CLKOS2</A> +)
+   Destination:    FF         Data in        <A href="#@comp:u_ROM_CS_TA/u_SR_TA/SLICE_42">u_ROM_CS_TA/u_SR_TA/shift_reg_i2</A>  (to <A href="#@net:CLKOS2">CLKOS2</A> +)
+
+   Delay:               0.285ns  (46.7% logic, 53.3% route), 1 logic levels.
+
+ Constraint Details:
+
+      0.285ns physical path delay u_ROM_CS_TA/u_SR_TA/SLICE_28 to u_ROM_CS_TA/u_SR_TA/SLICE_42 meets
+     -0.019ns M_HLD and
+      0.000ns delay constraint less
+      0.000ns skew requirement (totaling -0.019ns) by 0.304ns
+
+ Physical Path Details:
+
+      <A href="#@path:FREQUENCY NET 'CLKOS2' 100.000000 MHz ;:REG_DEL, 0.133,R2C15B.CLK,R2C15B.Q0,u_ROM_CS_TA/u_SR_TA/SLICE_28:ROUTE, 0.152,R2C15B.Q0,R2C15C.M1,u_ROM_CS_TA/u_SR_TA/shift_reg_2">Data path</A> u_ROM_CS_TA/u_SR_TA/SLICE_28 to u_ROM_CS_TA/u_SR_TA/SLICE_42:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.133     R2C15B.CLK to      R2C15B.Q0 <A href="#@comp:u_ROM_CS_TA/u_SR_TA/SLICE_28">u_ROM_CS_TA/u_SR_TA/SLICE_28</A> (from <A href="#@net:CLKOS2">CLKOS2</A>)
+ROUTE         1     0.152<A href="#@net:u_ROM_CS_TA/u_SR_TA/shift_reg_2:R2C15B.Q0:R2C15C.M1:0.152">      R2C15B.Q0 to R2C15C.M1     </A> <A href="#@net:u_ROM_CS_TA/u_SR_TA/shift_reg_2">u_ROM_CS_TA/u_SR_TA/shift_reg_2</A> (to <A href="#@net:CLKOS2">CLKOS2</A>)
+                  --------
+                    0.285   (46.7% logic, 53.3% route), 1 logic levels.
+
+ Clock Skew Details: 
+
+      <A href="#@path:FREQUENCY NET 'CLKOS2' 100.000000 MHz ;:ROUTE, 1.252,RPLL.CLKOS2,R2C15B.CLK,CLKOS2">Source Clock Path</A> u_ZenPLL/PLLInst_0 to u_ROM_CS_TA/u_SR_TA/SLICE_28:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE         9     1.252<A href="#@net:CLKOS2:RPLL.CLKOS2:R2C15B.CLK:1.252">    RPLL.CLKOS2 to R2C15B.CLK    </A> <A href="#@net:CLKOS2">CLKOS2</A>
+                  --------
+                    1.252   (0.0% logic, 100.0% route), 0 logic levels.
+
+      <A href="#@path:FREQUENCY NET 'CLKOS2' 100.000000 MHz ;:ROUTE, 1.252,RPLL.CLKOS2,R2C15C.CLK,CLKOS2">Destination Clock Path</A> u_ZenPLL/PLLInst_0 to u_ROM_CS_TA/u_SR_TA/SLICE_42:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE         9     1.252<A href="#@net:CLKOS2:RPLL.CLKOS2:R2C15C.CLK:1.252">    RPLL.CLKOS2 to R2C15C.CLK    </A> <A href="#@net:CLKOS2">CLKOS2</A>
+                  --------
+                    1.252   (0.0% logic, 100.0% route), 0 logic levels.
+<font color=#000000> 
+
+Passed: The following path meets requirements by 0.304ns
+ </font>
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              <A href="#@comp:u_ROM_CS_TA/u_SR_ROMS_CS/SLICE_41">u_ROM_CS_TA/u_SR_ROMS_CS/shift_reg__i5</A>  (from <A href="#@net:CLKOS2">CLKOS2</A> +)
+   Destination:    FF         Data in        <A href="#@comp:u_ROM_CS_TA/u_SR_ROMS_CS/SLICE_1">u_ROM_CS_TA/u_SR_ROMS_CS/shift_reg__i6</A>  (to <A href="#@net:CLKOS2">CLKOS2</A> +)
+
+   Delay:               0.285ns  (46.7% logic, 53.3% route), 1 logic levels.
+
+ Constraint Details:
+
+      0.285ns physical path delay u_ROM_CS_TA/u_SR_ROMS_CS/SLICE_41 to u_ROM_CS_TA/u_SR_ROMS_CS/SLICE_1 meets
+     -0.019ns M_HLD and
+      0.000ns delay constraint less
+      0.000ns skew requirement (totaling -0.019ns) by 0.304ns
+
+ Physical Path Details:
+
+      <A href="#@path:FREQUENCY NET 'CLKOS2' 100.000000 MHz ;:REG_DEL, 0.133,R2C16A.CLK,R2C16A.Q0,u_ROM_CS_TA/u_SR_ROMS_CS/SLICE_41:ROUTE, 0.152,R2C16A.Q0,R2C16B.M0,u_ROM_CS_TA/u_SR_ROMS_CS/shift_reg_6">Data path</A> u_ROM_CS_TA/u_SR_ROMS_CS/SLICE_41 to u_ROM_CS_TA/u_SR_ROMS_CS/SLICE_1:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.133     R2C16A.CLK to      R2C16A.Q0 <A href="#@comp:u_ROM_CS_TA/u_SR_ROMS_CS/SLICE_41">u_ROM_CS_TA/u_SR_ROMS_CS/SLICE_41</A> (from <A href="#@net:CLKOS2">CLKOS2</A>)
+ROUTE         1     0.152<A href="#@net:u_ROM_CS_TA/u_SR_ROMS_CS/shift_reg_6:R2C16A.Q0:R2C16B.M0:0.152">      R2C16A.Q0 to R2C16B.M0     </A> <A href="#@net:u_ROM_CS_TA/u_SR_ROMS_CS/shift_reg_6">u_ROM_CS_TA/u_SR_ROMS_CS/shift_reg_6</A> (to <A href="#@net:CLKOS2">CLKOS2</A>)
+                  --------
+                    0.285   (46.7% logic, 53.3% route), 1 logic levels.
+
+ Clock Skew Details: 
+
+      <A href="#@path:FREQUENCY NET 'CLKOS2' 100.000000 MHz ;:ROUTE, 1.252,RPLL.CLKOS2,R2C16A.CLK,CLKOS2">Source Clock Path</A> u_ZenPLL/PLLInst_0 to u_ROM_CS_TA/u_SR_ROMS_CS/SLICE_41:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE         9     1.252<A href="#@net:CLKOS2:RPLL.CLKOS2:R2C16A.CLK:1.252">    RPLL.CLKOS2 to R2C16A.CLK    </A> <A href="#@net:CLKOS2">CLKOS2</A>
+                  --------
+                    1.252   (0.0% logic, 100.0% route), 0 logic levels.
+
+      <A href="#@path:FREQUENCY NET 'CLKOS2' 100.000000 MHz ;:ROUTE, 1.252,RPLL.CLKOS2,R2C16B.CLK,CLKOS2">Destination Clock Path</A> u_ZenPLL/PLLInst_0 to u_ROM_CS_TA/u_SR_ROMS_CS/SLICE_1:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE         9     1.252<A href="#@net:CLKOS2:RPLL.CLKOS2:R2C16B.CLK:1.252">    RPLL.CLKOS2 to R2C16B.CLK    </A> <A href="#@net:CLKOS2">CLKOS2</A>
+                  --------
+                    1.252   (0.0% logic, 100.0% route), 0 logic levels.
+<font color=#000000> 
+
+Passed: The following path meets requirements by 0.304ns
+ </font>
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              <A href="#@comp:u_ROM_CS_TA/u_SR_TA/SLICE_42">u_ROM_CS_TA/u_SR_TA/shift_reg_i2</A>  (from <A href="#@net:CLKOS2">CLKOS2</A> +)
+   Destination:    FF         Data in        <A href="#@comp:u_ROM_CS_TA/u_SR_TA/SLICE_42">u_ROM_CS_TA/u_SR_TA/shift_reg_i3</A>  (to <A href="#@net:CLKOS2">CLKOS2</A> +)
+
+   Delay:               0.285ns  (46.7% logic, 53.3% route), 1 logic levels.
+
+ Constraint Details:
+
+      0.285ns physical path delay u_ROM_CS_TA/u_SR_TA/SLICE_42 to u_ROM_CS_TA/u_SR_TA/SLICE_42 meets
+     -0.019ns M_HLD and
+      0.000ns delay constraint less
+      0.000ns skew requirement (totaling -0.019ns) by 0.304ns
+
+ Physical Path Details:
+
+      <A href="#@path:FREQUENCY NET 'CLKOS2' 100.000000 MHz ;:REG_DEL, 0.133,R2C15C.CLK,R2C15C.Q1,u_ROM_CS_TA/u_SR_TA/SLICE_42:ROUTE, 0.152,R2C15C.Q1,R2C15C.M0,u_ROM_CS_TA/u_SR_TA/shift_reg_3">Data path</A> u_ROM_CS_TA/u_SR_TA/SLICE_42 to u_ROM_CS_TA/u_SR_TA/SLICE_42:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.133     R2C15C.CLK to      R2C15C.Q1 <A href="#@comp:u_ROM_CS_TA/u_SR_TA/SLICE_42">u_ROM_CS_TA/u_SR_TA/SLICE_42</A> (from <A href="#@net:CLKOS2">CLKOS2</A>)
+ROUTE         1     0.152<A href="#@net:u_ROM_CS_TA/u_SR_TA/shift_reg_3:R2C15C.Q1:R2C15C.M0:0.152">      R2C15C.Q1 to R2C15C.M0     </A> <A href="#@net:u_ROM_CS_TA/u_SR_TA/shift_reg_3">u_ROM_CS_TA/u_SR_TA/shift_reg_3</A> (to <A href="#@net:CLKOS2">CLKOS2</A>)
+                  --------
+                    0.285   (46.7% logic, 53.3% route), 1 logic levels.
+
+ Clock Skew Details: 
+
+      <A href="#@path:FREQUENCY NET 'CLKOS2' 100.000000 MHz ;:ROUTE, 1.252,RPLL.CLKOS2,R2C15C.CLK,CLKOS2">Source Clock Path</A> u_ZenPLL/PLLInst_0 to u_ROM_CS_TA/u_SR_TA/SLICE_42:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE         9     1.252<A href="#@net:CLKOS2:RPLL.CLKOS2:R2C15C.CLK:1.252">    RPLL.CLKOS2 to R2C15C.CLK    </A> <A href="#@net:CLKOS2">CLKOS2</A>
+                  --------
+                    1.252   (0.0% logic, 100.0% route), 0 logic levels.
+
+      <A href="#@path:FREQUENCY NET 'CLKOS2' 100.000000 MHz ;:ROUTE, 1.252,RPLL.CLKOS2,R2C15C.CLK,CLKOS2">Destination Clock Path</A> u_ZenPLL/PLLInst_0 to u_ROM_CS_TA/u_SR_TA/SLICE_42:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE         9     1.252<A href="#@net:CLKOS2:RPLL.CLKOS2:R2C15C.CLK:1.252">    RPLL.CLKOS2 to R2C15C.CLK    </A> <A href="#@net:CLKOS2">CLKOS2</A>
+                  --------
+                    1.252   (0.0% logic, 100.0% route), 0 logic levels.
+<font color=#000000> 
+
+Passed: The following path meets requirements by 0.304ns
+ </font>
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              <A href="#@comp:u_ROM_CS_TA/u_SR_TA/SLICE_42">u_ROM_CS_TA/u_SR_TA/shift_reg_i3</A>  (from <A href="#@net:CLKOS2">CLKOS2</A> +)
+   Destination:    FF         Data in        <A href="#@comp:SLICE_30">u_ROM_CS_TA/u_SR_TA/shift_reg_i4</A>  (to <A href="#@net:CLKOS2">CLKOS2</A> +)
+
+   Delay:               0.285ns  (46.7% logic, 53.3% route), 1 logic levels.
+
+ Constraint Details:
+
+      0.285ns physical path delay u_ROM_CS_TA/u_SR_TA/SLICE_42 to SLICE_30 meets
+     -0.019ns M_HLD and
+      0.000ns delay constraint less
+      0.000ns skew requirement (totaling -0.019ns) by 0.304ns
+
+ Physical Path Details:
+
+      <A href="#@path:FREQUENCY NET 'CLKOS2' 100.000000 MHz ;:REG_DEL, 0.133,R2C15C.CLK,R2C15C.Q0,u_ROM_CS_TA/u_SR_TA/SLICE_42:ROUTE, 0.152,R2C15C.Q0,R2C15D.M0,u_ROM_CS_TA/u_SR_TA/shift_reg_4">Data path</A> u_ROM_CS_TA/u_SR_TA/SLICE_42 to SLICE_30:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.133     R2C15C.CLK to      R2C15C.Q0 <A href="#@comp:u_ROM_CS_TA/u_SR_TA/SLICE_42">u_ROM_CS_TA/u_SR_TA/SLICE_42</A> (from <A href="#@net:CLKOS2">CLKOS2</A>)
+ROUTE         1     0.152<A href="#@net:u_ROM_CS_TA/u_SR_TA/shift_reg_4:R2C15C.Q0:R2C15D.M0:0.152">      R2C15C.Q0 to R2C15D.M0     </A> <A href="#@net:u_ROM_CS_TA/u_SR_TA/shift_reg_4">u_ROM_CS_TA/u_SR_TA/shift_reg_4</A> (to <A href="#@net:CLKOS2">CLKOS2</A>)
+                  --------
+                    0.285   (46.7% logic, 53.3% route), 1 logic levels.
+
+ Clock Skew Details: 
+
+      <A href="#@path:FREQUENCY NET 'CLKOS2' 100.000000 MHz ;:ROUTE, 1.252,RPLL.CLKOS2,R2C15C.CLK,CLKOS2">Source Clock Path</A> u_ZenPLL/PLLInst_0 to u_ROM_CS_TA/u_SR_TA/SLICE_42:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE         9     1.252<A href="#@net:CLKOS2:RPLL.CLKOS2:R2C15C.CLK:1.252">    RPLL.CLKOS2 to R2C15C.CLK    </A> <A href="#@net:CLKOS2">CLKOS2</A>
+                  --------
+                    1.252   (0.0% logic, 100.0% route), 0 logic levels.
+
+      <A href="#@path:FREQUENCY NET 'CLKOS2' 100.000000 MHz ;:ROUTE, 1.252,RPLL.CLKOS2,R2C15D.CLK,CLKOS2">Destination Clock Path</A> u_ZenPLL/PLLInst_0 to SLICE_30:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE         9     1.252<A href="#@net:CLKOS2:RPLL.CLKOS2:R2C15D.CLK:1.252">    RPLL.CLKOS2 to R2C15D.CLK    </A> <A href="#@net:CLKOS2">CLKOS2</A>
+                  --------
+                    1.252   (0.0% logic, 100.0% route), 0 logic levels.
+<font color=#000000> 
+
+Passed: The following path meets requirements by 0.304ns
+ </font>
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              <A href="#@comp:u_ROM_CS_TA/u_SR_ROMS_CS/SLICE_40">u_ROM_CS_TA/u_SR_ROMS_CS/shift_reg__i2</A>  (from <A href="#@net:CLKOS2">CLKOS2</A> +)
+   Destination:    FF         Data in        <A href="#@comp:u_ROM_CS_TA/u_SR_ROMS_CS/SLICE_40">u_ROM_CS_TA/u_SR_ROMS_CS/shift_reg__i3</A>  (to <A href="#@net:CLKOS2">CLKOS2</A> +)
+
+   Delay:               0.285ns  (46.7% logic, 53.3% route), 1 logic levels.
+
+ Constraint Details:
+
+      0.285ns physical path delay u_ROM_CS_TA/u_SR_ROMS_CS/SLICE_40 to u_ROM_CS_TA/u_SR_ROMS_CS/SLICE_40 meets
+     -0.019ns M_HLD and
+      0.000ns delay constraint less
+      0.000ns skew requirement (totaling -0.019ns) by 0.304ns
+
+ Physical Path Details:
+
+      <A href="#@path:FREQUENCY NET 'CLKOS2' 100.000000 MHz ;:REG_DEL, 0.133,R2C16C.CLK,R2C16C.Q1,u_ROM_CS_TA/u_SR_ROMS_CS/SLICE_40:ROUTE, 0.152,R2C16C.Q1,R2C16C.M0,u_ROM_CS_TA/u_SR_ROMS_CS/shift_reg_3">Data path</A> u_ROM_CS_TA/u_SR_ROMS_CS/SLICE_40 to u_ROM_CS_TA/u_SR_ROMS_CS/SLICE_40:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.133     R2C16C.CLK to      R2C16C.Q1 <A href="#@comp:u_ROM_CS_TA/u_SR_ROMS_CS/SLICE_40">u_ROM_CS_TA/u_SR_ROMS_CS/SLICE_40</A> (from <A href="#@net:CLKOS2">CLKOS2</A>)
+ROUTE         1     0.152<A href="#@net:u_ROM_CS_TA/u_SR_ROMS_CS/shift_reg_3:R2C16C.Q1:R2C16C.M0:0.152">      R2C16C.Q1 to R2C16C.M0     </A> <A href="#@net:u_ROM_CS_TA/u_SR_ROMS_CS/shift_reg_3">u_ROM_CS_TA/u_SR_ROMS_CS/shift_reg_3</A> (to <A href="#@net:CLKOS2">CLKOS2</A>)
+                  --------
+                    0.285   (46.7% logic, 53.3% route), 1 logic levels.
+
+ Clock Skew Details: 
+
+      <A href="#@path:FREQUENCY NET 'CLKOS2' 100.000000 MHz ;:ROUTE, 1.252,RPLL.CLKOS2,R2C16C.CLK,CLKOS2">Source Clock Path</A> u_ZenPLL/PLLInst_0 to u_ROM_CS_TA/u_SR_ROMS_CS/SLICE_40:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE         9     1.252<A href="#@net:CLKOS2:RPLL.CLKOS2:R2C16C.CLK:1.252">    RPLL.CLKOS2 to R2C16C.CLK    </A> <A href="#@net:CLKOS2">CLKOS2</A>
+                  --------
+                    1.252   (0.0% logic, 100.0% route), 0 logic levels.
+
+      <A href="#@path:FREQUENCY NET 'CLKOS2' 100.000000 MHz ;:ROUTE, 1.252,RPLL.CLKOS2,R2C16C.CLK,CLKOS2">Destination Clock Path</A> u_ZenPLL/PLLInst_0 to u_ROM_CS_TA/u_SR_ROMS_CS/SLICE_40:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE         9     1.252<A href="#@net:CLKOS2:RPLL.CLKOS2:R2C16C.CLK:1.252">    RPLL.CLKOS2 to R2C16C.CLK    </A> <A href="#@net:CLKOS2">CLKOS2</A>
+                  --------
+                    1.252   (0.0% logic, 100.0% route), 0 logic levels.
+<font color=#000000> 
+
+Passed: The following path meets requirements by 0.304ns
+ </font>
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              <A href="#@comp:u_ROM_CS_TA/u_SR_ROMS_CS/SLICE_41">u_ROM_CS_TA/u_SR_ROMS_CS/shift_reg__i4</A>  (from <A href="#@net:CLKOS2">CLKOS2</A> +)
+   Destination:    FF         Data in        <A href="#@comp:u_ROM_CS_TA/u_SR_ROMS_CS/SLICE_41">u_ROM_CS_TA/u_SR_ROMS_CS/shift_reg__i5</A>  (to <A href="#@net:CLKOS2">CLKOS2</A> +)
+
+   Delay:               0.285ns  (46.7% logic, 53.3% route), 1 logic levels.
+
+ Constraint Details:
+
+      0.285ns physical path delay u_ROM_CS_TA/u_SR_ROMS_CS/SLICE_41 to u_ROM_CS_TA/u_SR_ROMS_CS/SLICE_41 meets
+     -0.019ns M_HLD and
+      0.000ns delay constraint less
+      0.000ns skew requirement (totaling -0.019ns) by 0.304ns
+
+ Physical Path Details:
+
+      <A href="#@path:FREQUENCY NET 'CLKOS2' 100.000000 MHz ;:REG_DEL, 0.133,R2C16A.CLK,R2C16A.Q1,u_ROM_CS_TA/u_SR_ROMS_CS/SLICE_41:ROUTE, 0.152,R2C16A.Q1,R2C16A.M0,u_ROM_CS_TA/u_SR_ROMS_CS/shift_reg_5">Data path</A> u_ROM_CS_TA/u_SR_ROMS_CS/SLICE_41 to u_ROM_CS_TA/u_SR_ROMS_CS/SLICE_41:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.133     R2C16A.CLK to      R2C16A.Q1 <A href="#@comp:u_ROM_CS_TA/u_SR_ROMS_CS/SLICE_41">u_ROM_CS_TA/u_SR_ROMS_CS/SLICE_41</A> (from <A href="#@net:CLKOS2">CLKOS2</A>)
+ROUTE         1     0.152<A href="#@net:u_ROM_CS_TA/u_SR_ROMS_CS/shift_reg_5:R2C16A.Q1:R2C16A.M0:0.152">      R2C16A.Q1 to R2C16A.M0     </A> <A href="#@net:u_ROM_CS_TA/u_SR_ROMS_CS/shift_reg_5">u_ROM_CS_TA/u_SR_ROMS_CS/shift_reg_5</A> (to <A href="#@net:CLKOS2">CLKOS2</A>)
+                  --------
+                    0.285   (46.7% logic, 53.3% route), 1 logic levels.
+
+ Clock Skew Details: 
+
+      <A href="#@path:FREQUENCY NET 'CLKOS2' 100.000000 MHz ;:ROUTE, 1.252,RPLL.CLKOS2,R2C16A.CLK,CLKOS2">Source Clock Path</A> u_ZenPLL/PLLInst_0 to u_ROM_CS_TA/u_SR_ROMS_CS/SLICE_41:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE         9     1.252<A href="#@net:CLKOS2:RPLL.CLKOS2:R2C16A.CLK:1.252">    RPLL.CLKOS2 to R2C16A.CLK    </A> <A href="#@net:CLKOS2">CLKOS2</A>
+                  --------
+                    1.252   (0.0% logic, 100.0% route), 0 logic levels.
+
+      <A href="#@path:FREQUENCY NET 'CLKOS2' 100.000000 MHz ;:ROUTE, 1.252,RPLL.CLKOS2,R2C16A.CLK,CLKOS2">Destination Clock Path</A> u_ZenPLL/PLLInst_0 to u_ROM_CS_TA/u_SR_ROMS_CS/SLICE_41:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE         9     1.252<A href="#@net:CLKOS2:RPLL.CLKOS2:R2C16A.CLK:1.252">    RPLL.CLKOS2 to R2C16A.CLK    </A> <A href="#@net:CLKOS2">CLKOS2</A>
+                  --------
+                    1.252   (0.0% logic, 100.0% route), 0 logic levels.
+<font color=#000000> 
+
+Passed: The following path meets requirements by 0.304ns
+ </font>
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              <A href="#@comp:u_ROM_CS_TA/u_SR_ROMS_CS/SLICE_40">u_ROM_CS_TA/u_SR_ROMS_CS/shift_reg__i3</A>  (from <A href="#@net:CLKOS2">CLKOS2</A> +)
+   Destination:    FF         Data in        <A href="#@comp:u_ROM_CS_TA/u_SR_ROMS_CS/SLICE_41">u_ROM_CS_TA/u_SR_ROMS_CS/shift_reg__i4</A>  (to <A href="#@net:CLKOS2">CLKOS2</A> +)
+
+   Delay:               0.285ns  (46.7% logic, 53.3% route), 1 logic levels.
+
+ Constraint Details:
+
+      0.285ns physical path delay u_ROM_CS_TA/u_SR_ROMS_CS/SLICE_40 to u_ROM_CS_TA/u_SR_ROMS_CS/SLICE_41 meets
+     -0.019ns M_HLD and
+      0.000ns delay constraint less
+      0.000ns skew requirement (totaling -0.019ns) by 0.304ns
+
+ Physical Path Details:
+
+      <A href="#@path:FREQUENCY NET 'CLKOS2' 100.000000 MHz ;:REG_DEL, 0.133,R2C16C.CLK,R2C16C.Q0,u_ROM_CS_TA/u_SR_ROMS_CS/SLICE_40:ROUTE, 0.152,R2C16C.Q0,R2C16A.M1,u_ROM_CS_TA/u_SR_ROMS_CS/shift_reg_4">Data path</A> u_ROM_CS_TA/u_SR_ROMS_CS/SLICE_40 to u_ROM_CS_TA/u_SR_ROMS_CS/SLICE_41:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.133     R2C16C.CLK to      R2C16C.Q0 <A href="#@comp:u_ROM_CS_TA/u_SR_ROMS_CS/SLICE_40">u_ROM_CS_TA/u_SR_ROMS_CS/SLICE_40</A> (from <A href="#@net:CLKOS2">CLKOS2</A>)
+ROUTE         1     0.152<A href="#@net:u_ROM_CS_TA/u_SR_ROMS_CS/shift_reg_4:R2C16C.Q0:R2C16A.M1:0.152">      R2C16C.Q0 to R2C16A.M1     </A> <A href="#@net:u_ROM_CS_TA/u_SR_ROMS_CS/shift_reg_4">u_ROM_CS_TA/u_SR_ROMS_CS/shift_reg_4</A> (to <A href="#@net:CLKOS2">CLKOS2</A>)
+                  --------
+                    0.285   (46.7% logic, 53.3% route), 1 logic levels.
+
+ Clock Skew Details: 
+
+      <A href="#@path:FREQUENCY NET 'CLKOS2' 100.000000 MHz ;:ROUTE, 1.252,RPLL.CLKOS2,R2C16C.CLK,CLKOS2">Source Clock Path</A> u_ZenPLL/PLLInst_0 to u_ROM_CS_TA/u_SR_ROMS_CS/SLICE_40:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE         9     1.252<A href="#@net:CLKOS2:RPLL.CLKOS2:R2C16C.CLK:1.252">    RPLL.CLKOS2 to R2C16C.CLK    </A> <A href="#@net:CLKOS2">CLKOS2</A>
+                  --------
+                    1.252   (0.0% logic, 100.0% route), 0 logic levels.
+
+      <A href="#@path:FREQUENCY NET 'CLKOS2' 100.000000 MHz ;:ROUTE, 1.252,RPLL.CLKOS2,R2C16A.CLK,CLKOS2">Destination Clock Path</A> u_ZenPLL/PLLInst_0 to u_ROM_CS_TA/u_SR_ROMS_CS/SLICE_41:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+ROUTE         9     1.252<A href="#@net:CLKOS2:RPLL.CLKOS2:R2C16A.CLK:1.252">    RPLL.CLKOS2 to R2C16A.CLK    </A> <A href="#@net:CLKOS2">CLKOS2</A>
+                  --------
+                    1.252   (0.0% logic, 100.0% route), 0 logic levels.
+
+
+</A><A name="CLOCK_TO_OUT PORT 'RAM_CS_N' 6.000000 ns CLKPORT 'CLK"></A>================================================================================
+Preference: CLOCK_TO_OUT PORT "RAM_CS_N" 6.000000 ns CLKPORT "CLK" ;
+            2 items scored, 0 timing errors detected.
+--------------------------------------------------------------------------------
+
+
+Passed:  The following path meets requirements by 2.548ns
+
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              <A href="#@comp:SLICE_3">u_RAM_CS_TA/int_RAM_CS_N_15</A>  (from <A href="#@net:CLK_c">CLK_c</A> +)
+   Destination:    Port       Pad            <A href="#@comp:RAM_CS_N">RAM_CS_N</A>
+
+   Data Path Delay:     1.337ns  (72.6% logic, 27.4% route), 3 logic levels.
+
+   Clock Path Delay:    1.211ns  (36.3% logic, 63.7% route), 1 logic levels.
+
+ Constraint Details:
+      1.211ns delay CLK to SLICE_3 and
+      1.337ns delay SLICE_3 to RAM_CS_N (totaling 2.548ns) meets
+      0.000ns hold offset CLK to RAM_CS_N by 2.548ns
+
+ Physical Path Details:
+
+      <A href="#@path:CLOCK_TO_OUT PORT 'RAM_CS_N' 6.000000 ns CLKPORT 'CLK' ;:PADI_DEL, 0.439,92.PAD,92.PADDI,CLK:ROUTE, 0.772,92.PADDI,R2C17C.CLK,CLK_c">Clock path</A> CLK to SLICE_3:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+PADI_DEL    ---     0.439         92.PAD to       92.PADDI <A href="#@comp:CLK">CLK</A>
+ROUTE         4     0.772<A href="#@net:CLK_c:92.PADDI:R2C17C.CLK:0.772">       92.PADDI to R2C17C.CLK    </A> <A href="#@net:CLK_c">CLK_c</A>
+                  --------
+                    1.211   (36.3% logic, 63.7% route), 1 logic levels.
+
+      <A href="#@path:CLOCK_TO_OUT PORT 'RAM_CS_N' 6.000000 ns CLKPORT 'CLK' ;:REG_DEL, 0.133,R2C17C.CLK,R2C17C.Q0,SLICE_3:ROUTE, 0.139,R2C17C.Q0,R2C18A.C1,int_RAM_CS_N:CTOF_DEL, 0.101,R2C18A.C1,R2C18A.F1,SLICE_31:ROUTE, 0.228,R2C18A.F1,127.PADDO,RAM_CS_N_c:DOPAD_DEL, 0.736,127.PADDO,127.PAD,RAM_CS_N">Data path</A> SLICE_3 to RAM_CS_N:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.133     R2C17C.CLK to      R2C17C.Q0 <A href="#@comp:SLICE_3">SLICE_3</A> (from <A href="#@net:CLK_c">CLK_c</A>)
+ROUTE         2     0.139<A href="#@net:int_RAM_CS_N:R2C17C.Q0:R2C18A.C1:0.139">      R2C17C.Q0 to R2C18A.C1     </A> <A href="#@net:int_RAM_CS_N">int_RAM_CS_N</A>
+CTOF_DEL    ---     0.101      R2C18A.C1 to      R2C18A.F1 <A href="#@comp:SLICE_31">SLICE_31</A>
+ROUTE         1     0.228<A href="#@net:RAM_CS_N_c:R2C18A.F1:127.PADDO:0.228">      R2C18A.F1 to 127.PADDO     </A> <A href="#@net:RAM_CS_N_c">RAM_CS_N_c</A>
+DOPAD_DEL   ---     0.736      127.PADDO to        127.PAD <A href="#@comp:RAM_CS_N">RAM_CS_N</A>
+                  --------
+                    1.337   (72.6% logic, 27.4% route), 3 logic levels.
+
+
+Passed:  The following path meets requirements by 4.182ns
+
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              <A href="#@comp:u_RAM_CS_TA/u_SR_RAMS_CS/SLICE_5">u_RAM_CS_TA/u_SR_RAMS_CS/shift_reg_i7</A>  (from <A href="#@net:CLKOS">CLKOS</A> +)
+   Destination:    Port       Pad            <A href="#@comp:RAM_CS_N">RAM_CS_N</A>
+
+   Data Path Delay:     1.331ns  (72.9% logic, 27.1% route), 3 logic levels.
+
+   Clock Path Delay:    3.119ns  (54.2% logic, 45.8% route), 2 logic levels.
+
+ Constraint Details:
+      3.119ns delay CLK to u_RAM_CS_TA/u_SR_RAMS_CS/SLICE_5 less
+      0.268ns feedback compensation and
+      1.331ns delay u_RAM_CS_TA/u_SR_RAMS_CS/SLICE_5 to RAM_CS_N (totaling 4.182ns) meets
+      0.000ns hold offset CLK to RAM_CS_N by 4.182ns
+
+ Physical Path Details:
+
+      <A href="#@path:CLOCK_TO_OUT PORT 'RAM_CS_N' 6.000000 ns CLKPORT 'CLK' ;:PADI_DEL, 0.439,92.PAD,92.PADDI,CLK:ROUTE, 0.818,92.PADDI,RPLL.CLKI,CLK_c:CLKI2OS_DEL, 1.250,RPLL.CLKI,RPLL.CLKOS,u_ZenPLL/PLLInst_0:ROUTE, 0.612,RPLL.CLKOS,R2C18D.CLK,CLKOS">Clock path</A> CLK to u_RAM_CS_TA/u_SR_RAMS_CS/SLICE_5:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+PADI_DEL    ---     0.439         92.PAD to       92.PADDI <A href="#@comp:CLK">CLK</A>
+ROUTE         4     0.818<A href="#@net:CLK_c:92.PADDI:RPLL.CLKI:0.818">       92.PADDI to RPLL.CLKI     </A> <A href="#@net:CLK_c">CLK_c</A>
+CLKI2OS_DE  ---     1.250      RPLL.CLKI to     RPLL.CLKOS <A href="#@comp:u_ZenPLL/PLLInst_0">u_ZenPLL/PLLInst_0</A>
+ROUTE        11     0.612<A href="#@net:CLKOS:RPLL.CLKOS:R2C18D.CLK:0.612">     RPLL.CLKOS to R2C18D.CLK    </A> <A href="#@net:CLKOS">CLKOS</A>
+                  --------
+                    3.119   (54.2% logic, 45.8% route), 2 logic levels.
+
+      Feedback path:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+CLKFB2OP_D  ---     0.000     RPLL.CLKFB to     RPLL.CLKOP <A href="#@comp:u_ZenPLL/PLLInst_0">u_ZenPLL/PLLInst_0</A>
+ROUTE         1     0.268<A href="#@net:u_ZenPLL/CLKOP:RPLL.CLKOP:RPLL.CLKFB:0.268">     RPLL.CLKOP to RPLL.CLKFB    </A> <A href="#@net:u_ZenPLL/CLKOP">u_ZenPLL/CLKOP</A>
+                  --------
+                    0.268   (0.0% logic, 100.0% route), 1 logic levels.
+
+      <A href="#@path:CLOCK_TO_OUT PORT 'RAM_CS_N' 6.000000 ns CLKPORT 'CLK' ;:REG_DEL, 0.133,R2C18D.CLK,R2C18D.Q0,u_RAM_CS_TA/u_SR_RAMS_CS/SLICE_5:ROUTE, 0.133,R2C18D.Q0,R2C18A.D1,u_RAM_CS_TA/RAM_CS_END:CTOF_DEL, 0.101,R2C18A.D1,R2C18A.F1,SLICE_31:ROUTE, 0.228,R2C18A.F1,127.PADDO,RAM_CS_N_c:DOPAD_DEL, 0.736,127.PADDO,127.PAD,RAM_CS_N">Data path</A> u_RAM_CS_TA/u_SR_RAMS_CS/SLICE_5 to RAM_CS_N:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.133     R2C18D.CLK to      R2C18D.Q0 <A href="#@comp:u_RAM_CS_TA/u_SR_RAMS_CS/SLICE_5">u_RAM_CS_TA/u_SR_RAMS_CS/SLICE_5</A> (from <A href="#@net:CLKOS">CLKOS</A>)
+ROUTE         1     0.133<A href="#@net:u_RAM_CS_TA/RAM_CS_END:R2C18D.Q0:R2C18A.D1:0.133">      R2C18D.Q0 to R2C18A.D1     </A> <A href="#@net:u_RAM_CS_TA/RAM_CS_END">u_RAM_CS_TA/RAM_CS_END</A>
+CTOF_DEL    ---     0.101      R2C18A.D1 to      R2C18A.F1 <A href="#@comp:SLICE_31">SLICE_31</A>
+ROUTE         1     0.228<A href="#@net:RAM_CS_N_c:R2C18A.F1:127.PADDO:0.228">      R2C18A.F1 to 127.PADDO     </A> <A href="#@net:RAM_CS_N_c">RAM_CS_N_c</A>
+DOPAD_DEL   ---     0.736      127.PADDO to        127.PAD <A href="#@comp:RAM_CS_N">RAM_CS_N</A>
+                  --------
+                    1.331   (72.9% logic, 27.1% route), 3 logic levels.
+
+Report:    2.548ns is the maximum offset for this preference.
+
+<A name="Report Summary"></A><B><U><big>Report Summary</big></U></B>
+--------------
+----------------------------------------------------------------------------
+Preference(MIN Delays)                  |   Constraint|       Actual|Levels
+----------------------------------------------------------------------------
+                                        |             |             |
+FREQUENCY NET "CLK_c" 50.000000 MHz ;   |     0.000 ns|     0.379 ns|   2  
+                                        |             |             |
+FREQUENCY NET "CLKOS" 200.000000 MHz ;  |     0.000 ns|     0.304 ns|   1  
+                                        |             |             |
+FREQUENCY NET "u_ZenPLL/CLKOP"          |             |             |
+50.000000 MHz ;                         |            -|            -|   0  
+                                        |             |             |
+FREQUENCY NET "CLKOS2" 100.000000 MHz ; |     0.000 ns|     0.304 ns|   1  
+                                        |             |             |
+CLOCK_TO_OUT PORT "RAM_CS_N" 6.000000   |             |             |
+ns CLKPORT "CLK" ;                      |     0.000 ns|     2.548 ns|   3  
+                                        |             |             |
+----------------------------------------------------------------------------
+
+
+All preferences were met.
+
+
+<A name="Clock Domains Analysis"></A><B><U><big>Clock Domains Analysis</big></U></B>
+------------------------
+
+Found 4 clocks:
+
+Clock Domain: <A href="#@net:u_ZenPLL/CLKOP">u_ZenPLL/CLKOP</A>   Source: u_ZenPLL/PLLInst_0.CLKOP   Loads: 1
+   No transfer within this clock domain is found
+
+Clock Domain: <A href="#@net:CLK_c">CLK_c</A>   Source: CLK.PAD   Loads: 4
+   Covered under: FREQUENCY NET "CLK_c" 50.000000 MHz ;
+
+   Data transfers from:
+   Clock Domain: <A href="#@net:CLKOS2">CLKOS2</A>   Source: u_ZenPLL/PLLInst_0.CLKOS2
+      Covered under: FREQUENCY NET "CLK_c" 50.000000 MHz ;   Transfers: 1
+
+Clock Domain: <A href="#@net:CLKOS2">CLKOS2</A>   Source: u_ZenPLL/PLLInst_0.CLKOS2   Loads: 9
+   Covered under: FREQUENCY NET "CLKOS2" 100.000000 MHz ;
+
+   Data transfers from:
+   Clock Domain: <A href="#@net:CLK_c">CLK_c</A>   Source: CLK.PAD
+      Covered under: FREQUENCY NET "CLKOS2" 100.000000 MHz ;   Transfers: 1
+
+Clock Domain: <A href="#@net:CLKOS">CLKOS</A>   Source: u_ZenPLL/PLLInst_0.CLKOS   Loads: 11
+   Covered under: FREQUENCY NET "CLKOS" 200.000000 MHz ;
+
+   Data transfers from:
+   Clock Domain: <A href="#@net:CLK_c">CLK_c</A>   Source: CLK.PAD
+      Covered under: FREQUENCY NET "CLKOS" 200.000000 MHz ;   Transfers: 1
+
+
+Timing summary (Hold):
+---------------
+
+Timing errors: 0  Score: 0
+Cumulative negative slack: 0
+
+Constraints cover 58 paths, 4 nets, and 90 connections (75.63% coverage)
+
+
+
+Timing summary (Setup and Hold):
+---------------
+
+Timing errors: 2 (setup), 0 (hold)
+Score: 5056 (setup), 0 (hold)
+Cumulative negative slack: 5056 (5056+0)

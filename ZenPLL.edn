@@ -4,9 +4,9 @@
   (keywordMap (keywordLevel 0))
   (status
     (written
-      (timestamp 2026 9 8 22 9 59)
+      (timestamp 2026 9 16 20 0 23)
       (program "SCUBA" (version "Diamond (64-bit) 3.14.0.75.2"))))
-      (comment "C:\lscc\diamond\3.14\ispfpga\bin\nt64\scuba.exe -w -n ZenPLL -lang verilog -synth lse -arch xo2c00 -type pll -fin 50 -fclkop 50 -fclkop_tol 0.0 -fclkos 200 -fclkos_tol 0.0 -trimp 0 -phasep 0 -trimp_r -trims 0 -phases 90 -trims_r -phase_cntl STATIC -rst -fb_mode 1 -lock ")
+      (comment "C:\lscc\diamond\3.14\ispfpga\bin\nt64\scuba.exe -w -n ZenPLL -lang verilog -synth lse -arch xo2c00 -type pll -fin 50 -fclkop 50 -fclkop_tol 0.0 -fclkos 200 -fclkos_tol 0.0 -fclkos2 100 -fclkos2_tol 0.0 -trimp 0 -phasep 0 -trimp_r -trims 0 -phases 135 -trims_r -phases2 90 -phase_cntl STATIC -rst -fb_mode 1 -lock ")
   (library ORCLIB
     (edifLevel 0)
     (technology
@@ -140,6 +140,8 @@
             (direction OUTPUT))
           (port CLKOS
             (direction OUTPUT))
+          (port CLKOS2
+            (direction OUTPUT))
           (port LOCK
             (direction OUTPUT)))
         (property NGD_DRC_MASK (integer 1))
@@ -171,13 +173,13 @@
             (property CLKOS3_CPHASE
               (string "0"))
             (property CLKOS2_FPHASE
-              (string "0"))
+              (string "4"))
             (property CLKOS2_CPHASE
-              (string "0"))
-            (property CLKOS_FPHASE
               (string "6"))
+            (property CLKOS_FPHASE
+              (string "1"))
             (property CLKOS_CPHASE
-              (string "2"))
+              (string "3"))
             (property CLKOP_FPHASE
               (string "0"))
             (property CLKOP_CPHASE
@@ -204,6 +206,8 @@
               (string "DISABLED"))
             (property CLKOS3_ENABLE
               (string "DISABLED"))
+            (property FREQUENCY_PIN_CLKOS2
+              (string "100.000000"))
             (property OUTDIVIDER_MUXC2
               (string "DIVC"))
             (property PREDIVIDER_MUXC1
@@ -211,7 +215,7 @@
             (property VCO_BYPASS_C0
               (string "DISABLED"))
             (property CLKOS2_ENABLE
-              (string "DISABLED"))
+              (string "ENABLED"))
             (property FREQUENCY_PIN_CLKOS
               (string "200.000000"))
             (property OUTDIVIDER_MUXB2
@@ -241,7 +245,7 @@
             (property CLKOS3_DIV
               (string "1"))
             (property CLKOS2_DIV
-              (string "1"))
+              (string "6"))
             (property CLKOS_DIV
               (string "3"))
             (property CLKOP_DIV
@@ -290,6 +294,10 @@
             (joined
               (portRef LOCK)
               (portRef LOCK (instanceRef PLLInst_0))))
+          (net CLKOS2
+            (joined
+              (portRef CLKOS2)
+              (portRef CLKOS2 (instanceRef PLLInst_0))))
           (net CLKOS
             (joined
               (portRef CLKOS)

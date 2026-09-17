@@ -16,55 +16,23 @@
     </Task>
     <Task name="Map">
         <Message>
-            <ID>1100644</ID>
+            <ID>1101611</ID>
             <Severity>Warning</Severity>
-            <Dynamic>C:/lscc/diamond/3.14/bin/nt64/Zen68060Firmware/Zen68060Firmware.lpf(5): Semantic error in &quot;IOBUF PORT &quot;RW_IN&quot; IO_TYPE=LVCMOS33 ;&quot;: </Dynamic>
-            <Dynamic>RW_IN</Dynamic>
+            <Dynamic>C:/lscc/diamond/3.14/bin/nt64/Zen68060Firmware/Zen68060Firmware.lpf(106): Semantic error in &quot;UGROUP &quot;CSTA&quot; 
+	BLKNAME u_decode/i1_4_lut
+	BLKNAME u_decode/i2_3_lut
+	BLKNAME u_ROM_CS_TA/int_ROM_CS_N_26
+	BLKNAME u_RAM_CS_TA/loadTA_12
+	BLKNAME u_decode/i5_4_lut
+	BLKNAME i2
+	BLKNAME u_ROM_CS_TA/u_SR_TA/shift_reg_i4
+	BLKNAME u_ROM   ....   OM_CS_TA/u_SR_TA/shift_reg_i1
+	BLKNAME u_ROM_CS_TA/u_SR_TA/load_registered_14
+	BLKNAME u_ROM_CS_TA/u_SR_TA/shift_reg_i3
+	BLKNAME u_ROM_CS_TA/u_SR_TA/shift_reg_i2;&quot;: </Dynamic>
+            <Dynamic>Block &quot;u_RAM_CS_TA/loadTA_12&quot; of UGROUP &quot;CSTA&quot; not found in designBlock &quot;u_RAM_CS_TA/u_CS_OR&quot; of UGROUP &quot;CSTA&quot; not found in designBlock &quot;ROM_TA_N_I_0_2_lut&quot; of UGROUP &quot;CSTA&quot; not found in designBlock &quot;u_RAM_CS_TA/u_TA_OR&quot; of UGROUP &quot;CSTA&quot; not found in designBlock &quot;u_RAM_CS_TA/int_RAM_CS_N_13&quot; of UGROUP &quot;CSTA&quot; not found in de   ....   nd in designBlock &quot;u_ROM_CS_TA/u_SR_ROMS_CS/i78_1_lut&quot; of UGROUP &quot;CSTA&quot; not found in designBlock &quot;u_ROM_CS_TA/u_SR_TA/i77_1_lut&quot; of UGROUP &quot;CSTA&quot; not found in design</Dynamic>
             <Navigation>C:/lscc/diamond/3.14/bin/nt64/Zen68060Firmware/Zen68060Firmware.lpf</Navigation>
-            <Navigation>5</Navigation>
-        </Message>
-        <Message>
-            <ID>1100644</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>C:/lscc/diamond/3.14/bin/nt64/Zen68060Firmware/Zen68060Firmware.lpf(8): Semantic error in &quot;IOBUF PORT &quot;RAM_OE_N&quot; IO_TYPE=LVCMOS33 SLEWRATE=FAST ;&quot;: </Dynamic>
-            <Dynamic>RAM_OE_N</Dynamic>
-            <Navigation>C:/lscc/diamond/3.14/bin/nt64/Zen68060Firmware/Zen68060Firmware.lpf</Navigation>
-            <Navigation>8</Navigation>
-        </Message>
-        <Message>
-            <ID>1100644</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>C:/lscc/diamond/3.14/bin/nt64/Zen68060Firmware/Zen68060Firmware.lpf(9): Semantic error in &quot;IOBUF PORT &quot;RW_OUT&quot; IO_TYPE=LVCMOS33 SLEWRATE=FAST ;&quot;: </Dynamic>
-            <Dynamic>RW_OUT</Dynamic>
-            <Navigation>C:/lscc/diamond/3.14/bin/nt64/Zen68060Firmware/Zen68060Firmware.lpf</Navigation>
-            <Navigation>9</Navigation>
-        </Message>
-        <Message>
-            <ID>1100679</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>C:/lscc/diamond/3.14/bin/nt64/Zen68060Firmware/Zen68060Firmware.lpf(14): Semantic error in &quot;LOCATE COMP &quot;RAM_OE_N&quot; SITE &quot;94&quot; ;&quot;: </Dynamic>
-            <Dynamic>RAM_OE_N</Dynamic>
-            <Navigation>C:/lscc/diamond/3.14/bin/nt64/Zen68060Firmware/Zen68060Firmware.lpf</Navigation>
-            <Navigation>14</Navigation>
-        </Message>
-        <Message>
-            <ID>1100679</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>C:/lscc/diamond/3.14/bin/nt64/Zen68060Firmware/Zen68060Firmware.lpf(15): Semantic error in &quot;LOCATE COMP &quot;RW_OUT&quot; SITE &quot;73&quot; ;&quot;: </Dynamic>
-            <Dynamic>RW_OUT</Dynamic>
-            <Navigation>C:/lscc/diamond/3.14/bin/nt64/Zen68060Firmware/Zen68060Firmware.lpf</Navigation>
-            <Navigation>15</Navigation>
-        </Message>
-        <Message>
-            <ID>1166064</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>input</Dynamic>
-            <Dynamic>RW_IN</Dynamic>
-        </Message>
-        <Message>
-            <ID>51001046</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>RW_IN</Dynamic>
+            <Navigation>106</Navigation>
         </Message>
     </Task>
     <Task name="Lattice_Synthesis">
@@ -104,181 +72,262 @@
             <ID>35901018</ID>
             <Severity>Info</Severity>
             <Dynamic>C:/lscc/diamond/3.14/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(1730): </Dynamic>
-            <Dynamic>EHXPLLJ(CLKOP_DIV=12,CLKOS_DIV=3,CLKOS2_DIV=1,CLKOS3_DIV=1,CLKOS2_ENABLE=&quot;DISABLED&quot;,CLKOS3_ENABLE=&quot;DISABLED&quot;,CLKOP_CPHASE=11,CLKOS_CPHASE=2,CLKOS_FPHASE=6,PLLRST_ENA=&quot;ENABLED&quot;)</Dynamic>
+            <Dynamic>EHXPLLJ(CLKOP_DIV=12,CLKOS_DIV=3,CLKOS2_DIV=6,CLKOS3_DIV=1,CLKOS3_ENABLE=&quot;DISABLED&quot;,CLKOP_CPHASE=11,CLKOS_CPHASE=3,CLKOS2_CPHASE=6,CLKOS_FPHASE=1,CLKOS2_FPHASE=4,PLLRST_ENA=&quot;ENABLED&quot;)</Dynamic>
             <Navigation>C:/lscc/diamond/3.14/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v</Navigation>
             <Navigation>1730</Navigation>
         </Message>
         <Message>
             <ID>35901018</ID>
             <Severity>Info</Severity>
-            <Dynamic>c:/lscc/diamond/3.14/bin/nt64/zen68060firmware/zenshiftregister.v(64): </Dynamic>
+            <Dynamic>c:/lscc/diamond/3.14/bin/nt64/zen68060firmware/zenaddressdecode.v(1): </Dynamic>
+            <Dynamic>ZenAddressDecode</Dynamic>
+            <Navigation>c:/lscc/diamond/3.14/bin/nt64/zen68060firmware/zenaddressdecode.v</Navigation>
+            <Navigation>1</Navigation>
+        </Message>
+        <Message>
+            <ID>35901018</ID>
+            <Severity>Info</Severity>
+            <Dynamic>c:/lscc/diamond/3.14/bin/nt64/zen68060firmware/zenram_cs_ta.v(1): </Dynamic>
+            <Dynamic>ZenRAM_CS_TA</Dynamic>
+            <Navigation>c:/lscc/diamond/3.14/bin/nt64/zen68060firmware/zenram_cs_ta.v</Navigation>
+            <Navigation>1</Navigation>
+        </Message>
+        <Message>
+            <ID>35901018</ID>
+            <Severity>Info</Severity>
+            <Dynamic>c:/lscc/diamond/3.14/bin/nt64/zen68060firmware/zenshiftregister.v(65): </Dynamic>
             <Dynamic>PISO_Short_ShiftReg</Dynamic>
             <Navigation>c:/lscc/diamond/3.14/bin/nt64/zen68060firmware/zenshiftregister.v</Navigation>
-            <Navigation>64</Navigation>
+            <Navigation>65</Navigation>
         </Message>
         <Message>
             <ID>35908216</ID>
             <Severity>Warning</Severity>
-            <Dynamic>c:/lscc/diamond/3.14/bin/nt64/zen68060firmware/zenshiftregister.v(119): </Dynamic>
+            <Dynamic>c:/lscc/diamond/3.14/bin/nt64/zen68060firmware/zenshiftregister.v(121): </Dynamic>
             <Dynamic>14</Dynamic>
             <Dynamic>7</Dynamic>
             <Dynamic>0</Dynamic>
             <Dynamic>shift_reg</Dynamic>
             <Navigation>c:/lscc/diamond/3.14/bin/nt64/zen68060firmware/zenshiftregister.v</Navigation>
-            <Navigation>119</Navigation>
+            <Navigation>121</Navigation>
         </Message>
         <Message>
             <ID>35901209</ID>
             <Severity>Warning</Severity>
-            <Dynamic>c:/lscc/diamond/3.14/bin/nt64/zen68060firmware/zenshiftregister.v(119): </Dynamic>
+            <Dynamic>c:/lscc/diamond/3.14/bin/nt64/zen68060firmware/zenshiftregister.v(121): </Dynamic>
             <Dynamic>16</Dynamic>
             <Dynamic>8</Dynamic>
             <Navigation>c:/lscc/diamond/3.14/bin/nt64/zen68060firmware/zenshiftregister.v</Navigation>
-            <Navigation>119</Navigation>
+            <Navigation>121</Navigation>
         </Message>
         <Message>
             <ID>35901330</ID>
             <Severity>Warning</Severity>
-            <Dynamic>c:/lscc/diamond/3.14/bin/nt64/zen68060firmware/zen68060machmainlogic.v(35): </Dynamic>
+            <Dynamic>c:/lscc/diamond/3.14/bin/nt64/zen68060firmware/zenram_cs_ta.v(23): </Dynamic>
             <Dynamic>32</Dynamic>
             <Dynamic>1</Dynamic>
             <Dynamic>Reset</Dynamic>
-            <Navigation>c:/lscc/diamond/3.14/bin/nt64/zen68060firmware/zen68060machmainlogic.v</Navigation>
-            <Navigation>35</Navigation>
+            <Navigation>c:/lscc/diamond/3.14/bin/nt64/zen68060firmware/zenram_cs_ta.v</Navigation>
+            <Navigation>23</Navigation>
         </Message>
         <Message>
             <ID>35901330</ID>
             <Severity>Warning</Severity>
-            <Dynamic>c:/lscc/diamond/3.14/bin/nt64/zen68060firmware/zen68060machmainlogic.v(36): </Dynamic>
+            <Dynamic>c:/lscc/diamond/3.14/bin/nt64/zen68060firmware/zenram_cs_ta.v(24): </Dynamic>
             <Dynamic>32</Dynamic>
             <Dynamic>1</Dynamic>
             <Dynamic>ClockEn</Dynamic>
-            <Navigation>c:/lscc/diamond/3.14/bin/nt64/zen68060firmware/zen68060machmainlogic.v</Navigation>
-            <Navigation>36</Navigation>
+            <Navigation>c:/lscc/diamond/3.14/bin/nt64/zen68060firmware/zenram_cs_ta.v</Navigation>
+            <Navigation>24</Navigation>
         </Message>
         <Message>
             <ID>35901330</ID>
             <Severity>Warning</Severity>
-            <Dynamic>c:/lscc/diamond/3.14/bin/nt64/zen68060firmware/zen68060machmainlogic.v(43): </Dynamic>
+            <Dynamic>c:/lscc/diamond/3.14/bin/nt64/zen68060firmware/zenram_cs_ta.v(32): </Dynamic>
             <Dynamic>32</Dynamic>
             <Dynamic>1</Dynamic>
             <Dynamic>Reset</Dynamic>
-            <Navigation>c:/lscc/diamond/3.14/bin/nt64/zen68060firmware/zen68060machmainlogic.v</Navigation>
-            <Navigation>43</Navigation>
+            <Navigation>c:/lscc/diamond/3.14/bin/nt64/zen68060firmware/zenram_cs_ta.v</Navigation>
+            <Navigation>32</Navigation>
         </Message>
         <Message>
             <ID>35901330</ID>
             <Severity>Warning</Severity>
-            <Dynamic>c:/lscc/diamond/3.14/bin/nt64/zen68060firmware/zen68060machmainlogic.v(44): </Dynamic>
+            <Dynamic>c:/lscc/diamond/3.14/bin/nt64/zen68060firmware/zenram_cs_ta.v(33): </Dynamic>
             <Dynamic>32</Dynamic>
             <Dynamic>1</Dynamic>
             <Dynamic>ClockEn</Dynamic>
-            <Navigation>c:/lscc/diamond/3.14/bin/nt64/zen68060firmware/zen68060machmainlogic.v</Navigation>
-            <Navigation>44</Navigation>
+            <Navigation>c:/lscc/diamond/3.14/bin/nt64/zen68060firmware/zenram_cs_ta.v</Navigation>
+            <Navigation>33</Navigation>
+        </Message>
+        <Message>
+            <ID>35901018</ID>
+            <Severity>Info</Severity>
+            <Dynamic>c:/lscc/diamond/3.14/bin/nt64/zen68060firmware/zenrom_cs_ta.v(1): </Dynamic>
+            <Dynamic>ZenROM_CS_TA</Dynamic>
+            <Navigation>c:/lscc/diamond/3.14/bin/nt64/zen68060firmware/zenrom_cs_ta.v</Navigation>
+            <Navigation>1</Navigation>
+        </Message>
+        <Message>
+            <ID>35901330</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>c:/lscc/diamond/3.14/bin/nt64/zen68060firmware/zenrom_cs_ta.v(22): </Dynamic>
+            <Dynamic>32</Dynamic>
+            <Dynamic>1</Dynamic>
+            <Dynamic>Reset</Dynamic>
+            <Navigation>c:/lscc/diamond/3.14/bin/nt64/zen68060firmware/zenrom_cs_ta.v</Navigation>
+            <Navigation>22</Navigation>
+        </Message>
+        <Message>
+            <ID>35901330</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>c:/lscc/diamond/3.14/bin/nt64/zen68060firmware/zenrom_cs_ta.v(23): </Dynamic>
+            <Dynamic>32</Dynamic>
+            <Dynamic>1</Dynamic>
+            <Dynamic>ClockEn</Dynamic>
+            <Navigation>c:/lscc/diamond/3.14/bin/nt64/zen68060firmware/zenrom_cs_ta.v</Navigation>
+            <Navigation>23</Navigation>
+        </Message>
+        <Message>
+            <ID>35901330</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>c:/lscc/diamond/3.14/bin/nt64/zen68060firmware/zenrom_cs_ta.v(31): </Dynamic>
+            <Dynamic>32</Dynamic>
+            <Dynamic>1</Dynamic>
+            <Dynamic>Reset</Dynamic>
+            <Navigation>c:/lscc/diamond/3.14/bin/nt64/zen68060firmware/zenrom_cs_ta.v</Navigation>
+            <Navigation>31</Navigation>
+        </Message>
+        <Message>
+            <ID>35901330</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>c:/lscc/diamond/3.14/bin/nt64/zen68060firmware/zenrom_cs_ta.v(32): </Dynamic>
+            <Dynamic>32</Dynamic>
+            <Dynamic>1</Dynamic>
+            <Dynamic>ClockEn</Dynamic>
+            <Navigation>c:/lscc/diamond/3.14/bin/nt64/zen68060firmware/zenrom_cs_ta.v</Navigation>
+            <Navigation>32</Navigation>
         </Message>
         <Message>
             <ID>35001771</ID>
             <Severity>Warning</Severity>
-            <Dynamic>trigCS_keep</Dynamic>
+            <Dynamic>loadCS_keep</Dynamic>
         </Message>
         <Message>
             <ID>35001771</ID>
             <Severity>Warning</Severity>
-            <Dynamic>trigTA_keep</Dynamic>
+            <Dynamic>loadTA_keep</Dynamic>
         </Message>
         <Message>
-            <ID>35002005</ID>
+            <ID>35001771</ID>
             <Severity>Warning</Severity>
-            <Dynamic>RW_IN</Dynamic>
+            <Dynamic>loadCS_keep</Dynamic>
         </Message>
         <Message>
-            <ID>35002005</ID>
+            <ID>35001771</ID>
             <Severity>Warning</Severity>
-            <Dynamic>RW_IN</Dynamic>
+            <Dynamic>loadTA_keep</Dynamic>
         </Message>
         <Message>
-            <ID>35001779</ID>
+            <ID>35001748</ID>
             <Severity>Warning</Severity>
-            <Dynamic>\u_SR_TA/shift_reg_i5</Dynamic>
+            <Dynamic>0</Dynamic>
+            <Dynamic>\u_ROM_CS_TA/u_SR_ROMS_CS/shift_reg</Dynamic>
         </Message>
         <Message>
-            <ID>35001779</ID>
+            <ID>35001748</ID>
             <Severity>Warning</Severity>
-            <Dynamic>\u_SR_TA/shift_reg_i4</Dynamic>
+            <Dynamic>0</Dynamic>
+            <Dynamic>\u_ROM_CS_TA/u_SR_TA/shift_reg</Dynamic>
         </Message>
         <Message>
-            <ID>35001779</ID>
+            <ID>35001748</ID>
             <Severity>Warning</Severity>
-            <Dynamic>\u_SR_TA/shift_reg_i3</Dynamic>
+            <Dynamic>1</Dynamic>
+            <Dynamic>\u_ROM_CS_TA/u_SR_ROMS_CS/shift_reg</Dynamic>
         </Message>
         <Message>
-            <ID>35001779</ID>
+            <ID>35001748</ID>
             <Severity>Warning</Severity>
-            <Dynamic>\u_SR_TA/shift_reg_i2</Dynamic>
-        </Message>
-        <Message>
-            <ID>35001779</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>\u_SR_TA/shift_reg_i1</Dynamic>
-        </Message>
-        <Message>
-            <ID>35001779</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>\u_SR_RAMS_CS/shift_reg_i6</Dynamic>
+            <Dynamic>1</Dynamic>
+            <Dynamic>\u_ROM_CS_TA/u_SR_TA/shift_reg</Dynamic>
         </Message>
         <Message>
             <ID>35001779</ID>
             <Severity>Warning</Severity>
-            <Dynamic>\u_SR_RAMS_CS/shift_reg_i5</Dynamic>
+            <Dynamic>\u_ROM_CS_TA/u_SR_TA/shift_reg_i6</Dynamic>
         </Message>
         <Message>
             <ID>35001779</ID>
             <Severity>Warning</Severity>
-            <Dynamic>\u_SR_RAMS_CS/shift_reg_i4</Dynamic>
+            <Dynamic>\u_ROM_CS_TA/u_SR_TA/shift_reg_i5</Dynamic>
         </Message>
         <Message>
             <ID>35001779</ID>
             <Severity>Warning</Severity>
-            <Dynamic>\u_SR_RAMS_CS/shift_reg_i3</Dynamic>
+            <Dynamic>\u_ROM_CS_TA/u_SR_TA/shift_reg_i4</Dynamic>
         </Message>
         <Message>
             <ID>35001779</ID>
             <Severity>Warning</Severity>
-            <Dynamic>\u_SR_RAMS_CS/shift_reg_i2</Dynamic>
+            <Dynamic>\u_ROM_CS_TA/u_SR_TA/shift_reg_i3</Dynamic>
         </Message>
         <Message>
             <ID>35001779</ID>
             <Severity>Warning</Severity>
-            <Dynamic>\u_SR_RAMS_CS/shift_reg_i1</Dynamic>
+            <Dynamic>\u_RAM_CS_TA/u_SR_TA/shift_reg_i5</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001779</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>\u_RAM_CS_TA/u_SR_TA/shift_reg_i4</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001779</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>\u_RAM_CS_TA/u_SR_TA/shift_reg_i3</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001779</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>\u_RAM_CS_TA/u_SR_TA/shift_reg_i2</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001779</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>\u_RAM_CS_TA/u_SR_TA/shift_reg_i1</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001779</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>\u_RAM_CS_TA/u_SR_RAMS_CS/shift_reg_i5</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001779</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>\u_RAM_CS_TA/u_SR_RAMS_CS/shift_reg_i4</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001779</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>\u_RAM_CS_TA/u_SR_RAMS_CS/shift_reg_i3</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001779</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>\u_RAM_CS_TA/u_SR_RAMS_CS/shift_reg_i2</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001779</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>\u_RAM_CS_TA/u_SR_RAMS_CS/shift_reg_i1</Dynamic>
         </Message>
         <Message>
             <ID>35001611</ID>
             <Severity>Warning</Severity>
         </Message>
-        <Message>
-            <ID>1166052</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>logical</Dynamic>
-            <Dynamic>RW_IN</Dynamic>
-            <Navigation>RW_IN</Navigation>
-        </Message>
-        <Message>
-            <ID>1166064</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>input</Dynamic>
-            <Dynamic>RW_IN</Dynamic>
-        </Message>
-        <Message>
-            <ID>1163101</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>2</Dynamic>
-        </Message>
     </Task>
     <Task name="PAR">
-        <Message>
-            <ID>61001101</ID>
-            <Severity>Warning</Severity>
-        </Message>
         <Message>
             <ID>61091062</ID>
             <Severity>Warning</Severity>
