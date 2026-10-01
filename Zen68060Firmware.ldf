@@ -2,7 +2,7 @@
 <BaliProject version="3.2" title="Zen68060Firmware" device="LCMXO2-7000HC-6TG144C" default_implementation="impl1">
     <Options/>
     <Implementation title="impl1" dir="impl1" description="impl1" synthesis="lse" default_strategy="Strategy1">
-        <Options def_top="PISO_Long_ShiftReg" top="ZenMainLogic"/>
+        <Options def_top="ZenMainLogic" top="ZenMainLogic"/>
         <Source name="Zen68060MachMainLogic.v" type="Verilog" type_short="Verilog">
             <Options top_module="ZenMainLogic"/>
         </Source>

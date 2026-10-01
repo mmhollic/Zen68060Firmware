@@ -8,8 +8,11 @@ module ZenMainLogic(
 	output wire RW_OUT,
 	output wire TA_N /* synthesis DOUT="TRUE" SLEWRATE="FAST" */,
 	output wire RAM_CS_N /* synthesis DOUT="TRUE" SLEWRATE="FAST" */,
+	output wire RAM_OE_N /* synthesis DOUT="TRUE" SLEWRATE="FAST" */,
 	output wire ROM_CS_N /* synthesis DOUT="TRUE" SLEWRATE="FAST" */,
-	output wire RAM_OE_N /* synthesis DOUT="TRUE" SLEWRATE="FAST" */
+	output wire ROM_OE_N /* synthesis DOUT="TRUE" SLEWRATE="FAST" */,
+	output wire ROM_BUFFER_OE_N /* synthesis DOUT="TRUE" SLEWRATE="FAST" */
+	
 );
 	
 	wire CLKOP;
@@ -28,7 +31,7 @@ module ZenMainLogic(
 	
 	/******************************** Generate RAM CS and RAM TA **********************************/
 
-	assign RAM_OE_N = 1;//RAM_CS_N;
+	assign RAM_OE_N = RAM_CS_N|!RW_IN;
 		
 	wire RAM_CS_ADDR;
 	wire ROM_CS_ADDR;
@@ -53,16 +56,19 @@ module ZenMainLogic(
 		.RAM_CS_N(RAM_CS_N),
 		.RAM_TA_N(RAM_TA_N)
 	);
+	
+	/************************************* Generate ROM CS and TA ******************************/
+	assign ROM_OE_N = ROM_CS_N|!RW_IN;	// Don't assert ROM_OE if it's a write
+	assign ROM_BUFFER_OE_N = ROM_CS_N;
+	
 	ZenROM_CS_TA u_ROM_CS_TA(
 		.CLK(CLK),
 		.CLKOS(CLKOS2),
 		.ROM_ADDR(ROM_CS_ADDR),
 		.TS_N(TS_N),
+		.RW(RW_IN),
 		.ROM_CS_N(ROM_CS_N),
 		.ROM_TA_N(ROM_TA_N)
 	);
-	
-	/************************************* Generate ROM CS and TA ******************************/
-	
 	
 endmodule

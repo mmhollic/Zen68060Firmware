@@ -1,6 +1,6 @@
 --------------------------------------------------------------------------------
 Lattice Synthesis Timing Report, Version  
-Wed Sep 16 16:35:02 2026
+Wed Sep 30 10:52:22 2026
 
 Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
 Copyright (c) 1995 AT&T Corp.   All rights reserved.
@@ -18,94 +18,7 @@ Report level:    verbose report, limited to 3 items per constraint
 
 
 ================================================================================
-Constraint: create_clock -period 5.000000 -name clk2 [get_nets CLK_c]
-            3 items scored, 0 timing errors detected.
---------------------------------------------------------------------------------
-
-
-Passed:  The following path meets requirements by 2.456ns
-
- Logical Details:  Cell type  Pin type       Cell name  (clock net +/-)
-
-   Source:         FD1S3IX    CK             \u_ROM_CS_TA/state_23  (from CLK_c +)
-   Destination:    FD1S3AX    D              \u_ROM_CS_TA/loadCS_24  (to CLK_c +)
-
-   Delay:                   2.411ns  (32.1% logic, 67.9% route), 2 logic levels.
-
- Constraint Details:
-
-      2.411ns data_path \u_ROM_CS_TA/state_23 to \u_ROM_CS_TA/loadCS_24 meets
-      5.000ns delay constraint less
-      0.133ns L_S requirement (totaling 4.867ns) by 2.456ns
-
- Path Details: \u_ROM_CS_TA/state_23 to \u_ROM_CS_TA/loadCS_24
-
-   Name    Fanout   Delay (ns)          Pins               Resource(Cell.Net)
-L_CO        ---     0.367             CK to Q              \u_ROM_CS_TA/state_23 (from CLK_c)
-Route         2   e 0.838                                  state
-LUT4        ---     0.408              D to Z              \u_decode/i1_4_lut
-Route         2   e 0.798                                  loadCS_N_58
-                  --------
-                    2.411  (32.1% logic, 67.9% route), 2 logic levels.
-
-
-Passed:  The following path meets requirements by 2.456ns
-
- Logical Details:  Cell type  Pin type       Cell name  (clock net +/-)
-
-   Source:         FD1S3IX    CK             \u_ROM_CS_TA/state_23  (from CLK_c +)
-   Destination:    FD1S3AY    D              \u_ROM_CS_TA/int_ROM_CS_N_26  (to CLK_c +)
-
-   Delay:                   2.411ns  (32.1% logic, 67.9% route), 2 logic levels.
-
- Constraint Details:
-
-      2.411ns data_path \u_ROM_CS_TA/state_23 to \u_ROM_CS_TA/int_ROM_CS_N_26 meets
-      5.000ns delay constraint less
-      0.133ns L_S requirement (totaling 4.867ns) by 2.456ns
-
- Path Details: \u_ROM_CS_TA/state_23 to \u_ROM_CS_TA/int_ROM_CS_N_26
-
-   Name    Fanout   Delay (ns)          Pins               Resource(Cell.Net)
-L_CO        ---     0.367             CK to Q              \u_ROM_CS_TA/state_23 (from CLK_c)
-Route         2   e 0.838                                  state
-LUT4        ---     0.408              D to Z              \u_decode/i1_4_lut
-Route         2   e 0.798                                  loadCS_N_58
-                  --------
-                    2.411  (32.1% logic, 67.9% route), 2 logic levels.
-
-
-Passed:  The following path meets requirements by 2.594ns
-
- Logical Details:  Cell type  Pin type       Cell name  (clock net +/-)
-
-   Source:         FD1S3IX    CK             \u_ROM_CS_TA/state_23  (from CLK_c +)
-   Destination:    FD1S3IX    D              \u_ROM_CS_TA/state_23  (to CLK_c +)
-
-   Delay:                   2.273ns  (34.1% logic, 65.9% route), 2 logic levels.
-
- Constraint Details:
-
-      2.273ns data_path \u_ROM_CS_TA/state_23 to \u_ROM_CS_TA/state_23 meets
-      5.000ns delay constraint less
-      0.133ns L_S requirement (totaling 4.867ns) by 2.594ns
-
- Path Details: \u_ROM_CS_TA/state_23 to \u_ROM_CS_TA/state_23
-
-   Name    Fanout   Delay (ns)          Pins               Resource(Cell.Net)
-L_CO        ---     0.367             CK to Q              \u_ROM_CS_TA/state_23 (from CLK_c)
-Route         2   e 0.838                                  state
-LUT4        ---     0.408              A to Z              \u_ROM_CS_TA/i103_3_lut
-Route         1   e 0.660                                  \u_ROM_CS_TA/state_N_52
-                  --------
-                    2.273  (34.1% logic, 65.9% route), 2 logic levels.
-
-Report: 2.544 ns is the maximum delay for this constraint.
-
-
-
-================================================================================
-Constraint: create_clock -period 5.000000 -name clk1 [get_nets CLKOS]
+Constraint: create_clock -period 5.000000 -name clk2 [get_nets CLKOS]
             32 items scored, 0 timing errors detected.
 --------------------------------------------------------------------------------
 
@@ -129,9 +42,9 @@ Passed:  The following path meets requirements by 2.317ns
 
    Name    Fanout   Delay (ns)          Pins               Resource(Cell.Net)
 L_CO        ---     0.367             CK to Q              \u_RAM_CS_TA/u_SR_RAMS_CS/load_registered_14 (from CLKOS)
-Route         8   e 1.115                                  \u_RAM_CS_TA/u_SR_RAMS_CS/shift_reg_7__N_34[0]
-LUT4        ---     0.408              C to Z              \u_RAM_CS_TA/u_SR_RAMS_CS/mux_8_i7_3_lut
-Route         1   e 0.660                                  \u_RAM_CS_TA/u_SR_RAMS_CS/shift_reg_7__N_34[6]
+Route         8   e 1.115                                  shift_reg_7__N_36[0]
+LUT4        ---     0.408              B to Z              \u_ROM_CS_TA/mux_8_i7_3_lut_3_lut
+Route         1   e 0.660                                  shift_reg_7__N_36[6]
                   --------
                     2.550  (30.4% logic, 69.6% route), 2 logic levels.
 
@@ -188,87 +101,176 @@ Report: 2.683 ns is the maximum delay for this constraint.
 
 
 ================================================================================
-Constraint: create_clock -period 5.000000 -name clk0 [get_nets CLKOS2]
-            24 items scored, 0 timing errors detected.
+Constraint: create_clock -period 5.000000 -name clk1 [get_nets CLK_c]
+            4 items scored, 0 timing errors detected.
 --------------------------------------------------------------------------------
 
 
-Passed:  The following path meets requirements by 2.374ns
+Passed:  The following path meets requirements by 2.375ns
 
  Logical Details:  Cell type  Pin type       Cell name  (clock net +/-)
 
-   Source:         FD1S3AY    CK             \u_ROM_CS_TA/u_SR_ROMS_CS/load_registered_14  (from CLKOS2 +)
-   Destination:    FD1S3AX    D              \u_ROM_CS_TA/u_SR_ROMS_CS/shift_reg__i1  (to CLKOS2 +)
+   Source:         FD1S3IX    CK             \u_ROM_CS_TA/state_26  (from CLK_c +)
+   Destination:    FD1S3AX    D              \u_ROM_CS_TA/loadCS_27  (to CLK_c +)
 
-   Delay:                   2.493ns  (31.1% logic, 68.9% route), 2 logic levels.
+   Delay:                   2.492ns  (31.1% logic, 68.9% route), 2 logic levels.
 
  Constraint Details:
 
-      2.493ns data_path \u_ROM_CS_TA/u_SR_ROMS_CS/load_registered_14 to \u_ROM_CS_TA/u_SR_ROMS_CS/shift_reg__i1 meets
+      2.492ns data_path \u_ROM_CS_TA/state_26 to \u_ROM_CS_TA/loadCS_27 meets
       5.000ns delay constraint less
-      0.133ns L_S requirement (totaling 4.867ns) by 2.374ns
+      0.133ns L_S requirement (totaling 4.867ns) by 2.375ns
 
- Path Details: \u_ROM_CS_TA/u_SR_ROMS_CS/load_registered_14 to \u_ROM_CS_TA/u_SR_ROMS_CS/shift_reg__i1
+ Path Details: \u_ROM_CS_TA/state_26 to \u_ROM_CS_TA/loadCS_27
 
    Name    Fanout   Delay (ns)          Pins               Resource(Cell.Net)
-L_CO        ---     0.367             CK to Q              \u_ROM_CS_TA/u_SR_ROMS_CS/load_registered_14 (from CLKOS2)
-Route         6   e 1.058                                  \u_ROM_CS_TA/u_SR_ROMS_CS/load_registered
-LUT4        ---     0.408              A to Z              \u_ROM_CS_TA/u_SR_ROMS_CS/i66_1_lut
-Route         1   e 0.660                                  \u_ROM_CS_TA/u_SR_ROMS_CS/n12
+L_CO        ---     0.367             CK to Q              \u_ROM_CS_TA/state_26 (from CLK_c)
+Route         3   e 0.919                                  state
+LUT4        ---     0.408              D to Z              \u_decode/i1_4_lut
+Route         2   e 0.798                                  loadCS_N_77
                   --------
-                    2.493  (31.1% logic, 68.9% route), 2 logic levels.
+                    2.492  (31.1% logic, 68.9% route), 2 logic levels.
 
 
-Passed:  The following path meets requirements by 2.374ns
+Passed:  The following path meets requirements by 2.375ns
+
+ Logical Details:  Cell type  Pin type       Cell name  (clock net +/-)
+
+   Source:         FD1S3IX    CK             \u_ROM_CS_TA/state_26  (from CLK_c +)
+   Destination:    FD1S3AY    D              \u_ROM_CS_TA/int_ROM_CS_N_29  (to CLK_c +)
+
+   Delay:                   2.492ns  (31.1% logic, 68.9% route), 2 logic levels.
+
+ Constraint Details:
+
+      2.492ns data_path \u_ROM_CS_TA/state_26 to \u_ROM_CS_TA/int_ROM_CS_N_29 meets
+      5.000ns delay constraint less
+      0.133ns L_S requirement (totaling 4.867ns) by 2.375ns
+
+ Path Details: \u_ROM_CS_TA/state_26 to \u_ROM_CS_TA/int_ROM_CS_N_29
+
+   Name    Fanout   Delay (ns)          Pins               Resource(Cell.Net)
+L_CO        ---     0.367             CK to Q              \u_ROM_CS_TA/state_26 (from CLK_c)
+Route         3   e 0.919                                  state
+LUT4        ---     0.408              D to Z              \u_decode/i1_4_lut
+Route         2   e 0.798                                  loadCS_N_77
+                  --------
+                    2.492  (31.1% logic, 68.9% route), 2 logic levels.
+
+
+Passed:  The following path meets requirements by 2.513ns
+
+ Logical Details:  Cell type  Pin type       Cell name  (clock net +/-)
+
+   Source:         FD1S3IX    CK             \u_ROM_CS_TA/state_26  (from CLK_c +)
+   Destination:    FD1S3IX    D              \u_ROM_CS_TA/state_26  (to CLK_c +)
+
+   Delay:                   2.354ns  (32.9% logic, 67.1% route), 2 logic levels.
+
+ Constraint Details:
+
+      2.354ns data_path \u_ROM_CS_TA/state_26 to \u_ROM_CS_TA/state_26 meets
+      5.000ns delay constraint less
+      0.133ns L_S requirement (totaling 4.867ns) by 2.513ns
+
+ Path Details: \u_ROM_CS_TA/state_26 to \u_ROM_CS_TA/state_26
+
+   Name    Fanout   Delay (ns)          Pins               Resource(Cell.Net)
+L_CO        ---     0.367             CK to Q              \u_ROM_CS_TA/state_26 (from CLK_c)
+Route         3   e 0.919                                  state
+LUT4        ---     0.408              A to Z              \u_ROM_CS_TA/i146_3_lut
+Route         1   e 0.660                                  \u_ROM_CS_TA/state_N_70
+                  --------
+                    2.354  (32.9% logic, 67.1% route), 2 logic levels.
+
+Report: 2.625 ns is the maximum delay for this constraint.
+
+
+
+================================================================================
+Constraint: create_clock -period 5.000000 -name clk0 [get_nets CLKOS2]
+            40 items scored, 0 timing errors detected.
+--------------------------------------------------------------------------------
+
+
+Passed:  The following path meets requirements by 2.272ns
 
  Logical Details:  Cell type  Pin type       Cell name  (clock net +/-)
 
    Source:         FD1S3AY    CK             \u_ROM_CS_TA/u_SR_TA/load_registered_14  (from CLKOS2 +)
    Destination:    FD1S3AX    D              \u_ROM_CS_TA/u_SR_TA/shift_reg_i1  (to CLKOS2 +)
 
-   Delay:                   2.493ns  (31.1% logic, 68.9% route), 2 logic levels.
+   Delay:                   2.595ns  (29.9% logic, 70.1% route), 2 logic levels.
 
  Constraint Details:
 
-      2.493ns data_path \u_ROM_CS_TA/u_SR_TA/load_registered_14 to \u_ROM_CS_TA/u_SR_TA/shift_reg_i1 meets
+      2.595ns data_path \u_ROM_CS_TA/u_SR_TA/load_registered_14 to \u_ROM_CS_TA/u_SR_TA/shift_reg_i1 meets
       5.000ns delay constraint less
-      0.133ns L_S requirement (totaling 4.867ns) by 2.374ns
+      0.133ns L_S requirement (totaling 4.867ns) by 2.272ns
 
  Path Details: \u_ROM_CS_TA/u_SR_TA/load_registered_14 to \u_ROM_CS_TA/u_SR_TA/shift_reg_i1
 
    Name    Fanout   Delay (ns)          Pins               Resource(Cell.Net)
 L_CO        ---     0.367             CK to Q              \u_ROM_CS_TA/u_SR_TA/load_registered_14 (from CLKOS2)
-Route         6   e 1.058                                  \u_ROM_CS_TA/u_SR_TA/load_registered
-LUT4        ---     0.408              A to Z              \u_ROM_CS_TA/u_SR_TA/i65_1_lut
-Route         1   e 0.660                                  \u_ROM_CS_TA/u_SR_TA/shift_reg_7__N_34[2]
+Route        10   e 1.160                                  \u_ROM_CS_TA/u_SR_TA/load_registered
+LUT4        ---     0.408              A to Z              \u_ROM_CS_TA/u_SR_TA/i97_1_lut
+Route         1   e 0.660                                  \u_ROM_CS_TA/u_SR_TA/shift_reg_15__N_96[6]
                   --------
-                    2.493  (31.1% logic, 68.9% route), 2 logic levels.
+                    2.595  (29.9% logic, 70.1% route), 2 logic levels.
 
 
-Passed:  The following path meets requirements by 1.340ns
+Passed:  The following path meets requirements by 2.272ns
 
  Logical Details:  Cell type  Pin type       Cell name  (clock net +/-)
 
-   Source:         FD1S3AY    CK             \u_ROM_CS_TA/u_SR_TA/load_half_13  (from CLKOS2 +)
-   Destination:    FD1S3AY    D              \u_ROM_CS_TA/u_SR_TA/load_registered_14  (to CLKOS2 +)
+   Source:         FD1S3AY    CK             \u_ROM_CS_TA/u_SR_ROMS_CS/load_registered_14  (from CLKOS2 +)
+   Destination:    FD1S3JX    PD             \u_ROM_CS_TA/u_SR_ROMS_CS/shift_reg_i1  (to CLKOS2 +)
 
-   Delay:                   1.027ns  (35.7% logic, 64.3% route), 1 logic levels.
+   Delay:                   2.595ns  (29.9% logic, 70.1% route), 2 logic levels.
 
  Constraint Details:
 
-      1.027ns data_path \u_ROM_CS_TA/u_SR_TA/load_half_13 to \u_ROM_CS_TA/u_SR_TA/load_registered_14 meets
-      2.500ns delay constraint less
-      0.133ns L_S requirement (totaling 2.367ns) by 1.340ns
+      2.595ns data_path \u_ROM_CS_TA/u_SR_ROMS_CS/load_registered_14 to \u_ROM_CS_TA/u_SR_ROMS_CS/shift_reg_i1 meets
+      5.000ns delay constraint less
+      0.133ns L_S requirement (totaling 4.867ns) by 2.272ns
 
- Path Details: \u_ROM_CS_TA/u_SR_TA/load_half_13 to \u_ROM_CS_TA/u_SR_TA/load_registered_14
+ Path Details: \u_ROM_CS_TA/u_SR_ROMS_CS/load_registered_14 to \u_ROM_CS_TA/u_SR_ROMS_CS/shift_reg_i1
 
    Name    Fanout   Delay (ns)          Pins               Resource(Cell.Net)
-L_CO        ---     0.367             CK to Q              \u_ROM_CS_TA/u_SR_TA/load_half_13 (from CLKOS2)
-Route         1   e 0.660                                  \u_ROM_CS_TA/u_SR_TA/load_half
+L_CO        ---     0.367             CK to Q              \u_ROM_CS_TA/u_SR_ROMS_CS/load_registered_14 (from CLKOS2)
+Route        10   e 1.160                                  \u_ROM_CS_TA/load_registered
+LUT4        ---     0.408              A to Z              \u_ROM_CS_TA/u_SR_ROMS_CS/i122_1_lut
+Route         1   e 0.660                                  \u_ROM_CS_TA/u_SR_ROMS_CS/n308
                   --------
-                    1.027  (35.7% logic, 64.3% route), 1 logic levels.
+                    2.595  (29.9% logic, 70.1% route), 2 logic levels.
 
-Report: 2.626 ns is the maximum delay for this constraint.
+
+Passed:  The following path meets requirements by 2.272ns
+
+ Logical Details:  Cell type  Pin type       Cell name  (clock net +/-)
+
+   Source:         FD1S3AY    CK             \u_ROM_CS_TA/u_SR_ROMS_CS/load_registered_14  (from CLKOS2 +)
+   Destination:    FD1S3AX    D              \u_ROM_CS_TA/u_SR_ROMS_CS/shift_reg_i4  (to CLKOS2 +)
+
+   Delay:                   2.595ns  (29.9% logic, 70.1% route), 2 logic levels.
+
+ Constraint Details:
+
+      2.595ns data_path \u_ROM_CS_TA/u_SR_ROMS_CS/load_registered_14 to \u_ROM_CS_TA/u_SR_ROMS_CS/shift_reg_i4 meets
+      5.000ns delay constraint less
+      0.133ns L_S requirement (totaling 4.867ns) by 2.272ns
+
+ Path Details: \u_ROM_CS_TA/u_SR_ROMS_CS/load_registered_14 to \u_ROM_CS_TA/u_SR_ROMS_CS/shift_reg_i4
+
+   Name    Fanout   Delay (ns)          Pins               Resource(Cell.Net)
+L_CO        ---     0.367             CK to Q              \u_ROM_CS_TA/u_SR_ROMS_CS/load_registered_14 (from CLKOS2)
+Route        10   e 1.160                                  \u_ROM_CS_TA/load_registered
+LUT4        ---     0.408              B to Z              \u_ROM_CS_TA/mux_59_i4_3_lut_3_lut
+Route         1   e 0.660                                  \u_ROM_CS_TA/shift_reg_15__N_96[9]
+                  --------
+                    2.595  (29.9% logic, 70.1% route), 2 logic levels.
+
+Report: 2.728 ns is the maximum delay for this constraint.
 
 
 Timing Report Summary
@@ -278,13 +280,13 @@ Constraint                              |   Constraint|       Actual|Levels
 --------------------------------------------------------------------------------
                                         |             |             |
 create_clock -period 5.000000 -name     |             |             |
-clk2 [get_nets CLK_c]                   |     5.000 ns|     2.544 ns|     2  
+clk2 [get_nets CLKOS]                   |     5.000 ns|     2.683 ns|     2  
                                         |             |             |
 create_clock -period 5.000000 -name     |             |             |
-clk1 [get_nets CLKOS]                   |     5.000 ns|     2.683 ns|     2  
+clk1 [get_nets CLK_c]                   |     5.000 ns|     2.625 ns|     2  
                                         |             |             |
 create_clock -period 5.000000 -name     |             |             |
-clk0 [get_nets CLKOS2]                  |     5.000 ns|     2.626 ns|     2  
+clk0 [get_nets CLKOS2]                  |     5.000 ns|     2.728 ns|     2  
                                         |             |             |
 --------------------------------------------------------------------------------
 
@@ -298,8 +300,8 @@ Timing summary:
 
 Timing errors: 0  Score: 0
 
-Constraints cover  59 paths, 43 nets, and 73 connections (48.7% coverage)
+Constraints cover  76 paths, 55 nets, and 95 connections (48.0% coverage)
 
 
-Peak memory: 63893504 bytes, TRCE: 1552384 bytes, DLYMAN: 0 bytes
+Peak memory: 64401408 bytes, TRCE: 1503232 bytes, DLYMAN: 0 bytes
 CPU_TIME_REPORT: 0 secs 

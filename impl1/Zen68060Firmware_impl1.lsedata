@@ -1,10 +1,10 @@
 <top name = "ZenMainLogic"  library = "work"  arch = ""  entry = "Verilog">
 
 <clocks>
-    <clockitem name = "u_ZenPLL/CLKOP"  type = "net" />
+    <clockitem name = "CLK"  type = "port" />
     <clockitem name = "CLKOS"  type = "net" />
     <clockitem name = "CLKOS2"  type = "net" />
-    <clockitem name = "CLK"  type = "port" />
+    <clockitem name = "u_ZenPLL/CLKOP"  type = "net" />
 </clocks>
 
 <!--
@@ -22,7 +22,7 @@
 <unit name = "ZenMainLogic">
 
     <!--
-        Top Level Pins: 19
+        Top Level Pins: 21
     -->
 
     <pins>
@@ -43,13 +43,41 @@
         <pitem  name = "RW_OUT"  direction = "out"  />
         <pitem  name = "TA_N"  direction = "out"  />
         <pitem  name = "RAM_CS_N"  direction = "out"  />
-        <pitem  name = "ROM_CS_N"  direction = "out"  />
         <pitem  name = "RAM_OE_N"  direction = "out"  />
+        <pitem  name = "ROM_CS_N"  direction = "out"  />
+        <pitem  name = "ROM_OE_N"  direction = "out"  />
+        <pitem  name = "ROM_BUFFER_OE_N"  direction = "out"  />
     </pins>
 
     <!--
-        Instances in netlist: 97
+        Instances in netlist: 103
     -->
+
+    <instance  name = "u_decode/A_27__I_0_25"  library = "work"  arch = ""  type = "comb">
+        <pins>
+        <pitem  name = "i"  direction = "in"  />
+        <pitem  name = "o"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "A[27]"  />
+        <nitem  name = "u_decode/A_27__N_12"  />
+        </nets>
+    </instance>
+
+    <instance  name = "u_decode/RAM_group1_I_3"  library = "work"  arch = ""  type = "comb">
+        <pins>
+        <pitem  name = "a1"  direction = "in"  />
+        <pitem  name = "o"  direction = "out"  />
+        <pitem  name = "a0"  direction = "in"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "A[26]"  />
+        <nitem  name = "u_decode/RAM_group1"  />
+        <nitem  name = "u_decode/RAM_group1_N_7"  />
+        </nets>
+    </instance>
 
     <instance  name = "u_decode/RAM_group1_I_4"  library = "work"  arch = ""  type = "comb">
         <pins>
@@ -60,8 +88,8 @@
 
         <nets>
         <nitem  name = "A[25]"  />
-        <nitem  name = "u_decode/RAM_group1_N_6"  />
-        <nitem  name = "u_decode/RAM_group1_N_5"  />
+        <nitem  name = "u_decode/RAM_group1_N_8"  />
+        <nitem  name = "u_decode/RAM_group1_N_7"  />
         </nets>
     </instance>
 
@@ -118,16 +146,6 @@
         </nets>
     </instance>
 
-    <instance  name = "u_ZenPLL/scuba_vlo_inst"  library = "work"  arch = ""  type = "comb">
-        <pins>
-        <pitem  name = "Z"  direction = "out"  />
-        </pins>
-
-        <nets>
-        <nitem  name = "u_ZenPLL/scuba_vlo"  />
-        </nets>
-    </instance>
-
     <instance  name = "u_decode/A_23__I_0"  library = "work"  arch = ""  type = "comb">
         <pins>
         <pitem  name = "a1"  direction = "in"  />
@@ -138,7 +156,33 @@
         <nets>
         <nitem  name = "A[24]"  />
         <nitem  name = "A[23]"  />
-        <nitem  name = "u_decode/RAM_group1_N_6"  />
+        <nitem  name = "u_decode/RAM_group1_N_8"  />
+        </nets>
+    </instance>
+
+    <instance  name = "RW_IN_I_0"  library = "work"  arch = ""  type = "comb">
+        <pins>
+        <pitem  name = "i"  direction = "in"  />
+        <pitem  name = "o"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "RW_IN"  />
+        <nitem  name = "RW_IN_N_2"  />
+        </nets>
+    </instance>
+
+    <instance  name = "RAM_CS_N_I_0"  library = "work"  arch = ""  type = "comb">
+        <pins>
+        <pitem  name = "a0"  direction = "in"  />
+        <pitem  name = "a1"  direction = "in"  />
+        <pitem  name = "o"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "RAM_CS_N"  />
+        <nitem  name = "RW_IN_N_2"  />
+        <nitem  name = "RAM_OE_N"  />
         </nets>
     </instance>
 
@@ -156,29 +200,27 @@
         </nets>
     </instance>
 
-    <instance  name = "u_decode/RAM_group1_I_3"  library = "work"  arch = ""  type = "comb">
+    <instance  name = "u_ZenPLL/scuba_vlo_inst"  library = "work"  arch = ""  type = "comb">
         <pins>
-        <pitem  name = "a1"  direction = "in"  />
-        <pitem  name = "o"  direction = "out"  />
-        <pitem  name = "a0"  direction = "in"  />
+        <pitem  name = "Z"  direction = "out"  />
         </pins>
 
         <nets>
-        <nitem  name = "A[26]"  />
-        <nitem  name = "u_decode/RAM_group1"  />
-        <nitem  name = "u_decode/RAM_group1_N_5"  />
+        <nitem  name = "u_ZenPLL/scuba_vlo"  />
         </nets>
     </instance>
 
-    <instance  name = "u_decode/A_27__I_0_25"  library = "work"  arch = ""  type = "comb">
+    <instance  name = "ROM_CS_N_I_0"  library = "work"  arch = ""  type = "comb">
         <pins>
-        <pitem  name = "i"  direction = "in"  />
+        <pitem  name = "a0"  direction = "in"  />
+        <pitem  name = "a1"  direction = "in"  />
         <pitem  name = "o"  direction = "out"  />
         </pins>
 
         <nets>
-        <nitem  name = "A[27]"  />
-        <nitem  name = "u_decode/A_27__N_10"  />
+        <nitem  name = "ROM_CS_N"  />
+        <nitem  name = "RW_IN_N_2"  />
+        <nitem  name = "ROM_OE_N"  />
         </nets>
     </instance>
 
@@ -191,8 +233,8 @@
 
         <nets>
         <nitem  name = "A[28]"  />
-        <nitem  name = "u_decode/A_27__N_10"  />
-        <nitem  name = "u_decode/RAM_group2_N_8"  />
+        <nitem  name = "u_decode/A_27__N_12"  />
+        <nitem  name = "u_decode/RAM_group2_N_10"  />
         </nets>
     </instance>
 
@@ -205,8 +247,8 @@
 
         <nets>
         <nitem  name = "A[29]"  />
-        <nitem  name = "u_decode/RAM_group2_N_8"  />
-        <nitem  name = "u_decode/RAM_group2_N_7"  />
+        <nitem  name = "u_decode/RAM_group2_N_10"  />
+        <nitem  name = "u_decode/RAM_group2_N_9"  />
         </nets>
     </instance>
 
@@ -220,7 +262,7 @@
         <nets>
         <nitem  name = "A[30]"  />
         <nitem  name = "u_decode/RAM_group2"  />
-        <nitem  name = "u_decode/RAM_group2_N_7"  />
+        <nitem  name = "u_decode/RAM_group2_N_9"  />
         </nets>
     </instance>
 
@@ -232,7 +274,7 @@
 
         <nets>
         <nitem  name = "A[28]"  />
-        <nitem  name = "u_decode/A_28__N_14"  />
+        <nitem  name = "u_decode/A_28__N_16"  />
         </nets>
     </instance>
 
@@ -245,8 +287,8 @@
 
         <nets>
         <nitem  name = "A[27]"  />
-        <nitem  name = "u_decode/A_28__N_14"  />
-        <nitem  name = "u_decode/ROM_group2_N_12"  />
+        <nitem  name = "u_decode/A_28__N_16"  />
+        <nitem  name = "u_decode/ROM_group2_N_14"  />
         </nets>
     </instance>
 
@@ -259,8 +301,8 @@
 
         <nets>
         <nitem  name = "A[29]"  />
-        <nitem  name = "u_decode/ROM_group2_N_12"  />
-        <nitem  name = "u_decode/ROM_group2_N_11"  />
+        <nitem  name = "u_decode/ROM_group2_N_14"  />
+        <nitem  name = "u_decode/ROM_group2_N_13"  />
         </nets>
     </instance>
 
@@ -274,7 +316,7 @@
         <nets>
         <nitem  name = "A[30]"  />
         <nitem  name = "u_decode/ROM_group2"  />
-        <nitem  name = "u_decode/ROM_group2_N_11"  />
+        <nitem  name = "u_decode/ROM_group2_N_13"  />
         </nets>
     </instance>
 
@@ -288,7 +330,7 @@
         <nets>
         <nitem  name = "u_decode/RAM_group1"  />
         <nitem  name = "u_decode/RAM_group2"  />
-        <nitem  name = "u_decode/RAM_ADDR_N_2"  />
+        <nitem  name = "u_decode/RAM_ADDR_N_4"  />
         </nets>
     </instance>
 
@@ -301,8 +343,8 @@
 
         <nets>
         <nitem  name = "A[31]"  />
-        <nitem  name = "u_decode/RAM_ADDR_N_2"  />
-        <nitem  name = "u_decode/RAM_ADDR_N_1"  />
+        <nitem  name = "u_decode/RAM_ADDR_N_4"  />
+        <nitem  name = "u_decode/RAM_ADDR_N_3"  />
         </nets>
     </instance>
 
@@ -314,7 +356,7 @@
 
         <nets>
         <nitem  name = "RAM_CS_ADDR"  />
-        <nitem  name = "u_decode/RAM_ADDR_N_1"  />
+        <nitem  name = "u_decode/RAM_ADDR_N_3"  />
         </nets>
     </instance>
 
@@ -328,7 +370,7 @@
         <nets>
         <nitem  name = "u_decode/RAM_group1"  />
         <nitem  name = "u_decode/ROM_group2"  />
-        <nitem  name = "u_decode/ROM_ADDR_N_4"  />
+        <nitem  name = "u_decode/ROM_ADDR_N_6"  />
         </nets>
     </instance>
 
@@ -341,8 +383,8 @@
 
         <nets>
         <nitem  name = "A[31]"  />
-        <nitem  name = "u_decode/ROM_ADDR_N_4"  />
-        <nitem  name = "u_decode/ROM_ADDR_N_3"  />
+        <nitem  name = "u_decode/ROM_ADDR_N_6"  />
+        <nitem  name = "u_decode/ROM_ADDR_N_5"  />
         </nets>
     </instance>
 
@@ -354,7 +396,7 @@
 
         <nets>
         <nitem  name = "ROM_CS_ADDR"  />
-        <nitem  name = "u_decode/ROM_ADDR_N_3"  />
+        <nitem  name = "u_decode/ROM_ADDR_N_5"  />
         </nets>
     </instance>
 
@@ -469,14 +511,14 @@
         <nitem  name = "u_RAM_CS_TA/n10"  />
         <nitem  name = "u_RAM_CS_TA/n11"  />
         <nitem  name = "u_RAM_CS_TA/n12"  />
-        <nitem  name = "u_RAM_CS_TA/RAM_CS_END_N_16[7]"  />
-        <nitem  name = "u_RAM_CS_TA/RAM_CS_END_N_16[6]"  />
-        <nitem  name = "u_RAM_CS_TA/RAM_CS_END_N_16[5]"  />
-        <nitem  name = "u_RAM_CS_TA/RAM_CS_END_N_16[4]"  />
-        <nitem  name = "u_RAM_CS_TA/RAM_CS_END_N_16[3]"  />
-        <nitem  name = "u_RAM_CS_TA/RAM_CS_END_N_16[2]"  />
-        <nitem  name = "u_RAM_CS_TA/RAM_CS_END_N_16[1]"  />
-        <nitem  name = "u_RAM_CS_TA/RAM_CS_END_N_16[0]"  />
+        <nitem  name = "u_RAM_CS_TA/RAM_CS_END_N_18[7]"  />
+        <nitem  name = "u_RAM_CS_TA/RAM_CS_END_N_18[6]"  />
+        <nitem  name = "u_RAM_CS_TA/RAM_CS_END_N_18[5]"  />
+        <nitem  name = "u_RAM_CS_TA/RAM_CS_END_N_18[4]"  />
+        <nitem  name = "u_RAM_CS_TA/RAM_CS_END_N_18[3]"  />
+        <nitem  name = "u_RAM_CS_TA/RAM_CS_END_N_18[2]"  />
+        <nitem  name = "u_RAM_CS_TA/RAM_CS_END_N_18[1]"  />
+        <nitem  name = "u_RAM_CS_TA/RAM_CS_END_N_18[0]"  />
         </nets>
     </instance>
 
@@ -492,7 +534,7 @@
         <nitem  name = "u_RAM_CS_TA/pwr"  />
         <nitem  name = "RAM_CS_ADDR"  />
         <nitem  name = "TS_N"  />
-        <nitem  name = "u_RAM_CS_TA/loadCS_N_25"  />
+        <nitem  name = "u_RAM_CS_TA/loadCS_N_27"  />
         </nets>
     </instance>
 
@@ -508,7 +550,7 @@
         <nitem  name = "u_RAM_CS_TA/pwr"  />
         <nitem  name = "RAM_CS_ADDR"  />
         <nitem  name = "TS_N"  />
-        <nitem  name = "u_RAM_CS_TA/loadTA_N_24"  />
+        <nitem  name = "u_RAM_CS_TA/loadTA_N_26"  />
         </nets>
     </instance>
 
@@ -524,7 +566,7 @@
         <nitem  name = "u_RAM_CS_TA/pwr"  />
         <nitem  name = "RAM_CS_ADDR"  />
         <nitem  name = "TS_N"  />
-        <nitem  name = "u_RAM_CS_TA/int_RAM_CS_N_N_15"  />
+        <nitem  name = "u_RAM_CS_TA/int_RAM_CS_N_N_17"  />
         </nets>
     </instance>
 
@@ -541,7 +583,7 @@
         <nitem  name = "u_RAM_CS_TA/gnd"  />
         <nitem  name = "CLK"  />
         <nitem  name = "u_RAM_CS_TA/loadTA"  />
-        <nitem  name = "u_RAM_CS_TA/loadTA_N_24"  />
+        <nitem  name = "u_RAM_CS_TA/loadTA_N_26"  />
         </nets>
     </instance>
 
@@ -558,7 +600,7 @@
         <nitem  name = "u_RAM_CS_TA/gnd"  />
         <nitem  name = "CLK"  />
         <nitem  name = "u_RAM_CS_TA/int_RAM_CS_N"  />
-        <nitem  name = "u_RAM_CS_TA/int_RAM_CS_N_N_15"  />
+        <nitem  name = "u_RAM_CS_TA/int_RAM_CS_N_N_17"  />
         </nets>
     </instance>
 
@@ -599,7 +641,7 @@
         <nitem  name = "u_RAM_CS_TA/gnd"  />
         <nitem  name = "CLK"  />
         <nitem  name = "u_RAM_CS_TA/loadCS"  />
-        <nitem  name = "u_RAM_CS_TA/loadCS_N_25"  />
+        <nitem  name = "u_RAM_CS_TA/loadCS_N_27"  />
         </nets>
     </instance>
 
@@ -612,8 +654,8 @@
 
         <nets>
         <nitem  name = "u_ROM_CS_TA/state"  />
-        <nitem  name = "u_ROM_CS_TA/state_N_54"  />
-        <nitem  name = "u_ROM_CS_TA/state_N_53"  />
+        <nitem  name = "u_ROM_CS_TA/state_N_72"  />
+        <nitem  name = "u_ROM_CS_TA/state_N_71"  />
         </nets>
     </instance>
 
@@ -631,6 +673,172 @@
         </nets>
     </instance>
 
+    <instance  name = "u_ROM_CS_TA/mux_4"  library = "work"  arch = ""  type = "comb">
+        <pins>
+        <pitem  name = "d1[15]"  direction = "in"  />
+        <pitem  name = "d1[14]"  direction = "in"  />
+        <pitem  name = "d1[13]"  direction = "in"  />
+        <pitem  name = "d1[12]"  direction = "in"  />
+        <pitem  name = "d1[11]"  direction = "in"  />
+        <pitem  name = "d1[10]"  direction = "in"  />
+        <pitem  name = "d1[9]"  direction = "in"  />
+        <pitem  name = "d1[8]"  direction = "in"  />
+        <pitem  name = "d1[7]"  direction = "in"  />
+        <pitem  name = "d1[6]"  direction = "in"  />
+        <pitem  name = "d0[15]"  direction = "in"  />
+        <pitem  name = "d0[14]"  direction = "in"  />
+        <pitem  name = "d0[13]"  direction = "in"  />
+        <pitem  name = "d0[12]"  direction = "in"  />
+        <pitem  name = "d0[11]"  direction = "in"  />
+        <pitem  name = "d0[10]"  direction = "in"  />
+        <pitem  name = "d0[9]"  direction = "in"  />
+        <pitem  name = "d0[8]"  direction = "in"  />
+        <pitem  name = "d0[7]"  direction = "in"  />
+        <pitem  name = "d0[6]"  direction = "in"  />
+        <pitem  name = "d0[5]"  direction = "in"  />
+        <pitem  name = "d0[4]"  direction = "in"  />
+        <pitem  name = "d0[3]"  direction = "in"  />
+        <pitem  name = "d0[2]"  direction = "in"  />
+        <pitem  name = "d0[1]"  direction = "in"  />
+        <pitem  name = "d0[0]"  direction = "in"  />
+        <pitem  name = "d1[5]"  direction = "in"  />
+        <pitem  name = "d1[4]"  direction = "in"  />
+        <pitem  name = "d1[3]"  direction = "in"  />
+        <pitem  name = "d1[2]"  direction = "in"  />
+        <pitem  name = "d1[1]"  direction = "in"  />
+        <pitem  name = "d1[0]"  direction = "in"  />
+        <pitem  name = "cond"  direction = "in"  />
+        <pitem  name = "o[15]"  direction = "out"  />
+        <pitem  name = "o[14]"  direction = "out"  />
+        <pitem  name = "o[13]"  direction = "out"  />
+        <pitem  name = "o[12]"  direction = "out"  />
+        <pitem  name = "o[11]"  direction = "out"  />
+        <pitem  name = "o[10]"  direction = "out"  />
+        <pitem  name = "o[9]"  direction = "out"  />
+        <pitem  name = "o[8]"  direction = "out"  />
+        <pitem  name = "o[7]"  direction = "out"  />
+        <pitem  name = "o[6]"  direction = "out"  />
+        <pitem  name = "o[5]"  direction = "out"  />
+        <pitem  name = "o[4]"  direction = "out"  />
+        <pitem  name = "o[3]"  direction = "out"  />
+        <pitem  name = "o[2]"  direction = "out"  />
+        <pitem  name = "o[1]"  direction = "out"  />
+        <pitem  name = "o[0]"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "u_ROM_CS_TA/gnd"  />
+        <nitem  name = "u_ROM_CS_TA/pwr"  />
+        <nitem  name = "RW_IN"  />
+        <nitem  name = "u_ROM_CS_TA/n4"  />
+        <nitem  name = "u_ROM_CS_TA/n5"  />
+        <nitem  name = "u_ROM_CS_TA/n6"  />
+        <nitem  name = "u_ROM_CS_TA/n7"  />
+        <nitem  name = "u_ROM_CS_TA/n8"  />
+        <nitem  name = "u_ROM_CS_TA/n9"  />
+        <nitem  name = "u_ROM_CS_TA/n10"  />
+        <nitem  name = "u_ROM_CS_TA/n11"  />
+        <nitem  name = "u_ROM_CS_TA/n12"  />
+        <nitem  name = "u_ROM_CS_TA/n13"  />
+        <nitem  name = "u_ROM_CS_TA/n14"  />
+        <nitem  name = "u_ROM_CS_TA/n15"  />
+        <nitem  name = "u_ROM_CS_TA/n16"  />
+        <nitem  name = "u_ROM_CS_TA/n17"  />
+        <nitem  name = "u_ROM_CS_TA/n18"  />
+        <nitem  name = "u_ROM_CS_TA/n19"  />
+        </nets>
+    </instance>
+
+    <instance  name = "u_ROM_CS_TA/and_5"  library = "work"  arch = ""  type = "comb">
+        <pins>
+        <pitem  name = "a[15]"  direction = "in"  />
+        <pitem  name = "a[14]"  direction = "in"  />
+        <pitem  name = "a[13]"  direction = "in"  />
+        <pitem  name = "a[12]"  direction = "in"  />
+        <pitem  name = "a[11]"  direction = "in"  />
+        <pitem  name = "a[10]"  direction = "in"  />
+        <pitem  name = "a[9]"  direction = "in"  />
+        <pitem  name = "a[8]"  direction = "in"  />
+        <pitem  name = "a[7]"  direction = "in"  />
+        <pitem  name = "a[6]"  direction = "in"  />
+        <pitem  name = "a[5]"  direction = "in"  />
+        <pitem  name = "a[4]"  direction = "in"  />
+        <pitem  name = "a[3]"  direction = "in"  />
+        <pitem  name = "a[2]"  direction = "in"  />
+        <pitem  name = "a[1]"  direction = "in"  />
+        <pitem  name = "a[0]"  direction = "in"  />
+        <pitem  name = "b[15]"  direction = "in"  />
+        <pitem  name = "b[14]"  direction = "in"  />
+        <pitem  name = "b[13]"  direction = "in"  />
+        <pitem  name = "b[12]"  direction = "in"  />
+        <pitem  name = "b[11]"  direction = "in"  />
+        <pitem  name = "b[10]"  direction = "in"  />
+        <pitem  name = "b[9]"  direction = "in"  />
+        <pitem  name = "b[8]"  direction = "in"  />
+        <pitem  name = "b[7]"  direction = "in"  />
+        <pitem  name = "b[6]"  direction = "in"  />
+        <pitem  name = "b[5]"  direction = "in"  />
+        <pitem  name = "b[4]"  direction = "in"  />
+        <pitem  name = "b[3]"  direction = "in"  />
+        <pitem  name = "b[2]"  direction = "in"  />
+        <pitem  name = "b[1]"  direction = "in"  />
+        <pitem  name = "b[0]"  direction = "in"  />
+        <pitem  name = "o[15]"  direction = "out"  />
+        <pitem  name = "o[14]"  direction = "out"  />
+        <pitem  name = "o[13]"  direction = "out"  />
+        <pitem  name = "o[12]"  direction = "out"  />
+        <pitem  name = "o[11]"  direction = "out"  />
+        <pitem  name = "o[10]"  direction = "out"  />
+        <pitem  name = "o[9]"  direction = "out"  />
+        <pitem  name = "o[8]"  direction = "out"  />
+        <pitem  name = "o[7]"  direction = "out"  />
+        <pitem  name = "o[6]"  direction = "out"  />
+        <pitem  name = "o[5]"  direction = "out"  />
+        <pitem  name = "o[4]"  direction = "out"  />
+        <pitem  name = "o[3]"  direction = "out"  />
+        <pitem  name = "o[2]"  direction = "out"  />
+        <pitem  name = "o[1]"  direction = "out"  />
+        <pitem  name = "o[0]"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "u_ROM_CS_TA/gnd"  />
+        <nitem  name = "u_ROM_CS_TA/pwr"  />
+        <nitem  name = "u_ROM_CS_TA/n4"  />
+        <nitem  name = "u_ROM_CS_TA/n5"  />
+        <nitem  name = "u_ROM_CS_TA/n6"  />
+        <nitem  name = "u_ROM_CS_TA/n7"  />
+        <nitem  name = "u_ROM_CS_TA/n8"  />
+        <nitem  name = "u_ROM_CS_TA/n9"  />
+        <nitem  name = "u_ROM_CS_TA/n10"  />
+        <nitem  name = "u_ROM_CS_TA/n11"  />
+        <nitem  name = "u_ROM_CS_TA/n12"  />
+        <nitem  name = "u_ROM_CS_TA/n13"  />
+        <nitem  name = "u_ROM_CS_TA/n14"  />
+        <nitem  name = "u_ROM_CS_TA/n15"  />
+        <nitem  name = "u_ROM_CS_TA/n16"  />
+        <nitem  name = "u_ROM_CS_TA/n17"  />
+        <nitem  name = "u_ROM_CS_TA/n18"  />
+        <nitem  name = "u_ROM_CS_TA/n19"  />
+        <nitem  name = "u_ROM_CS_TA/ROM_CS_END_N_53[15]"  />
+        <nitem  name = "u_ROM_CS_TA/ROM_CS_END_N_53[14]"  />
+        <nitem  name = "u_ROM_CS_TA/ROM_CS_END_N_53[13]"  />
+        <nitem  name = "u_ROM_CS_TA/ROM_CS_END_N_53[12]"  />
+        <nitem  name = "u_ROM_CS_TA/ROM_CS_END_N_53[11]"  />
+        <nitem  name = "u_ROM_CS_TA/ROM_CS_END_N_53[10]"  />
+        <nitem  name = "u_ROM_CS_TA/ROM_CS_END_N_53[9]"  />
+        <nitem  name = "u_ROM_CS_TA/ROM_CS_END_N_53[8]"  />
+        <nitem  name = "u_ROM_CS_TA/ROM_CS_END_N_53[7]"  />
+        <nitem  name = "u_ROM_CS_TA/ROM_CS_END_N_53[6]"  />
+        <nitem  name = "u_ROM_CS_TA/ROM_CS_END_N_53[5]"  />
+        <nitem  name = "u_ROM_CS_TA/ROM_CS_END_N_53[4]"  />
+        <nitem  name = "u_ROM_CS_TA/ROM_CS_END_N_53[3]"  />
+        <nitem  name = "u_ROM_CS_TA/ROM_CS_END_N_53[2]"  />
+        <nitem  name = "u_ROM_CS_TA/ROM_CS_END_N_53[1]"  />
+        <nitem  name = "u_ROM_CS_TA/ROM_CS_END_N_53[0]"  />
+        </nets>
+    </instance>
+
     <instance  name = "u_ROM_CS_TA/TS_N_I_0"  library = "work"  arch = ""  type = "comb">
         <pins>
         <pitem  name = "i"  direction = "in"  />
@@ -639,7 +847,23 @@
 
         <nets>
         <nitem  name = "TS_N"  />
-        <nitem  name = "u_ROM_CS_TA/TS_N_N_50"  />
+        <nitem  name = "u_ROM_CS_TA/TS_N_N_52"  />
+        </nets>
+    </instance>
+
+    <instance  name = "u_ROM_CS_TA/RW_I_0"  library = "work"  arch = ""  type = "comb">
+        <pins>
+        <pitem  name = "a0"  direction = "in"  />
+        <pitem  name = "a1"  direction = "in"  />
+        <pitem  name = "c"  direction = "in"  />
+        <pitem  name = "o"  direction = "out"  />
+        </pins>
+
+        <nets>
+        <nitem  name = "u_ROM_CS_TA/gnd"  />
+        <nitem  name = "RW_IN"  />
+        <nitem  name = "u_ROM_CS_TA/ROM_CS_END"  />
+        <nitem  name = "u_ROM_CS_TA/loadTA_N_76"  />
         </nets>
     </instance>
 
@@ -655,11 +879,11 @@
         <nitem  name = "u_ROM_CS_TA/gnd"  />
         <nitem  name = "u_ROM_CS_TA/ROM_CS_END"  />
         <nitem  name = "u_ROM_CS_TA/state"  />
-        <nitem  name = "u_ROM_CS_TA/state_N_54"  />
+        <nitem  name = "u_ROM_CS_TA/state_N_72"  />
         </nets>
     </instance>
 
-    <instance  name = "u_ROM_CS_TA/ROM_CS_END_I_0_29"  library = "work"  arch = ""  type = "comb">
+    <instance  name = "u_ROM_CS_TA/ROM_CS_END_I_0_32"  library = "work"  arch = ""  type = "comb">
         <pins>
         <pitem  name = "a0"  direction = "in"  />
         <pitem  name = "a1"  direction = "in"  />
@@ -671,7 +895,7 @@
         <nitem  name = "u_ROM_CS_TA/pwr"  />
         <nitem  name = "u_ROM_CS_TA/ROM_CS_END"  />
         <nitem  name = "u_ROM_CS_TA/state"  />
-        <nitem  name = "u_ROM_CS_TA/int_ROM_CS_N_N_48"  />
+        <nitem  name = "u_ROM_CS_TA/int_ROM_CS_N_N_50"  />
         </nets>
     </instance>
 
@@ -687,23 +911,23 @@
         <nitem  name = "u_ROM_CS_TA/pwr"  />
         <nitem  name = "u_ROM_CS_TA/ROM_CS_END"  />
         <nitem  name = "u_ROM_CS_TA/state"  />
-        <nitem  name = "u_ROM_CS_TA/loadCS_N_60"  />
+        <nitem  name = "u_ROM_CS_TA/loadCS_N_79"  />
         </nets>
     </instance>
 
-    <instance  name = "u_ROM_CS_TA/ROM_CS_END_I_0_30"  library = "work"  arch = ""  type = "comb">
+    <instance  name = "u_ROM_CS_TA/loadTA_I_13"  library = "work"  arch = ""  type = "comb">
         <pins>
         <pitem  name = "a0"  direction = "in"  />
-        <pitem  name = "a1"  direction = "in"  />
         <pitem  name = "c"  direction = "in"  />
+        <pitem  name = "a1"  direction = "in"  />
         <pitem  name = "o"  direction = "out"  />
         </pins>
 
         <nets>
         <nitem  name = "u_ROM_CS_TA/pwr"  />
-        <nitem  name = "u_ROM_CS_TA/ROM_CS_END"  />
         <nitem  name = "u_ROM_CS_TA/state"  />
-        <nitem  name = "u_ROM_CS_TA/loadTA_N_57"  />
+        <nitem  name = "u_ROM_CS_TA/loadTA_N_76"  />
+        <nitem  name = "u_ROM_CS_TA/loadTA_N_75"  />
         </nets>
     </instance>
 
@@ -717,13 +941,13 @@
 
         <nets>
         <nitem  name = "u_ROM_CS_TA/pwr"  />
-        <nitem  name = "u_ROM_CS_TA/TS_N_N_50"  />
-        <nitem  name = "u_ROM_CS_TA/state_N_53"  />
-        <nitem  name = "u_ROM_CS_TA/state_N_52"  />
+        <nitem  name = "u_ROM_CS_TA/TS_N_N_52"  />
+        <nitem  name = "u_ROM_CS_TA/state_N_71"  />
+        <nitem  name = "u_ROM_CS_TA/state_N_70"  />
         </nets>
     </instance>
 
-    <instance  name = "u_ROM_CS_TA/loadCS_I_13"  library = "work"  arch = ""  type = "comb">
+    <instance  name = "u_ROM_CS_TA/loadCS_I_14"  library = "work"  arch = ""  type = "comb">
         <pins>
         <pitem  name = "a1"  direction = "in"  />
         <pitem  name = "c"  direction = "in"  />
@@ -733,9 +957,9 @@
 
         <nets>
         <nitem  name = "u_ROM_CS_TA/gnd"  />
-        <nitem  name = "u_ROM_CS_TA/TS_N_N_50"  />
-        <nitem  name = "u_ROM_CS_TA/loadCS_N_60"  />
-        <nitem  name = "u_ROM_CS_TA/loadCS_N_59"  />
+        <nitem  name = "u_ROM_CS_TA/TS_N_N_52"  />
+        <nitem  name = "u_ROM_CS_TA/loadCS_N_79"  />
+        <nitem  name = "u_ROM_CS_TA/loadCS_N_78"  />
         </nets>
     </instance>
 
@@ -749,9 +973,9 @@
 
         <nets>
         <nitem  name = "u_ROM_CS_TA/gnd"  />
-        <nitem  name = "u_ROM_CS_TA/TS_N_N_50"  />
-        <nitem  name = "u_ROM_CS_TA/loadTA_N_57"  />
-        <nitem  name = "u_ROM_CS_TA/loadTA_N_56"  />
+        <nitem  name = "u_ROM_CS_TA/TS_N_N_52"  />
+        <nitem  name = "u_ROM_CS_TA/loadTA_N_75"  />
+        <nitem  name = "u_ROM_CS_TA/loadTA_N_74"  />
         </nets>
     </instance>
 
@@ -765,13 +989,13 @@
 
         <nets>
         <nitem  name = "u_ROM_CS_TA/gnd"  />
-        <nitem  name = "u_ROM_CS_TA/TS_N_N_50"  />
-        <nitem  name = "u_ROM_CS_TA/int_ROM_CS_N_N_48"  />
-        <nitem  name = "u_ROM_CS_TA/int_ROM_CS_N_N_47"  />
+        <nitem  name = "u_ROM_CS_TA/TS_N_N_52"  />
+        <nitem  name = "u_ROM_CS_TA/int_ROM_CS_N_N_50"  />
+        <nitem  name = "u_ROM_CS_TA/int_ROM_CS_N_N_49"  />
         </nets>
     </instance>
 
-    <instance  name = "u_ROM_CS_TA/state_I_0_28"  library = "work"  arch = ""  type = "comb">
+    <instance  name = "u_ROM_CS_TA/state_I_0_31"  library = "work"  arch = ""  type = "comb">
         <pins>
         <pitem  name = "a0"  direction = "in"  />
         <pitem  name = "c"  direction = "in"  />
@@ -782,12 +1006,12 @@
         <nets>
         <nitem  name = "u_ROM_CS_TA/gnd"  />
         <nitem  name = "ROM_CS_ADDR"  />
-        <nitem  name = "u_ROM_CS_TA/state_N_52"  />
-        <nitem  name = "u_ROM_CS_TA/state_N_51"  />
+        <nitem  name = "u_ROM_CS_TA/state_N_70"  />
+        <nitem  name = "u_ROM_CS_TA/state_N_69"  />
         </nets>
     </instance>
 
-    <instance  name = "u_ROM_CS_TA/loadCS_I_0_31"  library = "work"  arch = ""  type = "comb">
+    <instance  name = "u_ROM_CS_TA/loadCS_I_0_33"  library = "work"  arch = ""  type = "comb">
         <pins>
         <pitem  name = "a0"  direction = "in"  />
         <pitem  name = "c"  direction = "in"  />
@@ -798,12 +1022,12 @@
         <nets>
         <nitem  name = "u_ROM_CS_TA/pwr"  />
         <nitem  name = "ROM_CS_ADDR"  />
-        <nitem  name = "u_ROM_CS_TA/loadCS_N_59"  />
-        <nitem  name = "u_ROM_CS_TA/loadCS_N_58"  />
+        <nitem  name = "u_ROM_CS_TA/loadCS_N_78"  />
+        <nitem  name = "u_ROM_CS_TA/loadCS_N_77"  />
         </nets>
     </instance>
 
-    <instance  name = "u_ROM_CS_TA/loadTA_I_0_32"  library = "work"  arch = ""  type = "comb">
+    <instance  name = "u_ROM_CS_TA/loadTA_I_0_34"  library = "work"  arch = ""  type = "comb">
         <pins>
         <pitem  name = "a0"  direction = "in"  />
         <pitem  name = "c"  direction = "in"  />
@@ -814,8 +1038,8 @@
         <nets>
         <nitem  name = "u_ROM_CS_TA/pwr"  />
         <nitem  name = "ROM_CS_ADDR"  />
-        <nitem  name = "u_ROM_CS_TA/loadTA_N_56"  />
-        <nitem  name = "u_ROM_CS_TA/loadTA_N_55"  />
+        <nitem  name = "u_ROM_CS_TA/loadTA_N_74"  />
+        <nitem  name = "u_ROM_CS_TA/loadTA_N_73"  />
         </nets>
     </instance>
 
@@ -830,12 +1054,12 @@
         <nets>
         <nitem  name = "u_ROM_CS_TA/pwr"  />
         <nitem  name = "ROM_CS_ADDR"  />
-        <nitem  name = "u_ROM_CS_TA/int_ROM_CS_N_N_47"  />
-        <nitem  name = "u_ROM_CS_TA/int_ROM_CS_N_N_46"  />
+        <nitem  name = "u_ROM_CS_TA/int_ROM_CS_N_N_49"  />
+        <nitem  name = "u_ROM_CS_TA/int_ROM_CS_N_N_48"  />
         </nets>
     </instance>
 
-    <instance  name = "u_ROM_CS_TA/loadCS_24"  library = "work"  arch = ""  type = "reg">
+    <instance  name = "u_ROM_CS_TA/loadCS_27"  library = "work"  arch = ""  type = "reg">
         <pins>
         <pitem  name = "s"  direction = "in"  />
         <pitem  name = "r"  direction = "in"  />
@@ -847,12 +1071,12 @@
         <nets>
         <nitem  name = "u_ROM_CS_TA/gnd"  />
         <nitem  name = "CLK"  />
-        <nitem  name = "u_ROM_CS_TA/loadCS_N_58"  />
+        <nitem  name = "u_ROM_CS_TA/loadCS_N_77"  />
         <nitem  name = "u_ROM_CS_TA/loadCS"  />
         </nets>
     </instance>
 
-    <instance  name = "u_ROM_CS_TA/loadTA_25"  library = "work"  arch = ""  type = "reg">
+    <instance  name = "u_ROM_CS_TA/loadTA_28"  library = "work"  arch = ""  type = "reg">
         <pins>
         <pitem  name = "s"  direction = "in"  />
         <pitem  name = "r"  direction = "in"  />
@@ -865,11 +1089,11 @@
         <nitem  name = "u_ROM_CS_TA/gnd"  />
         <nitem  name = "CLK"  />
         <nitem  name = "u_ROM_CS_TA/loadTA"  />
-        <nitem  name = "u_ROM_CS_TA/loadTA_N_55"  />
+        <nitem  name = "u_ROM_CS_TA/loadTA_N_73"  />
         </nets>
     </instance>
 
-    <instance  name = "u_ROM_CS_TA/int_ROM_CS_N_26"  library = "work"  arch = ""  type = "reg">
+    <instance  name = "u_ROM_CS_TA/int_ROM_CS_N_29"  library = "work"  arch = ""  type = "reg">
         <pins>
         <pitem  name = "s"  direction = "in"  />
         <pitem  name = "r"  direction = "in"  />
@@ -882,7 +1106,7 @@
         <nitem  name = "u_ROM_CS_TA/gnd"  />
         <nitem  name = "CLK"  />
         <nitem  name = "u_ROM_CS_TA/int_ROM_CS_N"  />
-        <nitem  name = "u_ROM_CS_TA/int_ROM_CS_N_N_46"  />
+        <nitem  name = "u_ROM_CS_TA/int_ROM_CS_N_N_48"  />
         </nets>
     </instance>
 
@@ -910,7 +1134,7 @@
         </nets>
     </instance>
 
-    <instance  name = "u_ROM_CS_TA/state_23"  library = "work"  arch = ""  type = "reg">
+    <instance  name = "u_ROM_CS_TA/state_26"  library = "work"  arch = ""  type = "reg">
         <pins>
         <pitem  name = "s"  direction = "in"  />
         <pitem  name = "r"  direction = "in"  />
@@ -923,7 +1147,7 @@
         <nitem  name = "u_ROM_CS_TA/gnd"  />
         <nitem  name = "CLK"  />
         <nitem  name = "u_ROM_CS_TA/state"  />
-        <nitem  name = "u_ROM_CS_TA/state_N_51"  />
+        <nitem  name = "u_ROM_CS_TA/state_N_69"  />
         </nets>
     </instance>
 
@@ -935,7 +1159,7 @@
 
         <nets>
         <nitem  name = "CLKOS"  />
-        <nitem  name = "u_RAM_CS_TA/u_SR_RAMS_CS/Clock_N_44"  />
+        <nitem  name = "u_RAM_CS_TA/u_SR_RAMS_CS/Clock_N_46"  />
         </nets>
     </instance>
 
@@ -951,7 +1175,7 @@
         <nitem  name = "u_RAM_CS_TA/u_SR_RAMS_CS/pwr"  />
         <nitem  name = "u_RAM_CS_TA/gnd"  />
         <nitem  name = "u_RAM_CS_TA/loadCS_keep"  />
-        <nitem  name = "u_RAM_CS_TA/u_SR_RAMS_CS/load_half_N_42"  />
+        <nitem  name = "u_RAM_CS_TA/u_SR_RAMS_CS/load_half_N_44"  />
         </nets>
     </instance>
 
@@ -968,7 +1192,7 @@
         <nitem  name = "u_RAM_CS_TA/u_SR_RAMS_CS/gnd"  />
         <nitem  name = "CLKOS"  />
         <nitem  name = "u_RAM_CS_TA/u_SR_RAMS_CS/load_registered"  />
-        <nitem  name = "u_RAM_CS_TA/u_SR_RAMS_CS/load_registered_N_45"  />
+        <nitem  name = "u_RAM_CS_TA/u_SR_RAMS_CS/load_registered_N_47"  />
         </nets>
     </instance>
 
@@ -984,7 +1208,7 @@
         <nitem  name = "u_RAM_CS_TA/u_SR_RAMS_CS/pwr"  />
         <nitem  name = "u_RAM_CS_TA/gnd"  />
         <nitem  name = "u_RAM_CS_TA/u_SR_RAMS_CS/load_half"  />
-        <nitem  name = "u_RAM_CS_TA/u_SR_RAMS_CS/load_registered_N_45"  />
+        <nitem  name = "u_RAM_CS_TA/u_SR_RAMS_CS/load_registered_N_47"  />
         </nets>
     </instance>
 
@@ -1036,14 +1260,14 @@
         <nitem  name = "u_RAM_CS_TA/u_SR_RAMS_CS/shift_reg[2]"  />
         <nitem  name = "u_RAM_CS_TA/u_SR_RAMS_CS/shift_reg[1]"  />
         <nitem  name = "u_RAM_CS_TA/u_SR_RAMS_CS/shift_reg[0]"  />
-        <nitem  name = "u_RAM_CS_TA/u_SR_RAMS_CS/shift_reg_7__N_26[7]"  />
-        <nitem  name = "u_RAM_CS_TA/u_SR_RAMS_CS/shift_reg_7__N_26[6]"  />
-        <nitem  name = "u_RAM_CS_TA/u_SR_RAMS_CS/shift_reg_7__N_26[5]"  />
-        <nitem  name = "u_RAM_CS_TA/u_SR_RAMS_CS/shift_reg_7__N_26[4]"  />
-        <nitem  name = "u_RAM_CS_TA/u_SR_RAMS_CS/shift_reg_7__N_26[3]"  />
-        <nitem  name = "u_RAM_CS_TA/u_SR_RAMS_CS/shift_reg_7__N_26[2]"  />
-        <nitem  name = "u_RAM_CS_TA/u_SR_RAMS_CS/shift_reg_7__N_26[1]"  />
-        <nitem  name = "u_RAM_CS_TA/u_SR_RAMS_CS/shift_reg_7__N_26[0]"  />
+        <nitem  name = "u_RAM_CS_TA/u_SR_RAMS_CS/shift_reg_7__N_28[7]"  />
+        <nitem  name = "u_RAM_CS_TA/u_SR_RAMS_CS/shift_reg_7__N_28[6]"  />
+        <nitem  name = "u_RAM_CS_TA/u_SR_RAMS_CS/shift_reg_7__N_28[5]"  />
+        <nitem  name = "u_RAM_CS_TA/u_SR_RAMS_CS/shift_reg_7__N_28[4]"  />
+        <nitem  name = "u_RAM_CS_TA/u_SR_RAMS_CS/shift_reg_7__N_28[3]"  />
+        <nitem  name = "u_RAM_CS_TA/u_SR_RAMS_CS/shift_reg_7__N_28[2]"  />
+        <nitem  name = "u_RAM_CS_TA/u_SR_RAMS_CS/shift_reg_7__N_28[1]"  />
+        <nitem  name = "u_RAM_CS_TA/u_SR_RAMS_CS/shift_reg_7__N_28[0]"  />
         </nets>
     </instance>
 
@@ -1077,14 +1301,14 @@
         </pins>
 
         <nets>
-        <nitem  name = "u_RAM_CS_TA/RAM_CS_END_N_16[7]"  />
-        <nitem  name = "u_RAM_CS_TA/RAM_CS_END_N_16[6]"  />
-        <nitem  name = "u_RAM_CS_TA/RAM_CS_END_N_16[5]"  />
-        <nitem  name = "u_RAM_CS_TA/RAM_CS_END_N_16[4]"  />
-        <nitem  name = "u_RAM_CS_TA/RAM_CS_END_N_16[3]"  />
-        <nitem  name = "u_RAM_CS_TA/RAM_CS_END_N_16[2]"  />
-        <nitem  name = "u_RAM_CS_TA/RAM_CS_END_N_16[1]"  />
-        <nitem  name = "u_RAM_CS_TA/RAM_CS_END_N_16[0]"  />
+        <nitem  name = "u_RAM_CS_TA/RAM_CS_END_N_18[7]"  />
+        <nitem  name = "u_RAM_CS_TA/RAM_CS_END_N_18[6]"  />
+        <nitem  name = "u_RAM_CS_TA/RAM_CS_END_N_18[5]"  />
+        <nitem  name = "u_RAM_CS_TA/RAM_CS_END_N_18[4]"  />
+        <nitem  name = "u_RAM_CS_TA/RAM_CS_END_N_18[3]"  />
+        <nitem  name = "u_RAM_CS_TA/RAM_CS_END_N_18[2]"  />
+        <nitem  name = "u_RAM_CS_TA/RAM_CS_END_N_18[1]"  />
+        <nitem  name = "u_RAM_CS_TA/RAM_CS_END_N_18[0]"  />
         <nitem  name = "u_RAM_CS_TA/gnd"  />
         <nitem  name = "u_RAM_CS_TA/u_SR_RAMS_CS/shift_reg[6]"  />
         <nitem  name = "u_RAM_CS_TA/u_SR_RAMS_CS/shift_reg[5]"  />
@@ -1152,14 +1376,14 @@
         <nitem  name = "u_RAM_CS_TA/u_SR_RAMS_CS/n13"  />
         <nitem  name = "u_RAM_CS_TA/u_SR_RAMS_CS/n14"  />
         <nitem  name = "u_RAM_CS_TA/u_SR_RAMS_CS/n15"  />
-        <nitem  name = "u_RAM_CS_TA/u_SR_RAMS_CS/shift_reg_7__N_34[7]"  />
-        <nitem  name = "u_RAM_CS_TA/u_SR_RAMS_CS/shift_reg_7__N_34[6]"  />
-        <nitem  name = "u_RAM_CS_TA/u_SR_RAMS_CS/shift_reg_7__N_34[5]"  />
-        <nitem  name = "u_RAM_CS_TA/u_SR_RAMS_CS/shift_reg_7__N_34[4]"  />
-        <nitem  name = "u_RAM_CS_TA/u_SR_RAMS_CS/shift_reg_7__N_34[3]"  />
-        <nitem  name = "u_RAM_CS_TA/u_SR_RAMS_CS/shift_reg_7__N_34[2]"  />
-        <nitem  name = "u_RAM_CS_TA/u_SR_RAMS_CS/shift_reg_7__N_34[1]"  />
-        <nitem  name = "u_RAM_CS_TA/u_SR_RAMS_CS/shift_reg_7__N_34[0]"  />
+        <nitem  name = "u_RAM_CS_TA/u_SR_RAMS_CS/shift_reg_7__N_36[7]"  />
+        <nitem  name = "u_RAM_CS_TA/u_SR_RAMS_CS/shift_reg_7__N_36[6]"  />
+        <nitem  name = "u_RAM_CS_TA/u_SR_RAMS_CS/shift_reg_7__N_36[5]"  />
+        <nitem  name = "u_RAM_CS_TA/u_SR_RAMS_CS/shift_reg_7__N_36[4]"  />
+        <nitem  name = "u_RAM_CS_TA/u_SR_RAMS_CS/shift_reg_7__N_36[3]"  />
+        <nitem  name = "u_RAM_CS_TA/u_SR_RAMS_CS/shift_reg_7__N_36[2]"  />
+        <nitem  name = "u_RAM_CS_TA/u_SR_RAMS_CS/shift_reg_7__N_36[1]"  />
+        <nitem  name = "u_RAM_CS_TA/u_SR_RAMS_CS/shift_reg_7__N_36[0]"  />
         </nets>
     </instance>
 
@@ -1195,22 +1419,22 @@
         <nets>
         <nitem  name = "u_RAM_CS_TA/u_SR_RAMS_CS/gnd"  />
         <nitem  name = "u_RAM_CS_TA/gnd"  />
-        <nitem  name = "u_RAM_CS_TA/u_SR_RAMS_CS/shift_reg_7__N_34[7]"  />
-        <nitem  name = "u_RAM_CS_TA/u_SR_RAMS_CS/shift_reg_7__N_34[6]"  />
-        <nitem  name = "u_RAM_CS_TA/u_SR_RAMS_CS/shift_reg_7__N_34[5]"  />
-        <nitem  name = "u_RAM_CS_TA/u_SR_RAMS_CS/shift_reg_7__N_34[4]"  />
-        <nitem  name = "u_RAM_CS_TA/u_SR_RAMS_CS/shift_reg_7__N_34[3]"  />
-        <nitem  name = "u_RAM_CS_TA/u_SR_RAMS_CS/shift_reg_7__N_34[2]"  />
-        <nitem  name = "u_RAM_CS_TA/u_SR_RAMS_CS/shift_reg_7__N_34[1]"  />
-        <nitem  name = "u_RAM_CS_TA/u_SR_RAMS_CS/shift_reg_7__N_34[0]"  />
-        <nitem  name = "u_RAM_CS_TA/u_SR_RAMS_CS/shift_reg_7__N_26[7]"  />
-        <nitem  name = "u_RAM_CS_TA/u_SR_RAMS_CS/shift_reg_7__N_26[6]"  />
-        <nitem  name = "u_RAM_CS_TA/u_SR_RAMS_CS/shift_reg_7__N_26[5]"  />
-        <nitem  name = "u_RAM_CS_TA/u_SR_RAMS_CS/shift_reg_7__N_26[4]"  />
-        <nitem  name = "u_RAM_CS_TA/u_SR_RAMS_CS/shift_reg_7__N_26[3]"  />
-        <nitem  name = "u_RAM_CS_TA/u_SR_RAMS_CS/shift_reg_7__N_26[2]"  />
-        <nitem  name = "u_RAM_CS_TA/u_SR_RAMS_CS/shift_reg_7__N_26[1]"  />
-        <nitem  name = "u_RAM_CS_TA/u_SR_RAMS_CS/shift_reg_7__N_26[0]"  />
+        <nitem  name = "u_RAM_CS_TA/u_SR_RAMS_CS/shift_reg_7__N_36[7]"  />
+        <nitem  name = "u_RAM_CS_TA/u_SR_RAMS_CS/shift_reg_7__N_36[6]"  />
+        <nitem  name = "u_RAM_CS_TA/u_SR_RAMS_CS/shift_reg_7__N_36[5]"  />
+        <nitem  name = "u_RAM_CS_TA/u_SR_RAMS_CS/shift_reg_7__N_36[4]"  />
+        <nitem  name = "u_RAM_CS_TA/u_SR_RAMS_CS/shift_reg_7__N_36[3]"  />
+        <nitem  name = "u_RAM_CS_TA/u_SR_RAMS_CS/shift_reg_7__N_36[2]"  />
+        <nitem  name = "u_RAM_CS_TA/u_SR_RAMS_CS/shift_reg_7__N_36[1]"  />
+        <nitem  name = "u_RAM_CS_TA/u_SR_RAMS_CS/shift_reg_7__N_36[0]"  />
+        <nitem  name = "u_RAM_CS_TA/u_SR_RAMS_CS/shift_reg_7__N_28[7]"  />
+        <nitem  name = "u_RAM_CS_TA/u_SR_RAMS_CS/shift_reg_7__N_28[6]"  />
+        <nitem  name = "u_RAM_CS_TA/u_SR_RAMS_CS/shift_reg_7__N_28[5]"  />
+        <nitem  name = "u_RAM_CS_TA/u_SR_RAMS_CS/shift_reg_7__N_28[4]"  />
+        <nitem  name = "u_RAM_CS_TA/u_SR_RAMS_CS/shift_reg_7__N_28[3]"  />
+        <nitem  name = "u_RAM_CS_TA/u_SR_RAMS_CS/shift_reg_7__N_28[2]"  />
+        <nitem  name = "u_RAM_CS_TA/u_SR_RAMS_CS/shift_reg_7__N_28[1]"  />
+        <nitem  name = "u_RAM_CS_TA/u_SR_RAMS_CS/shift_reg_7__N_28[0]"  />
         </nets>
     </instance>
 
@@ -1226,8 +1450,8 @@
         <nets>
         <nitem  name = "u_RAM_CS_TA/u_SR_RAMS_CS/gnd"  />
         <nitem  name = "u_RAM_CS_TA/u_SR_RAMS_CS/load_half"  />
-        <nitem  name = "u_RAM_CS_TA/u_SR_RAMS_CS/Clock_N_44"  />
-        <nitem  name = "u_RAM_CS_TA/u_SR_RAMS_CS/load_half_N_42"  />
+        <nitem  name = "u_RAM_CS_TA/u_SR_RAMS_CS/Clock_N_46"  />
+        <nitem  name = "u_RAM_CS_TA/u_SR_RAMS_CS/load_half_N_44"  />
         </nets>
     </instance>
 
@@ -1239,7 +1463,7 @@
 
         <nets>
         <nitem  name = "CLKOS"  />
-        <nitem  name = "u_RAM_CS_TA/u_SR_TA/Clock_N_44"  />
+        <nitem  name = "u_RAM_CS_TA/u_SR_TA/Clock_N_46"  />
         </nets>
     </instance>
 
@@ -1255,7 +1479,7 @@
         <nitem  name = "u_RAM_CS_TA/u_SR_TA/pwr"  />
         <nitem  name = "u_RAM_CS_TA/gnd"  />
         <nitem  name = "u_RAM_CS_TA/loadTA_keep"  />
-        <nitem  name = "u_RAM_CS_TA/u_SR_TA/load_half_N_42"  />
+        <nitem  name = "u_RAM_CS_TA/u_SR_TA/load_half_N_44"  />
         </nets>
     </instance>
 
@@ -1272,7 +1496,7 @@
         <nitem  name = "u_RAM_CS_TA/u_SR_TA/gnd"  />
         <nitem  name = "CLKOS"  />
         <nitem  name = "u_RAM_CS_TA/u_SR_TA/load_registered"  />
-        <nitem  name = "u_RAM_CS_TA/u_SR_TA/load_registered_N_45"  />
+        <nitem  name = "u_RAM_CS_TA/u_SR_TA/load_registered_N_47"  />
         </nets>
     </instance>
 
@@ -1288,7 +1512,7 @@
         <nitem  name = "u_RAM_CS_TA/u_SR_TA/pwr"  />
         <nitem  name = "u_RAM_CS_TA/gnd"  />
         <nitem  name = "u_RAM_CS_TA/u_SR_TA/load_half"  />
-        <nitem  name = "u_RAM_CS_TA/u_SR_TA/load_registered_N_45"  />
+        <nitem  name = "u_RAM_CS_TA/u_SR_TA/load_registered_N_47"  />
         </nets>
     </instance>
 
@@ -1340,14 +1564,14 @@
         <nitem  name = "u_RAM_CS_TA/u_SR_TA/shift_reg[2]"  />
         <nitem  name = "u_RAM_CS_TA/u_SR_TA/shift_reg[1]"  />
         <nitem  name = "u_RAM_CS_TA/u_SR_TA/shift_reg[0]"  />
-        <nitem  name = "u_RAM_CS_TA/u_SR_TA/shift_reg_7__N_26[7]"  />
-        <nitem  name = "u_RAM_CS_TA/u_SR_TA/shift_reg_7__N_26[6]"  />
-        <nitem  name = "u_RAM_CS_TA/u_SR_TA/shift_reg_7__N_26[5]"  />
-        <nitem  name = "u_RAM_CS_TA/u_SR_TA/shift_reg_7__N_26[4]"  />
-        <nitem  name = "u_RAM_CS_TA/u_SR_TA/shift_reg_7__N_26[3]"  />
-        <nitem  name = "u_RAM_CS_TA/u_SR_TA/shift_reg_7__N_26[2]"  />
-        <nitem  name = "u_RAM_CS_TA/u_SR_TA/shift_reg_7__N_26[1]"  />
-        <nitem  name = "u_RAM_CS_TA/u_SR_TA/shift_reg_7__N_26[0]"  />
+        <nitem  name = "u_RAM_CS_TA/u_SR_TA/shift_reg_7__N_28[7]"  />
+        <nitem  name = "u_RAM_CS_TA/u_SR_TA/shift_reg_7__N_28[6]"  />
+        <nitem  name = "u_RAM_CS_TA/u_SR_TA/shift_reg_7__N_28[5]"  />
+        <nitem  name = "u_RAM_CS_TA/u_SR_TA/shift_reg_7__N_28[4]"  />
+        <nitem  name = "u_RAM_CS_TA/u_SR_TA/shift_reg_7__N_28[3]"  />
+        <nitem  name = "u_RAM_CS_TA/u_SR_TA/shift_reg_7__N_28[2]"  />
+        <nitem  name = "u_RAM_CS_TA/u_SR_TA/shift_reg_7__N_28[1]"  />
+        <nitem  name = "u_RAM_CS_TA/u_SR_TA/shift_reg_7__N_28[0]"  />
         </nets>
     </instance>
 
@@ -1449,14 +1673,14 @@
         <nitem  name = "u_RAM_CS_TA/u_SR_TA/n13"  />
         <nitem  name = "u_RAM_CS_TA/u_SR_TA/n14"  />
         <nitem  name = "u_RAM_CS_TA/u_SR_TA/n15"  />
-        <nitem  name = "u_RAM_CS_TA/u_SR_TA/shift_reg_7__N_34[7]"  />
-        <nitem  name = "u_RAM_CS_TA/u_SR_TA/shift_reg_7__N_34[6]"  />
-        <nitem  name = "u_RAM_CS_TA/u_SR_TA/shift_reg_7__N_34[5]"  />
-        <nitem  name = "u_RAM_CS_TA/u_SR_TA/shift_reg_7__N_34[4]"  />
-        <nitem  name = "u_RAM_CS_TA/u_SR_TA/shift_reg_7__N_34[3]"  />
-        <nitem  name = "u_RAM_CS_TA/u_SR_TA/shift_reg_7__N_34[2]"  />
-        <nitem  name = "u_RAM_CS_TA/u_SR_TA/shift_reg_7__N_34[1]"  />
-        <nitem  name = "u_RAM_CS_TA/u_SR_TA/shift_reg_7__N_34[0]"  />
+        <nitem  name = "u_RAM_CS_TA/u_SR_TA/shift_reg_7__N_36[7]"  />
+        <nitem  name = "u_RAM_CS_TA/u_SR_TA/shift_reg_7__N_36[6]"  />
+        <nitem  name = "u_RAM_CS_TA/u_SR_TA/shift_reg_7__N_36[5]"  />
+        <nitem  name = "u_RAM_CS_TA/u_SR_TA/shift_reg_7__N_36[4]"  />
+        <nitem  name = "u_RAM_CS_TA/u_SR_TA/shift_reg_7__N_36[3]"  />
+        <nitem  name = "u_RAM_CS_TA/u_SR_TA/shift_reg_7__N_36[2]"  />
+        <nitem  name = "u_RAM_CS_TA/u_SR_TA/shift_reg_7__N_36[1]"  />
+        <nitem  name = "u_RAM_CS_TA/u_SR_TA/shift_reg_7__N_36[0]"  />
         </nets>
     </instance>
 
@@ -1492,22 +1716,22 @@
         <nets>
         <nitem  name = "u_RAM_CS_TA/u_SR_TA/gnd"  />
         <nitem  name = "u_RAM_CS_TA/gnd"  />
-        <nitem  name = "u_RAM_CS_TA/u_SR_TA/shift_reg_7__N_34[7]"  />
-        <nitem  name = "u_RAM_CS_TA/u_SR_TA/shift_reg_7__N_34[6]"  />
-        <nitem  name = "u_RAM_CS_TA/u_SR_TA/shift_reg_7__N_34[5]"  />
-        <nitem  name = "u_RAM_CS_TA/u_SR_TA/shift_reg_7__N_34[4]"  />
-        <nitem  name = "u_RAM_CS_TA/u_SR_TA/shift_reg_7__N_34[3]"  />
-        <nitem  name = "u_RAM_CS_TA/u_SR_TA/shift_reg_7__N_34[2]"  />
-        <nitem  name = "u_RAM_CS_TA/u_SR_TA/shift_reg_7__N_34[1]"  />
-        <nitem  name = "u_RAM_CS_TA/u_SR_TA/shift_reg_7__N_34[0]"  />
-        <nitem  name = "u_RAM_CS_TA/u_SR_TA/shift_reg_7__N_26[7]"  />
-        <nitem  name = "u_RAM_CS_TA/u_SR_TA/shift_reg_7__N_26[6]"  />
-        <nitem  name = "u_RAM_CS_TA/u_SR_TA/shift_reg_7__N_26[5]"  />
-        <nitem  name = "u_RAM_CS_TA/u_SR_TA/shift_reg_7__N_26[4]"  />
-        <nitem  name = "u_RAM_CS_TA/u_SR_TA/shift_reg_7__N_26[3]"  />
-        <nitem  name = "u_RAM_CS_TA/u_SR_TA/shift_reg_7__N_26[2]"  />
-        <nitem  name = "u_RAM_CS_TA/u_SR_TA/shift_reg_7__N_26[1]"  />
-        <nitem  name = "u_RAM_CS_TA/u_SR_TA/shift_reg_7__N_26[0]"  />
+        <nitem  name = "u_RAM_CS_TA/u_SR_TA/shift_reg_7__N_36[7]"  />
+        <nitem  name = "u_RAM_CS_TA/u_SR_TA/shift_reg_7__N_36[6]"  />
+        <nitem  name = "u_RAM_CS_TA/u_SR_TA/shift_reg_7__N_36[5]"  />
+        <nitem  name = "u_RAM_CS_TA/u_SR_TA/shift_reg_7__N_36[4]"  />
+        <nitem  name = "u_RAM_CS_TA/u_SR_TA/shift_reg_7__N_36[3]"  />
+        <nitem  name = "u_RAM_CS_TA/u_SR_TA/shift_reg_7__N_36[2]"  />
+        <nitem  name = "u_RAM_CS_TA/u_SR_TA/shift_reg_7__N_36[1]"  />
+        <nitem  name = "u_RAM_CS_TA/u_SR_TA/shift_reg_7__N_36[0]"  />
+        <nitem  name = "u_RAM_CS_TA/u_SR_TA/shift_reg_7__N_28[7]"  />
+        <nitem  name = "u_RAM_CS_TA/u_SR_TA/shift_reg_7__N_28[6]"  />
+        <nitem  name = "u_RAM_CS_TA/u_SR_TA/shift_reg_7__N_28[5]"  />
+        <nitem  name = "u_RAM_CS_TA/u_SR_TA/shift_reg_7__N_28[4]"  />
+        <nitem  name = "u_RAM_CS_TA/u_SR_TA/shift_reg_7__N_28[3]"  />
+        <nitem  name = "u_RAM_CS_TA/u_SR_TA/shift_reg_7__N_28[2]"  />
+        <nitem  name = "u_RAM_CS_TA/u_SR_TA/shift_reg_7__N_28[1]"  />
+        <nitem  name = "u_RAM_CS_TA/u_SR_TA/shift_reg_7__N_28[0]"  />
         </nets>
     </instance>
 
@@ -1523,8 +1747,8 @@
         <nets>
         <nitem  name = "u_RAM_CS_TA/u_SR_TA/gnd"  />
         <nitem  name = "u_RAM_CS_TA/u_SR_TA/load_half"  />
-        <nitem  name = "u_RAM_CS_TA/u_SR_TA/Clock_N_44"  />
-        <nitem  name = "u_RAM_CS_TA/u_SR_TA/load_half_N_42"  />
+        <nitem  name = "u_RAM_CS_TA/u_SR_TA/Clock_N_46"  />
+        <nitem  name = "u_RAM_CS_TA/u_SR_TA/load_half_N_44"  />
         </nets>
     </instance>
 
@@ -1536,7 +1760,7 @@
 
         <nets>
         <nitem  name = "CLKOS2"  />
-        <nitem  name = "u_ROM_CS_TA/u_SR_ROMS_CS/Clock_N_44"  />
+        <nitem  name = "u_ROM_CS_TA/u_SR_ROMS_CS/Clock_N_114"  />
         </nets>
     </instance>
 
@@ -1552,7 +1776,7 @@
         <nitem  name = "u_ROM_CS_TA/u_SR_ROMS_CS/pwr"  />
         <nitem  name = "u_ROM_CS_TA/gnd"  />
         <nitem  name = "u_ROM_CS_TA/loadCS_keep"  />
-        <nitem  name = "u_ROM_CS_TA/u_SR_ROMS_CS/load_half_N_42"  />
+        <nitem  name = "u_ROM_CS_TA/u_SR_ROMS_CS/load_half_N_112"  />
         </nets>
     </instance>
 
@@ -1569,7 +1793,7 @@
         <nitem  name = "u_ROM_CS_TA/u_SR_ROMS_CS/gnd"  />
         <nitem  name = "CLKOS2"  />
         <nitem  name = "u_ROM_CS_TA/u_SR_ROMS_CS/load_registered"  />
-        <nitem  name = "u_ROM_CS_TA/u_SR_ROMS_CS/load_registered_N_45"  />
+        <nitem  name = "u_ROM_CS_TA/u_SR_ROMS_CS/load_registered_N_115"  />
         </nets>
     </instance>
 
@@ -1585,12 +1809,20 @@
         <nitem  name = "u_ROM_CS_TA/u_SR_ROMS_CS/pwr"  />
         <nitem  name = "u_ROM_CS_TA/gnd"  />
         <nitem  name = "u_ROM_CS_TA/u_SR_ROMS_CS/load_half"  />
-        <nitem  name = "u_ROM_CS_TA/u_SR_ROMS_CS/load_registered_N_45"  />
+        <nitem  name = "u_ROM_CS_TA/u_SR_ROMS_CS/load_registered_N_115"  />
         </nets>
     </instance>
 
     <instance  name = "u_ROM_CS_TA/u_SR_ROMS_CS/shift_reg"  library = "work"  arch = ""  type = "reg">
         <pins>
+        <pitem  name = "set[15]"  direction = "in"  />
+        <pitem  name = "set[14]"  direction = "in"  />
+        <pitem  name = "set[13]"  direction = "in"  />
+        <pitem  name = "set[12]"  direction = "in"  />
+        <pitem  name = "set[11]"  direction = "in"  />
+        <pitem  name = "set[10]"  direction = "in"  />
+        <pitem  name = "set[9]"  direction = "in"  />
+        <pitem  name = "set[8]"  direction = "in"  />
         <pitem  name = "set[7]"  direction = "in"  />
         <pitem  name = "set[6]"  direction = "in"  />
         <pitem  name = "set[5]"  direction = "in"  />
@@ -1599,6 +1831,14 @@
         <pitem  name = "set[2]"  direction = "in"  />
         <pitem  name = "set[1]"  direction = "in"  />
         <pitem  name = "set[0]"  direction = "in"  />
+        <pitem  name = "reset[15]"  direction = "in"  />
+        <pitem  name = "reset[14]"  direction = "in"  />
+        <pitem  name = "reset[13]"  direction = "in"  />
+        <pitem  name = "reset[12]"  direction = "in"  />
+        <pitem  name = "reset[11]"  direction = "in"  />
+        <pitem  name = "reset[10]"  direction = "in"  />
+        <pitem  name = "reset[9]"  direction = "in"  />
+        <pitem  name = "reset[8]"  direction = "in"  />
         <pitem  name = "reset[7]"  direction = "in"  />
         <pitem  name = "reset[6]"  direction = "in"  />
         <pitem  name = "reset[5]"  direction = "in"  />
@@ -1608,6 +1848,14 @@
         <pitem  name = "reset[1]"  direction = "in"  />
         <pitem  name = "reset[0]"  direction = "in"  />
         <pitem  name = "clock"  direction = "in"  />
+        <pitem  name = "q[15]"  direction = "out"  />
+        <pitem  name = "q[14]"  direction = "out"  />
+        <pitem  name = "q[13]"  direction = "out"  />
+        <pitem  name = "q[12]"  direction = "out"  />
+        <pitem  name = "q[11]"  direction = "out"  />
+        <pitem  name = "q[10]"  direction = "out"  />
+        <pitem  name = "q[9]"  direction = "out"  />
+        <pitem  name = "q[8]"  direction = "out"  />
         <pitem  name = "q[7]"  direction = "out"  />
         <pitem  name = "q[6]"  direction = "out"  />
         <pitem  name = "q[5]"  direction = "out"  />
@@ -1616,6 +1864,14 @@
         <pitem  name = "q[2]"  direction = "out"  />
         <pitem  name = "q[1]"  direction = "out"  />
         <pitem  name = "q[0]"  direction = "out"  />
+        <pitem  name = "d[15]"  direction = "in"  />
+        <pitem  name = "d[14]"  direction = "in"  />
+        <pitem  name = "d[13]"  direction = "in"  />
+        <pitem  name = "d[12]"  direction = "in"  />
+        <pitem  name = "d[11]"  direction = "in"  />
+        <pitem  name = "d[10]"  direction = "in"  />
+        <pitem  name = "d[9]"  direction = "in"  />
+        <pitem  name = "d[8]"  direction = "in"  />
         <pitem  name = "d[7]"  direction = "in"  />
         <pitem  name = "d[6]"  direction = "in"  />
         <pitem  name = "d[5]"  direction = "in"  />
@@ -1630,6 +1886,14 @@
         <nitem  name = "u_ROM_CS_TA/u_SR_ROMS_CS/gnd"  />
         <nitem  name = "CLKOS2"  />
         <nitem  name = "u_ROM_CS_TA/ROM_CS_END"  />
+        <nitem  name = "u_ROM_CS_TA/u_SR_ROMS_CS/shift_reg[14]"  />
+        <nitem  name = "u_ROM_CS_TA/u_SR_ROMS_CS/shift_reg[13]"  />
+        <nitem  name = "u_ROM_CS_TA/u_SR_ROMS_CS/shift_reg[12]"  />
+        <nitem  name = "u_ROM_CS_TA/u_SR_ROMS_CS/shift_reg[11]"  />
+        <nitem  name = "u_ROM_CS_TA/u_SR_ROMS_CS/shift_reg[10]"  />
+        <nitem  name = "u_ROM_CS_TA/u_SR_ROMS_CS/shift_reg[9]"  />
+        <nitem  name = "u_ROM_CS_TA/u_SR_ROMS_CS/shift_reg[8]"  />
+        <nitem  name = "u_ROM_CS_TA/u_SR_ROMS_CS/shift_reg[7]"  />
         <nitem  name = "u_ROM_CS_TA/u_SR_ROMS_CS/shift_reg[6]"  />
         <nitem  name = "u_ROM_CS_TA/u_SR_ROMS_CS/shift_reg[5]"  />
         <nitem  name = "u_ROM_CS_TA/u_SR_ROMS_CS/shift_reg[4]"  />
@@ -1637,19 +1901,35 @@
         <nitem  name = "u_ROM_CS_TA/u_SR_ROMS_CS/shift_reg[2]"  />
         <nitem  name = "u_ROM_CS_TA/u_SR_ROMS_CS/shift_reg[1]"  />
         <nitem  name = "u_ROM_CS_TA/u_SR_ROMS_CS/shift_reg[0]"  />
-        <nitem  name = "u_ROM_CS_TA/u_SR_ROMS_CS/shift_reg_7__N_26[7]"  />
-        <nitem  name = "u_ROM_CS_TA/u_SR_ROMS_CS/shift_reg_7__N_26[6]"  />
-        <nitem  name = "u_ROM_CS_TA/u_SR_ROMS_CS/shift_reg_7__N_26[5]"  />
-        <nitem  name = "u_ROM_CS_TA/u_SR_ROMS_CS/shift_reg_7__N_26[4]"  />
-        <nitem  name = "u_ROM_CS_TA/u_SR_ROMS_CS/shift_reg_7__N_26[3]"  />
-        <nitem  name = "u_ROM_CS_TA/u_SR_ROMS_CS/shift_reg_7__N_26[2]"  />
-        <nitem  name = "u_ROM_CS_TA/u_SR_ROMS_CS/shift_reg_7__N_26[1]"  />
-        <nitem  name = "u_ROM_CS_TA/u_SR_ROMS_CS/shift_reg_7__N_26[0]"  />
+        <nitem  name = "u_ROM_CS_TA/u_SR_ROMS_CS/shift_reg_15__N_80[15]"  />
+        <nitem  name = "u_ROM_CS_TA/u_SR_ROMS_CS/shift_reg_15__N_80[14]"  />
+        <nitem  name = "u_ROM_CS_TA/u_SR_ROMS_CS/shift_reg_15__N_80[13]"  />
+        <nitem  name = "u_ROM_CS_TA/u_SR_ROMS_CS/shift_reg_15__N_80[12]"  />
+        <nitem  name = "u_ROM_CS_TA/u_SR_ROMS_CS/shift_reg_15__N_80[11]"  />
+        <nitem  name = "u_ROM_CS_TA/u_SR_ROMS_CS/shift_reg_15__N_80[10]"  />
+        <nitem  name = "u_ROM_CS_TA/u_SR_ROMS_CS/shift_reg_15__N_80[9]"  />
+        <nitem  name = "u_ROM_CS_TA/u_SR_ROMS_CS/shift_reg_15__N_80[8]"  />
+        <nitem  name = "u_ROM_CS_TA/u_SR_ROMS_CS/shift_reg_15__N_80[7]"  />
+        <nitem  name = "u_ROM_CS_TA/u_SR_ROMS_CS/shift_reg_15__N_80[6]"  />
+        <nitem  name = "u_ROM_CS_TA/u_SR_ROMS_CS/shift_reg_15__N_80[5]"  />
+        <nitem  name = "u_ROM_CS_TA/u_SR_ROMS_CS/shift_reg_15__N_80[4]"  />
+        <nitem  name = "u_ROM_CS_TA/u_SR_ROMS_CS/shift_reg_15__N_80[3]"  />
+        <nitem  name = "u_ROM_CS_TA/u_SR_ROMS_CS/shift_reg_15__N_80[2]"  />
+        <nitem  name = "u_ROM_CS_TA/u_SR_ROMS_CS/shift_reg_15__N_80[1]"  />
+        <nitem  name = "u_ROM_CS_TA/u_SR_ROMS_CS/shift_reg_15__N_80[0]"  />
         </nets>
     </instance>
 
     <instance  name = "u_ROM_CS_TA/u_SR_ROMS_CS/mux_8"  library = "work"  arch = ""  type = "comb">
         <pins>
+        <pitem  name = "d1[15]"  direction = "in"  />
+        <pitem  name = "d1[14]"  direction = "in"  />
+        <pitem  name = "d1[13]"  direction = "in"  />
+        <pitem  name = "d1[12]"  direction = "in"  />
+        <pitem  name = "d1[11]"  direction = "in"  />
+        <pitem  name = "d1[10]"  direction = "in"  />
+        <pitem  name = "d1[9]"  direction = "in"  />
+        <pitem  name = "d1[8]"  direction = "in"  />
         <pitem  name = "d1[7]"  direction = "in"  />
         <pitem  name = "d1[6]"  direction = "in"  />
         <pitem  name = "d1[5]"  direction = "in"  />
@@ -1659,6 +1939,14 @@
         <pitem  name = "d1[1]"  direction = "in"  />
         <pitem  name = "d1[0]"  direction = "in"  />
         <pitem  name = "d0[0]"  direction = "in"  />
+        <pitem  name = "d0[15]"  direction = "in"  />
+        <pitem  name = "d0[14]"  direction = "in"  />
+        <pitem  name = "d0[13]"  direction = "in"  />
+        <pitem  name = "d0[12]"  direction = "in"  />
+        <pitem  name = "d0[11]"  direction = "in"  />
+        <pitem  name = "d0[10]"  direction = "in"  />
+        <pitem  name = "d0[9]"  direction = "in"  />
+        <pitem  name = "d0[8]"  direction = "in"  />
         <pitem  name = "d0[7]"  direction = "in"  />
         <pitem  name = "d0[6]"  direction = "in"  />
         <pitem  name = "d0[5]"  direction = "in"  />
@@ -1667,6 +1955,14 @@
         <pitem  name = "d0[2]"  direction = "in"  />
         <pitem  name = "d0[1]"  direction = "in"  />
         <pitem  name = "cond"  direction = "in"  />
+        <pitem  name = "o[15]"  direction = "out"  />
+        <pitem  name = "o[14]"  direction = "out"  />
+        <pitem  name = "o[13]"  direction = "out"  />
+        <pitem  name = "o[12]"  direction = "out"  />
+        <pitem  name = "o[11]"  direction = "out"  />
+        <pitem  name = "o[10]"  direction = "out"  />
+        <pitem  name = "o[9]"  direction = "out"  />
+        <pitem  name = "o[8]"  direction = "out"  />
         <pitem  name = "o[7]"  direction = "out"  />
         <pitem  name = "o[6]"  direction = "out"  />
         <pitem  name = "o[5]"  direction = "out"  />
@@ -1678,8 +1974,31 @@
         </pins>
 
         <nets>
-        <nitem  name = "u_ROM_CS_TA/gnd"  />
+        <nitem  name = "u_ROM_CS_TA/ROM_CS_END_N_53[15]"  />
+        <nitem  name = "u_ROM_CS_TA/ROM_CS_END_N_53[14]"  />
+        <nitem  name = "u_ROM_CS_TA/ROM_CS_END_N_53[13]"  />
+        <nitem  name = "u_ROM_CS_TA/ROM_CS_END_N_53[12]"  />
+        <nitem  name = "u_ROM_CS_TA/ROM_CS_END_N_53[11]"  />
+        <nitem  name = "u_ROM_CS_TA/ROM_CS_END_N_53[10]"  />
+        <nitem  name = "u_ROM_CS_TA/ROM_CS_END_N_53[9]"  />
+        <nitem  name = "u_ROM_CS_TA/ROM_CS_END_N_53[8]"  />
+        <nitem  name = "u_ROM_CS_TA/ROM_CS_END_N_53[7]"  />
+        <nitem  name = "u_ROM_CS_TA/ROM_CS_END_N_53[6]"  />
+        <nitem  name = "u_ROM_CS_TA/ROM_CS_END_N_53[5]"  />
+        <nitem  name = "u_ROM_CS_TA/ROM_CS_END_N_53[4]"  />
+        <nitem  name = "u_ROM_CS_TA/ROM_CS_END_N_53[3]"  />
+        <nitem  name = "u_ROM_CS_TA/ROM_CS_END_N_53[2]"  />
+        <nitem  name = "u_ROM_CS_TA/ROM_CS_END_N_53[1]"  />
+        <nitem  name = "u_ROM_CS_TA/ROM_CS_END_N_53[0]"  />
         <nitem  name = "u_ROM_CS_TA/pwr"  />
+        <nitem  name = "u_ROM_CS_TA/u_SR_ROMS_CS/shift_reg[14]"  />
+        <nitem  name = "u_ROM_CS_TA/u_SR_ROMS_CS/shift_reg[13]"  />
+        <nitem  name = "u_ROM_CS_TA/u_SR_ROMS_CS/shift_reg[12]"  />
+        <nitem  name = "u_ROM_CS_TA/u_SR_ROMS_CS/shift_reg[11]"  />
+        <nitem  name = "u_ROM_CS_TA/u_SR_ROMS_CS/shift_reg[10]"  />
+        <nitem  name = "u_ROM_CS_TA/u_SR_ROMS_CS/shift_reg[9]"  />
+        <nitem  name = "u_ROM_CS_TA/u_SR_ROMS_CS/shift_reg[8]"  />
+        <nitem  name = "u_ROM_CS_TA/u_SR_ROMS_CS/shift_reg[7]"  />
         <nitem  name = "u_ROM_CS_TA/u_SR_ROMS_CS/shift_reg[6]"  />
         <nitem  name = "u_ROM_CS_TA/u_SR_ROMS_CS/shift_reg[5]"  />
         <nitem  name = "u_ROM_CS_TA/u_SR_ROMS_CS/shift_reg[4]"  />
@@ -1696,12 +2015,28 @@
         <nitem  name = "u_ROM_CS_TA/u_SR_ROMS_CS/n13"  />
         <nitem  name = "u_ROM_CS_TA/u_SR_ROMS_CS/n14"  />
         <nitem  name = "u_ROM_CS_TA/u_SR_ROMS_CS/n15"  />
+        <nitem  name = "u_ROM_CS_TA/u_SR_ROMS_CS/n16"  />
+        <nitem  name = "u_ROM_CS_TA/u_SR_ROMS_CS/n17"  />
+        <nitem  name = "u_ROM_CS_TA/u_SR_ROMS_CS/n18"  />
+        <nitem  name = "u_ROM_CS_TA/u_SR_ROMS_CS/n19"  />
+        <nitem  name = "u_ROM_CS_TA/u_SR_ROMS_CS/n20"  />
+        <nitem  name = "u_ROM_CS_TA/u_SR_ROMS_CS/n21"  />
+        <nitem  name = "u_ROM_CS_TA/u_SR_ROMS_CS/n22"  />
+        <nitem  name = "u_ROM_CS_TA/u_SR_ROMS_CS/n23"  />
         </nets>
     </instance>
 
     <instance  name = "u_ROM_CS_TA/u_SR_ROMS_CS/mux_9"  library = "work"  arch = ""  type = "comb">
         <pins>
         <pitem  name = "cond"  direction = "in"  />
+        <pitem  name = "d0[15]"  direction = "in"  />
+        <pitem  name = "d0[14]"  direction = "in"  />
+        <pitem  name = "d0[13]"  direction = "in"  />
+        <pitem  name = "d0[12]"  direction = "in"  />
+        <pitem  name = "d0[11]"  direction = "in"  />
+        <pitem  name = "d0[10]"  direction = "in"  />
+        <pitem  name = "d0[9]"  direction = "in"  />
+        <pitem  name = "d0[8]"  direction = "in"  />
         <pitem  name = "d0[7]"  direction = "in"  />
         <pitem  name = "d0[6]"  direction = "in"  />
         <pitem  name = "d0[5]"  direction = "in"  />
@@ -1710,6 +2045,14 @@
         <pitem  name = "d0[2]"  direction = "in"  />
         <pitem  name = "d0[1]"  direction = "in"  />
         <pitem  name = "d0[0]"  direction = "in"  />
+        <pitem  name = "d1[15]"  direction = "in"  />
+        <pitem  name = "d1[14]"  direction = "in"  />
+        <pitem  name = "d1[13]"  direction = "in"  />
+        <pitem  name = "d1[12]"  direction = "in"  />
+        <pitem  name = "d1[11]"  direction = "in"  />
+        <pitem  name = "d1[10]"  direction = "in"  />
+        <pitem  name = "d1[9]"  direction = "in"  />
+        <pitem  name = "d1[8]"  direction = "in"  />
         <pitem  name = "d1[7]"  direction = "in"  />
         <pitem  name = "d1[6]"  direction = "in"  />
         <pitem  name = "d1[5]"  direction = "in"  />
@@ -1718,6 +2061,14 @@
         <pitem  name = "d1[2]"  direction = "in"  />
         <pitem  name = "d1[1]"  direction = "in"  />
         <pitem  name = "d1[0]"  direction = "in"  />
+        <pitem  name = "o[15]"  direction = "out"  />
+        <pitem  name = "o[14]"  direction = "out"  />
+        <pitem  name = "o[13]"  direction = "out"  />
+        <pitem  name = "o[12]"  direction = "out"  />
+        <pitem  name = "o[11]"  direction = "out"  />
+        <pitem  name = "o[10]"  direction = "out"  />
+        <pitem  name = "o[9]"  direction = "out"  />
+        <pitem  name = "o[8]"  direction = "out"  />
         <pitem  name = "o[7]"  direction = "out"  />
         <pitem  name = "o[6]"  direction = "out"  />
         <pitem  name = "o[5]"  direction = "out"  />
@@ -1731,6 +2082,14 @@
         <nets>
         <nitem  name = "u_ROM_CS_TA/pwr"  />
         <nitem  name = "u_ROM_CS_TA/ROM_CS_END"  />
+        <nitem  name = "u_ROM_CS_TA/u_SR_ROMS_CS/shift_reg[14]"  />
+        <nitem  name = "u_ROM_CS_TA/u_SR_ROMS_CS/shift_reg[13]"  />
+        <nitem  name = "u_ROM_CS_TA/u_SR_ROMS_CS/shift_reg[12]"  />
+        <nitem  name = "u_ROM_CS_TA/u_SR_ROMS_CS/shift_reg[11]"  />
+        <nitem  name = "u_ROM_CS_TA/u_SR_ROMS_CS/shift_reg[10]"  />
+        <nitem  name = "u_ROM_CS_TA/u_SR_ROMS_CS/shift_reg[9]"  />
+        <nitem  name = "u_ROM_CS_TA/u_SR_ROMS_CS/shift_reg[8]"  />
+        <nitem  name = "u_ROM_CS_TA/u_SR_ROMS_CS/shift_reg[7]"  />
         <nitem  name = "u_ROM_CS_TA/u_SR_ROMS_CS/shift_reg[6]"  />
         <nitem  name = "u_ROM_CS_TA/u_SR_ROMS_CS/shift_reg[5]"  />
         <nitem  name = "u_ROM_CS_TA/u_SR_ROMS_CS/shift_reg[4]"  />
@@ -1746,19 +2105,43 @@
         <nitem  name = "u_ROM_CS_TA/u_SR_ROMS_CS/n13"  />
         <nitem  name = "u_ROM_CS_TA/u_SR_ROMS_CS/n14"  />
         <nitem  name = "u_ROM_CS_TA/u_SR_ROMS_CS/n15"  />
-        <nitem  name = "u_ROM_CS_TA/u_SR_ROMS_CS/shift_reg_7__N_34[7]"  />
-        <nitem  name = "u_ROM_CS_TA/u_SR_ROMS_CS/shift_reg_7__N_34[6]"  />
-        <nitem  name = "u_ROM_CS_TA/u_SR_ROMS_CS/shift_reg_7__N_34[5]"  />
-        <nitem  name = "u_ROM_CS_TA/u_SR_ROMS_CS/shift_reg_7__N_34[4]"  />
-        <nitem  name = "u_ROM_CS_TA/u_SR_ROMS_CS/shift_reg_7__N_34[3]"  />
-        <nitem  name = "u_ROM_CS_TA/u_SR_ROMS_CS/shift_reg_7__N_34[2]"  />
-        <nitem  name = "u_ROM_CS_TA/u_SR_ROMS_CS/shift_reg_7__N_34[1]"  />
-        <nitem  name = "u_ROM_CS_TA/u_SR_ROMS_CS/shift_reg_7__N_34[0]"  />
+        <nitem  name = "u_ROM_CS_TA/u_SR_ROMS_CS/n16"  />
+        <nitem  name = "u_ROM_CS_TA/u_SR_ROMS_CS/n17"  />
+        <nitem  name = "u_ROM_CS_TA/u_SR_ROMS_CS/n18"  />
+        <nitem  name = "u_ROM_CS_TA/u_SR_ROMS_CS/n19"  />
+        <nitem  name = "u_ROM_CS_TA/u_SR_ROMS_CS/n20"  />
+        <nitem  name = "u_ROM_CS_TA/u_SR_ROMS_CS/n21"  />
+        <nitem  name = "u_ROM_CS_TA/u_SR_ROMS_CS/n22"  />
+        <nitem  name = "u_ROM_CS_TA/u_SR_ROMS_CS/n23"  />
+        <nitem  name = "u_ROM_CS_TA/u_SR_ROMS_CS/shift_reg_15__N_96[15]"  />
+        <nitem  name = "u_ROM_CS_TA/u_SR_ROMS_CS/shift_reg_15__N_96[14]"  />
+        <nitem  name = "u_ROM_CS_TA/u_SR_ROMS_CS/shift_reg_15__N_96[13]"  />
+        <nitem  name = "u_ROM_CS_TA/u_SR_ROMS_CS/shift_reg_15__N_96[12]"  />
+        <nitem  name = "u_ROM_CS_TA/u_SR_ROMS_CS/shift_reg_15__N_96[11]"  />
+        <nitem  name = "u_ROM_CS_TA/u_SR_ROMS_CS/shift_reg_15__N_96[10]"  />
+        <nitem  name = "u_ROM_CS_TA/u_SR_ROMS_CS/shift_reg_15__N_96[9]"  />
+        <nitem  name = "u_ROM_CS_TA/u_SR_ROMS_CS/shift_reg_15__N_96[8]"  />
+        <nitem  name = "u_ROM_CS_TA/u_SR_ROMS_CS/shift_reg_15__N_96[7]"  />
+        <nitem  name = "u_ROM_CS_TA/u_SR_ROMS_CS/shift_reg_15__N_96[6]"  />
+        <nitem  name = "u_ROM_CS_TA/u_SR_ROMS_CS/shift_reg_15__N_96[5]"  />
+        <nitem  name = "u_ROM_CS_TA/u_SR_ROMS_CS/shift_reg_15__N_96[4]"  />
+        <nitem  name = "u_ROM_CS_TA/u_SR_ROMS_CS/shift_reg_15__N_96[3]"  />
+        <nitem  name = "u_ROM_CS_TA/u_SR_ROMS_CS/shift_reg_15__N_96[2]"  />
+        <nitem  name = "u_ROM_CS_TA/u_SR_ROMS_CS/shift_reg_15__N_96[1]"  />
+        <nitem  name = "u_ROM_CS_TA/u_SR_ROMS_CS/shift_reg_15__N_96[0]"  />
         </nets>
     </instance>
 
-    <instance  name = "u_ROM_CS_TA/u_SR_ROMS_CS/shift_reg_7__I_0"  library = "work"  arch = ""  type = "comb">
+    <instance  name = "u_ROM_CS_TA/u_SR_ROMS_CS/shift_reg_15__I_0"  library = "work"  arch = ""  type = "comb">
         <pins>
+        <pitem  name = "d1[15]"  direction = "in"  />
+        <pitem  name = "d1[14]"  direction = "in"  />
+        <pitem  name = "d1[13]"  direction = "in"  />
+        <pitem  name = "d1[12]"  direction = "in"  />
+        <pitem  name = "d1[11]"  direction = "in"  />
+        <pitem  name = "d1[10]"  direction = "in"  />
+        <pitem  name = "d1[9]"  direction = "in"  />
+        <pitem  name = "d1[8]"  direction = "in"  />
         <pitem  name = "d1[7]"  direction = "in"  />
         <pitem  name = "d1[6]"  direction = "in"  />
         <pitem  name = "d1[5]"  direction = "in"  />
@@ -1768,6 +2151,14 @@
         <pitem  name = "d1[1]"  direction = "in"  />
         <pitem  name = "d1[0]"  direction = "in"  />
         <pitem  name = "cond"  direction = "in"  />
+        <pitem  name = "d0[15]"  direction = "in"  />
+        <pitem  name = "d0[14]"  direction = "in"  />
+        <pitem  name = "d0[13]"  direction = "in"  />
+        <pitem  name = "d0[12]"  direction = "in"  />
+        <pitem  name = "d0[11]"  direction = "in"  />
+        <pitem  name = "d0[10]"  direction = "in"  />
+        <pitem  name = "d0[9]"  direction = "in"  />
+        <pitem  name = "d0[8]"  direction = "in"  />
         <pitem  name = "d0[7]"  direction = "in"  />
         <pitem  name = "d0[6]"  direction = "in"  />
         <pitem  name = "d0[5]"  direction = "in"  />
@@ -1776,6 +2167,14 @@
         <pitem  name = "d0[2]"  direction = "in"  />
         <pitem  name = "d0[1]"  direction = "in"  />
         <pitem  name = "d0[0]"  direction = "in"  />
+        <pitem  name = "o[15]"  direction = "out"  />
+        <pitem  name = "o[14]"  direction = "out"  />
+        <pitem  name = "o[13]"  direction = "out"  />
+        <pitem  name = "o[12]"  direction = "out"  />
+        <pitem  name = "o[11]"  direction = "out"  />
+        <pitem  name = "o[10]"  direction = "out"  />
+        <pitem  name = "o[9]"  direction = "out"  />
+        <pitem  name = "o[8]"  direction = "out"  />
         <pitem  name = "o[7]"  direction = "out"  />
         <pitem  name = "o[6]"  direction = "out"  />
         <pitem  name = "o[5]"  direction = "out"  />
@@ -1789,22 +2188,38 @@
         <nets>
         <nitem  name = "u_ROM_CS_TA/u_SR_ROMS_CS/gnd"  />
         <nitem  name = "u_ROM_CS_TA/gnd"  />
-        <nitem  name = "u_ROM_CS_TA/u_SR_ROMS_CS/shift_reg_7__N_34[7]"  />
-        <nitem  name = "u_ROM_CS_TA/u_SR_ROMS_CS/shift_reg_7__N_34[6]"  />
-        <nitem  name = "u_ROM_CS_TA/u_SR_ROMS_CS/shift_reg_7__N_34[5]"  />
-        <nitem  name = "u_ROM_CS_TA/u_SR_ROMS_CS/shift_reg_7__N_34[4]"  />
-        <nitem  name = "u_ROM_CS_TA/u_SR_ROMS_CS/shift_reg_7__N_34[3]"  />
-        <nitem  name = "u_ROM_CS_TA/u_SR_ROMS_CS/shift_reg_7__N_34[2]"  />
-        <nitem  name = "u_ROM_CS_TA/u_SR_ROMS_CS/shift_reg_7__N_34[1]"  />
-        <nitem  name = "u_ROM_CS_TA/u_SR_ROMS_CS/shift_reg_7__N_34[0]"  />
-        <nitem  name = "u_ROM_CS_TA/u_SR_ROMS_CS/shift_reg_7__N_26[7]"  />
-        <nitem  name = "u_ROM_CS_TA/u_SR_ROMS_CS/shift_reg_7__N_26[6]"  />
-        <nitem  name = "u_ROM_CS_TA/u_SR_ROMS_CS/shift_reg_7__N_26[5]"  />
-        <nitem  name = "u_ROM_CS_TA/u_SR_ROMS_CS/shift_reg_7__N_26[4]"  />
-        <nitem  name = "u_ROM_CS_TA/u_SR_ROMS_CS/shift_reg_7__N_26[3]"  />
-        <nitem  name = "u_ROM_CS_TA/u_SR_ROMS_CS/shift_reg_7__N_26[2]"  />
-        <nitem  name = "u_ROM_CS_TA/u_SR_ROMS_CS/shift_reg_7__N_26[1]"  />
-        <nitem  name = "u_ROM_CS_TA/u_SR_ROMS_CS/shift_reg_7__N_26[0]"  />
+        <nitem  name = "u_ROM_CS_TA/u_SR_ROMS_CS/shift_reg_15__N_96[15]"  />
+        <nitem  name = "u_ROM_CS_TA/u_SR_ROMS_CS/shift_reg_15__N_96[14]"  />
+        <nitem  name = "u_ROM_CS_TA/u_SR_ROMS_CS/shift_reg_15__N_96[13]"  />
+        <nitem  name = "u_ROM_CS_TA/u_SR_ROMS_CS/shift_reg_15__N_96[12]"  />
+        <nitem  name = "u_ROM_CS_TA/u_SR_ROMS_CS/shift_reg_15__N_96[11]"  />
+        <nitem  name = "u_ROM_CS_TA/u_SR_ROMS_CS/shift_reg_15__N_96[10]"  />
+        <nitem  name = "u_ROM_CS_TA/u_SR_ROMS_CS/shift_reg_15__N_96[9]"  />
+        <nitem  name = "u_ROM_CS_TA/u_SR_ROMS_CS/shift_reg_15__N_96[8]"  />
+        <nitem  name = "u_ROM_CS_TA/u_SR_ROMS_CS/shift_reg_15__N_96[7]"  />
+        <nitem  name = "u_ROM_CS_TA/u_SR_ROMS_CS/shift_reg_15__N_96[6]"  />
+        <nitem  name = "u_ROM_CS_TA/u_SR_ROMS_CS/shift_reg_15__N_96[5]"  />
+        <nitem  name = "u_ROM_CS_TA/u_SR_ROMS_CS/shift_reg_15__N_96[4]"  />
+        <nitem  name = "u_ROM_CS_TA/u_SR_ROMS_CS/shift_reg_15__N_96[3]"  />
+        <nitem  name = "u_ROM_CS_TA/u_SR_ROMS_CS/shift_reg_15__N_96[2]"  />
+        <nitem  name = "u_ROM_CS_TA/u_SR_ROMS_CS/shift_reg_15__N_96[1]"  />
+        <nitem  name = "u_ROM_CS_TA/u_SR_ROMS_CS/shift_reg_15__N_96[0]"  />
+        <nitem  name = "u_ROM_CS_TA/u_SR_ROMS_CS/shift_reg_15__N_80[15]"  />
+        <nitem  name = "u_ROM_CS_TA/u_SR_ROMS_CS/shift_reg_15__N_80[14]"  />
+        <nitem  name = "u_ROM_CS_TA/u_SR_ROMS_CS/shift_reg_15__N_80[13]"  />
+        <nitem  name = "u_ROM_CS_TA/u_SR_ROMS_CS/shift_reg_15__N_80[12]"  />
+        <nitem  name = "u_ROM_CS_TA/u_SR_ROMS_CS/shift_reg_15__N_80[11]"  />
+        <nitem  name = "u_ROM_CS_TA/u_SR_ROMS_CS/shift_reg_15__N_80[10]"  />
+        <nitem  name = "u_ROM_CS_TA/u_SR_ROMS_CS/shift_reg_15__N_80[9]"  />
+        <nitem  name = "u_ROM_CS_TA/u_SR_ROMS_CS/shift_reg_15__N_80[8]"  />
+        <nitem  name = "u_ROM_CS_TA/u_SR_ROMS_CS/shift_reg_15__N_80[7]"  />
+        <nitem  name = "u_ROM_CS_TA/u_SR_ROMS_CS/shift_reg_15__N_80[6]"  />
+        <nitem  name = "u_ROM_CS_TA/u_SR_ROMS_CS/shift_reg_15__N_80[5]"  />
+        <nitem  name = "u_ROM_CS_TA/u_SR_ROMS_CS/shift_reg_15__N_80[4]"  />
+        <nitem  name = "u_ROM_CS_TA/u_SR_ROMS_CS/shift_reg_15__N_80[3]"  />
+        <nitem  name = "u_ROM_CS_TA/u_SR_ROMS_CS/shift_reg_15__N_80[2]"  />
+        <nitem  name = "u_ROM_CS_TA/u_SR_ROMS_CS/shift_reg_15__N_80[1]"  />
+        <nitem  name = "u_ROM_CS_TA/u_SR_ROMS_CS/shift_reg_15__N_80[0]"  />
         </nets>
     </instance>
 
@@ -1820,8 +2235,8 @@
         <nets>
         <nitem  name = "u_ROM_CS_TA/u_SR_ROMS_CS/gnd"  />
         <nitem  name = "u_ROM_CS_TA/u_SR_ROMS_CS/load_half"  />
-        <nitem  name = "u_ROM_CS_TA/u_SR_ROMS_CS/Clock_N_44"  />
-        <nitem  name = "u_ROM_CS_TA/u_SR_ROMS_CS/load_half_N_42"  />
+        <nitem  name = "u_ROM_CS_TA/u_SR_ROMS_CS/Clock_N_114"  />
+        <nitem  name = "u_ROM_CS_TA/u_SR_ROMS_CS/load_half_N_112"  />
         </nets>
     </instance>
 
@@ -1833,7 +2248,7 @@
 
         <nets>
         <nitem  name = "CLKOS2"  />
-        <nitem  name = "u_ROM_CS_TA/u_SR_TA/Clock_N_44"  />
+        <nitem  name = "u_ROM_CS_TA/u_SR_TA/Clock_N_114"  />
         </nets>
     </instance>
 
@@ -1849,7 +2264,7 @@
         <nitem  name = "u_ROM_CS_TA/u_SR_TA/pwr"  />
         <nitem  name = "u_ROM_CS_TA/gnd"  />
         <nitem  name = "u_ROM_CS_TA/loadTA_keep"  />
-        <nitem  name = "u_ROM_CS_TA/u_SR_TA/load_half_N_42"  />
+        <nitem  name = "u_ROM_CS_TA/u_SR_TA/load_half_N_112"  />
         </nets>
     </instance>
 
@@ -1866,7 +2281,7 @@
         <nitem  name = "u_ROM_CS_TA/u_SR_TA/gnd"  />
         <nitem  name = "CLKOS2"  />
         <nitem  name = "u_ROM_CS_TA/u_SR_TA/load_registered"  />
-        <nitem  name = "u_ROM_CS_TA/u_SR_TA/load_registered_N_45"  />
+        <nitem  name = "u_ROM_CS_TA/u_SR_TA/load_registered_N_115"  />
         </nets>
     </instance>
 
@@ -1882,12 +2297,20 @@
         <nitem  name = "u_ROM_CS_TA/u_SR_TA/pwr"  />
         <nitem  name = "u_ROM_CS_TA/gnd"  />
         <nitem  name = "u_ROM_CS_TA/u_SR_TA/load_half"  />
-        <nitem  name = "u_ROM_CS_TA/u_SR_TA/load_registered_N_45"  />
+        <nitem  name = "u_ROM_CS_TA/u_SR_TA/load_registered_N_115"  />
         </nets>
     </instance>
 
     <instance  name = "u_ROM_CS_TA/u_SR_TA/shift_reg"  library = "work"  arch = ""  type = "reg">
         <pins>
+        <pitem  name = "set[15]"  direction = "in"  />
+        <pitem  name = "set[14]"  direction = "in"  />
+        <pitem  name = "set[13]"  direction = "in"  />
+        <pitem  name = "set[12]"  direction = "in"  />
+        <pitem  name = "set[11]"  direction = "in"  />
+        <pitem  name = "set[10]"  direction = "in"  />
+        <pitem  name = "set[9]"  direction = "in"  />
+        <pitem  name = "set[8]"  direction = "in"  />
         <pitem  name = "set[7]"  direction = "in"  />
         <pitem  name = "set[6]"  direction = "in"  />
         <pitem  name = "set[5]"  direction = "in"  />
@@ -1896,6 +2319,14 @@
         <pitem  name = "set[2]"  direction = "in"  />
         <pitem  name = "set[1]"  direction = "in"  />
         <pitem  name = "set[0]"  direction = "in"  />
+        <pitem  name = "reset[15]"  direction = "in"  />
+        <pitem  name = "reset[14]"  direction = "in"  />
+        <pitem  name = "reset[13]"  direction = "in"  />
+        <pitem  name = "reset[12]"  direction = "in"  />
+        <pitem  name = "reset[11]"  direction = "in"  />
+        <pitem  name = "reset[10]"  direction = "in"  />
+        <pitem  name = "reset[9]"  direction = "in"  />
+        <pitem  name = "reset[8]"  direction = "in"  />
         <pitem  name = "reset[7]"  direction = "in"  />
         <pitem  name = "reset[6]"  direction = "in"  />
         <pitem  name = "reset[5]"  direction = "in"  />
@@ -1905,6 +2336,14 @@
         <pitem  name = "reset[1]"  direction = "in"  />
         <pitem  name = "reset[0]"  direction = "in"  />
         <pitem  name = "clock"  direction = "in"  />
+        <pitem  name = "q[15]"  direction = "out"  />
+        <pitem  name = "q[14]"  direction = "out"  />
+        <pitem  name = "q[13]"  direction = "out"  />
+        <pitem  name = "q[12]"  direction = "out"  />
+        <pitem  name = "q[11]"  direction = "out"  />
+        <pitem  name = "q[10]"  direction = "out"  />
+        <pitem  name = "q[9]"  direction = "out"  />
+        <pitem  name = "q[8]"  direction = "out"  />
         <pitem  name = "q[7]"  direction = "out"  />
         <pitem  name = "q[6]"  direction = "out"  />
         <pitem  name = "q[5]"  direction = "out"  />
@@ -1913,6 +2352,14 @@
         <pitem  name = "q[2]"  direction = "out"  />
         <pitem  name = "q[1]"  direction = "out"  />
         <pitem  name = "q[0]"  direction = "out"  />
+        <pitem  name = "d[15]"  direction = "in"  />
+        <pitem  name = "d[14]"  direction = "in"  />
+        <pitem  name = "d[13]"  direction = "in"  />
+        <pitem  name = "d[12]"  direction = "in"  />
+        <pitem  name = "d[11]"  direction = "in"  />
+        <pitem  name = "d[10]"  direction = "in"  />
+        <pitem  name = "d[9]"  direction = "in"  />
+        <pitem  name = "d[8]"  direction = "in"  />
         <pitem  name = "d[7]"  direction = "in"  />
         <pitem  name = "d[6]"  direction = "in"  />
         <pitem  name = "d[5]"  direction = "in"  />
@@ -1927,6 +2374,14 @@
         <nitem  name = "u_ROM_CS_TA/u_SR_TA/gnd"  />
         <nitem  name = "CLKOS2"  />
         <nitem  name = "ROM_TA_N"  />
+        <nitem  name = "u_ROM_CS_TA/u_SR_TA/shift_reg[14]"  />
+        <nitem  name = "u_ROM_CS_TA/u_SR_TA/shift_reg[13]"  />
+        <nitem  name = "u_ROM_CS_TA/u_SR_TA/shift_reg[12]"  />
+        <nitem  name = "u_ROM_CS_TA/u_SR_TA/shift_reg[11]"  />
+        <nitem  name = "u_ROM_CS_TA/u_SR_TA/shift_reg[10]"  />
+        <nitem  name = "u_ROM_CS_TA/u_SR_TA/shift_reg[9]"  />
+        <nitem  name = "u_ROM_CS_TA/u_SR_TA/shift_reg[8]"  />
+        <nitem  name = "u_ROM_CS_TA/u_SR_TA/shift_reg[7]"  />
         <nitem  name = "u_ROM_CS_TA/u_SR_TA/shift_reg[6]"  />
         <nitem  name = "u_ROM_CS_TA/u_SR_TA/shift_reg[5]"  />
         <nitem  name = "u_ROM_CS_TA/u_SR_TA/shift_reg[4]"  />
@@ -1934,19 +2389,35 @@
         <nitem  name = "u_ROM_CS_TA/u_SR_TA/shift_reg[2]"  />
         <nitem  name = "u_ROM_CS_TA/u_SR_TA/shift_reg[1]"  />
         <nitem  name = "u_ROM_CS_TA/u_SR_TA/shift_reg[0]"  />
-        <nitem  name = "u_ROM_CS_TA/u_SR_TA/shift_reg_7__N_26[7]"  />
-        <nitem  name = "u_ROM_CS_TA/u_SR_TA/shift_reg_7__N_26[6]"  />
-        <nitem  name = "u_ROM_CS_TA/u_SR_TA/shift_reg_7__N_26[5]"  />
-        <nitem  name = "u_ROM_CS_TA/u_SR_TA/shift_reg_7__N_26[4]"  />
-        <nitem  name = "u_ROM_CS_TA/u_SR_TA/shift_reg_7__N_26[3]"  />
-        <nitem  name = "u_ROM_CS_TA/u_SR_TA/shift_reg_7__N_26[2]"  />
-        <nitem  name = "u_ROM_CS_TA/u_SR_TA/shift_reg_7__N_26[1]"  />
-        <nitem  name = "u_ROM_CS_TA/u_SR_TA/shift_reg_7__N_26[0]"  />
+        <nitem  name = "u_ROM_CS_TA/u_SR_TA/shift_reg_15__N_80[15]"  />
+        <nitem  name = "u_ROM_CS_TA/u_SR_TA/shift_reg_15__N_80[14]"  />
+        <nitem  name = "u_ROM_CS_TA/u_SR_TA/shift_reg_15__N_80[13]"  />
+        <nitem  name = "u_ROM_CS_TA/u_SR_TA/shift_reg_15__N_80[12]"  />
+        <nitem  name = "u_ROM_CS_TA/u_SR_TA/shift_reg_15__N_80[11]"  />
+        <nitem  name = "u_ROM_CS_TA/u_SR_TA/shift_reg_15__N_80[10]"  />
+        <nitem  name = "u_ROM_CS_TA/u_SR_TA/shift_reg_15__N_80[9]"  />
+        <nitem  name = "u_ROM_CS_TA/u_SR_TA/shift_reg_15__N_80[8]"  />
+        <nitem  name = "u_ROM_CS_TA/u_SR_TA/shift_reg_15__N_80[7]"  />
+        <nitem  name = "u_ROM_CS_TA/u_SR_TA/shift_reg_15__N_80[6]"  />
+        <nitem  name = "u_ROM_CS_TA/u_SR_TA/shift_reg_15__N_80[5]"  />
+        <nitem  name = "u_ROM_CS_TA/u_SR_TA/shift_reg_15__N_80[4]"  />
+        <nitem  name = "u_ROM_CS_TA/u_SR_TA/shift_reg_15__N_80[3]"  />
+        <nitem  name = "u_ROM_CS_TA/u_SR_TA/shift_reg_15__N_80[2]"  />
+        <nitem  name = "u_ROM_CS_TA/u_SR_TA/shift_reg_15__N_80[1]"  />
+        <nitem  name = "u_ROM_CS_TA/u_SR_TA/shift_reg_15__N_80[0]"  />
         </nets>
     </instance>
 
     <instance  name = "u_ROM_CS_TA/u_SR_TA/mux_8"  library = "work"  arch = ""  type = "comb">
         <pins>
+        <pitem  name = "d1[15]"  direction = "in"  />
+        <pitem  name = "d1[14]"  direction = "in"  />
+        <pitem  name = "d1[13]"  direction = "in"  />
+        <pitem  name = "d1[12]"  direction = "in"  />
+        <pitem  name = "d1[11]"  direction = "in"  />
+        <pitem  name = "d1[10]"  direction = "in"  />
+        <pitem  name = "d1[9]"  direction = "in"  />
+        <pitem  name = "d1[8]"  direction = "in"  />
         <pitem  name = "d1[7]"  direction = "in"  />
         <pitem  name = "d1[6]"  direction = "in"  />
         <pitem  name = "d1[5]"  direction = "in"  />
@@ -1956,6 +2427,14 @@
         <pitem  name = "d1[1]"  direction = "in"  />
         <pitem  name = "d1[0]"  direction = "in"  />
         <pitem  name = "d0[0]"  direction = "in"  />
+        <pitem  name = "d0[15]"  direction = "in"  />
+        <pitem  name = "d0[14]"  direction = "in"  />
+        <pitem  name = "d0[13]"  direction = "in"  />
+        <pitem  name = "d0[12]"  direction = "in"  />
+        <pitem  name = "d0[11]"  direction = "in"  />
+        <pitem  name = "d0[10]"  direction = "in"  />
+        <pitem  name = "d0[9]"  direction = "in"  />
+        <pitem  name = "d0[8]"  direction = "in"  />
         <pitem  name = "d0[7]"  direction = "in"  />
         <pitem  name = "d0[6]"  direction = "in"  />
         <pitem  name = "d0[5]"  direction = "in"  />
@@ -1964,6 +2443,14 @@
         <pitem  name = "d0[2]"  direction = "in"  />
         <pitem  name = "d0[1]"  direction = "in"  />
         <pitem  name = "cond"  direction = "in"  />
+        <pitem  name = "o[15]"  direction = "out"  />
+        <pitem  name = "o[14]"  direction = "out"  />
+        <pitem  name = "o[13]"  direction = "out"  />
+        <pitem  name = "o[12]"  direction = "out"  />
+        <pitem  name = "o[11]"  direction = "out"  />
+        <pitem  name = "o[10]"  direction = "out"  />
+        <pitem  name = "o[9]"  direction = "out"  />
+        <pitem  name = "o[8]"  direction = "out"  />
         <pitem  name = "o[7]"  direction = "out"  />
         <pitem  name = "o[6]"  direction = "out"  />
         <pitem  name = "o[5]"  direction = "out"  />
@@ -1977,6 +2464,14 @@
         <nets>
         <nitem  name = "u_ROM_CS_TA/pwr"  />
         <nitem  name = "u_ROM_CS_TA/gnd"  />
+        <nitem  name = "u_ROM_CS_TA/u_SR_TA/shift_reg[14]"  />
+        <nitem  name = "u_ROM_CS_TA/u_SR_TA/shift_reg[13]"  />
+        <nitem  name = "u_ROM_CS_TA/u_SR_TA/shift_reg[12]"  />
+        <nitem  name = "u_ROM_CS_TA/u_SR_TA/shift_reg[11]"  />
+        <nitem  name = "u_ROM_CS_TA/u_SR_TA/shift_reg[10]"  />
+        <nitem  name = "u_ROM_CS_TA/u_SR_TA/shift_reg[9]"  />
+        <nitem  name = "u_ROM_CS_TA/u_SR_TA/shift_reg[8]"  />
+        <nitem  name = "u_ROM_CS_TA/u_SR_TA/shift_reg[7]"  />
         <nitem  name = "u_ROM_CS_TA/u_SR_TA/shift_reg[6]"  />
         <nitem  name = "u_ROM_CS_TA/u_SR_TA/shift_reg[5]"  />
         <nitem  name = "u_ROM_CS_TA/u_SR_TA/shift_reg[4]"  />
@@ -1993,12 +2488,28 @@
         <nitem  name = "u_ROM_CS_TA/u_SR_TA/n13"  />
         <nitem  name = "u_ROM_CS_TA/u_SR_TA/n14"  />
         <nitem  name = "u_ROM_CS_TA/u_SR_TA/n15"  />
+        <nitem  name = "u_ROM_CS_TA/u_SR_TA/n16"  />
+        <nitem  name = "u_ROM_CS_TA/u_SR_TA/n17"  />
+        <nitem  name = "u_ROM_CS_TA/u_SR_TA/n18"  />
+        <nitem  name = "u_ROM_CS_TA/u_SR_TA/n19"  />
+        <nitem  name = "u_ROM_CS_TA/u_SR_TA/n20"  />
+        <nitem  name = "u_ROM_CS_TA/u_SR_TA/n21"  />
+        <nitem  name = "u_ROM_CS_TA/u_SR_TA/n22"  />
+        <nitem  name = "u_ROM_CS_TA/u_SR_TA/n23"  />
         </nets>
     </instance>
 
     <instance  name = "u_ROM_CS_TA/u_SR_TA/mux_9"  library = "work"  arch = ""  type = "comb">
         <pins>
         <pitem  name = "cond"  direction = "in"  />
+        <pitem  name = "d0[15]"  direction = "in"  />
+        <pitem  name = "d0[14]"  direction = "in"  />
+        <pitem  name = "d0[13]"  direction = "in"  />
+        <pitem  name = "d0[12]"  direction = "in"  />
+        <pitem  name = "d0[11]"  direction = "in"  />
+        <pitem  name = "d0[10]"  direction = "in"  />
+        <pitem  name = "d0[9]"  direction = "in"  />
+        <pitem  name = "d0[8]"  direction = "in"  />
         <pitem  name = "d0[7]"  direction = "in"  />
         <pitem  name = "d0[6]"  direction = "in"  />
         <pitem  name = "d0[5]"  direction = "in"  />
@@ -2007,6 +2518,14 @@
         <pitem  name = "d0[2]"  direction = "in"  />
         <pitem  name = "d0[1]"  direction = "in"  />
         <pitem  name = "d0[0]"  direction = "in"  />
+        <pitem  name = "d1[15]"  direction = "in"  />
+        <pitem  name = "d1[14]"  direction = "in"  />
+        <pitem  name = "d1[13]"  direction = "in"  />
+        <pitem  name = "d1[12]"  direction = "in"  />
+        <pitem  name = "d1[11]"  direction = "in"  />
+        <pitem  name = "d1[10]"  direction = "in"  />
+        <pitem  name = "d1[9]"  direction = "in"  />
+        <pitem  name = "d1[8]"  direction = "in"  />
         <pitem  name = "d1[7]"  direction = "in"  />
         <pitem  name = "d1[6]"  direction = "in"  />
         <pitem  name = "d1[5]"  direction = "in"  />
@@ -2015,6 +2534,14 @@
         <pitem  name = "d1[2]"  direction = "in"  />
         <pitem  name = "d1[1]"  direction = "in"  />
         <pitem  name = "d1[0]"  direction = "in"  />
+        <pitem  name = "o[15]"  direction = "out"  />
+        <pitem  name = "o[14]"  direction = "out"  />
+        <pitem  name = "o[13]"  direction = "out"  />
+        <pitem  name = "o[12]"  direction = "out"  />
+        <pitem  name = "o[11]"  direction = "out"  />
+        <pitem  name = "o[10]"  direction = "out"  />
+        <pitem  name = "o[9]"  direction = "out"  />
+        <pitem  name = "o[8]"  direction = "out"  />
         <pitem  name = "o[7]"  direction = "out"  />
         <pitem  name = "o[6]"  direction = "out"  />
         <pitem  name = "o[5]"  direction = "out"  />
@@ -2028,6 +2555,14 @@
         <nets>
         <nitem  name = "u_ROM_CS_TA/pwr"  />
         <nitem  name = "ROM_TA_N"  />
+        <nitem  name = "u_ROM_CS_TA/u_SR_TA/shift_reg[14]"  />
+        <nitem  name = "u_ROM_CS_TA/u_SR_TA/shift_reg[13]"  />
+        <nitem  name = "u_ROM_CS_TA/u_SR_TA/shift_reg[12]"  />
+        <nitem  name = "u_ROM_CS_TA/u_SR_TA/shift_reg[11]"  />
+        <nitem  name = "u_ROM_CS_TA/u_SR_TA/shift_reg[10]"  />
+        <nitem  name = "u_ROM_CS_TA/u_SR_TA/shift_reg[9]"  />
+        <nitem  name = "u_ROM_CS_TA/u_SR_TA/shift_reg[8]"  />
+        <nitem  name = "u_ROM_CS_TA/u_SR_TA/shift_reg[7]"  />
         <nitem  name = "u_ROM_CS_TA/u_SR_TA/shift_reg[6]"  />
         <nitem  name = "u_ROM_CS_TA/u_SR_TA/shift_reg[5]"  />
         <nitem  name = "u_ROM_CS_TA/u_SR_TA/shift_reg[4]"  />
@@ -2043,19 +2578,43 @@
         <nitem  name = "u_ROM_CS_TA/u_SR_TA/n13"  />
         <nitem  name = "u_ROM_CS_TA/u_SR_TA/n14"  />
         <nitem  name = "u_ROM_CS_TA/u_SR_TA/n15"  />
-        <nitem  name = "u_ROM_CS_TA/u_SR_TA/shift_reg_7__N_34[7]"  />
-        <nitem  name = "u_ROM_CS_TA/u_SR_TA/shift_reg_7__N_34[6]"  />
-        <nitem  name = "u_ROM_CS_TA/u_SR_TA/shift_reg_7__N_34[5]"  />
-        <nitem  name = "u_ROM_CS_TA/u_SR_TA/shift_reg_7__N_34[4]"  />
-        <nitem  name = "u_ROM_CS_TA/u_SR_TA/shift_reg_7__N_34[3]"  />
-        <nitem  name = "u_ROM_CS_TA/u_SR_TA/shift_reg_7__N_34[2]"  />
-        <nitem  name = "u_ROM_CS_TA/u_SR_TA/shift_reg_7__N_34[1]"  />
-        <nitem  name = "u_ROM_CS_TA/u_SR_TA/shift_reg_7__N_34[0]"  />
+        <nitem  name = "u_ROM_CS_TA/u_SR_TA/n16"  />
+        <nitem  name = "u_ROM_CS_TA/u_SR_TA/n17"  />
+        <nitem  name = "u_ROM_CS_TA/u_SR_TA/n18"  />
+        <nitem  name = "u_ROM_CS_TA/u_SR_TA/n19"  />
+        <nitem  name = "u_ROM_CS_TA/u_SR_TA/n20"  />
+        <nitem  name = "u_ROM_CS_TA/u_SR_TA/n21"  />
+        <nitem  name = "u_ROM_CS_TA/u_SR_TA/n22"  />
+        <nitem  name = "u_ROM_CS_TA/u_SR_TA/n23"  />
+        <nitem  name = "u_ROM_CS_TA/u_SR_TA/shift_reg_15__N_96[15]"  />
+        <nitem  name = "u_ROM_CS_TA/u_SR_TA/shift_reg_15__N_96[14]"  />
+        <nitem  name = "u_ROM_CS_TA/u_SR_TA/shift_reg_15__N_96[13]"  />
+        <nitem  name = "u_ROM_CS_TA/u_SR_TA/shift_reg_15__N_96[12]"  />
+        <nitem  name = "u_ROM_CS_TA/u_SR_TA/shift_reg_15__N_96[11]"  />
+        <nitem  name = "u_ROM_CS_TA/u_SR_TA/shift_reg_15__N_96[10]"  />
+        <nitem  name = "u_ROM_CS_TA/u_SR_TA/shift_reg_15__N_96[9]"  />
+        <nitem  name = "u_ROM_CS_TA/u_SR_TA/shift_reg_15__N_96[8]"  />
+        <nitem  name = "u_ROM_CS_TA/u_SR_TA/shift_reg_15__N_96[7]"  />
+        <nitem  name = "u_ROM_CS_TA/u_SR_TA/shift_reg_15__N_96[6]"  />
+        <nitem  name = "u_ROM_CS_TA/u_SR_TA/shift_reg_15__N_96[5]"  />
+        <nitem  name = "u_ROM_CS_TA/u_SR_TA/shift_reg_15__N_96[4]"  />
+        <nitem  name = "u_ROM_CS_TA/u_SR_TA/shift_reg_15__N_96[3]"  />
+        <nitem  name = "u_ROM_CS_TA/u_SR_TA/shift_reg_15__N_96[2]"  />
+        <nitem  name = "u_ROM_CS_TA/u_SR_TA/shift_reg_15__N_96[1]"  />
+        <nitem  name = "u_ROM_CS_TA/u_SR_TA/shift_reg_15__N_96[0]"  />
         </nets>
     </instance>
 
-    <instance  name = "u_ROM_CS_TA/u_SR_TA/shift_reg_7__I_0"  library = "work"  arch = ""  type = "comb">
+    <instance  name = "u_ROM_CS_TA/u_SR_TA/shift_reg_15__I_0"  library = "work"  arch = ""  type = "comb">
         <pins>
+        <pitem  name = "d1[15]"  direction = "in"  />
+        <pitem  name = "d1[14]"  direction = "in"  />
+        <pitem  name = "d1[13]"  direction = "in"  />
+        <pitem  name = "d1[12]"  direction = "in"  />
+        <pitem  name = "d1[11]"  direction = "in"  />
+        <pitem  name = "d1[10]"  direction = "in"  />
+        <pitem  name = "d1[9]"  direction = "in"  />
+        <pitem  name = "d1[8]"  direction = "in"  />
         <pitem  name = "d1[7]"  direction = "in"  />
         <pitem  name = "d1[6]"  direction = "in"  />
         <pitem  name = "d1[5]"  direction = "in"  />
@@ -2065,6 +2624,14 @@
         <pitem  name = "d1[1]"  direction = "in"  />
         <pitem  name = "d1[0]"  direction = "in"  />
         <pitem  name = "cond"  direction = "in"  />
+        <pitem  name = "d0[15]"  direction = "in"  />
+        <pitem  name = "d0[14]"  direction = "in"  />
+        <pitem  name = "d0[13]"  direction = "in"  />
+        <pitem  name = "d0[12]"  direction = "in"  />
+        <pitem  name = "d0[11]"  direction = "in"  />
+        <pitem  name = "d0[10]"  direction = "in"  />
+        <pitem  name = "d0[9]"  direction = "in"  />
+        <pitem  name = "d0[8]"  direction = "in"  />
         <pitem  name = "d0[7]"  direction = "in"  />
         <pitem  name = "d0[6]"  direction = "in"  />
         <pitem  name = "d0[5]"  direction = "in"  />
@@ -2073,6 +2640,14 @@
         <pitem  name = "d0[2]"  direction = "in"  />
         <pitem  name = "d0[1]"  direction = "in"  />
         <pitem  name = "d0[0]"  direction = "in"  />
+        <pitem  name = "o[15]"  direction = "out"  />
+        <pitem  name = "o[14]"  direction = "out"  />
+        <pitem  name = "o[13]"  direction = "out"  />
+        <pitem  name = "o[12]"  direction = "out"  />
+        <pitem  name = "o[11]"  direction = "out"  />
+        <pitem  name = "o[10]"  direction = "out"  />
+        <pitem  name = "o[9]"  direction = "out"  />
+        <pitem  name = "o[8]"  direction = "out"  />
         <pitem  name = "o[7]"  direction = "out"  />
         <pitem  name = "o[6]"  direction = "out"  />
         <pitem  name = "o[5]"  direction = "out"  />
@@ -2086,22 +2661,38 @@
         <nets>
         <nitem  name = "u_ROM_CS_TA/u_SR_TA/gnd"  />
         <nitem  name = "u_ROM_CS_TA/gnd"  />
-        <nitem  name = "u_ROM_CS_TA/u_SR_TA/shift_reg_7__N_34[7]"  />
-        <nitem  name = "u_ROM_CS_TA/u_SR_TA/shift_reg_7__N_34[6]"  />
-        <nitem  name = "u_ROM_CS_TA/u_SR_TA/shift_reg_7__N_34[5]"  />
-        <nitem  name = "u_ROM_CS_TA/u_SR_TA/shift_reg_7__N_34[4]"  />
-        <nitem  name = "u_ROM_CS_TA/u_SR_TA/shift_reg_7__N_34[3]"  />
-        <nitem  name = "u_ROM_CS_TA/u_SR_TA/shift_reg_7__N_34[2]"  />
-        <nitem  name = "u_ROM_CS_TA/u_SR_TA/shift_reg_7__N_34[1]"  />
-        <nitem  name = "u_ROM_CS_TA/u_SR_TA/shift_reg_7__N_34[0]"  />
-        <nitem  name = "u_ROM_CS_TA/u_SR_TA/shift_reg_7__N_26[7]"  />
-        <nitem  name = "u_ROM_CS_TA/u_SR_TA/shift_reg_7__N_26[6]"  />
-        <nitem  name = "u_ROM_CS_TA/u_SR_TA/shift_reg_7__N_26[5]"  />
-        <nitem  name = "u_ROM_CS_TA/u_SR_TA/shift_reg_7__N_26[4]"  />
-        <nitem  name = "u_ROM_CS_TA/u_SR_TA/shift_reg_7__N_26[3]"  />
-        <nitem  name = "u_ROM_CS_TA/u_SR_TA/shift_reg_7__N_26[2]"  />
-        <nitem  name = "u_ROM_CS_TA/u_SR_TA/shift_reg_7__N_26[1]"  />
-        <nitem  name = "u_ROM_CS_TA/u_SR_TA/shift_reg_7__N_26[0]"  />
+        <nitem  name = "u_ROM_CS_TA/u_SR_TA/shift_reg_15__N_96[15]"  />
+        <nitem  name = "u_ROM_CS_TA/u_SR_TA/shift_reg_15__N_96[14]"  />
+        <nitem  name = "u_ROM_CS_TA/u_SR_TA/shift_reg_15__N_96[13]"  />
+        <nitem  name = "u_ROM_CS_TA/u_SR_TA/shift_reg_15__N_96[12]"  />
+        <nitem  name = "u_ROM_CS_TA/u_SR_TA/shift_reg_15__N_96[11]"  />
+        <nitem  name = "u_ROM_CS_TA/u_SR_TA/shift_reg_15__N_96[10]"  />
+        <nitem  name = "u_ROM_CS_TA/u_SR_TA/shift_reg_15__N_96[9]"  />
+        <nitem  name = "u_ROM_CS_TA/u_SR_TA/shift_reg_15__N_96[8]"  />
+        <nitem  name = "u_ROM_CS_TA/u_SR_TA/shift_reg_15__N_96[7]"  />
+        <nitem  name = "u_ROM_CS_TA/u_SR_TA/shift_reg_15__N_96[6]"  />
+        <nitem  name = "u_ROM_CS_TA/u_SR_TA/shift_reg_15__N_96[5]"  />
+        <nitem  name = "u_ROM_CS_TA/u_SR_TA/shift_reg_15__N_96[4]"  />
+        <nitem  name = "u_ROM_CS_TA/u_SR_TA/shift_reg_15__N_96[3]"  />
+        <nitem  name = "u_ROM_CS_TA/u_SR_TA/shift_reg_15__N_96[2]"  />
+        <nitem  name = "u_ROM_CS_TA/u_SR_TA/shift_reg_15__N_96[1]"  />
+        <nitem  name = "u_ROM_CS_TA/u_SR_TA/shift_reg_15__N_96[0]"  />
+        <nitem  name = "u_ROM_CS_TA/u_SR_TA/shift_reg_15__N_80[15]"  />
+        <nitem  name = "u_ROM_CS_TA/u_SR_TA/shift_reg_15__N_80[14]"  />
+        <nitem  name = "u_ROM_CS_TA/u_SR_TA/shift_reg_15__N_80[13]"  />
+        <nitem  name = "u_ROM_CS_TA/u_SR_TA/shift_reg_15__N_80[12]"  />
+        <nitem  name = "u_ROM_CS_TA/u_SR_TA/shift_reg_15__N_80[11]"  />
+        <nitem  name = "u_ROM_CS_TA/u_SR_TA/shift_reg_15__N_80[10]"  />
+        <nitem  name = "u_ROM_CS_TA/u_SR_TA/shift_reg_15__N_80[9]"  />
+        <nitem  name = "u_ROM_CS_TA/u_SR_TA/shift_reg_15__N_80[8]"  />
+        <nitem  name = "u_ROM_CS_TA/u_SR_TA/shift_reg_15__N_80[7]"  />
+        <nitem  name = "u_ROM_CS_TA/u_SR_TA/shift_reg_15__N_80[6]"  />
+        <nitem  name = "u_ROM_CS_TA/u_SR_TA/shift_reg_15__N_80[5]"  />
+        <nitem  name = "u_ROM_CS_TA/u_SR_TA/shift_reg_15__N_80[4]"  />
+        <nitem  name = "u_ROM_CS_TA/u_SR_TA/shift_reg_15__N_80[3]"  />
+        <nitem  name = "u_ROM_CS_TA/u_SR_TA/shift_reg_15__N_80[2]"  />
+        <nitem  name = "u_ROM_CS_TA/u_SR_TA/shift_reg_15__N_80[1]"  />
+        <nitem  name = "u_ROM_CS_TA/u_SR_TA/shift_reg_15__N_80[0]"  />
         </nets>
     </instance>
 
@@ -2117,8 +2708,8 @@
         <nets>
         <nitem  name = "u_ROM_CS_TA/u_SR_TA/gnd"  />
         <nitem  name = "u_ROM_CS_TA/u_SR_TA/load_half"  />
-        <nitem  name = "u_ROM_CS_TA/u_SR_TA/Clock_N_44"  />
-        <nitem  name = "u_ROM_CS_TA/u_SR_TA/load_half_N_42"  />
+        <nitem  name = "u_ROM_CS_TA/u_SR_TA/Clock_N_114"  />
+        <nitem  name = "u_ROM_CS_TA/u_SR_TA/load_half_N_112"  />
         </nets>
     </instance>
 
@@ -2138,10 +2729,10 @@
         <reg  name = "u_RAM_CS_TA/loadTA_16"  />
         <reg  name = "u_RAM_CS_TA/int_RAM_CS_N_17"  />
         <reg  name = "u_RAM_CS_TA/loadCS_15"  />
-        <reg  name = "u_ROM_CS_TA/loadCS_24"  />
-        <reg  name = "u_ROM_CS_TA/loadTA_25"  />
-        <reg  name = "u_ROM_CS_TA/int_ROM_CS_N_26"  />
-        <reg  name = "u_ROM_CS_TA/state_23"  />
+        <reg  name = "u_ROM_CS_TA/loadCS_27"  />
+        <reg  name = "u_ROM_CS_TA/loadTA_28"  />
+        <reg  name = "u_ROM_CS_TA/int_ROM_CS_N_29"  />
+        <reg  name = "u_ROM_CS_TA/state_26"  />
         <reg  name = "u_RAM_CS_TA/u_SR_RAMS_CS/load_registered_14"  />
         <reg  name = "u_RAM_CS_TA/u_SR_RAMS_CS/shift_reg"  />
         <reg  name = "u_RAM_CS_TA/u_SR_RAMS_CS/load_half_13"  />
@@ -2157,10 +2748,11 @@
     </regs>
 
     <!--
-        Views in design "ZenMainLogic": 5
+        Views in design "ZenMainLogic": 6
     -->
 
     <views>
+        <view  name = "PISO_Long_ShiftReg"  />
         <view  name = "PISO_Short_ShiftReg"  />
         <view  name = "ZenAddressDecode"  />
         <view  name = "ZenPLL"  />

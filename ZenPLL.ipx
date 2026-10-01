@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<DiamondModule name="ZenPLL" module="ZenPLL" VendorName="Lattice Semiconductor Corporation" generator="IPexpress" date="2026 09 16 20:00:24.464" version="5.8" type="Module" synthesis="lse" source_format="Verilog HDL">
+<DiamondModule name="ZenPLL" module="ZenPLL" VendorName="Lattice Semiconductor Corporation" generator="IPexpress" date="2026 09 26 17:42:26.340" version="5.8" type="Module" synthesis="lse" source_format="Verilog HDL">
   <Package>
-		<File name="ZenPLL.lpc" type="lpc" modified="2026 09 16 20:00:22.910"/>
-		<File name="ZenPLL.v" type="top_level_verilog" modified="2026 09 16 20:00:23.020"/>
-		<File name="ZenPLL_tmpl.v" type="template_verilog" modified="2026 09 16 20:00:23.020"/>
+		<File name="ZenPLL.lpc" type="lpc" modified="2026 09 26 17:42:23.643"/>
+		<File name="ZenPLL.v" type="top_level_verilog" modified="2026 09 26 17:42:23.728"/>
+		<File name="ZenPLL_tmpl.v" type="template_verilog" modified="2026 09 26 17:42:23.728"/>
   </Package>
 </DiamondModule>

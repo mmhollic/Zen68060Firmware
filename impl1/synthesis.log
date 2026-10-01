@@ -5,7 +5,7 @@ Copyright (c) 1995 AT&T Corp.   All rights reserved.
 Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
 Copyright (c) 2001 Agere Systems   All rights reserved.
 Copyright (c) 2002-2024 Lattice Semiconductor Corporation,  All rights reserved.
-Wed Sep 16 16:35:01 2026
+Wed Sep 30 10:52:22 2026
 
 
 Command Line:  synthesis -f Zen68060Firmware_impl1_lattice.synproj -gui -msgset C:/lscc/diamond/3.14/bin/nt64/Zen68060Firmware/promote.xml 
@@ -92,7 +92,7 @@ Top module name (Verilog): ZenMainLogic
 INFO - synthesis: c:/lscc/diamond/3.14/bin/nt64/zen68060firmware/zen68060machmainlogic.v(1): compiling module ZenMainLogic. VERI-1018
 INFO - synthesis: c:/lscc/diamond/3.14/bin/nt64/zen68060firmware/zenpll.v(8): compiling module ZenPLL. VERI-1018
 INFO - synthesis: C:/lscc/diamond/3.14/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(1124): compiling module VLO. VERI-1018
-INFO - synthesis: C:/lscc/diamond/3.14/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(1730): compiling module EHXPLLJ(CLKOP_DIV=12,CLKOS_DIV=3,CLKOS2_DIV=6,CLKOS3_DIV=1,CLKOS3_ENABLE="DISABLED",CLKOP_CPHASE=11,CLKOS_CPHASE=3,CLKOS2_CPHASE=6,CLKOS_FPHASE=1,CLKOS2_FPHASE=4,PLLRST_ENA="ENABLED"). VERI-1018
+INFO - synthesis: C:/lscc/diamond/3.14/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(1730): compiling module EHXPLLJ(CLKOP_DIV=12,CLKOS_DIV=3,CLKOS2_DIV=3,CLKOS3_DIV=1,CLKOS3_ENABLE="DISABLED",CLKOP_CPHASE=11,CLKOS_CPHASE=3,CLKOS2_CPHASE=4,CLKOS_FPHASE=1,CLKOS2_FPHASE=5,PLLRST_ENA="ENABLED"). VERI-1018
 INFO - synthesis: c:/lscc/diamond/3.14/bin/nt64/zen68060firmware/zenaddressdecode.v(1): compiling module ZenAddressDecode. VERI-1018
 INFO - synthesis: c:/lscc/diamond/3.14/bin/nt64/zen68060firmware/zenram_cs_ta.v(1): compiling module ZenRAM_CS_TA. VERI-1018
 INFO - synthesis: c:/lscc/diamond/3.14/bin/nt64/zen68060firmware/zenshiftregister.v(65): compiling module PISO_Short_ShiftReg. VERI-1018
@@ -103,10 +103,11 @@ WARNING - synthesis: c:/lscc/diamond/3.14/bin/nt64/zen68060firmware/zenram_cs_ta
 WARNING - synthesis: c:/lscc/diamond/3.14/bin/nt64/zen68060firmware/zenram_cs_ta.v(32): actual bit length 32 differs from formal bit length 1 for port Reset. VERI-1330
 WARNING - synthesis: c:/lscc/diamond/3.14/bin/nt64/zen68060firmware/zenram_cs_ta.v(33): actual bit length 32 differs from formal bit length 1 for port ClockEn. VERI-1330
 INFO - synthesis: c:/lscc/diamond/3.14/bin/nt64/zen68060firmware/zenrom_cs_ta.v(1): compiling module ZenROM_CS_TA. VERI-1018
-WARNING - synthesis: c:/lscc/diamond/3.14/bin/nt64/zen68060firmware/zenrom_cs_ta.v(22): actual bit length 32 differs from formal bit length 1 for port Reset. VERI-1330
-WARNING - synthesis: c:/lscc/diamond/3.14/bin/nt64/zen68060firmware/zenrom_cs_ta.v(23): actual bit length 32 differs from formal bit length 1 for port ClockEn. VERI-1330
-WARNING - synthesis: c:/lscc/diamond/3.14/bin/nt64/zen68060firmware/zenrom_cs_ta.v(31): actual bit length 32 differs from formal bit length 1 for port Reset. VERI-1330
-WARNING - synthesis: c:/lscc/diamond/3.14/bin/nt64/zen68060firmware/zenrom_cs_ta.v(32): actual bit length 32 differs from formal bit length 1 for port ClockEn. VERI-1330
+INFO - synthesis: c:/lscc/diamond/3.14/bin/nt64/zen68060firmware/zenshiftregister.v(1): compiling module PISO_Long_ShiftReg. VERI-1018
+WARNING - synthesis: c:/lscc/diamond/3.14/bin/nt64/zen68060firmware/zenrom_cs_ta.v(23): actual bit length 32 differs from formal bit length 1 for port Reset. VERI-1330
+WARNING - synthesis: c:/lscc/diamond/3.14/bin/nt64/zen68060firmware/zenrom_cs_ta.v(24): actual bit length 32 differs from formal bit length 1 for port ClockEn. VERI-1330
+WARNING - synthesis: c:/lscc/diamond/3.14/bin/nt64/zen68060firmware/zenrom_cs_ta.v(32): actual bit length 32 differs from formal bit length 1 for port Reset. VERI-1330
+WARNING - synthesis: c:/lscc/diamond/3.14/bin/nt64/zen68060firmware/zenrom_cs_ta.v(33): actual bit length 32 differs from formal bit length 1 for port ClockEn. VERI-1330
 Loading NGL library 'C:/lscc/diamond/3.14/ispfpga/xo2c00a/data/xo2alib.ngl'...
 Loading NGL library 'C:/lscc/diamond/3.14/ispfpga/xo2c00/data/xo2clib.ngl'...
 Loading NGL library 'C:/lscc/diamond/3.14/ispfpga/mg5g00/data/mg5glib.ngl'...
@@ -130,22 +131,34 @@ Skip shifter inference for instance \u_ROM_CS_TA/u_SR_TA/shift_reg, since syn_sr
 
 
 WARNING - synthesis: Bit 0 of Register \u_ROM_CS_TA/u_SR_ROMS_CS/shift_reg is stuck at One
-WARNING - synthesis: Bit 0 of Register \u_ROM_CS_TA/u_SR_TA/shift_reg is stuck at One
 WARNING - synthesis: Bit 1 of Register \u_ROM_CS_TA/u_SR_ROMS_CS/shift_reg is stuck at One
+WARNING - synthesis: Bit 0 of Register \u_ROM_CS_TA/u_SR_TA/shift_reg is stuck at One
 WARNING - synthesis: Bit 1 of Register \u_ROM_CS_TA/u_SR_TA/shift_reg is stuck at One
-Skip shifter inference since syn_srlstyle attribute = registers for instance \u_ROM_CS_TA/u_SR_ROMS_CS/shift_reg_
-
+WARNING - synthesis: Bit 2 of Register \u_ROM_CS_TA/u_SR_ROMS_CS/shift_reg is stuck at One
+WARNING - synthesis: Bit 2 of Register \u_ROM_CS_TA/u_SR_TA/shift_reg is stuck at One
+WARNING - synthesis: Bit 3 of Register \u_ROM_CS_TA/u_SR_ROMS_CS/shift_reg is stuck at One
+WARNING - synthesis: Bit 3 of Register \u_ROM_CS_TA/u_SR_TA/shift_reg is stuck at One
+WARNING - synthesis: Bit 4 of Register \u_ROM_CS_TA/u_SR_ROMS_CS/shift_reg is stuck at One
+WARNING - synthesis: Bit 4 of Register \u_ROM_CS_TA/u_SR_TA/shift_reg is stuck at One
+WARNING - synthesis: Bit 5 of Register \u_ROM_CS_TA/u_SR_ROMS_CS/shift_reg is stuck at One
+WARNING - synthesis: Bit 5 of Register \u_ROM_CS_TA/u_SR_TA/shift_reg is stuck at One
 Skip shifter inference since syn_srlstyle attribute = registers for instance \u_RAM_CS_TA/u_SR_RAMS_CS/shift_reg
 
 Skip shifter inference since syn_srlstyle attribute = registers for instance \u_RAM_CS_TA/u_SR_TA/shift_reg
 
+Skip shifter inference since syn_srlstyle attribute = registers for instance \u_ROM_CS_TA/u_SR_ROMS_CS/shift_reg
+
 Skip shifter inference since syn_srlstyle attribute = registers for instance \u_ROM_CS_TA/u_SR_TA/shift_reg
 
 GSR will not be inferred because no asynchronous signal was found in the netlist.
+WARNING - synthesis: Initial value found on instance \u_ROM_CS_TA/u_SR_ROMS_CS/shift_reg_i1 will be ignored.
+WARNING - synthesis: Initial value found on instance \u_ROM_CS_TA/u_SR_TA/shift_reg_i10 will be ignored.
+WARNING - synthesis: Initial value found on instance \u_ROM_CS_TA/u_SR_TA/shift_reg_i9 will be ignored.
+WARNING - synthesis: Initial value found on instance \u_ROM_CS_TA/u_SR_TA/shift_reg_i8 will be ignored.
+WARNING - synthesis: Initial value found on instance \u_ROM_CS_TA/u_SR_TA/shift_reg_i7 will be ignored.
 WARNING - synthesis: Initial value found on instance \u_ROM_CS_TA/u_SR_TA/shift_reg_i6 will be ignored.
 WARNING - synthesis: Initial value found on instance \u_ROM_CS_TA/u_SR_TA/shift_reg_i5 will be ignored.
 WARNING - synthesis: Initial value found on instance \u_ROM_CS_TA/u_SR_TA/shift_reg_i4 will be ignored.
-WARNING - synthesis: Initial value found on instance \u_ROM_CS_TA/u_SR_TA/shift_reg_i3 will be ignored.
 WARNING - synthesis: Initial value found on instance \u_RAM_CS_TA/u_SR_TA/shift_reg_i5 will be ignored.
 WARNING - synthesis: Initial value found on instance \u_RAM_CS_TA/u_SR_TA/shift_reg_i4 will be ignored.
 WARNING - synthesis: Initial value found on instance \u_RAM_CS_TA/u_SR_TA/shift_reg_i3 will be ignored.
@@ -168,17 +181,17 @@ All blocks are expanded and NGD expansion is successful.
 Writing NGD file Zen68060Firmware_impl1.ngd.
 
 ################### Begin Area Report (ZenMainLogic)######################
-Number of register bits => 41 of 7209 (0 % )
+Number of register bits => 50 of 7209 (0 % )
 EHXPLLJ => 1
-FD1S3AX => 7
+FD1S3AX => 9
 FD1S3AY => 10
-FD1S3IX => 10
-FD1S3JX => 14
+FD1S3IX => 12
+FD1S3JX => 19
 GSR => 1
 IB => 13
 INV => 2
-LUT4 => 12
-OB => 6
+LUT4 => 19
+OB => 8
 ################### End Area Report ##################
 
 ################### Begin BlackBox Report ######################
@@ -188,24 +201,24 @@ TSALL => 1
 ################### Begin Clock Report ######################
 Clock Nets
 Number of Clocks: 3
+  Net : u_ZenPLL/CLKOS2, loads : 23
   Net : u_ZenPLL/CLKOS, loads : 19
-  Net : u_ZenPLL/CLKOS2, loads : 15
-  Net : CLK_c, loads : 6
+  Net : CLK_c, loads : 7
 Clock Enable Nets
 Number of Clock Enables: 0
 Top 0 highest fanout Clock Enables:
 Highest fanout non-clock nets
 Top 10 highest fanout non-clock nets:
-  Net : u_RAM_CS_TA/u_SR_TA/shift_reg_7_N_34_0, loads : 8
-  Net : u_RAM_CS_TA/u_SR_RAMS_CS/shift_reg_7_N_34_0, loads : 8
-  Net : u_ROM_CS_TA/u_SR_TA/load_registered, loads : 6
-  Net : u_ROM_CS_TA/u_SR_ROMS_CS/load_registered, loads : 6
-  Net : TS_N_c, loads : 3
+  Net : u_ROM_CS_TA/u_SR_TA/load_registered, loads : 10
+  Net : RW_OUT_c_c, loads : 9
+  Net : u_ROM_CS_TA/u_SR_ROMS_CS/load_registered, loads : 9
+  Net : u_RAM_CS_TA/u_SR_TA/shift_reg_7_N_36_0, loads : 8
+  Net : u_RAM_CS_TA/u_SR_RAMS_CS/shift_reg_7_N_36_0, loads : 6
+  Net : TS_N_c, loads : 4
+  Net : u_ROM_CS_TA/u_SR_ROMS_CS/ROM_CS_END, loads : 3
   Net : A_c_28, loads : 2
   Net : A_c_27, loads : 2
-  Net : RW_OUT_c_c, loads : 2
-  Net : u_RAM_CS_TA/loadTA_N_24, loads : 2
-  Net : u_RAM_CS_TA/loadTA, loads : 2
+  Net : u_decode/ROM_ADDR_N_5, loads : 2
 ################### End Clock Report ##################
 
 Timing Report Summary
@@ -215,13 +228,13 @@ Constraint                              |   Constraint|       Actual|Levels
 --------------------------------------------------------------------------------
                                         |             |             |
 create_clock -period 5.000000 -name     |             |             |
-clk2 [get_nets CLK_c]                   |  200.000 MHz|  393.082 MHz|     2  
+clk2 [get_nets CLKOS]                   |  200.000 MHz|  372.717 MHz|     2  
                                         |             |             |
 create_clock -period 5.000000 -name     |             |             |
-clk1 [get_nets CLKOS]                   |  200.000 MHz|  372.717 MHz|     2  
+clk1 [get_nets CLK_c]                   |  200.000 MHz|  380.952 MHz|     2  
                                         |             |             |
 create_clock -period 5.000000 -name     |             |             |
-clk0 [get_nets CLKOS2]                  |  200.000 MHz|  380.807 MHz|     2  
+clk0 [get_nets CLKOS2]                  |  200.000 MHz|  366.569 MHz|     2  
                                         |             |             |
 --------------------------------------------------------------------------------
 
@@ -229,8 +242,8 @@ clk0 [get_nets CLKOS2]                  |  200.000 MHz|  380.807 MHz|     2
 All constraints were met.
 
 
-Peak Memory Usage: 61.250  MB
+Peak Memory Usage: 61.680  MB
 
 --------------------------------------------------------------
-Elapsed CPU time for LSE flow : 0.453  secs
+Elapsed CPU time for LSE flow : 0.469  secs
 --------------------------------------------------------------

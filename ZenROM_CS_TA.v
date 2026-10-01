@@ -3,6 +3,7 @@ module ZenROM_CS_TA (
 	input wire CLKOS,
 	input wire ROM_ADDR,
 	input wire TS_N,
+	input wire RW,
 	output wire ROM_CS_N,
 	output wire ROM_TA_N
 );
@@ -17,21 +18,21 @@ module ZenROM_CS_TA (
 	reg loadTA /* synthesis syn_preserve=1 syn_keep=1 */ = 1'b0;
 	// loadCS and TA keeps the register start loaded until TS_N and then allows it to run
 	
-	PISO_Short_ShiftReg u_SR_ROMS_CS(
+	PISO_Long_ShiftReg u_SR_ROMS_CS(
 		.Clock(CLKOS),
 		.Reset(0),
 		.ClockEn(1),
 		.Load(loadCS),       // High = Load Parallel Data, Low = Shift Out
-		.ParallelIn(8'b00000011), // The 8-bit word you want to serialize
+		.ParallelIn((16'b000001111111111&(RW?16'b0000000000111111:16'b1111111111111111))), // The 8-bit word you want to serialize		
 		.ShiftInValue(1'b1),
 		.SerialOut(ROM_CS_END)
 	);
-	PISO_Short_ShiftReg u_SR_TA(
+	PISO_Long_ShiftReg u_SR_TA(
 		.Clock(CLKOS),
 		.Reset(0),
 		.ClockEn(1),
 		.Load(loadTA),       // High = Load Parallel Data, Low = Shift Out
-		.ParallelIn(8'b11110011), // The 8-bit word you want to serialize
+		.ParallelIn(16'b1111111000111111), // The 8-bit word you want to serialize
 		.ShiftInValue(1'b1),
 		.SerialOut(ROM_TA_END)
 	);
@@ -54,7 +55,8 @@ module ZenROM_CS_TA (
 					begin
 						int_ROM_CS_N <=1'b1;	// De-assert CS
 						loadCS<=1;				// Reset the SR
-						loadTA<=1;
+						if (RW) loadTA<=1;
+						else loadTA<=0;				// Delay negating TA by a cycle due to write cycle timing - needs a write recovery time after CS negated 
 						state <= 0;				// Exit read cycle state
 					end
 					else begin

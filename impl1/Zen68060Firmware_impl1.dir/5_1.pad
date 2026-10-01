@@ -6,32 +6,34 @@ Performance Grade:      6
 PACKAGE:          TQFP144
 Package Status:                     Final          Version 1.39
 
-Wed Sep 16 16:35:11 2026
+Wed Sep 30 10:53:31 2026
 
 Pinout by Port Name:
-+-----------+----------+--------------+-------+-----------+-----------+--------------------------------------+
-| Port Name | Pin/Bank | Buffer Type  | Site  | PG Enable | BC Enable | Properties                           |
-+-----------+----------+--------------+-------+-----------+-----------+--------------------------------------+
-| A[23]     | 120/0    | LVCMOS33_IN  | PT27C |           |           | PULL:DOWN CLAMP:ON HYSTERESIS:SMALL  |
-| A[24]     | 121/0    | LVCMOS33_IN  | PT25B |           |           | PULL:DOWN CLAMP:ON HYSTERESIS:SMALL  |
-| A[25]     | 122/0    | LVCMOS33_IN  | PT25A |           |           | PULL:DOWN CLAMP:ON HYSTERESIS:SMALL  |
-| A[26]     | 132/0    | LVCMOS33_IN  | PT15B |           |           | PULL:DOWN CLAMP:ON HYSTERESIS:SMALL  |
-| A[27]     | 133/0    | LVCMOS33_IN  | PT15A |           |           | PULL:DOWN CLAMP:ON HYSTERESIS:SMALL  |
-| A[28]     | 138/0    | LVCMOS33_IN  | PT11B |           |           | PULL:DOWN CLAMP:ON HYSTERESIS:SMALL  |
-| A[29]     | 139/0    | LVCMOS33_IN  | PT11A |           |           | PULL:DOWN CLAMP:ON HYSTERESIS:SMALL  |
-| A[30]     | 140/0    | LVCMOS33_IN  | PT10B |           |           | PULL:DOWN CLAMP:ON HYSTERESIS:SMALL  |
-| A[31]     | 141/0    | LVCMOS33_IN  | PT10A |           |           | PULL:DOWN CLAMP:ON HYSTERESIS:SMALL  |
-| CLK       | 92/1     | LVCMOS33_IN  | PR12A |           |           | PULL:DOWN CLAMP:ON HYSTERESIS:SMALL  |
-| LOCK      | 77/1     | LVCMOS33_OUT | PR21B |           |           | DRIVE:8mA PULL:DOWN SLEW:FAST        |
-| RAM_CS_N  | 127/0    | LVCMOS33_OUT | PT18B |           |           | DRIVE:8mA PULL:DOWN SLEW:FAST        |
-| RAM_OE_N  | 143/0    | LVCMOS33_OUT | PT9A  |           |           | DRIVE:8mA PULL:DOWN SLEW:FAST        |
-| ROM_CS_N  | 117/0    | LVCMOS33_OUT | PT28A |           |           | DRIVE:8mA PULL:DOWN SLEW:FAST        |
-| RST       | 76/1     | LVCMOS33_IN  | PR23A |           |           | PULL:DOWN CLAMP:ON HYSTERESIS:SMALL  |
-| RW_IN     | 75/1     | LVCMOS33_IN  | PR23B |           |           | PULL:DOWN CLAMP:ON HYSTERESIS:SMALL  |
-| RW_OUT    | 73/1     | LVCMOS33_OUT | PR24B |           |           | DRIVE:8mA PULL:DOWN SLEW:FAST        |
-| TA_N      | 128/0    | LVCMOS33_OUT | PT18A |           |           | DRIVE:8mA PULL:DOWN SLEW:FAST        |
-| TS_N      | 142/0    | LVCMOS33_IN  | PT9B  |           |           | PULL:DOWN CLAMP:ON HYSTERESIS:SMALL  |
-+-----------+----------+--------------+-------+-----------+-----------+--------------------------------------+
++-----------------+----------+--------------+-------+-----------+-----------+--------------------------------------+
+| Port Name       | Pin/Bank | Buffer Type  | Site  | PG Enable | BC Enable | Properties                           |
++-----------------+----------+--------------+-------+-----------+-----------+--------------------------------------+
+| A[23]           | 120/0    | LVCMOS33_IN  | PT27C |           |           | PULL:DOWN CLAMP:ON HYSTERESIS:SMALL  |
+| A[24]           | 121/0    | LVCMOS33_IN  | PT25B |           |           | PULL:DOWN CLAMP:ON HYSTERESIS:SMALL  |
+| A[25]           | 122/0    | LVCMOS33_IN  | PT25A |           |           | PULL:DOWN CLAMP:ON HYSTERESIS:SMALL  |
+| A[26]           | 132/0    | LVCMOS33_IN  | PT15B |           |           | PULL:DOWN CLAMP:ON HYSTERESIS:SMALL  |
+| A[27]           | 133/0    | LVCMOS33_IN  | PT15A |           |           | PULL:DOWN CLAMP:ON HYSTERESIS:SMALL  |
+| A[28]           | 138/0    | LVCMOS33_IN  | PT11B |           |           | PULL:DOWN CLAMP:ON HYSTERESIS:SMALL  |
+| A[29]           | 139/0    | LVCMOS33_IN  | PT11A |           |           | PULL:DOWN CLAMP:ON HYSTERESIS:SMALL  |
+| A[30]           | 140/0    | LVCMOS33_IN  | PT10B |           |           | PULL:DOWN CLAMP:ON HYSTERESIS:SMALL  |
+| A[31]           | 141/0    | LVCMOS33_IN  | PT10A |           |           | PULL:DOWN CLAMP:ON HYSTERESIS:SMALL  |
+| CLK             | 92/1     | LVCMOS33_IN  | PR12A |           |           | PULL:DOWN CLAMP:ON HYSTERESIS:SMALL  |
+| LOCK            | 77/1     | LVCMOS33_OUT | PR21B |           |           | DRIVE:8mA PULL:DOWN SLEW:FAST        |
+| RAM_CS_N        | 127/0    | LVCMOS33_OUT | PT18B |           |           | DRIVE:8mA PULL:DOWN SLEW:FAST        |
+| RAM_OE_N        | 143/0    | LVCMOS33_OUT | PT9A  |           |           | DRIVE:8mA PULL:DOWN SLEW:FAST        |
+| ROM_BUFFER_OE_N | 96/1     | LVCMOS33_OUT | PR9A  |           |           | DRIVE:8mA PULL:DOWN SLEW:FAST        |
+| ROM_CS_N        | 35/3     | LVCMOS33_OUT | PL25B |           |           | DRIVE:8mA PULL:DOWN SLEW:FAST        |
+| ROM_OE_N        | 34/3     | LVCMOS33_OUT | PL25A |           |           | DRIVE:8mA PULL:DOWN SLEW:FAST        |
+| RST             | 76/1     | LVCMOS33_IN  | PR23A |           |           | PULL:DOWN CLAMP:ON HYSTERESIS:SMALL  |
+| RW_IN           | 75/1     | LVCMOS33_IN  | PR23B |           |           | PULL:DOWN CLAMP:ON HYSTERESIS:SMALL  |
+| RW_OUT          | 73/1     | LVCMOS33_OUT | PR24B |           |           | DRIVE:8mA PULL:DOWN SLEW:FAST        |
+| TA_N            | 142/0    | LVCMOS33_OUT | PT9B  |           |           | DRIVE:8mA PULL:DOWN SLEW:FAST        |
+| TS_N            | 74/1     | LVCMOS33_IN  | PR24A |           |           | PULL:DOWN CLAMP:ON HYSTERESIS:SMALL  |
++-----------------+----------+--------------+-------+-----------+-----------+--------------------------------------+
 
 Vccio by Bank:
 +------+-------+
@@ -82,8 +84,8 @@ Pinout by Pin Number:
 | 31/3     |     unused, PULL:DOWN |            |              | PL23D |                |           |           |
 | 32/3     |     unused, PULL:DOWN |            |              | PL24A |                |           |           |
 | 33/3     |     unused, PULL:DOWN |            |              | PL24B |                |           |           |
-| 34/3     |     unused, PULL:DOWN |            |              | PL25A |                |           |           |
-| 35/3     |     unused, PULL:DOWN |            |              | PL25B |                |           |           |
+| 34/3     | ROM_OE_N              | LOCATED    | LVCMOS33_OUT | PL25A |                |           |           |
+| 35/3     | ROM_CS_N              | LOCATED    | LVCMOS33_OUT | PL25B |                |           |           |
 | 38/2     |     unused, PULL:DOWN |            |              | PB4A  |                |           |           |
 | 39/2     |     unused, PULL:DOWN |            |              | PB4B  |                |           |           |
 | 40/2     |     unused, PULL:DOWN |            |              | PB6A  | CSSPIN         |           |           |
@@ -114,7 +116,7 @@ Pinout by Pin Number:
 | 70/2     |     unused, PULL:DOWN |            |              | PB38A | SN             |           |           |
 | 71/2     |     unused, PULL:DOWN |            |              | PB38B | SI/SISPI       |           |           |
 | 73/1     | RW_OUT                | LOCATED    | LVCMOS33_OUT | PR24B | DQ1            |           |           |
-| 74/1     |     unused, PULL:DOWN |            |              | PR24A | DQ1            |           |           |
+| 74/1     | TS_N                  | LOCATED    | LVCMOS33_IN  | PR24A | DQ1            |           |           |
 | 75/1     | RW_IN                 | LOCATED    | LVCMOS33_IN  | PR23B | DQ1            |           |           |
 | 76/1     | RST                   | LOCATED    | LVCMOS33_IN  | PR23A | DQ1            |           |           |
 | 77/1     | LOCK                  | LOCATED    | LVCMOS33_OUT | PR21B | DQ1            |           |           |
@@ -132,7 +134,7 @@ Pinout by Pin Number:
 | 93/1     |     unused, PULL:DOWN |            |              | PR11B | DQS0N          |           |           |
 | 94/1     |     unused, PULL:DOWN |            |              | PR11A | DQS0           |           |           |
 | 95/1     |     unused, PULL:DOWN |            |              | PR9B  | DQ0            |           |           |
-| 96/1     |     unused, PULL:DOWN |            |              | PR9A  | DQ0            |           |           |
+| 96/1     | ROM_BUFFER_OE_N       | LOCATED    | LVCMOS33_OUT | PR9A  | DQ0            |           |           |
 | 97/1     |     unused, PULL:DOWN |            |              | PR7B  | DQ0            |           |           |
 | 98/1     |     unused, PULL:DOWN |            |              | PR7A  | DQ0            |           |           |
 | 99/1     |     unused, PULL:DOWN |            |              | PR5B  | DQ0            |           |           |
@@ -149,7 +151,7 @@ Pinout by Pin Number:
 | 113/0    |     unused, PULL:DOWN |            |              | PT33B |                |           |           |
 | 114/0    |     unused, PULL:DOWN |            |              | PT33A |                |           |           |
 | 115/0    |     unused, PULL:DOWN |            |              | PT28B |                |           |           |
-| 117/0    | ROM_CS_N              | LOCATED    | LVCMOS33_OUT | PT28A |                |           |           |
+| 117/0    |     unused, PULL:DOWN |            |              | PT28A |                |           |           |
 | 119/0    |     unused, PULL:DOWN |            |              | PT27D | PROGRAMN       |           |           |
 | 120/0    | A[23]                 | LOCATED    | LVCMOS33_IN  | PT27C | JTAGENB        |           |           |
 | 121/0    | A[24]                 | LOCATED    | LVCMOS33_IN  | PT25B |                |           |           |
@@ -157,7 +159,7 @@ Pinout by Pin Number:
 | 125/0    |     unused, PULL:DOWN |            |              | PT22D | SDA/PCLKC0_0   |           |           |
 | 126/0    |     unused, PULL:DOWN |            |              | PT22C | SCL/PCLKT0_0   |           |           |
 | 127/0    | RAM_CS_N              | LOCATED    | LVCMOS33_OUT | PT18B | PCLKC0_1       |           |           |
-| 128/0    | TA_N                  | LOCATED    | LVCMOS33_OUT | PT18A | PCLKT0_1       |           |           |
+| 128/0    |     unused, PULL:DOWN |            |              | PT18A | PCLKT0_1       |           |           |
 | 130/0    | Reserved: sysCONFIG   |            |              | PT17D | TMS            |           |           |
 | 131/0    | Reserved: sysCONFIG   |            |              | PT17C | TCK            |           |           |
 | 132/0    | A[26]                 | LOCATED    | LVCMOS33_IN  | PT15B |                |           |           |
@@ -168,7 +170,7 @@ Pinout by Pin Number:
 | 139/0    | A[29]                 | LOCATED    | LVCMOS33_IN  | PT11A |                |           |           |
 | 140/0    | A[30]                 | LOCATED    | LVCMOS33_IN  | PT10B |                |           |           |
 | 141/0    | A[31]                 | LOCATED    | LVCMOS33_IN  | PT10A |                |           |           |
-| 142/0    | TS_N                  | LOCATED    | LVCMOS33_IN  | PT9B  |                |           |           |
+| 142/0    | TA_N                  | LOCATED    | LVCMOS33_OUT | PT9B  |                |           |           |
 | 143/0    | RAM_OE_N              | LOCATED    | LVCMOS33_OUT | PT9A  |                |           |           |
 | PB4C/2   |     unused, PULL:DOWN |            |              | PB4C  |                |           |           |
 | PB4D/2   |     unused, PULL:DOWN |            |              | PB4D  |                |           |           |
@@ -422,12 +424,14 @@ LOCATE  COMP  "CLK"  SITE  "92";
 LOCATE  COMP  "LOCK"  SITE  "77";
 LOCATE  COMP  "RAM_CS_N"  SITE  "127";
 LOCATE  COMP  "RAM_OE_N"  SITE  "143";
-LOCATE  COMP  "ROM_CS_N"  SITE  "117";
+LOCATE  COMP  "ROM_BUFFER_OE_N"  SITE  "96";
+LOCATE  COMP  "ROM_CS_N"  SITE  "35";
+LOCATE  COMP  "ROM_OE_N"  SITE  "34";
 LOCATE  COMP  "RST"  SITE  "76";
 LOCATE  COMP  "RW_IN"  SITE  "75";
 LOCATE  COMP  "RW_OUT"  SITE  "73";
-LOCATE  COMP  "TA_N"  SITE  "128";
-LOCATE  COMP  "TS_N"  SITE  "142";
+LOCATE  COMP  "TA_N"  SITE  "142";
+LOCATE  COMP  "TS_N"  SITE  "74";
 
 #PLL
 LOCATE  COMP  "u_ZenPLL/PLLInst_0"  SITE  "RPLL" ;
@@ -441,5 +445,5 @@ Copyright (c) 1995 AT&T Corp.   All rights reserved.
 Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
 Copyright (c) 2001 Agere Systems   All rights reserved.
 Copyright (c) 2002-2024 Lattice Semiconductor Corporation,  All rights reserved.
-Wed Sep 16 16:35:12 2026
+Wed Sep 30 10:53:31 2026
 
