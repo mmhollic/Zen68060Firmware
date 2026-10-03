@@ -1,7 +1,7 @@
 module ZenRAM_CS_TA (
 	input wire CLK,
 	input wire CLKOS,
-	input wire RAM_ADDR,
+	input wire ENABLE,
 	input wire TS_N,
 	input wire RW,
 	output wire RAM_CS_N,
@@ -40,7 +40,7 @@ module ZenRAM_CS_TA (
 
 	always @(posedge CLK )
 	begin
-		if (RAM_ADDR)
+		if (ENABLE)
 		begin
 			if (!TS_N)
 			begin

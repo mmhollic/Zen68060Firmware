@@ -1,6 +1,6 @@
-BEGIN 1:GSR:fast:ovi_machxo2
-    GSRNET :  1:FL1P3BX:fast:ovi_machxo2 1:FL1P3IY:fast:ovi_machxo2 1:FL1P3DX:fast:ovi_machxo2 1:FL1P3JY:fast:ovi_machxo2
-END 
 BEGIN 1:PUR:fast:ovi_machxo2
-    PURNET :  1:FL1P3BX:fast:ovi_machxo2 1:FL1P3IY:fast:ovi_machxo2 1:FL1P3DX:fast:ovi_machxo2 1:FL1P3JY:fast:ovi_machxo2
+    PURNET :  1:FL1P3JY:fast:ovi_machxo2 1:FL1P3BX:fast:ovi_machxo2 1:FL1P3DX:fast:ovi_machxo2 1:FL1P3IY:fast:ovi_machxo2
+END 
+BEGIN 1:GSR:fast:ovi_machxo2
+    GSRNET :  1:FL1P3JY:fast:ovi_machxo2 1:FL1P3BX:fast:ovi_machxo2 1:FL1P3DX:fast:ovi_machxo2 1:FL1P3IY:fast:ovi_machxo2
 END 

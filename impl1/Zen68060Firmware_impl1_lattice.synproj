@@ -38,6 +38,7 @@
 "C:/lscc/diamond/3.14/bin/nt64/Zen68060Firmware/ZenAddressDecode.v"
 "C:/lscc/diamond/3.14/bin/nt64/Zen68060Firmware/ZenRAM_CS_TA.v"
 "C:/lscc/diamond/3.14/bin/nt64/Zen68060Firmware/ZenROM_CS_TA.v"
+"C:/lscc/diamond/3.14/bin/nt64/Zen68060Firmware/ZenRAM_Line_CS_TA.v"
 -top ZenMainLogic
 
 

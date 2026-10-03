@@ -15,24 +15,24 @@ Target Vendor:  LATTICE
 Target Device:  LCMXO2-7000HCTQFP144
 Target Performance:   6
 Mapper:  xo2c00,  version:  Diamond (64-bit) 3.14.0.75.2
-Mapped on:  09/30/26  10:53:18
+Mapped on:  10/03/26  20:12:36
 
 Design Summary
 --------------
 
-   Number of registers:     50 out of  7209 (1%)
-      PFU registers:           50 out of  6864 (1%)
+   Number of registers:     89 out of  7209 (1%)
+      PFU registers:           89 out of  6864 (1%)
       PIO registers:            0 out of   345 (0%)
-   Number of SLICEs:        28 out of  3432 (1%)
-      SLICEs as Logic/ROM:     28 out of  3432 (1%)
+   Number of SLICEs:        49 out of  3432 (1%)
+      SLICEs as Logic/ROM:     49 out of  3432 (1%)
       SLICEs as RAM:            0 out of  2574 (0%)
       SLICEs as Carry:          0 out of  3432 (0%)
-   Number of LUT4s:         18 out of  6864 (0%)
-      Number used as logic LUTs:         18
+   Number of LUT4s:         35 out of  6864 (1%)
+      Number used as logic LUTs:         35
       Number used as distributed RAM:     0
       Number used as ripple logic:        0
       Number used as shift registers:     0
-   Number of PIO sites used: 21 + 4(JTAG) out of 115 (22%)
+   Number of PIO sites used: 23 + 4(JTAG) out of 115 (23%)
    Number of block RAMs:  0 out of 26 (0%)
    Number of GSRs:        0 out of 1 (0%)
    EFB used :        No
@@ -58,39 +58,42 @@ Design Summary
       2. Number of logic LUT4s does not include count of distributed RAM and
      ripple logic.
    Number of clocks:  3
-     Net CLK_c: 5 loads, 5 rising, 0 falling (Driver: PIO CLK )
-     Net CLKOS: 11 loads, 10 rising, 1 falling (Driver: u_ZenPLL/PLLInst_0 )
+     Net CLK_c: 7 loads, 7 rising, 0 falling (Driver: PIO CLK )
+     Net CLKOS2: 32 loads, 30 rising, 2 falling (Driver: u_ZenPLL/PLLInst_0 )
 
                                     Page 1
 
 
 
 
-Design:  ZenMainLogic                                  Date:  09/30/26  10:53:18
+Design:  ZenMainLogic                                  Date:  10/03/26  20:12:36
 
 Design Summary (cont)
 ---------------------
-     Net CLKOS2: 13 loads, 12 rising, 1 falling (Driver: u_ZenPLL/PLLInst_0 )
+     Net CLKOS: 11 loads, 10 rising, 1 falling (Driver: u_ZenPLL/PLLInst_0 )
    Number of Clock Enables:  0
-   Number of LSRs:  6
+   Number of LSRs:  9
+     Net ROM_ADDR_N_10: 2 loads, 2 LSLICEs
+     Net n69: 1 loads, 1 LSLICEs
      Net RST_c: 1 loads, 0 LSLICEs
-     Net ROM_ADDR_N_5: 2 loads, 2 LSLICEs
+     Net u_RAM_Line_CS_TA/u_SR_LINE_TA/shift_reg_15_N_100_0: 8 loads, 8 LSLICEs
+     Net shift_reg_15_N_100_0: 3 loads, 3 LSLICEs
      Net u_ROM_CS_TA/load_registered: 4 loads, 4 LSLICEs
-     Net shift_reg_7_N_36_0: 3 loads, 3 LSLICEs
+     Net shift_reg_7_N_41_0: 3 loads, 3 LSLICEs
      Net u_ROM_CS_TA/u_SR_TA/load_registered: 5 loads, 5 LSLICEs
-     Net u_RAM_CS_TA/u_SR_TA/shift_reg_7_N_36_0: 4 loads, 4 LSLICEs
+     Net u_RAM_CS_TA/u_SR_TA/shift_reg_7_N_41_0: 4 loads, 4 LSLICEs
    Number of nets driven by tri-state buffers:  0
    Top 10 highest fanout non-clock nets:
-     Net RW_OUT_c_c: 9 loads
+     Net RW_OUT_c_c: 19 loads
+     Net shift_reg_15_N_100_0: 14 loads
+     Net u_RAM_Line_CS_TA/u_SR_LINE_TA/shift_reg_15_N_100_0: 9 loads
      Net u_ROM_CS_TA/load_registered: 7 loads
      Net u_ROM_CS_TA/u_SR_TA/load_registered: 6 loads
      Net ROM_CS_END: 5 loads
-     Net shift_reg_7_N_36_0: 5 loads
-     Net u_RAM_CS_TA/u_SR_TA/shift_reg_7_N_36_0: 5 loads
-     Net TS_N_c: 4 loads
-     Net int_RAM_CS_N: 3 loads
-     Net ROM_ADDR_N_5: 3 loads
-     Net state: 3 loads
+     Net shift_reg_7_N_41_0: 5 loads
+     Net TS_N_c: 5 loads
+     Net u_RAM_CS_TA/u_SR_TA/shift_reg_7_N_41_0: 5 loads
+     Net A_c_27: 4 loads
 
 
 
@@ -111,6 +114,28 @@ IO (PIO) Attributes
 | IO Name             | Direction | Levelmode | IO         |
 |                     |           |  IO_TYPE  | Register   |
 +---------------------+-----------+-----------+------------+
+| RAM_CS_N            | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| ROM_OE_N            | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| SIZ1                | INPUT     | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| SIZ0                | INPUT     | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| RW_IN               | INPUT     | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| TS_N                | INPUT     | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+
+                                    Page 2
+
+
+
+
+Design:  ZenMainLogic                                  Date:  10/03/26  20:12:36
+
+IO (PIO) Attributes (cont)
+--------------------------
 | CLK                 | INPUT     | LVCMOS33  |            |
 +---------------------+-----------+-----------+------------+
 | A[23]               | INPUT     | LVCMOS33  |            |
@@ -123,21 +148,7 @@ IO (PIO) Attributes
 +---------------------+-----------+-----------+------------+
 | A[27]               | INPUT     | LVCMOS33  |            |
 +---------------------+-----------+-----------+------------+
-| RAM_CS_N            | OUTPUT    | LVCMOS33  |            |
-+---------------------+-----------+-----------+------------+
 | A[28]               | INPUT     | LVCMOS33  |            |
-
-                                    Page 2
-
-
-
-
-Design:  ZenMainLogic                                  Date:  09/30/26  10:53:18
-
-IO (PIO) Attributes (cont)
---------------------------
-+---------------------+-----------+-----------+------------+
-| RW_IN               | INPUT     | LVCMOS33  |            |
 +---------------------+-----------+-----------+------------+
 | A[29]               | INPUT     | LVCMOS33  |            |
 +---------------------+-----------+-----------+------------+
@@ -149,38 +160,45 @@ IO (PIO) Attributes (cont)
 +---------------------+-----------+-----------+------------+
 | ROM_BUFFER_OE_N     | OUTPUT    | LVCMOS33  |            |
 +---------------------+-----------+-----------+------------+
-| TS_N                | INPUT     | LVCMOS33  |            |
-+---------------------+-----------+-----------+------------+
 | TA_N                | OUTPUT    | LVCMOS33  |            |
-+---------------------+-----------+-----------+------------+
-| ROM_OE_N            | OUTPUT    | LVCMOS33  |            |
-+---------------------+-----------+-----------+------------+
-| RW_OUT              | OUTPUT    | LVCMOS33  |            |
 +---------------------+-----------+-----------+------------+
 | ROM_CS_N            | OUTPUT    | LVCMOS33  |            |
 +---------------------+-----------+-----------+------------+
-| LOCK                | OUTPUT    | LVCMOS33  |            |
+| RW_OUT              | OUTPUT    | LVCMOS33  |            |
 +---------------------+-----------+-----------+------------+
 | RAM_OE_N            | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| LOCK                | OUTPUT    | LVCMOS33  |            |
 +---------------------+-----------+-----------+------------+
 
 Removed logic
 -------------
 
-Block i10 undriven or does not drive anything - clipped.
+Block i19 undriven or does not drive anything - clipped.
 Block GSR_INST undriven or does not drive anything - clipped.
-Signal u_ROM_CS_TA/u_SR_ROMS_CS/n308 was merged into signal
+Signal Clock_N_51 was merged into signal CLKOS
+Signal Clock_N_118 was merged into signal CLKOS2
+Signal u_ROM_CS_TA/u_SR_ROMS_CS/n346 was merged into signal
      u_ROM_CS_TA/load_registered
-Signal Clock_N_46 was merged into signal CLKOS
-Signal Clock_N_114 was merged into signal CLKOS2
 Signal GND_net undriven or does not drive anything - clipped.
 Signal VCC_net undriven or does not drive anything - clipped.
-Block u_ROM_CS_TA/u_SR_ROMS_CS/i122_1_lut was optimized away.
-Block u_ZenPLL/i197 was optimized away.
-Block u_ZenPLL/i196 was optimized away.
+Block u_ZenPLL/i391 was optimized away.
+Block u_ZenPLL/i390 was optimized away.
+Block u_ROM_CS_TA/u_SR_ROMS_CS/i159_1_lut was optimized away.
 Block i1 was optimized away.
 
      
+
+
+
+
+
+                                    Page 3
+
+
+
+
+Design:  ZenMainLogic                                  Date:  10/03/26  20:12:36
 
 PLL/DLL Summary
 ---------------
@@ -192,16 +210,6 @@ PLL 1:                                     Pin/Node Value
   Output Clock(P):                         NODE     u_ZenPLL/CLKOP
   Output Clock(S):                         NODE     CLKOS
   Output Clock(S2):                        NODE     CLKOS2
-
-                                    Page 3
-
-
-
-
-Design:  ZenMainLogic                                  Date:  09/30/26  10:53:18
-
-PLL/DLL Summary (cont)
-----------------------
   Output Clock(S3):                                 NONE
   Feedback Signal:                         NODE     u_ZenPLL/CLKOP
   Reset Signal:                            PIN      RST_c
@@ -250,6 +258,16 @@ PLL/DLL Summary (cont)
   Pre Divider C Input:                              VCO_PHASE
   Pre Divider D Input:                              VCO_PHASE
   VCO Bypass A Input:                               VCO_PHASE
+
+                                    Page 4
+
+
+
+
+Design:  ZenMainLogic                                  Date:  10/03/26  20:12:36
+
+PLL/DLL Summary (cont)
+----------------------
   VCO Bypass B Input:                               VCO_PHASE
   VCO Bypass C Input:                               VCO_PHASE
   VCO Bypass D Input:                               VCO_PHASE
@@ -258,16 +276,6 @@ PLL/DLL Summary (cont)
   CLKFB Divider:                                    1
   CLKOP Divider:                                    12
   CLKOS Divider:                                    3
-
-                                    Page 4
-
-
-
-
-Design:  ZenMainLogic                                  Date:  09/30/26  10:53:18
-
-PLL/DLL Summary (cont)
-----------------------
   CLKOS2 Divider:                                   3
   CLKOS3 Divider:                                   1
   Fractional N Divider:                             0
@@ -290,10 +298,10 @@ PGROUP Utilization
 ------------------
 
 PGROUP "RAMCSTA":
-   Logic contained: 15 SLICEs, 4 PFUs
+   Logic contained: 38 SLICEs, 10 PFUs
    Bounded Area:    (Unbounded)
 PGROUP "ROMCSTA":
-   Logic contained: 13 SLICEs, 4 PFUs
+   Logic contained: 11 SLICEs, 3 PFUs
    Bounded Area:    (Unbounded)
 
 Run Time and Memory Usage
@@ -303,14 +311,6 @@ Run Time and Memory Usage
    Total REAL Time: 0 secs  
    Peak Memory Usage: 62 MB
         
-
-
-
-
-
-
-
-
 
 
 

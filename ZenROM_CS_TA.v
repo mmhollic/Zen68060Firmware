@@ -1,7 +1,7 @@
 module ZenROM_CS_TA (
 	input wire CLK,
 	input wire CLKOS,
-	input wire ROM_ADDR,
+	input wire ENABLE,
 	input wire TS_N,
 	input wire RW,
 	output wire ROM_CS_N,
@@ -23,7 +23,7 @@ module ZenROM_CS_TA (
 		.Reset(0),
 		.ClockEn(1),
 		.Load(loadCS),       // High = Load Parallel Data, Low = Shift Out
-		.ParallelIn((16'b000001111111111&(RW?16'b0000000000111111:16'b1111111111111111))), // The 8-bit word you want to serialize		
+		.ParallelIn((16'b000001111111111&(RW?16'b0000000000111111:16'b1111111111111111))), // The 16-bit word you want to serialize		
 		.ShiftInValue(1'b1),
 		.SerialOut(ROM_CS_END)
 	);
@@ -40,7 +40,7 @@ module ZenROM_CS_TA (
 	
 	always @(posedge CLK )
 	begin
-		if (ROM_ADDR)
+		if (ENABLE)
 		begin
 			if (!TS_N)	// ROM address and TS asserted. 
 			begin

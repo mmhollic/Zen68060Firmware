@@ -1,29 +1,142 @@
 ----------------------------------------------------------------------
 Report for cell ZenMainLogic.TECH
-Register bits:  50 of 7209 (0.694%)
-I/O cells:      21
+Register bits:  89 of 7209 (1.235%)
+I/O cells:      23
                                   Cell usage:
                                cell     count   Res Usage(%)
                             EHXPLLJ         1          100.0
-                            FD1S3AX         9          100.0
-                            FD1S3AY        10          100.0
-                            FD1S3IX        12          100.0
-                            FD1S3JX        19          100.0
+                            FD1S3AX        22          100.0
+                            FD1S3AY        15          100.0
+                            FD1S3IX        31          100.0
+                            FD1S3JX        21          100.0
                                 GSR         1          100.0
-                                 IB        13          100.0
+                                 IB        15          100.0
                                 INV         2          100.0
-                               LUT4        19          100.0
+                               LUT4        36          100.0
                                  OB         8          100.0
 SUB MODULES
                  PISO_Long_ShiftReg         1
               PISO_Long_ShiftReg_U0         1
+              PISO_Long_ShiftReg_U1         1
+              PISO_Long_ShiftReg_U2         1
                 PISO_Short_ShiftReg         1
-             PISO_Short_ShiftReg_U1         1
+             PISO_Short_ShiftReg_U3         1
                    ZenAddressDecode         1
                              ZenPLL         1
                        ZenRAM_CS_TA         1
+                  ZenRAM_Line_CS_TA         1
                        ZenROM_CS_TA         1
-                              TOTAL       102
+                              TOTAL       163
+----------------------------------------------------------------------
+Report for cell ZenAddressDecode.v1
+Instance Path : u_decode
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                               LUT4        14           38.9
+                              TOTAL        14
+----------------------------------------------------------------------
+Report for cell ZenRAM_Line_CS_TA.v1
+Instance Path : u_RAM_Line_CS_TA
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                            FD1S3AX        13           59.1
+                            FD1S3AY         5           33.3
+                            FD1S3IX        19           61.3
+                            FD1S3JX         2            9.5
+SUB MODULES
+              PISO_Long_ShiftReg_U1         1
+              PISO_Long_ShiftReg_U2         1
+                              TOTAL        41
+----------------------------------------------------------------------
+Report for cell PISO_Long_ShiftReg_U1.v1
+Instance Path : u_RAM_Line_CS_TA.u_SR_LINE_TA
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                            FD1S3AX         1            4.5
+                            FD1S3AY         2           13.3
+                            FD1S3IX        14           45.2
+                            FD1S3JX         1            4.8
+                              TOTAL        18
+----------------------------------------------------------------------
+Report for cell PISO_Long_ShiftReg_U2.v1
+Instance Path : u_RAM_Line_CS_TA.u_SR_LINE_RAMS_CS
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                            FD1S3AX        11           50.0
+                            FD1S3AY         2           13.3
+                            FD1S3IX         4           12.9
+                            FD1S3JX         1            4.8
+                              TOTAL        18
+----------------------------------------------------------------------
+Report for cell ZenROM_CS_TA.v1
+Instance Path : u_ROM_CS_TA
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                            FD1S3AX         5           22.7
+                            FD1S3AY         5           33.3
+                            FD1S3IX         9           29.0
+                            FD1S3JX         9           42.9
+                               LUT4        20           55.6
+SUB MODULES
+                 PISO_Long_ShiftReg         1
+              PISO_Long_ShiftReg_U0         1
+                              TOTAL        50
+----------------------------------------------------------------------
+Report for cell PISO_Long_ShiftReg.v1
+Instance Path : u_ROM_CS_TA.u_SR_TA
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                            FD1S3AX         1            4.5
+                            FD1S3AY         2           13.3
+                            FD1S3IX         2            6.5
+                            FD1S3JX         7           33.3
+                               LUT4         1            2.8
+                              TOTAL        13
+----------------------------------------------------------------------
+Report for cell PISO_Long_ShiftReg_U0.v1
+Instance Path : u_ROM_CS_TA.u_SR_ROMS_CS
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                            FD1S3AX         3           13.6
+                            FD1S3AY         2           13.3
+                            FD1S3IX         6           19.4
+                            FD1S3JX         1            4.8
+                               LUT4         1            2.8
+                              TOTAL        13
+----------------------------------------------------------------------
+Report for cell ZenRAM_CS_TA.v1
+Instance Path : u_RAM_CS_TA
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                            FD1S3AX         4           18.2
+                            FD1S3AY         5           33.3
+                            FD1S3IX         3            9.7
+                            FD1S3JX        10           47.6
+                               LUT4         1            2.8
+SUB MODULES
+                PISO_Short_ShiftReg         1
+             PISO_Short_ShiftReg_U3         1
+                              TOTAL        25
+----------------------------------------------------------------------
+Report for cell PISO_Short_ShiftReg.v1
+Instance Path : u_RAM_CS_TA.u_SR_TA
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                            FD1S3AX         1            4.5
+                            FD1S3AY         2           13.3
+                            FD1S3IX         2            6.5
+                            FD1S3JX         5           23.8
+                              TOTAL        10
+----------------------------------------------------------------------
+Report for cell PISO_Short_ShiftReg_U3.v1
+Instance Path : u_RAM_CS_TA.u_SR_RAMS_CS
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                            FD1S3AX         2            9.1
+                            FD1S3AY         2           13.3
+                            FD1S3IX         1            3.2
+                            FD1S3JX         5           23.8
+                              TOTAL        10
 ----------------------------------------------------------------------
 Report for cell ZenPLL.v1
 Instance Path : u_ZenPLL
@@ -32,80 +145,3 @@ Instance Path : u_ZenPLL
                             EHXPLLJ         1          100.0
                                 INV         2          100.0
                               TOTAL         3
-----------------------------------------------------------------------
-Report for cell ZenROM_CS_TA.v1
-Instance Path : u_ROM_CS_TA
-                                  Cell usage:
-                               cell     count   Res Usage(%)
-                            FD1S3AX         5           55.6
-                            FD1S3AY         5           50.0
-                            FD1S3IX         9           75.0
-                            FD1S3JX         9           47.4
-                               LUT4        12           63.2
-SUB MODULES
-                 PISO_Long_ShiftReg         1
-              PISO_Long_ShiftReg_U0         1
-                              TOTAL        42
-----------------------------------------------------------------------
-Report for cell PISO_Long_ShiftReg.v1
-Instance Path : u_ROM_CS_TA.u_SR_TA
-                                  Cell usage:
-                               cell     count   Res Usage(%)
-                            FD1S3AX         1           11.1
-                            FD1S3AY         2           20.0
-                            FD1S3IX         2           16.7
-                            FD1S3JX         7           36.8
-                               LUT4         1            5.3
-                              TOTAL        13
-----------------------------------------------------------------------
-Report for cell PISO_Long_ShiftReg_U0.v1
-Instance Path : u_ROM_CS_TA.u_SR_ROMS_CS
-                                  Cell usage:
-                               cell     count   Res Usage(%)
-                            FD1S3AX         3           33.3
-                            FD1S3AY         2           20.0
-                            FD1S3IX         6           50.0
-                            FD1S3JX         1            5.3
-                               LUT4         1            5.3
-                              TOTAL        13
-----------------------------------------------------------------------
-Report for cell ZenRAM_CS_TA.v1
-Instance Path : u_RAM_CS_TA
-                                  Cell usage:
-                               cell     count   Res Usage(%)
-                            FD1S3AX         4           44.4
-                            FD1S3AY         5           50.0
-                            FD1S3IX         3           25.0
-                            FD1S3JX        10           52.6
-                               LUT4         2           10.5
-SUB MODULES
-                PISO_Short_ShiftReg         1
-             PISO_Short_ShiftReg_U1         1
-                              TOTAL        26
-----------------------------------------------------------------------
-Report for cell PISO_Short_ShiftReg.v1
-Instance Path : u_RAM_CS_TA.u_SR_TA
-                                  Cell usage:
-                               cell     count   Res Usage(%)
-                            FD1S3AX         1           11.1
-                            FD1S3AY         2           20.0
-                            FD1S3IX         2           16.7
-                            FD1S3JX         5           26.3
-                              TOTAL        10
-----------------------------------------------------------------------
-Report for cell PISO_Short_ShiftReg_U1.v1
-Instance Path : u_RAM_CS_TA.u_SR_RAMS_CS
-                                  Cell usage:
-                               cell     count   Res Usage(%)
-                            FD1S3AX         2           22.2
-                            FD1S3AY         2           20.0
-                            FD1S3IX         1            8.3
-                            FD1S3JX         5           26.3
-                              TOTAL        10
-----------------------------------------------------------------------
-Report for cell ZenAddressDecode.v1
-Instance Path : u_decode
-                                  Cell usage:
-                               cell     count   Res Usage(%)
-                               LUT4         4           21.1
-                              TOTAL         4

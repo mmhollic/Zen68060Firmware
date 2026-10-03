@@ -148,9 +148,9 @@
         <Message>
             <ID>35901018</ID>
             <Severity>Info</Severity>
-            <Dynamic>c:/lscc/diamond/3.14/bin/nt64/zen68060firmware/zenrom_cs_ta.v(1): </Dynamic>
-            <Dynamic>ZenROM_CS_TA</Dynamic>
-            <Navigation>c:/lscc/diamond/3.14/bin/nt64/zen68060firmware/zenrom_cs_ta.v</Navigation>
+            <Dynamic>c:/lscc/diamond/3.14/bin/nt64/zen68060firmware/zenram_line_cs_ta.v(1): </Dynamic>
+            <Dynamic>ZenRAM_Line_CS_TA</Dynamic>
+            <Navigation>c:/lscc/diamond/3.14/bin/nt64/zen68060firmware/zenram_line_cs_ta.v</Navigation>
             <Navigation>1</Navigation>
         </Message>
         <Message>
@@ -159,6 +159,54 @@
             <Dynamic>c:/lscc/diamond/3.14/bin/nt64/zen68060firmware/zenshiftregister.v(1): </Dynamic>
             <Dynamic>PISO_Long_ShiftReg</Dynamic>
             <Navigation>c:/lscc/diamond/3.14/bin/nt64/zen68060firmware/zenshiftregister.v</Navigation>
+            <Navigation>1</Navigation>
+        </Message>
+        <Message>
+            <ID>35901330</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>c:/lscc/diamond/3.14/bin/nt64/zen68060firmware/zenram_line_cs_ta.v(24): </Dynamic>
+            <Dynamic>32</Dynamic>
+            <Dynamic>1</Dynamic>
+            <Dynamic>Reset</Dynamic>
+            <Navigation>c:/lscc/diamond/3.14/bin/nt64/zen68060firmware/zenram_line_cs_ta.v</Navigation>
+            <Navigation>24</Navigation>
+        </Message>
+        <Message>
+            <ID>35901330</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>c:/lscc/diamond/3.14/bin/nt64/zen68060firmware/zenram_line_cs_ta.v(25): </Dynamic>
+            <Dynamic>32</Dynamic>
+            <Dynamic>1</Dynamic>
+            <Dynamic>ClockEn</Dynamic>
+            <Navigation>c:/lscc/diamond/3.14/bin/nt64/zen68060firmware/zenram_line_cs_ta.v</Navigation>
+            <Navigation>25</Navigation>
+        </Message>
+        <Message>
+            <ID>35901330</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>c:/lscc/diamond/3.14/bin/nt64/zen68060firmware/zenram_line_cs_ta.v(33): </Dynamic>
+            <Dynamic>32</Dynamic>
+            <Dynamic>1</Dynamic>
+            <Dynamic>Reset</Dynamic>
+            <Navigation>c:/lscc/diamond/3.14/bin/nt64/zen68060firmware/zenram_line_cs_ta.v</Navigation>
+            <Navigation>33</Navigation>
+        </Message>
+        <Message>
+            <ID>35901330</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>c:/lscc/diamond/3.14/bin/nt64/zen68060firmware/zenram_line_cs_ta.v(34): </Dynamic>
+            <Dynamic>32</Dynamic>
+            <Dynamic>1</Dynamic>
+            <Dynamic>ClockEn</Dynamic>
+            <Navigation>c:/lscc/diamond/3.14/bin/nt64/zen68060firmware/zenram_line_cs_ta.v</Navigation>
+            <Navigation>34</Navigation>
+        </Message>
+        <Message>
+            <ID>35901018</ID>
+            <Severity>Info</Severity>
+            <Dynamic>c:/lscc/diamond/3.14/bin/nt64/zen68060firmware/zenrom_cs_ta.v(1): </Dynamic>
+            <Dynamic>ZenROM_CS_TA</Dynamic>
+            <Navigation>c:/lscc/diamond/3.14/bin/nt64/zen68060firmware/zenrom_cs_ta.v</Navigation>
             <Navigation>1</Navigation>
         </Message>
         <Message>
@@ -222,6 +270,16 @@
             <Dynamic>loadTA_keep</Dynamic>
         </Message>
         <Message>
+            <ID>35001771</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>loadCS_keep</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001771</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>loadTA_keep</Dynamic>
+        </Message>
+        <Message>
             <ID>35001748</ID>
             <Severity>Warning</Severity>
             <Dynamic>0</Dynamic>
@@ -296,7 +354,57 @@
         <Message>
             <ID>35001779</ID>
             <Severity>Warning</Severity>
+            <Dynamic>\u_RAM_CS_TA/u_SR_RAMS_CS/shift_reg_i3</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001779</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>\u_RAM_CS_TA/u_SR_RAMS_CS/shift_reg_i2</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001779</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>\u_RAM_CS_TA/u_SR_RAMS_CS/shift_reg_i5</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001779</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>\u_RAM_CS_TA/u_SR_RAMS_CS/shift_reg_i4</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001779</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>\u_RAM_CS_TA/u_SR_RAMS_CS/shift_reg_i1</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001779</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>\u_RAM_CS_TA/u_SR_TA/shift_reg_i5</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001779</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>\u_RAM_CS_TA/u_SR_TA/shift_reg_i4</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001779</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>\u_RAM_CS_TA/u_SR_TA/shift_reg_i3</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001779</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>\u_RAM_CS_TA/u_SR_TA/shift_reg_i2</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001779</ID>
+            <Severity>Warning</Severity>
             <Dynamic>\u_ROM_CS_TA/u_SR_ROMS_CS/shift_reg_i1</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001779</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>\u_RAM_CS_TA/u_SR_TA/shift_reg_i1</Dynamic>
         </Message>
         <Message>
             <ID>35001779</ID>
@@ -336,52 +444,12 @@
         <Message>
             <ID>35001779</ID>
             <Severity>Warning</Severity>
-            <Dynamic>\u_RAM_CS_TA/u_SR_TA/shift_reg_i5</Dynamic>
+            <Dynamic>\u_RAM_Line_CS_TA/u_SR_LINE_TA/shift_reg_i1</Dynamic>
         </Message>
         <Message>
             <ID>35001779</ID>
             <Severity>Warning</Severity>
-            <Dynamic>\u_RAM_CS_TA/u_SR_TA/shift_reg_i4</Dynamic>
-        </Message>
-        <Message>
-            <ID>35001779</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>\u_RAM_CS_TA/u_SR_TA/shift_reg_i3</Dynamic>
-        </Message>
-        <Message>
-            <ID>35001779</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>\u_RAM_CS_TA/u_SR_TA/shift_reg_i2</Dynamic>
-        </Message>
-        <Message>
-            <ID>35001779</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>\u_RAM_CS_TA/u_SR_TA/shift_reg_i1</Dynamic>
-        </Message>
-        <Message>
-            <ID>35001779</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>\u_RAM_CS_TA/u_SR_RAMS_CS/shift_reg_i5</Dynamic>
-        </Message>
-        <Message>
-            <ID>35001779</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>\u_RAM_CS_TA/u_SR_RAMS_CS/shift_reg_i4</Dynamic>
-        </Message>
-        <Message>
-            <ID>35001779</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>\u_RAM_CS_TA/u_SR_RAMS_CS/shift_reg_i3</Dynamic>
-        </Message>
-        <Message>
-            <ID>35001779</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>\u_RAM_CS_TA/u_SR_RAMS_CS/shift_reg_i2</Dynamic>
-        </Message>
-        <Message>
-            <ID>35001779</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>\u_RAM_CS_TA/u_SR_RAMS_CS/shift_reg_i1</Dynamic>
+            <Dynamic>\u_RAM_Line_CS_TA/u_SR_LINE_RAMS_CS/shift_reg_i1</Dynamic>
         </Message>
         <Message>
             <ID>35001611</ID>
@@ -389,6 +457,10 @@
         </Message>
     </Task>
     <Task name="PAR">
+        <Message>
+            <ID>61001101</ID>
+            <Severity>Warning</Severity>
+        </Message>
         <Message>
             <ID>61091062</ID>
             <Severity>Warning</Severity>

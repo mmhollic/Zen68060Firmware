@@ -6,7 +6,7 @@ Performance Grade:      6
 PACKAGE:          TQFP144
 Package Status:                     Final          Version 1.39
 
-Wed Sep 30 10:53:31 2026
+Sat Oct 03 20:12:52 2026
 
 Pinout by Port Name:
 +-----------------+----------+--------------+-------+-----------+-----------+--------------------------------------+
@@ -31,6 +31,8 @@ Pinout by Port Name:
 | RST             | 76/1     | LVCMOS33_IN  | PR23A |           |           | PULL:DOWN CLAMP:ON HYSTERESIS:SMALL  |
 | RW_IN           | 75/1     | LVCMOS33_IN  | PR23B |           |           | PULL:DOWN CLAMP:ON HYSTERESIS:SMALL  |
 | RW_OUT          | 73/1     | LVCMOS33_OUT | PR24B |           |           | DRIVE:8mA PULL:DOWN SLEW:FAST        |
+| SIZ0            | 119/0    | LVCMOS33_IN  | PT27D |           |           | PULL:DOWN CLAMP:ON HYSTERESIS:SMALL  |
+| SIZ1            | 117/0    | LVCMOS33_IN  | PT28A |           |           | PULL:DOWN CLAMP:ON HYSTERESIS:SMALL  |
 | TA_N            | 142/0    | LVCMOS33_OUT | PT9B  |           |           | DRIVE:8mA PULL:DOWN SLEW:FAST        |
 | TS_N            | 74/1     | LVCMOS33_IN  | PR24A |           |           | PULL:DOWN CLAMP:ON HYSTERESIS:SMALL  |
 +-----------------+----------+--------------+-------+-----------+-----------+--------------------------------------+
@@ -151,8 +153,8 @@ Pinout by Pin Number:
 | 113/0    |     unused, PULL:DOWN |            |              | PT33B |                |           |           |
 | 114/0    |     unused, PULL:DOWN |            |              | PT33A |                |           |           |
 | 115/0    |     unused, PULL:DOWN |            |              | PT28B |                |           |           |
-| 117/0    |     unused, PULL:DOWN |            |              | PT28A |                |           |           |
-| 119/0    |     unused, PULL:DOWN |            |              | PT27D | PROGRAMN       |           |           |
+| 117/0    | SIZ1                  | LOCATED    | LVCMOS33_IN  | PT28A |                |           |           |
+| 119/0    | SIZ0                  | LOCATED    | LVCMOS33_IN  | PT27D | PROGRAMN       |           |           |
 | 120/0    | A[23]                 | LOCATED    | LVCMOS33_IN  | PT27C | JTAGENB        |           |           |
 | 121/0    | A[24]                 | LOCATED    | LVCMOS33_IN  | PT25B |                |           |           |
 | 122/0    | A[25]                 | LOCATED    | LVCMOS33_IN  | PT25A |                |           |           |
@@ -430,6 +432,8 @@ LOCATE  COMP  "ROM_OE_N"  SITE  "34";
 LOCATE  COMP  "RST"  SITE  "76";
 LOCATE  COMP  "RW_IN"  SITE  "75";
 LOCATE  COMP  "RW_OUT"  SITE  "73";
+LOCATE  COMP  "SIZ0"  SITE  "119";
+LOCATE  COMP  "SIZ1"  SITE  "117";
 LOCATE  COMP  "TA_N"  SITE  "142";
 LOCATE  COMP  "TS_N"  SITE  "74";
 
@@ -445,5 +449,5 @@ Copyright (c) 1995 AT&T Corp.   All rights reserved.
 Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
 Copyright (c) 2001 Agere Systems   All rights reserved.
 Copyright (c) 2002-2024 Lattice Semiconductor Corporation,  All rights reserved.
-Wed Sep 30 10:53:31 2026
+Sat Oct 03 20:12:52 2026
 

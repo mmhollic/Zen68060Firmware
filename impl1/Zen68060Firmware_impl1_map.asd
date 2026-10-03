@@ -3,13 +3,13 @@ Device = LCMXO2-7000HC;
 Package = TQFP144;
 Performance = 6;
 LUTS_avail = 6864;
-LUTS_used = 18;
+LUTS_used = 35;
 FF_avail = 6979;
-FF_used = 50;
-INPUT_LVCMOS33 = 13;
+FF_used = 89;
+INPUT_LVCMOS33 = 15;
 OUTPUT_LVCMOS33 = 8;
 IO_avail = 115;
-IO_used = 21;
+IO_used = 23;
 EBR_avail = 26;
 EBR_used = 0;
 ; Begin PLL Section

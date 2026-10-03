@@ -5,6 +5,8 @@ module mainLogic_tb;
     reg  [31:23] A;
     reg         TS_N;
     reg         RW_IN;
+	reg			SIZ0;
+	reg			SIZ1;
 	wire 		RW_OUT;
 	wire 		TA_N;
     wire        RAM_CS_N;
@@ -25,6 +27,8 @@ module mainLogic_tb;
         .CLK      (CLK),
         .TS_N     (TS_N),
         .RW_IN    (RW_IN),
+		.SIZ0	  (SIZ0),
+		.SIZ1     (SIZ1),
 		.RW_OUT	  (RW_OUT),	
 		.TA_N     (TA_N),
         .RAM_CS_N (RAM_CS_N),
@@ -50,6 +54,8 @@ module mainLogic_tb;
         A     = 9'b000000000;
         TS_N  = 1'b1;
         RW_IN = 1'b1;
+		SIZ0 = 1'b0;
+		SIZ1 = 1'b0;
 
 
 	// Get the PLL going
@@ -98,7 +104,51 @@ module mainLogic_tb;
 			@(posedge CLK);
 			@(posedge CLK);
 			@(posedge CLK);
-			//@(posedge CLK);
+			/********************************************************************************/
+			
+			/*********************************** RAM LINE READ **********************************/
+			RW_IN = 1'b1;					// C1
+			// Address outside ROM region
+			A = 9'b000000000;
+			#12.3;
+			TS_N = 1'b0;					// First assert TS
+			#1.2;
+			// Address inside ROM region:	// Assert SRAM address
+			// A[31:23] = 000010000
+			A = 9'b000010000;
+			RW_IN = 1'b1;
+			SIZ0 = 1'b1;
+			SIZ1 = 1'b1;
+			#8.5;							// C2
+			TS_N = 1'b1;					// De-assert TS	
+			@(posedge CLK);
+			@(posedge CLK);
+			@(posedge CLK);
+			@(posedge CLK);
+			SIZ0 = 1'b0;
+			SIZ1 = 1'b0;
+			/*************************************************************************************/
+			/*********************************** RAM LINE WRITE **********************************/
+			RW_IN = 1'b1;					// C1
+			// Address outside ROM region
+			A = 9'b000000000;
+			#12.3;
+			TS_N = 1'b0;					// First assert TS
+			#1.2;
+			// Address inside ROM region:	// Assert SRAM address
+			// A[31:23] = 000010000
+			A = 9'b000010000;
+			RW_IN = 1'b0;
+			SIZ0 = 1'b1;
+			SIZ1 = 1'b1;
+			#8.5;							// C2
+			TS_N = 1'b1;					// De-assert TS	
+			@(posedge CLK);
+			@(posedge CLK);
+			@(posedge CLK);
+			@(posedge CLK);
+			SIZ0 = 1'b0;
+			SIZ1 = 1'b0;
 			#2;
 			/********************************************************************************/
 
