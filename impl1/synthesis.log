@@ -5,7 +5,7 @@ Copyright (c) 1995 AT&T Corp.   All rights reserved.
 Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
 Copyright (c) 2001 Agere Systems   All rights reserved.
 Copyright (c) 2002-2024 Lattice Semiconductor Corporation,  All rights reserved.
-Sat Oct 03 22:08:33 2026
+Sat Oct 03 23:01:29 2026
 
 
 Command Line:  synthesis -f Zen68060Firmware_impl1_lattice.synproj -gui -msgset C:/lscc/diamond/3.14/bin/nt64/Zen68060Firmware/promote.xml 
@@ -94,7 +94,7 @@ Top module name (Verilog): ZenMainLogic
 INFO - synthesis: c:/lscc/diamond/3.14/bin/nt64/zen68060firmware/zen68060machmainlogic.v(1): compiling module ZenMainLogic. VERI-1018
 INFO - synthesis: c:/lscc/diamond/3.14/bin/nt64/zen68060firmware/zenpll.v(8): compiling module ZenPLL. VERI-1018
 INFO - synthesis: C:/lscc/diamond/3.14/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(1124): compiling module VLO. VERI-1018
-INFO - synthesis: C:/lscc/diamond/3.14/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(1730): compiling module EHXPLLJ(CLKOP_DIV=12,CLKOS_DIV=3,CLKOS2_DIV=3,CLKOS3_DIV=1,CLKOS3_ENABLE="DISABLED",CLKOP_CPHASE=11,CLKOS_CPHASE=3,CLKOS2_CPHASE=4,CLKOS_FPHASE=1,CLKOS2_FPHASE=5,PLLRST_ENA="ENABLED"). VERI-1018
+INFO - synthesis: C:/lscc/diamond/3.14/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(1730): compiling module EHXPLLJ(CLKOP_DIV=12,CLKOS_DIV=3,CLKOS2_DIV=3,CLKOS3_DIV=12,CLKOP_CPHASE=11,CLKOS_CPHASE=3,CLKOS2_CPHASE=4,CLKOS3_CPHASE=20,CLKOS_FPHASE=1,CLKOS2_FPHASE=5,PLLRST_ENA="ENABLED"). VERI-1018
 INFO - synthesis: c:/lscc/diamond/3.14/bin/nt64/zen68060firmware/zenaddressdecode.v(1): compiling module ZenAddressDecode. VERI-1018
 INFO - synthesis: c:/lscc/diamond/3.14/bin/nt64/zen68060firmware/zenram_cs_ta.v(1): compiling module ZenRAM_CS_TA. VERI-1018
 INFO - synthesis: c:/lscc/diamond/3.14/bin/nt64/zen68060firmware/zenshiftregister.v(65): compiling module PISO_Short_ShiftReg. VERI-1018
@@ -182,12 +182,10 @@ WARNING - synthesis: Initial value found on instance \u_ROM_CS_TA/u_SR_TA/shift_
 WARNING - synthesis: Initial value found on instance \u_RAM_Line_CS_TA/u_SR_LINE_TA/shift_reg_i2 will be ignored.
 WARNING - synthesis: Initial value found on instance \u_RAM_Line_CS_TA/u_SR_LINE_TA/shift_reg_i1 will be ignored.
 WARNING - synthesis: Initial value found on instance \u_RAM_Line_CS_TA/u_SR_LINE_RAMS_CS/shift_reg_i1 will be ignored.
-WARNING - synthesis: Initial value found on instance \u_RAM_CS_TA/u_SR_TA/shift_reg_i5 will be ignored.
 WARNING - synthesis: Initial value found on instance \u_RAM_CS_TA/u_SR_TA/shift_reg_i4 will be ignored.
 WARNING - synthesis: Initial value found on instance \u_RAM_CS_TA/u_SR_TA/shift_reg_i3 will be ignored.
 WARNING - synthesis: Initial value found on instance \u_RAM_CS_TA/u_SR_TA/shift_reg_i2 will be ignored.
 WARNING - synthesis: Initial value found on instance \u_RAM_CS_TA/u_SR_TA/shift_reg_i1 will be ignored.
-WARNING - synthesis: Initial value found on instance \u_RAM_CS_TA/u_SR_RAMS_CS/shift_reg_i5 will be ignored.
 WARNING - synthesis: Initial value found on instance \u_RAM_CS_TA/u_SR_RAMS_CS/shift_reg_i4 will be ignored.
 WARNING - synthesis: Initial value found on instance \u_RAM_CS_TA/u_SR_RAMS_CS/shift_reg_i3 will be ignored.
 WARNING - synthesis: Initial value found on instance \u_RAM_CS_TA/u_SR_RAMS_CS/shift_reg_i2 will be ignored.
@@ -210,8 +208,8 @@ FD1P3AX => 3
 FD1P3IX => 1
 FD1S3AX => 18
 FD1S3AY => 14
-FD1S3IX => 35
-FD1S3JX => 22
+FD1S3IX => 37
+FD1S3JX => 20
 GSR => 1
 IB => 15
 INV => 2
@@ -225,10 +223,11 @@ TSALL => 1
 
 ################### Begin Clock Report ######################
 Clock Nets
-Number of Clocks: 3
+Number of Clocks: 4
   Net : u_ZenPLL/CLKOS, loads : 53
   Net : u_ZenPLL/CLKOS2, loads : 23
-  Net : CLK_c, loads : 14
+  Net : CLK_c, loads : 12
+  Net : u_ZenPLL/EARLY_CLK, loads : 2
 Clock Enable Nets
 Number of Clock Enables: 2
 Top 2 highest fanout Clock Enables:
@@ -255,7 +254,10 @@ Constraint                              |   Constraint|       Actual|Levels
 --------------------------------------------------------------------------------
                                         |             |             |
 create_clock -period 5.000000 -name     |             |             |
-clk2 [get_nets CLKOS2]                  |  200.000 MHz|  366.569 MHz|     2  
+clk3 [get_nets CLKOS2]                  |  200.000 MHz|  366.569 MHz|     2  
+                                        |             |             |
+create_clock -period 5.000000 -name     |             |             |
+clk2 [get_nets EARLY_CLK]               |            -|            -|     0  
                                         |             |             |
 create_clock -period 5.000000 -name     |             |             |
 clk1 [get_nets CLK_c]                   |  200.000 MHz|  194.175 MHz|     4 *
@@ -269,7 +271,7 @@ clk0 [get_nets CLKOS]                   |  200.000 MHz|  347.947 MHz|     2
 1 constraints not met.
 
 
-Peak Memory Usage: 62.746  MB
+Peak Memory Usage: 62.602  MB
 
 --------------------------------------------------------------
 Elapsed CPU time for LSE flow : 0.516  secs

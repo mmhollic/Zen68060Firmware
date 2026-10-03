@@ -23,7 +23,7 @@ module ZenRAM_CS_TA (
 		.Reset(0),
 		.ClockEn(1),
 		.Load(loadCS),       // High = Load Parallel Data, Low = Shift Out
-		.ParallelIn(8'b01111111&(RW?8'b00111111:8'b11111111)), // The 8-bit word you want to serialize
+		.ParallelIn(8'b00111111&(RW?8'b00011111:8'b11111111)), // The 8-bit word you want to serialize
 		.ShiftInValue(1'b0),
 		.SerialOut(RAM_CS_END)
 	);
@@ -32,7 +32,7 @@ module ZenRAM_CS_TA (
 		.Reset(0),
 		.ClockEn(1),
 		.Load(loadTA),       // High = Load Parallel Data, Low = Shift Out
-		.ParallelIn(8'b00111111), // The 8-bit word you want to serialize
+		.ParallelIn(8'b00011111), // The 8-bit word you want to serialize
 		.ShiftInValue(1'b0),
 		.SerialOut(RAM_TA_END)
 	);

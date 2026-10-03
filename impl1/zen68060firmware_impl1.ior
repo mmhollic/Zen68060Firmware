@@ -11,7 +11,7 @@ Performance Hardware Data Status:   Final          Version 36.4.
 // Package: TQFP144
 // ncd File: zen68060firmware_impl1.ncd
 // Version: Diamond (64-bit) 3.14.0.75.2
-// Written on Sat Oct 03 22:12:38 2026
+// Written on Sat Oct 03 23:01:42 2026
 // M: Minimum Performance Grade
 // iotiming Zen68060Firmware_impl1.ncd Zen68060Firmware_impl1.prf -gui -msgset C:/lscc/diamond/3.14/bin/nt64/Zen68060Firmware/promote.xml
 
@@ -23,30 +23,30 @@ Worst Case Results across Performance Grades (M, 6):
 
 Port  Clock Edge  Setup Performance_Grade  Hold Performance_Grade
 ----------------------------------------------------------------------
-A[23] CLK   R     5.746      6      -0.680     M
-A[24] CLK   R     4.812      6      -0.451     M
-A[25] CLK   R     4.750      6      -0.402     M
-A[26] CLK   R     5.253      6      -0.537     M
-A[27] CLK   R     3.137      6       0.275     6
-A[28] CLK   R     3.321      6      -0.007     M
-A[29] CLK   R     5.766      6      -0.694     M
-A[30] CLK   R     5.331      6      -0.650     M
-A[31] CLK   R     6.205      6      -0.842     M
-RW_IN CLK   R     4.251      6       3.498     M
-SIZ0  CLK   R     4.435      6      -0.096     M
-SIZ1  CLK   R     3.607      6       0.031     M
-TS_N  CLK   R     4.774      6      -0.774     M
+A[23] CLK   R     5.633      6      15.200     M
+A[24] CLK   R     5.083      6      15.380     6
+A[25] CLK   R     5.021      6      15.338     M
+A[26] CLK   R     4.969      6      15.605     6
+A[27] CLK   R     3.072      6      16.937     6
+A[28] CLK   R     3.767      6      16.323     6
+A[29] CLK   R     5.824      6      15.190     M
+A[30] CLK   R     5.218      6      15.295     M
+A[31] CLK   R     5.895      6      15.146     M
+RW_IN CLK   R     3.830      6       3.838     M
+SIZ0  CLK   R     3.798      6      16.423     6
+SIZ1  CLK   R     3.270      6      16.795     6
+TS_N  CLK   R     5.138      6      14.907     M
 
 
 // Clock to Output Delay
 
 Port            Clock Edge  Max_Delay Performance_Grade  Min_Delay Performance_Grade
 ------------------------------------------------------------------------
-CLA_N           CLK   R     9.376         6        3.366          M
-RAM_CS_N        CLK   R    10.294         6        2.625          M
-RAM_OE_N        CLK   R    11.848         6        3.060          M
-ROM_BUFFER_OE_N CLK   R    15.656         6        3.748          M
-ROM_CS_N        CLK   R    15.213         6        3.619          M
-ROM_OE_N        CLK   R    14.898         6        3.504          M
-TA_N            CLK   R    14.038         6        2.853          M
+CLA_N           CLK   R     9.760         6        3.506          M
+RAM_CS_N        CLK   R    24.524         6        2.832          M
+RAM_OE_N        CLK   R    25.774         6        3.148          M
+ROM_BUFFER_OE_N CLK   R    15.231         6        3.309          M
+ROM_CS_N        CLK   R    15.934         6        3.559          M
+ROM_OE_N        CLK   R    16.309         6        3.900          M
+TA_N            CLK   R    24.896         6        2.997          M
 WARNING: you must also run trce with hold speed: 6

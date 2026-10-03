@@ -24,6 +24,7 @@ module ZenMainLogic(
 	
 	/******************************** Get clock signals **********************************/
 	wire CLKOP;
+	wire EARLY_CLK;
 	wire CLKOS;
 	wire CLKOS2;
 
@@ -33,6 +34,7 @@ module ZenMainLogic(
 		.CLKOP(CLKOP),
 		.CLKOS(CLKOS),
 		.CLKOS2(CLKOS2),
+		.CLKOS3(EARLY_CLK),
 		.LOCK(LOCK)
 	);
 
@@ -66,7 +68,7 @@ module ZenMainLogic(
 	assign RAM_OE_N = RAM_CS_N|!RW_IN;	// Don't assert RAM OE on if it's a write
 	
 	ZenRAM_CS_TA u_RAM_CS_TA(
-		.CLK(CLK),
+		.CLK(EARLY_CLK),
 		.CLKOS(CLKOS),
 		.ENABLE(RAM_CS_ADDR&!LINE),
 		.TS_N(TS_N),

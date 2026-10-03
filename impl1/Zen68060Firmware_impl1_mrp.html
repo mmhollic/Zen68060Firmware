@@ -23,7 +23,7 @@ Target Vendor:  LATTICE
 Target Device:  LCMXO2-7000HCTQFP144
 Target Performance:   6
 Mapper:  xo2c00,  version:  Diamond (64-bit) 3.14.0.75.2
-Mapped on:  10/03/26  22:12:25
+Mapped on:  10/03/26  23:01:30
 
 
 <A name="mrp_ds"></A><B><U><big>Design Summary</big></U></B>
@@ -64,11 +64,12 @@ Mapped on:  10/03/26  22:12:25
      distributed RAMs) + 2*(Number of ripple logic)
       2. Number of logic LUT4s does not include count of distributed RAM and
      ripple logic.
-   Number of clocks:  3
-     Net CLK_c: 11 loads, 11 rising, 0 falling (Driver: PIO CLK )
+   Number of clocks:  4
+     Net CLK_c: 10 loads, 10 rising, 0 falling (Driver: PIO CLK )
      Net CLKOS: 30 loads, 28 rising, 2 falling (Driver: u_ZenPLL/PLLInst_0 )
 
      Net CLKOS2: 13 loads, 12 rising, 1 falling (Driver: u_ZenPLL/PLLInst_0 )
+     Net EARLY_CLK: 1 loads, 1 rising, 0 falling (Driver: u_ZenPLL/PLLInst_0 )
    Number of Clock Enables:  2
      Net CLK_c_enable_4: 2 loads, 2 LSLICEs
      Net u_RAM_Line_CS_TA/CLK_c_enable_2: 1 loads, 1 LSLICEs
@@ -117,22 +118,20 @@ Mapped on:  10/03/26  22:12:25
 | IO Name             | Direction | Levelmode | IO         |
 |                     |           |  IO_TYPE  | Register   |
 +---------------------+-----------+-----------+------------+
-| A[27]               | INPUT     | LVCMOS33  |            |
-+---------------------+-----------+-----------+------------+
 | A[28]               | INPUT     | LVCMOS33  |            |
 +---------------------+-----------+-----------+------------+
 | A[29]               | INPUT     | LVCMOS33  |            |
 +---------------------+-----------+-----------+------------+
+| A[30]               | INPUT     | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
 | ROM_CS_N            | OUTPUT    | LVCMOS33  |            |
 +---------------------+-----------+-----------+------------+
 | RAM_OE_N            | OUTPUT    | LVCMOS33  |            |
-+---------------------+-----------+-----------+------------+
 
++---------------------+-----------+-----------+------------+
 | RAM_CS_N            | OUTPUT    | LVCMOS33  |            |
 +---------------------+-----------+-----------+------------+
 | CLA_N               | OUTPUT    | LVCMOS33  |            |
-+---------------------+-----------+-----------+------------+
-| A[30]               | INPUT     | LVCMOS33  |            |
 +---------------------+-----------+-----------+------------+
 | A[31]               | INPUT     | LVCMOS33  |            |
 +---------------------+-----------+-----------+------------+
@@ -140,9 +139,11 @@ Mapped on:  10/03/26  22:12:25
 +---------------------+-----------+-----------+------------+
 | ROM_BUFFER_OE_N     | OUTPUT    | LVCMOS33  |            |
 +---------------------+-----------+-----------+------------+
-| RW_IN               | INPUT     | LVCMOS33  |            |
-+---------------------+-----------+-----------+------------+
 | TA_N                | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| SIZ0                | INPUT     | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| RW_IN               | INPUT     | LVCMOS33  |            |
 +---------------------+-----------+-----------+------------+
 | TS_N                | INPUT     | LVCMOS33  |            |
 +---------------------+-----------+-----------+------------+
@@ -156,6 +157,8 @@ Mapped on:  10/03/26  22:12:25
 +---------------------+-----------+-----------+------------+
 | A[26]               | INPUT     | LVCMOS33  |            |
 +---------------------+-----------+-----------+------------+
+| A[27]               | INPUT     | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
 | RW_OUT              | OUTPUT    | LVCMOS33  |            |
 +---------------------+-----------+-----------+------------+
 | LOCK                | OUTPUT    | LVCMOS33  |            |
@@ -163,8 +166,6 @@ Mapped on:  10/03/26  22:12:25
 | ROM_OE_N            | OUTPUT    | LVCMOS33  |            |
 +---------------------+-----------+-----------+------------+
 | SIZ1                | INPUT     | LVCMOS33  |            |
-+---------------------+-----------+-----------+------------+
-| SIZ0                | INPUT     | LVCMOS33  |            |
 +---------------------+-----------+-----------+------------+
 
 
@@ -179,13 +180,13 @@ Signal Clock_N_51 was merged into signal CLKOS
 Signal Clock_N_131 was merged into signal CLKOS2
 Signal GND_net undriven or does not drive anything - clipped.
 Signal VCC_net undriven or does not drive anything - clipped.
-Block u_ROM_CS_TA/u_SR_ROMS_CS/i270_1_lut was optimized away.
-Block u_ZenPLL/i470 was optimized away.
+Block u_ROM_CS_TA/u_SR_ROMS_CS/i269_1_lut was optimized away.
 Block u_ZenPLL/i469 was optimized away.
+Block u_ZenPLL/i468 was optimized away.
 Block i1 was optimized away.
 
-     
 
+     
 
 
 
@@ -199,7 +200,7 @@ PLL 1:                                     Pin/Node Value
   Output Clock(P):                         NODE     u_ZenPLL/CLKOP
   Output Clock(S):                         NODE     CLKOS
   Output Clock(S2):                        NODE     CLKOS2
-  Output Clock(S3):                                 NONE
+  Output Clock(S3):                        NODE     EARLY_CLK
   Feedback Signal:                         NODE     u_ZenPLL/CLKOP
   Reset Signal:                            PIN      RST_c
   M Divider Reset Signal:                           NONE
@@ -237,16 +238,16 @@ PLL 1:                                     Pin/Node Value
   Output Clock(P) Frequency (MHz):                  50.0000
   Output Clock(S) Frequency (MHz):                  200.0000
   Output Clock(S2) Frequency (MHz):                 200.0000
-  Output Clock(S3) Frequency (MHz):                 NA
+  Output Clock(S3) Frequency (MHz):                 50.0000
   CLKOP Post Divider A Input:                       DIVA
   CLKOS Post Divider B Input:                       DIVB
   CLKOS2 Post Divider C Input:                      DIVC
   CLKOS3 Post Divider D Input:                      DIVD
   Pre Divider A Input:                              VCO_PHASE
+
   Pre Divider B Input:                              VCO_PHASE
   Pre Divider C Input:                              VCO_PHASE
   Pre Divider D Input:                              VCO_PHASE
-
   VCO Bypass A Input:                               VCO_PHASE
   VCO Bypass B Input:                               VCO_PHASE
   VCO Bypass C Input:                               VCO_PHASE
@@ -257,7 +258,7 @@ PLL 1:                                     Pin/Node Value
   CLKOP Divider:                                    12
   CLKOS Divider:                                    3
   CLKOS2 Divider:                                   3
-  CLKOS3 Divider:                                   1
+  CLKOS3 Divider:                                   12
   Fractional N Divider:                             0
   CLKOP Desired Phase Shift(degree):                0
   CLKOP Trim Option Rising/Falling:                 RISING
@@ -266,7 +267,7 @@ PLL 1:                                     Pin/Node Value
   CLKOS Trim Option Rising/Falling:                 RISING
   CLKOS Trim Option Delay:                          0
   CLKOS2 Desired Phase Shift(degree):               315
-  CLKOS3 Desired Phase Shift(degree):               0
+  CLKOS3 Desired Phase Shift(degree):               270
 
 
 
@@ -294,11 +295,8 @@ PGROUP "ROMCSTA":
 
    Total CPU Time: 0 secs  
    Total REAL Time: 0 secs  
-   Peak Memory Usage: 63 MB
+   Peak Memory Usage: 62 MB
         
-
-
-
 
 
 

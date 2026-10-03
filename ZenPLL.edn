@@ -4,9 +4,9 @@
   (keywordMap (keywordLevel 0))
   (status
     (written
-      (timestamp 2026 9 26 17 42 23)
+      (timestamp 2026 10 3 22 44 44)
       (program "SCUBA" (version "Diamond (64-bit) 3.14.0.75.2"))))
-      (comment "C:\lscc\diamond\3.14\ispfpga\bin\nt64\scuba.exe -w -n ZenPLL -lang verilog -synth lse -arch xo2c00 -type pll -fin 50 -fclkop 50 -fclkop_tol 0.0 -fclkos 200 -fclkos_tol 0.0 -fclkos2 200 -fclkos2_tol 0.0 -trimp 0 -phasep 0 -trimp_r -trims 0 -phases 135 -trims_r -phases2 315 -phase_cntl STATIC -rst -fb_mode 1 -lock ")
+      (comment "C:\lscc\diamond\3.14\ispfpga\bin\nt64\scuba.exe -w -n ZenPLL -lang verilog -synth lse -arch xo2c00 -type pll -fin 50 -fclkop 50 -fclkop_tol 0.0 -fclkos 200 -fclkos_tol 0.0 -fclkos2 200 -fclkos2_tol 0.0 -fclkos3 50 -fclkos3_tol 0.0 -trimp 0 -phasep 0 -trimp_r -trims 0 -phases 135 -trims_r -phases2 315 -phases3 270 -phase_cntl STATIC -rst -fb_mode 1 -lock ")
   (library ORCLIB
     (edifLevel 0)
     (technology
@@ -142,6 +142,8 @@
             (direction OUTPUT))
           (port CLKOS2
             (direction OUTPUT))
+          (port CLKOS3
+            (direction OUTPUT))
           (port LOCK
             (direction OUTPUT)))
         (property NGD_DRC_MASK (integer 1))
@@ -171,7 +173,7 @@
             (property CLKOS3_FPHASE
               (string "0"))
             (property CLKOS3_CPHASE
-              (string "0"))
+              (string "20"))
             (property CLKOS2_FPHASE
               (string "5"))
             (property CLKOS2_CPHASE
@@ -198,6 +200,8 @@
               (string "0"))
             (property FRACN_ENABLE
               (string "DISABLED"))
+            (property FREQUENCY_PIN_CLKOS3
+              (string "50.000000"))
             (property OUTDIVIDER_MUXD2
               (string "DIVD"))
             (property PREDIVIDER_MUXD1
@@ -205,7 +209,7 @@
             (property VCO_BYPASS_D0
               (string "DISABLED"))
             (property CLKOS3_ENABLE
-              (string "DISABLED"))
+              (string "ENABLED"))
             (property FREQUENCY_PIN_CLKOS2
               (string "200.000000"))
             (property OUTDIVIDER_MUXC2
@@ -243,7 +247,7 @@
             (property LPF_RESISTOR
               (string "8"))
             (property CLKOS3_DIV
-              (string "1"))
+              (string "12"))
             (property CLKOS2_DIV
               (string "3"))
             (property CLKOS_DIV
@@ -294,6 +298,10 @@
             (joined
               (portRef LOCK)
               (portRef LOCK (instanceRef PLLInst_0))))
+          (net CLKOS3
+            (joined
+              (portRef CLKOS3)
+              (portRef CLKOS3 (instanceRef PLLInst_0))))
           (net CLKOS2
             (joined
               (portRef CLKOS2)

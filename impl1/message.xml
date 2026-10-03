@@ -57,7 +57,7 @@
             <ID>35901018</ID>
             <Severity>Info</Severity>
             <Dynamic>C:/lscc/diamond/3.14/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v(1730): </Dynamic>
-            <Dynamic>EHXPLLJ(CLKOP_DIV=12,CLKOS_DIV=3,CLKOS2_DIV=3,CLKOS3_DIV=1,CLKOS3_ENABLE=&quot;DISABLED&quot;,CLKOP_CPHASE=11,CLKOS_CPHASE=3,CLKOS2_CPHASE=4,CLKOS_FPHASE=1,CLKOS2_FPHASE=5,PLLRST_ENA=&quot;ENABLED&quot;)</Dynamic>
+            <Dynamic>EHXPLLJ(CLKOP_DIV=12,CLKOS_DIV=3,CLKOS2_DIV=3,CLKOS3_DIV=12,CLKOP_CPHASE=11,CLKOS_CPHASE=3,CLKOS2_CPHASE=4,CLKOS3_CPHASE=20,CLKOS_FPHASE=1,CLKOS2_FPHASE=5,PLLRST_ENA=&quot;ENABLED&quot;)</Dynamic>
             <Navigation>C:/lscc/diamond/3.14/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v</Navigation>
             <Navigation>1730</Navigation>
         </Message>
@@ -428,11 +428,6 @@
         <Message>
             <ID>35001779</ID>
             <Severity>Warning</Severity>
-            <Dynamic>\u_RAM_CS_TA/u_SR_TA/shift_reg_i5</Dynamic>
-        </Message>
-        <Message>
-            <ID>35001779</ID>
-            <Severity>Warning</Severity>
             <Dynamic>\u_RAM_CS_TA/u_SR_TA/shift_reg_i4</Dynamic>
         </Message>
         <Message>
@@ -449,11 +444,6 @@
             <ID>35001779</ID>
             <Severity>Warning</Severity>
             <Dynamic>\u_RAM_CS_TA/u_SR_TA/shift_reg_i1</Dynamic>
-        </Message>
-        <Message>
-            <ID>35001779</ID>
-            <Severity>Warning</Severity>
-            <Dynamic>\u_RAM_CS_TA/u_SR_RAMS_CS/shift_reg_i5</Dynamic>
         </Message>
         <Message>
             <ID>35001779</ID>
@@ -482,8 +472,24 @@
     </Task>
     <Task name="PAR">
         <Message>
+            <ID>61001101</ID>
+            <Severity>Warning</Severity>
+        </Message>
+        <Message>
             <ID>61091062</ID>
             <Severity>Warning</Severity>
+        </Message>
+        <Message>
+            <ID>66011008</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>
+   Signal=EARLY_CLK loads=1 clock_loads=1</Dynamic>
+        </Message>
+        <Message>
+            <ID>66011008</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>
+   Signal=EARLY_CLK loads=1 clock_loads=1</Dynamic>
         </Message>
     </Task>
     <Task name="TimingSimFileVlg">

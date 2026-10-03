@@ -3,7 +3,7 @@ Starting process: Module
 Starting process: 
 
 SCUBA, Version Diamond (64-bit) 3.14.0.75.2
-Sat Sep 26 17:42:23 2026
+Sat Oct 03 22:44:44 2026
 
 Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
 Copyright (c) 1995 AT&T Corp.   All rights reserved.
@@ -13,13 +13,13 @@ Copyright (c) 2002-2024 Lattice Semiconductor Corporation,  All rights reserved.
 
 BEGIN SCUBA Module Synthesis
 
-    Issued command   : C:\lscc\diamond\3.14\ispfpga\bin\nt64\scuba.exe -w -n ZenPLL -lang verilog -synth lse -arch xo2c00 -type pll -fin 50 -fclkop 50 -fclkop_tol 0.0 -fclkos 200 -fclkos_tol 0.0 -fclkos2 200 -fclkos2_tol 0.0 -trimp 0 -phasep 0 -trimp_r -trims 0 -phases 135 -trims_r -phases2 315 -phase_cntl STATIC -rst -fb_mode 1 -lock 
+    Issued command   : C:\lscc\diamond\3.14\ispfpga\bin\nt64\scuba.exe -w -n ZenPLL -lang verilog -synth lse -arch xo2c00 -type pll -fin 50 -fclkop 50 -fclkop_tol 0.0 -fclkos 200 -fclkos_tol 0.0 -fclkos2 200 -fclkos2_tol 0.0 -fclkos3 50 -fclkos3_tol 0.0 -trimp 0 -phasep 0 -trimp_r -trims 0 -phases 135 -trims_r -phases2 315 -phases3 270 -phase_cntl STATIC -rst -fb_mode 1 -lock 
     Circuit name     : ZenPLL
     Module type      : pll
     Module Version   : 5.7
     Ports            : 
 	Inputs       : CLKI, RST
-	Outputs      : CLKOP, CLKOS, CLKOS2, LOCK
+	Outputs      : CLKOP, CLKOS, CLKOS2, CLKOS3, LOCK
     I/O buffer       : not inserted
     EDIF output      : ZenPLL.edn
     Verilog output   : ZenPLL.v

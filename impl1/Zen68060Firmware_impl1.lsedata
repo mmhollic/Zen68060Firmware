@@ -1,15 +1,16 @@
 <top name = "ZenMainLogic"  library = "work"  arch = ""  entry = "Verilog">
 
 <clocks>
-    <clockitem name = "u_ZenPLL/CLKOP"  type = "net" />
-    <clockitem name = "CLKOS"  type = "net" />
-    <clockitem name = "CLKOS2"  type = "net" />
     <clockitem name = "CLK"  type = "port" />
+    <clockitem name = "CLKOS2"  type = "net" />
+    <clockitem name = "EARLY_CLK"  type = "net" />
+    <clockitem name = "CLKOS"  type = "net" />
+    <clockitem name = "u_ZenPLL/CLKOP"  type = "net" />
 </clocks>
 
 <!--
     //=============================================================
-    //  Number of Clocks processed: 4
+    //  Number of Clocks processed: 5
     //
     //  If a clock cannot be found in the top level pins section,
     //  that means it is an internal clock.
@@ -240,6 +241,7 @@
         <pitem  name = "CLKFB"  direction = "in"  />
         <pitem  name = "CLKOS"  direction = "out"  />
         <pitem  name = "CLKOS2"  direction = "out"  />
+        <pitem  name = "CLKOS3"  direction = "out"  />
         <pitem  name = "LOCK"  direction = "out"  />
         <pitem  name = "PHASESEL1"  direction = "in"  />
         <pitem  name = "PHASESEL0"  direction = "in"  />
@@ -280,6 +282,7 @@
         <nitem  name = "u_ZenPLL/CLKOP"  />
         <nitem  name = "CLKOS"  />
         <nitem  name = "CLKOS2"  />
+        <nitem  name = "EARLY_CLK"  />
         <nitem  name = "LOCK"  />
         <nitem  name = "u_ZenPLL/scuba_vlo"  />
         </nets>
@@ -517,6 +520,7 @@
         <pins>
         <pitem  name = "d1[7]"  direction = "in"  />
         <pitem  name = "d1[6]"  direction = "in"  />
+        <pitem  name = "d1[5]"  direction = "in"  />
         <pitem  name = "d0[7]"  direction = "in"  />
         <pitem  name = "d0[6]"  direction = "in"  />
         <pitem  name = "d0[5]"  direction = "in"  />
@@ -525,7 +529,6 @@
         <pitem  name = "d0[2]"  direction = "in"  />
         <pitem  name = "d0[1]"  direction = "in"  />
         <pitem  name = "d0[0]"  direction = "in"  />
-        <pitem  name = "d1[5]"  direction = "in"  />
         <pitem  name = "d1[4]"  direction = "in"  />
         <pitem  name = "d1[3]"  direction = "in"  />
         <pitem  name = "d1[2]"  direction = "in"  />
@@ -666,7 +669,7 @@
 
         <nets>
         <nitem  name = "u_RAM_CS_TA/gnd"  />
-        <nitem  name = "CLK"  />
+        <nitem  name = "EARLY_CLK"  />
         <nitem  name = "u_RAM_CS_TA/loadTA"  />
         <nitem  name = "u_RAM_CS_TA/loadTA_N_31"  />
         </nets>
@@ -683,7 +686,7 @@
 
         <nets>
         <nitem  name = "u_RAM_CS_TA/gnd"  />
-        <nitem  name = "CLK"  />
+        <nitem  name = "EARLY_CLK"  />
         <nitem  name = "u_RAM_CS_TA/int_RAM_CS_N"  />
         <nitem  name = "u_RAM_CS_TA/int_RAM_CS_N_N_22"  />
         </nets>
@@ -724,7 +727,7 @@
 
         <nets>
         <nitem  name = "u_RAM_CS_TA/gnd"  />
-        <nitem  name = "CLK"  />
+        <nitem  name = "EARLY_CLK"  />
         <nitem  name = "u_RAM_CS_TA/loadCS"  />
         <nitem  name = "u_RAM_CS_TA/loadCS_N_32"  />
         </nets>

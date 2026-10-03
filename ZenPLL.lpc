@@ -16,8 +16,8 @@ CoreRevision=5.8
 ModuleName=ZenPLL
 SourceFormat=Verilog HDL
 ParameterFileVersion=1.0
-Date=09/26/2026
-Time=17:42:23
+Date=10/03/2026
+Time=22:44:43
 
 [Parameters]
 Verilog=1
@@ -74,14 +74,14 @@ FREQ_PIN_CLKOS2=200
 OS2_Tol=0.0
 CLKOS2_AFREQ=200.000000
 CLKOS2_PHASEADJ=315
-EnCLKOS3=0
+EnCLKOS3=1
 OS3Bypass=0
 OS3UseDiv=0
-CLKOS3_DIV=1
-FREQ_PIN_CLKOS3=200
+CLKOS3_DIV=12
+FREQ_PIN_CLKOS3=50
 OS3_Tol=0.0
-CLKOS3_AFREQ=200.000000
-CLKOS3_PHASEADJ=0
+CLKOS3_AFREQ=50.000000
+CLKOS3_PHASEADJ=270
 
 [Command]
-cmd_line= -w -n ZenPLL -lang verilog -synth lse -arch xo2c00 -type pll -fin 50 -fclkop 50 -fclkop_tol 0.0 -fclkos 200 -fclkos_tol 0.0 -fclkos2 200 -fclkos2_tol 0.0 -trimp 0 -phasep 0 -trimp_r -trims 0 -phases 135 -trims_r -phases2 315 -phase_cntl STATIC -rst -fb_mode 1 -lock
+cmd_line= -w -n ZenPLL -lang verilog -synth lse -arch xo2c00 -type pll -fin 50 -fclkop 50 -fclkop_tol 0.0 -fclkos 200 -fclkos_tol 0.0 -fclkos2 200 -fclkos2_tol 0.0 -fclkos3 50 -fclkos3_tol 0.0 -trimp 0 -phasep 0 -trimp_r -trims 0 -phases 135 -trims_r -phases2 315 -phases3 270 -phase_cntl STATIC -rst -fb_mode 1 -lock

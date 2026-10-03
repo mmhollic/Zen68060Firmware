@@ -33,7 +33,7 @@ CLKFB_Divider = 1;
 CLKOP_Divider = 12;
 CLKOS_Divider = 3;
 CLKOS2_Divider = 3;
-CLKOS3_Divider = 1;
+CLKOS3_Divider = 12;
 Fractional_N_Divider = 0;
 CLKOP_Desired_Phase_Shift(degree) = 0;
 CLKOP_Trim_Option_Rising/Falling = RISING;
@@ -42,5 +42,5 @@ CLKOS_Desired_Phase_Shift(degree) = 135;
 CLKOS_Trim_Option_Rising/Falling = RISING;
 CLKOS_Trim_Option_Delay = 0;
 CLKOS2_Desired_Phase_Shift(degree) = 315;
-CLKOS3_Desired_Phase_Shift(degree) = 0;
+CLKOS3_Desired_Phase_Shift(degree) = 270;
 ; End PLL Section

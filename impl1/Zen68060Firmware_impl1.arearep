@@ -9,8 +9,8 @@ I/O cells:      24
                             FD1P3IX         1          100.0
                             FD1S3AX        18          100.0
                             FD1S3AY        14          100.0
-                            FD1S3IX        35          100.0
-                            FD1S3JX        22          100.0
+                            FD1S3IX        37          100.0
+                            FD1S3JX        20          100.0
                                 GSR         1          100.0
                                  IB        15          100.0
                                 INV         2          100.0
@@ -46,8 +46,8 @@ Instance Path : u_RAM_Line_CS_TA
                             FD1P3IX         1          100.0
                             FD1S3AX         9           50.0
                             FD1S3AY         4           28.6
-                            FD1S3IX        23           65.7
-                            FD1S3JX         3           13.6
+                            FD1S3IX        23           62.2
+                            FD1S3JX         3           15.0
                                LUT4        12           28.6
 SUB MODULES
               PISO_Long_ShiftReg_U1         1
@@ -60,8 +60,8 @@ Instance Path : u_RAM_Line_CS_TA.u_SR_LINE_TA
                                cell     count   Res Usage(%)
                             FD1S3AX         1            5.6
                             FD1S3AY         2           14.3
-                            FD1S3IX        13           37.1
-                            FD1S3JX         2            9.1
+                            FD1S3IX        13           35.1
+                            FD1S3JX         2           10.0
                               TOTAL        18
 ----------------------------------------------------------------------
 Report for cell PISO_Long_ShiftReg_U2.v1
@@ -70,8 +70,8 @@ Instance Path : u_RAM_Line_CS_TA.u_SR_LINE_RAMS_CS
                                cell     count   Res Usage(%)
                             FD1S3AX         5           27.8
                             FD1S3AY         2           14.3
-                            FD1S3IX        10           28.6
-                            FD1S3JX         1            4.5
+                            FD1S3IX        10           27.0
+                            FD1S3JX         1            5.0
                               TOTAL        18
 ----------------------------------------------------------------------
 Report for cell ZenRAM_CS_TA.v1
@@ -80,8 +80,8 @@ Instance Path : u_RAM_CS_TA
                                cell     count   Res Usage(%)
                             FD1S3AX         4           22.2
                             FD1S3AY         5           35.7
-                            FD1S3IX         3            8.6
-                            FD1S3JX        10           45.5
+                            FD1S3IX         5           13.5
+                            FD1S3JX         8           40.0
 SUB MODULES
                 PISO_Short_ShiftReg         1
              PISO_Short_ShiftReg_U3         1
@@ -93,8 +93,8 @@ Instance Path : u_RAM_CS_TA.u_SR_TA
                                cell     count   Res Usage(%)
                             FD1S3AX         1            5.6
                             FD1S3AY         2           14.3
-                            FD1S3IX         2            5.7
-                            FD1S3JX         5           22.7
+                            FD1S3IX         3            8.1
+                            FD1S3JX         4           20.0
                               TOTAL        10
 ----------------------------------------------------------------------
 Report for cell PISO_Short_ShiftReg_U3.v1
@@ -103,8 +103,8 @@ Instance Path : u_RAM_CS_TA.u_SR_RAMS_CS
                                cell     count   Res Usage(%)
                             FD1S3AX         2           11.1
                             FD1S3AY         2           14.3
-                            FD1S3IX         1            2.9
-                            FD1S3JX         5           22.7
+                            FD1S3IX         2            5.4
+                            FD1S3JX         4           20.0
                               TOTAL        10
 ----------------------------------------------------------------------
 Report for cell ZenROM_CS_TA.v1
@@ -113,8 +113,8 @@ Instance Path : u_ROM_CS_TA
                                cell     count   Res Usage(%)
                             FD1S3AX         5           27.8
                             FD1S3AY         5           35.7
-                            FD1S3IX         9           25.7
-                            FD1S3JX         9           40.9
+                            FD1S3IX         9           24.3
+                            FD1S3JX         9           45.0
                                LUT4        15           35.7
 SUB MODULES
                  PISO_Long_ShiftReg         1
@@ -127,8 +127,8 @@ Instance Path : u_ROM_CS_TA.u_SR_TA
                                cell     count   Res Usage(%)
                             FD1S3AX         1            5.6
                             FD1S3AY         2           14.3
-                            FD1S3IX         2            5.7
-                            FD1S3JX         7           31.8
+                            FD1S3IX         2            5.4
+                            FD1S3JX         7           35.0
                                LUT4         1            2.4
                               TOTAL        13
 ----------------------------------------------------------------------
@@ -138,8 +138,8 @@ Instance Path : u_ROM_CS_TA.u_SR_ROMS_CS
                                cell     count   Res Usage(%)
                             FD1S3AX         3           16.7
                             FD1S3AY         2           14.3
-                            FD1S3IX         6           17.1
-                            FD1S3JX         1            4.5
+                            FD1S3IX         6           16.2
+                            FD1S3JX         1            5.0
                                LUT4         1            2.4
                               TOTAL        13
 ----------------------------------------------------------------------
