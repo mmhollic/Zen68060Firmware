@@ -1,1 +1,8 @@
+C:/lscc/diamond/3.14/bin/nt64/Zen68060Firmware/ZenSim.v {1 {vlog -work work -vopt -stats=none C:/lscc/diamond/3.14/bin/nt64/Zen68060Firmware/ZenSim.v
+Questa Lattice OEM Edition-64 vlog 2024.2 Compiler 2024.05 May 20 2024
+-- Compiling module mainLogic_tb
 
+Top level modules:
+	mainLogic_tb
+
+} {} {}}

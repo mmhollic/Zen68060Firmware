@@ -9,6 +9,7 @@ module ZenMainLogic(
 	input wire SIZ1,
 	output wire RW_OUT /* synthesis DOUT="TRUE" SLEWRATE="FAST" */,
 	output wire TA_N /* synthesis DOUT="TRUE" SLEWRATE="FAST" */,
+	output wire CLA_N /* synthesis DOUT="TRUE" SLEWRATE="FAST" */,
 	output wire RAM_CS_N /* synthesis DOUT="TRUE" SLEWRATE="FAST" */,
 	output wire RAM_OE_N /* synthesis DOUT="TRUE" SLEWRATE="FAST" */,
 	output wire ROM_CS_N /* synthesis DOUT="TRUE" SLEWRATE="FAST" */,
@@ -78,10 +79,11 @@ module ZenMainLogic(
 	
 	ZenRAM_Line_CS_TA u_RAM_Line_CS_TA(
 		.CLK(CLK),
-		.CLKOS(CLKOS2),
+		.CLKOS(CLKOS),
 		.ENABLE(RAM_CS_ADDR&LINE),
 		.TS_N(TS_N),
 		.RW(RW_IN),
+		.CLA_N(CLA_N),
 		.RAM_LINE_CS_N(INT_RAM_LINE_CS_N),
 		.RAM_LINE_TA_N(RAM_LINE_TA_N)
 	);

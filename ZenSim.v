@@ -9,6 +9,7 @@ module mainLogic_tb;
 	reg			SIZ1;
 	wire 		RW_OUT;
 	wire 		TA_N;
+	wire		CLA_N;
     wire        RAM_CS_N;
 	wire        ROM_CS_N;
 	wire        ROM_OE_N;
@@ -31,6 +32,7 @@ module mainLogic_tb;
 		.SIZ1     (SIZ1),
 		.RW_OUT	  (RW_OUT),	
 		.TA_N     (TA_N),
+		.CLA_N	  (CLA_N),
         .RAM_CS_N (RAM_CS_N),
 		.RAM_OE_N (RAM_OE_N),
 		.ROM_CS_N (ROM_CS_N),

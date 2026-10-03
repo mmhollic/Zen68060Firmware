@@ -6,7 +6,7 @@ Performance Grade:      6
 PACKAGE:          TQFP144
 Package Status:                     Final          Version 1.39
 
-Sat Oct 03 20:12:52 2026
+Sat Oct 03 22:12:35 2026
 
 Pinout by Port Name:
 +-----------------+----------+--------------+-------+-----------+-----------+--------------------------------------+
@@ -21,6 +21,7 @@ Pinout by Port Name:
 | A[29]           | 139/0    | LVCMOS33_IN  | PT11A |           |           | PULL:DOWN CLAMP:ON HYSTERESIS:SMALL  |
 | A[30]           | 140/0    | LVCMOS33_IN  | PT10B |           |           | PULL:DOWN CLAMP:ON HYSTERESIS:SMALL  |
 | A[31]           | 141/0    | LVCMOS33_IN  | PT10A |           |           | PULL:DOWN CLAMP:ON HYSTERESIS:SMALL  |
+| CLA_N           | 69/2     | LVCMOS33_OUT | PB37B |           |           | DRIVE:8mA PULL:DOWN SLEW:FAST        |
 | CLK             | 92/1     | LVCMOS33_IN  | PR12A |           |           | PULL:DOWN CLAMP:ON HYSTERESIS:SMALL  |
 | LOCK            | 77/1     | LVCMOS33_OUT | PR21B |           |           | DRIVE:8mA PULL:DOWN SLEW:FAST        |
 | RAM_CS_N        | 127/0    | LVCMOS33_OUT | PT18B |           |           | DRIVE:8mA PULL:DOWN SLEW:FAST        |
@@ -114,7 +115,7 @@ Pinout by Pin Number:
 | 65/2     |     unused, PULL:DOWN |            |              | PB35A |                |           |           |
 | 67/2     |     unused, PULL:DOWN |            |              | PB35B |                |           |           |
 | 68/2     |     unused, PULL:DOWN |            |              | PB37A |                |           |           |
-| 69/2     |     unused, PULL:DOWN |            |              | PB37B |                |           |           |
+| 69/2     | CLA_N                 | LOCATED    | LVCMOS33_OUT | PB37B |                |           |           |
 | 70/2     |     unused, PULL:DOWN |            |              | PB38A | SN             |           |           |
 | 71/2     |     unused, PULL:DOWN |            |              | PB38B | SI/SISPI       |           |           |
 | 73/1     | RW_OUT                | LOCATED    | LVCMOS33_OUT | PR24B | DQ1            |           |           |
@@ -422,6 +423,7 @@ LOCATE  COMP  "A[28]"  SITE  "138";
 LOCATE  COMP  "A[29]"  SITE  "139";
 LOCATE  COMP  "A[30]"  SITE  "140";
 LOCATE  COMP  "A[31]"  SITE  "141";
+LOCATE  COMP  "CLA_N"  SITE  "69";
 LOCATE  COMP  "CLK"  SITE  "92";
 LOCATE  COMP  "LOCK"  SITE  "77";
 LOCATE  COMP  "RAM_CS_N"  SITE  "127";
@@ -449,5 +451,5 @@ Copyright (c) 1995 AT&T Corp.   All rights reserved.
 Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
 Copyright (c) 2001 Agere Systems   All rights reserved.
 Copyright (c) 2002-2024 Lattice Semiconductor Corporation,  All rights reserved.
-Sat Oct 03 20:12:52 2026
+Sat Oct 03 22:12:35 2026
 

@@ -58,93 +58,93 @@ LOCATE COMP "SIZ0" SITE "119" ;
 LOCATE COMP "SIZ1" SITE "117" ;
 IOBUF PORT "SIZ0" IO_TYPE=LVCMOS33 ;
 IOBUF PORT "SIZ1" IO_TYPE=LVCMOS33 ;
+USE PRIMARY NET "CLKOS2" ;
+LOCATE COMP "CLA_N" SITE "69" ;
+IOBUF PORT "CLA_N" IO_TYPE=LVCMOS33 SLEWRATE=FAST ;
 UGROUP "RAMCSTA" 
-	BLKNAME u_ROM_CS_TA/mux_8_i9_3_lut_3_lut
-	BLKNAME u_ROM_CS_TA/mux_8_i10_3_lut_3_lut
-	BLKNAME u_RAM_Line_CS_TA/u_SR_LINE_RAMS_CS/shift_reg_i8
-	BLKNAME u_RAM_Line_CS_TA/u_SR_LINE_RAMS_CS/shift_reg_i9
-	BLKNAME u_ROM_CS_TA/mux_8_i13_3_lut_3_lut
-	BLKNAME u_ROM_CS_TA/mux_8_i14_3_lut_3_lut
-	BLKNAME u_RAM_Line_CS_TA/u_SR_LINE_RAMS_CS/shift_reg_i12
-	BLKNAME u_RAM_Line_CS_TA/u_SR_LINE_RAMS_CS/shift_reg_i13
-	BLKNAME u_ROM_CS_TA/mux_8_i6_3_lut_3_lut
-	BLKNAME u_RAM_Line_CS_TA/u_SR_LINE_RAMS_CS/shift_reg_i5
-	BLKNAME u_RAM_Line_CS_TA/u_SR_LINE_RAMS_CS/shift_reg_i0
-	BLKNAME u_decode/i381_3_lut_rep_5
-	BLKNAME u_RAM_Line_CS_TA/state_26
-	BLKNAME u_decode/i1_3_lut
-	BLKNAME u_ROM_CS_TA/state_26
-	BLKNAME u_ROM_CS_TA/mux_8_i7_3_lut_3_lut_adj_21
+	BLKNAME u_RAM_Line_CS_TA/int_CLA_N_keep_I_0_57_4_lut
+	BLKNAME u_RAM_Line_CS_TA/i2_3_lut_4_lut_2_lut_3_lut_3_lut
+	BLKNAME u_RAM_Line_CS_TA/int_CLA_N_44
+	BLKNAME u_RAM_CS_TA/loadTA_16
+	BLKNAME u_ROM_CS_TA/mux_8_i7_3_lut_3_lut_adj_18
 	BLKNAME u_RAM_CS_TA/u_SR_RAMS_CS/shift_reg_i6
 	BLKNAME u_RAM_CS_TA/u_SR_RAMS_CS/load_registered_14
+	BLKNAME u_RAM_Line_CS_TA/loadTA_keep_I_0_51_3_lut_4_lut
+	BLKNAME i257_3_lut_4_lut
+	BLKNAME u_RAM_Line_CS_TA/loadTA_42
 	BLKNAME u_ROM_CS_TA/mux_8_i3_3_lut_3_lut
-	BLKNAME u_ROM_CS_TA/mux_8_i7_3_lut_3_lut
 	BLKNAME u_RAM_Line_CS_TA/u_SR_LINE_RAMS_CS/shift_reg_i2
+	BLKNAME u_RAM_CS_TA/u_SR_TA/shift_reg_i0
+	BLKNAME u_ROM_CS_TA/mux_8_i7_3_lut_3_lut
 	BLKNAME u_RAM_Line_CS_TA/u_SR_LINE_RAMS_CS/shift_reg_i6
+	BLKNAME u_RAM_Line_CS_TA/u_SR_LINE_RAMS_CS/load_registered_14
 	BLKNAME u_ROM_CS_TA/mux_8_i11_3_lut_3_lut
-	BLKNAME u_ROM_CS_TA/mux_8_i15_3_lut_3_lut
 	BLKNAME u_RAM_Line_CS_TA/u_SR_LINE_RAMS_CS/shift_reg_i10
+	BLKNAME u_RAM_CS_TA/u_SR_RAMS_CS/shift_reg_i0
+	BLKNAME u_ROM_CS_TA/mux_8_i15_3_lut_3_lut
 	BLKNAME u_RAM_Line_CS_TA/u_SR_LINE_RAMS_CS/shift_reg_i14
+	BLKNAME u_RAM_CS_TA/u_SR_TA/load_registered_14
 	BLKNAME u_decode/i1_4_lut
 	BLKNAME u_decode/i2_3_lut
 	BLKNAME u_ROM_CS_TA/int_ROM_CS_N_29
-	BLKNAME u_RAM_Line_CS_TA/loadCS_27
-	BLKNAME u_decode/i1_4_lut_adj_22
-	BLKNAME u_ROM_CS_TA/loadTA_28
-	BLKNAME u_decode/i3_4_lut
+	BLKNAME i2_3_lut_4_lut
 	BLKNAME u_RAM_CS_TA/int_RAM_CS_N_17
 	BLKNAME u_ROM_CS_TA/loadCS_27
-	BLKNAME u_ROM_CS_TA/mux_87_i2_3_lut_3_lut
-	BLKNAME u_ROM_CS_TA/u_SR_ROMS_CS/shift_reg_i2
-	BLKNAME u_RAM_Line_CS_TA/u_SR_LINE_TA/load_registered_14
-	BLKNAME u_ROM_CS_TA/mux_87_i3_3_lut_3_lut
-	BLKNAME u_ROM_CS_TA/u_SR_ROMS_CS/shift_reg_i3
-	BLKNAME u_RAM_Line_CS_TA/u_SR_LINE_TA/shift_reg_i0
-	BLKNAME u_decode/i2_3_lut_4_lut_4_lut
-	BLKNAME u_decode/i1_2_lut_rep_4_3_lut
-	BLKNAME u_RAM_Line_CS_TA/int_RAM_LINE_CS_N_29
-	BLKNAME u_RAM_CS_TA/loadTA_16
-	BLKNAME u_decode/i5_4_lut
-	BLKNAME u_ROM_CS_TA/u_SR_TA/shift_reg_i8
-	BLKNAME u_ROM_CS_TA/u_SR_TA/shift_reg_i9
-	BLKNAME u_decode/i1_2_lut_3_lut_4_lut
-	BLKNAME u_decode/i1_2_lut_rep_7
-	BLKNAME u_RAM_CS_TA/u_SR_RAMS_CS/shift_reg_i1
-	BLKNAME u_RAM_CS_TA/u_SR_RAMS_CS/shift_reg_i2
-	BLKNAME u_decode/i2_4_lut
-	BLKNAME u_RAM_CS_TA/int_RAM_CS_N_I_0_2_lut
-	BLKNAME u_RAM_CS_TA/u_SR_RAMS_CS/shift_reg_i3
-	BLKNAME u_RAM_CS_TA/u_SR_RAMS_CS/shift_reg_i4
-	BLKNAME u_decode/i6_4_lut
-	BLKNAME u_decode/i1_2_lut_rep_3
+	BLKNAME i147_2_lut_3_lut_4_lut
+	BLKNAME u_decode/i2_3_lut_rep_13
+	BLKNAME u_RAM_CS_TA/u_SR_TA/shift_reg_i3
+	BLKNAME u_RAM_CS_TA/u_SR_TA/shift_reg_i4
+	BLKNAME m1_lut
+	BLKNAME u_RAM_Line_CS_TA/int_RAM_LINE_CS_N_43
+	BLKNAME RAM_CS_N_I_0_2_lut
+	BLKNAME INT_RAM_LINE_CS_N_I_0_4_lut
 	BLKNAME u_RAM_CS_TA/u_SR_RAMS_CS/shift_reg_i5
 	BLKNAME u_RAM_CS_TA/u_SR_RAMS_CS/shift_reg_i7
-	BLKNAME INT_RAM_LINE_CS_N_I_0_4_lut
-	BLKNAME u_ROM_CS_TA/RAM_CS_N_I_0_2_lut_2_lut
+	BLKNAME i2_4_lut
+	BLKNAME u_RAM_Line_CS_TA/int_RAM_LINE_CS_N_I_0_46_2_lut
+	BLKNAME u_RAM_CS_TA/u_SR_TA/shift_reg_i5
+	BLKNAME u_RAM_CS_TA/u_SR_TA/shift_reg_i6
+	BLKNAME SIZ0_I_0_2_lut_rep_17
+	BLKNAME u_decode/RAM_CS_ADDR_I_0_17_2_lut_rep_12_4_lut
 	BLKNAME u_RAM_CS_TA/u_SR_TA/shift_reg_i1
 	BLKNAME u_RAM_CS_TA/u_SR_TA/shift_reg_i2
-	BLKNAME u_ROM_CS_TA/int_ROM_CS_N_I_0_2_lut
-	BLKNAME u_ROM_CS_TA/i2_3_lut_3_lut
+	BLKNAME u_RAM_Line_CS_TA/i1_2_lut_rep_19
+	BLKNAME u_RAM_Line_CS_TA/i2_2_lut_3_lut_4_lut
+	BLKNAME u_RAM_CS_TA/u_SR_RAMS_CS/shift_reg_i1
+	BLKNAME u_RAM_CS_TA/u_SR_RAMS_CS/shift_reg_i2
+	BLKNAME u_RAM_Line_CS_TA/i1_2_lut_rep_14_3_lut
+	BLKNAME i460_3_lut_4_lut
 	BLKNAME u_RAM_CS_TA/u_SR_RAMS_CS/load_half_13
 	BLKNAME u_RAM_CS_TA/u_SR_TA/load_half_13
-	BLKNAME u_ROM_CS_TA/mux_8_i5_3_lut_3_lut
-	BLKNAME u_RAM_Line_CS_TA/u_SR_LINE_RAMS_CS/shift_reg_i4
-	BLKNAME u_RAM_Line_CS_TA/u_SR_LINE_RAMS_CS/load_registered_14
-	BLKNAME u_RAM_CS_TA/u_SR_TA/load_registered_14
-	BLKNAME u_RAM_CS_TA/u_SR_RAMS_CS/shift_reg_i0
+	BLKNAME u_decode/i6_4_lut
+	BLKNAME u_decode/i5_4_lut
+	BLKNAME u_RAM_CS_TA/u_SR_RAMS_CS/shift_reg_i3
+	BLKNAME u_RAM_CS_TA/u_SR_RAMS_CS/shift_reg_i4
 	BLKNAME u_RAM_CS_TA/u_SR_TA/shift_reg_i7
-	BLKNAME u_RAM_CS_TA/u_SR_TA/shift_reg_i4
-	BLKNAME u_RAM_CS_TA/u_SR_TA/shift_reg_i3
-	BLKNAME u_RAM_CS_TA/u_SR_TA/shift_reg_i6
-	BLKNAME u_RAM_CS_TA/u_SR_TA/shift_reg_i5
-	BLKNAME u_RAM_CS_TA/u_SR_TA/shift_reg_i0
+	BLKNAME u_RAM_Line_CS_TA/loadCS_keep_I_0_53_3_lut_4_lut
+	BLKNAME u_RAM_Line_CS_TA/i1_2_lut_rep_16_3_lut
+	BLKNAME u_RAM_Line_CS_TA/loadCS_41
+	BLKNAME u_RAM_Line_CS_TA/i458_3_lut
+	BLKNAME u_RAM_Line_CS_TA/i1_3_lut_4_lut_3_lut
+	BLKNAME u_RAM_Line_CS_TA/state_i0_i0
+	BLKNAME u_RAM_Line_CS_TA/state_i0_i1
+	BLKNAME u_RAM_Line_CS_TA/state_2__bdd_4_lut_4_lut
+	BLKNAME u_RAM_Line_CS_TA/state_i0_i2
 	BLKNAME u_RAM_Line_CS_TA/u_SR_LINE_TA/load_half_13
 	BLKNAME u_RAM_Line_CS_TA/u_SR_LINE_RAMS_CS/load_half_13
-	BLKNAME u_RAM_Line_CS_TA/u_SR_LINE_RAMS_CS/shift_reg_i7
-	BLKNAME u_RAM_Line_CS_TA/u_SR_LINE_RAMS_CS/shift_reg_i11
-	BLKNAME u_RAM_Line_CS_TA/u_SR_LINE_RAMS_CS/shift_reg_i1
+	BLKNAME u_RAM_Line_CS_TA/u_SR_LINE_TA/load_registered_14
+	BLKNAME u_RAM_Line_CS_TA/u_SR_LINE_RAMS_CS/shift_reg_i0
+	BLKNAME u_RAM_Line_CS_TA/u_SR_LINE_RAMS_CS/shift_reg_i9
+	BLKNAME u_RAM_Line_CS_TA/u_SR_LINE_RAMS_CS/shift_reg_i5
+	BLKNAME u_RAM_Line_CS_TA/u_SR_LINE_RAMS_CS/shift_reg_i4
 	BLKNAME u_RAM_Line_CS_TA/u_SR_LINE_RAMS_CS/shift_reg_i3
 	BLKNAME u_RAM_Line_CS_TA/u_SR_LINE_RAMS_CS/shift_reg_i15
+	BLKNAME u_RAM_Line_CS_TA/u_SR_LINE_RAMS_CS/shift_reg_i11
+	BLKNAME u_RAM_Line_CS_TA/u_SR_LINE_RAMS_CS/shift_reg_i1
+	BLKNAME u_RAM_Line_CS_TA/u_SR_LINE_RAMS_CS/shift_reg_i13
+	BLKNAME u_RAM_Line_CS_TA/u_SR_LINE_RAMS_CS/shift_reg_i12
+	BLKNAME u_RAM_Line_CS_TA/u_SR_LINE_RAMS_CS/shift_reg_i8
+	BLKNAME u_RAM_Line_CS_TA/u_SR_LINE_RAMS_CS/shift_reg_i7
 	BLKNAME u_RAM_Line_CS_TA/u_SR_LINE_TA/shift_reg_i9
 	BLKNAME u_RAM_Line_CS_TA/u_SR_LINE_TA/shift_reg_i2
 	BLKNAME u_RAM_Line_CS_TA/u_SR_LINE_TA/shift_reg_i15
@@ -159,12 +159,23 @@ UGROUP "RAMCSTA"
 	BLKNAME u_RAM_Line_CS_TA/u_SR_LINE_TA/shift_reg_i12
 	BLKNAME u_RAM_Line_CS_TA/u_SR_LINE_TA/shift_reg_i11
 	BLKNAME u_RAM_Line_CS_TA/u_SR_LINE_TA/shift_reg_i14
-	BLKNAME u_RAM_Line_CS_TA/u_SR_LINE_TA/shift_reg_i13;
+	BLKNAME u_RAM_Line_CS_TA/u_SR_LINE_TA/shift_reg_i13
+	BLKNAME u_RAM_Line_CS_TA/u_SR_LINE_TA/shift_reg_i0;
 LOCATE UGROUP "RAMCSTA" REGION "CSAT2" ;
 UGROUP "ROMCSTA" 
-	BLKNAME u_ROM_CS_TA/RW_OUT_I_0_1_lut_rep_6
+	BLKNAME u_ROM_CS_TA/i326_3_lut
+	BLKNAME u_ROM_CS_TA/int_ROM_CS_N_I_0_2_lut
+	BLKNAME u_ROM_CS_TA/state_26
+	BLKNAME u_ROM_CS_TA/i328_4_lut
+	BLKNAME u_ROM_CS_TA/i2_3_lut
+	BLKNAME u_ROM_CS_TA/loadTA_28
+	BLKNAME u_ROM_CS_TA/RW_OUT_I_0_1_lut_rep_18
 	BLKNAME u_ROM_CS_TA/u_SR_ROMS_CS/shift_reg_i1
-	BLKNAME u_ROM_CS_TA/mux_87_i4_3_lut_3_lut
+	BLKNAME u_ROM_CS_TA/mux_104_i2_3_lut_3_lut
+	BLKNAME u_ROM_CS_TA/mux_104_i3_3_lut_3_lut
+	BLKNAME u_ROM_CS_TA/u_SR_ROMS_CS/shift_reg_i2
+	BLKNAME u_ROM_CS_TA/u_SR_ROMS_CS/shift_reg_i3
+	BLKNAME u_ROM_CS_TA/mux_104_i4_3_lut_3_lut
 	BLKNAME u_ROM_CS_TA/u_SR_ROMS_CS/shift_reg_i4
 	BLKNAME u_ROM_CS_TA/u_SR_ROMS_CS/load_registered_14
 	BLKNAME u_ROM_CS_TA/u_SR_TA/load_half_13
@@ -175,7 +186,8 @@ UGROUP "ROMCSTA"
 	BLKNAME u_ROM_CS_TA/u_SR_ROMS_CS/shift_reg_i6
 	BLKNAME u_ROM_CS_TA/u_SR_ROMS_CS/shift_reg_i9
 	BLKNAME u_ROM_CS_TA/u_SR_ROMS_CS/shift_reg_i8
-	BLKNAME u_ROM_CS_TA/u_SR_TA/i133_1_lut
+	BLKNAME u_ROM_CS_TA/u_SR_TA/shift_reg_i9
+	BLKNAME u_ROM_CS_TA/u_SR_TA/i195_1_lut
 	BLKNAME u_ROM_CS_TA/u_SR_TA/shift_reg_i1
 	BLKNAME u_ROM_CS_TA/u_SR_TA/load_registered_14
 	BLKNAME u_ROM_CS_TA/u_SR_TA/shift_reg_i2
@@ -184,5 +196,6 @@ UGROUP "ROMCSTA"
 	BLKNAME u_ROM_CS_TA/u_SR_TA/shift_reg_i3
 	BLKNAME u_ROM_CS_TA/u_SR_TA/shift_reg_i6
 	BLKNAME u_ROM_CS_TA/u_SR_TA/shift_reg_i5
+	BLKNAME u_ROM_CS_TA/u_SR_TA/shift_reg_i8
 	BLKNAME u_ROM_CS_TA/u_SR_TA/shift_reg_i7;
 LOCATE UGROUP "ROMCSTA" REGION "ROMCSTA" ;
